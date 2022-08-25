@@ -108,31 +108,7 @@ public sealed class LanguageDictionary : ILanguageDictionary<string, Language>
     {
         Dictionary<string, string> aliases = new(StringComparer.InvariantCultureIgnoreCase)
         {
-            //["bangla"] = "bn",
-            //["myanmar"] = "my",
-            //["in"] = "id",
-            //["iw"] = "he",
-            //["ji"] = "yi",
-            //["jw"] = "jv",
-            //["mo"] = "ro",
-            //["nb"] = "no",
-            //// ["nn"] = "no",
-            //["portuguese"] = "pt",
-            //["sh"] = "sr",
-            //["sr"] = "sr",
-            //["srp"] = "sr",
-            //["serbian"] = "sr",
-            //["zh"] = "zh-CN",
-            //["zh-chs"] = "zh-CN",
-            //["zh-cht"] = "zh-TW",
-            //["zh-hans"] = "zh-CN",
-            //["zh-hant"] = "zh-TW",
-            //["zho"] = "zh-CN",
             ["chinese"] = "zh-CN",
-            //["tlh-latn"] = "tlh",
-            //["sr-cyrl"] = "sr",
-            //["mn-Cyrl"] = "mn",
-            //["ug-CN"] = "ug",
         };
 
         foreach ( KeyValuePair<string, Language> kvp in _languages )
@@ -325,16 +301,12 @@ public sealed class LanguageDictionary : ILanguageDictionary<string, Language>
         ["qu"] = new("Quechua", "Quechua", "qu", "que",                          TranslationServices.Google),
 
         // ToDo: Delete or move the below entries after testing
-        // Testing following values
         //["chr-CHER-US"] = new("Cherokee", "Cherokee", "chr-CHER-US", "chr-CHER-US",                                 TranslationServices.Google),
         //["chr"] = new("Cherokee", "Cherokee", "chr", "chr",                                 TranslationServices.Google),
         //["kok"] = new("Konkani (India)", "Konkani (India)", "kok", "kok",           TranslationServices.Yandex),
         //["kok-IN"] = new("Konkani (India)", "Konkani (India)", "kok-IN", "kok-IN",          TranslationServices.Google),
         //["nn-NO"] = new("Norwegian Nynorsk", "Norwegian Nynorsk", "nn-NO", "nn-NO",         TranslationServices.Google),
         //["nn"] = new("Norwegian Nynorsk", "Norwegian Nynorsk", "nn", "nno",         TranslationServices.Google),
-        //["xx"] = new("xxxx", "xxxx", "xx", "xxx",                                 TranslationServices.Google),
-        //["xx"] = new("xxxx", "xxxx", "xx", "xxx",                                 TranslationServices.Google),
-        //["xx"] = new("xxxx", "xxxx", "xx", "xxx",                                 TranslationServices.Google),
         //["xx"] = new("xxxx", "xxxx", "xx", "xxx",                                 TranslationServices.Google),
     });
 }
