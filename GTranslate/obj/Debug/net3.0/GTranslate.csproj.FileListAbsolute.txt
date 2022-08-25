@@ -1,5 +1,0 @@
-E:\Repos\TranslationAutomation\TranslationAutomated\GTranslate\obj\Debug\net3.0\GTranslate.csproj.AssemblyReference.cache
-E:\Repos\TranslationAutomation\TranslationAutomated\GTranslate\obj\Debug\net3.0\GTranslate.GeneratedMSBuildEditorConfig.editorconfig
-E:\Repos\TranslationAutomation\TranslationAutomated\GTranslate\obj\Debug\net3.0\GTranslate.AssemblyInfoInputs.cache
-E:\Repos\TranslationAutomation\TranslationAutomated\GTranslate\obj\Debug\net3.0\GTranslate.AssemblyInfo.cs
-E:\Repos\TranslationAutomation\TranslationAutomated\GTranslate\obj\Debug\net3.0\GTranslate.csproj.CoreCompileInputs.cache
