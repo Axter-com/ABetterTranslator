@@ -1,0 +1,91 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows10.0.17763.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>Images\Logo2.ico</ApplicationIcon>
+    <PackageIcon>TranslateOrangeCircle_(512_x_512).png</PackageIcon>
+    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Title>AutoTranslator</Title>
+    <StartupObject>TranslationAutomated.Program</StartupObject>
+    <SupportedOSPlatformVersion>8.0</SupportedOSPlatformVersion>
+	 <CodeAnalysisRuleSet>RuleSet1.ruleset</CodeAnalysisRuleSet>
+	 <Description>Translates Resx files to multiple languages.</Description>
+	 <Copyright>David Maisonave ©2022 (Axter.com)</Copyright>
+	 <PackageProjectUrl>https://github.com/David-Maisonave/TranslationAutomation</PackageProjectUrl>
+	 <RepositoryUrl>https://github.com/David-Maisonave/TranslationAutomation</RepositoryUrl>
+	 <PackageTags>translator;translation;automation;translation automation;resx</PackageTags>
+	 <PackageReleaseNotes>https://github.com/David-Maisonave/TranslationAutomation</PackageReleaseNotes>
+	 <NeutralLanguage>en</NeutralLanguage>
+  </PropertyGroup>
+
+	<ItemGroup>
+    <Content Include="Images\Logo2.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GTranslate\GTranslate.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="ObjectListView\Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="ObjectListView\Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Images\Logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="Images\TranslateOrangeCircle_%28512_x_512%29.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>
