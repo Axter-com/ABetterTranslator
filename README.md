@@ -1,3 +1,5 @@
+![](ABetterTranslator/Images/BannerWithNameAndSubLabel.png)
+
 # Translates Resx Resource Files
 Translates Resx files to over 160 different languages in list then 60 seconds.
 
