@@ -39,6 +39,7 @@ The code is optimized so that over 130 languages can be tranlsated in less then 
 #### Filter
 
 This option allows user to use keywords to find or filter the list to only items having the keyword(s).
+See [Language Filter](README.md#Language-Filter)
 
 #### Sortable Language List
 
