@@ -16,7 +16,7 @@ Translates Resx files to over 130 different languages in less then 60 seconds.
 ## What does it do?
 The GUI allows the user to select multiple languages from a list of over 130 different languages.
 A file (Resx) is created for each language, with the associated language tag in the file name.
-The code is optimized so that over 130 languages can be tranlsated in less then 60 seconds. 
+The code is optimized so that over 130 languages can be translated in less then 60 seconds. 
 ![](ABetterTranslator/Docs/screenshots/ABetterTranslatorScreenshot_(512_x_512).png)
 
 
@@ -27,17 +27,17 @@ The code is optimized so that over 130 languages can be tranlsated in less then 
 -  [Supported Languages](README.md#Supported-Languages)
 -  [Filter](README.md#Filter)
 -  [Sortable Language List](README.md#Sortable-Language-List)
--  [Resizeable Program Window](README.md#Resizeable-Program-Window)
--  [Last Session Data Retension](README.md#Last-Session-Data-Retension)
+-  [Resize-able Program Window](README.md#Resize-able-Program-Window)
+-  [Last Session Data Retention](README.md#Last-Session-Data-Retention)
 -  [Screen Logging](README.md#Screen-Logging)
 
 [Options](README.md#Options)
 -  [Max Threads](README.md#Max-Threads)
 -  [Max Translation Len](README.md#Max-Translation-Len)
 -  [Strings-Per-Translation-Req](README.md#Strings-Per-Translation-Req)
--  [Dispaly Warning Prompts](README.md#Dispaly-Warning-Prompts)
+-  [Display Warning Prompts](README.md#Display-Warning-Prompts)
 -  [Default Language Set](README.md#Default-Language-Set)
--  [Delete Langugae Appended Resx Files](README.md#Delete-Langugae-Appended-Resx-Files)
+-  [Delete Language Appended Resx Files](README.md#Delete-Language-Appended-Resx-Files)
 -  [Translated Resx Comments](README.md#Translated-Resx-Comments)
 -  [Delete Language Resx Files Before Translation](README.md#Delete-Language-ResxFiles-Before-Translation)
 -  [Backup Files Before Translation](README.md#Backup-Files-Before-Translation)
@@ -54,7 +54,7 @@ The code is optimized so that over 130 languages can be tranlsated in less then 
 -  [Language Display Set](README.md#Language-Display-Set)
 -  [Language Filter](README.md#Language-Filter)
 -  [Logging Tab](README.md#Logging-Tab)
--  [Resizeable Window](README.md#Resizeable-Window)
+-  [Resize-able Window](README.md#Resize-able-Window)
 
 
 [Author](README.md#Author)
@@ -88,9 +88,9 @@ For example usage, see [Language Filter](README.md#Language-Filter)
 
 The list view has multiple columns, and the list can be sorted by any column by clicking on the column header.
 
-#### Resizeable Program Window
+#### Resize-able Program Window
 
-The main program window is resizeable. See [Resizeable Window](README.md#Resizeable-Window)
+The main program window is resize-able. See [Resize-able Window](README.md#Resize-able-Window)
 
 #### Last Session Data Retension
 
@@ -129,13 +129,13 @@ Default: **10000**
 * Determines if one string is used per Resx translation request, or if many strings are used per Resx translation request. The following are the possible options to select.
 
   * [Auto]
-    * This is the default option. It automatically sets the best method depending on the totoal number of strings and the maximum thread settings.
+    * This is the default option. It automatically sets the best method depending on the total number of strings and the maximum thread settings.
 
   * [One]
     * Only one string is sent per Resx translation request. Use this option if any of the strings contains the {next-line} character.
 
   * [Multiple]
-    * Multiple strings are sent per Resx translation request. This is the perferred option if total translation is less then 10,000 characters.
+    * Multiple strings are sent per Resx translation request. This is the preferred option if total translation is less then 10,000 characters.
 
 * Default: **Auto**
 
@@ -235,7 +235,7 @@ Default: **10000**
 #### When a translation is executed, the screen logging tab is displayed, which shows translation progress and any translation errors.
 ![](ABetterTranslator/Docs/screenshots/LoggingTab_(512_x_512).png)
 
-### Resizeable Window
+### Resize-able Window
 #### The program window can be shrunk or expanded to user's preferred size.
 ![](ABetterTranslator/Docs/screenshots/screenshot_ABetterTranslator_long_window_(512_x_1600).png)
 
