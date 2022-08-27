@@ -1,6 +1,8 @@
 ![](ABetterTranslator/Images/BannerWithNameAndSubLabel.png)
 
 # Translates Resx Resource Files
+[![All Releases](https://img.shields.io/github/downloads/David-Maisonave/ABetterTranslator/total.svg)](https://github.com/David-Maisonave/ABetterTranslator/releases/latest)
+
 Translates Resx files to over 160 different languages in list then 60 seconds.
 
 ## What does it do?
