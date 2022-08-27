@@ -7,6 +7,7 @@ A file (Resx) is created for each language, with the associated language tag in 
 The code is optimized so that over 160 translations can take less then 60 seconds. 
 ![](TranslationAutomated/Docs/screenshots/TranslationAutomatedScreenshot.png)
 
+
 # Content
 
 [Features](README.md#Features)
