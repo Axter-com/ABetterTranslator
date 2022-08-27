@@ -10,6 +10,7 @@
 [![Visual Studio](https://badgen.net/badge/icon/visualstudio?icon=visualstudio&label)](https://visualstudio.microsoft.com)
 [![Windows](https://badgen.net/badge/icon/windows?icon=windows&label)](https://microsoft.com/windows/)
 
+
 Translates Resx files to over 160 different languages in list then 60 seconds.
 
 ## What does it do?
