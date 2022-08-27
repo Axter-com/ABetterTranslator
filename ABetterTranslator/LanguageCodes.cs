@@ -139,7 +139,7 @@ namespace ABetterTranslator
             {"mt", "Maltese", "Malta"},
             {"my", "Burmese", ""},
             {"na", "Nauru", ""},
-            {"no", "Norwegian", "Norway"}, 
+            {"no", "Norwegian", "Norway"},
             {"nb", "Norwegian Bokmål", "Norway"},
             {"nd", "North Ndebele", "Ndebele"},
             {"ne", "Nepali", "Nepal;Federal Democratic Republic of Nepal"},
@@ -274,26 +274,26 @@ namespace ABetterTranslator
         public static readonly string[,] Windows10Plus_LanguageInterfacePacks =  /*Windows 10/11 LIPs*/
 		{	//{[Language-Code], [Language/region], [Primary Base language/region]}
 			#region Windows10Plus_LanguageInterfacePacks
-			{"af-ZA", "Afrikaans"}, 
+			{"af-ZA", "Afrikaans"},
             {"am-ET", "Amharic"},
-			{"as-IN", "Assamese"},
+            {"as-IN", "Assamese"},
             {"az-Latn-AZ", "Azerbaijani"},
-			{"be-BY", "Belarusian"}, 
-			{"bn-IN", "Bengali"},
+            {"be-BY", "Belarusian"},
+            {"bn-IN", "Bengali"},
             {"bs-Latn-BA", "Bosnian"},
-			{"ca-ES", "Catalan"},
+            {"ca-ES", "Catalan"},
             {"ca-ES-valencia", "Catalan"},
             {"chr-CHER-US", "Cherokee"}, // Suppose to be supported by Google Translate via code chr, but it's not working.
             {"cy-GB", "Welsh"},
-            {"eu-ES", "Basque"}, 
+            {"eu-ES", "Basque"},
             {"fa-IR", "Persian"},
             {"fil", "Filipino"},
             {"ga-IE", "Irish"},
-			{"gd-GB", "Gaelic"},
+            {"gd-GB", "Gaelic"},
             {"gl-ES", "Galician"},
             {"gu-IN", "Gujarati"},
             {"hi-IN", "Hindi"},
-            {"hy-AM", "Armenian"}, 
+            {"hy-AM", "Armenian"},
             {"id-ID", "Indonesian"},
             {"is-IS", "Icelandic"},
             {"ka-GE", "Georgian"},
@@ -301,10 +301,10 @@ namespace ABetterTranslator
             {"km-KH", "Khmer"},
             {"kn-IN", "Kannada"},
             {"kok-IN", "Konkani (India)"}, // -- No available translator supports this language
-            {"lb-LU", "Luxembourgish"},	
+            {"lb-LU", "Luxembourgish"},
             {"lo-LA", "Lao"},
             {"mi-NZ", "Maori"},
-			{"mk-MK", "Macedonian"},
+            {"mk-MK", "Macedonian"},
             {"ml-IN", "Malayalam"},
             {"mr-IN", "Marathi"},
             {"ms-MY", "Malay"},
@@ -315,8 +315,8 @@ namespace ABetterTranslator
             {"pa-IN", "Punjabi"},
             {"quz-PE", "Quechua"}, // -- No available translator supports this language 
 			{"sq-AL", "Albanian"},
-            {"sr-Cyrl-BA", "Serbian (Cyrillic)"}, 
-			{"sr-Cyrl-RS", "Serbian (Latin)"}, // aka sr-Latn-RS
+            {"sr-Cyrl-BA", "Serbian (Cyrillic)"},
+            {"sr-Cyrl-RS", "Serbian (Latin)"}, // aka sr-Latn-RS
             {"ta-IN", "Tamil"},
             {"te-IN", "Telugu"},
             {"tt-RU", "Tatar"},
@@ -518,5 +518,7 @@ namespace ABetterTranslator
             {"zu", "zul"}, // Zulu
             #endregion ISO639_1_To_ISO639_3
         };
+        // ToDo: Figure out why these languages are not working.
+        public static readonly string[] LanguagesTagsWithIssues = {"ay", "bho", "cv", "dgo", "emj", "fj", "hmn", "ht", "ikt", "ilo", "kazlat", "kmr", "lzh", "mhr", "mrj", "mww", "ny", "otq", "qu", "sjn", "sm", "tl", "tlh", "tw", "ty", "udm", "uzbcyr", "yua", "yue"};
     }
 }

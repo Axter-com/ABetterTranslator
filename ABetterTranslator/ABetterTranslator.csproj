@@ -63,10 +63,39 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Translations\*.resx">
+		<!-- The following adds all Resx files in the Translation folder. -->
+    <EmbeddedResource Include="..\$(TargetName).Translations\*.resx">
 		<ManifestResourceName>$(TargetName).%(Filename)</ManifestResourceName>
-		<!-- add this for all .resx files in a custom folder -->
     </EmbeddedResource>
+    <EmbeddedResource Remove="..\ABetterTranslator.Translations\MainWindow.ay.resx" />
+    <EmbeddedResource Remove="..\ABetterTranslator.Translations\MainWindow.bho.resx" />
+    <EmbeddedResource Remove="..\ABetterTranslator.Translations\MainWindow.cv.resx" />
+    <EmbeddedResource Remove="..\ABetterTranslator.Translations\MainWindow.dgo.resx" />
+    <EmbeddedResource Remove="..\ABetterTranslator.Translations\MainWindow.emj.resx" />
+    <EmbeddedResource Remove="..\ABetterTranslator.Translations\MainWindow.fj.resx" />
+    <EmbeddedResource Remove="..\ABetterTranslator.Translations\MainWindow.hmn.resx" />
+    <EmbeddedResource Remove="..\ABetterTranslator.Translations\MainWindow.ht.resx" />
+    <EmbeddedResource Remove="..\ABetterTranslator.Translations\MainWindow.ikt.resx" />
+    <EmbeddedResource Remove="..\ABetterTranslator.Translations\MainWindow.ilo.resx" />
+    <EmbeddedResource Remove="..\ABetterTranslator.Translations\MainWindow.kazlat.resx" />
+    <EmbeddedResource Remove="..\ABetterTranslator.Translations\MainWindow.kmr.resx" />
+    <EmbeddedResource Remove="..\ABetterTranslator.Translations\MainWindow.lzh.resx" />
+    <EmbeddedResource Remove="..\ABetterTranslator.Translations\MainWindow.mhr.resx" />
+    <EmbeddedResource Remove="..\ABetterTranslator.Translations\MainWindow.mrj.resx" />
+    <EmbeddedResource Remove="..\ABetterTranslator.Translations\MainWindow.mww.resx" />
+    <EmbeddedResource Remove="..\ABetterTranslator.Translations\MainWindow.ny.resx" />
+    <EmbeddedResource Remove="..\ABetterTranslator.Translations\MainWindow.otq.resx" />
+    <EmbeddedResource Remove="..\ABetterTranslator.Translations\MainWindow.qu.resx" />
+    <EmbeddedResource Remove="..\ABetterTranslator.Translations\MainWindow.sjn.resx" />
+    <EmbeddedResource Remove="..\ABetterTranslator.Translations\MainWindow.sm.resx" />
+    <EmbeddedResource Remove="..\ABetterTranslator.Translations\MainWindow.tl.resx" />
+    <EmbeddedResource Remove="..\ABetterTranslator.Translations\MainWindow.tlh.resx" />
+    <EmbeddedResource Remove="..\ABetterTranslator.Translations\MainWindow.tw.resx" />
+    <EmbeddedResource Remove="..\ABetterTranslator.Translations\MainWindow.ty.resx" />
+    <EmbeddedResource Remove="..\ABetterTranslator.Translations\MainWindow.udm.resx" />
+    <EmbeddedResource Remove="..\ABetterTranslator.Translations\MainWindow.uzbcyr.resx" />
+    <EmbeddedResource Remove="..\ABetterTranslator.Translations\MainWindow.yua.resx" />
+    <EmbeddedResource Remove="..\ABetterTranslator.Translations\MainWindow.yue.resx" />
     <EmbeddedResource Update="ObjectListView\Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

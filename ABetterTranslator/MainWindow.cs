@@ -26,8 +26,6 @@ namespace ABetterTranslator
 	using System.Xml.Linq;
     using System.ComponentModel;
     using BrightIdeasSoftware;
-
-
     using ABetterTranslator.Properties;
     using static TranslateMultiThread.MultiThreadTranslator;
     using File = System.IO.File;
@@ -39,6 +37,7 @@ namespace ABetterTranslator
     using Windows.Storage.Streams;
     using Windows.UI.ViewManagement;
     using static System.Windows.Forms.Design.AxImporter;
+    using Microsoft.VisualBasic.Devices;
 
 	public partial class MainWindow : Form
 	{
@@ -779,8 +778,10 @@ namespace ABetterTranslator
         #region Load and Save method for persistent user inputs
         private void MainWindow_Load(object sender, EventArgs e)
 		{
+            if ( ModifierKeys == Keys.Shift )
+                return;
             // Miscellaneous values
-			Location = Settings.Default.WindowLocation;
+            Location = Settings.Default.WindowLocation;
             Size = Settings.Default.WindowSize;
             SelectedLanguageSet = Settings.Default.SelectedLanguageSet;
 
@@ -1465,7 +1466,6 @@ namespace ABetterTranslator
             languageList.ClearObjects();
             _languagesInList.Clear();
         }
-
         private string GetIso639_3Tag(string Iso639_1_Tag)
         {
             string tag = Iso639_1_Tag.ToLower();
@@ -1481,27 +1481,6 @@ namespace ABetterTranslator
                 return GetCulture_Windows3LetterName(Iso639_1_Tag);
             return Iso639_3_Name;
         }
-
-        //private string GetTranslatorSupportDetails(string LangName)
-        //{
-        //    string RetrnStr = "Not Supported";
-        //    string langName = LangName.ToLower();
-        //    int TranslatorIndex= 0;
-        //    foreach ( var LangList in TranslatorsLanguageSets )
-        //    {
-        //        for ( int i = 0 ; i < LangList.GetLength(0) ; ++i )
-        //        {
-        //            string tag = LangList[i, 0];
-        //            string name = LangList[i, 1];
-        //            if ( name.ToLower().Equals(langName) )
-        //                return $"{LanguageCodes.TranslatorNames[TranslatorIndex]} Translator;tag={tag}";
-        //        }
-        //        ++TranslatorIndex;
-        //    }
-
-        //    return RetrnStr;
-        //}
-
         private string GetAliases(string LangName, string Code)
         {
             const string Sep = ", ";
@@ -1595,7 +1574,7 @@ namespace ABetterTranslator
             };
             l.Add(objListVwRowDetails);
             languageList.AddObjects(l);
-            if ( translatorSupported.Equals(NoTranslator) )
+            if ( translatorSupported.Equals(NoTranslator) || LanguageCodes.LanguagesTagsWithIssues.Contains(objListVwRowDetails.LanguageTranslatorTag) )
                 languageList.DisableObjects(l);
         }
 

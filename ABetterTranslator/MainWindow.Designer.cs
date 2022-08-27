@@ -745,9 +745,9 @@ namespace ABetterTranslator
             // 
             // groupBoxFilterText
             // 
+            resources.ApplyResources(this.groupBoxFilterText, "groupBoxFilterText");
             this.groupBoxFilterText.Controls.Add(this.textBoxFilterText);
             this.groupBoxFilterText.Controls.Add(this.linkLabelFilterText);
-            resources.ApplyResources(this.groupBoxFilterText, "groupBoxFilterText");
             this.groupBoxFilterText.Name = "groupBoxFilterText";
             this.groupBoxFilterText.TabStop = false;
             // 
