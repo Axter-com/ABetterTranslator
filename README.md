@@ -90,7 +90,6 @@ Determines if one string is used per Resx translation request, or if many string
 
 Default: **Auto**
 
-
 #### Dispaly-Warning-Prompts
 
 Option to disable/enable warning prompts before files are deleted.
@@ -103,46 +102,50 @@ Determines the default set of languages to display on the language list.
 
 Default: **Windows 10/11 Language Pack**
 
-
 #### Delete-Langugae-Appended-Resx-Files
 
 Option to manually delete all Resx files which have an appended language tag in the name.
-
 
 #### Translated-Resx-Comments
 
 Default: **Do NOT change comments**
 
-
 #### Delete-Language-ResxFiles-Before-Translation
 
-Default: **todo_add_default_here**
+When enabled, deletes all Resx files having an appended language tag in the file name, before executing the translation.
 
+Default: **Disabled**
 
 #### Backup-Files-Before-Translation
 
-Default: **todo_add_default_here**
+When enabled, backs up Resx files before executing the translation.
 
+Default: **Enabled**
 
 #### Backup-Directory
 
-Default: **todo_add_default_here**
+The destination directory used to backup files.
 
+Default: **C:\Users\*[User-Name]*\AppData\Roaming\ABetterTranslator\ABetterTranslator\1.0.0\BackupResx**
 
 #### Screen-Verbosity-Level
 
-Default: **todo_add_default_here**
+The verbosity level for output data going to the Logging-Tab window.
+
+Default: **Normal**
 
 
 #### Log-File-Verbosity-Level
 
-Default: **todo_add_default_here**
+The verbosity level for output data going to the log file.
 
+Default: **Normal**
 
 #### Logging-Directory
 
-Default: **todo_add_default_here**
+The directory used for log files.
 
+Default: **C:\Users\*[User-Name]*\AppData\Local\Temp\ABetterTranslator\Log**
 
 
 
