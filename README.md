@@ -11,12 +11,12 @@
 [![Windows](https://badgen.net/badge/icon/windows?icon=windows&label)](https://microsoft.com/windows/)
 
 
-Translates Resx files to over 160 different languages in list then 60 seconds.
+Translates Resx files to over 130 different languages in list then 60 seconds.
 
 ## What does it do?
-The GUI allows the user to select multiple languages from a list of over 160 different languages.
+The GUI allows the user to select multiple languages from a list of over 130 different languages.
 A file (Resx) is created for each language, with the associated language tag in the file name.
-The code is optimized so that over 160 languages can be tranlsated in less then 60 seconds. 
+The code is optimized so that over 130 languages can be tranlsated in less then 60 seconds. 
 ![](ABetterTranslator/Docs/screenshots/ABetterTranslatorScreenshot_(512_x_512).png)
 
 
@@ -92,7 +92,7 @@ This options determines if one file is used per translation request, or if many 
 ![](ABetterTranslator/Docs/screenshots/screenshot_LanguageDisplaySetSelection.png)
 
 ### Language Filter
-#### The language list can displays well over 160 different languages. To help quickly find a language, the GUI has a filter field.
+#### The language list can displays well over 130 different languages. To help quickly find a language, the GUI has a filter field.
 ![](ABetterTranslator/Docs/screenshots/screenshot_language_filter_usage.png)
 
 ### Resizeable Window
