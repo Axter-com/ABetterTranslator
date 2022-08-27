@@ -2,6 +2,13 @@
 
 # Translates Resx Resource Files
 [![All Releases](https://img.shields.io/github/downloads/David-Maisonave/ABetterTranslator/total.svg)](https://github.com/David-Maisonave/ABetterTranslator/releases/latest)
+[![GitHub issues](https://img.shields.io/github/issues/David-Maisonave/ABetterTranslator.svg)](https://GitHub.com/David-Maisonave/ABetterTranslator/issues/)
+[![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
+[![csharp](https://img.shields.io/badge/--019733?logo=csharp)](https://www.vim.org/)
+[![.NET](https://img.shields.io/badge/--512BD4?logo=.net&logoColor=ffffff)](https://dotnet.microsoft.com/)
+[![Visual Studio](https://badgen.net/badge/icon/visualstudio?icon=visualstudio&label)](https://visualstudio.microsoft.com)
+[![Windows](https://badgen.net/badge/icon/windows?icon=windows&label)](https://microsoft.com/windows/)
 
 Translates Resx files to over 160 different languages in list then 60 seconds.
 
