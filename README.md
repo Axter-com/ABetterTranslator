@@ -28,6 +28,19 @@ The code is optimized so that over 130 languages can be tranlsated in less then 
 -  [Max Threads](README.md#Max-Threads)
 -  [Max Translation Len](README.md#Max-Translation-Len)
 -  [Strings-Per-Translation-Req](README.md#Strings-Per-Translation-Req)
+-  [Dispaly Warning Prompts](README.md#Dispaly-Warning-Prompts)
+-  [Default Language Set](README.md#Defaul-tLanguage-Set)
+-  [Delete Langugae Appended Resx Files](README.md#Delete-Langugae-Appended-Resx-Files)
+-  [Add Original Source Text to Comment](README.md#Add-Original-Source-Text-to-Comment)
+-  [Delete Language Resx Files Before Translation](README.md#Delete-Language-ResxFiles-Before-Translation)
+-  [Backup Files Before Translation](README.md#Backup-Files-Before-Translation)
+-  [Backup Directory](README.md#Backup-Directory)
+-  [Screen Verbosity Level](README.md#Screen-Verbosity-Level)
+-  [Log File Verbosity Level](README.md#Log-File-Verbosity-Level)
+-  [Logging Directory](README.md#Logging-Directory)
+
+
+
 
 [Author](README.md#Author)
 
@@ -69,6 +82,51 @@ This options determines if one string is used per Resx translation request, or i
 -  [Multiple]
 
 		Multiple strings are sent per Resx translation request. This is the perferred option if total translation is less then 10,000 characters.
+
+
+#### Dispaly-Warning-Prompts
+Enable 
+
+#### Dispaly-Warning-Prompts
+
+
+
+#### Defaul-tLanguage-Set
+
+
+
+#### Delete-Langugae-Appended-Resx-Files
+
+
+
+#### Add-Original-Source-Text-to-Comment
+
+
+
+#### Delete-Language-ResxFiles-Before-Translation
+
+
+
+#### Backup-Files-Before-Translation
+
+
+
+#### Backup-Directory
+
+
+
+#### Screen-Verbosity-Level
+
+
+
+#### Log-File-Verbosity-Level
+
+
+
+#### Logging-Directory
+
+
+
 
 
 ## Screenshots
