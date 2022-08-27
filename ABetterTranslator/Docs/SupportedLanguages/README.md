@@ -1,5 +1,5 @@
 # Supported Languages
-Currently only the associated language tag is listed below.
+Currently only the associated language tags are listed below.
 In the future, this file will get updated with the language name and associated language details.
 
 # Language Tags
