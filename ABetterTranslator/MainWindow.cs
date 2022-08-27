@@ -780,72 +780,79 @@ namespace ABetterTranslator
 		{
             if ( ModifierKeys == Keys.Shift )
                 return;
-            // Miscellaneous values
-            Location = Settings.Default.WindowLocation;
-            Size = Settings.Default.WindowSize;
-            SelectedLanguageSet = Settings.Default.SelectedLanguageSet;
-
-            // text fields
-            inputBox.Text = Settings.Default.inputBox;
-			MaxThread.Text = Settings.Default.MaxThread;
-            MaxTranslateLen.Text = Settings.Default.MaxTranslateLen;
-			outputBox.Text = Settings.Default.outputBox;
-            textBoxBkUpDir.Text = Settings.Default.textBoxBkUpDir;
-            textBoxLogFolderPath.Text = Settings.Default.textBoxLogFolderPath;
-            textBoxTextToTranslate.Text = Settings.Default.textBoxTextToTranslate;
-
-            // checkbox settings
-            checkBoxBackupFilesBeforeTranslation.Checked = Settings.Default.checkBoxBackupFilesBeforeTranslation;
-			checkBoxDeleteLangResxFilesBeforeTranslation.Checked = Settings.Default.checkBoxDeleteLangResxFilesBeforeTranslation;
-            checkBoxDispalyWarningPrompts.Checked = Settings.Default.checkBoxDispalyWarningPrompts;
-
-            // comboboxes
-            comboBoxAddOriginalSrcTextToComment.SelectedIndex = Settings.Default.comboBoxAddOriginalSrcTextToComment;
-            comboBoxDefaultLanguageSet.SelectedIndex = Settings.Default.comboBoxDefaultLanguageSet;
-            comboBoxFromLang.SelectedIndex = Settings.Default.comboBoxFromLang;
-            comboBoxFromLanguage.SelectedIndex = Settings.Default.comboBoxFromLanguage;
-            comboBoxItemsPerTransaltionRequest.SelectedIndex = Settings.Default.comboBoxItemsPerTransaltionRequest;
-            comboBoxLogFileVerbosityLevel.SelectedIndex = Settings.Default.comboBoxLogFileVerbosityLevel;
-			comboBoxScreenVerbosityLevel.SelectedIndex = Settings.Default.comboBoxScreenVerbosityLevel;
-            comboBoxToLang.SelectedIndex = Settings.Default.comboBoxToLang;
-            tabs.SelectedIndex = Settings.Default.tabs;
-
-            // Keep above code clean so it can be copied and pasted between Load and FormClosing, and a Regex replace can be performed
-            // Above code should only have plain assignments, and non-assignment code should be placed below
-            textBoxBkUpDir.Text = GetDefaultPath(textBoxBkUpDir.Text, "BackupResx");
-			textBoxLogFolderPath.Text = GetDefaultPath(Settings.Default.textBoxLogFolderPath, "Log", Path.GetTempPath() + "ABetterTranslator");
-			if ( Int32.Parse(MaxThread.Text) < 0 )
-				MaxThread.Text = Math.Max(Environment.ProcessorCount, 4).ToString();
-            if ( comboBoxFromLanguage.SelectedIndex == -1)
-                comboBoxFromLanguage.SelectedIndex = comboBoxFromLang.SelectedIndex = comboBoxToLang.SelectedIndex = GetValid_codeBox_SelectIndex();
-            if ( SelectedLanguageSet > -1 )
-                PopulateLanguageSet((LanguageSet) SelectedLanguageSet);
-            // ToDo: Change how PopulateLanguageSet gets called.  It needs to come before setting the following three values, so they don't have to be reset again within this function.
-            comboBoxFromLang.SelectedIndex = Settings.Default.comboBoxFromLang;
-            comboBoxFromLanguage.SelectedIndex = Settings.Default.comboBoxFromLanguage;
-            comboBoxToLang.SelectedIndex = Settings.Default.comboBoxToLang;
-
-            if ( Settings.Default.languageList != null && Settings.Default.languageList.Count > 0 )
+            try
             {
-                ArrayList l = new ArrayList();
-                for ( int count = 0 ; count < languageList.GetItemCount() ; count++ )
+                // Miscellaneous values
+                Location = Settings.Default.WindowLocation;
+                Size = Settings.Default.WindowSize;
+                SelectedLanguageSet = Settings.Default.SelectedLanguageSet;
+
+                // text fields
+                inputBox.Text = Settings.Default.inputBox;
+                MaxThread.Text = Settings.Default.MaxThread;
+                MaxTranslateLen.Text = Settings.Default.MaxTranslateLen;
+                outputBox.Text = Settings.Default.outputBox;
+                textBoxBkUpDir.Text = Settings.Default.textBoxBkUpDir;
+                textBoxLogFolderPath.Text = Settings.Default.textBoxLogFolderPath;
+                textBoxTextToTranslate.Text = Settings.Default.textBoxTextToTranslate;
+
+                // checkbox settings
+                checkBoxBackupFilesBeforeTranslation.Checked = Settings.Default.checkBoxBackupFilesBeforeTranslation;
+                checkBoxDeleteLangResxFilesBeforeTranslation.Checked = Settings.Default.checkBoxDeleteLangResxFilesBeforeTranslation;
+                checkBoxDispalyWarningPrompts.Checked = Settings.Default.checkBoxDispalyWarningPrompts;
+
+                // comboboxes
+                comboBoxAddOriginalSrcTextToComment.SelectedIndex = Settings.Default.comboBoxAddOriginalSrcTextToComment;
+                comboBoxDefaultLanguageSet.SelectedIndex = Settings.Default.comboBoxDefaultLanguageSet;
+                comboBoxFromLang.SelectedIndex = Settings.Default.comboBoxFromLang;
+                comboBoxFromLanguage.SelectedIndex = Settings.Default.comboBoxFromLanguage;
+                comboBoxItemsPerTransaltionRequest.SelectedIndex = Settings.Default.comboBoxItemsPerTransaltionRequest;
+                comboBoxLogFileVerbosityLevel.SelectedIndex = Settings.Default.comboBoxLogFileVerbosityLevel;
+                comboBoxScreenVerbosityLevel.SelectedIndex = Settings.Default.comboBoxScreenVerbosityLevel;
+                comboBoxToLang.SelectedIndex = Settings.Default.comboBoxToLang;
+                tabs.SelectedIndex = Settings.Default.tabs;
+
+                // Keep above code clean so it can be copied and pasted between Load and FormClosing, and a Regex replace can be performed
+                // Above code should only have plain assignments, and non-assignment code should be placed below
+                textBoxBkUpDir.Text = GetDefaultPath(textBoxBkUpDir.Text, "BackupResx");
+                textBoxLogFolderPath.Text = GetDefaultPath(Settings.Default.textBoxLogFolderPath, "Log", Path.GetTempPath() + "ABetterTranslator");
+                if ( Int32.Parse(MaxThread.Text) < 0 )
+                    MaxThread.Text = Math.Max(Environment.ProcessorCount, 4).ToString();
+                if ( comboBoxFromLanguage.SelectedIndex == -1 )
+                    comboBoxFromLanguage.SelectedIndex = comboBoxFromLang.SelectedIndex = comboBoxToLang.SelectedIndex = GetValid_codeBox_SelectIndex();
+                if ( SelectedLanguageSet > -1 )
+                    PopulateLanguageSet((LanguageSet) SelectedLanguageSet);
+                // ToDo: Change how PopulateLanguageSet gets called.  It needs to come before setting the following three values, so they don't have to be reset again within this function.
+                comboBoxFromLang.SelectedIndex = Settings.Default.comboBoxFromLang;
+                comboBoxFromLanguage.SelectedIndex = Settings.Default.comboBoxFromLanguage;
+                comboBoxToLang.SelectedIndex = Settings.Default.comboBoxToLang;
+
+                if ( Settings.Default.languageList != null && Settings.Default.languageList.Count > 0 )
                 {
-                    ObjListVwRowDetails objlistvwrowdetails = (ObjListVwRowDetails) languageList.GetModelObject(count);
-                    if ( languageList.IsDisabled(objlistvwrowdetails) )
-                        continue;
-                    if (Settings.Default.languageList.Contains(objlistvwrowdetails.LanguageTag))
-                        l.Add(objlistvwrowdetails);
+                    ArrayList l = new ArrayList();
+                    for ( int count = 0 ; count < languageList.GetItemCount() ; count++ )
+                    {
+                        ObjListVwRowDetails objlistvwrowdetails = (ObjListVwRowDetails) languageList.GetModelObject(count);
+                        if ( languageList.IsDisabled(objlistvwrowdetails) )
+                            continue;
+                        if ( Settings.Default.languageList.Contains(objlistvwrowdetails.LanguageTag) )
+                            l.Add(objlistvwrowdetails);
+                    }
+                    languageList.CheckObjects(l);
                 }
-                languageList.CheckObjects(l);
+
+                _lastValueOf_inputBox = inputBox.Text;
+                if ( !string.IsNullOrEmpty(inputBox.Text) && !string.IsNullOrEmpty(outputBox.Text) )
+                    _wasOutputBoxADirectParentOfInputBox = Path.GetDirectoryName(inputBox.Text).Equals(outputBox.Text);
+                _ = CheckIfSrcResxHasAppendedLanguageToBaseFileName();
+                CreateLogFile();
+            }
+            catch(Exception ee)
+            {
+                LogToFile(ee.Message, VerbosityLevels.Errors, true);
             }
 
-            _lastValueOf_inputBox = inputBox.Text;
-            if ( !string.IsNullOrEmpty(inputBox.Text) && !string.IsNullOrEmpty(outputBox.Text) )
-                _wasOutputBoxADirectParentOfInputBox = Path.GetDirectoryName(inputBox.Text).Equals(outputBox.Text);
-            _ = CheckIfSrcResxHasAppendedLanguageToBaseFileName();
-            CreateLogFile();
-
-            if (!IsOnScreen(this) )
+            if ( !IsOnScreen(this) )
                 Location = new Point(0, 0);
             _isFormReady = true;
         }
