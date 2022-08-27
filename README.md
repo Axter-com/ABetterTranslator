@@ -11,7 +11,7 @@
 [![Windows](https://badgen.net/badge/icon/windows?icon=windows&label)](https://microsoft.com/windows/)
 
 
-Translates Resx files to over 130 different languages in list then 60 seconds.
+Translates Resx files to over 130 different languages in less then 60 seconds.
 
 ## What does it do?
 The GUI allows the user to select multiple languages from a list of over 130 different languages.
@@ -28,6 +28,19 @@ The code is optimized so that over 130 languages can be tranlsated in less then 
 -  [Max Threads](README.md#Max-Threads)
 -  [Max Translation Len](README.md#Max-Translation-Len)
 -  [Strings-Per-Translation-Req](README.md#Strings-Per-Translation-Req)
+-  [Dispaly Warning Prompts](README.md#Dispaly-Warning-Prompts)
+-  [Default Language Set](README.md#Default-Language-Set)
+-  [Delete Langugae Appended Resx Files](README.md#Delete-Langugae-Appended-Resx-Files)
+-  [Translated Resx Comments](README.md#Translated-Resx-Comments)
+-  [Delete Language Resx Files Before Translation](README.md#Delete-Language-ResxFiles-Before-Translation)
+-  [Backup Files Before Translation](README.md#Backup-Files-Before-Translation)
+-  [Backup Directory](README.md#Backup-Directory)
+-  [Screen Verbosity Level](README.md#Screen-Verbosity-Level)
+-  [Log File Verbosity Level](README.md#Log-File-Verbosity-Level)
+-  [Logging Directory](README.md#Logging-Directory)
+
+
+
 
 [Author](README.md#Author)
 
@@ -39,6 +52,7 @@ The code is optimized so that over 130 languages can be tranlsated in less then 
 #### Filter
 
 This option allows user to use keywords to find or filter the list to only items having the keyword(s).
+For example usage, see [Language Filter](README.md#Language-Filter)
 
 #### Sortable Language List
 
@@ -46,16 +60,21 @@ The list view has multiple columns, and the list can be sorted by any column by 
 
 #### Max Threads
 
-By default the programs uses the ProcessorCount to determine the maximum threads to use.  This options allows the end user to override that option.  The minimum value is 4, and the maximum value is 400.
+The number of threads to use when issuing translation request. The minimum (none negative) value is 4, and the maximum value is 400.
+If this value is set to -1, then the program will use the ProcessorCount to determine the maximum threads to use.
+
+Default: **-1**
 
 #### Max Translation Len
 
 The translation length is used when the program translates many strings in a single translation request.
-This value is set to 10000 by default.  The minimum value is 255, and the maximum value is 10,000.
+The minimum value is 255, and the maximum value is 10,000.
+
+Default: **10000**
 
 #### Strings-Per-Translation-Req
 
-This options determines if one string is used per Resx translation request, or if many strings are used per Resx translation request. The following are the possible options to select from the combobox window.
+Determines if one string is used per Resx translation request, or if many strings are used per Resx translation request. The following are the possible options to select.
 
 -  [Auto]
 
@@ -68,6 +87,63 @@ This options determines if one string is used per Resx translation request, or i
 -  [Multiple]
 
 		Multiple strings are sent per Resx translation request. This is the perferred option if total translation is less then 10,000 characters.
+
+Default: **Auto**
+
+
+#### Dispaly-Warning-Prompts
+
+Option to disable/enable warning prompts before files are deleted.
+
+Default: **Enabled**
+
+#### Default-Language-Set
+
+Determines the default set of languages to display on the language list.
+
+Default: **Windows 10/11 Language Pack**
+
+
+#### Delete-Langugae-Appended-Resx-Files
+
+Option to manually delete all Resx files which have an appended language tag in the name.
+
+
+#### Translated-Resx-Comments
+
+Default: **Do NOT change comments**
+
+
+#### Delete-Language-ResxFiles-Before-Translation
+
+Default: **todo_add_default_here**
+
+
+#### Backup-Files-Before-Translation
+
+Default: **todo_add_default_here**
+
+
+#### Backup-Directory
+
+Default: **todo_add_default_here**
+
+
+#### Screen-Verbosity-Level
+
+Default: **todo_add_default_here**
+
+
+#### Log-File-Verbosity-Level
+
+Default: **todo_add_default_here**
+
+
+#### Logging-Directory
+
+Default: **todo_add_default_here**
+
+
 
 
 ## Screenshots
