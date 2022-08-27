@@ -1,11 +1,11 @@
 # Translates Resx Resource Files
-Translates Resx files to over 160 different languages in list then 60 seconds.
+Translates Resx files to over 130 different languages in list then 60 seconds.
 
 ## What does it do?
 
-The GUI allows the user to select multiple languages from a list of over 160 different languages.
+The GUI allows the user to select multiple languages from a list of over 130 different languages.
 A file (Resx) is created for each language, with the associated language tag in the file name.
-The code is optimized so that over 160 translations can take less then 60 seconds. 
+The code is optimized so that over 130 translations can take less then 60 seconds. 
 ![](ABetterTranslator/Docs/screenshots/ABetterTranslatorScreenshot.png)
 
 # Content
