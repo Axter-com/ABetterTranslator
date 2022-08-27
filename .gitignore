@@ -27,9 +27,11 @@ x86/
 [Aa][Rr][Mm]64/
 bld/
 [Bb]in/
-[Oo]bj/
 [Ll]og/
 [Ll]ogs/
+# Commented out Obj because need some files in the obj folder for a successfull build
+# [Oo]bj/
+
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
@@ -351,3 +353,4 @@ MigrationBackup/
 
 # Other miscellaneous folders
 zzMiscellaneous/
+zzExcludeFromGithub/
