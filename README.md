@@ -22,7 +22,7 @@ The code is optimized so that over 130 languages can be tranlsated in less then 
 
 # Content
 
-[Features](README.md#Features)
+[Options](README.md#Options)
 -  [Filter](README.md#Filter)
 -  [Sortable Language List](README.md#Sortable-Language-List)
 -  [Max Threads](README.md#Max-Threads)
@@ -40,6 +40,15 @@ The code is optimized so that over 130 languages can be tranlsated in less then 
 -  [Logging Directory](README.md#Logging-Directory)
 
 
+[Screenshots](README.md#Screenshots)
+-  [Main Tab](README.md#Main-Tab)
+-  [Translate Text Tab](README.md#Translate-Text-Tab)
+-  [Advance Options Tab](README.md#Advance-Options-Tab)
+-  [Group Language Selection](README.md#Group-Language-Selection)
+-  [Language Display Set](README.md#Language-Display-Set)
+-  [Language Filter](README.md#Language-Filter)
+-  [Resizeable Window](README.md#Resizeable-Window)
+-  [Logging Tab](README.md#Logging-Tab)
 
 
 [Author](README.md#Author)
@@ -47,7 +56,7 @@ The code is optimized so that over 130 languages can be tranlsated in less then 
 [License](README.md#License)
 
 
-## Features
+## Options
 
 #### Filter
 
@@ -72,110 +81,120 @@ The minimum value is 255, and the maximum value is 10,000.
 
 Default: **10000**
 
-#### Strings-Per-Translation-Req
+#### Strings Per Translation Req
 
-Determines if one string is used per Resx translation request, or if many strings are used per Resx translation request. The following are the possible options to select.
+* Determines if one string is used per Resx translation request, or if many strings are used per Resx translation request. The following are the possible options to select.
 
--  [Auto]
+  * [Auto]
+    * This is the default option. It automatically sets the best method depending on the totoal number of strings and the maximum thread settings.
 
-		This is the default option. It automatically sets the best method depending on the totoal number of strings and the maximum thread settings.
+  * [One]
+    * Only one string is sent per Resx translation request. Use this option if any of the strings contains the {next-line} character.
 
--  [One]
+  * [Multiple]
+    * Multiple strings are sent per Resx translation request. This is the perferred option if total translation is less then 10,000 characters.
 
-		Only one string is sent per Resx translation request. Use this option if any of the strings contains the {next-line} character.
+* Default: **Auto**
 
--  [Multiple]
+#### Dispaly Warning Prompts
 
-		Multiple strings are sent per Resx translation request. This is the perferred option if total translation is less then 10,000 characters.
+* Option to disable/enable warning prompts before files are deleted.
 
-Default: **Auto**
+* Default: **Enabled**
 
-#### Dispaly-Warning-Prompts
+#### Default Language Set
 
-Option to disable/enable warning prompts before files are deleted.
+* Determines the default set of languages to display on the language list.
 
-Default: **Enabled**
+* Default: **Windows 10/11 Language Pack**
 
-#### Default-Language-Set
+#### Delete Langugae Appended Resx Files
 
-Determines the default set of languages to display on the language list.
+* Option to manually delete all Resx files which have an appended language tag in the name.
 
-Default: **Windows 10/11 Language Pack**
+#### Translated Resx Comments
 
-#### Delete-Langugae-Appended-Resx-Files
+* Use this option to save the original language string inside the translated Resx 
+  * **Do NOT change comments**
+    * Comments in Resx files are not modified.  Translated Resx file has same comments as original source Resx file.
+  * **If comment empty, set comment to original language text**
+    * If the comment field is empty, set the comment field to the string Text value of the original language.
+  * **Always set comments to original language text**
+    * Always sets the comment field to the string Text value of the original language.
+  * **Always append original language text to comments**
+    * Always append the comment field with the string Text value of the original language.
 
-Option to manually delete all Resx files which have an appended language tag in the name.
+* Default: **Do NOT change comments**
 
-#### Translated-Resx-Comments
+#### Delete Language ResxFiles Before Translation
 
-Default: **Do NOT change comments**
+* When enabled, deletes all Resx files having an appended language tag in the file name, before executing the translation.
 
-#### Delete-Language-ResxFiles-Before-Translation
+* Default: **Disabled**
 
-When enabled, deletes all Resx files having an appended language tag in the file name, before executing the translation.
+#### Backup Files Before Translation
 
-Default: **Disabled**
+* When enabled, backs up Resx files before executing the translation.
 
-#### Backup-Files-Before-Translation
+* Default: **Enabled**
 
-When enabled, backs up Resx files before executing the translation.
+#### Backup Directory
 
-Default: **Enabled**
+* The destination directory used to backup files.
 
-#### Backup-Directory
+* Default: **C:\Users\*[User-Name]*\AppData\Roaming\ABetterTranslator\ABetterTranslator\1.0.0\BackupResx**
 
-The destination directory used to backup files.
+#### Screen Verbosity Level
 
-Default: **C:\Users\*[User-Name]*\AppData\Roaming\ABetterTranslator\ABetterTranslator\1.0.0\BackupResx**
+* The verbosity level for output data going to the Logging-Tab window.
 
-#### Screen-Verbosity-Level
-
-The verbosity level for output data going to the Logging-Tab window.
-
-Default: **Normal**
+* Default: **Normal**
 
 
-#### Log-File-Verbosity-Level
+#### Log File Verbosity Level
 
-The verbosity level for output data going to the log file.
+* The verbosity level for output data going to the log file.
 
-Default: **Normal**
+* Default: **Normal**
 
-#### Logging-Directory
+#### Logging Directory
 
-The directory used for log files.
+* The directory used for log files.
 
-Default: **C:\Users\*[User-Name]*\AppData\Local\Temp\ABetterTranslator\Log**
-
+* Default: **C:\Users\*[User-Name]*\AppData\Local\Temp\ABetterTranslator\Log**
 
 
 ## Screenshots
 ### Main Tab
-![](ABetterTranslator/Docs/screenshots/ABetterTranslatorScreenshot.png)
+![](ABetterTranslator/Docs/screenshots/ABetterTranslatorScreenshot_(512_x_512).png)
 
 ### Translate Text Tab 
 #### This tab translates text on the fly as the user is typing.
-![](ABetterTranslator/Docs/screenshots/screenshot_translate_text_tab.png)
+![](ABetterTranslator/Docs/screenshots/screenshot_translate_text_tab_(512_x_512).png)
 
 ### Advance Options Tab
-![](ABetterTranslator/Docs/screenshots/screenshot_advance_options_tab.png)
+![](ABetterTranslator/Docs/screenshots/screenshot_advance_options_tab_(512_x_512).png)
 
 ### Group Language Selection
 #### The user can select groups of languages based on region, popularity, and business usage.
-![](ABetterTranslator/Docs/screenshots/screenshot_group_languages_selections.png)
+![](ABetterTranslator/Docs/screenshots/screenshot_group_languages_selections_(512_x_512).png)
 
 #### The selections for top spoken languages, are based on 2022 statistics.
 
 ### Language Display Set
-![](ABetterTranslator/Docs/screenshots/screenshot_LanguageDisplaySetSelection.png)
+![](ABetterTranslator/Docs/screenshots/screenshot_LanguageDisplaySetSelection_(512_x_512).png)
 
 ### Language Filter
 #### The language list can displays well over 130 different languages. To help quickly find a language, the GUI has a filter field.
-![](ABetterTranslator/Docs/screenshots/screenshot_language_filter_usage.png)
+![](ABetterTranslator/Docs/screenshots/screenshot_language_filter_usage_(512_x_512).png)
 
 ### Resizeable Window
 #### The program window can be shrunk or expanded to user's preferred size.
-![](ABetterTranslator/Docs/screenshots/screenshot_ABetterTranslator_long_window.png)
+![](ABetterTranslator/Docs/screenshots/screenshot_ABetterTranslator_long_window_(512_x_1600).png)
+
+### Logging Tab
+#### When a translation is executed, the screen logging tab is displayed, which shows translation progress and any translation errors.
+![](ABetterTranslator/Docs/screenshots/LoggingTab_(512_x_512).png)
 
 
 # Author
