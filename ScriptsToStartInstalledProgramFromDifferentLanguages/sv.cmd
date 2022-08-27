@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\ABetterTranslator\ABetterTranslator.exe" -l %~n0

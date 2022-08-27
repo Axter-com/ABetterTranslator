@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Translate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Translate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BusinessTranslation__64_x_64_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\BusinessTranslation_(64_x_64).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Checkbox_3D__64_x_64_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Checkbox_3D_(64_x_64).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChecklistPaper__64_x_64_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ChecklistPaper_(64_x_64).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ISO_InWorld__64_x_64_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ISO_InWorld_(64_x_64).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ISO_World__64_x_64_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ISO_World_(64_x_64).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlayButton__64_x_64_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\PlayButton_(64_x_64).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StopButton__64_x_64_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\StopButton_(64_x_64).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TranslateWhiteBlueAndRed__64_x_64_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\TranslateWhiteBlueAndRed_(64_x_64).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TranslateWhiteBlueGrey__64_x_64_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\TranslateWhiteBlueGrey_(64_x_64).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TranslateWorld2__64_x_64_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\TranslateWorld2_(64_x_64).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TranslateWorld3__64_x_64_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\TranslateWorld3_(64_x_64).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TranslateWorld4__64_x_64_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\TranslateWorld4_(64_x_64).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TranslateWorld__64_x_64_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\TranslateWorld_(64_x_64).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Translation2__64_x_64_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Translation2_(64_x_64).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Translation3__64_x_64_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Translation3_(64_x_64).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Translation4__64_x_64_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Translation4_(64_x_64).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Translation5__64_x_64_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Translation5_(64_x_64).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Translation6__64_x_64_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Translation6_(64_x_64).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Translation7_100__64_x_64_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Translation7-100_(64_x_64).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Translation8__64_x_64_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Translation8_(64_x_64).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TranslationBlue__64_x_64_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\TranslationBlue_(64_x_64).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TranslationSettingsTranslationManagement__64_x_64_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\TranslationSettingsTranslationManagement_(64_x_64).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TranslationSettings__64_x_64_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\TranslationSettings_(64_x_64).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Translation_Top20__64_x_64_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Translation_Top20_(64_x_64).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Translation_Top5__64_x_64_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Translation_Top5_(64_x_64).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WindowsLogoInCircle__64_x_64_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\WindowsLogoInCircle_(64_x_64).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Windows_icon_64x64_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Windows-icon(64x64).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Windows_Media_Player_icon__64x64_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Windows-Media-Player-icon_(64x64).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Windows__64_x_64_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Windows_(64_x_64).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Translation_Top10__64_x_64_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Translation_Top10_(64_x_64).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Translation_Top30__64_x_64_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Translation_Top30_(64_x_64).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MiddleEast__64_x_64_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\MiddleEast_(64_x_64).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Africa_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Africa-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Asia_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Asia-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EuropeBlue__64_x_64_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\EuropeBlue_(64_x_64).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NorthAmericaWithUS_HighLight__64_x_64_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\NorthAmericaWithUS_HighLight_(64_x_64).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SouthAmericaBlue__64_x_64_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\SouthAmericaBlue_(64_x_64).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SouthAmericaInColor__64_x_64_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\SouthAmericaInColor_(64_x_64).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="erase" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\erase.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_language_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-language-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_language_64_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-language-64(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_translate_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-translate-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TranslateOrangeCircle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\TranslateOrangeCircle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TranslateOrangeCircle_65" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\TranslateOrangeCircle-65.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="browseFileButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\browseFileButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Translation4__16_x_16_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Translation4_(16_x_16).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Translation4__32_x_32_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Translation4_(32_x_32).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FileExplorer_96__16_x_16_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FileExplorer-96_(16_x_16).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WindowsAnd_ISO_Languages__64_x_64_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\WindowsAnd_ISO_Languages_(64_x_64).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cancel__16_x_16_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Cancel_(16_x_16).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StopButton__16_x_16_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\StopButton_(16_x_16).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TranslateOrangeCircle__256_x_256_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\TranslateOrangeCircle_(256_x_256).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TranslateOrangeCircle__512_x_512_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\TranslateOrangeCircle_(512_x_512).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

@@ -39,7 +39,7 @@
     <Content Include="Logo2.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\TranslationAutomated\Images\Logo.png">
+    <None Include="..\ABetterTranslator\Images\Logo.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
