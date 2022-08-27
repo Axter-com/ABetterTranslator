@@ -5,7 +5,7 @@ Translates Resx files to over 160 different languages in list then 60 seconds.
 The GUI allows the user to select multiple languages from a list of over 160 different languages.
 A file (Resx) is created for each language, with the associated language tag in the file name.
 The code is optimized so that over 160 translations can take less then 60 seconds. 
-![](ABetterTranslator/Docs/screenshots/ABetterTranslatorScreenshot.png)
+![](ABetterTranslator/Docs/screenshots/ABetterTranslatorScreenshot_(512_x_512).png)
 
 
 # Content
