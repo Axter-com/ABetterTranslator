@@ -22,9 +22,14 @@ The code is optimized so that over 130 languages can be tranlsated in less then 
 
 # Content
 
-[Options](README.md#Options)
+[Features](README.md#Options)
 -  [Filter](README.md#Filter)
 -  [Sortable Language List](README.md#Sortable-Language-List)
+-  [Resizeable Program Window](README.md#Resizeable-Program-Window)
+-  [Last Session Data Retension](README.md#Last-Session-Data-Retension)
+-  [Screen Logging](README.md#Screen-Logging)
+
+[Options](README.md#Options)
 -  [Max Threads](README.md#Max-Threads)
 -  [Max Translation Len](README.md#Max-Translation-Len)
 -  [Strings-Per-Translation-Req](README.md#Strings-Per-Translation-Req)
@@ -38,7 +43,6 @@ The code is optimized so that over 130 languages can be tranlsated in less then 
 -  [Screen Verbosity Level](README.md#Screen-Verbosity-Level)
 -  [Log File Verbosity Level](README.md#Log-File-Verbosity-Level)
 -  [Logging Directory](README.md#Logging-Directory)
-
 
 [Screenshots](README.md#Screenshots)
 -  [Main Tab](README.md#Main-Tab)
@@ -56,7 +60,7 @@ The code is optimized so that over 130 languages can be tranlsated in less then 
 [License](README.md#License)
 
 
-## Options
+## Features
 
 #### Filter
 
@@ -66,6 +70,27 @@ For example usage, see [Language Filter](README.md#Language-Filter)
 #### Sortable Language List
 
 The list view has multiple columns, and the list can be sorted by any column by clicking on the column header.
+
+#### Resizeable Program Window
+
+The main program window is resizeable.
+
+#### Last Session Data Retension
+
+* The program loads with the settings from the last session. 
+  * Window size and position
+  * User selected options in the Advanced Option tab
+  * The last Language Set displayed.
+  * Source Resx
+  * Output Folder
+  * Languages selected (checked)
+
+#### Screen Logging
+
+When a translation is executed, the Screen-Logging-Tab is displayed, which list the translation progress.
+
+
+## Options
 
 #### Max Threads
 
