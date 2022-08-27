@@ -76,7 +76,7 @@ Translate text using multiple translation services.
 
 Supports over 130 languages, with more to come.
 
-For more details see [Supported Languages](ABetterTranslator\Docs\Help\README.md#Supported-Languages)
+For more details see [Supported Languages](ABetterTranslator\Docs\SupportedLanguages\README.md#Supported-Languages)
 
 
 #### Filter
