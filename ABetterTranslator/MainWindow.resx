@@ -392,10 +392,10 @@
     <value>7</value>
   </data>
   <data name="groupBoxItemsPerTransaltionRequest.Text" xml:space="preserve">
-    <value>Items Per Translation Req</value>
+    <value>Strings Per Translation Req</value>
   </data>
   <data name="groupBoxItemsPerTransaltionRequest.ToolTip" xml:space="preserve">
-    <value>Items per Translation Request</value>
+    <value>Strings per Translation Request</value>
   </data>
   <data name="&gt;&gt;groupBoxItemsPerTransaltionRequest.Name" xml:space="preserve">
     <value>groupBoxItemsPerTransaltionRequest</value>

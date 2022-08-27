@@ -121,4 +121,8 @@
     </None>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Docs\NewFolder\" />
+  </ItemGroup>
+
 </Project>
