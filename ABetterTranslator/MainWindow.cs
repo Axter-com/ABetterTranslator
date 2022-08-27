@@ -2240,5 +2240,105 @@ namespace ABetterTranslator
         {
             CreateLogFile();
         }
+
+        #region Help Links
+        public void OpenUrl(string url)
+        {
+            try
+            {
+                Process.Start(url);
+            }
+            catch
+            {
+                // hack because of this: https://github.com/dotnet/corefx/issues/10361
+                if ( RuntimeInformation.IsOSPlatform(OSPlatform.Windows) )
+                {
+                    url = url.Replace("&", "^&");
+                    Process.Start(new ProcessStartInfo(url) { UseShellExecute = true });
+                }
+                else if ( RuntimeInformation.IsOSPlatform(OSPlatform.Linux) )
+                {
+                    Process.Start("xdg-open", url);
+                }
+                else if ( RuntimeInformation.IsOSPlatform(OSPlatform.OSX) )
+                {
+                    Process.Start("open", url);
+                }
+                else
+                {
+                    throw;
+                }
+            }
+        }
+        private void linkLabelFilterText_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            OpenUrl("https://github.com/David-Maisonave/ABetterTranslator#Filter");
+        }
+
+        private void linkLabelcheckBoxDispalyWarningPrompts_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            OpenUrl("https://github.com/David-Maisonave/ABetterTranslator#Dispaly-Warning-Prompts");
+        }
+
+        private void linkLabelDefaultLanguageSet_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            OpenUrl("https://github.com/David-Maisonave/ABetterTranslator#Default-Language-Set");
+        }
+
+        private void linkLabelDeleteLangAppendedResxFiles_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            OpenUrl("https://github.com/David-Maisonave/ABetterTranslator#Delete-Langugae-Appended-Resx-Files");
+        }
+
+        private void linkLabelAddOriginalSrcTextToComment_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            OpenUrl("https://github.com/David-Maisonave/ABetterTranslator#Translated-Resx-Comments");
+        }
+
+        private void linkLabelDeleteLangResxFilesBeforeTranslation_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            OpenUrl("https://github.com/David-Maisonave/ABetterTranslator#Delete-Language-ResxFiles-Before-Translation");
+        }
+
+        private void linkLabelBackupFilesBeforeTranslation_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            OpenUrl("https://github.com/David-Maisonave/ABetterTranslator#Backup-Files-Before-Translation");
+        }
+
+        private void linkLabelBkUpDir_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            OpenUrl("https://github.com/David-Maisonave/ABetterTranslator#Backup-Directory");
+        }
+
+        private void linkLabelMaxThreads_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            OpenUrl("https://github.com/David-Maisonave/ABetterTranslator#Max-Threads");
+        }
+
+        private void linkLabelMaxTranslateLen_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            OpenUrl("https://github.com/David-Maisonave/ABetterTranslator#Max-Translation-Len");
+        }
+
+        private void linkLabelItemsPerTransaltionRequest_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            OpenUrl("https://github.com/David-Maisonave/ABetterTranslator#Strings-Per-Translation-Req");
+        }
+
+        private void linkLabelScreenVerbosityLevel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            OpenUrl("https://github.com/David-Maisonave/ABetterTranslator#Screen-Verbosity-Level");
+        }
+
+        private void linkLabelLogFileVerbosityLevel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            OpenUrl("https://github.com/David-Maisonave/ABetterTranslator#Log-File-Verbosity-Level");
+        }
+
+        private void linkLabelLogFolderPath_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            OpenUrl("https://github.com/David-Maisonave/ABetterTranslator#Logging-Directory");
+        }
+        #endregion Help Links
     }
 }

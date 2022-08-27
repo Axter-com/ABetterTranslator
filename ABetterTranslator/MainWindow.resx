@@ -1334,7 +1334,7 @@
     <value>6</value>
   </data>
   <data name="MaxThread.Text" xml:space="preserve">
-    <value>-0</value>
+    <value>-1</value>
   </data>
   <data name="&gt;&gt;MaxThread.Name" xml:space="preserve">
     <value>MaxThread</value>

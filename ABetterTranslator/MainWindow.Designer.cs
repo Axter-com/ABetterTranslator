@@ -223,6 +223,7 @@ namespace ABetterTranslator
             this.linkLabelcheckBoxDispalyWarningPrompts.Name = "linkLabelcheckBoxDispalyWarningPrompts";
             this.linkLabelcheckBoxDispalyWarningPrompts.TabStop = true;
             this.toolTip.SetToolTip(this.linkLabelcheckBoxDispalyWarningPrompts, resources.GetString("linkLabelcheckBoxDispalyWarningPrompts.ToolTip"));
+            this.linkLabelcheckBoxDispalyWarningPrompts.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelcheckBoxDispalyWarningPrompts_LinkClicked);
             // 
             // browseLogFolderPath
             // 
@@ -238,6 +239,7 @@ namespace ABetterTranslator
             this.linkLabelLogFolderPath.Name = "linkLabelLogFolderPath";
             this.linkLabelLogFolderPath.TabStop = true;
             this.toolTip.SetToolTip(this.linkLabelLogFolderPath, resources.GetString("linkLabelLogFolderPath.ToolTip"));
+            this.linkLabelLogFolderPath.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelLogFolderPath_LinkClicked);
             // 
             // linkLabelLogFileVerbosityLevel
             // 
@@ -245,6 +247,7 @@ namespace ABetterTranslator
             this.linkLabelLogFileVerbosityLevel.Name = "linkLabelLogFileVerbosityLevel";
             this.linkLabelLogFileVerbosityLevel.TabStop = true;
             this.toolTip.SetToolTip(this.linkLabelLogFileVerbosityLevel, resources.GetString("linkLabelLogFileVerbosityLevel.ToolTip"));
+            this.linkLabelLogFileVerbosityLevel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelLogFileVerbosityLevel_LinkClicked);
             // 
             // linkLabelScreenVerbosityLevel
             // 
@@ -252,6 +255,7 @@ namespace ABetterTranslator
             this.linkLabelScreenVerbosityLevel.Name = "linkLabelScreenVerbosityLevel";
             this.linkLabelScreenVerbosityLevel.TabStop = true;
             this.toolTip.SetToolTip(this.linkLabelScreenVerbosityLevel, resources.GetString("linkLabelScreenVerbosityLevel.ToolTip"));
+            this.linkLabelScreenVerbosityLevel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelScreenVerbosityLevel_LinkClicked);
             // 
             // buttonOpenLoggingFolderInFileExplorer
             // 
@@ -277,6 +281,7 @@ namespace ABetterTranslator
             this.linkLabelItemsPerTransaltionRequest.Name = "linkLabelItemsPerTransaltionRequest";
             this.linkLabelItemsPerTransaltionRequest.TabStop = true;
             this.toolTip.SetToolTip(this.linkLabelItemsPerTransaltionRequest, resources.GetString("linkLabelItemsPerTransaltionRequest.ToolTip"));
+            this.linkLabelItemsPerTransaltionRequest.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelItemsPerTransaltionRequest_LinkClicked);
             // 
             // comboBoxItemsPerTransaltionRequest
             // 
@@ -294,6 +299,7 @@ namespace ABetterTranslator
             this.linkLabelMaxTranslateLen.Name = "linkLabelMaxTranslateLen";
             this.linkLabelMaxTranslateLen.TabStop = true;
             this.toolTip.SetToolTip(this.linkLabelMaxTranslateLen, resources.GetString("linkLabelMaxTranslateLen.ToolTip"));
+            this.linkLabelMaxTranslateLen.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelMaxTranslateLen_LinkClicked);
             // 
             // linkLabelMaxThreads
             // 
@@ -301,6 +307,7 @@ namespace ABetterTranslator
             this.linkLabelMaxThreads.Name = "linkLabelMaxThreads";
             this.linkLabelMaxThreads.TabStop = true;
             this.toolTip.SetToolTip(this.linkLabelMaxThreads, resources.GetString("linkLabelMaxThreads.ToolTip"));
+            this.linkLabelMaxThreads.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelMaxThreads_LinkClicked);
             // 
             // checkBoxDeleteLangResxFilesBeforeTranslation
             // 
@@ -324,6 +331,7 @@ namespace ABetterTranslator
             this.linkLabelAddOriginalSrcTextToComment.Name = "linkLabelAddOriginalSrcTextToComment";
             this.linkLabelAddOriginalSrcTextToComment.TabStop = true;
             this.toolTip.SetToolTip(this.linkLabelAddOriginalSrcTextToComment, resources.GetString("linkLabelAddOriginalSrcTextToComment.ToolTip"));
+            this.linkLabelAddOriginalSrcTextToComment.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelAddOriginalSrcTextToComment_LinkClicked);
             // 
             // comboBoxAddOriginalSrcTextToComment
             // 
@@ -342,6 +350,7 @@ namespace ABetterTranslator
             this.linkLabelDeleteLangResxFilesBeforeTranslation.Name = "linkLabelDeleteLangResxFilesBeforeTranslation";
             this.linkLabelDeleteLangResxFilesBeforeTranslation.TabStop = true;
             this.toolTip.SetToolTip(this.linkLabelDeleteLangResxFilesBeforeTranslation, resources.GetString("linkLabelDeleteLangResxFilesBeforeTranslation.ToolTip"));
+            this.linkLabelDeleteLangResxFilesBeforeTranslation.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelDeleteLangResxFilesBeforeTranslation_LinkClicked);
             // 
             // linkLabelBackupFilesBeforeTranslation
             // 
@@ -349,6 +358,7 @@ namespace ABetterTranslator
             this.linkLabelBackupFilesBeforeTranslation.Name = "linkLabelBackupFilesBeforeTranslation";
             this.linkLabelBackupFilesBeforeTranslation.TabStop = true;
             this.toolTip.SetToolTip(this.linkLabelBackupFilesBeforeTranslation, resources.GetString("linkLabelBackupFilesBeforeTranslation.ToolTip"));
+            this.linkLabelBackupFilesBeforeTranslation.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelBackupFilesBeforeTranslation_LinkClicked);
             // 
             // browseBkUpDirFolderButton
             // 
@@ -364,6 +374,7 @@ namespace ABetterTranslator
             this.linkLabelBkUpDir.Name = "linkLabelBkUpDir";
             this.linkLabelBkUpDir.TabStop = true;
             this.toolTip.SetToolTip(this.linkLabelBkUpDir, resources.GetString("linkLabelBkUpDir.ToolTip"));
+            this.linkLabelBkUpDir.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelBkUpDir_LinkClicked);
             // 
             // groupBoxDefaultLanguageSet
             // 
@@ -393,6 +404,7 @@ namespace ABetterTranslator
             this.linkLabelDefaultLanguageSet.Name = "linkLabelDefaultLanguageSet";
             this.linkLabelDefaultLanguageSet.TabStop = true;
             this.toolTip.SetToolTip(this.linkLabelDefaultLanguageSet, resources.GetString("linkLabelDefaultLanguageSet.ToolTip"));
+            this.linkLabelDefaultLanguageSet.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelDefaultLanguageSet_LinkClicked);
             // 
             // buttonDeleteLangAppendedResxFiles
             // 
@@ -408,6 +420,7 @@ namespace ABetterTranslator
             this.linkLabelDeleteLangAppendedResxFiles.Name = "linkLabelDeleteLangAppendedResxFiles";
             this.linkLabelDeleteLangAppendedResxFiles.TabStop = true;
             this.toolTip.SetToolTip(this.linkLabelDeleteLangAppendedResxFiles, resources.GetString("linkLabelDeleteLangAppendedResxFiles.ToolTip"));
+            this.linkLabelDeleteLangAppendedResxFiles.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelDeleteLangAppendedResxFiles_LinkClicked);
             // 
             // buttonInAdvOpt_OpenFolderInWindowsExplorer
             // 
@@ -762,6 +775,7 @@ namespace ABetterTranslator
             resources.ApplyResources(this.linkLabelFilterText, "linkLabelFilterText");
             this.linkLabelFilterText.Name = "linkLabelFilterText";
             this.linkLabelFilterText.TabStop = true;
+            this.linkLabelFilterText.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelFilterText_LinkClicked);
             // 
             // languageList
             // 
