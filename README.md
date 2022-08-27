@@ -11,7 +11,7 @@
 [![Windows](https://badgen.net/badge/icon/windows?icon=windows&label)](https://microsoft.com/windows/)
 
 
-Translates Resx files to over 130 different languages in list then 60 seconds.
+Translates Resx files to over 130 different languages in less then 60 seconds.
 
 ## What does it do?
 The GUI allows the user to select multiple languages from a list of over 130 different languages.
