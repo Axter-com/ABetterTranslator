@@ -4,7 +4,7 @@ Translates Resx files to over 160 different languages in list then 60 seconds.
 ## What does it do?
 The GUI allows the user to select multiple languages from a list of over 160 different languages.
 A file (Resx) is created for each language, with the associated language tag in the file name.
-The code is optimized so that over 160 translations can take less then 60 seconds. 
+The code is optimized so that over 160 languages can be tranlsated in less then 60 seconds. 
 ![](ABetterTranslator/Docs/screenshots/ABetterTranslatorScreenshot_(512_x_512).png)
 
 
@@ -59,8 +59,34 @@ This options determines if one file is used per translation request, or if many 
 		Multiple files are sent per translation request. This is the perferred option if the files are all in either the source language or the target language.
 
 
-## Option Window Screenshot
+## Screenshots
+### Main Tab
 ![](ABetterTranslator/Docs/screenshots/ABetterTranslatorScreenshot.png)
+
+### Translate Text Tab 
+#### This tab translates text on the fly as the user is typing.
+![](ABetterTranslator/Docs/screenshots/screenshot_translate_text_tab.png)
+
+### Advance Options Tab
+![](ABetterTranslator/Docs/screenshots/screenshot_advance_options_tab.png)
+
+### Group Language Selection
+#### The user can select groups of languages based on region, popularity, and business usage.
+![](ABetterTranslator/Docs/screenshots/screenshot_group_languages_selections.png)
+
+#### The selections for top spoken languages, are based on 2022 statistics.
+
+### Language Display Set
+![](ABetterTranslator/Docs/screenshots/screenshot_LanguageDisplaySetSelection.png)
+
+### Language Filter
+#### The language list can displays well over 160 different languages. To help quickly find a language, the GUI has a filter field.
+![](ABetterTranslator/Docs/screenshots/screenshot_language_filter_usage.png)
+
+### Resizeable Window
+#### The program window can be shrunk or expanded to user's preferred size.
+![](ABetterTranslator/Docs/screenshots/screenshot_ABetterTranslator_long_window.png)
+
 
 # Author
 
