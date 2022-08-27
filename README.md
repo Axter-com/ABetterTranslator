@@ -23,6 +23,8 @@ The code is optimized so that over 130 languages can be tranlsated in less then 
 # Content
 
 [Features](README.md#Options)
+-  [Multiple Translation Services](README.md#Multiple-Translation-Services)
+-  [Supported Languages](README.md#Supported-Languages)
 -  [Filter](README.md#Filter)
 -  [Sortable Language List](README.md#Sortable-Language-List)
 -  [Resizeable Program Window](README.md#Resizeable-Program-Window)
@@ -51,8 +53,8 @@ The code is optimized so that over 130 languages can be tranlsated in less then 
 -  [Group Language Selection](README.md#Group-Language-Selection)
 -  [Language Display Set](README.md#Language-Display-Set)
 -  [Language Filter](README.md#Language-Filter)
--  [Resizeable Window](README.md#Resizeable-Window)
 -  [Logging Tab](README.md#Logging-Tab)
+-  [Resizeable Window](README.md#Resizeable-Window)
 
 
 [Author](README.md#Author)
@@ -61,6 +63,21 @@ The code is optimized so that over 130 languages can be tranlsated in less then 
 
 
 ## Features
+
+#### Multiple Translation Services
+
+Translate text using multiple translation services.
+* Google Translate
+* Microsoft Azure Translator
+* Bing Translator
+* Yandex Translate
+
+#### Supported Languages
+
+Supports over 130 languages, with more to come.
+
+For more details see [Supported Languages](ABetterTranslator\Docs\Help\README.md#Supported-Languages)
+
 
 #### Filter
 
@@ -73,7 +90,7 @@ The list view has multiple columns, and the list can be sorted by any column by 
 
 #### Resizeable Program Window
 
-The main program window is resizeable.
+The main program window is resizeable. See [Resizeable Window](README.md#Resizeable-Window)
 
 #### Last Session Data Retension
 
@@ -88,6 +105,7 @@ The main program window is resizeable.
 #### Screen Logging
 
 When a translation is executed, the Screen-Logging-Tab is displayed, which list the translation progress.
+See [Logging Tab](README.md#Logging-Tab)
 
 
 ## Options
@@ -213,13 +231,13 @@ Default: **10000**
 #### The language list can displays well over 130 different languages. To help quickly find a language, the GUI has a filter field.
 ![](ABetterTranslator/Docs/screenshots/screenshot_language_filter_usage_(512_x_512).png)
 
-### Resizeable Window
-#### The program window can be shrunk or expanded to user's preferred size.
-![](ABetterTranslator/Docs/screenshots/screenshot_ABetterTranslator_long_window_(512_x_1600).png)
-
 ### Logging Tab
 #### When a translation is executed, the screen logging tab is displayed, which shows translation progress and any translation errors.
 ![](ABetterTranslator/Docs/screenshots/LoggingTab_(512_x_512).png)
+
+### Resizeable Window
+#### The program window can be shrunk or expanded to user's preferred size.
+![](ABetterTranslator/Docs/screenshots/screenshot_ABetterTranslator_long_window_(512_x_1600).png)
 
 
 # Author

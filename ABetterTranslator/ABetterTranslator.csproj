@@ -67,6 +67,9 @@
     <EmbeddedResource Include="..\$(TargetName).Translations\*.resx">
 		<ManifestResourceName>$(TargetName).%(Filename)</ManifestResourceName>
     </EmbeddedResource>
+    <Compile Remove="Docs\NewFolder\**" />
+    <EmbeddedResource Remove="Docs\NewFolder\**" />
+    <None Remove="Docs\NewFolder\**" />
     <EmbeddedResource Remove="..\ABetterTranslator.Translations\MainWindow.ay.resx" />
     <EmbeddedResource Remove="..\ABetterTranslator.Translations\MainWindow.bho.resx" />
     <EmbeddedResource Remove="..\ABetterTranslator.Translations\MainWindow.cv.resx" />
@@ -119,10 +122,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Docs\NewFolder\" />
   </ItemGroup>
 
 </Project>
