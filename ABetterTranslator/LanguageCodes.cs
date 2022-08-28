@@ -268,7 +268,7 @@ namespace ABetterTranslator
             {"tr-TR", "Turkish"},                        // Turkish(Turkey)  :  
             {"uk-UA", "Ukrainian"},                     // Ukrainian(Ukraine)  :  
             {"vi-VN", "Vietnamese"},                             // Vietnamese  :
-            {"zh-CN",  "Chinese (Simplified)"},
+            {"zh-CN",  "Chinese (Simplified)"},         //
 			#endregion Windows10Plus_LanguagePacks
 		};
         //	Windows10Plus_LanguageInterfacePacks source: https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/available-language-packs-for-windows?view=windows-11 
