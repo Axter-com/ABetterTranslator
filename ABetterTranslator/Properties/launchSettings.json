@@ -1,8 +1,7 @@
 {
   "profiles": {
     "ABetterTranslator": {
-      "commandName": "Project",
-      "commandLineArgs": "-l ty"
+      "commandName": "Project"
     }
   }
 }

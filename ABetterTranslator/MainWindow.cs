@@ -38,6 +38,7 @@ namespace ABetterTranslator
     using Windows.UI.ViewManagement;
     using static System.Windows.Forms.Design.AxImporter;
     using Microsoft.VisualBasic.Devices;
+    using Windows.Globalization;
 
 	public partial class MainWindow : Form
 	{
@@ -86,7 +87,7 @@ namespace ABetterTranslator
         private List<string[,]> LanguageSets = new();
         private List<string> _languagesInList = new();
         private LanguageServiceDetails languagedictionary = new ();
-        private readonly IReadOnlyDictionary<string, Language> GTranslate_LangLookup;
+        private readonly IReadOnlyDictionary<string, GTranslate.Language> GTranslate_LangLookup;
         private string _lastTextToTranslate_value = "";
         private bool _doSendErrMsgOnTranslateTextError = false;
         private bool _isFormReady = false;
@@ -363,6 +364,7 @@ namespace ABetterTranslator
 
 			LockControls(false);
 			statusLabel.Visible = false;
+            PopulateComboBoxLanguage();
         }
         [ConditionalAttribute("DEBUG")]
         private void ValidateLanguageSets()
@@ -773,81 +775,95 @@ namespace ABetterTranslator
 
             return false;
         }
+        private void textBoxLogFolderPath_TextChanged(object sender, EventArgs e)
+        {
+            CreateLogFile();
+        }
         #endregion Class constructor and miscellaneous methods
 
         #region Load and Save method for persistent user inputs
         private void MainWindow_Load(object sender, EventArgs e)
 		{
-            if ( ModifierKeys == Keys.Shift )
-                return;
+            if ( ModifierKeys != Keys.Shift )
+            {
+                try
+                {
+                    // Miscellaneous values
+                    Location = Settings.Default.WindowLocation;
+                    Size = Settings.Default.WindowSize;
+                    SelectedLanguageSet = Settings.Default.SelectedLanguageSet;
+
+                    // text fields
+                    inputBox.Text = Settings.Default.inputBox;
+                    MaxThread.Text = Settings.Default.MaxThread;
+                    MaxTranslateLen.Text = Settings.Default.MaxTranslateLen;
+                    outputBox.Text = Settings.Default.outputBox;
+                    textBoxBkUpDir.Text = Settings.Default.textBoxBkUpDir;
+                    textBoxLogFolderPath.Text = Settings.Default.textBoxLogFolderPath;
+                    textBoxTextToTranslate.Text = Settings.Default.textBoxTextToTranslate;
+
+                    // checkbox settings
+                    checkBoxBackupFilesBeforeTranslation.Checked = Settings.Default.checkBoxBackupFilesBeforeTranslation;
+                    checkBoxDeleteLangResxFilesBeforeTranslation.Checked = Settings.Default.checkBoxDeleteLangResxFilesBeforeTranslation;
+                    checkBoxDispalyWarningPrompts.Checked = Settings.Default.checkBoxDispalyWarningPrompts;
+
+                    // comboboxes
+                    comboBoxAddOriginalSrcTextToComment.SelectedIndex = Settings.Default.comboBoxAddOriginalSrcTextToComment;
+                    comboBoxDefaultLanguageSet.SelectedIndex = Settings.Default.comboBoxDefaultLanguageSet;
+                    comboBoxFromLang.SelectedIndex = Settings.Default.comboBoxFromLang;
+                    comboBoxFromLanguage.SelectedIndex = Settings.Default.comboBoxFromLanguage;
+                    comboBoxItemsPerTransaltionRequest.SelectedIndex = Settings.Default.comboBoxItemsPerTransaltionRequest;
+                    comboBoxLogFileVerbosityLevel.SelectedIndex = Settings.Default.comboBoxLogFileVerbosityLevel;
+                    comboBoxScreenVerbosityLevel.SelectedIndex = Settings.Default.comboBoxScreenVerbosityLevel;
+                    comboBoxToLang.SelectedIndex = Settings.Default.comboBoxToLang;
+                    tabs.SelectedIndex = Settings.Default.tabs;
+
+                    // Keep above code clean so it can be copied and pasted between Load and FormClosing, and a Regex replace can be performed
+                    // Above code should only have plain assignments, and non-assignment code should be placed below
+                    textBoxBkUpDir.Text = GetDefaultPath(textBoxBkUpDir.Text, "BackupResx");
+                    textBoxLogFolderPath.Text = GetDefaultPath(Settings.Default.textBoxLogFolderPath, "Log", Path.GetTempPath() + "ABetterTranslator");
+                    if ( Int32.Parse(MaxThread.Text) < 0 )
+                        MaxThread.Text = Math.Max(Environment.ProcessorCount, 4).ToString();
+                    if ( comboBoxFromLanguage.SelectedIndex == -1 )
+                        comboBoxFromLanguage.SelectedIndex = comboBoxFromLang.SelectedIndex = comboBoxToLang.SelectedIndex = GetValid_codeBox_SelectIndex();
+                    if ( SelectedLanguageSet > -1 )
+                        PopulateLanguageSet((LanguageSet) SelectedLanguageSet);
+                    // ToDo: Change how PopulateLanguageSet gets called.  It needs to come before setting the following three values, so they don't have to be reset again within this function.
+                    comboBoxFromLang.SelectedIndex = Settings.Default.comboBoxFromLang;
+                    comboBoxFromLanguage.SelectedIndex = Settings.Default.comboBoxFromLanguage;
+                    comboBoxToLang.SelectedIndex = Settings.Default.comboBoxToLang;
+
+                    if ( Settings.Default.languageList != null && Settings.Default.languageList.Count > 0 )
+                    {
+                        ArrayList l = new ArrayList();
+                        for ( int count = 0 ; count < languageList.GetItemCount() ; count++ )
+                        {
+                            ObjListVwRowDetails objlistvwrowdetails = (ObjListVwRowDetails) languageList.GetModelObject(count);
+                            if ( languageList.IsDisabled(objlistvwrowdetails) )
+                                continue;
+                            if ( Settings.Default.languageList.Contains(objlistvwrowdetails.LanguageTag) )
+                                l.Add(objlistvwrowdetails);
+                        }
+                        languageList.CheckObjects(l);
+                    }
+
+                    _lastValueOf_inputBox = inputBox.Text;
+                    if ( !string.IsNullOrEmpty(inputBox.Text) && !string.IsNullOrEmpty(outputBox.Text) )
+                        _wasOutputBoxADirectParentOfInputBox = Path.GetDirectoryName(inputBox.Text).Equals(outputBox.Text);
+                    _ = CheckIfSrcResxHasAppendedLanguageToBaseFileName();
+                    CreateLogFile();
+                }
+                catch ( Exception ee )
+                {
+                    LogToFile(ee.Message, VerbosityLevels.Errors, true);
+                }
+            }
+
             try
             {
-                // Miscellaneous values
-                Location = Settings.Default.WindowLocation;
-                Size = Settings.Default.WindowSize;
-                SelectedLanguageSet = Settings.Default.SelectedLanguageSet;
-
-                // text fields
-                inputBox.Text = Settings.Default.inputBox;
-                MaxThread.Text = Settings.Default.MaxThread;
-                MaxTranslateLen.Text = Settings.Default.MaxTranslateLen;
-                outputBox.Text = Settings.Default.outputBox;
-                textBoxBkUpDir.Text = Settings.Default.textBoxBkUpDir;
-                textBoxLogFolderPath.Text = Settings.Default.textBoxLogFolderPath;
-                textBoxTextToTranslate.Text = Settings.Default.textBoxTextToTranslate;
-
-                // checkbox settings
-                checkBoxBackupFilesBeforeTranslation.Checked = Settings.Default.checkBoxBackupFilesBeforeTranslation;
-                checkBoxDeleteLangResxFilesBeforeTranslation.Checked = Settings.Default.checkBoxDeleteLangResxFilesBeforeTranslation;
-                checkBoxDispalyWarningPrompts.Checked = Settings.Default.checkBoxDispalyWarningPrompts;
-
-                // comboboxes
-                comboBoxAddOriginalSrcTextToComment.SelectedIndex = Settings.Default.comboBoxAddOriginalSrcTextToComment;
-                comboBoxDefaultLanguageSet.SelectedIndex = Settings.Default.comboBoxDefaultLanguageSet;
-                comboBoxFromLang.SelectedIndex = Settings.Default.comboBoxFromLang;
-                comboBoxFromLanguage.SelectedIndex = Settings.Default.comboBoxFromLanguage;
-                comboBoxItemsPerTransaltionRequest.SelectedIndex = Settings.Default.comboBoxItemsPerTransaltionRequest;
-                comboBoxLogFileVerbosityLevel.SelectedIndex = Settings.Default.comboBoxLogFileVerbosityLevel;
-                comboBoxScreenVerbosityLevel.SelectedIndex = Settings.Default.comboBoxScreenVerbosityLevel;
-                comboBoxToLang.SelectedIndex = Settings.Default.comboBoxToLang;
-                tabs.SelectedIndex = Settings.Default.tabs;
-
-                // Keep above code clean so it can be copied and pasted between Load and FormClosing, and a Regex replace can be performed
-                // Above code should only have plain assignments, and non-assignment code should be placed below
-                textBoxBkUpDir.Text = GetDefaultPath(textBoxBkUpDir.Text, "BackupResx");
-                textBoxLogFolderPath.Text = GetDefaultPath(Settings.Default.textBoxLogFolderPath, "Log", Path.GetTempPath() + "ABetterTranslator");
-                if ( Int32.Parse(MaxThread.Text) < 0 )
-                    MaxThread.Text = Math.Max(Environment.ProcessorCount, 4).ToString();
-                if ( comboBoxFromLanguage.SelectedIndex == -1 )
-                    comboBoxFromLanguage.SelectedIndex = comboBoxFromLang.SelectedIndex = comboBoxToLang.SelectedIndex = GetValid_codeBox_SelectIndex();
-                if ( SelectedLanguageSet > -1 )
-                    PopulateLanguageSet((LanguageSet) SelectedLanguageSet);
-                // ToDo: Change how PopulateLanguageSet gets called.  It needs to come before setting the following three values, so they don't have to be reset again within this function.
-                comboBoxFromLang.SelectedIndex = Settings.Default.comboBoxFromLang;
-                comboBoxFromLanguage.SelectedIndex = Settings.Default.comboBoxFromLanguage;
-                comboBoxToLang.SelectedIndex = Settings.Default.comboBoxToLang;
-
-                if ( Settings.Default.languageList != null && Settings.Default.languageList.Count > 0 )
-                {
-                    ArrayList l = new ArrayList();
-                    for ( int count = 0 ; count < languageList.GetItemCount() ; count++ )
-                    {
-                        ObjListVwRowDetails objlistvwrowdetails = (ObjListVwRowDetails) languageList.GetModelObject(count);
-                        if ( languageList.IsDisabled(objlistvwrowdetails) )
-                            continue;
-                        if ( Settings.Default.languageList.Contains(objlistvwrowdetails.LanguageTag) )
-                            l.Add(objlistvwrowdetails);
-                    }
-                    languageList.CheckObjects(l);
-                }
-
-                _lastValueOf_inputBox = inputBox.Text;
-                if ( !string.IsNullOrEmpty(inputBox.Text) && !string.IsNullOrEmpty(outputBox.Text) )
-                    _wasOutputBoxADirectParentOfInputBox = Path.GetDirectoryName(inputBox.Text).Equals(outputBox.Text);
-                _ = CheckIfSrcResxHasAppendedLanguageToBaseFileName();
-                CreateLogFile();
-            }
-            catch(Exception ee)
+                if ( string.IsNullOrEmpty(comboBoxFromLanguage.Text) )
+                    comboBoxFromLanguage.SelectedIndex = comboBoxFromLang.SelectedIndex = GetDefaultLanguageIndex();
+            } catch(Exception ee)
             {
                 LogToFile(ee.Message, VerbosityLevels.Errors, true);
             }
@@ -1323,11 +1339,11 @@ namespace ABetterTranslator
                 if ( cancellation.IsCancellationRequested )
                     break;
                 if ( LanguagesProcessedSuccessStatuses[item.toLang] != LanguageProcessStatus.Success )
-                    WriteLine($"Skipping language {GetLanguageNameOfTag(item.toLang)} due to Translator error or unknown status.", LoggingColorSet.ErrorLogging);
+                    WriteLine($"Skipping language {GetLanguageNameOfTag(item.toLang)} - {item.toLang} due to Translator error or unknown status.", LoggingColorSet.ErrorLogging);
                 else
                 {
                     SaveTranslations(item);
-                    WriteLine($"Saved {item.outputFile}{NL}", LoggingColorSet.BackupLogging, VerbosityLevels.Normal);
+                    WriteLine($"Saved language {GetLanguageNameOfTag(item.toLang)} to file [{item.outputFile}]{NL}", LoggingColorSet.BackupLogging, VerbosityLevels.Normal);
                 }
             }
 
@@ -1410,8 +1426,6 @@ namespace ABetterTranslator
         }
 		private void PopulateLanguageSet(string[,] languageSet, bool use2LettersOnly = false)
 		{
-			_ = comboBoxFromLang.Items.Add("auto (Detect)");
-
 			for ( int i = 0 ; i < languageSet.GetLength(0) ; ++i )
 			{
 				string code = languageSet[i, 0];
@@ -1421,7 +1435,6 @@ namespace ABetterTranslator
 				AddLanguage(code, name);
 			}
 
-            comboBoxFromLanguage.SelectedIndex = GetLanguageIndex(ApplicationDefaultLanguage);
             languageList.Sort(1);
         }
 		private void PopulateLanguageSet(LanguageSet index)
@@ -1466,10 +1479,6 @@ namespace ABetterTranslator
         }
         private void ClearLanguageSet()
         {
-
-            comboBoxFromLang.Items.Clear();
-            comboBoxToLang.Items.Clear();
-            comboBoxFromLanguage.Items.Clear();
             languageList.ClearObjects();
             _languagesInList.Clear();
         }
@@ -1527,7 +1536,36 @@ namespace ABetterTranslator
                 AliasesStr += s + Sep;
             return AliasesStr.TrimEnd(' ').TrimEnd(',').TrimEnd(';');
         }
-        private void AddLanguage(string code, string LangName, string? translatorSupported = null)
+        private void PopulateComboBoxLanguage()
+        {
+            comboBoxFromLang.Items.Clear();
+            comboBoxToLang.Items.Clear();
+            comboBoxFromLanguage.Items.Clear();
+            foreach ( var language in GTranslate_LangLookup )
+            {
+                string code = language.Key;
+                string name = language.Value.Name;
+                string translator = language.Value.SupportedServices.ToString();
+                if ( LanguageCodes.LanguagesTagsWithIssues.Contains(code) )
+                    continue;
+                _ = comboBoxFromLang.Items.Add(name);
+                _ = comboBoxToLang.Items.Add(name);
+                _ = comboBoxFromLanguage.Items.Add(name);
+            }
+            int t1 = comboBoxFromLanguage.Items.Count;
+            int t2 = comboBoxFromLang.Items.Count;
+            if (t1 != t2 )
+            {
+                foreach(string s in comboBoxFromLang.Items)
+                {
+                    if ( !comboBoxFromLanguage.Items.Contains(s))
+                    {
+                        LogToFile($"Missing item {s} in comboBoxFromLanguage", VerbosityLevels.Errors);
+                    }
+                }
+            }
+        }
+       private void AddLanguage(string code, string LangName, string? translatorSupported = null)
         {
             Debug.Assert(!string.IsNullOrEmpty(code) && !string.IsNullOrEmpty(LangName));
             if ( string.IsNullOrEmpty(code) || string.IsNullOrEmpty(LangName) )
@@ -1566,9 +1604,6 @@ namespace ABetterTranslator
             else
                 languageTranslatorTag = code;
 
-            _ = comboBoxFromLang.Items.Add(LangName);
-            _ = comboBoxToLang.Items.Add(LangName);
-            _ = comboBoxFromLanguage.Items.Add($"{LangName}");
             ArrayList l = new ArrayList();
             ObjListVwRowDetails objListVwRowDetails = new(code)
             {
@@ -1584,9 +1619,8 @@ namespace ABetterTranslator
             if ( translatorSupported.Equals(NoTranslator) || LanguageCodes.LanguagesTagsWithIssues.Contains(objListVwRowDetails.LanguageTranslatorTag) )
                 languageList.DisableObjects(l);
         }
+         #endregion Populate Language List View
 
-        #endregion Populate Language List View
-        
         #region Language Selection Code
         private void SelectTopSpokenLanguages(int MaxLang)
 		{
@@ -1618,7 +1652,7 @@ namespace ABetterTranslator
 			string[] Top31SpokenLanguages = {
 					"Arabic",
                     "Bengali" /*Bengali*/,
-					"Chinese",
+                    "Chinese (Simplified)",
 					"English",
 					"French", /*Standard*/ 
 					"German",/*Standard*/ 
@@ -1739,8 +1773,8 @@ namespace ABetterTranslator
 					"Arabic",
 					"Bengali",
 					"Burmese",
-                    "Cantonese (Traditional)", 
-					"Chinese",
+                    "Cantonese (Traditional)",
+                    "Chinese (Simplified)",
 					"Hindi",
 					"Japanese",
 					"Khmer",
@@ -1768,7 +1802,6 @@ namespace ABetterTranslator
 					"Greek",
 					"Hebrew",
 					"Kurdish",
-					"Pashto",
 					"Pashto",
 					"Persian",
 					"Somali",
@@ -1802,7 +1835,7 @@ namespace ABetterTranslator
 		{
 			string[] GroupTopSpokenLanguages = {
 					"Arabic",
-					"Chinese",
+                    "Chinese (Simplified)",
 					"Dutch (Flemish)",
 					"Dutch",
 					"English",
@@ -1828,7 +1861,7 @@ namespace ABetterTranslator
                     "Basque",
 					"Bulgarian",
                     "Chinese (Traditional)",
-					"Chinese",
+                    "Chinese (Simplified)",
                     "Catalan",
                     "Croatian",
 					"Czech",
@@ -1921,7 +1954,8 @@ namespace ABetterTranslator
         {
             if ( !isValid_InputboxFileAndOutPutDir() )
                 return;
-            SetAll_LanguagesCkBx(false);
+            toolStripMenuItemAllTranslatorSupportedLanguages_Click(sender,e);
+            // SetAll_LanguagesCkBx(false);
 			if ( sender == toolStripMenuItemTranslateTop5 )
 				SelectTopSpokenLanguages(5);
 			else if ( sender == toolStripMenuItemTranslateTop10 )
@@ -2039,9 +2073,6 @@ namespace ABetterTranslator
         {
             PopulateLanguageSet(LanguageSet.Windows10Plus_LanguagePacks);
             SelectAGroupOfLanguages(LanguageCodes.Windows10Plus_LanguagePacks, "Win Lang Pack");
-        }
-        private void toolStripMenuItemWindowsLanguagePacks_ShowWithCode_Click(object sender, EventArgs e)
-        {
         }
         private void toolStripMenuItemWindowsLanguagePackInterface_AddAndSelect_Click(object sender, EventArgs e)
         {
@@ -2236,11 +2267,6 @@ namespace ABetterTranslator
 
         #endregion Tab (Advanced Options) functions
 
-        private void textBoxLogFolderPath_TextChanged(object sender, EventArgs e)
-        {
-            CreateLogFile();
-        }
-
         #region Help Links
         public void OpenUrl(string url)
         {
@@ -2340,5 +2366,6 @@ namespace ABetterTranslator
             OpenUrl("https://github.com/David-Maisonave/ABetterTranslator#Logging-Directory");
         }
         #endregion Help Links
+
     }
 }
