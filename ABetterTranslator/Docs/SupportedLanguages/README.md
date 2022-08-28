@@ -1,158 +1,138 @@
 # Supported Languages
-Currently only the associated language tags are listed below.
-In the future, this file will get updated with the language name and associated language details.
 
-# Language Tags
-* af
-* am
-* ar
-* as
-* ay
-* az
-* ba
-* be
-* bg
-* bho
-* bm
-* bn
-* bo
-* bs
-* ca
-* ceb
-* co
-* cs
-* cv
-* cy
-* da
-* de
-* dgo
-* dv
-* ee
-* el
-* emj
-* en
-* eo
-* es
-* et
-* eu
-* fa
-* fi
-* fil
-* fj
-* fo
-* fr
-* fy
-* ga
-* gd
-* gl
-* gn
-* gu
-* ha
-* haw
-* he
-* hi
-* hmn
-* hr
-* hsb
-* ht
-* hu
-* hy
-* id
-* ig
-* ikt
-* ilo
-* is
-* it
-* iu
-* ja
-* jv
-* ka
-* kazlat
-* kk
-* km
-* kmr
-* kn
-* ko
-* ku
-* ky
-* la
-* lb
-* ln
-* lo
-* lt
-* lv
-* lzh
-* mai
-* mg
-* mhr
-* mi
-* mk
-* ml
-* mn
-* mr
-* mrj
-* ms
-* mt
-* mww
-* my
-* ne
-* nl
-* no
-* nso
-* ny
-* om
-* or
-* otq
-* pa
-* pap
-* pl
-* prs
-* ps
-* pt
-* qu
-* ro
-* ru
-* rw
-* sa
-* sah
-* sd
-* si
-* sjn
-* sk
-* sl
-* sm
-* sn
-* so
-* sq
-* sr
-* st
-* su
-* sv
-* sw
-* ta
-* te
-* tg
-* th
-* ti
-* tk
-* tl
-* tlh
-* to
-* tr
-* tt
-* tw
-* ty
-* udm
-* ug
-* uk
-* ur
-* uz
-* uzbcyr
-* vi
-* xh
-* yi
-* yo
-* yua
-* yue
-* zh
-* zu
+
+* **Afrikaans** - af:af  [Google, Bing, Yandex, Microsoft]
+* **Albanian** - sq:sq  [Google, Bing, Yandex, Microsoft]
+* **Amharic** - am:am  [Google, Bing, Yandex, Microsoft]
+* **Arabic** - ar:ar  [Google, Bing, Yandex, Microsoft]
+* **Armenian** - hy:hy  [Google, Bing, Yandex, Microsoft]
+* **Azerbaijani** - az:az  [Google, Bing, Yandex, Microsoft]
+* **Basque** - eu:eu  [Google, Bing, Yandex, Microsoft]
+* **Belarusian** - be:be  [Google, Yandex]
+* **Bengali** - bn:bn  [Google, Bing, Yandex, Microsoft]
+* **Bosnian** - bs:bs  [Google, Bing, Yandex, Microsoft]
+* **Bulgarian** - bg:bg  [Google, Bing, Yandex, Microsoft]
+* **Burmese** - my:my  [Google, Bing, Yandex, Microsoft]
+* **Catalan** - ca:ca  [Google, Bing, Yandex, Microsoft]
+* **Cebuano** - ceb:ceb  [Google, Yandex]
+* **Chinese (Simplified)** - zh-CN:zh-CN  [Google, Bing, Yandex, Microsoft]
+* **Chinese (Traditional)** - zh-TW:zh-TW  [Google, Bing, Microsoft]
+* **Corsican** - co:co  [Google]
+* **Croatian** - hr:hr  [Google, Bing, Yandex, Microsoft]
+* **Czech** - cs:cs  [Google, Bing, Yandex, Microsoft]
+* **Danish** - da:da  [Google, Bing, Yandex, Microsoft]
+* **Dutch** - nl:nl  [Google, Bing, Yandex, Microsoft]
+* **English** - en:en  [Google, Bing, Yandex, Microsoft]
+* **Esperanto** - eo:eo  [Google, Yandex]
+* **Estonian** - et:et  [Google, Bing, Yandex, Microsoft]
+* **Finnish** - fi:fi  [Google, Bing, Yandex, Microsoft]
+* **French** - fr:fr  [Google, Bing, Yandex, Microsoft]
+* **Frisian** - fy:fy  [Google]
+* **Galician** - gl:gl  [Google, Bing, Yandex, Microsoft]
+* **Georgian** - ka:ka  [Google, Bing, Yandex, Microsoft]
+* **German** - de:de  [Google, Bing, Yandex, Microsoft]
+* **Greek** - el:el  [Google, Bing, Yandex, Microsoft]
+* **Gujarati** - gu:gu  [Google, Bing, Yandex, Microsoft]
+* **Hausa** - ha:ha  [Google]
+* **Hawaiian** - haw:haw  [Google]
+* **Hebrew** - he:he  [Google, Bing, Yandex, Microsoft]
+* **Hindi** - hi:hi  [Google, Bing, Yandex, Microsoft]
+* **Hungarian** - hu:hu  [Google, Bing, Yandex, Microsoft]
+* **Icelandic** - is:is  [Google, Bing, Yandex, Microsoft]
+* **Igbo** - ig:ig  [Google]
+* **Indonesian** - id:id  [Google, Bing, Yandex, Microsoft]
+* **Irish** - ga:ga  [Google, Bing, Yandex, Microsoft]
+* **Italian** - it:it  [Google, Bing, Yandex, Microsoft]
+* **Japanese** - ja:ja  [Google, Bing, Yandex, Microsoft]
+* **Javanese** - jv:jv  [Google, Yandex]
+* **Kannada** - kn:kn  [Google, Bing, Yandex, Microsoft]
+* **Kazakh** - kk:kk  [Google, Bing, Yandex, Microsoft]
+* **Khmer** - km:km  [Google, Bing, Yandex, Microsoft]
+* **Kinyarwanda** - rw:rw  [Google]
+* **Korean** - ko:ko  [Google, Bing, Yandex, Microsoft]
+* **Kurdish** - ku:ku  [Google, Bing, Microsoft]
+* **Kyrgyz** - ky:ky  [Google, Yandex, Microsoft]
+* **Lao** - lo:lo  [Google, Bing, Yandex, Microsoft]
+* **Latin** - la:la  [Google, Yandex]
+* **Latvian** - lv:lv  [Google, Bing, Yandex, Microsoft]
+* **Lithuanian** - lt:lt  [Google, Bing, Yandex, Microsoft]
+* **Luxembourgish** - lb:lb  [Google, Yandex]
+* **Macedonian** - mk:mk  [Google, Bing, Yandex, Microsoft]
+* **Malagasy** - mg:mg  [Google, Bing, Yandex, Microsoft]
+* **Malay** - ms:ms  [Google, Bing, Yandex, Microsoft]
+* **Malayalam** - ml:ml  [Google, Bing, Yandex, Microsoft]
+* **Maltese** - mt:mt  [Google, Bing, Yandex, Microsoft]
+* **Maori** - mi:mi  [Google, Bing, Yandex, Microsoft]
+* **Marathi** - mr:mr  [Google, Bing, Yandex, Microsoft]
+* **Mongolian** - mn:mn  [Google, Bing, Yandex, Microsoft]
+* **Nepali** - ne:ne  [Google, Bing, Yandex, Microsoft]
+* **Norwegian** - no:no  [Google, Bing, Yandex, Microsoft]
+* **Odia** - or:or  [Google, Bing, Microsoft]
+* **Pashto** - ps:ps  [Google, Bing, Microsoft]
+* **Persian** - fa:fa  [Google, Bing, Yandex, Microsoft]
+* **Polish** - pl:pl  [Google, Bing, Yandex, Microsoft]
+* **Portuguese** - pt:pt  [Google, Bing, Yandex, Microsoft]
+* **Punjabi** - pa:pa  [Google, Bing, Yandex, Microsoft]
+* **Romanian** - ro:ro  [Google, Bing, Yandex, Microsoft]
+* **Russian** - ru:ru  [Google, Bing, Yandex, Microsoft]
+* **Scottish Gaelic** - gd:gd  [Google, Yandex]
+* **Serbian (Cyrillic)** - sr:sr  [Google, Bing, Yandex, Microsoft]
+* **Sotho** - st:st  [Google]
+* **Shona** - sn:sn  [Google]
+* **Sindhi** - sd:sd  [Google]
+* **Sinhala** - si:si  [Google, Yandex]
+* **Slovak** - sk:sk  [Google, Bing, Yandex, Microsoft]
+* **Slovenian** - sl:sl  [Google, Bing, Yandex, Microsoft]
+* **Somali** - so:so  [Google]
+* **Spanish** - es:es  [Google, Bing, Yandex, Microsoft]
+* **Sundanese** - su:su  [Google, Yandex]
+* **Swahili** - sw:sw  [Google, Bing, Yandex, Microsoft]
+* **Swedish** - sv:sv  [Google, Bing, Yandex, Microsoft]
+* **Tajik** - tg:tg  [Google, Yandex]
+* **Tamil** - ta:ta  [Google, Bing, Yandex, Microsoft]
+* **Tatar** - tt:tt  [Google, Bing, Yandex, Microsoft]
+* **Telugu** - te:te  [Google, Bing, Yandex, Microsoft]
+* **Thai** - th:th  [Google, Bing, Yandex, Microsoft]
+* **Turkish** - tr:tr  [Google, Bing, Yandex, Microsoft]
+* **Turkmen** - tk:tk  [Google, Bing, Microsoft]
+* **Ukrainian** - uk:uk  [Google, Bing, Yandex, Microsoft]
+* **Urdu** - ur:ur  [Google, Bing, Yandex, Microsoft]
+* **Uighur** - ug:ug  [Google, Bing, Microsoft]
+* **Uzbek** - uz:uz  [Google, Bing, Yandex, Microsoft]
+* **Vietnamese** - vi:vi  [Google, Bing, Yandex, Microsoft]
+* **Welsh** - cy:cy  [Google, Bing, Yandex, Microsoft]
+* **Xhosa** - xh:xh  [Google, Yandex]
+* **Yiddish** - yi:yi  [Google, Yandex]
+* **Yoruba** - yo:yo  [Google]
+* **Zulu** - zu:zu  [Google, Bing, Yandex, Microsoft]
+* **Assamese** - as:as  [Bing, Microsoft]
+* **Dari** - prs:prs  [Bing, Microsoft]
+* **Dhivehi** - dv:dv  [Google]
+* **Filipino** - fil:fil  [Bing, Microsoft]
+* **French (Canada)** - fr-CA:fr-CA  [Bing, Microsoft]
+* **Inuktitut** - iu:iu  [Bing, Microsoft]
+* **Inuktitut (Latin)** - iu-Latn:iu-Latn  [Bing, Microsoft]
+* **Mongolian (Traditional)** - mn-Mong:mn-Mong  [Bing, Microsoft]
+* **Portuguese (Portugal)** - pt-PT:pt-PT  [Bing, Microsoft]
+* **Serbian (Latin)** - sr-Latn:sr-Latn  [Bing, Microsoft]
+* **Tibetan** - bo:bo  [Bing, Microsoft]
+* **Tigrinya** - ti:ti  [Bing, Microsoft]
+* **Tongan** - to:to  [Bing, Microsoft]
+* **Upper Sorbian** - hsb:hsb  [Bing, Microsoft]
+* **Bashkir** - ba:ba  [Bing, Yandex, Microsoft]
+* **Papiamento** - pap:pap  [Yandex]
+* **Yakut** - sah:sah  [Yandex]
+* **Klingon (pIqaD)** - tlh-Piqd:tlh-Piqd  [Bing, Microsoft]
+* **Portuguese (Brazil)** - pt-BR:pt  [Google]
+* **Faroese** - fo:fo  [Bing, Microsoft]
+* **English (UK)** - en-GB:en-GB  [Google]
+* **Spanish (Mexico)** - es-MX:es  [Bing, Microsoft]
+* **Gaelic** - gd-GB:gd  [Google]
+* **Guarani** - gn:gn  [Google]
+* **Bambara** - bm:bm  [Google]
+* **Ewe** - ee:ee  [Google]
+* **Lingala** - ln:ln  [Google]
+* **Oromo** - om:om  [Google]
+* **Sanskrit** - sa:sa  [Google]
+* **Maithili** - mai:mai  [Google]
+* **Sepedi** - nso:nso  [Google]

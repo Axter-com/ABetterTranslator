@@ -369,40 +369,57 @@ namespace ABetterTranslator
         [ConditionalAttribute("DEBUG")]
         private void ValidateLanguageSets()
         { // Only use this in debug mode for validating the data in LanguageCode.cs and in LanguageDictionary.cs
-            //List<string> DetectedIssues = new();
-            //Dictionary<string,bool> LanguagesThatNeedToBeChecked = new();
-            //foreach ( var language in GTranslate_LangLookup )
-            //{
-            //    string code = language.Key;
-            //    string name = language.Value.Name;
-            //    LanguagesThatNeedToBeChecked[code] = false;
-            //}
-            //foreach ( var languageSet in LanguageSets )
-            //{
-            //    for ( int i = 0 ; i < languageSet.GetLength(0) ; ++i )
-            //    {
-            //        string code = languageSet[i, 0];
-            //        string name = languageSet[i, 1];
-            //        if ( !GTranslate_LangLookup.ContainsKey(code) )
-            //        {
-            //            string Issue = $"Did not find tag ({code})/Lang({name}) in GTranslate Languages.";
-            //            // Debug.WriteLine(Issue);
-            //            DetectedIssues.Add(Issue);
-            //        }
-            //        else
-            //            LanguagesThatNeedToBeChecked[code] = true;
-            //    }
-            //}
-            //foreach ( var lang in LanguagesThatNeedToBeChecked)
-            //{
-            //    if ( !lang.Value)
-            //    {
-            //        string Issue = $"Info: Did not find tag ({lang.Key}) in any of the LanguageCodes translators.";
-            //        Debug.WriteLine(Issue + "...");
-            //        DetectedIssues.Add(Issue);
-            //    }
-            //}
-            //Debug.WriteLine("Finish validation.");
+
+            string ReadMeFileName = "E:\\Repos\\ABetterTranslator\\ABetterTranslator\\Docs\\SupportedLanguages\\README.md";
+            using StreamWriter file = new(ReadMeFileName, append: false);
+            file.WriteLineAsync("# Supported Languages\r\n");
+            foreach ( var language in GTranslate_LangLookup )
+            {
+                string code = language.Key;
+                string name = language.Value.Name;
+                string translator = language.Value.SupportedServices.ToString();
+                string ISO6391 = language.Value.ISO6391;
+                string ISO6393 = language.Value.ISO6393;
+                string NativeName = language.Value.NativeName;
+                if ( LanguageCodes.LanguagesTagsWithIssues.Contains(code) )
+                    continue;
+                file.WriteLineAsync($"* **{name}** - {code}:{ISO6391}  [{translator}]");
+            }
+            file.Close();
+            List<string> DetectedIssues = new();
+            Dictionary<string,bool> LanguagesThatNeedToBeChecked = new();
+            foreach ( var language in GTranslate_LangLookup )
+            {
+                string code = language.Key;
+                string name = language.Value.Name;
+                LanguagesThatNeedToBeChecked[code] = false;
+            }
+            foreach ( var languageSet in LanguageSets )
+            {
+                for ( int i = 0 ; i < languageSet.GetLength(0) ; ++i )
+                {
+                    string code = languageSet[i, 0];
+                    string name = languageSet[i, 1];
+                    if ( !GTranslate_LangLookup.ContainsKey(code) )
+                    {
+                        string Issue = $"Did not find tag ({code})/Lang({name}) in GTranslate Languages.";
+                        // Debug.WriteLine(Issue);
+                        DetectedIssues.Add(Issue);
+                    }
+                    else
+                        LanguagesThatNeedToBeChecked[code] = true;
+                }
+            }
+            foreach ( var lang in LanguagesThatNeedToBeChecked )
+            {
+                if ( !lang.Value )
+                {
+                    string Issue = $"Info: Did not find tag ({lang.Key}) in any of the LanguageCodes translators.";
+                    Debug.WriteLine(Issue + "...");
+                    DetectedIssues.Add(Issue);
+                }
+            }
+            Debug.WriteLine("Finish validation.");
         }
         private string ParseArgs(string[] args)
         {
