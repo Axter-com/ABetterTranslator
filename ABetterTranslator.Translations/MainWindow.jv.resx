@@ -393,10 +393,10 @@
     <value>7</value>
   </data>
   <data name="groupBoxItemsPerTransaltionRequest.Text" xml:space="preserve">
-    <value>Item Per Translation Req</value>
+    <value>Strings Per Translation Req</value>
   </data>
   <data name="groupBoxItemsPerTransaltionRequest.ToolTip" xml:space="preserve">
-    <value>Item saben Panjaluk Terjemahan</value>
+    <value>Strings saben Panjaluk Terjemahan</value>
   </data>
   <data name="&gt;&gt;groupBoxItemsPerTransaltionRequest.Name" xml:space="preserve">
     <value>groupBoxItemsPerTransaltionRequest</value>
@@ -1335,7 +1335,7 @@
     <value>6</value>
   </data>
   <data name="MaxThread.Text" xml:space="preserve">
-    <value>-0</value>
+    <value>-1</value>
   </data>
   <data name="&gt;&gt;MaxThread.Name" xml:space="preserve">
     <value>MaxThread</value>
@@ -2003,6 +2003,9 @@
   <data name="tabControlTranslateResxSubTab.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
+  <data name="groupBoxFilterText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="textBoxFilterText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
@@ -2304,16 +2307,16 @@
     <value>548, 17</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.Text" xml:space="preserve">
     <value>Terjemahake Kabeh Basa sing Didhukung</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.ToolTipText" xml:space="preserve">
-    <value>Milih lan nerjemahake kabeh basa sing didhukung dening penerjemah</value>
+    <value>Pilih lan terjemahake kabeh basa nganggo Layanan Terjemahan</value>
   </data>
   <data name="toolStripMenuItemWindowsSupportedLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsSupportedLanguages.Text" xml:space="preserve">
     <value>Windows Language Pack</value>
@@ -2322,7 +2325,7 @@
     <value>Pilih lan terjemahake basa ing paket basa Windows</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguageInterfacePacks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguageInterfacePacks.Text" xml:space="preserve">
     <value>Paket Antarmuka Basa Windows</value>
@@ -2331,7 +2334,7 @@
     <value>Pilih lan terjemahake basa ing Windows Language Interface Packs</value>
   </data>
   <data name="toolStripMenuItemTranslateBusinessLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateBusinessLanguages.Text" xml:space="preserve">
     <value>Translate Top Business Languages</value>
@@ -2340,10 +2343,10 @@
     <value>Pilih lan terjemahake sing paling akeh digunakake International-Business-Basa</value>
   </data>
   <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 6</value>
+    <value>396, 6</value>
   </data>
   <data name="toolStripMenuItem_TranslateAfrica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateAfrica.Text" xml:space="preserve">
     <value>Afrika</value>
@@ -2352,7 +2355,7 @@
     <value>Pilih lan terjemahake basa sing paling akeh digunakake ing Afrika</value>
   </data>
   <data name="toolStripMenuItem_TranslateAsia.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateAsia.Text" xml:space="preserve">
     <value>Asia</value>
@@ -2361,7 +2364,7 @@
     <value>Pilih lan terjemahake basa sing paling akeh digunakake ing Asia</value>
   </data>
   <data name="toolStripMenuItem_TranslateEurope.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateEurope.Text" xml:space="preserve">
     <value>Eropah</value>
@@ -2370,7 +2373,7 @@
     <value>Pilih lan terjemahake basa sing paling akeh digunakake ing Eropa</value>
   </data>
   <data name="toolStripMenuItem_TranslateMiddleEast.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateMiddleEast.Text" xml:space="preserve">
     <value>Timur Tengah</value>
@@ -2379,7 +2382,7 @@
     <value>Pilih lan terjemahake basa sing paling akeh digunakake ing Timur Tengah</value>
   </data>
   <data name="toolStripMenuItem_TranslateNorthAmerica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateNorthAmerica.Text" xml:space="preserve">
     <value>Amerika Utara</value>
@@ -2388,7 +2391,7 @@
     <value>Pilih lan terjemahake basa sing paling akeh digunakake ing Amerika Utara</value>
   </data>
   <data name="toolStripMenuItem_TranslateSouthAmerica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateSouthAmerica.Text" xml:space="preserve">
     <value>Amérika Kidul</value>
@@ -2397,10 +2400,10 @@
     <value>Pilih lan terjemahake basa sing paling akeh digunakake ing Amerika Kidul</value>
   </data>
   <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 6</value>
+    <value>396, 6</value>
   </data>
   <data name="toolStripMenuItemTranslateTop5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop5.Text" xml:space="preserve">
     <value>Terjemahake Top 5 Basa Spoken</value>
@@ -2409,7 +2412,7 @@
     <value>Pilih lan terjemahake 5 basa lisan paling dhuwur</value>
   </data>
   <data name="toolStripMenuItemTranslateTop10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop10.Text" xml:space="preserve">
     <value>Terjemahake 10 basa sing paling dhuwur</value>
@@ -2418,7 +2421,7 @@
     <value>Pilih lan terjemahake 10 ndhuwur</value>
   </data>
   <data name="toolStripMenuItemTranslateTop20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop20.Text" xml:space="preserve">
     <value>Terjemahake 20 basa sing paling dhuwur</value>
@@ -2427,7 +2430,7 @@
     <value>Pilih lan terjemahake 20 ndhuwur</value>
   </data>
   <data name="toolStripMenuItemTranslateTop30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop30.Text" xml:space="preserve">
     <value>Terjemahake 30 basa sing paling dhuwur</value>
@@ -2448,13 +2451,13 @@
     <value>Miwiti terjemahan ing basa sing dipilih. Nerjemahake kabeh basa yen ora ana basa sing dipilih.</value>
   </data>
   <data name="toolStripMenuItemSelectAll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 34</value>
+    <value>333, 42</value>
   </data>
   <data name="toolStripMenuItemSelectAll.Text" xml:space="preserve">
     <value>Pilih Kabeh Basa</value>
   </data>
   <data name="toolStripMenuItemSelectClear.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 34</value>
+    <value>333, 42</value>
   </data>
   <data name="toolStripMenuItemSelectClear.Text" xml:space="preserve">
     <value>Busak Kabeh Pilihan</value>
@@ -2466,7 +2469,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemSelectUndo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 34</value>
+    <value>333, 42</value>
   </data>
   <data name="toolStripMenuItemSelectUndo.Text" xml:space="preserve">
     <value>Mbatalake Pamilihan Grup Terakhir</value>
@@ -2511,7 +2514,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks.Text" xml:space="preserve">
     <value>Paket Basa Windows 10/11</value>
@@ -2541,7 +2544,7 @@
     <value>Tambah lan Pilih</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface.Text" xml:space="preserve">
     <value>Antarmuka Paket Basa Windows</value>
@@ -2553,43 +2556,43 @@
     <value>Mung nuduhake basa sing ana ing Windows Language Pack Interface</value>
   </data>
   <data name="toolStripSeparator7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>429, 6</value>
+    <value>437, 6</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_ShowOnly.Text" xml:space="preserve">
     <value>Tampilake</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_Add.Text" xml:space="preserve">
     <value>Tambah</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.Text" xml:space="preserve">
-    <value>Basa sing Didhukung Penerjemah</value>
+    <value>Basa karo Layanan Terjemahan</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.ToolTipText" xml:space="preserve">
-    <value>Tampilake kabeh basa nganggo penerjemah sing didhukung.</value>
+    <value>Tampilake kabeh basa nganggo Layanan Terjemahan sing didhukung</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly.Text" xml:space="preserve">
     <value>Tampilake</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_Add.Text" xml:space="preserve">
     <value>Tambah</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames.Text" xml:space="preserve">
     <value>Set Basa ISO 639-1</value>
@@ -2616,7 +2619,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.Text" xml:space="preserve">
     <value>ISO 639-1 + Win Lang Pack</value>
@@ -2634,7 +2637,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemSubLanguagesAndRegions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemSubLanguagesAndRegions.Text" xml:space="preserve">
     <value>Tambah menyang Dhaptar Sub-Basa lan Wilayah</value>

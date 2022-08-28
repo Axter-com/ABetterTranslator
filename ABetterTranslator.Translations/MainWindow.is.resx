@@ -393,10 +393,10 @@
     <value>7</value>
   </data>
   <data name="groupBoxItemsPerTransaltionRequest.Text" xml:space="preserve">
-    <value>Atriði fyrir hverja þýðingu Beiðni</value>
+    <value>Strengir á þýðingu Beiðni</value>
   </data>
   <data name="groupBoxItemsPerTransaltionRequest.ToolTip" xml:space="preserve">
-    <value>Atriði í samræmi við þýðingarbeiðni</value>
+    <value>Strengir fyrir hverja þýðingarbeiðni</value>
   </data>
   <data name="&gt;&gt;groupBoxItemsPerTransaltionRequest.Name" xml:space="preserve">
     <value>groupBoxItemsPerTransaltionRequest</value>
@@ -753,7 +753,7 @@
     <value>ISO 639-1</value>
   </data>
   <data name="comboBoxDefaultLanguageSet.Items" xml:space="preserve">
-    <value>ISO 639-1 Plus Win tungumálapakki</value>
+    <value>ISO 639-1 Plus Win Tungumálapakki</value>
   </data>
   <data name="comboBoxDefaultLanguageSet.Location" type="System.Drawing.Point, System.Drawing">
     <value>47, 41</value>
@@ -1335,7 +1335,7 @@
     <value>6</value>
   </data>
   <data name="MaxThread.Text" xml:space="preserve">
-    <value>-0</value>
+    <value>-1</value>
   </data>
   <data name="&gt;&gt;MaxThread.Name" xml:space="preserve">
     <value>MaxThread</value>
@@ -2003,6 +2003,9 @@
   <data name="tabControlTranslateResxSubTab.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
+  <data name="groupBoxFilterText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="textBoxFilterText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
@@ -2304,16 +2307,16 @@
     <value>548, 17</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.Text" xml:space="preserve">
     <value>Þýddu öll studd tungumál</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.ToolTipText" xml:space="preserve">
-    <value>Velur og þýðir öll tungumál sem þýðendur styðja</value>
+    <value>Veldu og þýddu öll tungumál með þýðingarþjónustu</value>
   </data>
   <data name="toolStripMenuItemWindowsSupportedLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsSupportedLanguages.Text" xml:space="preserve">
     <value>Windows tungumálapakka</value>
@@ -2322,7 +2325,7 @@
     <value>Veldu og þýddu tungumál í Windows tungumálapökkum</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguageInterfacePacks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguageInterfacePacks.Text" xml:space="preserve">
     <value>Windows tungumálaviðmótspakkar</value>
@@ -2331,7 +2334,7 @@
     <value>Veldu og þýddu tungumál í Windows Language Interface Packs</value>
   </data>
   <data name="toolStripMenuItemTranslateBusinessLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateBusinessLanguages.Text" xml:space="preserve">
     <value>Þýddu helstu viðskiptatungumál</value>
@@ -2340,10 +2343,10 @@
     <value>Veldu og þýddu mest notuðu alþjóðlegu viðskiptamálin</value>
   </data>
   <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 6</value>
+    <value>396, 6</value>
   </data>
   <data name="toolStripMenuItem_TranslateAfrica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateAfrica.Text" xml:space="preserve">
     <value>Afríku</value>
@@ -2352,7 +2355,7 @@
     <value>Veldu og þýddu helstu töluðu tungumálin í Afríku</value>
   </data>
   <data name="toolStripMenuItem_TranslateAsia.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateAsia.Text" xml:space="preserve">
     <value>Asíu</value>
@@ -2361,7 +2364,7 @@
     <value>Veldu og þýddu helstu töluðu tungumálin í Asíu</value>
   </data>
   <data name="toolStripMenuItem_TranslateEurope.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateEurope.Text" xml:space="preserve">
     <value>Evrópu</value>
@@ -2370,7 +2373,7 @@
     <value>Veldu og þýddu helstu töluðu tungumálin í Evrópu</value>
   </data>
   <data name="toolStripMenuItem_TranslateMiddleEast.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateMiddleEast.Text" xml:space="preserve">
     <value>Miðausturlönd</value>
@@ -2379,7 +2382,7 @@
     <value>Veldu og þýddu helstu töluðu tungumálin í Miðausturlöndum</value>
   </data>
   <data name="toolStripMenuItem_TranslateNorthAmerica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateNorthAmerica.Text" xml:space="preserve">
     <value>Norður Ameríka</value>
@@ -2388,7 +2391,7 @@
     <value>Veldu og þýddu helstu töluðu tungumálin í Norður-Ameríku</value>
   </data>
   <data name="toolStripMenuItem_TranslateSouthAmerica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateSouthAmerica.Text" xml:space="preserve">
     <value>Suður Ameríka</value>
@@ -2397,10 +2400,10 @@
     <value>Veldu og þýddu helstu töluðu tungumálin í Suður-Ameríku</value>
   </data>
   <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 6</value>
+    <value>396, 6</value>
   </data>
   <data name="toolStripMenuItemTranslateTop5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop5.Text" xml:space="preserve">
     <value>Þýddu 5 efstu töluðu tungumálin</value>
@@ -2409,7 +2412,7 @@
     <value>Veldu og þýddu 5 bestu töluðu tungumálin</value>
   </data>
   <data name="toolStripMenuItemTranslateTop10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop10.Text" xml:space="preserve">
     <value>Þýddu 10 efstu töluðu tungumálin</value>
@@ -2418,7 +2421,7 @@
     <value>Veldu og þýddu topp 10</value>
   </data>
   <data name="toolStripMenuItemTranslateTop20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop20.Text" xml:space="preserve">
     <value>Þýddu 20 efstu töluðu tungumálin</value>
@@ -2427,7 +2430,7 @@
     <value>Veldu og þýddu topp 20</value>
   </data>
   <data name="toolStripMenuItemTranslateTop30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop30.Text" xml:space="preserve">
     <value>Þýddu 30 efstu töluðu tungumálin</value>
@@ -2448,13 +2451,13 @@
     <value>Byrjaðu þýðingu á völdum tungumálum. Þýðir öll tungumál ef ekkert tungumál er valið.</value>
   </data>
   <data name="toolStripMenuItemSelectAll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 34</value>
+    <value>333, 42</value>
   </data>
   <data name="toolStripMenuItemSelectAll.Text" xml:space="preserve">
     <value>Veldu Öll tungumál</value>
   </data>
   <data name="toolStripMenuItemSelectClear.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 34</value>
+    <value>333, 42</value>
   </data>
   <data name="toolStripMenuItemSelectClear.Text" xml:space="preserve">
     <value>Hreinsa allt val</value>
@@ -2466,7 +2469,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemSelectUndo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 34</value>
+    <value>333, 42</value>
   </data>
   <data name="toolStripMenuItemSelectUndo.Text" xml:space="preserve">
     <value>Afturkalla síðasta hópval</value>
@@ -2511,7 +2514,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks.Text" xml:space="preserve">
     <value>Windows 10/11 Tungumálapakki</value>
@@ -2541,7 +2544,7 @@
     <value>Bæta við og velja</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface.Text" xml:space="preserve">
     <value>Windows tungumálapakkaviðmót</value>
@@ -2553,43 +2556,43 @@
     <value>Sýndu aðeins tungumál sem eru í Windows Language Pack Interface</value>
   </data>
   <data name="toolStripSeparator7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>429, 6</value>
+    <value>437, 6</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_ShowOnly.Text" xml:space="preserve">
     <value>Sýna</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_Add.Text" xml:space="preserve">
     <value>Bæta við</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.Text" xml:space="preserve">
-    <value>Þýðandi studd tungumál</value>
+    <value>Tungumál með þýðingarþjónustu</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.ToolTipText" xml:space="preserve">
-    <value>Sýna öll tungumál með studdum þýðanda.</value>
+    <value>Birta öll tungumál með studdri þýðingarþjónustu</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly.Text" xml:space="preserve">
     <value>Sýna</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_Add.Text" xml:space="preserve">
     <value>Bæta við</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames.Text" xml:space="preserve">
     <value>ISO 639-1 tungumálasett</value>
@@ -2616,7 +2619,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.Text" xml:space="preserve">
     <value>ISO 639-1 + Win Lang Pack</value>
@@ -2634,7 +2637,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemSubLanguagesAndRegions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemSubLanguagesAndRegions.Text" xml:space="preserve">
     <value>Bæta við lista undirtungumál og svæði</value>

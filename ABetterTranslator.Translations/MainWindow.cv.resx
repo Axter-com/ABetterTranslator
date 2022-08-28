@@ -393,10 +393,10 @@
     <value>7</value>
   </data>
   <data name="groupBoxItemsPerTransaltionRequest.Text" xml:space="preserve">
-    <value>Куҫару Ыйтмалли Элементсем</value>
+    <value>Куҫару Йӗрки</value>
   </data>
   <data name="groupBoxItemsPerTransaltionRequest.ToolTip" xml:space="preserve">
-    <value>Куҫарма Ыйтакан элементсем</value>
+    <value>Кашни ыйту валли куҫару йӗркисем</value>
   </data>
   <data name="&gt;&gt;groupBoxItemsPerTransaltionRequest.Name" xml:space="preserve">
     <value>groupBoxItemsPerTransaltionRequest</value>
@@ -858,7 +858,7 @@
     <value>Lang Resx Хушса Панӑ Катерт</value>
   </data>
   <data name="buttonDeleteLangAppendedResxFiles.ToolTip" xml:space="preserve">
-    <value>Чӗлхе кодне файл ячӗпе хутшӑнакан Resx Файлӑсене пурне те аяккалла илсе каять.</value>
+    <value>Resx файлӑсене, файл ячӗпе чӗлхе кодне хушнӑскерсене, пурне те кӑларса ярать.</value>
   </data>
   <data name="&gt;&gt;buttonDeleteLangAppendedResxFiles.Name" xml:space="preserve">
     <value>buttonDeleteLangAppendedResxFiles</value>
@@ -1335,7 +1335,7 @@
     <value>6</value>
   </data>
   <data name="MaxThread.Text" xml:space="preserve">
-    <value>-0</value>
+    <value>-1</value>
   </data>
   <data name="&gt;&gt;MaxThread.Name" xml:space="preserve">
     <value>MaxThread</value>
@@ -2003,6 +2003,9 @@
   <data name="tabControlTranslateResxSubTab.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
+  <data name="groupBoxFilterText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="textBoxFilterText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
@@ -2304,16 +2307,16 @@
     <value>548, 17</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.Text" xml:space="preserve">
     <value>Пулӑшакан Чӗлхесене Куҫар</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.ToolTipText" xml:space="preserve">
-    <value>Тӑлмачсем пулӑшнипе пур чӗлхесене те суйласа куҫарать.</value>
+    <value>Куҫару Служби пулӑшнипе мӗнпур чӗлхене суйласа куҫарӑр</value>
   </data>
   <data name="toolStripMenuItemWindowsSupportedLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsSupportedLanguages.Text" xml:space="preserve">
     <value>Windows чӗлхе пакечӗ</value>
@@ -2322,7 +2325,7 @@
     <value>Windows чӗлхе пакечӗсенче суйлав тата куҫару</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguageInterfacePacks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguageInterfacePacks.Text" xml:space="preserve">
     <value>Windows чӗлхе интерфейсӗн пакечӗсем</value>
@@ -2331,7 +2334,7 @@
     <value>Windows чӗлхе интерфейсӗн пакечӗсенче суйлав тата куҫару</value>
   </data>
   <data name="toolStripMenuItemTranslateBusinessLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateBusinessLanguages.Text" xml:space="preserve">
     <value>Чи Лайӑх Ӗҫлӗ Чӗлхесене Куҫарӑр</value>
@@ -2340,10 +2343,10 @@
     <value>Тӗнчери чи час-часах усӑ куракан ӗҫ чӗлхисене суйлӑр тата куҫарӑр</value>
   </data>
   <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 6</value>
+    <value>396, 6</value>
   </data>
   <data name="toolStripMenuItem_TranslateAfrica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateAfrica.Text" xml:space="preserve">
     <value>Африка</value>
@@ -2352,7 +2355,7 @@
     <value>Африкӑри чи анлӑ чӗлхесене суйласа куҫарӑр</value>
   </data>
   <data name="toolStripMenuItem_TranslateAsia.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateAsia.Text" xml:space="preserve">
     <value>Ази</value>
@@ -2361,7 +2364,7 @@
     <value>Азири чи анлӑ чӗлхесене суйласа илсе куҫарӑр</value>
   </data>
   <data name="toolStripMenuItem_TranslateEurope.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateEurope.Text" xml:space="preserve">
     <value>Европа</value>
@@ -2370,7 +2373,7 @@
     <value>Европӑри чи анлӑ чӗлхесене суйласа куҫарӑр</value>
   </data>
   <data name="toolStripMenuItem_TranslateMiddleEast.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateMiddleEast.Text" xml:space="preserve">
     <value>ҫывӑх Хӗвелтухӑҫ</value>
@@ -2379,7 +2382,7 @@
     <value>Ҫывӑх Хӗвелтухӑҫӗнчи чи анлӑ чӗлхесене суйласа куҫарӑр</value>
   </data>
   <data name="toolStripMenuItem_TranslateNorthAmerica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateNorthAmerica.Text" xml:space="preserve">
     <value>Ҫурҫӗр Америка</value>
@@ -2388,7 +2391,7 @@
     <value>Ҫурҫӗр Америкӑри чи анлӑ чӗлхесене суйласа илсе куҫарӑр</value>
   </data>
   <data name="toolStripMenuItem_TranslateSouthAmerica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateSouthAmerica.Text" xml:space="preserve">
     <value>Кӑнтӑр Америка</value>
@@ -2397,10 +2400,10 @@
     <value>Кӑнтӑр Америкӑри чи анлӑ чӗлхесене суйласа илсе куҫарӑр</value>
   </data>
   <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 6</value>
+    <value>396, 6</value>
   </data>
   <data name="toolStripMenuItemTranslateTop5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop5.Text" xml:space="preserve">
     <value>Топ-5 Сӑмах куҫар</value>
@@ -2409,7 +2412,7 @@
     <value>Чи лайӑх 5 чӗлхене суйлӑр та куҫарӑр</value>
   </data>
   <data name="toolStripMenuItemTranslateTop10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop10.Text" xml:space="preserve">
     <value>Топ-10 сӑмах куҫар</value>
@@ -2418,7 +2421,7 @@
     <value>Суйлӑр та топ-10 куҫарӑр</value>
   </data>
   <data name="toolStripMenuItemTranslateTop20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop20.Text" xml:space="preserve">
     <value>Чи лайӑх 20 чӗлхе куҫар</value>
@@ -2427,7 +2430,7 @@
     <value>Суйлӑр та топ-20 куҫарӑр</value>
   </data>
   <data name="toolStripMenuItemTranslateTop30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop30.Text" xml:space="preserve">
     <value>Чи лайӑх 30 чӗлхе куҫар</value>
@@ -2448,13 +2451,13 @@
     <value>Суйланӑ чӗлхесем ҫине куҫарма пуҫлӑр.  Чӗлхене суйламан пулсан, пур чӗлхене те куҫарать.</value>
   </data>
   <data name="toolStripMenuItemSelectAll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 34</value>
+    <value>333, 42</value>
   </data>
   <data name="toolStripMenuItemSelectAll.Text" xml:space="preserve">
     <value>Пур чӗлхене те суйлӑр</value>
   </data>
   <data name="toolStripMenuItemSelectClear.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 34</value>
+    <value>333, 42</value>
   </data>
   <data name="toolStripMenuItemSelectClear.Text" xml:space="preserve">
     <value>Уйӑрнине Тасат</value>
@@ -2466,7 +2469,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemSelectUndo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 34</value>
+    <value>333, 42</value>
   </data>
   <data name="toolStripMenuItemSelectUndo.Text" xml:space="preserve">
     <value>Ушкӑнӑн Юлашки Суйлавне Пӑрахӑҫла</value>
@@ -2511,7 +2514,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks.Text" xml:space="preserve">
     <value>Windows 10-11 чӗлхе пакечӗ</value>
@@ -2541,7 +2544,7 @@
     <value>Хушса суйла</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface.Text" xml:space="preserve">
     <value>Windows чӗлхе пакечӗн интерфейсӗ</value>
@@ -2553,43 +2556,43 @@
     <value>Windows чӗлхе пакечӗн интерфейсӗнче вырнаҫнӑ чӗлхесене ҫеҫ кӑтарт</value>
   </data>
   <data name="toolStripSeparator7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>429, 6</value>
+    <value>437, 6</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_ShowOnly.Text" xml:space="preserve">
     <value>Кӑтартӑр</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_Add.Text" xml:space="preserve">
     <value>Хуш</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.Text" xml:space="preserve">
-    <value>Тӑлмачӑн хевтесӗр чӗлхисем</value>
+    <value>Куҫару службипе чӗлхесем</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.ToolTipText" xml:space="preserve">
-    <value>Пур чӗлхене те куҫаруҫӑ пулӑшнипе туртса илни.</value>
+    <value>Пур чӗлхене те куҫару службине пулӑшнипе туртса илни</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly.Text" xml:space="preserve">
     <value>Кӑтартӑр</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_Add.Text" xml:space="preserve">
     <value>Хуш</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames.Text" xml:space="preserve">
     <value>ISO 639-1 чӗлхесем пухни</value>
@@ -2616,7 +2619,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.Text" xml:space="preserve">
     <value>ISO 639-1 + Win Lang Pack</value>
@@ -2634,7 +2637,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemSubLanguagesAndRegions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemSubLanguagesAndRegions.Text" xml:space="preserve">
     <value>Субязыкӑпа регионсен списокне хуш</value>

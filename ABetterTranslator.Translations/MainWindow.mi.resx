@@ -393,10 +393,10 @@
     <value>7</value>
   </data>
   <data name="groupBoxItemsPerTransaltionRequest.Text" xml:space="preserve">
-    <value>Tuemi mo ia Whakamaori Req</value>
+    <value>Nga aho mo ia Whakamaori Req</value>
   </data>
   <data name="groupBoxItemsPerTransaltionRequest.ToolTip" xml:space="preserve">
-    <value>Tuemi mo ia Tono Whakamaori</value>
+    <value>Nga aho mo ia Tono Whakamaori</value>
   </data>
   <data name="&gt;&gt;groupBoxItemsPerTransaltionRequest.Name" xml:space="preserve">
     <value>groupBoxItemsPerTransaltionRequest</value>
@@ -1335,7 +1335,7 @@
     <value>6</value>
   </data>
   <data name="MaxThread.Text" xml:space="preserve">
-    <value>-0</value>
+    <value>-1</value>
   </data>
   <data name="&gt;&gt;MaxThread.Name" xml:space="preserve">
     <value>MaxThread</value>
@@ -2003,6 +2003,9 @@
   <data name="tabControlTranslateResxSubTab.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
+  <data name="groupBoxFilterText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="textBoxFilterText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
@@ -2304,16 +2307,16 @@
     <value>548, 17</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.Text" xml:space="preserve">
     <value>Whakamaoritia nga Reo Tautoko Katoa</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.ToolTipText" xml:space="preserve">
-    <value>Ka whiriwhiri me te whakamaori i nga reo katoa e tautokohia ana e nga kaiwhakamaori</value>
+    <value>Tīpakohia ka whakamāoritia ngā reo katoa mā te Ratonga Whakamāori</value>
   </data>
   <data name="toolStripMenuItemWindowsSupportedLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsSupportedLanguages.Text" xml:space="preserve">
     <value>Mōkihi Reo Windows</value>
@@ -2322,7 +2325,7 @@
     <value>Tīpakohia ka whakamāoritia ngā reo i roto i ngā mōkihi reo Windows</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguageInterfacePacks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguageInterfacePacks.Text" xml:space="preserve">
     <value>Mōkihi Atanga Reo Windows</value>
@@ -2331,7 +2334,7 @@
     <value>Tīpakohia, ka whakamāoritia ngā reo i roto i ngā Pōkai Atanga Reo Windows</value>
   </data>
   <data name="toolStripMenuItemTranslateBusinessLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateBusinessLanguages.Text" xml:space="preserve">
     <value>Whakamaoritia nga Reo Pakihi Nui</value>
@@ -2340,10 +2343,10 @@
     <value>Tīpakohia ka whakamaoritia te nuinga o te ao-Pakihi-reo</value>
   </data>
   <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 6</value>
+    <value>396, 6</value>
   </data>
   <data name="toolStripMenuItem_TranslateAfrica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateAfrica.Text" xml:space="preserve">
     <value>Āwherika</value>
@@ -2352,7 +2355,7 @@
     <value>Tīpakohia ka whakamaoritia nga reo korero nui rawa atu i Awherika</value>
   </data>
   <data name="toolStripMenuItem_TranslateAsia.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateAsia.Text" xml:space="preserve">
     <value>Ahia</value>
@@ -2361,7 +2364,7 @@
     <value>Tīpakohia me te whakamaori i nga reo korero nui rawa atu i Ahia</value>
   </data>
   <data name="toolStripMenuItem_TranslateEurope.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateEurope.Text" xml:space="preserve">
     <value>Uropi</value>
@@ -2370,7 +2373,7 @@
     <value>Tīpakohia me te whakamaori i nga reo korero nui rawa atu i Uropi</value>
   </data>
   <data name="toolStripMenuItem_TranslateMiddleEast.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateMiddleEast.Text" xml:space="preserve">
     <value>Middle East</value>
@@ -2379,7 +2382,7 @@
     <value>Tīpakohia me te whakamaori i nga reo korero nui rawa atu i te Rawhiti Rawhiti</value>
   </data>
   <data name="toolStripMenuItem_TranslateNorthAmerica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateNorthAmerica.Text" xml:space="preserve">
     <value>Amerika Te Tai Tokerau</value>
@@ -2388,7 +2391,7 @@
     <value>Tīpakohia ka whakamāoritia ngā reo kōrero nui rawa atu i Amerika Te Tai Tokerau</value>
   </data>
   <data name="toolStripMenuItem_TranslateSouthAmerica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateSouthAmerica.Text" xml:space="preserve">
     <value>Amerika ki te Tonga</value>
@@ -2397,10 +2400,10 @@
     <value>Tīpakohia ka whakamaoritia nga reo korero nui rawa atu i Amerika ki te Tonga</value>
   </data>
   <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 6</value>
+    <value>396, 6</value>
   </data>
   <data name="toolStripMenuItemTranslateTop5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop5.Text" xml:space="preserve">
     <value>Whakamaori Top 5 Reo Korero</value>
@@ -2409,7 +2412,7 @@
     <value>Tīpakohia ka whakamaoritia e 5 nga reo korero</value>
   </data>
   <data name="toolStripMenuItemTranslateTop10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop10.Text" xml:space="preserve">
     <value>Whakamaoritia nga reo korero 10 runga rawa atu</value>
@@ -2418,7 +2421,7 @@
     <value>Tīpakohia ka whakamaoritia 10 runga</value>
   </data>
   <data name="toolStripMenuItemTranslateTop20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop20.Text" xml:space="preserve">
     <value>Whakamaoritia nga reo korero 20 runga rawa atu</value>
@@ -2427,7 +2430,7 @@
     <value>Tīpakohia ka whakamaoritia 20 runga</value>
   </data>
   <data name="toolStripMenuItemTranslateTop30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop30.Text" xml:space="preserve">
     <value>Whakamaoritia nga reo korero 30 runga rawa atu</value>
@@ -2448,13 +2451,13 @@
     <value>Tīmatahia te whakamaoritanga ki nga reo kua tohua. Ka whakamaori i nga reo katoa mena karekau he reo i tohua.</value>
   </data>
   <data name="toolStripMenuItemSelectAll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 34</value>
+    <value>333, 42</value>
   </data>
   <data name="toolStripMenuItemSelectAll.Text" xml:space="preserve">
     <value>Tīpakohia nga Reo Katoa</value>
   </data>
   <data name="toolStripMenuItemSelectClear.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 34</value>
+    <value>333, 42</value>
   </data>
   <data name="toolStripMenuItemSelectClear.Text" xml:space="preserve">
     <value>Ūkuia te Tīpakonga Katoa</value>
@@ -2466,7 +2469,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemSelectUndo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 34</value>
+    <value>333, 42</value>
   </data>
   <data name="toolStripMenuItemSelectUndo.Text" xml:space="preserve">
     <value>Wetekina te Kōwhiringa Rōpū Whakamutunga</value>
@@ -2511,7 +2514,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks.Text" xml:space="preserve">
     <value>Windows 10/11 Pūkete Reo</value>
@@ -2541,7 +2544,7 @@
     <value>Tāpiri ka Tīpakohia</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface.Text" xml:space="preserve">
     <value>Atanga Pack Reo Windows</value>
@@ -2553,43 +2556,43 @@
     <value>Whakaatu noa i nga reo kei roto i te Atanga Puka Reo Windows</value>
   </data>
   <data name="toolStripSeparator7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>429, 6</value>
+    <value>437, 6</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_ShowOnly.Text" xml:space="preserve">
     <value>Whakaatu</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_Add.Text" xml:space="preserve">
     <value>Tāpiri</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.Text" xml:space="preserve">
-    <value>Nga reo e tautokohia ana e te Kaiwhakamaori</value>
+    <value>Nga Reo whai Ratonga Whakamaori</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.ToolTipText" xml:space="preserve">
-    <value>Whakaatuhia nga reo katoa me te kaiwhakamaori tautoko.</value>
+    <value>Whakaatuhia nga reo katoa me tetahi Ratonga Whakamaori tautoko</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly.Text" xml:space="preserve">
     <value>Whakaatu</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_Add.Text" xml:space="preserve">
     <value>Tāpiri</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames.Text" xml:space="preserve">
     <value>ISO 639-1 Tautuhi Reo</value>
@@ -2616,7 +2619,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.Text" xml:space="preserve">
     <value>ISO 639-1 + Win Pack Lang</value>
@@ -2634,7 +2637,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemSubLanguagesAndRegions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemSubLanguagesAndRegions.Text" xml:space="preserve">
     <value>Tāpirihia ki te Rarangi Reo-iti me nga Rohe</value>
@@ -10149,7 +10152,7 @@
     <value>17, 19, 17, 19</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>He Kai-whakamaori pai ake</value>
+    <value>A-Pai-Whakamaori</value>
   </data>
   <data name="&gt;&gt;openResxFileDialog.Name" xml:space="preserve">
     <value>openResxFileDialog</value>

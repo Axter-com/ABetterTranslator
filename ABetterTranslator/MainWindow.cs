@@ -39,6 +39,8 @@ namespace ABetterTranslator
     using static System.Windows.Forms.Design.AxImporter;
     using Microsoft.VisualBasic.Devices;
     using Windows.Globalization;
+    using System.Runtime.Intrinsics.X86;
+    using System.Reflection;
 
 	public partial class MainWindow : Form
 	{
@@ -55,45 +57,56 @@ namespace ABetterTranslator
         public static readonly Color PreStartInfoBgColor = Color.White;
         public static readonly Color BackUpInfoFgColor = Color.Teal;
         public static readonly Color BackUpInfoBgColor = Color.White;
-		public delegate void IntArgDelegateType(int Arg);
-		public IntArgDelegateType ShowProgressDelegate;
-		public IntArgDelegateType InitializeProgressBarDelegate;
-		public delegate void TaskCompleteDelegateType(int Arg, TimeSpan TotalRunTime);
-		public TaskCompleteDelegateType TaskCompleteDelegate;
-        public delegate void OutPutFromTranslatorDelegateType(string message, Color color);
-        public OutPutFromTranslatorDelegateType OutPutFromTranslatorDelegate;
-        public delegate void WriteLineFromTranslatorDelegateType(string message, LoggingColorSet loggingcolorset);
-        public WriteLineFromTranslatorDelegateType WriteLineFromTranslatorDelegate;
-        public delegate void LogLineFromTranslatorDelegateType(string message, OutPutLevel outputlevel, Color? color);
-        public LogLineFromTranslatorDelegateType LogLineFromTranslatorDelegate;
-        public delegate void LogToFileFromTranslatorDelegateType(string message, VerbosityLevels verbositylevels, bool DbgWriteLine = true);
-        public LogToFileFromTranslatorDelegateType LogToFileFromTranslatorDelegate;
         #endregion public variables
+        #region delagates
+        // Start of delagates /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        public delegate void IntArgDelegateType(int Arg);
+		public IntArgDelegateType _showProgressDelegate;
+		public IntArgDelegateType _initializeProgressBarDelegate;
+		public delegate void TaskCompleteDelegateType(int Arg, TimeSpan TotalRunTime);
+		public TaskCompleteDelegateType _taskCompleteDelegate;
+        public delegate void OutPutFromTranslatorDelegateType(string message, Color color);
+        public OutPutFromTranslatorDelegateType _outPutFromTranslatorDelegate;
+        public delegate void WriteLineFromTranslatorDelegateType(string message, LoggingColorSet loggingcolorset);
+        public WriteLineFromTranslatorDelegateType _writeLineFromTranslatorDelegate;
+        public delegate void LogLineFromTranslatorDelegateType(string message, OutPutLevel outputlevel, Color? color);
+        public LogLineFromTranslatorDelegateType _logLineFromTranslatorDelegate;
+        public delegate void LogToFileFromTranslatorDelegateType(string message, VerbosityLevels verbositylevels, bool DbgWriteLine = true);
+        public LogToFileFromTranslatorDelegateType _logToFileFromTranslatorDelegate;
+        #endregion delagates
         #region private/protected variables
+        // Constant strings
         private const string _getLanguageCodePattern = @".+\.(?<code>.+)\.resx";
 		private const string NL = "\n";
-		private readonly char[] _numberCharsToTrim = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
+        private const string _logFileName = "LogFile.txt";
+        private const string ErrMsgPrefix = "Error: - ";
+        private const string WrnMsgPrefix = "Warn: - ";
+        private const string InfMsgPrefix = "Info: - ";
+        private const string VerboseMsgPrefix = "VERBOSE: - ";
+        private const string DetailsMsgPrefix = "Details: - ";
+        // ReadOnly variables
+        private readonly char[] _numberCharsToTrim = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
 		private readonly List<PreviousGroupLanguageSelections> _previousLanguageSelections = new();
-		private bool backendUpdate = false;
+		private readonly bool backendUpdate = false;
+		private readonly List<int> _LogBoxUpdatePoints = new();
+        private readonly object _lock = new object();
+        private readonly IReadOnlyDictionary<string, GTranslate.Language> GTranslate_LangLookup;
+        private readonly string ApplicationDefaultLanguage = null;
+        // Other variables
 		private CancellationTokenSource cancellation = new CancellationTokenSource();
 		private string _lastValueOf_inputBox = "";
-		private bool _wasOutputBoxADirectParentOfInputBox = false;
+		private OutputBoxRelatedToInputBox _outputBoxRelationToInputBox = OutputBoxRelatedToInputBox.NoRelations;
 		private ResxMultiThreadTranslator? _multiThreadTranslator = null;
 		private List<TranslationRequestPacket>? _translationRequestPackets = null;
-		private readonly List<int> _LogBoxUpdatePoints = new();
         private int SelectedLanguageSet = -1;
-        private readonly object _lock = new object();
         private List<string> _previousLoggingErrors = new();
         private List<string[,]> LanguageSets = new();
         private List<string> _languagesInList = new();
         private LanguageServiceDetails languagedictionary = new ();
-        private readonly IReadOnlyDictionary<string, GTranslate.Language> GTranslate_LangLookup;
         private string _lastTextToTranslate_value = "";
         private bool _doSendErrMsgOnTranslateTextError = false;
         private bool _isFormReady = false;
         private StreamWriter _logFile  = null;
-        private const string _logFileName = "LogFile.txt";
-        private readonly string ApplicationDefaultLanguage = null;
         private bool _SrcResxHasAppendedLanguageToBaseFileName = false;
         #endregion private/protected variables
         #region enums and sub classes
@@ -101,6 +114,7 @@ namespace ABetterTranslator
         {
             Silent,
             Errors,
+            Warn,
             Normal,
             Detail,
             LogToFileIfSilent,
@@ -126,6 +140,16 @@ namespace ABetterTranslator
             PreStartLogging,
             BackupLogging,
         }
+        public enum OutputBoxRelatedToInputBox
+        {
+            NoRelations,
+            OutPutBox_IsParent_OfInputBoxParent,
+            OutPutBoxParent_IsParent_OfInputBoxParent,
+            OutPutBoxParentParent_IsParent_OfInputBoxParent,
+            OutPutBox_IsParent_OfInputBoxParentParent,
+            OutPutBoxParent_IsParent_OfInputBoxParentParent,
+            OutPutBoxParentParent_IsParent_OfInputBoxParentParent,
+        }
         private class PreviousGroupLanguageSelections
 		{
 			public List<string> Selections { get; set; }	= new List<string>();
@@ -146,50 +170,50 @@ namespace ABetterTranslator
             {
                 if (TotalCount < 1)
                     LogToFile($"ShowProgress received unexpected value of {TotalCount}", VerbosityLevels.Errors, true);
-                _mainWindow.Invoke(_mainWindow.ShowProgressDelegate, TotalCount);
+                _mainWindow.Invoke(_mainWindow._showProgressDelegate, TotalCount);
             }
 
             protected override void TaskComplete(int QtyItemsCompleted, TimeSpan TotalRunTime)
             {
                 _previousErrorMessages.Clear();
                 if ( _qtySkippedDisplayErrs > 0 )
-                    LogToFile($"Warn: Skipped display {_qtySkippedDisplayErrs} duplicate errors.",VerbosityLevels.Normal);
-                _mainWindow.Invoke(_mainWindow.TaskCompleteDelegate, QtyItemsCompleted, TotalRunTime);
+                    LogToFile($"Skipped display {_qtySkippedDisplayErrs} duplicate errors.",VerbosityLevels.Warn);
+                _mainWindow.Invoke(_mainWindow._taskCompleteDelegate, QtyItemsCompleted, TotalRunTime);
             }
 
             protected override void InitializeProgressBar(int QtyItemsToCheck)
             {
                 _previousErrorMessages.Clear();
-                _mainWindow.Invoke(_mainWindow.InitializeProgressBarDelegate, QtyItemsToCheck);
+                _mainWindow.Invoke(_mainWindow._initializeProgressBarDelegate, QtyItemsToCheck);
             }
             protected override void LogToFile(string message, VerbosityLevels verbositylevels, bool DbgWriteLine = true)
             {
-                    _ = _mainWindow.Invoke(_mainWindow.LogToFileFromTranslatorDelegate, message, verbositylevels, DbgWriteLine);
+                    _ = _mainWindow.Invoke(_mainWindow._logToFileFromTranslatorDelegate, message, verbositylevels, DbgWriteLine);
             }
             protected override void LogLine(string message, OutPutLevel outputlevel = OutPutLevel.NormalLvl, Color? color = null)
             {
                 if ( _options._silent )
                     return;
                 if ( outputlevel == OutPutLevel.ShowInWindow )
-                    _ = _mainWindow.Invoke(_mainWindow.LogLineFromTranslatorDelegate, message, outputlevel, color ?? DefaultColor);
+                    _ = _mainWindow.Invoke(_mainWindow._logLineFromTranslatorDelegate, message, outputlevel, color ?? DefaultColor);
                 else if (outputlevel == OutPutLevel.ErrorLvl)
                 {
                     if (this._options._verbose ||
                         !_previousErrorMessages
                             .Contains(message)) // Avoid sending the same error message over and over again
                     {
-                        Debug.WriteLine("ERROR: - " + message);
+                        Debug.WriteLine(message);
                         _previousErrorMessages.Add(message);
                     }
                     else
                         ++_qtySkippedDisplayErrs;
                 }
                 else if ( outputlevel == OutPutLevel.PreProgressBar || outputlevel == OutPutLevel.PostProgressBar )
-                    Debug.WriteLine("INFO: " + message);
+                    Debug.WriteLine(InfMsgPrefix + message);
                 else if ( _options._verbose )
-                    Debug.WriteLine("VERBOSE: - " + message);
+                    Debug.WriteLine(VerboseMsgPrefix + message);
                 else if ( outputlevel == OutPutLevel.VerboseIfNotSilent )
-                    Debug.WriteLine("INFO: " + message);
+                    Debug.WriteLine(InfMsgPrefix + message);
             }
 
             protected override void WriteLine(string message, OutPutLevel outputlevel = OutPutLevel.NormalLvl)
@@ -217,7 +241,7 @@ namespace ABetterTranslator
                         logColorSet = LoggingColorSet.ErrorLogging;
                         break;
                 }
-                _ = _mainWindow.Invoke(_mainWindow.WriteLineFromTranslatorDelegate, message, logColorSet);
+                _ = _mainWindow.Invoke(_mainWindow._writeLineFromTranslatorDelegate, message, logColorSet);
             }
         }
         public class ObjListVwRowDetails : INotifyPropertyChanged
@@ -349,13 +373,13 @@ namespace ABetterTranslator
             LanguageSets.Add(LanguageCodes.Windows10Plus_LanguagePacks);
             LanguageSets.Add(LanguageCodes.Windows10Plus_LanguageInterfacePacks);
 
-			ShowProgressDelegate = new IntArgDelegateType(Translator_ShowProgress);
-			TaskCompleteDelegate = new TaskCompleteDelegateType(Translator_TaskComplete);
-			InitializeProgressBarDelegate = new IntArgDelegateType(Translator_InitializeProgressBar);
-			OutPutFromTranslatorDelegate = new OutPutFromTranslatorDelegateType(Translator_OutPutFromTranslator);
-            WriteLineFromTranslatorDelegate = new WriteLineFromTranslatorDelegateType(WriteLine);
-            LogLineFromTranslatorDelegate = new LogLineFromTranslatorDelegateType(LogLine);
-            LogToFileFromTranslatorDelegate = new LogToFileFromTranslatorDelegateType(LogToFile);
+			_showProgressDelegate = new IntArgDelegateType(Translator_ShowProgress);
+			_taskCompleteDelegate = new TaskCompleteDelegateType(Translator_TaskComplete);
+			_initializeProgressBarDelegate = new IntArgDelegateType(Translator_InitializeProgressBar);
+			_outPutFromTranslatorDelegate = new OutPutFromTranslatorDelegateType(Translator_OutPutFromTranslator);
+            _writeLineFromTranslatorDelegate = new WriteLineFromTranslatorDelegateType(WriteLine);
+            _logLineFromTranslatorDelegate = new LogLineFromTranslatorDelegateType(LogLine);
+            _logToFileFromTranslatorDelegate = new LogToFileFromTranslatorDelegateType(LogToFile);
 
 			Width = Math.Min(1700, Screen.FromControl(this).WorkingArea.Width - 600);
 			Height = Math.Min(1000, Screen.FromControl(this).WorkingArea.Height - 300);
@@ -369,60 +393,73 @@ namespace ABetterTranslator
         [ConditionalAttribute("DEBUG")]
         private void ValidateLanguageSets()
         { // Only use this in debug mode for validating the data in LanguageCode.cs and in LanguageDictionary.cs
-            //System.Collections.Generic.SortedList<string, GTranslate.Language> SortedLanguageNames = new();
-            //foreach ( var language in GTranslate_LangLookup )
-            //    SortedLanguageNames.Add(language.Value.Name, language.Value);
-            
-            //string ReadMeFileName = "E:\\Repos\\ABetterTranslator\\ABetterTranslator\\Docs\\SupportedLanguages\\README.md";
-            //using StreamWriter file = new(ReadMeFileName, append: false);
-            //file.WriteLine("# Supported Languages\r\n");
-            //foreach ( KeyValuePair<string, GTranslate.Language> language in SortedLanguageNames )
-            //{
-            //    string code = language.Key;
-            //    string name = language.Value.Name;
-            //    string translator = language.Value.SupportedServices.ToString();
-            //    string ISO6391 = language.Value.ISO6391;
-            //    string ISO6393 = language.Value.ISO6393;
-            //    string NativeName = language.Value.NativeName;
-            //    if ( LanguageCodes.LanguagesTagsWithIssues.Contains(code) )
-            //        continue;
-            //    file.WriteLine($"* **{name}** - {code}:{ISO6391}  [{translator}]");
-            //}
-            //file.Close();
-            //List<string> DetectedIssues = new();
-            //Dictionary<string,bool> LanguagesThatNeedToBeChecked = new();
-            //foreach ( var language in GTranslate_LangLookup )
-            //{
-            //    string code = language.Key;
-            //    string name = language.Value.Name;
-            //    LanguagesThatNeedToBeChecked[code] = false;
-            //}
-            //foreach ( var languageSet in LanguageSets )
-            //{
-            //    for ( int i = 0 ; i < languageSet.GetLength(0) ; ++i )
-            //    {
-            //        string code = languageSet[i, 0];
-            //        string name = languageSet[i, 1];
-            //        if ( !GTranslate_LangLookup.ContainsKey(code) )
-            //        {
-            //            string Issue = $"Did not find tag ({code})/Lang({name}) in GTranslate Languages.";
-            //            // Debug.WriteLine(Issue);
-            //            DetectedIssues.Add(Issue);
-            //        }
-            //        else
-            //            LanguagesThatNeedToBeChecked[code] = true;
-            //    }
-            //}
-            //foreach ( var lang in LanguagesThatNeedToBeChecked )
-            //{
-            //    if ( !lang.Value )
-            //    {
-            //        string Issue = $"Info: Did not find tag ({lang.Key}) in any of the LanguageCodes translators.";
-            //        Debug.WriteLine(Issue + "...");
-            //        DetectedIssues.Add(Issue);
-            //    }
-            //}
-            //Debug.WriteLine("Finish validation.");
+            List<string> DetectedErrors = new();
+            List<string> DetectedMinorIssues = new();
+            System.Collections.Generic.SortedList<string, GTranslate.Language> SortedLanguageNames = new();
+            foreach ( var language in GTranslate_LangLookup )
+                SortedLanguageNames.Add(language.Value.Name, language.Value);
+
+            string ReadMeFileName = "E:\\Repos\\ABetterTranslator\\ABetterTranslator\\Docs\\SupportedLanguages\\README.md";
+            using StreamWriter file = new(ReadMeFileName, append: false);
+            file.WriteLine("# Supported Languages\r\n");
+            foreach ( KeyValuePair<string, GTranslate.Language> language in SortedLanguageNames )
+            {
+                string code = language.Key;
+                string name = language.Value.Name;
+                string translator = language.Value.SupportedServices.ToString();
+                string ISO6391 = language.Value.ISO6391;
+                string ISO6393 = language.Value.ISO6393;
+                string NativeName = language.Value.NativeName;
+                if ( LanguageCodes.LanguagesTagsWithIssues.Contains(code) )
+                    continue;
+                file.WriteLine($"* **{name}** - {code}:{ISO6391}  [{translator}]");
+            }
+            file.Close();
+            System.Collections.Generic.SortedList<string, GTranslate.Language> ISO6391SortedLanguages = new();
+            Dictionary<string,bool> LanguagesThatNeedToBeChecked = new();
+            foreach ( var language in GTranslate_LangLookup )
+            {
+                string code = language.Key;
+                string name = language.Value.Name;
+                LanguagesThatNeedToBeChecked[code] = false;
+                // Verify that no two languages have the same ISO6391 value in GTranslate_LangLookup
+                if ( ISO6391SortedLanguages.ContainsKey(language.Value.ISO6391) )
+                {
+                    GTranslate.Language PreviousLanguage = ISO6391SortedLanguages[language.Value.ISO6391];
+                    string errMsg = $"{ErrMsgPrefix}Found duplicate ISO639-1 tags for tag {language.Value.ISO6391}. Previous language=[{PreviousLanguage.Name}]; Current language=[{name}]";
+                    Debug.WriteLine(errMsg);
+                    DetectedErrors.Add(errMsg);
+                    Debug.Assert(false, errMsg);
+                }
+                else
+                    ISO6391SortedLanguages.Add(language.Value.ISO6391, language.Value);
+            }
+            foreach ( var languageSet in LanguageSets )
+            {
+                for ( int i = 0 ; i < languageSet.GetLength(0) ; ++i )
+                {
+                    string code = languageSet[i, 0];
+                    string name = languageSet[i, 1];
+                    if ( !GTranslate_LangLookup.ContainsKey(code) )
+                    {
+                        string Issue = $"{WrnMsgPrefix}{MethodBase.GetCurrentMethod().Name}: Did not find tag ({code})/Lang({name}) in GTranslate Languages.";
+                        Debug.WriteLine(Issue);
+                        DetectedErrors.Add(Issue);
+                    }
+                    else
+                        LanguagesThatNeedToBeChecked[code] = true;
+                }
+            }
+            foreach ( var lang in LanguagesThatNeedToBeChecked )
+            {
+                if ( !lang.Value )
+                {
+                    string Issue = $"{WrnMsgPrefix}Did not find tag ({lang.Key}) in any of the LanguageCodes translators.";
+                    // Debug.WriteLine(Issue + "...");
+                    DetectedMinorIssues.Add(Issue);
+                }
+            }
+            Debug.WriteLine($"Finish validation. Found {DetectedErrors.Count} errors and {DetectedMinorIssues.Count} minor issues.");
         }
         private string ParseArgs(string[] args)
         {
@@ -448,18 +485,72 @@ namespace ABetterTranslator
             }
             return Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName;
         }
+        private void UpdateOutPutBoxIfNeeded()
+        {
+            string outputBoxLastPathName = "";
+            string outputBox2ndToLastPathName = "";
+            try
+            {
+                switch ( _outputBoxRelationToInputBox )
+                {
+                    default:
+                    case OutputBoxRelatedToInputBox.NoRelations:
+                        break;
+                    case OutputBoxRelatedToInputBox.OutPutBox_IsParent_OfInputBoxParent:
+                        outputBox.Text = Path.GetDirectoryName(inputBox.Text);
+                        break;
+                    case OutputBoxRelatedToInputBox.OutPutBoxParent_IsParent_OfInputBoxParent:
+                        outputBoxLastPathName = Path.GetFileName(outputBox.Text);
+                        outputBox.Text = $"{Path.GetDirectoryName(inputBox.Text)}\\{outputBoxLastPathName}";
+                        break;
+                    case OutputBoxRelatedToInputBox.OutPutBoxParentParent_IsParent_OfInputBoxParent:
+                        outputBoxLastPathName = Path.GetFileName(outputBox.Text);
+                        outputBox2ndToLastPathName = Path.GetFileName(Path.GetDirectoryName(outputBox.Text));
+                        outputBox.Text = $"{Path.GetDirectoryName(inputBox.Text)}\\{outputBox2ndToLastPathName}\\{outputBoxLastPathName}";
+                        break;
+                    case OutputBoxRelatedToInputBox.OutPutBox_IsParent_OfInputBoxParentParent:
+                        outputBox.Text = Path.GetDirectoryName(Path.GetDirectoryName(inputBox.Text));
+                        break;
+                    case OutputBoxRelatedToInputBox.OutPutBoxParent_IsParent_OfInputBoxParentParent:
+                        outputBoxLastPathName = Path.GetFileName(outputBox.Text);
+                        outputBox.Text = $"{Path.GetDirectoryName(Path.GetDirectoryName(inputBox.Text))}\\{outputBoxLastPathName}";
+                        break;
+                    case OutputBoxRelatedToInputBox.OutPutBoxParentParent_IsParent_OfInputBoxParentParent:
+                        outputBoxLastPathName = Path.GetFileName(outputBox.Text);
+                        outputBox2ndToLastPathName = Path.GetFileName(Path.GetDirectoryName(outputBox.Text));
+                        outputBox.Text = $"{Path.GetDirectoryName(Path.GetDirectoryName(inputBox.Text))}\\{outputBox2ndToLastPathName}\\{outputBoxLastPathName}";
+                        break;
+                }
+            }
+            catch(Exception e)
+            {
+                LogToFile(e.Message, VerbosityLevels.Warn, true);
+                // If exception triggered, break the relationship
+                _outputBoxRelationToInputBox = OutputBoxRelatedToInputBox.NoRelations;
+            }
+        }
         private void BrowseFiles(object sender, EventArgs e)
 		{
 			if ( openResxFileDialog.ShowDialog() == DialogResult.OK )
 			{
                 inputBox.Text = openResxFileDialog.FileName;
                 _ = CheckIfSrcResxHasAppendedLanguageToBaseFileName();
+                if (string.IsNullOrEmpty(outputBox.Text) )
+                {
+                    outputBox.Text = Path.GetDirectoryName(inputBox.Text);
+                    _outputBoxRelationToInputBox = OutputBoxRelatedToInputBox.OutPutBox_IsParent_OfInputBoxParent;
+                }
+                else
+                    UpdateOutPutBoxIfNeeded();
             }
         }
 		private void BrowseFolders(object sender, EventArgs e)
 		{
-			if ( folderBrowserDialog.ShowDialog() == DialogResult.OK )
-				outputBox.Text = folderBrowserDialog.SelectedPath;
+            if ( folderBrowserDialog.ShowDialog() == DialogResult.OK )
+            {
+                outputBox.Text = folderBrowserDialog.SelectedPath;
+                _outputBoxRelationToInputBox = WhatIsOutputBoxRelationToInputBox();
+            }
 		}
 		private string GetDefaultPath(string DefaultLoadedValue, string SubPathInRoamingApp, string? ParentPath = null)
 		{
@@ -481,7 +572,7 @@ namespace ABetterTranslator
 			}
 			catch ( Exception e )
 			{
-                LogToFile("Error:[GetDefaultPath] Could NOT create path [" + PathToReturn + "]. Exception thrown:" + e.Message, VerbosityLevels.Errors);
+                LogToFile("[GetDefaultPath] Could NOT create path [" + PathToReturn + "]. Exception thrown:" + e.Message, VerbosityLevels.Errors);
 				return "";
 			}
 			return PathToReturn;
@@ -572,14 +663,28 @@ namespace ABetterTranslator
                 Monitor.Exit(_lock);
             }
         }
-        private void LogToFile(string message, VerbosityLevels verbositylevels)
+        private void LogToFile(Exception e, string CallingFunctionName, string ExtraMsg = "")=>LogToFile($"{CallingFunctionName}: {ExtraMsg}{e.Message}", VerbosityLevels.Errors, true);
+        private void LogToFile(string message, VerbosityLevels verbositylevels)=>LogToFile(message, verbositylevels, true);
+        private string FormatMessage(string message, VerbosityLevels verbositylevels, bool AddNextLineChr = false)
         {
-            LogToFile(message, verbositylevels, true);
+            if ( AddNextLineChr && !message.Contains(NL) )
+                message += NL;
+            if ( verbositylevels == VerbosityLevels.Errors && !message.StartsWith(ErrMsgPrefix) )
+                message = ErrMsgPrefix + message;
+            else if ( verbositylevels == VerbosityLevels.Warn && !message.StartsWith(WrnMsgPrefix) )
+                message = WrnMsgPrefix + message;
+            else if ( verbositylevels == VerbosityLevels.Normal && !message.StartsWith(InfMsgPrefix) )
+                message = InfMsgPrefix + message;
+            else if ( verbositylevels == VerbosityLevels.Detail && !message.StartsWith(DetailsMsgPrefix) )
+                message = DetailsMsgPrefix + message;
+            return message;
         }
         private void LogToFile(string message, VerbosityLevels verbositylevels, bool DbgWriteLine)
         {
             Debug.Assert(verbositylevels != VerbosityLevels.Silent);
-            if (comboBoxLogFileVerbosityLevel.SelectedIndex != 3 && verbositylevels == VerbosityLevels.Detail)
+            message = FormatMessage(message, verbositylevels);
+
+            if ( comboBoxLogFileVerbosityLevel.SelectedIndex != 3 && verbositylevels == VerbosityLevels.Detail)
                 return;
             if (comboBoxLogFileVerbosityLevel.SelectedIndex < 2 && verbositylevels == VerbosityLevels.Normal)
                 return;
@@ -590,15 +695,17 @@ namespace ABetterTranslator
                     return;
                 _previousLoggingErrors.Add(message);
             }
+
             if ( _logFile != null)
                 _logFile.WriteLineAsync(message);
             if ( DbgWriteLine )
                 Debug.WriteLine(message);
         }
+        private void WriteLine(Exception e, string CallingFunctionName)=>WriteLine($"{CallingFunctionName}: {e.Message}", LoggingColorSet.ErrorLogging, VerbosityLevels.Errors);
+
         private void LogLine(string message, VerbosityLevels verbositylevels)
         {
-            if (!message.Contains(NL))
-                message += NL;
+            message = FormatMessage(message, verbositylevels, true);
             switch ( verbositylevels )
             {
                 case VerbosityLevels.Errors: // Always log errors, even if user verbosity selection is set to silent
@@ -627,8 +734,7 @@ namespace ABetterTranslator
         private void WriteLine(string message, LoggingColorSet logColorSet)=> WriteLine(message, logColorSet, VerbosityLevels.Normal);
         private void WriteLine(string message, LoggingColorSet logColorSet, VerbosityLevels verbositylevels = VerbosityLevels.Normal)
         {
-            if ( !message.Contains(NL) )
-                message += NL;
+            message = FormatMessage(message, logColorSet == LoggingColorSet.ErrorLogging ? VerbosityLevels.Errors : verbositylevels, true);
             if ( logColorSet != LoggingColorSet.ErrorLogging && logColorSet != LoggingColorSet.PreStartLogging && logColorSet != LoggingColorSet.StartAndEndLogging )
             {
                 if ((verbositylevels == VerbosityLevels.Detail && comboBoxScreenVerbosityLevel.SelectedIndex < 3) ||
@@ -799,6 +905,36 @@ namespace ABetterTranslator
         {
             CreateLogFile();
         }
+        private OutputBoxRelatedToInputBox WhatIsOutputBoxRelationToInputBox()
+        {//_outputBoxRelationToInputBox
+            if ( string.IsNullOrEmpty(inputBox.Text) )
+                return OutputBoxRelatedToInputBox.NoRelations;
+            string inputBoxParent = Path.GetDirectoryName(inputBox.Text);
+            if (string.IsNullOrEmpty(outputBox.Text) )
+                outputBox.Text = inputBoxParent;
+            if ( inputBoxParent.Equals(outputBox.Text) )
+                return OutputBoxRelatedToInputBox.OutPutBox_IsParent_OfInputBoxParent;
+            string outputBoxParent = Path.GetDirectoryName(outputBox.Text);
+            if ( inputBoxParent.Equals(outputBoxParent) )
+                return OutputBoxRelatedToInputBox.OutPutBoxParent_IsParent_OfInputBoxParent;
+            string inputBoxParentParent = Path.GetDirectoryName(inputBoxParent);
+            if ( !string.IsNullOrEmpty(inputBoxParentParent) )
+            {
+                if (inputBoxParentParent.Equals(outputBox.Text))
+                    return OutputBoxRelatedToInputBox.OutPutBox_IsParent_OfInputBoxParentParent;
+                if ( inputBoxParentParent.Equals(outputBoxParent) )
+                    return OutputBoxRelatedToInputBox.OutPutBoxParent_IsParent_OfInputBoxParentParent;
+            }
+            string outputBoxParentParent = Path.GetDirectoryName(outputBoxParent);
+            if ( !string.IsNullOrEmpty(outputBoxParentParent) )
+            {
+                if (outputBoxParentParent.Equals(inputBoxParent))
+                    return OutputBoxRelatedToInputBox.OutPutBoxParentParent_IsParent_OfInputBoxParent;
+                if (outputBoxParentParent.Equals(inputBoxParentParent))
+                    return OutputBoxRelatedToInputBox.OutPutBoxParentParent_IsParent_OfInputBoxParentParent;
+            }
+            return OutputBoxRelatedToInputBox.NoRelations;
+        }
         #endregion Class constructor and miscellaneous methods
 
         #region Load and Save method for persistent user inputs
@@ -837,7 +973,6 @@ namespace ABetterTranslator
                     comboBoxScreenVerbosityLevel.SelectedIndex = Settings.Default.comboBoxScreenVerbosityLevel;
                     comboBoxToLang.SelectedIndex = Settings.Default.comboBoxToLang;
                     tabs.SelectedIndex = Settings.Default.tabs;
-
                     // Keep above code clean so it can be copied and pasted between Load and FormClosing, and a Regex replace can be performed
                     // Above code should only have plain assignments, and non-assignment code should be placed below
                     textBoxBkUpDir.Text = GetDefaultPath(textBoxBkUpDir.Text, "BackupResx");
@@ -846,8 +981,16 @@ namespace ABetterTranslator
                         MaxThread.Text = Math.Max(Environment.ProcessorCount, 4).ToString();
                     if ( comboBoxFromLanguage.SelectedIndex == -1 )
                         comboBoxFromLanguage.SelectedIndex = comboBoxFromLang.SelectedIndex = comboBoxToLang.SelectedIndex = GetValid_codeBox_SelectIndex();
-                    if ( SelectedLanguageSet > -1 )
-                        PopulateLanguageSet((LanguageSet) SelectedLanguageSet);
+                    try
+                    {
+                        if ( SelectedLanguageSet > -1 )
+                            PopulateLanguageSet((LanguageSet) SelectedLanguageSet);
+                    }
+                    catch ( Exception eee )
+                    {
+                        LogToFile(eee, MethodBase.GetCurrentMethod().Name + "-1");
+                    }
+
                     // ToDo: Change how PopulateLanguageSet gets called.  It needs to come before setting the following three values, so they don't have to be reset again within this function.
                     comboBoxFromLang.SelectedIndex = Settings.Default.comboBoxFromLang;
                     comboBoxFromLanguage.SelectedIndex = Settings.Default.comboBoxFromLanguage;
@@ -868,14 +1011,13 @@ namespace ABetterTranslator
                     }
 
                     _lastValueOf_inputBox = inputBox.Text;
-                    if ( !string.IsNullOrEmpty(inputBox.Text) && !string.IsNullOrEmpty(outputBox.Text) )
-                        _wasOutputBoxADirectParentOfInputBox = Path.GetDirectoryName(inputBox.Text).Equals(outputBox.Text);
+                    _outputBoxRelationToInputBox = WhatIsOutputBoxRelationToInputBox();
                     _ = CheckIfSrcResxHasAppendedLanguageToBaseFileName();
                     CreateLogFile();
                 }
                 catch ( Exception ee )
                 {
-                    LogToFile(ee.Message, VerbosityLevels.Errors, true);
+                    LogToFile(ee, MethodBase.GetCurrentMethod().Name + "-2");
                 }
             }
 
@@ -885,7 +1027,7 @@ namespace ABetterTranslator
                     comboBoxFromLanguage.SelectedIndex = comboBoxFromLang.SelectedIndex = GetDefaultLanguageIndex();
             } catch(Exception ee)
             {
-                LogToFile(ee.Message, VerbosityLevels.Errors, true);
+                LogToFile(ee, MethodBase.GetCurrentMethod().Name + "-3");
             }
 
             if ( !IsOnScreen(this) )
@@ -947,7 +1089,7 @@ namespace ABetterTranslator
 			bool success = _multiThreadTranslator.TranslateData(_translationRequestPackets);
 			if ( !success )
 			{
-                LogToFile("Error:[RunBackgroundTask] TranslateData failed.", VerbosityLevels.Errors);
+                LogToFile("[RunBackgroundTask] TranslateData failed.", VerbosityLevels.Errors);
 				throw new Exception("TranslateData failed.");
 			}
 		}
@@ -1040,6 +1182,7 @@ namespace ABetterTranslator
                 outputBox.Text = Path.GetDirectoryName(inputBox.Text);
                 if ( string.IsNullOrEmpty(outputBox.Text) )
                     return false;
+                _outputBoxRelationToInputBox = OutputBoxRelatedToInputBox.OutPutBox_IsParent_OfInputBoxParent;
             }
             if ( !Directory.Exists(outputBox.Text) )
             {
@@ -1049,7 +1192,7 @@ namespace ABetterTranslator
             }
             return true;
         }
-        private bool isValid_InputboxFileAndOutPutDir(bool DisplayErrorMessageIfFail = true)
+        private bool IsValid_InputboxFileAndOutPutDir(bool DisplayErrorMessageIfFail = true)
         {
             bool isvalid = CheckIfValidValuesFor_InputboxFileAndOutPutDir();
             if (!isvalid && DisplayErrorMessageIfFail )
@@ -1060,7 +1203,7 @@ namespace ABetterTranslator
         }
         private async void TranslateFile()
 		{
-            if ( !isValid_InputboxFileAndOutPutDir() )
+            if ( !IsValid_InputboxFileAndOutPutDir() )
                 return;
             string inputPath = Path.GetFullPath(inputBox.Text);
 			string fromCode = GetTag(comboBoxFromLanguage.Text);
@@ -1077,17 +1220,8 @@ namespace ABetterTranslator
 			string? outputDir = outputBox.Text.Length > 0
 				? Path.GetFullPath(outputBox.Text)
 				: Path.GetDirectoryName(inputPath);
-
 			if (!Directory.Exists(outputDir) )
 				_ = Directory.CreateDirectory(outputDir);
-
-            string filepath = $"{outputBox.Text}\\{Path.GetFileNameWithoutExtension(inputPath)}";
-            //const string FilePattern = @"(?<file>.+)(\.(?<code>.+)){0,1}\.resx";
-            //Match match = Regex.Match(inputPath, FilePattern);
-            //if ( match.Success )
-            //{
-            //	filepath = match.Groups["file"].Value;
-            //}
 
             if ( checkBoxDeleteLangResxFilesBeforeTranslation.Checked )
 			{
@@ -1151,6 +1285,7 @@ namespace ABetterTranslator
             else
                 sourceResxData.translateAsSingleDocument = false;
 
+            string filepath = $"{outputBox.Text}\\{Path.GetFileNameWithoutExtension(inputPath)}";
             List<string> LangCodesIncluded = new();
             foreach ( var obj in languageList.CheckedObjects )
 			{
@@ -1163,7 +1298,7 @@ namespace ABetterTranslator
 				if ( LangCodesIncluded.Contains(toCode) ) // Make sure we don't do multiple languages having the same code, but different aliases
 					continue;
 				LangCodesIncluded.Add(toCode);
-				string appendedfilename = GetAppendedFileName(toCode);
+				string appendedfilename = toCode;
 				string outputFile = $"{filepath}.{appendedfilename}.resx";
                 try
 				{
@@ -1188,7 +1323,7 @@ namespace ABetterTranslator
                 }
 				catch ( Exception exc )
 				{
-					WriteLine(exc.Message, LoggingColorSet.ErrorLogging);
+					WriteLine(exc, MethodBase.GetCurrentMethod().Name);
 				}
 			}
 			statusLabel.Text = $"Translating {LangCodesIncluded.Count} languages";
@@ -1295,7 +1430,7 @@ namespace ABetterTranslator
                                 node.Comment = comment;
                             }
                             else
-                                LogToFile($"Error:[SaveTranslations] Source value did not match Resx file value for item [{Key}]. SrcVal=[{value}]; ResxVal=[{item.sourceText[idx]}]", VerbosityLevels.Errors );
+                                LogToFile($"[SaveTranslations] Source value did not match Resx file value for item [{Key}]. SrcVal=[{value}]; ResxVal=[{item.sourceText[idx]}]", VerbosityLevels.Errors );
                         }
                     }
                     rw.AddResource(node);
@@ -1307,8 +1442,8 @@ namespace ABetterTranslator
             }
             catch ( Exception e )
             {
-                string msg = $"Error:[SaveTranslations]: Exception thrown for language {GetLanguageNameOfTag(item.toLang)} ({item.toLang});output={item.outputFile};source={item.inputPath}; Received Error Message: {e.Message}";
-                LogToFile(msg, VerbosityLevels.Errors);
+                string msg = $"[SaveTranslations]: Exception thrown for language {GetLanguageNameOfTag(item.toLang)} ({item.toLang});output={item.outputFile};source={item.inputPath}; Received Error Message: {e.Message}";
+                LogToFile(e, MethodBase.GetCurrentMethod().Name);
                 WriteLine(msg, LoggingColorSet.ErrorLogging, VerbosityLevels.Normal);
             }
         }
@@ -1337,7 +1472,7 @@ namespace ABetterTranslator
             int qtyItemsThatNeededToBeTranslated = progressBarWhileTranslatingResxFile.Maximum;
             _translationRequestPackets = _multiThreadTranslator._itemsToTranslate;
             if ( QtyItemsCompleted < 1 || QtyItemsCompleted > progressBarWhileTranslatingResxFile.Maximum ) //TotalCount < 1 || TotalCount > progressBarWhileTranslatingResxFile.Maximum )
-                WriteLine($"Error: Received invalid value for ShowProgress. Received QtyItemsCompleted = ({QtyItemsCompleted}); Expected value between 1 and ({progressBarWhileTranslatingResxFile.Maximum})", LoggingColorSet.ErrorLogging);
+                WriteLine($"Received invalid value for ShowProgress. Received QtyItemsCompleted = ({QtyItemsCompleted}); Expected value between 1 and ({progressBarWhileTranslatingResxFile.Maximum})", LoggingColorSet.ErrorLogging);
             else
                 progressBarWhileTranslatingResxFile.Value = QtyItemsCompleted;
             Dictionary<string, LanguageProcessStatus> LanguagesProcessedSuccessStatuses = _multiThreadTranslator.LanguagesProcessedSuccessStatuses;
@@ -1351,7 +1486,7 @@ namespace ABetterTranslator
                     LanguagesWhichProducedErrors += $"{GetLanguageNameOfTag(langStatus.Key)} ({langStatus.Key})={langStatus.Value}; ";
 
             if ( !string.IsNullOrEmpty(LanguagesWhichProducedErrors) )
-                WriteLine($"Error: {QtyFailed} language(s) had failed status. {QtyUnknown} language(s) had unknown status. The following {QtyNotSuccess} language(s) failed to translate due to failed or unknown status;\n{LanguagesWhichProducedErrors}", LoggingColorSet.ErrorLogging);
+                WriteLine($"{QtyFailed} language(s) had failed status. {QtyUnknown} language(s) had unknown status. The following {QtyNotSuccess} language(s) failed to translate due to failed or unknown status;\n{LanguagesWhichProducedErrors}", LoggingColorSet.ErrorLogging);
             statusLabel.Text = $"Translations complete. Now writing to Resx file(s).";
 
             foreach ( TranslationRequestPacket item in _translationRequestPackets )
@@ -1408,7 +1543,7 @@ namespace ABetterTranslator
 			Debug.Assert(_multiThreadTranslator != null);
 			Debug.Assert(_translationRequestPackets != null);
 			if ( TotalCount < 1 || TotalCount > progressBarWhileTranslatingResxFile.Maximum )
-                WriteLine($"Error: Received invalid value for ShowProgress. Received TotalCount = ({TotalCount}); Expected value between 1 and ({progressBarWhileTranslatingResxFile.Maximum})", LoggingColorSet.ErrorLogging);
+                WriteLine($"Received invalid value for ShowProgress. Received TotalCount = ({TotalCount}); Expected value between 1 and ({progressBarWhileTranslatingResxFile.Maximum})", LoggingColorSet.ErrorLogging);
 			progressBarWhileTranslatingResxFile.Value = TotalCount;
 			//progressBarWhileTranslatingResxFile.Update();
 			if ( _LogBoxUpdatePoints.Contains(TotalCount) )
@@ -1419,7 +1554,7 @@ namespace ABetterTranslator
 			Debug.Assert(_multiThreadTranslator != null);
 			Debug.Assert(_translationRequestPackets != null);
 			if ( QtyItemsToCheck < 1 )
-                WriteLine("Error: Received invalid value for InitializeProgressBar. (" + QtyItemsToCheck + ")", LoggingColorSet.ErrorLogging);
+                WriteLine("Received invalid value for InitializeProgressBar. (" + QtyItemsToCheck + ")", LoggingColorSet.ErrorLogging);
             _previousLoggingErrors.Clear();
             progressBarWhileTranslatingResxFile.Visible = true;
 			progressBarWhileTranslatingResxFile.Minimum = 1;
@@ -1459,33 +1594,40 @@ namespace ABetterTranslator
         }
 		private void PopulateLanguageSet(LanguageSet index)
 		{
-            ClearLanguageSet();
-            ClearDisplaySetChecks();
-            switch (index)
-			{
-                case LanguageSet.Windows10Plus_LanguagePacks:
-                    PopulateLanguageSet(LanguageCodes.Windows10Plus_LanguagePacks );
-                    toolStripMenuItemWindowsLanguagePacks.Checked = true;
-                    break;
-                case LanguageSet.Windows10Plus_LanguageInterfacePacks:
-					PopulateLanguageSet(LanguageCodes.Windows10Plus_LanguageInterfacePacks );
-                    toolStripMenuItemWindowsLanguagePackInterface.Checked = true;
-                    break;
-                case LanguageSet.TranslatorSupportedLanguages:
-                    PopulateTranslatorSupportedLanguages();
-                    toolStripMenuItemAllTranslatorSupportedLanguages.Checked = true;
-                    break;
-				default:
-                case LanguageSet.Iso639_1_Languages:
-					PopulateLanguageSet(LanguageCodes.LanguageCodesAndAliases, true);
-                    toolStripMenuItemISO639_1UsingOfficialNames.Checked = true;
-                    break;
-                case LanguageSet.Iso639_1_Plus:
-					PopulateLanguageSet(LanguageCodes.LanguageCodesAndAliases);
-                    toolStripMenuItemISO639_1PlusWinLangPack.Checked = true;
-                    break;
+            try
+            {
+                ClearLanguageSet();
+                ClearDisplaySetChecks();
+                switch ( index )
+                {
+                    case LanguageSet.Windows10Plus_LanguagePacks:
+                        PopulateLanguageSet(LanguageCodes.Windows10Plus_LanguagePacks);
+                        toolStripMenuItemWindowsLanguagePacks.Checked = true;
+                        break;
+                    case LanguageSet.Windows10Plus_LanguageInterfacePacks:
+                        PopulateLanguageSet(LanguageCodes.Windows10Plus_LanguageInterfacePacks);
+                        toolStripMenuItemWindowsLanguagePackInterface.Checked = true;
+                        break;
+                    case LanguageSet.TranslatorSupportedLanguages:
+                        PopulateTranslatorSupportedLanguages();
+                        toolStripMenuItemAllTranslatorSupportedLanguages.Checked = true;
+                        break;
+                    default:
+                    case LanguageSet.Iso639_1_Languages:
+                        PopulateLanguageSet(LanguageCodes.LanguageCodesAndAliases, true);
+                        toolStripMenuItemISO639_1UsingOfficialNames.Checked = true;
+                        break;
+                    case LanguageSet.Iso639_1_Plus:
+                        PopulateLanguageSet(LanguageCodes.LanguageCodesAndAliases);
+                        toolStripMenuItemISO639_1PlusWinLangPack.Checked = true;
+                        break;
+                }
+                SelectedLanguageSet = (int) index;
             }
-            SelectedLanguageSet = (int) index;
+            catch(Exception e)
+            {
+                LogToFile(e, MethodBase.GetCurrentMethod().Name);
+            }
         }
         private void PopulateTranslatorSupportedLanguages()
         {
@@ -1504,6 +1646,8 @@ namespace ABetterTranslator
         }
         private string GetIso639_3Tag(string Iso639_1_Tag)
         {
+            try
+            { 
             string tag = Iso639_1_Tag.ToLower();
             for ( int i = 0 ; i < LanguageCodes.ISO639_1_To_ISO639_3.GetLength(0) ; ++i )
             {
@@ -1516,45 +1660,59 @@ namespace ABetterTranslator
             if (string.IsNullOrEmpty(Iso639_3_Name))
                 return GetCulture_Windows3LetterName(Iso639_1_Tag);
             return Iso639_3_Name;
+            }
+            catch ( Exception e )
+            {
+                LogToFile(e, MethodBase.GetCurrentMethod().Name, $"Iso639_1_Tag={Iso639_1_Tag}: ");
+            }
+            return ""; 
         }
         private string GetAliases(string LangName, string Code)
         {
-            const string Sep = ", ";
-            string langName = LangName.ToLower();
-            string code = Code.ToLower();
-            HashSet<string> Aliases = new();
-            Aliases.Add(GetCultureName(Code));
-            Aliases.Add(GetNativeName(Code));
-            Aliases.Add(GetCountry(Code));
-            if ( GTranslate_LangLookup.ContainsKey(Code))
-                Aliases.Add(GTranslate_LangLookup[Code].NativeName);
-            else if ( GTranslate_LangLookup.ContainsKey(code) )
-                Aliases.Add(GTranslate_LangLookup[code].NativeName);
-
-
-
-            for ( int i = 0 ; i < LanguageCodes.LanguageCodesAndAliases.GetLength(0) ; ++i )
+            try
             {
-                string tag = LanguageCodes.LanguageCodesAndAliases[i, 0];
-                string name = LanguageCodes.LanguageCodesAndAliases[i, 1];
-                string aliases = LanguageCodes.LanguageCodesAndAliases[i, 2];
-                if ( name.ToLower().Equals(langName) )
+                const string Sep = ", ";
+                string langName = LangName.ToLower();
+                string code = Code.ToLower();
+                HashSet<string> Aliases = new();
+                Aliases.Add(GetCultureName(Code));
+                Aliases.Add(GetNativeName(Code));
+                Aliases.Add(GetCountry(Code));
+                if ( GTranslate_LangLookup.ContainsKey(Code) )
+                    Aliases.Add(GTranslate_LangLookup[Code].NativeName);
+                else if ( GTranslate_LangLookup.ContainsKey(code) )
+                    Aliases.Add(GTranslate_LangLookup[code].NativeName);
+
+
+
+                for ( int i = 0 ; i < LanguageCodes.LanguageCodesAndAliases.GetLength(0) ; ++i )
                 {
-                    if ( !string.IsNullOrEmpty(aliases) && !aliases.ToLower().Equals(langName))
-                       Aliases.Add(aliases);
-                    break;
+                    string tag = LanguageCodes.LanguageCodesAndAliases[i, 0];
+                    string name = LanguageCodes.LanguageCodesAndAliases[i, 1];
+                    string aliases = LanguageCodes.LanguageCodesAndAliases[i, 2];
+                    if ( name.ToLower().Equals(langName) )
+                    {
+                        if ( !string.IsNullOrEmpty(aliases) && !aliases.ToLower().Equals(langName) )
+                            Aliases.Add(aliases);
+                        break;
+                    }
                 }
+
+                Aliases.Remove(LangName);
+                Aliases.Remove(Code);
+                Aliases.Remove("Pilipinas");
+                Aliases.Remove("");
+
+                string AliasesStr = "";
+                foreach ( var s in Aliases.Distinct() )
+                    AliasesStr += s + Sep;
+                return AliasesStr.TrimEnd(' ').TrimEnd(',').TrimEnd(';');
             }
-
-            Aliases.Remove(LangName);
-            Aliases.Remove(Code);
-            Aliases.Remove("Pilipinas");
-            Aliases.Remove("");
-
-            string AliasesStr = "";
-            foreach ( var s in Aliases.Distinct() )
-                AliasesStr += s + Sep;
-            return AliasesStr.TrimEnd(' ').TrimEnd(',').TrimEnd(';');
+            catch(Exception e)
+            {
+                LogToFile(e, MethodBase.GetCurrentMethod().Name, $"LangName={LangName} - {Code}: ");
+            }
+            return "";
         }
         private void PopulateComboBoxLanguage()
         {
@@ -1585,61 +1743,68 @@ namespace ABetterTranslator
                 }
             }
         }
-       private void AddLanguage(string code, string LangName, string? translatorSupported = null)
+        private void AddLanguage(string code, string LangName, string? translatorSupported = null)
         {
             Debug.Assert(!string.IsNullOrEmpty(code) && !string.IsNullOrEmpty(LangName));
-            if ( string.IsNullOrEmpty(code) || string.IsNullOrEmpty(LangName) )
+            try
             {
-                // Add logging here
-                return;
-            }
-            string langName = LangName.ToLower();
-            if ( _languagesInList.Contains(langName) )
-                return;
-            _languagesInList.Add(langName);
-            const string NoTranslator = "No Translator";
-            string languageTranslatorTag = "";
-            if ( translatorSupported == null )
-            {
-                translatorSupported = NoTranslator;
-                if ( GTranslate_LangLookup.ContainsKey(code))
+                if ( string.IsNullOrEmpty(code) || string.IsNullOrEmpty(LangName) )
                 {
-                    languageTranslatorTag = code;
-                    translatorSupported = GTranslate_LangLookup[code].SupportedServices.ToString();
+                    // Add logging here
+                    return;
                 }
-                else 
+                string langName = LangName.ToLower();
+                if ( _languagesInList.Contains(langName) )
+                    return;
+                _languagesInList.Add(langName);
+                const string NoTranslator = "No Translator";
+                string languageTranslatorTag = "";
+                if ( translatorSupported == null )
                 {
-                    foreach ( var language in GTranslate_LangLookup )
+                    translatorSupported = NoTranslator;
+                    if ( GTranslate_LangLookup.ContainsKey(code) )
                     {
-                        string name = language.Value.Name;
-                        if ( langName.Equals(name.ToLower()))
+                        languageTranslatorTag = code;
+                        translatorSupported = GTranslate_LangLookup[code].SupportedServices.ToString();
+                    }
+                    else
+                    {
+                        foreach ( var language in GTranslate_LangLookup )
                         {
-                            languageTranslatorTag = language.Key;
-                            translatorSupported = language.Value.SupportedServices.ToString();
-                            break;
+                            string name = language.Value.Name;
+                            if ( langName.Equals(name.ToLower()) )
+                            {
+                                languageTranslatorTag = language.Key;
+                                translatorSupported = language.Value.SupportedServices.ToString();
+                                break;
+                            }
                         }
                     }
                 }
-            }
-            else
-                languageTranslatorTag = code;
+                else
+                    languageTranslatorTag = code;
 
-            ArrayList l = new ArrayList();
-            ObjListVwRowDetails objListVwRowDetails = new(code)
+                ArrayList l = new ArrayList();
+                ObjListVwRowDetails objListVwRowDetails = new(code)
+                {
+                    LanguageTag = code,
+                    LanguageName = LangName,
+                    LanguageTranslatorTag = languageTranslatorTag,
+                    LanguageAliases = GetAliases(LangName, code),
+                    TranslatorSupported = translatorSupported,
+                    Iso639_3 = GetIso639_3Tag(code),
+                };
+                l.Add(objListVwRowDetails);
+                languageList.AddObjects(l);
+                if ( translatorSupported.Equals(NoTranslator) || LanguageCodes.LanguagesTagsWithIssues.Contains(objListVwRowDetails.LanguageTranslatorTag) )
+                    languageList.DisableObjects(l);
+            }
+            catch(Exception e)
             {
-                LanguageTag = code,
-                LanguageName = LangName,
-                LanguageTranslatorTag = languageTranslatorTag,
-                LanguageAliases = GetAliases(LangName, code),
-                TranslatorSupported = translatorSupported,
-                Iso639_3 = GetIso639_3Tag(code),
-            };
-            l.Add(objListVwRowDetails);
-            languageList.AddObjects(l);
-            if ( translatorSupported.Equals(NoTranslator) || LanguageCodes.LanguagesTagsWithIssues.Contains(objListVwRowDetails.LanguageTranslatorTag) )
-                languageList.DisableObjects(l);
+                LogToFile(e, MethodBase.GetCurrentMethod().Name, $"LangName={LangName} - {code}: ");
+            }
         }
-         #endregion Populate Language List View
+        #endregion Populate Language List View
 
         #region Language Selection Code
         private void SelectTopSpokenLanguages(int MaxLang)
@@ -1972,7 +2137,7 @@ namespace ABetterTranslator
         }
         private void SelectAndTranslateLanguages(object sender, EventArgs e)
         {
-            if ( !isValid_InputboxFileAndOutPutDir() )
+            if ( !IsValid_InputboxFileAndOutPutDir() )
                 return;
             toolStripMenuItemAllTranslatorSupportedLanguages_Click(sender,e);
             // SetAll_LanguagesCkBx(false);
@@ -2018,7 +2183,7 @@ namespace ABetterTranslator
         }
         private void toolStripSplitButtonTranslate_ButtonClick(object sender, EventArgs e)
         {
-            if ( !isValid_InputboxFileAndOutPutDir() )
+            if ( !IsValid_InputboxFileAndOutPutDir() )
                 return;
             if ( languageList.CheckedObjects.Count == 0 ) // If no language selected, then select all languages
                 SetAll_LanguagesCkBx(true);
@@ -2026,7 +2191,7 @@ namespace ABetterTranslator
         }
         private void toolStripMenuItemTranslateAllLanguages_Click(object sender, EventArgs e)
         {
-            if ( !isValid_InputboxFileAndOutPutDir() )
+            if ( !IsValid_InputboxFileAndOutPutDir() )
                 return;
             PopulateLanguageSet(LanguageSet.TranslatorSupportedLanguages);
             SetAll_LanguagesCkBx(true);
@@ -2153,7 +2318,7 @@ namespace ABetterTranslator
             }
             catch ( Exception e )
             {
-                LogToFile(e.Message, VerbosityLevels.Errors);
+                LogToFile(e, MethodBase.GetCurrentMethod().Name, $"LangTag={code}: ");
             }
             return code;
         }
@@ -2168,7 +2333,7 @@ namespace ABetterTranslator
             }
             catch ( Exception e )
             {
-                LogToFile(e.Message, VerbosityLevels.Errors);
+                LogToFile($"{MethodBase.GetCurrentMethod().Name}: LangTag={code}: {e.Message}", VerbosityLevels.Detail);
             }
             return "";
         }
@@ -2184,7 +2349,7 @@ namespace ABetterTranslator
             }
             catch ( Exception e )
             {
-                LogToFile(e.Message, VerbosityLevels.Errors);
+                LogToFile(e.Message, VerbosityLevels.Detail);
             }
             return "";
         }
@@ -2199,7 +2364,7 @@ namespace ABetterTranslator
             }
             catch ( Exception e )
             {
-                LogToFile(e.Message, VerbosityLevels.Errors);
+                LogToFile($"{MethodBase.GetCurrentMethod().Name}: LangTag={code}: {e.Message}", VerbosityLevels.Detail);
             }
             return "";
         }
@@ -2214,7 +2379,7 @@ namespace ABetterTranslator
             }
             catch ( Exception e )
             {
-                LogToFile(e.Message, VerbosityLevels.Errors);
+                LogToFile(e, MethodBase.GetCurrentMethod().Name);
             }
             return "";
         }
@@ -2229,7 +2394,7 @@ namespace ABetterTranslator
             }
             catch ( Exception e )
             {
-                LogToFile(e.Message, VerbosityLevels.Errors);
+                LogToFile($"{MethodBase.GetCurrentMethod().Name}: LangTag={code}: {e.Message}", VerbosityLevels.Detail);
             }
             return "";
         }
@@ -2246,7 +2411,7 @@ namespace ABetterTranslator
             }
             catch ( Exception e )
             {
-                LogToFile(e.Message, VerbosityLevels.Errors);
+                LogToFile($"{MethodBase.GetCurrentMethod().Name}: LangTag={code}: {e.Message}", VerbosityLevels.Detail);
             }
             return "";
         }

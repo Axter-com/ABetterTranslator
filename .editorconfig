@@ -196,6 +196,12 @@ csharp_style_expression_bodied_local_functions = when_on_single_line:warning
 csharp_indent_labels = one_less_than_current
 csharp_space_around_binary_operators = before_and_after
 
+# IDE0055: Fix formatting
+dotnet_diagnostic.IDE0055.severity = none
+
+# IDE1006: Naming Styles
+dotnet_diagnostic.IDE1006.severity = none
+
 [*.vb]
 #### Naming styles ####
 

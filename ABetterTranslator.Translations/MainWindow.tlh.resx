@@ -95,10 +95,10 @@
     <value>163</value>
   </data>
   <data name="checkBoxDispalyWarningPrompts.Text" xml:space="preserve">
-    <value></value>
+    <value>DuSaD</value>
   </data>
   <data name="checkBoxDispalyWarningPrompts.ToolTip" xml:space="preserve">
-    <value>     /</value>
+    <value>'ach SuvmeH chaH, porghDaj ra'wI' j/e.</value>
   </data>
   <data name="&gt;&gt;checkBoxDispalyWarningPrompts.Name" xml:space="preserve">
     <value>checkBoxDispalyWarningPrompts</value>
@@ -131,7 +131,7 @@
     <value>?</value>
   </data>
   <data name="linkLabelcheckBoxDispalyWarningPrompts.ToolTip" xml:space="preserve">
-    <value>  </value>
+    <value>HIvrupchu' tIqDaj SovmoH.</value>
   </data>
   <data name="&gt;&gt;linkLabelcheckBoxDispalyWarningPrompts.Name" xml:space="preserve">
     <value>linkLabelcheckBoxDispalyWarningPrompts</value>
@@ -168,7 +168,7 @@
     <value>13</value>
   </data>
   <data name="browseLogFolderPath.ToolTip" xml:space="preserve">
-    <value>     </value>
+    <value>'ach yItlhob. 'oH tupqu' 'oH leghlaHba'</value>
   </data>
   <data name="&gt;&gt;browseLogFolderPath.Name" xml:space="preserve">
     <value>browseLogFolderPath</value>
@@ -201,7 +201,7 @@
     <value>?</value>
   </data>
   <data name="linkLabelLogFolderPath.ToolTip" xml:space="preserve">
-    <value>  </value>
+    <value>HIvrupchu' tIqDaj SovmoH.</value>
   </data>
   <data name="&gt;&gt;linkLabelLogFolderPath.Name" xml:space="preserve">
     <value>linkLabelLogFolderPath</value>
@@ -234,7 +234,7 @@
     <value>?</value>
   </data>
   <data name="linkLabelLogFileVerbosityLevel.ToolTip" xml:space="preserve">
-    <value>  </value>
+    <value>HIvrupchu' tIqDaj SovmoH.</value>
   </data>
   <data name="&gt;&gt;linkLabelLogFileVerbosityLevel.Name" xml:space="preserve">
     <value>linkLabelLogFileVerbosityLevel</value>
@@ -267,7 +267,7 @@
     <value>?</value>
   </data>
   <data name="linkLabelScreenVerbosityLevel.ToolTip" xml:space="preserve">
-    <value>  </value>
+    <value>HIvrupchu' tIqDaj SovmoH.</value>
   </data>
   <data name="&gt;&gt;linkLabelScreenVerbosityLevel.Name" xml:space="preserve">
     <value>linkLabelScreenVerbosityLevel</value>
@@ -303,7 +303,7 @@
     <value>1003</value>
   </data>
   <data name="buttonOpenLoggingFolderInFileExplorer.ToolTip" xml:space="preserve">
-    <value>   </value>
+    <value>qo'vaMDaq tlheDpu'DI' reH QaQwI'pu'</value>
   </data>
   <data name="&gt;&gt;buttonOpenLoggingFolderInFileExplorer.Name" xml:space="preserve">
     <value>buttonOpenLoggingFolderInFileExplorer</value>
@@ -336,7 +336,7 @@
     <value>?</value>
   </data>
   <data name="linkLabelItemsPerTransaltionRequest.ToolTip" xml:space="preserve">
-    <value>  </value>
+    <value>HIvrupchu' tIqDaj SovmoH.</value>
   </data>
   <data name="&gt;&gt;linkLabelItemsPerTransaltionRequest.Name" xml:space="preserve">
     <value>linkLabelItemsPerTransaltionRequest</value>
@@ -351,13 +351,13 @@
     <value>0</value>
   </data>
   <data name="comboBoxItemsPerTransaltionRequest.Items" xml:space="preserve">
-    <value></value>
+    <value>'aqtu'</value>
   </data>
   <data name="comboBoxItemsPerTransaltionRequest.Items" xml:space="preserve">
-    <value></value>
+    <value>wa'</value>
   </data>
   <data name="comboBoxItemsPerTransaltionRequest.Items" xml:space="preserve">
-    <value></value>
+    <value>Horey'So</value>
   </data>
   <data name="comboBoxItemsPerTransaltionRequest.Location" type="System.Drawing.Point, System.Drawing">
     <value>89, 33</value>
@@ -369,7 +369,7 @@
     <value>7</value>
   </data>
   <data name="comboBoxItemsPerTransaltionRequest.Text" xml:space="preserve">
-    <value></value>
+    <value>'aqtu'</value>
   </data>
   <data name="&gt;&gt;comboBoxItemsPerTransaltionRequest.Name" xml:space="preserve">
     <value>comboBoxItemsPerTransaltionRequest</value>
@@ -393,10 +393,10 @@
     <value>7</value>
   </data>
   <data name="groupBoxItemsPerTransaltionRequest.Text" xml:space="preserve">
-    <value></value>
+    <value>qeylIS puqlI'</value>
   </data>
   <data name="groupBoxItemsPerTransaltionRequest.ToolTip" xml:space="preserve">
-    <value> </value>
+    <value>ngoQmey puS</value>
   </data>
   <data name="&gt;&gt;groupBoxItemsPerTransaltionRequest.Name" xml:space="preserve">
     <value>groupBoxItemsPerTransaltionRequest</value>
@@ -429,7 +429,7 @@
     <value>?</value>
   </data>
   <data name="linkLabelMaxTranslateLen.ToolTip" xml:space="preserve">
-    <value>  </value>
+    <value>HIvrupchu' tIqDaj SovmoH.</value>
   </data>
   <data name="&gt;&gt;linkLabelMaxTranslateLen.Name" xml:space="preserve">
     <value>linkLabelMaxTranslateLen</value>
@@ -462,7 +462,7 @@
     <value>?</value>
   </data>
   <data name="linkLabelMaxThreads.ToolTip" xml:space="preserve">
-    <value>  </value>
+    <value>HIvrupchu' tIqDaj SovmoH.</value>
   </data>
   <data name="&gt;&gt;linkLabelMaxThreads.Name" xml:space="preserve">
     <value>linkLabelMaxThreads</value>
@@ -492,10 +492,10 @@
     <value>161</value>
   </data>
   <data name="checkBoxDeleteLangResxFilesBeforeTranslation.Text" xml:space="preserve">
-    <value></value>
+    <value>layerteS</value>
   </data>
   <data name="checkBoxDeleteLangResxFilesBeforeTranslation.ToolTip" xml:space="preserve">
-    <value>   </value>
+    <value>jaghmeymaj qelI'qam 'e' luchavpu'DI',</value>
   </data>
   <data name="&gt;&gt;checkBoxDeleteLangResxFilesBeforeTranslation.Name" xml:space="preserve">
     <value>checkBoxDeleteLangResxFilesBeforeTranslation</value>
@@ -528,7 +528,7 @@
     <value>?</value>
   </data>
   <data name="linkLabelAddOriginalSrcTextToComment.ToolTip" xml:space="preserve">
-    <value>  </value>
+    <value>HIvrupchu' tIqDaj SovmoH.</value>
   </data>
   <data name="&gt;&gt;linkLabelAddOriginalSrcTextToComment.Name" xml:space="preserve">
     <value>linkLabelAddOriginalSrcTextToComment</value>
@@ -543,16 +543,16 @@
     <value>0</value>
   </data>
   <data name="comboBoxAddOriginalSrcTextToComment.Items" xml:space="preserve">
-    <value></value>
+    <value>bIghoSbe'choHbe'</value>
   </data>
   <data name="comboBoxAddOriginalSrcTextToComment.Items" xml:space="preserve">
-    <value>   </value>
+    <value>yInwIjDaq to'taHvIS vIDameH jIvangqang</value>
   </data>
   <data name="comboBoxAddOriginalSrcTextToComment.Items" xml:space="preserve">
-    <value>     </value>
+    <value>vutwI' mu'mey vu' 'ach nab wuS</value>
   </data>
   <data name="comboBoxAddOriginalSrcTextToComment.Items" xml:space="preserve">
-    <value>    </value>
+    <value>veSmey JuS 'ay'meH HoSmey DuHbe'</value>
   </data>
   <data name="comboBoxAddOriginalSrcTextToComment.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 33</value>
@@ -564,7 +564,7 @@
     <value>10</value>
   </data>
   <data name="comboBoxAddOriginalSrcTextToComment.Text" xml:space="preserve">
-    <value></value>
+    <value>bIghoSbe'choHbe'</value>
   </data>
   <data name="&gt;&gt;comboBoxAddOriginalSrcTextToComment.Name" xml:space="preserve">
     <value>comboBoxAddOriginalSrcTextToComment</value>
@@ -588,10 +588,10 @@
     <value>10</value>
   </data>
   <data name="groupBoxAddOriginalSrcTextToComment.Text" xml:space="preserve">
-    <value>     </value>
+    <value>ghu'meyvam qaSmoHwI'pu' Je, SaHtaHvIS cha'SanID yuQmeyDaq</value>
   </data>
   <data name="groupBoxAddOriginalSrcTextToComment.ToolTip" xml:space="preserve">
-    <value>  </value>
+    <value>qIm'a' lI'taH ngeD</value>
   </data>
   <data name="&gt;&gt;groupBoxAddOriginalSrcTextToComment.Name" xml:space="preserve">
     <value>groupBoxAddOriginalSrcTextToComment</value>
@@ -624,7 +624,7 @@
     <value>?</value>
   </data>
   <data name="linkLabelDeleteLangResxFilesBeforeTranslation.ToolTip" xml:space="preserve">
-    <value>  </value>
+    <value>HIvrupchu' tIqDaj SovmoH.</value>
   </data>
   <data name="&gt;&gt;linkLabelDeleteLangResxFilesBeforeTranslation.Name" xml:space="preserve">
     <value>linkLabelDeleteLangResxFilesBeforeTranslation</value>
@@ -657,7 +657,7 @@
     <value>?</value>
   </data>
   <data name="linkLabelBackupFilesBeforeTranslation.ToolTip" xml:space="preserve">
-    <value>  </value>
+    <value>HIvrupchu' tIqDaj SovmoH.</value>
   </data>
   <data name="&gt;&gt;linkLabelBackupFilesBeforeTranslation.Name" xml:space="preserve">
     <value>linkLabelBackupFilesBeforeTranslation</value>
@@ -693,7 +693,7 @@
     <value>15</value>
   </data>
   <data name="browseBkUpDirFolderButton.ToolTip" xml:space="preserve">
-    <value>     </value>
+    <value>'ach yItlhob. 'oH tupqu' 'oH leghlaHba'</value>
   </data>
   <data name="&gt;&gt;browseBkUpDirFolderButton.Name" xml:space="preserve">
     <value>browseBkUpDirFolderButton</value>
@@ -726,7 +726,7 @@
     <value>?</value>
   </data>
   <data name="linkLabelBkUpDir.ToolTip" xml:space="preserve">
-    <value>  </value>
+    <value>HIvrupchu' tIqDaj SovmoH.</value>
   </data>
   <data name="&gt;&gt;linkLabelBkUpDir.Name" xml:space="preserve">
     <value>linkLabelBkUpDir</value>
@@ -741,19 +741,19 @@
     <value>3</value>
   </data>
   <data name="comboBoxDefaultLanguageSet.Items" xml:space="preserve">
-    <value>/   </value>
+    <value>vulchoHpu'DI'/ tlhIm, QI'tu' joH</value>
   </data>
   <data name="comboBoxDefaultLanguageSet.Items" xml:space="preserve">
-    <value>/   </value>
+    <value>/ qaStaHvIS dIS layerteS</value>
   </data>
   <data name="comboBoxDefaultLanguageSet.Items" xml:space="preserve">
-    <value> </value>
+    <value>wej QuvHa'pu'</value>
   </data>
   <data name="comboBoxDefaultLanguageSet.Items" xml:space="preserve">
-    <value></value>
+    <value>VAS</value>
   </data>
   <data name="comboBoxDefaultLanguageSet.Items" xml:space="preserve">
-    <value></value>
+    <value>SuQorgh</value>
   </data>
   <data name="comboBoxDefaultLanguageSet.Location" type="System.Drawing.Point, System.Drawing">
     <value>47, 41</value>
@@ -765,10 +765,10 @@
     <value>10</value>
   </data>
   <data name="comboBoxDefaultLanguageSet.Text" xml:space="preserve">
-    <value>/   </value>
+    <value>vulchoHpu'DI'/ tlhIm, QI'tu' joH</value>
   </data>
   <data name="comboBoxDefaultLanguageSet.ToolTip" xml:space="preserve">
-    <value>     </value>
+    <value>QamchoHpu'DI' tlhoS Hoch, qaStaHvIS tupmey puS.</value>
   </data>
   <data name="&gt;&gt;comboBoxDefaultLanguageSet.Name" xml:space="preserve">
     <value>comboBoxDefaultLanguageSet</value>
@@ -801,7 +801,7 @@
     <value>?</value>
   </data>
   <data name="linkLabelDefaultLanguageSet.ToolTip" xml:space="preserve">
-    <value>  </value>
+    <value>HIvrupchu' tIqDaj SovmoH.</value>
   </data>
   <data name="&gt;&gt;linkLabelDefaultLanguageSet.Name" xml:space="preserve">
     <value>linkLabelDefaultLanguageSet</value>
@@ -825,10 +825,10 @@
     <value>168</value>
   </data>
   <data name="groupBoxDefaultLanguageSet.Text" xml:space="preserve">
-    <value></value>
+    <value>bIQagh</value>
   </data>
   <data name="groupBoxDefaultLanguageSet.ToolTip" xml:space="preserve">
-    <value> </value>
+    <value>leghbe'taHvIS Qel.</value>
   </data>
   <data name="&gt;&gt;groupBoxDefaultLanguageSet.Name" xml:space="preserve">
     <value>groupBoxDefaultLanguageSet</value>
@@ -855,10 +855,10 @@
     <value>11</value>
   </data>
   <data name="buttonDeleteLangAppendedResxFiles.Text" xml:space="preserve">
-    <value></value>
+    <value>nuqneH</value>
   </data>
   <data name="buttonDeleteLangAppendedResxFiles.ToolTip" xml:space="preserve">
-    <value>   </value>
+    <value>heghpu'bogh vay' tu'lu'be' 'arqon.</value>
   </data>
   <data name="&gt;&gt;buttonDeleteLangAppendedResxFiles.Name" xml:space="preserve">
     <value>buttonDeleteLangAppendedResxFiles</value>
@@ -891,7 +891,7 @@
     <value>?</value>
   </data>
   <data name="linkLabelDeleteLangAppendedResxFiles.ToolTip" xml:space="preserve">
-    <value>  </value>
+    <value>HIvrupchu' tIqDaj SovmoH.</value>
   </data>
   <data name="&gt;&gt;linkLabelDeleteLangAppendedResxFiles.Name" xml:space="preserve">
     <value>linkLabelDeleteLangAppendedResxFiles</value>
@@ -924,7 +924,7 @@
     <value>1002</value>
   </data>
   <data name="buttonInAdvOpt_OpenFolderInWindowsExplorer.ToolTip" xml:space="preserve">
-    <value>   </value>
+    <value>qo'vaMDaq tlheDpu'DI' reH QaQwI'pu'</value>
   </data>
   <data name="&gt;&gt;buttonInAdvOpt_OpenFolderInWindowsExplorer.Name" xml:space="preserve">
     <value>buttonInAdvOpt_OpenFolderInWindowsExplorer</value>
@@ -960,7 +960,7 @@
     <value>1003</value>
   </data>
   <data name="buttonOpenBackupFolderInFileExplorer.ToolTip" xml:space="preserve">
-    <value>   </value>
+    <value>qo'vaMDaq tlheDpu'DI' reH QaQwI'pu'</value>
   </data>
   <data name="&gt;&gt;buttonOpenBackupFolderInFileExplorer.Name" xml:space="preserve">
     <value>buttonOpenBackupFolderInFileExplorer</value>
@@ -996,7 +996,7 @@
     <value>2</value>
   </data>
   <data name="browseFileButton.ToolTip" xml:space="preserve">
-    <value> </value>
+    <value>'ach ghomDu'</value>
   </data>
   <data name="&gt;&gt;browseFileButton.Name" xml:space="preserve">
     <value>browseFileButton</value>
@@ -1032,7 +1032,7 @@
     <value>4</value>
   </data>
   <data name="browseFolderButton.ToolTip" xml:space="preserve">
-    <value>     </value>
+    <value>'ach yItlhob. 'oH tupqu' 'oH leghlaHba'</value>
   </data>
   <data name="&gt;&gt;browseFolderButton.Name" xml:space="preserve">
     <value>browseFolderButton</value>
@@ -1065,7 +1065,7 @@
     <value>22</value>
   </data>
   <data name="progressBarWhileTranslatingResxFile.ToolTip" xml:space="preserve">
-    <value>   </value>
+    <value>'ej qeylIS wo'maj nganpu'</value>
   </data>
   <data name="progressBarWhileTranslatingResxFile.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -1104,7 +1104,7 @@
     <value>1001</value>
   </data>
   <data name="buttonOpenFolderInWindowsExplorer.ToolTip" xml:space="preserve">
-    <value>   </value>
+    <value>qo'vaMDaq tlheDpu'DI' reH QaQwI'pu'</value>
   </data>
   <data name="&gt;&gt;buttonOpenFolderInWindowsExplorer.Name" xml:space="preserve">
     <value>buttonOpenFolderInWindowsExplorer</value>
@@ -1140,7 +1140,7 @@
     <value>100</value>
   </data>
   <data name="buttonBrowseForTextFile.ToolTip" xml:space="preserve">
-    <value>  </value>
+    <value>'ach cho'meH ghotvam</value>
   </data>
   <data name="&gt;&gt;buttonBrowseForTextFile.Name" xml:space="preserve">
     <value>buttonBrowseForTextFile</value>
@@ -1197,7 +1197,7 @@
     <value>1004</value>
   </data>
   <data name="groupBoxBkUpDir.Text" xml:space="preserve">
-    <value>  </value>
+    <value>bIje'be'chugh vaj bIHegh</value>
   </data>
   <data name="&gt;&gt;groupBoxBkUpDir.Name" xml:space="preserve">
     <value>groupBoxBkUpDir</value>
@@ -1221,7 +1221,7 @@
     <value>11</value>
   </data>
   <data name="groupBoxDeleteLangAppendedResxFiles.Text" xml:space="preserve">
-    <value>  </value>
+    <value>DevwI' nuvpu'DI' heghuS</value>
   </data>
   <data name="&gt;&gt;groupBoxDeleteLangAppendedResxFiles.Name" xml:space="preserve">
     <value>groupBoxDeleteLangAppendedResxFiles</value>
@@ -1251,7 +1251,7 @@
     <value>3</value>
   </data>
   <data name="checkBoxBackupFilesBeforeTranslation.Text" xml:space="preserve">
-    <value> </value>
+    <value>be'nI'puqloDpu' mu'tlheghmey.</value>
   </data>
   <data name="&gt;&gt;checkBoxBackupFilesBeforeTranslation.Name" xml:space="preserve">
     <value>checkBoxBackupFilesBeforeTranslation</value>
@@ -1278,7 +1278,7 @@
     <value>0</value>
   </data>
   <data name="tabPageResxTranslationOptions.Text" xml:space="preserve">
-    <value></value>
+    <value>QI'yaH</value>
   </data>
   <data name="&gt;&gt;tabPageResxTranslationOptions.Name" xml:space="preserve">
     <value>tabPageResxTranslationOptions</value>
@@ -1308,7 +1308,7 @@
     <value>96</value>
   </data>
   <data name="labelMaxThread.Text" xml:space="preserve">
-    <value></value>
+    <value>targhmey</value>
   </data>
   <data name="&gt;&gt;labelMaxThread.Name" xml:space="preserve">
     <value>labelMaxThread</value>
@@ -1335,7 +1335,7 @@
     <value>6</value>
   </data>
   <data name="MaxThread.Text" xml:space="preserve">
-    <value>-</value>
+    <value>-1</value>
   </data>
   <data name="&gt;&gt;MaxThread.Name" xml:space="preserve">
     <value>MaxThread</value>
@@ -1362,7 +1362,7 @@
     <value>5</value>
   </data>
   <data name="MaxTranslateLen.Text" xml:space="preserve">
-    <value></value>
+    <value>10000</value>
   </data>
   <data name="&gt;&gt;MaxTranslateLen.Name" xml:space="preserve">
     <value>MaxTranslateLen</value>
@@ -1392,7 +1392,7 @@
     <value>95</value>
   </data>
   <data name="labelMaxTranslateLen.Text" xml:space="preserve">
-    <value> </value>
+    <value>qeylIS tlham</value>
   </data>
   <data name="&gt;&gt;labelMaxTranslateLen.Name" xml:space="preserve">
     <value>labelMaxTranslateLen</value>
@@ -1416,7 +1416,7 @@
     <value>2</value>
   </data>
   <data name="tabPageTranslationOptions.Text" xml:space="preserve">
-    <value></value>
+    <value>mughwI'</value>
   </data>
   <data name="&gt;&gt;tabPageTranslationOptions.Name" xml:space="preserve">
     <value>tabPageTranslationOptions</value>
@@ -1431,16 +1431,16 @@
     <value>1</value>
   </data>
   <data name="comboBoxScreenVerbosityLevel.Items" xml:space="preserve">
-    <value></value>
+    <value>pIv</value>
   </data>
   <data name="comboBoxScreenVerbosityLevel.Items" xml:space="preserve">
-    <value></value>
+    <value>Qagh</value>
   </data>
   <data name="comboBoxScreenVerbosityLevel.Items" xml:space="preserve">
-    <value></value>
+    <value>motlh</value>
   </data>
   <data name="comboBoxScreenVerbosityLevel.Items" xml:space="preserve">
-    <value></value>
+    <value>ral</value>
   </data>
   <data name="comboBoxScreenVerbosityLevel.Location" type="System.Drawing.Point, System.Drawing">
     <value>103, 35</value>
@@ -1452,7 +1452,7 @@
     <value>8</value>
   </data>
   <data name="comboBoxScreenVerbosityLevel.Text" xml:space="preserve">
-    <value></value>
+    <value>motlh</value>
   </data>
   <data name="&gt;&gt;comboBoxScreenVerbosityLevel.Name" xml:space="preserve">
     <value>comboBoxScreenVerbosityLevel</value>
@@ -1476,7 +1476,7 @@
     <value>8</value>
   </data>
   <data name="groupBoxScreenVerbosityLevel.Text" xml:space="preserve">
-    <value> </value>
+    <value>mIw'a'mey lutu'lu'</value>
   </data>
   <data name="&gt;&gt;groupBoxScreenVerbosityLevel.Name" xml:space="preserve">
     <value>groupBoxScreenVerbosityLevel</value>
@@ -1491,16 +1491,16 @@
     <value>1</value>
   </data>
   <data name="comboBoxLogFileVerbosityLevel.Items" xml:space="preserve">
-    <value></value>
+    <value>pIv</value>
   </data>
   <data name="comboBoxLogFileVerbosityLevel.Items" xml:space="preserve">
-    <value></value>
+    <value>Qagh</value>
   </data>
   <data name="comboBoxLogFileVerbosityLevel.Items" xml:space="preserve">
-    <value></value>
+    <value>motlh</value>
   </data>
   <data name="comboBoxLogFileVerbosityLevel.Items" xml:space="preserve">
-    <value></value>
+    <value>ral</value>
   </data>
   <data name="comboBoxLogFileVerbosityLevel.Location" type="System.Drawing.Point, System.Drawing">
     <value>103, 35</value>
@@ -1512,7 +1512,7 @@
     <value>9</value>
   </data>
   <data name="comboBoxLogFileVerbosityLevel.Text" xml:space="preserve">
-    <value></value>
+    <value>motlh</value>
   </data>
   <data name="&gt;&gt;comboBoxLogFileVerbosityLevel.Name" xml:space="preserve">
     <value>comboBoxLogFileVerbosityLevel</value>
@@ -1536,7 +1536,7 @@
     <value>9</value>
   </data>
   <data name="groupBoxLogFileVerbosityLevel.Text" xml:space="preserve">
-    <value> </value>
+    <value>romuluS Dunha'chuq</value>
   </data>
   <data name="&gt;&gt;groupBoxLogFileVerbosityLevel.Name" xml:space="preserve">
     <value>groupBoxLogFileVerbosityLevel</value>
@@ -1593,7 +1593,7 @@
     <value>152</value>
   </data>
   <data name="labelLogFolderPath.Text" xml:space="preserve">
-    <value>**   </value>
+    <value>*tlhaw'DIyo*, DaH 'e' vIpIHchoH.</value>
   </data>
   <data name="&gt;&gt;labelLogFolderPath.Name" xml:space="preserve">
     <value>labelLogFolderPath</value>
@@ -1620,7 +1620,7 @@
     <value>1</value>
   </data>
   <data name="tabPageLoggingOptions.Text" xml:space="preserve">
-    <value>/ </value>
+    <value>/ vengHom</value>
   </data>
   <data name="&gt;&gt;tabPageLoggingOptions.Name" xml:space="preserve">
     <value>tabPageLoggingOptions</value>
@@ -1668,7 +1668,7 @@
     <value>3</value>
   </data>
   <data name="advanceOptionsTab.Text" xml:space="preserve">
-    <value></value>
+    <value>po'nI'puq</value>
   </data>
   <data name="&gt;&gt;advanceOptionsTab.Name" xml:space="preserve">
     <value>advanceOptionsTab</value>
@@ -1725,7 +1725,7 @@
     <value>101</value>
   </data>
   <data name="groupBoxTextBoxTextToTranslate.Text" xml:space="preserve">
-    <value>  </value>
+    <value>bIQublaHbe'chugh vaj bIQublaHbe'</value>
   </data>
   <data name="&gt;&gt;groupBoxTextBoxTextToTranslate.Name" xml:space="preserve">
     <value>groupBoxTextBoxTextToTranslate</value>
@@ -1782,7 +1782,7 @@
     <value>100</value>
   </data>
   <data name="groupBoxTextBoxTranslation.Text" xml:space="preserve">
-    <value></value>
+    <value>mughwI'</value>
   </data>
   <data name="&gt;&gt;groupBoxTextBoxTranslation.Name" xml:space="preserve">
     <value>groupBoxTextBoxTranslation</value>
@@ -1851,7 +1851,7 @@
     <value>99</value>
   </data>
   <data name="toCodeLabel.Text" xml:space="preserve">
-    <value> </value>
+    <value>tIgh yIbuS.</value>
   </data>
   <data name="&gt;&gt;toCodeLabel.Name" xml:space="preserve">
     <value>toCodeLabel</value>
@@ -1929,7 +1929,7 @@
     <value>99</value>
   </data>
   <data name="fromCodeLabel.Text" xml:space="preserve">
-    <value></value>
+    <value>Qapla'.</value>
   </data>
   <data name="&gt;&gt;fromCodeLabel.Name" xml:space="preserve">
     <value>fromCodeLabel</value>
@@ -1986,7 +1986,7 @@
     <value>0</value>
   </data>
   <data name="textTab.Text" xml:space="preserve">
-    <value> </value>
+    <value>wej Doq</value>
   </data>
   <data name="&gt;&gt;textTab.Name" xml:space="preserve">
     <value>textTab</value>
@@ -2002,6 +2002,9 @@
   </data>
   <data name="tabControlTranslateResxSubTab.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="groupBoxFilterText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
   <data name="textBoxFilterText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -2070,7 +2073,7 @@
     <value>144</value>
   </data>
   <data name="groupBoxFilterText.Text" xml:space="preserve">
-    <value></value>
+    <value>'anugh</value>
   </data>
   <data name="&gt;&gt;groupBoxFilterText.Name" xml:space="preserve">
     <value>groupBoxFilterText</value>
@@ -2088,55 +2091,55 @@
     <value>Top, Bottom, Left, Right</value>
   </data>
   <data name="olv_LanguageTag.Text" xml:space="preserve">
-    <value> </value>
+    <value>chu' neH.</value>
   </data>
   <data name="olv_LanguageTag.ToolTipText" xml:space="preserve">
-    <value>/ ** </value>
+    <value>/ *be'neDIq*' SuvwI'</value>
   </data>
   <data name="olv_LanguageTag.Width" type="System.Int32, mscorlib">
     <value>90</value>
   </data>
   <data name="olv_LanguageName.Text" xml:space="preserve">
-    <value></value>
+    <value>pong</value>
   </data>
   <data name="olv_LanguageName.ToolTipText" xml:space="preserve">
-    <value></value>
+    <value>ghu'qang</value>
   </data>
   <data name="olv_LanguageName.Width" type="System.Int32, mscorlib">
     <value>180</value>
   </data>
   <data name="olv_LanguageAliases.Text" xml:space="preserve">
-    <value>//</value>
+    <value>tlh//aw'DIyuS</value>
   </data>
   <data name="olv_LanguageAliases.ToolTipText" xml:space="preserve">
-    <value>/   </value>
+    <value>/ ghu'vetlh ngoQlu'meH DuHbe'</value>
   </data>
   <data name="olv_LanguageAliases.Width" type="System.Int32, mscorlib">
     <value>160</value>
   </data>
   <data name="olv_TranslationSupported.Text" xml:space="preserve">
-    <value></value>
+    <value>Mugh</value>
   </data>
   <data name="olv_TranslationSupported.ToolTipText" xml:space="preserve">
-    <value>   </value>
+    <value>qaSpu'DI' may' ngej puS.</value>
   </data>
   <data name="olv_TranslationSupported.Width" type="System.Int32, mscorlib">
     <value>90</value>
   </data>
   <data name="olv_LanguageTranslatorTag.Text" xml:space="preserve">
-    <value></value>
+    <value>yIlij</value>
   </data>
   <data name="olv_LanguageTranslatorTag.ToolTipText" xml:space="preserve">
-    <value>  </value>
+    <value>'ach DaH mIw'a'</value>
   </data>
   <data name="olv_LanguageTranslatorTag.Width" type="System.Int32, mscorlib">
     <value>65</value>
   </data>
   <data name="olv_Iso639_3.Text" xml:space="preserve">
-    <value></value>
+    <value>'UP</value>
   </data>
   <data name="olv_Iso639_3.ToolTipText" xml:space="preserve">
-    <value>/ "       </value>
+    <value>/ "be'nI''a'lI' qanroy.  qeylIS ghot law' Hoch Danajbe'chugh.</value>
   </data>
   <data name="olv_Iso639_3.Width" type="System.Int32, mscorlib">
     <value>75</value>
@@ -2178,7 +2181,7 @@
     <value>0</value>
   </data>
   <data name="tabPageLanguageList.Text" xml:space="preserve">
-    <value></value>
+    <value>Hol</value>
   </data>
   <data name="&gt;&gt;tabPageLanguageList.Name" xml:space="preserve">
     <value>tabPageLanguageList</value>
@@ -2265,7 +2268,7 @@
     <value>1</value>
   </data>
   <data name="tabPageTranslateResxLogging.Text" xml:space="preserve">
-    <value></value>
+    <value>qonoS</value>
   </data>
   <data name="&gt;&gt;tabPageTranslateResxLogging.Name" xml:space="preserve">
     <value>tabPageTranslateResxLogging</value>
@@ -2304,136 +2307,136 @@
     <value>548, 17</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.Text" xml:space="preserve">
-    <value></value>
+    <value>belvoq</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.ToolTipText" xml:space="preserve">
-    <value>   </value>
+    <value>vaj ghuqmey'e' ghot tiqHa'wI' je</value>
   </data>
   <data name="toolStripMenuItemWindowsSupportedLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsSupportedLanguages.Text" xml:space="preserve">
-    <value></value>
+    <value>qaqHa'</value>
   </data>
   <data name="toolStripMenuItemWindowsSupportedLanguages.ToolTipText" xml:space="preserve">
-    <value>   </value>
+    <value>vaj qeylIS lughajbe'chugh je</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguageInterfacePacks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguageInterfacePacks.Text" xml:space="preserve">
-    <value> </value>
+    <value>qaStaHvIS poH</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguageInterfacePacks.ToolTipText" xml:space="preserve">
-    <value>  </value>
+    <value>Sanchugh qeylIS dIr</value>
   </data>
   <data name="toolStripMenuItemTranslateBusinessLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateBusinessLanguages.Text" xml:space="preserve">
-    <value> </value>
+    <value>'uQ'a' QIb</value>
   </data>
   <data name="toolStripMenuItemTranslateBusinessLanguages.ToolTipText" xml:space="preserve">
-    <value>    </value>
+    <value>motlhHa'chuqtaHghach je pIr, 'ej SuDchoHtaHvIS.</value>
   </data>
   <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 6</value>
+    <value>396, 6</value>
   </data>
   <data name="toolStripMenuItem_TranslateAfrica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateAfrica.Text" xml:space="preserve">
-    <value></value>
+    <value>'oSrIq</value>
   </data>
   <data name="toolStripMenuItem_TranslateAfrica.ToolTipText" xml:space="preserve">
-    <value>     </value>
+    <value>reH nuvpu' QorghwI' je qech je</value>
   </data>
   <data name="toolStripMenuItem_TranslateAsia.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateAsia.Text" xml:space="preserve">
-    <value></value>
+    <value>'oSrIq</value>
   </data>
   <data name="toolStripMenuItem_TranslateAsia.ToolTipText" xml:space="preserve">
-    <value>    </value>
+    <value>wej 'IQmoHwI' 'ej SengDI' qeylIS,</value>
   </data>
   <data name="toolStripMenuItem_TranslateEurope.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateEurope.Text" xml:space="preserve">
-    <value></value>
+    <value>teS</value>
   </data>
   <data name="toolStripMenuItem_TranslateEurope.ToolTipText" xml:space="preserve">
-    <value>   </value>
+    <value>tera'Daq chutmey, qonta'chugh je</value>
   </data>
   <data name="toolStripMenuItem_TranslateMiddleEast.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateMiddleEast.Text" xml:space="preserve">
-    <value></value>
+    <value>qeylIS</value>
   </data>
   <data name="toolStripMenuItem_TranslateMiddleEast.ToolTipText" xml:space="preserve">
-    <value>   </value>
+    <value>qorDu'Daq jenqu' QeyHa'chugh je</value>
   </data>
   <data name="toolStripMenuItem_TranslateNorthAmerica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateNorthAmerica.Text" xml:space="preserve">
-    <value></value>
+    <value>qeylIS</value>
   </data>
   <data name="toolStripMenuItem_TranslateNorthAmerica.ToolTipText" xml:space="preserve">
-    <value>      </value>
+    <value>'ej wej ghu'vam'e' wej qengtaHbogh ghu''e' je.</value>
   </data>
   <data name="toolStripMenuItem_TranslateSouthAmerica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateSouthAmerica.Text" xml:space="preserve">
-    <value></value>
+    <value>jIQoS</value>
   </data>
   <data name="toolStripMenuItem_TranslateSouthAmerica.ToolTipText" xml:space="preserve">
-    <value>     </value>
+    <value>nuhmeyDaq ratlhtaH vay' je qengtaHbogh bIQ'a',</value>
   </data>
   <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 6</value>
+    <value>396, 6</value>
   </data>
   <data name="toolStripMenuItemTranslateTop5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop5.Text" xml:space="preserve">
-    <value></value>
+    <value>'utanapIStIm</value>
   </data>
   <data name="toolStripMenuItemTranslateTop5.ToolTipText" xml:space="preserve">
-    <value>   </value>
+    <value>vaj qeylIS ghotpu' je</value>
   </data>
   <data name="toolStripMenuItemTranslateTop10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop10.Text" xml:space="preserve">
-    <value> </value>
+    <value>'uQ'a' tlhIvHa'wI'</value>
   </data>
   <data name="toolStripMenuItemTranslateTop10.ToolTipText" xml:space="preserve">
-    <value>  </value>
+    <value>nItebHa' ghotpu' je</value>
   </data>
   <data name="toolStripMenuItemTranslateTop20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop20.Text" xml:space="preserve">
-    <value>  </value>
+    <value>jatlhmeH chuqmeH ghu'</value>
   </data>
   <data name="toolStripMenuItemTranslateTop20.ToolTipText" xml:space="preserve">
-    <value>  </value>
+    <value>nItebHa' ghotpu' je</value>
   </data>
   <data name="toolStripMenuItemTranslateTop30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop30.Text" xml:space="preserve">
-    <value>  </value>
+    <value>jatlhmeH chuqmeH ghu'</value>
   </data>
   <data name="toolStripMenuItemTranslateTop30.ToolTipText" xml:space="preserve">
-    <value>  </value>
+    <value>nIteb ghotpu' je</value>
   </data>
   <data name="toolStripSplitButtonTranslate.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
@@ -2442,37 +2445,37 @@
     <value>190, 36</value>
   </data>
   <data name="toolStripSplitButtonTranslate.Text" xml:space="preserve">
-    <value></value>
+    <value>mu'tlhengan</value>
   </data>
   <data name="toolStripSplitButtonTranslate.ToolTipText" xml:space="preserve">
-    <value>          </value>
+    <value>jatlI' choHta' tlhuHlu'DI' tlhoS  wej leghlaHbe'bogh qach'e' wej beq vIHutlh.</value>
   </data>
   <data name="toolStripMenuItemSelectAll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 34</value>
+    <value>333, 42</value>
   </data>
   <data name="toolStripMenuItemSelectAll.Text" xml:space="preserve">
-    <value></value>
+    <value>layerteS</value>
   </data>
   <data name="toolStripMenuItemSelectClear.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 34</value>
+    <value>333, 42</value>
   </data>
   <data name="toolStripMenuItemSelectClear.Text" xml:space="preserve">
-    <value></value>
+    <value>ghom'a'</value>
   </data>
   <data name="toolStripMenuItemSelectClear.ToolTipText" xml:space="preserve">
-    <value> </value>
+    <value>'ach QoQ</value>
   </data>
   <data name="toolStripMenuItemSelectUndo.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="toolStripMenuItemSelectUndo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 34</value>
+    <value>333, 42</value>
   </data>
   <data name="toolStripMenuItemSelectUndo.Text" xml:space="preserve">
-    <value> </value>
+    <value>suvwI' qaStaHvIS</value>
   </data>
   <data name="toolStripMenuItemSelectUndo.ToolTipText" xml:space="preserve">
-    <value>  </value>
+    <value>nuv QatlhchoH nuvpu'</value>
   </data>
   <data name="toolStripMenuItemSelectUndo.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -2484,148 +2487,148 @@
     <value>136, 36</value>
   </data>
   <data name="toolStripSplitButtonSelectAllLanugages.Text" xml:space="preserve">
-    <value>  </value>
+    <value>tach 'e' vIchav</value>
   </data>
   <data name="toolStripSplitButtonSelectAllLanugages.ToolTipText" xml:space="preserve">
-    <value> </value>
+    <value>vaj HolchoH</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
     <value>234, 34</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks_ShowOnly.Text" xml:space="preserve">
-    <value></value>
+    <value>'agh</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks_Add.Size" type="System.Drawing.Size, System.Drawing">
     <value>234, 34</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks_Add.Text" xml:space="preserve">
-    <value></value>
+    <value>boq</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks_AddAndSelect.Size" type="System.Drawing.Size, System.Drawing">
     <value>234, 34</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks_AddAndSelect.Text" xml:space="preserve">
-    <value></value>
+    <value>ghom'a'</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks.ShowShortcutKeys" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks.Text" xml:space="preserve">
-    <value>/   </value>
+    <value>vulchoHpu'DI'/ tlhIm, QI'tu' joH</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageAboveText</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks.ToolTipText" xml:space="preserve">
-    <value>/      </value>
+    <value>/ vaj Wa'logh qelI'qam 'angbogh latlh qeylIS,</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
     <value>234, 34</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface_ShowOnly.Text" xml:space="preserve">
-    <value></value>
+    <value>'agh</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface_Add.Size" type="System.Drawing.Size, System.Drawing">
     <value>234, 34</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface_Add.Text" xml:space="preserve">
-    <value></value>
+    <value>boq</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface_AddAndSelect.Size" type="System.Drawing.Size, System.Drawing">
     <value>234, 34</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface_AddAndSelect.Text" xml:space="preserve">
-    <value></value>
+    <value>ghom'a'</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface.Text" xml:space="preserve">
-    <value> </value>
+    <value>qastaHvIS yoH</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>TextBeforeImage</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface.ToolTipText" xml:space="preserve">
-    <value>  </value>
+    <value>qaStaHvIS wa'maHchugh ngoH</value>
   </data>
   <data name="toolStripSeparator7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>429, 6</value>
+    <value>437, 6</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_ShowOnly.Text" xml:space="preserve">
-    <value></value>
+    <value>'agh</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_Add.Text" xml:space="preserve">
-    <value></value>
+    <value>boq</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.Text" xml:space="preserve">
-    <value> </value>
+    <value>qaStaHvIS poHmey law' Hol puS</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.ToolTipText" xml:space="preserve">
-    <value>   </value>
+    <value>lojmItHom vIvoqtaHvIS, Hoch SIbI' puS</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly.Text" xml:space="preserve">
-    <value></value>
+    <value>'agh</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_Add.Text" xml:space="preserve">
-    <value></value>
+    <value>boq</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames.Text" xml:space="preserve">
-    <value></value>
+    <value>SaQ</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>TextAboveImage</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames.ToolTipText" xml:space="preserve">
-    <value></value>
+    <value>be'nalwI'</value>
   </data>
   <data name="toolStripMenuItem2toolStripMenuItemISO639_1PlusWinLangPack_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
     <value>158, 34</value>
   </data>
   <data name="toolStripMenuItem2toolStripMenuItemISO639_1PlusWinLangPack_ShowOnly.Text" xml:space="preserve">
-    <value></value>
+    <value>'agh</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack_Add.Size" type="System.Drawing.Size, System.Drawing">
     <value>158, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack_Add.Text" xml:space="preserve">
-    <value></value>
+    <value>boq</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.Text" xml:space="preserve">
-    <value>+    ?</value>
+    <value>+ 'oH je 'e' yIchaw''a'?</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>TextAboveImage</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.ToolTipText" xml:space="preserve">
-    <value>  </value>
+    <value>be'nI''a'wI' muSHa'chuqmoH Qey'a'</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -2634,13 +2637,13 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemSubLanguagesAndRegions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemSubLanguagesAndRegions.Text" xml:space="preserve">
-    <value>     </value>
+    <value>'ej yunlIj ngeb DanobmeH, yablIj qan</value>
   </data>
   <data name="toolStripMenuItemSubLanguagesAndRegions.ToolTipText" xml:space="preserve">
-    <value>     </value>
+    <value>law'taHvIS noDmeH neH yabmaj, qaStaHvIS cha'DIch</value>
   </data>
   <data name="toolStripMenuItemSubLanguagesAndRegions.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -2652,10 +2655,10 @@
     <value>200, 36</value>
   </data>
   <data name="toolStripSplitButtonResetDisplayToSet.Text" xml:space="preserve">
-    <value></value>
+    <value>yImuSHa'</value>
   </data>
   <data name="toolStripSplitButtonResetDisplayToSet.ToolTipText" xml:space="preserve">
-    <value> </value>
+    <value>ngaDHa'wI' may'</value>
   </data>
   <data name="toolStripButtonStopTranslation.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
@@ -2664,10 +2667,10 @@
     <value>85, 36</value>
   </data>
   <data name="toolStripButtonStopTranslation.Text" xml:space="preserve">
-    <value></value>
+    <value>Mev</value>
   </data>
   <data name="toolStripButtonStopTranslation.ToolTipText" xml:space="preserve">
-    <value></value>
+    <value>tlhaw'DIyuS</value>
   </data>
   <data name="toolStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>22, 25</value>
@@ -2679,7 +2682,7 @@
     <value>23</value>
   </data>
   <data name="toolStrip1.Text" xml:space="preserve">
-    <value></value>
+    <value>HIDjolev</value>
   </data>
   <data name="&gt;&gt;toolStrip1.Name" xml:space="preserve">
     <value>toolStrip1</value>
@@ -2763,7 +2766,7 @@
     <value>4</value>
   </data>
   <data name="outputLabel.Text" xml:space="preserve">
-    <value>  </value>
+    <value>suH, 'oH Qapla'.</value>
   </data>
   <data name="&gt;&gt;outputLabel.Name" xml:space="preserve">
     <value>outputLabel</value>
@@ -2820,7 +2823,7 @@
     <value>0</value>
   </data>
   <data name="inputLabel.Text" xml:space="preserve">
-    <value> </value>
+    <value>'ovelya vIvuvmoH.</value>
   </data>
   <data name="&gt;&gt;inputLabel.Name" xml:space="preserve">
     <value>inputLabel</value>
@@ -2850,7 +2853,7 @@
     <value>1</value>
   </data>
   <data name="resxTab.Text" xml:space="preserve">
-    <value></value>
+    <value>yIbuSqu'</value>
   </data>
   <data name="&gt;&gt;resxTab.Name" xml:space="preserve">
     <value>resxTab</value>
@@ -10149,7 +10152,7 @@
     <value>17, 19, 17, 19</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value></value>
+    <value>berghwI'</value>
   </data>
   <data name="&gt;&gt;openResxFileDialog.Name" xml:space="preserve">
     <value>openResxFileDialog</value>

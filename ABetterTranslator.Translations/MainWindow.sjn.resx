@@ -393,10 +393,10 @@
     <value>7</value>
   </data>
   <data name="groupBoxItemsPerTransaltionRequest.Text" xml:space="preserve">
-    <value>1Gt$8 q6R 175#8j1D`B5^ 7`Vq</value>
+    <value>817b%8 q6R 175#8j1D`B5^ 7`Vq</value>
   </data>
   <data name="groupBoxItemsPerTransaltionRequest.ToolTip" xml:space="preserve">
-    <value>1Gt$8 q6R 175#8j1D`B5^ 7zéRiF1</value>
+    <value>817b%8 q6R 175#8j1D`B5^ 7zéRiF1</value>
   </data>
   <data name="&gt;&gt;groupBoxItemsPerTransaltionRequest.Name" xml:space="preserve">
     <value>groupBoxItemsPerTransaltionRequest</value>
@@ -1335,7 +1335,7 @@
     <value>6</value>
   </data>
   <data name="MaxThread.Text" xml:space="preserve">
-    <value>¬ð</value>
+    <value>¬ñ</value>
   </data>
   <data name="&gt;&gt;MaxThread.Name" xml:space="preserve">
     <value>MaxThread</value>
@@ -2003,6 +2003,9 @@
   <data name="tabControlTranslateResxSubTab.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
+  <data name="groupBoxFilterText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="textBoxFilterText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
@@ -2304,16 +2307,16 @@
     <value>548, 17</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.Text" xml:space="preserve">
     <value>175#8j1D`V q~C5 8qUq7Y12$ jt#x$</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.ToolTipText" xml:space="preserve">
-    <value>8j$zR18 `C 175#8j1DiF q~C5 jt#x$ 8qUq7Y12$ 5`C 175#8j1D7Y8</value>
+    <value>8j$zR1 `C 175#8j1D`V q~C5 jt#x$ 5`C `C 175#8j1D`B5^ 87RrzT`V</value>
   </data>
   <data name="toolStripMenuItemWindowsSupportedLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsSupportedLanguages.Text" xml:space="preserve">
     <value>y2{%yY8 jt# qzEz</value>
@@ -2322,7 +2325,7 @@
     <value>8j$zR1 `C 175#8j1D`V jt#x$ w5$ y2{%yY8 jt#x$ qzEz8</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguageInterfacePacks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguageInterfacePacks.Text" xml:space="preserve">
     <value>y2{%yY8 jt# 1[G7RezE`V qzEz8</value>
@@ -2331,7 +2334,7 @@
     <value>8j$zR1 `C 175#8j1D`V jt#x$ w5$ y2{%yY8 jt# 1[G7RezE`V qzEz8</value>
   </data>
   <data name="toolStripMenuItemTranslateBusinessLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateBusinessLanguages.Text" xml:space="preserve">
     <value>175#8j1D`V z.D wiJ5%,F jt#x$</value>
@@ -2340,10 +2343,10 @@
     <value>8j$zR1 `C 175#8j1D`V tiH1 iJ2$ 1[G7R51D`B5^j#¬wiJ5%,F¬jt#x$</value>
   </data>
   <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 6</value>
+    <value>396, 6</value>
   </data>
   <data name="toolStripMenuItem_TranslateAfrica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateAfrica.Text" xml:space="preserve">
     <value>eD7zT`C</value>
@@ -2352,7 +2355,7 @@
     <value>8j$zR1 `C 175#8j1D`V z.D tiH1 8q`Nz5$ jt#x$ w5$ eD7zT`C</value>
   </data>
   <data name="toolStripMenuItem_TranslateAsia.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateAsia.Text" xml:space="preserve">
     <value>iD`B`C</value>
@@ -2361,7 +2364,7 @@
     <value>8j$zR1 `C 175#8j1D`V z.D tiH1 8q`Nz5$ jt#x$ w5$ iD`B`C</value>
   </data>
   <data name="toolStripMenuItem_TranslateEurope.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateEurope.Text" xml:space="preserve">
     <value>`V7UqY`V</value>
@@ -2370,7 +2373,7 @@
     <value>8j$zR1 `C 175#8j1D`V z.D tiH1 8q`Nz5$ jt#x$ w5$ `V7UqY`V</value>
   </data>
   <data name="toolStripMenuItem_TranslateMiddleEast.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateMiddleEast.Text" xml:space="preserve">
     <value>5$4$ t#7~M5</value>
@@ -2379,7 +2382,7 @@
     <value>8j$zR1 `C 175#8j1D`V z.D tiH1 8q`Nz5$ jt#x$ w5$ 5$4$ t#7~M5</value>
   </data>
   <data name="toolStripMenuItem_TranslateNorthAmerica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateNorthAmerica.Text" xml:space="preserve">
     <value>e7Y2^ t#7RzT`C</value>
@@ -2388,7 +2391,7 @@
     <value>8j$zR1 `C 175#8j1D`V z.D tiH1 8q`Nz5$ jt#x$ w5$ e7Y2^ t#7RzT`C</value>
   </data>
   <data name="toolStripMenuItem_TranslateSouthAmerica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateSouthAmerica.Text" xml:space="preserve">
     <value>97E2# t#7RzT`C</value>
@@ -2397,10 +2400,10 @@
     <value>8j$zR1 `C 175#8j1D`V z.D tiH1 8q`Nz5$ jt#x$ w5$ 97E2# t#7RzT`C</value>
   </data>
   <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 6</value>
+    <value>396, 6</value>
   </data>
   <data name="toolStripMenuItemTranslateTop5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop5.Text" xml:space="preserve">
     <value>175#8j1D`V z.D õ 8q`Nz5$ jt#x$</value>
@@ -2409,7 +2412,7 @@
     <value>8j$zR1 `C 175#8j1D`V z.D õ 8q`Nz5$ jt#x$</value>
   </data>
   <data name="toolStripMenuItemTranslateTop10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop10.Text" xml:space="preserve">
     <value>175#8j1D`V z.D ñð 8q`Nz5$ jt#x$</value>
@@ -2418,7 +2421,7 @@
     <value>8j$zR1 `C 175#8j1D`V z.D ñð</value>
   </data>
   <data name="toolStripMenuItemTranslateTop20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop20.Text" xml:space="preserve">
     <value>175#8j1D`V z.D òð 8q`Nz5$ jt#x$</value>
@@ -2427,7 +2430,7 @@
     <value>8j$zR1 `C 175#8j1D`V z.D òð</value>
   </data>
   <data name="toolStripMenuItemTranslateTop30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop30.Text" xml:space="preserve">
     <value>175#8j1D`V z.D óð 8q`Nz5$ jt#x$</value>
@@ -2448,13 +2451,13 @@
     <value>817E1 175#8j1D`B5^ w`N 8j$zR12$ jt#x$ -  175#8j1DiF q~C5 jt#x$ lE w.D jt# 8j$zR12$ -</value>
   </data>
   <data name="toolStripMenuItemSelectAll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 34</value>
+    <value>333, 42</value>
   </data>
   <data name="toolStripMenuItemSelectAll.Text" xml:space="preserve">
     <value>8j$zR1 q~C5 jt#x$</value>
   </data>
   <data name="toolStripMenuItemSelectClear.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 34</value>
+    <value>333, 42</value>
   </data>
   <data name="toolStripMenuItemSelectClear.Text" xml:space="preserve">
     <value>jt% q~C5 8j$zR1`B5^</value>
@@ -2466,7 +2469,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemSelectUndo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 34</value>
+    <value>333, 42</value>
   </data>
   <data name="toolStripMenuItemSelectUndo.Text" xml:space="preserve">
     <value>2{&amp;`N w75^`N x7`NqU 8j$zR1`B5^</value>
@@ -2511,7 +2514,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks.Text" xml:space="preserve">
     <value>y2{%yY8 ñð-ññ jt# qzEz</value>
@@ -2541,7 +2544,7 @@
     <value>2#2 `C 8j$zR1</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface.Text" xml:space="preserve">
     <value>y2{%yY8 jt# qzEz 1[G7RezE`V</value>
@@ -2553,43 +2556,43 @@
     <value>52$ cyY jt#x$ 31D 7E`V w5$ y2{%yY8 jt# qzEz 1[G7RezE`V</value>
   </data>
   <data name="toolStripSeparator7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>429, 6</value>
+    <value>437, 6</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_ShowOnly.Text" xml:space="preserve">
     <value>cyY</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_Add.Text" xml:space="preserve">
     <value>2#2</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.Text" xml:space="preserve">
-    <value>iG1j#t$ 8qUq7Y12$ jt#x$</value>
+    <value>jt#x$ 5`C `C 175#8j1D`B5^ 87RrzT`V</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.ToolTipText" xml:space="preserve">
-    <value>2iGqj`C`× q~C5 jt#x$ 5`C `C 8qUq7Y12$ iG1j#t$ -</value>
+    <value>2iGqj`C`× q~C5 jt#x$ 5`C `C 8qUq7Y12$ 175#8j1D`B5^ 87RrzT`V</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly.Text" xml:space="preserve">
     <value>cyY</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_Add.Text" xml:space="preserve">
     <value>2#2</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames.Text" xml:space="preserve">
     <value>iG`N öóù¬ñ jt# q5$`B`N</value>
@@ -2616,7 +2619,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.Text" xml:space="preserve">
     <value>iG`N öóù¬ñ 2"# y5% j`Cb qzEz</value>
@@ -2634,7 +2637,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemSubLanguagesAndRegions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemSubLanguagesAndRegions.Text" xml:space="preserve">
     <value>2#2 5`C jiG1 8w&amp;¬jt#x$ `C 7x$`B5^8</value>

@@ -23,28 +23,25 @@ namespace ABetterTranslator
         public static readonly string[,] LanguageCodesAndAliases = // ToDo: Make sure the list displays only 2 letter ISO-639-1 in the first row, unless language/region is not in ISO-639-1 
         {   //{[Tag AKA Language-Code], [Language/region], [Name and aliases] , [SupportedTranslator] }
              #region LanguageCodesAndAliases
-            {"hmn", "Hmong", "China, Laos, Thailand, Vietnam"},
-            {"ikt", "Inuinnaqtun", ""},
-            {"yua", "Yucatec Maya", ""},
-            {"aa", "Afar", ""},
-            {"ab", "Abkhazian", ""},
-            {"ae", "Avestan", ""},
+            {"aa", "Afar", "Djibouti;Eritrea;Ethiopia"},
+            {"ab", "Abkhazian", "Abkhaz"},
+            {"ae", "Avestan", "Zend"},
             {"af", "Afrikaans", "South Africa"},
             {"ak", "Akan", ""},
             {"am", "Amharic", "Ethiopia"},
             {"an", "Aragonese", ""},
             {"ar", "Arabic", ""},
             {"as", "Assamese", "India"},
-            {"av", "Avaric", ""},
+            {"av", "Avaric", "Avar"},
             {"ay", "Aymara", ""},
-            {"az", "Azerbaijani", ""},
+            {"az", "Azerbaijani", "Azeri"},
             {"ba", "Bashkir", ""},
             {"be", "Belarusian", ""},
             {"bg", "Bulgarian", "Bulgaria"},
             {"bi", "Bislama", ""},
             {"bm", "Bambara", ""},
             {"bn", "Bengali", "Bangla;India"},
-            {"bo", "Tibetan", ""},
+            {"bo", "Tibetan", "Standard Tibetan"},
             {"br", "Breton", ""},
             {"bs", "Bosnian", "Bosnian (Latin)"},
             {"ca", "Catalan", "Valencian"},
@@ -54,12 +51,12 @@ namespace ABetterTranslator
             {"co", "Corsican", ""},
             {"cr", "Cree", ""},
             {"cs", "Czech", "Czech Republic"},
-            {"cu", "Church Slavic", "Old Slavonic;Church Slavonic;Old Bulgarian;Old Church Slavonic"},
+            {"cu", "Church Slavic", "Old Slavonic;Church Slavonic;Old Bulgarian;Old Church Slavonic;Eastern Orthodox Church"},
             {"cv", "Chuvash", ""},
             {"cy", "Welsh", "Great Britain"},
             {"da", "Danish", "Denmark"},
             {"de", "German", "Germany"},
-            {"dv", "Dhivehi", "Divehi;Maldivian"},
+            {"dv", "Divehi", "Dhivehi;Maldivian"},
             {"dz", "Dzongkha", ""},
             {"ee", "Ewe", ""},
             {"el", "Greek", "Greece;Modern (1453–)"},
@@ -71,7 +68,7 @@ namespace ABetterTranslator
             {"et", "Estonian", "Estonia"},
             {"eu", "Basque", ""},
             {"fa", "Persian", "Farsi"},
-            {"ff", "Fulah", "Fulani;Fula-Wolof"},
+            {"ff", "Fulah", "Fulani;Fula;Fula-Wolof"},
             {"fi", "Finnish", "Finland"},
             {"fj", "Fijian", ""},
             {"fo", "Faroese", ""},
@@ -84,8 +81,9 @@ namespace ABetterTranslator
             {"gu", "Gujarati", "India"},
             {"gv", "Manx", ""},
             {"ha", "Hausa", "Nigeria"},
-            {"he", "Hebrew", "Israel"},
+            {"he", "Hebrew", "Israel;Modern Hebrew"},
             {"hi", "Hindi", "India"},
+            {"hmn", "Hmong", "China, Laos, Thailand, Vietnam"},
             {"ho", "Hiri Motu", ""},
             {"hr", "Croatian", "Croatia"},
             {"ht", "Haitian", "Haitian Creole"},
@@ -98,6 +96,7 @@ namespace ABetterTranslator
             {"ig", "Igbo", "Nigeria"},
             {"ii", "Sichuan Yi", "Nuosu"},
             {"ik", "Inupiaq", ""},
+            {"ikt", "Inuinnaqtun", ""},
             {"io", "Ido", ""},
             {"is", "Icelandic", "Iceland"},
             {"it", "Italian", "Italy"},
@@ -126,45 +125,43 @@ namespace ABetterTranslator
             {"ln", "Lingala", ""},
             {"lo", "Lao", "Laos"},
             {"lt", "Lithuanian", "Lithuania"},
-            {"lu", "Luba-Katanga", ""},
+            {"lu", "Luba-Katanga", "Luba-Shaba"},
             {"lv", "Latvian", "Latvia"},
             {"mg", "Malagasy", "Madagascar"},
             {"mh", "Marshallese", ""},
-            {"mi", "Maori", "New Zealand"},
+            {"mi", "Maori", "New Zealand;Māori"},
             {"mk", "Macedonian", "FYROM"},
             {"ml", "Malayalam", "India"},
             {"mn", "Mongolian", ""},
-            {"mr", "Marathi", "India"},
+            {"mr", "Marathi", "Marāṭhī;India"},
             {"ms", "Malay", "Malaysia;Brunei;Singapore"},
             {"mt", "Maltese", "Malta"},
-            {"my", "Burmese", ""},
-            {"na", "Nauru", ""},
-            {"no", "Norwegian", "Norway"},
+            {"my", "Burmese", "Myanmar"},
+            {"na", "Nauru", "Nauruan"},
             {"nb", "Norwegian Bokmål", "Norway"},
-            {"nd", "North Ndebele", "Ndebele"},
+            {"nd", "North Ndebele", "Northern Ndebele;Ndebele"},
             {"ne", "Nepali", "Nepal;Federal Democratic Republic of Nepal"},
             {"ng", "Ndonga", ""},
-            {"nl", "Dutch", "Flemish;Netherlands"},
+            {"nl", "Dutch", "Flemish;Netherlands;Belgium"},
             {"nn", "Norwegian Nynorsk", "Norway;Nynorsk"},
-            {"nr", "South Ndebele", "Ndebele"},
+            {"no", "Norwegian", "Norway"},
+            {"nr", "South Ndebele", "Southern Ndebele;Ndebele"},
             {"nv", "Navajo", "Navaho"},
-            {"ny", "Nyanja", "Chichewa;Chewa"},
+            {"ny", "Chichewa", "Chewa;Nyanja"},
             {"oc", "Occitan", ""},
-            {"oj", "Ojibwa", ""},
+            {"oj", "Ojibwa", "Ojibwe"},
             {"om", "Oromo", ""},
-            {"or", "Odia", "India"},
-            {"or", "Oriya", ""},
+            {"or", "Oriya", "Odia;India"},
             {"os", "Ossetian", "Ossetic"},
             {"pa", "Punjabi", "Panjabi;India"},
-            {"pi", "Pali", ""},
+            {"pi", "Pali", "Pāli"},
             {"pl", "Polish", "Poland"},
             {"ps", "Pashto", "Pushto"},
             {"pt", "Portuguese", "Portugal;Brazil"},
             {"pt-BR", "Portuguese (Brazil)", "Brazil"},
-            {"pt-PT", "Portuguese (Portugal)", "Portugal"},
             {"qu", "Quechua", "Peru"},
             {"rm", "Romansh", ""},
-            {"rn", "Rundi", ""},
+            {"rn", "Rundi", "Kirundi"},
             {"ro", "Romanian", "Romania;Moldavian;Moldovan"},
             {"ru", "Russian", "Russia"},
             {"rw", "Kinyarwanda", ""},
@@ -175,7 +172,7 @@ namespace ABetterTranslator
             {"sg", "Sango", ""},
             {"si", "Sinhala", "Sinhalese"},
             {"sk", "Slovak", "Slovakia"},
-            {"sl", "Slovenian", "Slovenia"},
+            {"sl", "Slovenian", "Slovene;Slovenia"},
             {"sm", "Samoan", ""},
             {"sn", "Shona", ""},
             {"so", "Somali", ""},
@@ -183,7 +180,7 @@ namespace ABetterTranslator
             {"sr", "Serbian", "Serbia"},
             {"sr-Cyrl", "Serbian (Cyrillic)", "Serbian (Cyrillic, Bosnia and Herzegovina)"},
             {"sr-Latn", "Serbian (Latin)", "Serbian (Cyrillic, Serbia)"},
-            {"ss", "Swati", ""},
+            {"ss", "Swati", "Swazi"},
             {"st", "Southern Sotho", "Sesotho"},
             {"su", "Sundanese", ""},
             {"sv", "Swedish", "Sweden"},
@@ -198,7 +195,7 @@ namespace ABetterTranslator
             {"tn", "Tswana", ""},
             {"to", "Tonga", "Tonga (Islands);Tongan"},
             {"tr", "Turkish", "Turkey"},
-            {"ts", "Tsonga", ""},
+            {"ts", "Tsonga", "Xitsonga"},
             {"tt", "Tatar", "Russia"},
             {"tw", "Twi", ""},
             {"ty", "Tahitian", ""},
@@ -214,13 +211,14 @@ namespace ABetterTranslator
             {"xh", "Xhosa", ""},
             {"yi", "Yiddish", ""},
             {"yo", "Yoruba", ""},
+            {"yua", "Yucatec Maya", ""},
+            {"yue", "Cantonese (Traditional)", ""},
             {"za", "Zhuang", "Chuang"},
             {"zh",     "Chinese", "Chinese (PRC);Chinese (Simplified);Mandarin;China"},
             {"zh-CHT", "Chinese (Traditional)", "Mandarin;China"},
             {"zh-CN",  "Chinese (Simplified)", "Chinese;Chinese (PRC);Mandarin;China"},
             {"zh-TW",  "Chinese (Taiwan)", "Mandarin;Taiwan"},
             {"zu", "Zulu", ""},
-            {"yue", "Cantonese (Traditional)", ""},
             #endregion LanguageCodesAndAliases
         };
         //	Windows10Plus_LanguagePacks source: https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/available-language-packs-for-windows?view=windows-11 
@@ -228,41 +226,41 @@ namespace ABetterTranslator
         {	//{[Language-Code], [Language/region] }
 			#region Windows10Plus_LanguagePacks
 			{"ar-SA", "Arabic"},                   // Arabic(Saudi Arabia)  :  
-            {"eu-ES", "Basque"},                         // Basque(Basque)  :  
             {"bg-BG", "Bulgarian"},                    // Bulgarian(Bulgaria)  :  
             {"ca-ES", "Catalan"},                                //   :  
-            {"hr-HR", "Croatian"},                      // Croatian(Croatia)  :  
             {"cs-CZ", "Czech"},                  //  Czech(Czech Republic) :  
             {"da-DK", "Danish"},                        // Danish(Denmark)  :  
-            {"nl-NL", "Dutch"},                     // Dutch(Netherlands)  :  
-            {"en-US", "English"},                 // English(United States)  :  
+            {"de-DE", "German"},                        // German(Germany)  :  
+            {"el-GR", "Greek"},                          // Greek(Greece)  :  
             {"en-GB", "English (UK)"},                // English(United Kingdom)  :  
+            {"en-US", "English"},                 // English(United States)  :  
+            {"es-ES", "Spanish"},                         // Spanish(Spain)  :  
+            {"es-MX", "Spanish (Mexico)"},                        // Spanish(Mexico)  :  
             {"et-EE", "Estonian"},                      // Estonian(Estonia)  :  
+            {"eu-ES", "Basque"},                         // Basque(Basque)  :  
             {"fi-FI", "Finnish"},                       // Finnish(Finland)  :  
             {"fr-CA", "French (Canada)"},                         // French(Canada)  :  
             {"fr-FR", "French"},                         // French(France)  :  
             {"gl-ES", "Galician"},                               // Galician  :  
-            {"de-DE", "German"},                        // German(Germany)  :  
-            {"el-GR", "Greek"},                          // Greek(Greece)  :  
             {"he-IL", "Hebrew"},                         // Hebrew(Israel)  :  
+            {"hr-HR", "Croatian"},                      // Croatian(Croatia)  :  
             {"hu-HU", "Hungarian"},                     // Hungarian(Hungary)  :  
             {"id-ID", "Indonesian"},                  // Indonesian(Indonesia)  :  
             {"it-IT", "Italian"},                         // Italian(Italy)  :  
             {"ja-JP", "Japanese"},                        // Japanese(Japan)  :  
             {"ko-KR", "Korean"},                          // Korean(Korea)  :  
-            {"lv-LV", "Latvian"},                        // Latvian(Latvia)  :  
             {"lt-LT", "Lithuanian"},                  // Lithuanian(Lithuania)  :  
+            {"lv-LV", "Latvian"},                        // Latvian(Latvia)  :  
             {"nb-NO", "Norwegian"},                      // Norwegian(Norway)  :  
+            {"nl-NL", "Dutch"},                     // Dutch(Netherlands)  :  
             {"pl-PL", "Polish"},                         // Polish(Poland)  :  
             {"pt-BR", "Portuguese (Brazil)"},                     // Portuguese(Brazil)  :  
             {"pt-PT", "Portuguese"},                   // Portuguese(Portugal)  :  
             {"ro-RO", "Romanian"},                      // Romanian(Romania)  :  
             {"ru-RU", "Russian"},                        // Russian(Russia)  :  
-            {"sr-Latn-RS", "Serbian (Latin)"},            // Serbian(Latin, Serbia)  :  
             {"sk-SK", "Slovak"},                       // Slovak(Slovakia)  :  
             {"sl-SI", "Slovenian"},                    // Slovenian(Slovenia)  :  
-            {"es-MX", "Spanish (Mexico)"},                        // Spanish(Mexico)  :  
-            {"es-ES", "Spanish"},                         // Spanish(Spain)  :  
+            {"sr-Latn-RS", "Serbian (Latin)"},            // Serbian(Latin, Serbia)  :  
             {"sv-SE", "Swedish"},                        // Swedish(Sweden)  :  
             {"th-TH", "Thai"},                         // Thai(Thailand)  :  
             {"tr-TR", "Turkish"},                        // Turkish(Turkey)  :  
@@ -275,63 +273,62 @@ namespace ABetterTranslator
         public static readonly string[,] Windows10Plus_LanguageInterfacePacks =  /*Windows 10/11 LIPs*/
 		{	//{[Language-Code], [Language/region], [Primary Base language/region]}
 			#region Windows10Plus_LanguageInterfacePacks
-			{"af-ZA", "Afrikaans"},
-            {"am-ET", "Amharic"},
-            {"as-IN", "Assamese"},
-            {"az-Latn-AZ", "Azerbaijani"},
-            {"be-BY", "Belarusian"},
-            {"bn-IN", "Bengali"},
-            {"bs-Latn-BA", "Bosnian"},
-            {"ca-ES", "Catalan"},
-            {"ca-ES-valencia", "Catalan"},
-            {"chr-CHER-US", "Cherokee"}, // Suppose to be supported by Google Translate via code chr, but it's not working.
-            {"cy-GB", "Welsh"},
-            {"eu-ES", "Basque"},
-            {"fa-IR", "Persian"},
-            {"fil", "Filipino"},
-            {"ga-IE", "Irish"},
-            {"gd-GB", "Gaelic"},
-            {"gl-ES", "Galician"},
-            {"gu-IN", "Gujarati"},
-            {"hi-IN", "Hindi"},
-            {"hy-AM", "Armenian"},
-            {"id-ID", "Indonesian"},
-            {"is-IS", "Icelandic"},
-            {"ka-GE", "Georgian"},
-            {"kk-KZ", "Kazakh"},
-            {"km-KH", "Khmer"},
-            {"kn-IN", "Kannada"},
-            {"kok-IN", "Konkani (India)"}, // -- No available translator supports this language
-            {"lb-LU", "Luxembourgish"},
-            {"lo-LA", "Lao"},
-            {"mi-NZ", "Maori"},
-            {"mk-MK", "Macedonian"},
-            {"ml-IN", "Malayalam"},
-            {"mr-IN", "Marathi"},
-            {"ms-MY", "Malay"},
-            {"mt-MT", "Maltese"},
-            {"ne-NP", "Nepali"},
-            {"nn-NO", "Norwegian Nynorsk"},
-            {"or-IN", "Odia"},
-            {"pa-IN", "Punjabi"},
-            {"quz-PE", "Quechua"}, // -- No available translator supports this language 
-			{"sq-AL", "Albanian"},
-            {"sr-Cyrl-BA", "Serbian (Cyrillic)"},
-            {"sr-Cyrl-RS", "Serbian (Latin)"}, // aka sr-Latn-RS
-            {"ta-IN", "Tamil"},
-            {"te-IN", "Telugu"},
-            {"tt-RU", "Tatar"},
-            {"ug-CN", "Uighur"},
-            {"ur-PK", "Urdu"},
-            {"uz-Latn-UZ", "Uzbek"},
             {"vi-VN", "Vietnamese"},
+            {"uz-Latn-UZ", "Uzbek"},
+            {"ur-PK", "Urdu"},
+            {"ug-CN", "Uighur"},
+            {"tt-RU", "Tatar"},
+            {"te-IN", "Telugu"},
+            {"ta-IN", "Tamil"},
+            {"sr-Cyrl-RS", "Serbian (Latin)"}, // aka sr-Latn-RS
+            {"sr-Cyrl-BA", "Serbian (Cyrillic)"},
+			{"sq-AL", "Albanian"},
+            {"quz-PE", "Quechua"}, // -- No available translator supports this language 
+            {"pa-IN", "Punjabi"},
+            {"or-IN", "Odia"},
+            {"nn-NO", "Norwegian Nynorsk"},
+            {"ne-NP", "Nepali"},
+            {"mt-MT", "Maltese"},
+            {"ms-MY", "Malay"},
+            {"mr-IN", "Marathi"},
+            {"ml-IN", "Malayalam"},
+            {"mk-MK", "Macedonian"},
+            {"mi-NZ", "Maori"},
+            {"lo-LA", "Lao"},
+            {"lb-LU", "Luxembourgish"},
+            {"kok-IN", "Konkani (India)"}, // -- No available translator supports this language
+            {"kn-IN", "Kannada"},
+            {"km-KH", "Khmer"},
+            {"kk-KZ", "Kazakh"},
+            {"ka-GE", "Georgian"},
+            {"is-IS", "Icelandic"},
+            {"id-ID", "Indonesian"},
+            {"hy-AM", "Armenian"},
+            {"hi-IN", "Hindi"},
+            {"gu-IN", "Gujarati"},
+            {"gl-ES", "Galician"},
+            {"gd-GB", "Gaelic"},
+            {"ga-IE", "Irish"},
+            {"fil", "Filipino"},
+            {"fa-IR", "Persian"},
+            {"eu-ES", "Basque"},
+            {"cy-GB", "Welsh"},
+            {"chr-CHER-US", "Cherokee"}, // Suppose to be supported by Google Translate via code chr, but it's not working.
+            {"ca-ES-valencia", "Catalan"},
+            {"ca-ES", "Catalan"},
+            {"bs-Latn-BA", "Bosnian"},
+            {"bn-IN", "Bengali"},
+            {"be-BY", "Belarusian"},
+            {"az-Latn-AZ", "Azerbaijani"},
+            {"as-IN", "Assamese"},
+            {"am-ET", "Amharic"},
+			{"af-ZA", "Afrikaans"},
 			#endregion Windows10Plus_LanguageInterfacePacks
 		};
         // ISO639_1_To_ISO639_3 only contains languages that are in ISO-639-1. See source https://iso639-3.sil.org/sites/iso639-3/files/downloads/iso-639-3.tab
         public static readonly string[,] ISO639_1_To_ISO639_3 =
         {
             #region ISO639_1_To_ISO639_3
-            {"kok", "kok-IN"}, // Konkani (India) -- No available translator supports this language
             {"aa", "aar"}, // Afar
             {"ab", "abk"}, // Abkhazian
             {"ae", "ave"}, // Avestan
@@ -416,6 +413,7 @@ namespace ABetterTranslator
             {"km", "khm"}, // Khmer
             {"kn", "kan"}, // Kannada
             {"ko", "kor"}, // Korean
+            {"kok", "kok-IN"}, // Konkani (India) -- No available translator supports this language
             {"kr", "kau"}, // Kanuri
             {"ks", "kas"}, // Kashmiri
             {"ku", "kur"}, // Kurdish
@@ -519,7 +517,10 @@ namespace ABetterTranslator
             {"zu", "zul"}, // Zulu
             #endregion ISO639_1_To_ISO639_3
         };
-        // ToDo: Figure out why these languages are not working.
-        public static readonly string[] LanguagesTagsWithIssues = {"ay", "bho", "cv", "dgo", "emj", "fj", "hmn", "ht", "ikt", "ilo", "kazlat", "kmr", "lzh", "mhr", "mrj", "mww", "ny", "otq", "qu", "sjn", "sm", "tl", "tlh", "tw", "ty", "udm", "uzbcyr", "yua", "yue"};
+        // Use following list to temporarily disable languages causing issues.
+        public static readonly string[] LanguagesTagsWithIssues = {
+            "foofoo",
+            //"ay", "bho", "cv", "dgo", "emj", "fj", "hmn", "ht", "ikt", "ilo", "kazlat", "kmr", "lzh", "mhr", "mrj", "mww", "ny", "otq", "qu", "sjn", "sm", "tlh", "tw", "ty", "udm", "uzbcyr", "yua", "yue"
+        };
     }
 }

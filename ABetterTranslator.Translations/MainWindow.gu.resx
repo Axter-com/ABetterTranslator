@@ -393,10 +393,10 @@
     <value>7</value>
   </data>
   <data name="groupBoxItemsPerTransaltionRequest.Text" xml:space="preserve">
-    <value>આઇટમ્સ પ્રતિ અનુવાદ વિનંતી</value>
+    <value>સ્ટ્રિંગ્સ પ્રતિ અનુવાદ વિનંતી</value>
   </data>
   <data name="groupBoxItemsPerTransaltionRequest.ToolTip" xml:space="preserve">
-    <value>અનુવાદ વિનંતી દીઠ આઇટમ્સ</value>
+    <value>અનુવાદ વિનંતી દીઠ શબ્દમાળાઓ</value>
   </data>
   <data name="&gt;&gt;groupBoxItemsPerTransaltionRequest.Name" xml:space="preserve">
     <value>groupBoxItemsPerTransaltionRequest</value>
@@ -1335,7 +1335,7 @@
     <value>6</value>
   </data>
   <data name="MaxThread.Text" xml:space="preserve">
-    <value>-0</value>
+    <value>-1</value>
   </data>
   <data name="&gt;&gt;MaxThread.Name" xml:space="preserve">
     <value>MaxThread</value>
@@ -2003,6 +2003,9 @@
   <data name="tabControlTranslateResxSubTab.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
+  <data name="groupBoxFilterText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="textBoxFilterText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
@@ -2304,16 +2307,16 @@
     <value>548, 17</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.Text" xml:space="preserve">
     <value>તમામ સમર્થિત ભાષાઓનો અનુવાદ કરો</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.ToolTipText" xml:space="preserve">
-    <value>અનુવાદકો દ્વારા સમર્થિત તમામ ભાષાઓ પસંદ કરે છે અને અનુવાદ કરે છે</value>
+    <value>અનુવાદ સેવા સાથે બધી ભાષાઓ પસંદ કરો અને અનુવાદ કરો</value>
   </data>
   <data name="toolStripMenuItemWindowsSupportedLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsSupportedLanguages.Text" xml:space="preserve">
     <value>વિન્ડોઝ ભાષા પેક</value>
@@ -2322,7 +2325,7 @@
     <value>Windows ભાષા પેકમાં ભાષાઓ પસંદ કરો અને અનુવાદ કરો</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguageInterfacePacks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguageInterfacePacks.Text" xml:space="preserve">
     <value>વિન્ડોઝ લેંગ્વેજ ઈન્ટરફેસ પેક્સ</value>
@@ -2331,7 +2334,7 @@
     <value>Windows Language Interface Packs માં ભાષાઓ પસંદ કરો અને અનુવાદ કરો</value>
   </data>
   <data name="toolStripMenuItemTranslateBusinessLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateBusinessLanguages.Text" xml:space="preserve">
     <value>ટોચની વ્યવસાયિક ભાષાઓનો અનુવાદ કરો</value>
@@ -2340,10 +2343,10 @@
     <value>સૌથી વધુ ઉપયોગમાં લેવાતી આંતરરાષ્ટ્રીય-વ્યવસાય-ભાષાઓ પસંદ કરો અને અનુવાદિત કરો</value>
   </data>
   <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 6</value>
+    <value>396, 6</value>
   </data>
   <data name="toolStripMenuItem_TranslateAfrica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateAfrica.Text" xml:space="preserve">
     <value>આફ્રિકા</value>
@@ -2352,7 +2355,7 @@
     <value>આફ્રિકામાં સૌથી વધુ બોલાતી ભાષાઓ પસંદ કરો અને અનુવાદ કરો</value>
   </data>
   <data name="toolStripMenuItem_TranslateAsia.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateAsia.Text" xml:space="preserve">
     <value>એશિયા</value>
@@ -2361,7 +2364,7 @@
     <value>એશિયામાં સૌથી વધુ બોલાતી ભાષાઓ પસંદ કરો અને અનુવાદ કરો</value>
   </data>
   <data name="toolStripMenuItem_TranslateEurope.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateEurope.Text" xml:space="preserve">
     <value>યુરોપ</value>
@@ -2370,7 +2373,7 @@
     <value>યુરોપમાં સૌથી વધુ બોલાતી ભાષાઓ પસંદ કરો અને અનુવાદ કરો</value>
   </data>
   <data name="toolStripMenuItem_TranslateMiddleEast.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateMiddleEast.Text" xml:space="preserve">
     <value>મધ્ય પૂર્વ</value>
@@ -2379,7 +2382,7 @@
     <value>મધ્ય પૂર્વમાં સૌથી વધુ બોલાતી ભાષાઓ પસંદ કરો અને અનુવાદ કરો</value>
   </data>
   <data name="toolStripMenuItem_TranslateNorthAmerica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateNorthAmerica.Text" xml:space="preserve">
     <value>ઉત્તર અમેરિકા</value>
@@ -2388,7 +2391,7 @@
     <value>ઉત્તર અમેરિકામાં સૌથી વધુ બોલાતી ભાષાઓ પસંદ કરો અને અનુવાદ કરો</value>
   </data>
   <data name="toolStripMenuItem_TranslateSouthAmerica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateSouthAmerica.Text" xml:space="preserve">
     <value>દક્ષિણ અમેરિકા</value>
@@ -2397,10 +2400,10 @@
     <value>દક્ષિણ અમેરિકામાં સૌથી વધુ બોલાતી ભાષાઓ પસંદ કરો અને અનુવાદ કરો</value>
   </data>
   <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 6</value>
+    <value>396, 6</value>
   </data>
   <data name="toolStripMenuItemTranslateTop5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop5.Text" xml:space="preserve">
     <value>ટોચની 5 બોલાતી ભાષાઓનો અનુવાદ કરો</value>
@@ -2409,7 +2412,7 @@
     <value>ટોચની 5 બોલાતી ભાષાઓ પસંદ કરો અને અનુવાદ કરો</value>
   </data>
   <data name="toolStripMenuItemTranslateTop10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop10.Text" xml:space="preserve">
     <value>ટોચની 10 બોલાતી ભાષાઓનો અનુવાદ કરો</value>
@@ -2418,7 +2421,7 @@
     <value>ટોચના 10 પસંદ કરો અને અનુવાદ કરો</value>
   </data>
   <data name="toolStripMenuItemTranslateTop20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop20.Text" xml:space="preserve">
     <value>ટોચની 20 બોલાતી ભાષાઓનો અનુવાદ કરો</value>
@@ -2427,7 +2430,7 @@
     <value>ટોચના 20 પસંદ કરો અને અનુવાદ કરો</value>
   </data>
   <data name="toolStripMenuItemTranslateTop30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop30.Text" xml:space="preserve">
     <value>ટોચની 30 બોલાતી ભાષાઓનો અનુવાદ કરો</value>
@@ -2448,13 +2451,13 @@
     <value>પસંદ કરેલી ભાષાઓમાં અનુવાદ શરૂ કરો. જો કોઈ ભાષા પસંદ ન હોય તો બધી ભાષાઓનો અનુવાદ કરે છે.</value>
   </data>
   <data name="toolStripMenuItemSelectAll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 34</value>
+    <value>333, 42</value>
   </data>
   <data name="toolStripMenuItemSelectAll.Text" xml:space="preserve">
     <value>બધી ભાષાઓ પસંદ કરો</value>
   </data>
   <data name="toolStripMenuItemSelectClear.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 34</value>
+    <value>333, 42</value>
   </data>
   <data name="toolStripMenuItemSelectClear.Text" xml:space="preserve">
     <value>બધી પસંદગી સાફ કરો</value>
@@ -2466,7 +2469,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemSelectUndo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 34</value>
+    <value>333, 42</value>
   </data>
   <data name="toolStripMenuItemSelectUndo.Text" xml:space="preserve">
     <value>છેલ્લી જૂથ પસંદગીને પૂર્વવત્ કરો</value>
@@ -2511,7 +2514,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks.Text" xml:space="preserve">
     <value>વિન્ડોઝ 10/11 ભાષા પેક</value>
@@ -2541,7 +2544,7 @@
     <value>ઉમેરો અને પસંદ કરો</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface.Text" xml:space="preserve">
     <value>વિન્ડોઝ લેંગ્વેજ પેક ઈન્ટરફેસ</value>
@@ -2553,43 +2556,43 @@
     <value>વિન્ડોઝ લેંગ્વેજ પેક ઈન્ટરફેસમાં હોય તેવી ભાષાઓ જ બતાવો</value>
   </data>
   <data name="toolStripSeparator7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>429, 6</value>
+    <value>437, 6</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_ShowOnly.Text" xml:space="preserve">
     <value>બતાવો</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_Add.Text" xml:space="preserve">
     <value>ઉમેરો</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.Text" xml:space="preserve">
-    <value>અનુવાદક સમર્થિત ભાષાઓ</value>
+    <value>અનુવાદ સેવા સાથેની ભાષાઓ</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.ToolTipText" xml:space="preserve">
-    <value>સમર્થિત અનુવાદક સાથે બધી ભાષાઓ પ્રદર્શિત કરો.</value>
+    <value>સમર્થિત અનુવાદ સેવા સાથે બધી ભાષાઓ પ્રદર્શિત કરો</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly.Text" xml:space="preserve">
     <value>બતાવો</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_Add.Text" xml:space="preserve">
     <value>ઉમેરો</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames.Text" xml:space="preserve">
     <value>ISO 639-1 ભાષા સેટ</value>
@@ -2616,7 +2619,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.Text" xml:space="preserve">
     <value>ISO 639-1 + Win Lang Pack</value>
@@ -2634,7 +2637,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemSubLanguagesAndRegions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemSubLanguagesAndRegions.Text" xml:space="preserve">
     <value>પેટા-ભાષાઓ અને પ્રદેશોની સૂચિમાં ઉમેરો</value>

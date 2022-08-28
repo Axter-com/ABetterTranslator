@@ -393,10 +393,10 @@
     <value>7</value>
   </data>
   <data name="groupBoxItemsPerTransaltionRequest.Text" xml:space="preserve">
-    <value>Itzulpen-eskakizun bakoitzeko elementuak</value>
+    <value>Itzulpen-eskakizun bakoitzeko kateak</value>
   </data>
   <data name="groupBoxItemsPerTransaltionRequest.ToolTip" xml:space="preserve">
-    <value>Itzulpen-eskaera bakoitzeko elementuak</value>
+    <value>Itzulpen-eskaera bakoitzeko kateak</value>
   </data>
   <data name="&gt;&gt;groupBoxItemsPerTransaltionRequest.Name" xml:space="preserve">
     <value>groupBoxItemsPerTransaltionRequest</value>
@@ -1032,7 +1032,7 @@
     <value>4</value>
   </data>
   <data name="browseFolderButton.ToolTip" xml:space="preserve">
-    <value>Arakatu irteera karpeta; lehenetsia iturburu resx berdina da</value>
+    <value>Arakatu irteera karpeta; lehenetsia iturri resx berdina da</value>
   </data>
   <data name="&gt;&gt;browseFolderButton.Name" xml:space="preserve">
     <value>browseFolderButton</value>
@@ -1335,7 +1335,7 @@
     <value>6</value>
   </data>
   <data name="MaxThread.Text" xml:space="preserve">
-    <value>-0</value>
+    <value>-1</value>
   </data>
   <data name="&gt;&gt;MaxThread.Name" xml:space="preserve">
     <value>MaxThread</value>
@@ -2003,6 +2003,9 @@
   <data name="tabControlTranslateResxSubTab.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
+  <data name="groupBoxFilterText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="textBoxFilterText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
@@ -2304,16 +2307,16 @@
     <value>548, 17</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.Text" xml:space="preserve">
     <value>Itzuli onartzen diren hizkuntza guztiak</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.ToolTipText" xml:space="preserve">
-    <value>Itzultzaileek onartzen dituzten hizkuntza guztiak hautatzen eta itzultzen ditu</value>
+    <value>Aukeratu eta itzuli hizkuntza guztiak Itzulpen Zerbitzu batekin</value>
   </data>
   <data name="toolStripMenuItemWindowsSupportedLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsSupportedLanguages.Text" xml:space="preserve">
     <value>Windows hizkuntza paketea</value>
@@ -2322,7 +2325,7 @@
     <value>Hautatu eta itzuli hizkuntzak Windows hizkuntza-paketeetan</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguageInterfacePacks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguageInterfacePacks.Text" xml:space="preserve">
     <value>Windows hizkuntza-interfaze paketeak</value>
@@ -2331,7 +2334,7 @@
     <value>Hautatu eta itzuli hizkuntzak Windows hizkuntza-interfaze paketeetan</value>
   </data>
   <data name="toolStripMenuItemTranslateBusinessLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateBusinessLanguages.Text" xml:space="preserve">
     <value>Itzuli negozio-hizkuntza nagusiak</value>
@@ -2340,10 +2343,10 @@
     <value>Aukeratu eta itzuli gehien erabiltzen diren nazioarteko-enpresa-hizkuntzak</value>
   </data>
   <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 6</value>
+    <value>396, 6</value>
   </data>
   <data name="toolStripMenuItem_TranslateAfrica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateAfrica.Text" xml:space="preserve">
     <value>Afrika</value>
@@ -2352,7 +2355,7 @@
     <value>Hautatu eta itzuli Afrikako gehien hitz egiten diren hizkuntzak</value>
   </data>
   <data name="toolStripMenuItem_TranslateAsia.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateAsia.Text" xml:space="preserve">
     <value>Asia</value>
@@ -2361,7 +2364,7 @@
     <value>Aukeratu eta itzuli Asian gehien hitz egiten diren hizkuntzak</value>
   </data>
   <data name="toolStripMenuItem_TranslateEurope.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateEurope.Text" xml:space="preserve">
     <value>Europa</value>
@@ -2370,7 +2373,7 @@
     <value>Hautatu eta itzuli Europan gehien hitz egiten diren hizkuntzak</value>
   </data>
   <data name="toolStripMenuItem_TranslateMiddleEast.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateMiddleEast.Text" xml:space="preserve">
     <value>Ekialde Hurbila</value>
@@ -2379,7 +2382,7 @@
     <value>Hautatu eta itzuli Ekialde Hurbileko gehien hitz egiten diren hizkuntzak</value>
   </data>
   <data name="toolStripMenuItem_TranslateNorthAmerica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateNorthAmerica.Text" xml:space="preserve">
     <value>Ipar Amerika</value>
@@ -2388,7 +2391,7 @@
     <value>Hautatu eta itzuli Ipar Amerikako gehien hitz egiten diren hizkuntzak</value>
   </data>
   <data name="toolStripMenuItem_TranslateSouthAmerica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateSouthAmerica.Text" xml:space="preserve">
     <value>hego Amerika</value>
@@ -2397,10 +2400,10 @@
     <value>Hautatu eta itzuli Hego Amerikan gehien hitz egiten diren hizkuntzak</value>
   </data>
   <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 6</value>
+    <value>396, 6</value>
   </data>
   <data name="toolStripMenuItemTranslateTop5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop5.Text" xml:space="preserve">
     <value>Itzuli ahozko 5 hizkuntza nagusiak</value>
@@ -2409,7 +2412,7 @@
     <value>Hautatu eta itzuli hitz egiten diren 5 hizkuntza nagusiak</value>
   </data>
   <data name="toolStripMenuItemTranslateTop10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop10.Text" xml:space="preserve">
     <value>Itzuli hitz egiten diren 10 hizkuntza nagusiak</value>
@@ -2418,7 +2421,7 @@
     <value>Hautatu eta itzuli goiko 10</value>
   </data>
   <data name="toolStripMenuItemTranslateTop20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop20.Text" xml:space="preserve">
     <value>Itzuli hitz egiten diren 20 hizkuntza nagusiak</value>
@@ -2427,7 +2430,7 @@
     <value>Hautatu eta itzuli 20 nagusiak</value>
   </data>
   <data name="toolStripMenuItemTranslateTop30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop30.Text" xml:space="preserve">
     <value>Itzuli hitz egiten diren 30 hizkuntza nagusiak</value>
@@ -2445,16 +2448,16 @@
     <value>Hasi Itzulpena</value>
   </data>
   <data name="toolStripSplitButtonTranslate.ToolTipText" xml:space="preserve">
-    <value>Hasi itzulpena hautatutako hizkuntzetan. Hizkuntza guztiak itzultzen ditu hizkuntza hautatzen ez bada.</value>
+    <value>Hasi itzulpena hautatutako hizkuntzetan. Hizkuntza guztiak itzultzen ditu hizkuntzarik hautatu ezean.</value>
   </data>
   <data name="toolStripMenuItemSelectAll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 34</value>
+    <value>333, 42</value>
   </data>
   <data name="toolStripMenuItemSelectAll.Text" xml:space="preserve">
     <value>Hautatu Hizkuntza guztiak</value>
   </data>
   <data name="toolStripMenuItemSelectClear.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 34</value>
+    <value>333, 42</value>
   </data>
   <data name="toolStripMenuItemSelectClear.Text" xml:space="preserve">
     <value>Garbitu hautapen guztiak</value>
@@ -2466,7 +2469,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemSelectUndo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 34</value>
+    <value>333, 42</value>
   </data>
   <data name="toolStripMenuItemSelectUndo.Text" xml:space="preserve">
     <value>Desegin azken talde hautaketa</value>
@@ -2511,7 +2514,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks.Text" xml:space="preserve">
     <value>Windows 10/11 hizkuntza paketea</value>
@@ -2541,7 +2544,7 @@
     <value>Gehitu eta hautatu</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface.Text" xml:space="preserve">
     <value>Windows Language Pack Interfazea</value>
@@ -2553,43 +2556,43 @@
     <value>Erakutsi Windows Language Pack Interfazean dauden hizkuntzak soilik</value>
   </data>
   <data name="toolStripSeparator7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>429, 6</value>
+    <value>437, 6</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_ShowOnly.Text" xml:space="preserve">
     <value>Erakutsi</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_Add.Text" xml:space="preserve">
     <value>Gehitu</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.Text" xml:space="preserve">
-    <value>Itzultzaileak onartzen dituen hizkuntzak</value>
+    <value>Itzulpen Zerbitzua duten hizkuntzak</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.ToolTipText" xml:space="preserve">
-    <value>Erakutsi hizkuntza guztiak onartzen duen itzultzaile batekin.</value>
+    <value>Erakutsi hizkuntza guztiak onartzen duen Itzulpen Zerbitzu batekin</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly.Text" xml:space="preserve">
     <value>Erakutsi</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_Add.Text" xml:space="preserve">
     <value>Gehitu</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames.Text" xml:space="preserve">
     <value>ISO 639-1 Hizkuntza Multzoa</value>
@@ -2616,7 +2619,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.Text" xml:space="preserve">
     <value>ISO 639-1 + Win Lang Pack</value>
@@ -2634,7 +2637,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemSubLanguagesAndRegions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemSubLanguagesAndRegions.Text" xml:space="preserve">
     <value>Gehitu zerrendara Azpi-hizkuntzak eta eskualdeak</value>
@@ -2655,7 +2658,7 @@
     <value>Berrezarri pantaila multzoa</value>
   </data>
   <data name="toolStripSplitButtonResetDisplayToSet.ToolTipText" xml:space="preserve">
-    <value>Ezarri hizkuntza bistaratze ezarpena pantaila multzo lehenetsi gisa</value>
+    <value>Ezarri hizkuntza bistaratze ezarpena pantaila multzo lehenetsian</value>
   </data>
   <data name="toolStripButtonStopTranslation.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>

@@ -393,10 +393,10 @@
     <value>7</value>
   </data>
   <data name="groupBoxItemsPerTransaltionRequest.Text" xml:space="preserve">
-    <value>እቃዎች በትርጉም Req</value>
+    <value>ሕብረቁምፊዎች በትርጉም Req</value>
   </data>
   <data name="groupBoxItemsPerTransaltionRequest.ToolTip" xml:space="preserve">
-    <value>እቃዎች በትርጉም ጥያቄ</value>
+    <value>ሕብረቁምፊዎች በትርጉም ጥያቄ</value>
   </data>
   <data name="&gt;&gt;groupBoxItemsPerTransaltionRequest.Name" xml:space="preserve">
     <value>groupBoxItemsPerTransaltionRequest</value>
@@ -1335,7 +1335,7 @@
     <value>6</value>
   </data>
   <data name="MaxThread.Text" xml:space="preserve">
-    <value>-0</value>
+    <value>-1</value>
   </data>
   <data name="&gt;&gt;MaxThread.Name" xml:space="preserve">
     <value>MaxThread</value>
@@ -2003,6 +2003,9 @@
   <data name="tabControlTranslateResxSubTab.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
+  <data name="groupBoxFilterText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="textBoxFilterText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
@@ -2304,16 +2307,16 @@
     <value>548, 17</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.Text" xml:space="preserve">
     <value>ሁሉንም የሚደገፉ ቋንቋዎችን ተርጉም።</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.ToolTipText" xml:space="preserve">
-    <value>በተርጓሚዎች የተደገፉ ሁሉንም ቋንቋዎች ይመርጣል እና ይተረጉመዋል</value>
+    <value>ሁሉንም ቋንቋዎች በትርጉም አገልግሎት ይምረጡ እና ይተርጉሙ</value>
   </data>
   <data name="toolStripMenuItemWindowsSupportedLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsSupportedLanguages.Text" xml:space="preserve">
     <value>የዊንዶውስ ቋንቋ ጥቅል</value>
@@ -2322,7 +2325,7 @@
     <value>ቋንቋዎችን በዊንዶውስ ቋንቋዎች ጥቅሎች ይምረጡ እና ይተርጉሙ</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguageInterfacePacks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguageInterfacePacks.Text" xml:space="preserve">
     <value>የዊንዶው ቋንቋ በይነገጽ ጥቅሎች</value>
@@ -2331,7 +2334,7 @@
     <value>በዊንዶውስ ቋንቋ በይነገጽ ጥቅሎች ውስጥ ቋንቋዎችን ይምረጡ እና ይተርጉሙ</value>
   </data>
   <data name="toolStripMenuItemTranslateBusinessLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateBusinessLanguages.Text" xml:space="preserve">
     <value>ከፍተኛ የንግድ ቋንቋዎችን ተርጉም።</value>
@@ -2340,10 +2343,10 @@
     <value>በብዛት ጥቅም ላይ የዋሉ አለምአቀፍ-ቢዝነስ-ቋንቋዎችን ይምረጡ እና ይተርጉሙ</value>
   </data>
   <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 6</value>
+    <value>396, 6</value>
   </data>
   <data name="toolStripMenuItem_TranslateAfrica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateAfrica.Text" xml:space="preserve">
     <value>አፍሪካ</value>
@@ -2352,7 +2355,7 @@
     <value>በአፍሪካ ውስጥ በብዛት የሚነገሩ ቋንቋዎችን ይምረጡ እና ይተርጉሙ</value>
   </data>
   <data name="toolStripMenuItem_TranslateAsia.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateAsia.Text" xml:space="preserve">
     <value>እስያ</value>
@@ -2361,7 +2364,7 @@
     <value>በእስያ ውስጥ በብዛት የሚነገሩ ቋንቋዎችን ይምረጡ እና ይተርጉሙ</value>
   </data>
   <data name="toolStripMenuItem_TranslateEurope.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateEurope.Text" xml:space="preserve">
     <value>አውሮፓ</value>
@@ -2370,7 +2373,7 @@
     <value>በአውሮፓ ውስጥ በብዛት የሚነገሩ ቋንቋዎችን ይምረጡ እና ይተርጉሙ</value>
   </data>
   <data name="toolStripMenuItem_TranslateMiddleEast.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateMiddleEast.Text" xml:space="preserve">
     <value>ማእከላዊ ምስራቅ</value>
@@ -2379,7 +2382,7 @@
     <value>በመካከለኛው ምስራቅ ውስጥ በብዛት የሚነገሩ ቋንቋዎችን ይምረጡ እና ይተርጉሙ</value>
   </data>
   <data name="toolStripMenuItem_TranslateNorthAmerica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateNorthAmerica.Text" xml:space="preserve">
     <value>ሰሜን አሜሪካ</value>
@@ -2388,7 +2391,7 @@
     <value>በሰሜን አሜሪካ በብዛት የሚነገሩ ቋንቋዎችን ይምረጡ እና ይተርጉሙ</value>
   </data>
   <data name="toolStripMenuItem_TranslateSouthAmerica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateSouthAmerica.Text" xml:space="preserve">
     <value>ደቡብ አሜሪካ</value>
@@ -2397,10 +2400,10 @@
     <value>በደቡብ አሜሪካ ውስጥ በብዛት የሚነገሩ ቋንቋዎችን ይምረጡ እና ይተርጉሙ</value>
   </data>
   <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 6</value>
+    <value>396, 6</value>
   </data>
   <data name="toolStripMenuItemTranslateTop5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop5.Text" xml:space="preserve">
     <value>ምርጥ 5 የሚነገሩ ቋንቋዎችን ተርጉም።</value>
@@ -2409,7 +2412,7 @@
     <value>ምርጥ 5 የሚነገሩ ቋንቋዎችን ይምረጡ እና ይተርጉሙ</value>
   </data>
   <data name="toolStripMenuItemTranslateTop10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop10.Text" xml:space="preserve">
     <value>ምርጥ 10 የሚነገሩ ቋንቋዎችን ተርጉም።</value>
@@ -2418,7 +2421,7 @@
     <value>ምርጥ 10 ን ይምረጡ እና ይተርጉሙ</value>
   </data>
   <data name="toolStripMenuItemTranslateTop20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop20.Text" xml:space="preserve">
     <value>ምርጥ 20 የሚነገሩ ቋንቋዎችን ተርጉም።</value>
@@ -2427,7 +2430,7 @@
     <value>ምርጥ 20 ን ይምረጡ እና ይተርጉሙ</value>
   </data>
   <data name="toolStripMenuItemTranslateTop30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop30.Text" xml:space="preserve">
     <value>ምርጥ 30 የሚነገሩ ቋንቋዎችን ተርጉም።</value>
@@ -2448,13 +2451,13 @@
     <value>በተመረጡ ቋንቋዎች መተርጎም ይጀምሩ። ምንም ቋንቋ ካልተመረጠ ሁሉንም ቋንቋዎች ይተረጉማል።</value>
   </data>
   <data name="toolStripMenuItemSelectAll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 34</value>
+    <value>333, 42</value>
   </data>
   <data name="toolStripMenuItemSelectAll.Text" xml:space="preserve">
     <value>ሁሉንም ቋንቋዎች ይምረጡ</value>
   </data>
   <data name="toolStripMenuItemSelectClear.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 34</value>
+    <value>333, 42</value>
   </data>
   <data name="toolStripMenuItemSelectClear.Text" xml:space="preserve">
     <value>ሁሉንም ምርጫ አጽዳ</value>
@@ -2466,7 +2469,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemSelectUndo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 34</value>
+    <value>333, 42</value>
   </data>
   <data name="toolStripMenuItemSelectUndo.Text" xml:space="preserve">
     <value>የመጨረሻውን የቡድን ምርጫ ቀልብስ</value>
@@ -2511,7 +2514,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks.Text" xml:space="preserve">
     <value>የዊንዶውስ 10/11 የቋንቋ ጥቅል</value>
@@ -2541,7 +2544,7 @@
     <value>ያክሉ እና ይምረጡ</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface.Text" xml:space="preserve">
     <value>የዊንዶውስ ቋንቋ ጥቅል በይነገጽ</value>
@@ -2553,43 +2556,43 @@
     <value>በWindows Language Pack Interface ውስጥ ያሉትን ቋንቋዎች ብቻ አሳይ</value>
   </data>
   <data name="toolStripSeparator7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>429, 6</value>
+    <value>437, 6</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_ShowOnly.Text" xml:space="preserve">
     <value>አሳይ</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_Add.Text" xml:space="preserve">
     <value>አክል</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.Text" xml:space="preserve">
-    <value>ተርጓሚ የሚደገፉ ቋንቋዎች</value>
+    <value>ቋንቋዎች ከትርጉም አገልግሎት ጋር</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.ToolTipText" xml:space="preserve">
-    <value>ሁሉንም ቋንቋዎች በሚደገፍ ተርጓሚ አሳይ።</value>
+    <value>ሁሉንም ቋንቋዎች በሚደገፍ የትርጉም አገልግሎት አሳይ</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly.Text" xml:space="preserve">
     <value>አሳይ</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_Add.Text" xml:space="preserve">
     <value>አክል</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames.Text" xml:space="preserve">
     <value>ISO 639-1 የቋንቋ ስብስብ</value>
@@ -2616,7 +2619,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.Text" xml:space="preserve">
     <value>ISO 639-1 + Win Lang Pack</value>
@@ -2634,7 +2637,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemSubLanguagesAndRegions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemSubLanguagesAndRegions.Text" xml:space="preserve">
     <value>ወደ ዝርዝር ንዑስ ቋንቋዎች እና ክልሎች ያክሉ</value>

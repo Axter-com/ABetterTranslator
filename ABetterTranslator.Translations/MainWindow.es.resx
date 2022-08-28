@@ -95,10 +95,10 @@
     <value>163</value>
   </data>
   <data name="checkBoxDispalyWarningPrompts.Text" xml:space="preserve">
-    <value>Advertencias de Dispaly</value>
+    <value>Advertencias de visualización</value>
   </data>
   <data name="checkBoxDispalyWarningPrompts.ToolTip" xml:space="preserve">
-    <value>Mensajes de advertencia de Dispaly antes de eliminar y/o modificar archivos.</value>
+    <value>Mostrar avisos de advertencia antes de eliminar y/o modificar archivos.</value>
   </data>
   <data name="&gt;&gt;checkBoxDispalyWarningPrompts.Name" xml:space="preserve">
     <value>checkBoxDispalyWarningPrompts</value>
@@ -168,7 +168,7 @@
     <value>13</value>
   </data>
   <data name="browseLogFolderPath.ToolTip" xml:space="preserve">
-    <value>Busque la carpeta de salida; Predeterminado es igual que origen resx</value>
+    <value>Busque la carpeta de salida; el valor predeterminado es el mismo que el origen resx</value>
   </data>
   <data name="&gt;&gt;browseLogFolderPath.Name" xml:space="preserve">
     <value>browseLogFolderPath</value>
@@ -351,10 +351,10 @@
     <value>0</value>
   </data>
   <data name="comboBoxItemsPerTransaltionRequest.Items" xml:space="preserve">
-    <value>Automático</value>
+    <value>Auto</value>
   </data>
   <data name="comboBoxItemsPerTransaltionRequest.Items" xml:space="preserve">
-    <value>Uno</value>
+    <value>Una</value>
   </data>
   <data name="comboBoxItemsPerTransaltionRequest.Items" xml:space="preserve">
     <value>Múltiple</value>
@@ -369,7 +369,7 @@
     <value>7</value>
   </data>
   <data name="comboBoxItemsPerTransaltionRequest.Text" xml:space="preserve">
-    <value>Automático</value>
+    <value>Auto</value>
   </data>
   <data name="&gt;&gt;comboBoxItemsPerTransaltionRequest.Name" xml:space="preserve">
     <value>comboBoxItemsPerTransaltionRequest</value>
@@ -393,10 +393,10 @@
     <value>7</value>
   </data>
   <data name="groupBoxItemsPerTransaltionRequest.Text" xml:space="preserve">
-    <value>Artículos por req de traducción</value>
+    <value>Se requieren cadenas por traducción</value>
   </data>
   <data name="groupBoxItemsPerTransaltionRequest.ToolTip" xml:space="preserve">
-    <value>Artículos por solicitud de traducción</value>
+    <value>Cadenas por solicitud de traducción</value>
   </data>
   <data name="&gt;&gt;groupBoxItemsPerTransaltionRequest.Name" xml:space="preserve">
     <value>groupBoxItemsPerTransaltionRequest</value>
@@ -495,7 +495,7 @@
     <value>Eliminar Lang Resx antes de la traducción</value>
   </data>
   <data name="checkBoxDeleteLangResxFilesBeforeTranslation.ToolTip" xml:space="preserve">
-    <value>Antes de iniciar la traducción, elimine todos los archivos Resx anexados en el idioma</value>
+    <value>Antes de comenzar la traducción, elimine todos los archivos Resx adjuntos de idioma</value>
   </data>
   <data name="&gt;&gt;checkBoxDeleteLangResxFilesBeforeTranslation.Name" xml:space="preserve">
     <value>checkBoxDeleteLangResxFilesBeforeTranslation</value>
@@ -543,16 +543,16 @@
     <value>0</value>
   </data>
   <data name="comboBoxAddOriginalSrcTextToComment.Items" xml:space="preserve">
-    <value>NO cambiar comentarios</value>
+    <value>NO cambies los comentarios</value>
   </data>
   <data name="comboBoxAddOriginalSrcTextToComment.Items" xml:space="preserve">
     <value>Si el comentario está vacío, establezca el comentario en el texto del idioma original</value>
   </data>
   <data name="comboBoxAddOriginalSrcTextToComment.Items" xml:space="preserve">
-    <value>Establecer siempre los comentarios en el texto del idioma original</value>
+    <value>Establezca siempre los comentarios en el texto del idioma original</value>
   </data>
   <data name="comboBoxAddOriginalSrcTextToComment.Items" xml:space="preserve">
-    <value>Añadir siempre texto en el idioma original a los comentarios</value>
+    <value>Siempre agregue texto en el idioma original a los comentarios</value>
   </data>
   <data name="comboBoxAddOriginalSrcTextToComment.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 33</value>
@@ -564,7 +564,7 @@
     <value>10</value>
   </data>
   <data name="comboBoxAddOriginalSrcTextToComment.Text" xml:space="preserve">
-    <value>NO cambiar comentarios</value>
+    <value>NO cambies los comentarios</value>
   </data>
   <data name="&gt;&gt;comboBoxAddOriginalSrcTextToComment.Name" xml:space="preserve">
     <value>comboBoxAddOriginalSrcTextToComment</value>
@@ -588,10 +588,10 @@
     <value>10</value>
   </data>
   <data name="groupBoxAddOriginalSrcTextToComment.Text" xml:space="preserve">
-    <value>Opción comentarios de recursos de destino</value>
+    <value>Opción de comentarios de recursos de destino</value>
   </data>
   <data name="groupBoxAddOriginalSrcTextToComment.ToolTip" xml:space="preserve">
-    <value>Agregar texto de origen original para comentar</value>
+    <value>Agregar texto fuente original para comentar</value>
   </data>
   <data name="&gt;&gt;groupBoxAddOriginalSrcTextToComment.Name" xml:space="preserve">
     <value>groupBoxAddOriginalSrcTextToComment</value>
@@ -693,7 +693,7 @@
     <value>15</value>
   </data>
   <data name="browseBkUpDirFolderButton.ToolTip" xml:space="preserve">
-    <value>Busque la carpeta de salida; Predeterminado es igual que origen resx</value>
+    <value>Busque la carpeta de salida; el valor predeterminado es el mismo que el origen resx</value>
   </data>
   <data name="&gt;&gt;browseBkUpDirFolderButton.Name" xml:space="preserve">
     <value>browseBkUpDirFolderButton</value>
@@ -747,7 +747,7 @@
     <value>Paquete de interfaz de idioma de Windows 10/11</value>
   </data>
   <data name="comboBoxDefaultLanguageSet.Items" xml:space="preserve">
-    <value>Idiomas admitidos por translator</value>
+    <value>Idiomas compatibles con el traductor</value>
   </data>
   <data name="comboBoxDefaultLanguageSet.Items" xml:space="preserve">
     <value>ISO 639-1</value>
@@ -768,7 +768,7 @@
     <value>Paquete de idioma de Windows 10/11</value>
   </data>
   <data name="comboBoxDefaultLanguageSet.ToolTip" xml:space="preserve">
-    <value>Seleccione el conjunto de idiomas predeterminado que se muestra cuando se inicia el programa o cuando se selecciona [Restablecer conjunto de pantallas].</value>
+    <value>Seleccione el conjunto de idiomas predeterminado que se muestra cuando se inicia el programa o cuando se selecciona [Reset Display Set].</value>
   </data>
   <data name="&gt;&gt;comboBoxDefaultLanguageSet.Name" xml:space="preserve">
     <value>comboBoxDefaultLanguageSet</value>
@@ -855,10 +855,10 @@
     <value>11</value>
   </data>
   <data name="buttonDeleteLangAppendedResxFiles.Text" xml:space="preserve">
-    <value>Eliminar Anexado Lang Resx</value>
+    <value>Eliminar Lang Resx adjunto</value>
   </data>
   <data name="buttonDeleteLangAppendedResxFiles.ToolTip" xml:space="preserve">
-    <value>Elimina todos los archivos Resx que tienen un código de idioma anexado al nombre de archivo.</value>
+    <value>Elimina todos los archivos Resx que tienen un código de idioma adjunto al nombre del archivo.</value>
   </data>
   <data name="&gt;&gt;buttonDeleteLangAppendedResxFiles.Name" xml:space="preserve">
     <value>buttonDeleteLangAppendedResxFiles</value>
@@ -996,7 +996,7 @@
     <value>2</value>
   </data>
   <data name="browseFileButton.ToolTip" xml:space="preserve">
-    <value>Buscar el archivo resx de origen</value>
+    <value>Busque el archivo resx de origen</value>
   </data>
   <data name="&gt;&gt;browseFileButton.Name" xml:space="preserve">
     <value>browseFileButton</value>
@@ -1032,7 +1032,7 @@
     <value>4</value>
   </data>
   <data name="browseFolderButton.ToolTip" xml:space="preserve">
-    <value>Busque la carpeta de salida; Predeterminado es igual que origen resx</value>
+    <value>Busque la carpeta de salida; el valor predeterminado es el mismo que el origen resx</value>
   </data>
   <data name="&gt;&gt;browseFolderButton.Name" xml:space="preserve">
     <value>browseFolderButton</value>
@@ -1065,7 +1065,7 @@
     <value>22</value>
   </data>
   <data name="progressBarWhileTranslatingResxFile.ToolTip" xml:space="preserve">
-    <value>Progreso de la traducción de archivos</value>
+    <value>Progreso de traducción de archivos</value>
   </data>
   <data name="progressBarWhileTranslatingResxFile.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -1197,7 +1197,7 @@
     <value>1004</value>
   </data>
   <data name="groupBoxBkUpDir.Text" xml:space="preserve">
-    <value>Directorio de copia de seguridad</value>
+    <value>Directorio de respaldo</value>
   </data>
   <data name="&gt;&gt;groupBoxBkUpDir.Name" xml:space="preserve">
     <value>groupBoxBkUpDir</value>
@@ -1221,7 +1221,7 @@
     <value>11</value>
   </data>
   <data name="groupBoxDeleteLangAppendedResxFiles.Text" xml:space="preserve">
-    <value>Eliminar todo Resx con código de idioma adjunto</value>
+    <value>Eliminar todos los resx con código de idioma adjunto</value>
   </data>
   <data name="&gt;&gt;groupBoxDeleteLangAppendedResxFiles.Name" xml:space="preserve">
     <value>groupBoxDeleteLangAppendedResxFiles</value>
@@ -1278,7 +1278,7 @@
     <value>0</value>
   </data>
   <data name="tabPageResxTranslationOptions.Text" xml:space="preserve">
-    <value>Traducción resx</value>
+    <value>Traducción de Rex</value>
   </data>
   <data name="&gt;&gt;tabPageResxTranslationOptions.Name" xml:space="preserve">
     <value>tabPageResxTranslationOptions</value>
@@ -1308,7 +1308,7 @@
     <value>96</value>
   </data>
   <data name="labelMaxThread.Text" xml:space="preserve">
-    <value>Hilos máximos</value>
+    <value>Subprocesos máximos</value>
   </data>
   <data name="&gt;&gt;labelMaxThread.Name" xml:space="preserve">
     <value>labelMaxThread</value>
@@ -1335,7 +1335,7 @@
     <value>6</value>
   </data>
   <data name="MaxThread.Text" xml:space="preserve">
-    <value>-0</value>
+    <value>-1</value>
   </data>
   <data name="&gt;&gt;MaxThread.Name" xml:space="preserve">
     <value>MaxThread</value>
@@ -1392,7 +1392,7 @@
     <value>95</value>
   </data>
   <data name="labelMaxTranslateLen.Text" xml:space="preserve">
-    <value>Traducción Max Len</value>
+    <value>Longitud máxima de traducción</value>
   </data>
   <data name="&gt;&gt;labelMaxTranslateLen.Name" xml:space="preserve">
     <value>labelMaxTranslateLen</value>
@@ -1434,7 +1434,7 @@
     <value>Silencioso</value>
   </data>
   <data name="comboBoxScreenVerbosityLevel.Items" xml:space="preserve">
-    <value>Errores</value>
+    <value>errores</value>
   </data>
   <data name="comboBoxScreenVerbosityLevel.Items" xml:space="preserve">
     <value>Normal</value>
@@ -1494,7 +1494,7 @@
     <value>Silencioso</value>
   </data>
   <data name="comboBoxLogFileVerbosityLevel.Items" xml:space="preserve">
-    <value>Errores</value>
+    <value>errores</value>
   </data>
   <data name="comboBoxLogFileVerbosityLevel.Items" xml:space="preserve">
     <value>Normal</value>
@@ -1536,7 +1536,7 @@
     <value>9</value>
   </data>
   <data name="groupBoxLogFileVerbosityLevel.Text" xml:space="preserve">
-    <value>Nivel de verbosidad del archivo de registro</value>
+    <value>Nivel de detalle del archivo de registro</value>
   </data>
   <data name="&gt;&gt;groupBoxLogFileVerbosityLevel.Name" xml:space="preserve">
     <value>groupBoxLogFileVerbosityLevel</value>
@@ -1668,7 +1668,7 @@
     <value>3</value>
   </data>
   <data name="advanceOptionsTab.Text" xml:space="preserve">
-    <value>Opciones anticipadas</value>
+    <value>Opciones avanzadas</value>
   </data>
   <data name="&gt;&gt;advanceOptionsTab.Name" xml:space="preserve">
     <value>advanceOptionsTab</value>
@@ -1725,7 +1725,7 @@
     <value>101</value>
   </data>
   <data name="groupBoxTextBoxTextToTranslate.Text" xml:space="preserve">
-    <value>Texto de origen (texto para traducir)</value>
+    <value>Texto de origen (texto a traducir)</value>
   </data>
   <data name="&gt;&gt;groupBoxTextBoxTextToTranslate.Name" xml:space="preserve">
     <value>groupBoxTextBoxTextToTranslate</value>
@@ -1929,7 +1929,7 @@
     <value>99</value>
   </data>
   <data name="fromCodeLabel.Text" xml:space="preserve">
-    <value>Lengua origen:</value>
+    <value>Lenguaje fuente:</value>
   </data>
   <data name="&gt;&gt;fromCodeLabel.Name" xml:space="preserve">
     <value>fromCodeLabel</value>
@@ -2002,6 +2002,9 @@
   </data>
   <data name="tabControlTranslateResxSubTab.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="groupBoxFilterText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
   <data name="textBoxFilterText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -2088,10 +2091,10 @@
     <value>Top, Bottom, Left, Right</value>
   </data>
   <data name="olv_LanguageTag.Text" xml:space="preserve">
-    <value>Código (etiqueta)</value>
+    <value>Código (Etiqueta)</value>
   </data>
   <data name="olv_LanguageTag.ToolTipText" xml:space="preserve">
-    <value>Idioma código/etiqueta ISO-639-1 utilizado por el traductor</value>
+    <value>Idioma Código/etiqueta ISO-639-1 utilizado por el traductor</value>
   </data>
   <data name="olv_LanguageTag.Width" type="System.Int32, mscorlib">
     <value>90</value>
@@ -2109,22 +2112,22 @@
     <value>Alias/País/Cultura</value>
   </data>
   <data name="olv_LanguageAliases.ToolTipText" xml:space="preserve">
-    <value>Alias de idioma o uso principal del país/cultura</value>
+    <value>Alias ​​de idioma o uso principal de país/cultura</value>
   </data>
   <data name="olv_LanguageAliases.Width" type="System.Int32, mscorlib">
     <value>160</value>
   </data>
   <data name="olv_TranslationSupported.Text" xml:space="preserve">
-    <value>Translator</value>
+    <value>Traductor</value>
   </data>
   <data name="olv_TranslationSupported.ToolTipText" xml:space="preserve">
-    <value>Especifica si un traductor admite el idioma.</value>
+    <value>Especifica si el idioma es compatible con un traductor.</value>
   </data>
   <data name="olv_TranslationSupported.Width" type="System.Int32, mscorlib">
     <value>90</value>
   </data>
   <data name="olv_LanguageTranslatorTag.Text" xml:space="preserve">
-    <value>Tran-Tag</value>
+    <value>Tran-Etiqueta</value>
   </data>
   <data name="olv_LanguageTranslatorTag.ToolTipText" xml:space="preserve">
     <value>Etiqueta utilizada por el traductor</value>
@@ -2136,7 +2139,7 @@
     <value>ISO 639-3</value>
   </data>
   <data name="olv_Iso639_3.ToolTipText" xml:space="preserve">
-    <value>Idioma ISO-639-3 código/nombre de etiqueta.  Una etiqueta de 3 letras que NO es utilizada por el traductor.</value>
+    <value>Idioma Código ISO-639-3/nombre de etiqueta. Una etiqueta de 3 letras que NO utiliza el traductor.</value>
   </data>
   <data name="olv_Iso639_3.Width" type="System.Int32, mscorlib">
     <value>75</value>
@@ -2265,7 +2268,7 @@
     <value>1</value>
   </data>
   <data name="tabPageTranslateResxLogging.Text" xml:space="preserve">
-    <value>Registro</value>
+    <value>Inicio sesión</value>
   </data>
   <data name="&gt;&gt;tabPageTranslateResxLogging.Name" xml:space="preserve">
     <value>tabPageTranslateResxLogging</value>
@@ -2304,46 +2307,46 @@
     <value>548, 17</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.Text" xml:space="preserve">
     <value>Traducir todos los idiomas admitidos</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.ToolTipText" xml:space="preserve">
-    <value>Selecciona y traduce todos los idiomas admitidos por los traductores</value>
+    <value>Seleccione y traduzca todos los idiomas con un servicio de traducción</value>
   </data>
   <data name="toolStripMenuItemWindowsSupportedLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsSupportedLanguages.Text" xml:space="preserve">
     <value>Paquete de idioma de Windows</value>
   </data>
   <data name="toolStripMenuItemWindowsSupportedLanguages.ToolTipText" xml:space="preserve">
-    <value>Seleccionar y traducir idiomas en paquetes de idiomas de Windows</value>
+    <value>Seleccionar y traducir idiomas en los paquetes de idiomas de Windows</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguageInterfacePacks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguageInterfacePacks.Text" xml:space="preserve">
-    <value>Paquetes de interfaz de idioma de Windows</value>
+    <value>Paquetes de interfaz de idiomas de Windows</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguageInterfacePacks.ToolTipText" xml:space="preserve">
-    <value>Seleccionar y traducir idiomas en paquetes de interfaz de idioma de Windows</value>
+    <value>Seleccione y traduzca idiomas en los paquetes de interfaz de idiomas de Windows</value>
   </data>
   <data name="toolStripMenuItemTranslateBusinessLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateBusinessLanguages.Text" xml:space="preserve">
     <value>Traducir los principales idiomas de negocios</value>
   </data>
   <data name="toolStripMenuItemTranslateBusinessLanguages.ToolTipText" xml:space="preserve">
-    <value>Seleccionar y traducir los idiomas internacionales de negocios más utilizados</value>
+    <value>Seleccione y traduzca los idiomas comerciales internacionales más utilizados</value>
   </data>
   <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 6</value>
+    <value>396, 6</value>
   </data>
   <data name="toolStripMenuItem_TranslateAfrica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateAfrica.Text" xml:space="preserve">
     <value>África</value>
@@ -2352,88 +2355,88 @@
     <value>Seleccione y traduzca los idiomas más hablados en África</value>
   </data>
   <data name="toolStripMenuItem_TranslateAsia.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateAsia.Text" xml:space="preserve">
     <value>Asia</value>
   </data>
   <data name="toolStripMenuItem_TranslateAsia.ToolTipText" xml:space="preserve">
-    <value>Seleccione y traduzca los idiomas más hablados en Asia</value>
+    <value>Seleccione y traduzca los principales idiomas más hablados en Asia</value>
   </data>
   <data name="toolStripMenuItem_TranslateEurope.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateEurope.Text" xml:space="preserve">
     <value>Europa</value>
   </data>
   <data name="toolStripMenuItem_TranslateEurope.ToolTipText" xml:space="preserve">
-    <value>Selecciona y traduce los idiomas más hablados de Europa</value>
+    <value>Seleccione y traduzca los principales idiomas más hablados en Europa</value>
   </data>
   <data name="toolStripMenuItem_TranslateMiddleEast.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateMiddleEast.Text" xml:space="preserve">
     <value>Oriente Medio</value>
   </data>
   <data name="toolStripMenuItem_TranslateMiddleEast.ToolTipText" xml:space="preserve">
-    <value>Seleccione y traduzca los idiomas más hablados en Oriente Medio</value>
+    <value>Seleccione y traduzca los principales idiomas más hablados en Oriente Medio</value>
   </data>
   <data name="toolStripMenuItem_TranslateNorthAmerica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateNorthAmerica.Text" xml:space="preserve">
-    <value>América del Norte</value>
+    <value>América del norte</value>
   </data>
   <data name="toolStripMenuItem_TranslateNorthAmerica.ToolTipText" xml:space="preserve">
-    <value>Seleccione y traduzca los idiomas más hablados en América del Norte</value>
+    <value>Seleccione y traduzca los principales idiomas más hablados en América del Norte</value>
   </data>
   <data name="toolStripMenuItem_TranslateSouthAmerica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateSouthAmerica.Text" xml:space="preserve">
-    <value>América del Sur</value>
+    <value>Sudamerica</value>
   </data>
   <data name="toolStripMenuItem_TranslateSouthAmerica.ToolTipText" xml:space="preserve">
-    <value>Seleccione y traduzca los idiomas más hablados en América del Sur</value>
+    <value>Seleccione y traduzca los principales idiomas más hablados en América del Sur</value>
   </data>
   <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 6</value>
+    <value>396, 6</value>
   </data>
   <data name="toolStripMenuItemTranslateTop5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop5.Text" xml:space="preserve">
-    <value>Traducir los 5 idiomas más hablados</value>
+    <value>Traduce los 5 principales idiomas hablados</value>
   </data>
   <data name="toolStripMenuItemTranslateTop5.ToolTipText" xml:space="preserve">
-    <value>Selecciona y traduce los 5 idiomas más hablados</value>
+    <value>Seleccione y traduzca los 5 principales idiomas hablados</value>
   </data>
   <data name="toolStripMenuItemTranslateTop10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop10.Text" xml:space="preserve">
-    <value>Traduce los 10 idiomas más hablados</value>
+    <value>Traducir los 10 principales idiomas hablados</value>
   </data>
   <data name="toolStripMenuItemTranslateTop10.ToolTipText" xml:space="preserve">
-    <value>Selecciona y traduce los 10 mejores</value>
+    <value>Seleccionar y traducir los 10 principales</value>
   </data>
   <data name="toolStripMenuItemTranslateTop20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop20.Text" xml:space="preserve">
-    <value>Traduce los 20 idiomas más hablados</value>
+    <value>Traducir los 20 principales idiomas hablados</value>
   </data>
   <data name="toolStripMenuItemTranslateTop20.ToolTipText" xml:space="preserve">
-    <value>Selecciona y traduce los 20 mejores</value>
+    <value>Seleccionar y traducir los 20 principales</value>
   </data>
   <data name="toolStripMenuItemTranslateTop30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop30.Text" xml:space="preserve">
-    <value>Traduce los 30 idiomas más hablados</value>
+    <value>Traducir los 30 principales idiomas hablados</value>
   </data>
   <data name="toolStripMenuItemTranslateTop30.ToolTipText" xml:space="preserve">
-    <value>Selecciona y traduce los 30 mejores</value>
+    <value>Seleccione y traduzca los 30 principales</value>
   </data>
   <data name="toolStripSplitButtonTranslate.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
@@ -2445,34 +2448,34 @@
     <value>Iniciar traducción</value>
   </data>
   <data name="toolStripSplitButtonTranslate.ToolTipText" xml:space="preserve">
-    <value>Inicie la traducción en los idiomas seleccionados.  Traduce todos los idiomas si no se selecciona ningún idioma.</value>
+    <value>Iniciar la traducción en los idiomas seleccionados. Traduce todos los idiomas si no se ha seleccionado ningún idioma.</value>
   </data>
   <data name="toolStripMenuItemSelectAll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 34</value>
+    <value>333, 42</value>
   </data>
   <data name="toolStripMenuItemSelectAll.Text" xml:space="preserve">
     <value>Seleccionar todos los idiomas</value>
   </data>
   <data name="toolStripMenuItemSelectClear.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 34</value>
+    <value>333, 42</value>
   </data>
   <data name="toolStripMenuItemSelectClear.Text" xml:space="preserve">
     <value>Borrar toda la selección</value>
   </data>
   <data name="toolStripMenuItemSelectClear.ToolTipText" xml:space="preserve">
-    <value>Anular la selección de todos los idiomas</value>
+    <value>Deseleccionar todos los idiomas</value>
   </data>
   <data name="toolStripMenuItemSelectUndo.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="toolStripMenuItemSelectUndo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 34</value>
+    <value>333, 42</value>
   </data>
   <data name="toolStripMenuItemSelectUndo.Text" xml:space="preserve">
     <value>Deshacer la última selección de grupo</value>
   </data>
   <data name="toolStripMenuItemSelectUndo.ToolTipText" xml:space="preserve">
-    <value>Anular la selección de grupo anterior</value>
+    <value>Deseleccionar la selección de grupo anterior</value>
   </data>
   <data name="toolStripMenuItemSelectUndo.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -2493,7 +2496,7 @@
     <value>234, 34</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks_ShowOnly.Text" xml:space="preserve">
-    <value>Mostrar</value>
+    <value>Espectáculo</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks_Add.Size" type="System.Drawing.Size, System.Drawing">
     <value>234, 34</value>
@@ -2511,7 +2514,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks.Text" xml:space="preserve">
     <value>Paquete de idioma de Windows 10/11</value>
@@ -2520,13 +2523,13 @@
     <value>ImageAboveText</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks.ToolTipText" xml:space="preserve">
-    <value>Solo mostrar idiomas que están en paquetes de idioma de Windows 10/11</value>
+    <value>Mostrar solo los idiomas que están en los paquetes de idioma de Windows 10/11</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
     <value>234, 34</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface_ShowOnly.Text" xml:space="preserve">
-    <value>Mostrar</value>
+    <value>Espectáculo</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface_Add.Size" type="System.Drawing.Size, System.Drawing">
     <value>234, 34</value>
@@ -2541,10 +2544,10 @@
     <value>Agregar y seleccionar</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface.Text" xml:space="preserve">
-    <value>Interfaz del paquete de idioma de Windows</value>
+    <value>Interfaz del paquete de idiomas de Windows</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>TextBeforeImage</value>
@@ -2553,43 +2556,43 @@
     <value>Mostrar solo los idiomas que están en la interfaz del paquete de idioma de Windows</value>
   </data>
   <data name="toolStripSeparator7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>429, 6</value>
+    <value>437, 6</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_ShowOnly.Text" xml:space="preserve">
-    <value>Mostrar</value>
+    <value>Espectáculo</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_Add.Text" xml:space="preserve">
     <value>Agregar</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.Text" xml:space="preserve">
-    <value>Idiomas admitidos por translator</value>
+    <value>Idiomas con servicio de traducción</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.ToolTipText" xml:space="preserve">
-    <value>Muestra todos los idiomas con un traductor compatible.</value>
+    <value>Mostrar todos los idiomas con un servicio de traducción compatible</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly.Text" xml:space="preserve">
-    <value>Mostrar</value>
+    <value>Espectáculo</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_Add.Text" xml:space="preserve">
     <value>Agregar</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames.Text" xml:space="preserve">
     <value>Conjunto de idiomas ISO 639-1</value>
@@ -2598,13 +2601,13 @@
     <value>TextAboveImage</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames.ToolTipText" xml:space="preserve">
-    <value>Mostrar solo el conjunto de idiomas ISO 639-1.</value>
+    <value>Mostrar solo conjunto de idiomas ISO 639-1.</value>
   </data>
   <data name="toolStripMenuItem2toolStripMenuItemISO639_1PlusWinLangPack_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
     <value>158, 34</value>
   </data>
   <data name="toolStripMenuItem2toolStripMenuItemISO639_1PlusWinLangPack_ShowOnly.Text" xml:space="preserve">
-    <value>Mostrar</value>
+    <value>Espectáculo</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack_Add.Size" type="System.Drawing.Size, System.Drawing">
     <value>158, 34</value>
@@ -2616,10 +2619,10 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.Text" xml:space="preserve">
-    <value>ISO 639-1 + Win Lang Pack</value>
+    <value>ISO 639-1 + paquete Win Lang</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>TextAboveImage</value>
@@ -2634,13 +2637,13 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemSubLanguagesAndRegions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemSubLanguagesAndRegions.Text" xml:space="preserve">
-    <value>Agregar a la lista de subingües y regiones</value>
+    <value>Agregar a la lista de subidiomas y regiones</value>
   </data>
   <data name="toolStripMenuItemSubLanguagesAndRegions.ToolTipText" xml:space="preserve">
-    <value>Agrega sublenguajes y regiones adicionales</value>
+    <value>Agrega sub-idiomas y regiones adicionales</value>
   </data>
   <data name="toolStripMenuItemSubLanguagesAndRegions.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -2652,10 +2655,10 @@
     <value>200, 36</value>
   </data>
   <data name="toolStripSplitButtonResetDisplayToSet.Text" xml:space="preserve">
-    <value>Restablecer conjunto de pantallas</value>
+    <value>Restablecer conjunto de pantalla</value>
   </data>
   <data name="toolStripSplitButtonResetDisplayToSet.ToolTipText" xml:space="preserve">
-    <value>Establecer la visualización de idioma establecida en el conjunto de visualización predeterminado</value>
+    <value>Establezca el conjunto de pantalla de idioma en el conjunto de pantalla predeterminado</value>
   </data>
   <data name="toolStripButtonStopTranslation.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
@@ -2664,7 +2667,7 @@
     <value>85, 36</value>
   </data>
   <data name="toolStripButtonStopTranslation.Text" xml:space="preserve">
-    <value>Parar</value>
+    <value>Deténgase</value>
   </data>
   <data name="toolStripButtonStopTranslation.ToolTipText" xml:space="preserve">
     <value>Cancelar traducción</value>
@@ -10149,7 +10152,7 @@
     <value>17, 19, 17, 19</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>A-Mejor-Traductor</value>
+    <value>Un mejor traductor</value>
   </data>
   <data name="&gt;&gt;openResxFileDialog.Name" xml:space="preserve">
     <value>openResxFileDialog</value>

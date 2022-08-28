@@ -393,10 +393,10 @@
     <value>7</value>
   </data>
   <data name="groupBoxItemsPerTransaltionRequest.Text" xml:space="preserve">
-    <value>ഓരോ വിവർത്തനത്തിനും ഇനങ്ങൾ Req</value>
+    <value>ഓരോ വിവർത്തനത്തിനും സ്ട്രിംഗ്സ് Req</value>
   </data>
   <data name="groupBoxItemsPerTransaltionRequest.ToolTip" xml:space="preserve">
-    <value>വിവർത്തന അഭ്യർത്ഥനയ്‌ക്കുള്ള ഇനങ്ങൾ</value>
+    <value>ഓരോ വിവർത്തന അഭ്യർത്ഥനയ്ക്കും സ്ട്രിംഗുകൾ</value>
   </data>
   <data name="&gt;&gt;groupBoxItemsPerTransaltionRequest.Name" xml:space="preserve">
     <value>groupBoxItemsPerTransaltionRequest</value>
@@ -1335,7 +1335,7 @@
     <value>6</value>
   </data>
   <data name="MaxThread.Text" xml:space="preserve">
-    <value>-0</value>
+    <value>-1</value>
   </data>
   <data name="&gt;&gt;MaxThread.Name" xml:space="preserve">
     <value>MaxThread</value>
@@ -2003,6 +2003,9 @@
   <data name="tabControlTranslateResxSubTab.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
+  <data name="groupBoxFilterText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="textBoxFilterText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
@@ -2304,16 +2307,16 @@
     <value>548, 17</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.Text" xml:space="preserve">
     <value>പിന്തുണയ്ക്കുന്ന എല്ലാ ഭാഷകളും വിവർത്തനം ചെയ്യുക</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.ToolTipText" xml:space="preserve">
-    <value>വിവർത്തകർ പിന്തുണയ്ക്കുന്ന എല്ലാ ഭാഷകളും തിരഞ്ഞെടുത്ത് വിവർത്തനം ചെയ്യുന്നു</value>
+    <value>ഒരു വിവർത്തന സേവനം ഉപയോഗിച്ച് എല്ലാ ഭാഷകളും തിരഞ്ഞെടുത്ത് വിവർത്തനം ചെയ്യുക</value>
   </data>
   <data name="toolStripMenuItemWindowsSupportedLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsSupportedLanguages.Text" xml:space="preserve">
     <value>വിൻഡോസ് ഭാഷാ പായ്ക്ക്</value>
@@ -2322,7 +2325,7 @@
     <value>വിൻഡോസ് ഭാഷാ പാക്കുകളിൽ ഭാഷകൾ തിരഞ്ഞെടുത്ത് വിവർത്തനം ചെയ്യുക</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguageInterfacePacks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguageInterfacePacks.Text" xml:space="preserve">
     <value>വിൻഡോസ് ഭാഷാ ഇന്റർഫേസ് പായ്ക്കുകൾ</value>
@@ -2331,7 +2334,7 @@
     <value>വിൻഡോസ് ലാംഗ്വേജ് ഇന്റർഫേസ് പാക്കുകളിൽ ഭാഷകൾ തിരഞ്ഞെടുത്ത് വിവർത്തനം ചെയ്യുക</value>
   </data>
   <data name="toolStripMenuItemTranslateBusinessLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateBusinessLanguages.Text" xml:space="preserve">
     <value>മികച്ച ബിസിനസ്സ് ഭാഷകൾ വിവർത്തനം ചെയ്യുക</value>
@@ -2340,10 +2343,10 @@
     <value>ഏറ്റവും കൂടുതൽ ഉപയോഗിക്കുന്ന അന്താരാഷ്ട്ര-ബിസിനസ്-ഭാഷകൾ തിരഞ്ഞെടുത്ത് വിവർത്തനം ചെയ്യുക</value>
   </data>
   <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 6</value>
+    <value>396, 6</value>
   </data>
   <data name="toolStripMenuItem_TranslateAfrica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateAfrica.Text" xml:space="preserve">
     <value>ആഫ്രിക്ക</value>
@@ -2352,7 +2355,7 @@
     <value>ആഫ്രിക്കയിലെ ഏറ്റവും കൂടുതൽ സംസാരിക്കുന്ന ഭാഷകൾ തിരഞ്ഞെടുത്ത് വിവർത്തനം ചെയ്യുക</value>
   </data>
   <data name="toolStripMenuItem_TranslateAsia.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateAsia.Text" xml:space="preserve">
     <value>ഏഷ്യ</value>
@@ -2361,7 +2364,7 @@
     <value>ഏഷ്യയിൽ ഏറ്റവും കൂടുതൽ സംസാരിക്കുന്ന ഭാഷകൾ തിരഞ്ഞെടുത്ത് വിവർത്തനം ചെയ്യുക</value>
   </data>
   <data name="toolStripMenuItem_TranslateEurope.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateEurope.Text" xml:space="preserve">
     <value>യൂറോപ്പ്</value>
@@ -2370,7 +2373,7 @@
     <value>യൂറോപ്പിൽ ഏറ്റവും കൂടുതൽ സംസാരിക്കുന്ന ഭാഷകൾ തിരഞ്ഞെടുത്ത് വിവർത്തനം ചെയ്യുക</value>
   </data>
   <data name="toolStripMenuItem_TranslateMiddleEast.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateMiddleEast.Text" xml:space="preserve">
     <value>മിഡിൽ ഈസ്റ്റ്</value>
@@ -2379,7 +2382,7 @@
     <value>മിഡിൽ ഈസ്റ്റിൽ ഏറ്റവും കൂടുതൽ സംസാരിക്കുന്ന ഭാഷകൾ തിരഞ്ഞെടുത്ത് വിവർത്തനം ചെയ്യുക</value>
   </data>
   <data name="toolStripMenuItem_TranslateNorthAmerica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateNorthAmerica.Text" xml:space="preserve">
     <value>ഉത്തര അമേരിക്ക</value>
@@ -2388,7 +2391,7 @@
     <value>വടക്കേ അമേരിക്കയിൽ ഏറ്റവും കൂടുതൽ സംസാരിക്കുന്ന ഭാഷകൾ തിരഞ്ഞെടുത്ത് വിവർത്തനം ചെയ്യുക</value>
   </data>
   <data name="toolStripMenuItem_TranslateSouthAmerica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateSouthAmerica.Text" xml:space="preserve">
     <value>തെക്കേ അമേരിക്ക</value>
@@ -2397,10 +2400,10 @@
     <value>തെക്കേ അമേരിക്കയിൽ ഏറ്റവും കൂടുതൽ സംസാരിക്കുന്ന ഭാഷകൾ തിരഞ്ഞെടുത്ത് വിവർത്തനം ചെയ്യുക</value>
   </data>
   <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 6</value>
+    <value>396, 6</value>
   </data>
   <data name="toolStripMenuItemTranslateTop5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop5.Text" xml:space="preserve">
     <value>മികച്ച 5 സംസാരിക്കുന്ന ഭാഷകൾ വിവർത്തനം ചെയ്യുക</value>
@@ -2409,7 +2412,7 @@
     <value>സംസാരിക്കുന്ന മികച്ച 5 ഭാഷകൾ തിരഞ്ഞെടുത്ത് വിവർത്തനം ചെയ്യുക</value>
   </data>
   <data name="toolStripMenuItemTranslateTop10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop10.Text" xml:space="preserve">
     <value>സംസാരിക്കുന്ന മികച്ച 10 ഭാഷകൾ വിവർത്തനം ചെയ്യുക</value>
@@ -2418,7 +2421,7 @@
     <value>മികച്ച 10 തിരഞ്ഞെടുത്ത് വിവർത്തനം ചെയ്യുക</value>
   </data>
   <data name="toolStripMenuItemTranslateTop20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop20.Text" xml:space="preserve">
     <value>സംസാരിക്കുന്ന മികച്ച 20 ഭാഷകൾ വിവർത്തനം ചെയ്യുക</value>
@@ -2427,7 +2430,7 @@
     <value>മികച്ച 20 തിരഞ്ഞെടുത്ത് വിവർത്തനം ചെയ്യുക</value>
   </data>
   <data name="toolStripMenuItemTranslateTop30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop30.Text" xml:space="preserve">
     <value>സംസാരിക്കുന്ന മികച്ച 30 ഭാഷകൾ വിവർത്തനം ചെയ്യുക</value>
@@ -2448,13 +2451,13 @@
     <value>തിരഞ്ഞെടുത്ത ഭാഷകളിൽ വിവർത്തനം ആരംഭിക്കുക. ഒരു ഭാഷയും തിരഞ്ഞെടുത്തിട്ടില്ലെങ്കിൽ എല്ലാ ഭാഷകളും വിവർത്തനം ചെയ്യുന്നു.</value>
   </data>
   <data name="toolStripMenuItemSelectAll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 34</value>
+    <value>333, 42</value>
   </data>
   <data name="toolStripMenuItemSelectAll.Text" xml:space="preserve">
     <value>എല്ലാ ഭാഷകളും തിരഞ്ഞെടുക്കുക</value>
   </data>
   <data name="toolStripMenuItemSelectClear.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 34</value>
+    <value>333, 42</value>
   </data>
   <data name="toolStripMenuItemSelectClear.Text" xml:space="preserve">
     <value>എല്ലാ തിരഞ്ഞെടുപ്പും മായ്‌ക്കുക</value>
@@ -2466,7 +2469,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemSelectUndo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 34</value>
+    <value>333, 42</value>
   </data>
   <data name="toolStripMenuItemSelectUndo.Text" xml:space="preserve">
     <value>അവസാന ഗ്രൂപ്പ് സെലക്ഷൻ പഴയപടിയാക്കുക</value>
@@ -2511,7 +2514,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks.Text" xml:space="preserve">
     <value>വിൻഡോസ് 10/11 ഭാഷാ പായ്ക്ക്</value>
@@ -2541,7 +2544,7 @@
     <value>ചേർക്കുക, തിരഞ്ഞെടുക്കുക</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface.Text" xml:space="preserve">
     <value>വിൻഡോസ് ലാംഗ്വേജ് പാക്ക് ഇന്റർഫേസ്</value>
@@ -2553,43 +2556,43 @@
     <value>വിൻഡോസ് ലാംഗ്വേജ് പാക്ക് ഇന്റർഫേസിൽ ഉള്ള ഭാഷകൾ മാത്രം കാണിക്കുക</value>
   </data>
   <data name="toolStripSeparator7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>429, 6</value>
+    <value>437, 6</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_ShowOnly.Text" xml:space="preserve">
     <value>കാണിക്കുക</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_Add.Text" xml:space="preserve">
     <value>ചേർക്കുക</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.Text" xml:space="preserve">
-    <value>വിവർത്തകൻ പിന്തുണയ്ക്കുന്ന ഭാഷകൾ</value>
+    <value>വിവർത്തന സേവനമുള്ള ഭാഷകൾ</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.ToolTipText" xml:space="preserve">
-    <value>പിന്തുണയ്‌ക്കുന്ന വിവർത്തകനോടൊപ്പം എല്ലാ ഭാഷകളും പ്രദർശിപ്പിക്കുക.</value>
+    <value>പിന്തുണയ്‌ക്കുന്ന വിവർത്തന സേവനം ഉപയോഗിച്ച് എല്ലാ ഭാഷകളും പ്രദർശിപ്പിക്കുക</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly.Text" xml:space="preserve">
     <value>കാണിക്കുക</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_Add.Text" xml:space="preserve">
     <value>ചേർക്കുക</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames.Text" xml:space="preserve">
     <value>ISO 639-1 ഭാഷാ സെറ്റ്</value>
@@ -2616,7 +2619,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.Text" xml:space="preserve">
     <value>ISO 639-1 + വിൻ ലാംഗ് പാക്ക്</value>
@@ -2634,7 +2637,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemSubLanguagesAndRegions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemSubLanguagesAndRegions.Text" xml:space="preserve">
     <value>ഉപഭാഷകളും പ്രദേശങ്ങളും ലിസ്റ്റിലേക്ക് ചേർക്കുക</value>

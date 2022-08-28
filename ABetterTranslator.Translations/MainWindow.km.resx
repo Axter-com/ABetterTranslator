@@ -393,10 +393,10 @@
     <value>7</value>
   </data>
   <data name="groupBoxItemsPerTransaltionRequest.Text" xml:space="preserve">
-    <value>ធាតុក្នុងមួយការបកប្រែ Req</value>
+    <value>ខ្សែអក្សរក្នុងមួយការបកប្រែ Req</value>
   </data>
   <data name="groupBoxItemsPerTransaltionRequest.ToolTip" xml:space="preserve">
-    <value>ធាតុតាមសំណើបកប្រែ</value>
+    <value>ខ្សែអក្សរតាមសំណើបកប្រែ</value>
   </data>
   <data name="&gt;&gt;groupBoxItemsPerTransaltionRequest.Name" xml:space="preserve">
     <value>groupBoxItemsPerTransaltionRequest</value>
@@ -1335,7 +1335,7 @@
     <value>6</value>
   </data>
   <data name="MaxThread.Text" xml:space="preserve">
-    <value>-0</value>
+    <value>-១</value>
   </data>
   <data name="&gt;&gt;MaxThread.Name" xml:space="preserve">
     <value>MaxThread</value>
@@ -2003,6 +2003,9 @@
   <data name="tabControlTranslateResxSubTab.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
+  <data name="groupBoxFilterText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="textBoxFilterText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
@@ -2304,16 +2307,16 @@
     <value>548, 17</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.Text" xml:space="preserve">
     <value>បកប្រែភាសាដែលគាំទ្រទាំងអស់។</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.ToolTipText" xml:space="preserve">
-    <value>ជ្រើសរើស និងបកប្រែភាសាទាំងអស់ដែលគាំទ្រដោយអ្នកបកប្រែ</value>
+    <value>ជ្រើសរើស និងបកប្រែភាសាទាំងអស់ជាមួយនឹងសេវាកម្មបកប្រែ</value>
   </data>
   <data name="toolStripMenuItemWindowsSupportedLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsSupportedLanguages.Text" xml:space="preserve">
     <value>កញ្ចប់ភាសាវីនដូ</value>
@@ -2322,7 +2325,7 @@
     <value>ជ្រើសរើស និងបកប្រែភាសានៅក្នុងកញ្ចប់ភាសាវីនដូ</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguageInterfacePacks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguageInterfacePacks.Text" xml:space="preserve">
     <value>កញ្ចប់ចំណុចប្រទាក់ភាសាវីនដូ</value>
@@ -2331,7 +2334,7 @@
     <value>ជ្រើសរើស និងបកប្រែភាសានៅក្នុង Windows Language Interface Packs</value>
   </data>
   <data name="toolStripMenuItemTranslateBusinessLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateBusinessLanguages.Text" xml:space="preserve">
     <value>បកប្រែភាសាអាជីវកម្មកំពូល</value>
@@ -2340,10 +2343,10 @@
     <value>ជ្រើសរើស និងបកប្រែភាសាអន្តរជាតិ-ធុរកិច្ច-ភាសាដែលប្រើច្រើនបំផុត</value>
   </data>
   <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 6</value>
+    <value>396, 6</value>
   </data>
   <data name="toolStripMenuItem_TranslateAfrica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateAfrica.Text" xml:space="preserve">
     <value>អាហ្រ្វិក</value>
@@ -2352,7 +2355,7 @@
     <value>ជ្រើសរើស និងបកប្រែភាសាដែលនិយាយច្រើនជាងគេបំផុតនៅអាហ្វ្រិក</value>
   </data>
   <data name="toolStripMenuItem_TranslateAsia.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateAsia.Text" xml:space="preserve">
     <value>អាស៊ី</value>
@@ -2361,7 +2364,7 @@
     <value>ជ្រើសរើស និងបកប្រែភាសាដែលនិយាយច្រើនជាងគេបំផុតនៅអាស៊ី</value>
   </data>
   <data name="toolStripMenuItem_TranslateEurope.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateEurope.Text" xml:space="preserve">
     <value>អឺរ៉ុប</value>
@@ -2370,7 +2373,7 @@
     <value>ជ្រើសរើស និងបកប្រែភាសាដែលនិយាយច្រើនជាងគេបំផុតនៅអឺរ៉ុប</value>
   </data>
   <data name="toolStripMenuItem_TranslateMiddleEast.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateMiddleEast.Text" xml:space="preserve">
     <value>មជ្ឈិមបូព៌ា</value>
@@ -2379,7 +2382,7 @@
     <value>ជ្រើសរើស និងបកប្រែភាសាដែលនិយាយច្រើនជាងគេបំផុតនៅមជ្ឈិមបូព៌ា</value>
   </data>
   <data name="toolStripMenuItem_TranslateNorthAmerica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateNorthAmerica.Text" xml:space="preserve">
     <value>អាមេរិក​ខាង​ជើង</value>
@@ -2388,7 +2391,7 @@
     <value>ជ្រើសរើស និងបកប្រែភាសាដែលនិយាយច្រើនជាងគេបំផុតនៅអាមេរិកខាងជើង</value>
   </data>
   <data name="toolStripMenuItem_TranslateSouthAmerica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItem_TranslateSouthAmerica.Text" xml:space="preserve">
     <value>អា​មេ​រិ​ច​ខាងត្បូង</value>
@@ -2397,10 +2400,10 @@
     <value>ជ្រើសរើស និងបកប្រែភាសាដែលនិយាយច្រើនជាងគេបំផុតនៅអាមេរិកខាងត្បូង</value>
   </data>
   <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 6</value>
+    <value>396, 6</value>
   </data>
   <data name="toolStripMenuItemTranslateTop5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop5.Text" xml:space="preserve">
     <value>បកប្រែភាសានិយាយកំពូលទាំង 5</value>
@@ -2409,7 +2412,7 @@
     <value>ជ្រើសរើស និងបកប្រែភាសានិយាយកំពូលទាំង 5</value>
   </data>
   <data name="toolStripMenuItemTranslateTop10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop10.Text" xml:space="preserve">
     <value>បកប្រែភាសានិយាយកំពូលទាំង 10</value>
@@ -2418,7 +2421,7 @@
     <value>ជ្រើសរើសនិងបកប្រែកំពូលទាំង 10</value>
   </data>
   <data name="toolStripMenuItemTranslateTop20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop20.Text" xml:space="preserve">
     <value>បកប្រែភាសានិយាយកំពូលទាំង 20</value>
@@ -2427,7 +2430,7 @@
     <value>ជ្រើសរើសនិងបកប្រែកំពូល 20</value>
   </data>
   <data name="toolStripMenuItemTranslateTop30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
+    <value>399, 42</value>
   </data>
   <data name="toolStripMenuItemTranslateTop30.Text" xml:space="preserve">
     <value>បកប្រែភាសានិយាយកំពូលទាំង 30</value>
@@ -2448,13 +2451,13 @@
     <value>ចាប់ផ្តើមការបកប្រែលើភាសាដែលបានជ្រើសរើស។ បកប្រែភាសាទាំងអស់ ប្រសិនបើគ្មានភាសាដែលបានជ្រើសរើស។</value>
   </data>
   <data name="toolStripMenuItemSelectAll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 34</value>
+    <value>333, 42</value>
   </data>
   <data name="toolStripMenuItemSelectAll.Text" xml:space="preserve">
     <value>ជ្រើសរើសភាសាទាំងអស់។</value>
   </data>
   <data name="toolStripMenuItemSelectClear.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 34</value>
+    <value>333, 42</value>
   </data>
   <data name="toolStripMenuItemSelectClear.Text" xml:space="preserve">
     <value>ជម្រះការជ្រើសរើសទាំងអស់។</value>
@@ -2466,7 +2469,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemSelectUndo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 34</value>
+    <value>333, 42</value>
   </data>
   <data name="toolStripMenuItemSelectUndo.Text" xml:space="preserve">
     <value>មិនធ្វើវិញការជ្រើសរើសក្រុមចុងក្រោយ</value>
@@ -2511,7 +2514,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks.Text" xml:space="preserve">
     <value>កញ្ចប់ភាសា Windows 10/11</value>
@@ -2541,7 +2544,7 @@
     <value>បន្ថែម និងជ្រើសរើស</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface.Text" xml:space="preserve">
     <value>ចំណុចប្រទាក់កញ្ចប់ភាសាវីនដូ</value>
@@ -2553,43 +2556,43 @@
     <value>បង្ហាញតែភាសាដែលមាននៅក្នុង Windows Language Pack Interface ប៉ុណ្ណោះ។</value>
   </data>
   <data name="toolStripSeparator7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>429, 6</value>
+    <value>437, 6</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_ShowOnly.Text" xml:space="preserve">
     <value>បង្ហាញ</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_Add.Text" xml:space="preserve">
     <value>បន្ថែម</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.Text" xml:space="preserve">
-    <value>អ្នកបកប្រែភាសាដែលគាំទ្រ</value>
+    <value>ភាសាដែលមានសេវាកម្មបកប្រែ</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.ToolTipText" xml:space="preserve">
-    <value>បង្ហាញភាសាទាំងអស់ជាមួយនឹងអ្នកបកប្រែដែលគាំទ្រ។</value>
+    <value>បង្ហាញភាសាទាំងអស់ជាមួយនឹងសេវាកម្មបកប្រែដែលគាំទ្រ</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly.Text" xml:space="preserve">
     <value>បង្ហាញ</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
+    <value>270, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_Add.Text" xml:space="preserve">
     <value>បន្ថែម</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames.Text" xml:space="preserve">
     <value>សំណុំភាសា ISO 639-1</value>
@@ -2616,7 +2619,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.Text" xml:space="preserve">
     <value>ISO 639-1 + Win Lang Pack</value>
@@ -2634,7 +2637,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemSubLanguagesAndRegions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
+    <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemSubLanguagesAndRegions.Text" xml:space="preserve">
     <value>បន្ថែមទៅក្នុងបញ្ជីរងនៃភាសា និងតំបន់</value>
