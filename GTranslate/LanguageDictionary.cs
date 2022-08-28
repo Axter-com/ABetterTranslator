@@ -60,7 +60,7 @@ public sealed class LanguageDictionary : ILanguageDictionary<string, Language>
         ["fi"] = new("Finnish", "Suomi", "fi", "fin"),
         ["fil"] = new("Filipino", "Tagalog", "fil", "fil", TranslationServices.Bing | TranslationServices.Microsoft),
         ["fj"] = new("Fijian", "Na Vosa Vakaviti", "fj", "fij", TranslationServices.Bing | TranslationServices.Microsoft),
-        ["fo"] = new("Faroese", "Faroese", "fo", "fao", TranslationServices.Bing | TranslationServices.Microsoft),                     // Newly added by David Maisonave aka Axter (www.axter.com)
+        ["fo"] = new("Faroese", "føroyskt mál", "fo", "fao", TranslationServices.Bing | TranslationServices.Microsoft),                     // Newly added by David Maisonave aka Axter (www.axter.com)
         ["fr"] = new("French", "Français", "fr", "fra"),
         ["fr-CA"] = new("French (Canada)", "Français (Canada)", "fr-CA", "fr-CA", TranslationServices.Bing | TranslationServices.Microsoft),
         ["fy"] = new("Frisian", "Frysk", "fy", "fry", TranslationServices.Google),
