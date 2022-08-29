@@ -2640,7 +2640,7 @@
     <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemSubLanguagesAndRegions.Text" xml:space="preserve">
-    <value>添加到列表子语言和地区</value>
+    <value>添加到列表子语言和区域</value>
   </data>
   <data name="toolStripMenuItemSubLanguagesAndRegions.ToolTipText" xml:space="preserve">
     <value>添加其他子语言和地区</value>

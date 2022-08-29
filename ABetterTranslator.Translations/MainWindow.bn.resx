@@ -2397,7 +2397,7 @@
     <value>দক্ষিণ আমেরিকা</value>
   </data>
   <data name="toolStripMenuItem_TranslateSouthAmerica.ToolTipText" xml:space="preserve">
-    <value>দক্ষিণ আমেরিকাতে সবচেয়ে বেশি কথ্য ভাষা নির্বাচন করুন এবং অনুবাদ করুন</value>
+    <value>দক্ষিণ আমেরিকার শীর্ষ সর্বাধিক কথ্য ভাষা নির্বাচন করুন এবং অনুবাদ করুন</value>
   </data>
   <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
     <value>396, 6</value>
@@ -2622,7 +2622,7 @@
     <value>440, 42</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.Text" xml:space="preserve">
-    <value>ISO 639-1 + Win Lang প্যাক</value>
+    <value>ISO 639-1 + Win Lang Pack</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>TextAboveImage</value>
