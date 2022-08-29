@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Buffers.Text;
 using System.Collections.Generic;
 using System.Net.Http;
+using System.Text;
 using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
@@ -16,7 +18,9 @@ namespace GTranslate.Translators;
 public sealed class BingTranslator : ITranslator, IDisposable
 {
     internal const string HostUrl = "https://www.bing.com";
+    private static readonly Uri _translatorPageUri = new($"{HostUrl}/translator");
     internal const string Iid = "translator.5023.1";
+    private static readonly byte[] _credentialsStart = Encoding.UTF8.GetBytes("var params_RichTranslateHelper = [");
     private const string _defaultUserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36";
 
     /// <inheritdoc/>
@@ -69,8 +73,8 @@ public sealed class BingTranslator : ITranslator, IDisposable
         TranslatorGuards.ObjectNotDisposed(this, _disposed);
         TranslatorGuards.NotNull(text);
         TranslatorGuards.NotNull(toLanguage);
-        TranslatorGuards.LanguageFound(toLanguage, out Language? toLang, "Unknown target language.");
-        TranslatorGuards.LanguageFound(fromLanguage, out Language? fromLang, "Unknown source language.");
+        TranslatorGuards.LanguageFound(toLanguage, out var toLang, "Unknown target language.");
+        TranslatorGuards.LanguageFound(fromLanguage, out var fromLang, "Unknown source language.");
         TranslatorGuards.LanguageSupported(this, toLang, fromLang);
 
         return await TranslateAsync(text, toLang, fromLang).ConfigureAwait(false);
@@ -84,9 +88,9 @@ public sealed class BingTranslator : ITranslator, IDisposable
         TranslatorGuards.NotNull(toLanguage);
         TranslatorGuards.LanguageSupported(this, toLanguage, fromLanguage);
 
-        BingCredentials credentials = await GetOrUpdateCredentialsAsync().ConfigureAwait(false);
+        var credentials = await GetOrUpdateCredentialsAsync().ConfigureAwait(false);
 
-        Dictionary<string, string> data = new()
+        var data = new Dictionary<string, string>
         {
             { "fromLang", BingHotPatch(fromLanguage?.ISO6391 ?? "auto-detect") },
             { "text", text },
@@ -95,29 +99,29 @@ public sealed class BingTranslator : ITranslator, IDisposable
             { "key", credentials.Key.ToString() }
         };
 
-        using FormUrlEncodedContent content = new(data);
+        using var content = new FormUrlEncodedContent(data);
 
         // For some reason the "isVertical" parameter allows you to translate up to 1000 characters instead of 500
-        Uri uri = new($"{HostUrl}/ttranslatev3?isVertical=1&IG={credentials.ImpressionGuid.ToString("N").ToUpperInvariant()}&IID={Iid}");
-        using HttpResponseMessage response = await _httpClient.PostAsync(uri, content).ConfigureAwait(false);
-        _ = response.EnsureSuccessStatusCode();
-        using System.IO.Stream stream = await response.Content.ReadAsStreamAsync().ConfigureAwait(false);
+        var uri = new Uri($"{HostUrl}/ttranslatev3?isVertical=1&IG={credentials.ImpressionGuid.ToString("N").ToUpperInvariant()}&IID={Iid}");
+        using var response = await _httpClient.PostAsync(uri, content).ConfigureAwait(false);
+        response.EnsureSuccessStatusCode();
+        using var stream = await response.Content.ReadAsStreamAsync().ConfigureAwait(false);
 
         // Bing Translator always return status code 200 regardless of the content
-        using JsonDocument document = await JsonDocument.ParseAsync(stream).ConfigureAwait(false);
-        JsonElement root = document.RootElement;
+        using var document = await JsonDocument.ParseAsync(stream).ConfigureAwait(false);
+        var root = document.RootElement;
 
         TranslatorGuards.ThrowIfStatusCodeIsPresent(root);
 
-        JsonElement first = root.FirstOrDefault();
-        JsonElement translation = first.GetPropertyOrDefault("translations").FirstOrDefault();
+        var first = root.FirstOrDefault();
+        var translation = first.GetPropertyOrDefault("translations").FirstOrDefault();
 
         if ( first.ValueKind == JsonValueKind.Undefined || translation.ValueKind == JsonValueKind.Undefined )
         {
             throw new TranslatorException("The API returned an empty response.", Name);
         }
 
-        JsonElement langDetection = first.GetProperty("detectedLanguage");
+        var langDetection = first.GetProperty("detectedLanguage");
         string detectedLanguage = langDetection.GetProperty("language").GetString() ?? string.Empty;
         float score = langDetection.GetProperty("score").GetSingle();
         string translatedText = translation.GetProperty("text").GetString() ?? throw new TranslatorException("Failed to get the translated text.", Name);
@@ -147,8 +151,8 @@ public sealed class BingTranslator : ITranslator, IDisposable
         TranslatorGuards.ObjectNotDisposed(this, _disposed);
         TranslatorGuards.NotNull(text);
         TranslatorGuards.NotNull(toLanguage);
-        TranslatorGuards.LanguageFound(toLanguage, out Language? toLang, "Unknown target language.");
-        TranslatorGuards.LanguageFound(fromLanguage, out Language? fromLang, "Unknown source language.");
+        TranslatorGuards.LanguageFound(toLanguage, out var toLang, "Unknown target language.");
+        TranslatorGuards.LanguageFound(fromLanguage, out var fromLang, "Unknown source language.");
         TranslatorGuards.LanguageSupported(this, toLang, fromLang);
 
         return await TransliterateAsync(text, toLang, fromLang).ConfigureAwait(false);
@@ -162,7 +166,7 @@ public sealed class BingTranslator : ITranslator, IDisposable
         TranslatorGuards.NotNull(toLanguage);
         TranslatorGuards.LanguageSupported(this, toLanguage, fromLanguage);
 
-        BingTranslationResult result = await TranslateAsync(text, toLanguage, fromLanguage).ConfigureAwait(false);
+        var result = await TranslateAsync(text, toLanguage, fromLanguage).ConfigureAwait(false);
         if ( string.IsNullOrEmpty(result.Transliteration) )
         {
             throw new TranslatorException("Failed to get the transliteration.", Name);
@@ -183,7 +187,7 @@ public sealed class BingTranslator : ITranslator, IDisposable
     {
         TranslatorGuards.NotNull(text);
 
-        BingTranslationResult result = await TranslateAsync(text, "en").ConfigureAwait(false);
+        var result = await TranslateAsync(text, "en").ConfigureAwait(false);
         if ( result.SourceLanguage is null )
         {
             throw new TranslatorException("Failed to get the detected language.", Name);
@@ -201,7 +205,7 @@ public sealed class BingTranslator : ITranslator, IDisposable
     {
         TranslatorGuards.NotNull(language);
 
-        return Language.TryGetLanguage(language, out Language? lang) && IsLanguageSupported(lang);
+        return Language.TryGetLanguage(language, out var lang) && IsLanguageSupported(lang);
     }
 
     /// <inheritdoc cref="IsLanguageSupported(string)"/>
@@ -240,43 +244,45 @@ public sealed class BingTranslator : ITranslator, IDisposable
     // returns new credentials as a cached object
     internal static async Task<CachedObject<BingCredentials>> GetCredentialsAsync(ITranslator translator, HttpClient httpClient)
     {
-        const string credentialsStart = "var params_RichTranslateHelper = [";
+        byte[] bytes = await httpClient.GetByteArrayAsync(_translatorPageUri).ConfigureAwait(false);
+        return GetCredentials(bytes, translator);
+    }
 
-        string content = await httpClient.GetStringAsync(new Uri($"{HostUrl}/translator")).ConfigureAwait(false);
-
-        int credentialsStartIndex = content.IndexOf(credentialsStart, StringComparison.Ordinal);
+    internal static CachedObject<BingCredentials> GetCredentials(ReadOnlySpan<byte> bytes, ITranslator translator)
+    {
+        int credentialsStartIndex = bytes.IndexOf(_credentialsStart);
         if ( credentialsStartIndex == -1 )
         {
             throw new TranslatorException("Unable to find the Bing credentials.", translator.Name);
         }
 
-        int keyStartIndex = credentialsStartIndex + credentialsStart.Length;
-        int keyEndIndex = content.IndexOf(',', keyStartIndex);
-        if ( keyEndIndex == -1 )
+        int keyStartIndex = credentialsStartIndex + _credentialsStart.Length;
+        int keyLength = bytes.Slice(keyStartIndex).IndexOf((byte)',');
+        if (keyLength == -1)
         {
             throw new TranslatorException("Unable to find the Bing key.", translator.Name);
         }
 
         // Unix timestamp generated once the page is loaded. Valid for 3600000 milliseconds or 1 hour
-#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP2_1_OR_GREATER
-        if ( !long.TryParse(content.AsSpan(keyStartIndex, keyEndIndex - keyStartIndex), out long key) )
-#else
-        if (!long.TryParse(content.AsSpan(keyStartIndex, keyEndIndex - keyStartIndex).ToString(), out long key))
-#endif
+        if (!Utf8Parser.TryParse(bytes.Slice(keyStartIndex, keyLength), out long key, out _))
         {
             // This shouldn't happen but we'll handle this case anyways
             key = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
         }
 
-        int tokenStartIndex = keyEndIndex + 2;
-        int tokenEndIndex = content.IndexOf('"', tokenStartIndex);
-        if ( tokenEndIndex == -1 )
+        int tokenStartIndex = keyStartIndex + keyLength + 2;
+        int tokenLength = bytes.Slice(tokenStartIndex).IndexOf((byte)'"');
+        if (tokenLength == -1)
         {
             throw new TranslatorException("Unable to find the Bing token.", translator.Name);
         }
 
-        string token = content.Substring(tokenStartIndex, tokenEndIndex - tokenStartIndex);
-        BingCredentials credentials = new(token, key, Guid.NewGuid());
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP2_1_OR_GREATER
+        string token = Encoding.UTF8.GetString(bytes.Slice(tokenStartIndex, tokenLength));
+#else
+        string token = Encoding.UTF8.GetString(bytes.Slice(tokenStartIndex, tokenLength).ToArray());
+#endif
+        var credentials = new BingCredentials(token, key, Guid.NewGuid());
 
         return new CachedObject<BingCredentials>(credentials, DateTimeOffset.FromUnixTimeMilliseconds(key + 3600000));
     }
@@ -341,7 +347,7 @@ public sealed class BingTranslator : ITranslator, IDisposable
         }
         finally
         {
-            _ = _credentialsSemaphore.Release();
+            _credentialsSemaphore.Release();
         }
 
         return _cachedCredentials.Value;

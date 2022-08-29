@@ -10,7 +10,7 @@ namespace GTranslate;
 public class LanguageServiceDetails
 {
     private LanguageDictionary languagedictionary = new();
-    public IReadOnlyDictionary<string, Language> Languages { get { return languagedictionary.Languages; } } // Allow other classes to access the language pool
+    public IReadOnlyDictionary<string, Language> Languages { get { return languagedictionary._languages; } } // Allow other classes to access the language pool
 
 }
 
@@ -19,8 +19,112 @@ public class LanguageServiceDetails
 /// </summary>
 public sealed class LanguageDictionary : ILanguageDictionary<string, Language>
 {
-    public IReadOnlyDictionary<string, Language> Languages { get; } // Allow other classes to access the language pool
-= new ReadOnlyDictionary<string, Language>(new Dictionary<string, Language>(StringComparer.OrdinalIgnoreCase)
+    internal LanguageDictionary() => Aliases = new ReadOnlyDictionary<string, string>(BuildLanguageAliases());
+
+    /// <inheritdoc />
+    public IEnumerator<KeyValuePair<string, Language>> GetEnumerator()
+        => _languages.GetEnumerator();
+
+    /// <inheritdoc />
+    IEnumerator IEnumerable.GetEnumerator() => _languages.GetEnumerator();
+
+    /// <inheritdoc />
+    public int Count => _languages.Count;
+
+    /// <inheritdoc />
+    public Language this[string key] => _languages[key];
+
+    /// <inheritdoc />
+    public IEnumerable<string> Keys => _languages.Keys;
+
+    /// <inheritdoc />
+    public IEnumerable<Language> Values => _languages.Values;
+
+    /// <inheritdoc />
+    public bool ContainsKey(string key) => _languages.ContainsKey(key);
+
+    /// <inheritdoc/>
+#if NETCOREAPP3_0_OR_GREATER
+    public bool TryGetValue(string key, [MaybeNullWhen(false)] out Language value) => _languages.TryGetValue(key, out value);
+#else
+    public bool TryGetValue(string key, out Language value) => _languages.TryGetValue(key, out value!);
+#endif
+
+    /// <summary>
+    /// Gets a language from a language code, name or alias.
+    /// </summary>
+    /// <param name="code">The language name or code. It can be a ISO 639-1 code, a ISO 639-3 code, a language name or a language alias.</param>
+    /// <returns>The language, or an exception if the language was not found.</returns>
+    /// <exception cref="ArgumentNullException">Thrown when <paramref name="code"/> is null.</exception>
+    /// <exception cref="ArgumentException">Thrown when the language was not found.</exception>
+    public Language GetLanguage(string code)
+    {
+        TranslatorGuards.NotNull(code);
+
+        if (TryGetValue(code, out var language))
+        {
+            return language;
+        }
+
+        return Aliases.TryGetValue(code, out var iso) ? _languages[iso] : throw new ArgumentException($"Unknown language \"{code}\".", nameof(code));
+    }
+
+    /// <summary>
+    /// Tries to get a language from a language code, name or alias.
+    /// </summary>
+    /// <param name="code">The language name or code. It can be a ISO 639-1 code, a ISO 639-3 code, a language name or a language alias.</param>
+    /// <param name="language">The language, if found.</param>
+    /// <returns><see langword="true"/> if the language was found, otherwise <see langword="false"/>.</returns>
+    public bool TryGetLanguage(string code, [MaybeNullWhen(false)] out Language language)
+    {
+        language = default;
+
+        if ( string.IsNullOrEmpty(code) )
+        {
+            return false;
+        }
+
+        if ( TryGetValue(code, out language) )
+        {
+            return true;
+        }
+
+        if ( !Aliases.TryGetValue(code, out string? iso) )
+        {
+            return false;
+        }
+
+        language = _languages[iso];
+        return true;
+    }
+
+    /// <summary>
+    /// Gets a read-only dictionary containing language aliases and their corresponding ISO 639-1 codes.
+    /// </summary>
+    public IReadOnlyDictionary<string, string> Aliases { get; }
+
+    private Dictionary<string, string> BuildLanguageAliases()
+    {
+        var aliases = new Dictionary<string, string>(StringComparer.InvariantCultureIgnoreCase)
+        {
+            ["chinese"] = "zh-CN",
+        };
+
+        foreach (var kvp in _languages)
+        {
+            aliases[kvp.Value.Name] = kvp.Key;
+            aliases[kvp.Value.NativeName] = kvp.Key;
+            aliases[kvp.Value.ISO6393] = kvp.Key;
+        }
+
+#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP2_1_OR_GREATER
+        aliases.TrimExcess();
+#endif
+
+        return aliases;
+    }
+
+    public readonly IReadOnlyDictionary<string, Language> _languages = new ReadOnlyDictionary<string, Language>(new Dictionary<string, Language>(StringComparer.OrdinalIgnoreCase)
     {
         ["af"] = new ("Afrikaans", "Afrikaans", "af", "afr"),
         ["am"] = new("Amharic", "አማርኛ", "am", "amh"),
@@ -195,108 +299,4 @@ public sealed class LanguageDictionary : ILanguageDictionary<string, Language>
     //["nn"] = new("Norwegian Nynorsk", "Norwegian Nynorsk", "nn", "nno",         TranslationServices.Google),
     //["xx"] = new("xxxx", "xxxx", "xx", "xxx",                                 TranslationServices.Google),
     }); // Allow other classes to access the language pool
-    internal LanguageDictionary() => Aliases = new ReadOnlyDictionary<string, string>(BuildLanguageAliases());
-
-    /// <inheritdoc />
-    public IEnumerator<KeyValuePair<string, Language>> GetEnumerator()
-        => Languages.GetEnumerator();
-
-    /// <inheritdoc />
-    IEnumerator IEnumerable.GetEnumerator() => Languages.GetEnumerator();
-
-    /// <inheritdoc />
-    public int Count => Languages.Count;
-
-    /// <inheritdoc />
-    public Language this[string key] => Languages[key];
-
-    /// <inheritdoc />
-    public IEnumerable<string> Keys => Languages.Keys;
-
-    /// <inheritdoc />
-    public IEnumerable<Language> Values => Languages.Values;
-
-    /// <inheritdoc />
-    public bool ContainsKey(string key) => Languages.ContainsKey(key);
-
-    /// <inheritdoc/>
-#if NETCOREAPP3_0_OR_GREATER
-    public bool TryGetValue(string key, [MaybeNullWhen(false)] out Language value) => Languages.TryGetValue(key, out value);
-#else
-    public bool TryGetValue(string key, out Language value) => _languages.TryGetValue(key, out value!);
-#endif
-
-    /// <summary>
-    /// Gets a language from a language code, name or alias.
-    /// </summary>
-    /// <param name="code">The language name or code. It can be a ISO 639-1 code, a ISO 639-3 code, a language name or a language alias.</param>
-    /// <returns>The language, or an exception if the language was not found.</returns>
-    /// <exception cref="ArgumentNullException">Thrown when <paramref name="code"/> is null.</exception>
-    /// <exception cref="ArgumentException">Thrown when the language was not found.</exception>
-    public Language GetLanguage(string code)
-    {
-        TranslatorGuards.NotNull(code);
-
-        if ( TryGetValue(code, out Language? language) )
-        {
-            return language;
-        }
-
-        return Aliases.TryGetValue(code, out string? iso) ? Languages[iso] : throw new ArgumentException($"Unknown language \"{code}\".", nameof(code));
-    }
-
-    /// <summary>
-    /// Tries to get a language from a language code, name or alias.
-    /// </summary>
-    /// <param name="code">The language name or code. It can be a ISO 639-1 code, a ISO 639-3 code, a language name or a language alias.</param>
-    /// <param name="language">The language, if found.</param>
-    /// <returns><see langword="true"/> if the language was found, otherwise <see langword="false"/>.</returns>
-    public bool TryGetLanguage(string code, [MaybeNullWhen(false)] out Language language)
-    {
-        language = default;
-
-        if ( string.IsNullOrEmpty(code) )
-        {
-            return false;
-        }
-
-        if ( TryGetValue(code, out language) )
-        {
-            return true;
-        }
-
-        if ( !Aliases.TryGetValue(code, out string? iso) )
-        {
-            return false;
-        }
-
-        language = Languages[iso];
-        return true;
-    }
-
-    /// <summary>
-    /// Gets a read-only dictionary containing language aliases and their corresponding ISO 639-1 codes.
-    /// </summary>
-    public IReadOnlyDictionary<string, string> Aliases { get; }
-
-    private Dictionary<string, string> BuildLanguageAliases()
-    {
-        Dictionary<string, string> aliases = new(StringComparer.InvariantCultureIgnoreCase)
-        {
-            ["chinese"] = "zh-CN",
-        };
-
-        foreach ( KeyValuePair<string, Language> kvp in Languages )
-        {
-            aliases[kvp.Value.Name] = kvp.Key;
-            aliases[kvp.Value.NativeName] = kvp.Key;
-            aliases[kvp.Value.ISO6393] = kvp.Key;
-        }
-
-#if NETSTANDARD2_1_OR_GREATER || NETCOREAPP2_1_OR_GREATER
-        aliases.TrimExcess();
-#endif
-
-        return aliases;
-    }
 }

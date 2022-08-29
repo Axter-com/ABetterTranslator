@@ -21,7 +21,7 @@ public sealed class Language : ILanguage, IEquatable<Language>
     public Language(string nameOrCode)
     {
         TranslatorGuards.NotNull(nameOrCode);
-        TranslatorGuards.LanguageFound(nameOrCode, out Language? language);
+        TranslatorGuards.LanguageFound(nameOrCode, out var language);
 
         Name = language.Name;
         NativeName = language.NativeName;

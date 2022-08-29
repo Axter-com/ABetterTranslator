@@ -20,8 +20,8 @@ internal static class ReadOnlySequenceExtensions
             return new ReadOnlySequence<byte>(chunks[0]);
         }
 
-        MemorySegment<byte> start = new(chunks[0]);
-        MemorySegment<byte> end = start.Append(chunks[1]);
+        var start = new MemorySegment<byte>(chunks[0]);
+        var end = start.Append(chunks[1]);
 
         for ( int i = 2 ; i < chunks.Length ; i++ )
         {

@@ -16,7 +16,7 @@ internal static class JsonElementExtensions
         => element.ValueKind == JsonValueKind.Array ? element.EnumerateArray().LastOrDefault() : default;
 
     public static JsonElement GetPropertyOrDefault(this JsonElement element, string propertyName)
-        => element.ValueKind == JsonValueKind.Object && element.TryGetProperty(propertyName, out JsonElement value) ? value : default;
+        => element.ValueKind == JsonValueKind.Object && element.TryGetProperty(propertyName, out var value) ? value : default;
 
     [return: NotNullIfNotNull("defaultValue")]
     public static string? GetStringOrDefault(this JsonElement element, string? defaultValue = null)
@@ -28,14 +28,14 @@ internal static class JsonElementExtensions
     public static bool TryGetInt32(this JsonElement element, string propertyName, out int value)
     {
         value = 0;
-        JsonElement prop = element.GetPropertyOrDefault(propertyName);
+        var prop = element.GetPropertyOrDefault(propertyName);
         return prop.ValueKind == JsonValueKind.Number && prop.TryGetInt32(out value);
     }
 
     public static bool TryGetSingle(this JsonElement element, string propertyName, out float value)
     {
         value = 0;
-        JsonElement prop = element.GetPropertyOrDefault(propertyName);
+        var prop = element.GetPropertyOrDefault(propertyName);
         return prop.ValueKind == JsonValueKind.Number && prop.TryGetSingle(out value);
     }
 }

@@ -84,8 +84,8 @@ public sealed class GoogleTranslator2 : ITranslator, IDisposable
         TranslatorGuards.ObjectNotDisposed(this, _disposed);
         TranslatorGuards.NotNull(text);
         TranslatorGuards.NotNull(toLanguage);
-        TranslatorGuards.LanguageFound(toLanguage, out Language? toLang, "Unknown target language.");
-        TranslatorGuards.LanguageFound(fromLanguage, out Language? fromLang, "Unknown source language.");
+        TranslatorGuards.LanguageFound(toLanguage, out var toLang, "Unknown target language.");
+        TranslatorGuards.LanguageFound(fromLanguage, out var fromLang, "Unknown source language.");
         TranslatorGuards.LanguageSupported(this, toLang, fromLang);
 
         return await TranslateAsync(text, toLang, fromLang).ConfigureAwait(false);
@@ -101,12 +101,12 @@ public sealed class GoogleTranslator2 : ITranslator, IDisposable
         TranslatorGuards.NotNull(toLanguage);
         TranslatorGuards.LanguageSupported(this, toLanguage, fromLanguage);
 
-        string payload = $"[[\"{JsonEncodedText.Encode(text)}\",\"{fromLanguage?.ISO6391 ?? "auto"}\",\"{toLanguage.ISO6391}\",true],[null]]";
+        string payload = $"[[\"{text.AsSpan().SafeJsonTextEncode()}\",\"{fromLanguage?.ISO6391 ?? "auto"}\",\"{toLanguage.ISO6391}\",true],[null]]";
 
-        using HttpRequestMessage request = BuildRequest(_translateRpcId, payload);
-        using JsonDocument document = await SendAndParseResponseAsync(request).ConfigureAwait(false);
+        using var request = BuildRequest(_translateRpcId, payload);
+        using var document = await SendAndParseResponseAsync(request).ConfigureAwait(false);
 
-        JsonElement root = document.RootElement;
+        var root = document.RootElement;
 
         string target = root[1][1].GetString() ?? toLanguage.ISO6391;
         string source = root[1][3].GetString() ?? string.Empty;
@@ -118,7 +118,7 @@ public sealed class GoogleTranslator2 : ITranslator, IDisposable
         }
 
         string translation;
-        JsonElement chunks = root[1][0][0]
+        var chunks = root[1][0][0]
             .EnumerateArray()
             .FirstOrDefault(x => x.ValueKind == JsonValueKind.Array);
 
@@ -166,8 +166,8 @@ public sealed class GoogleTranslator2 : ITranslator, IDisposable
         TranslatorGuards.ObjectNotDisposed(this, _disposed);
         TranslatorGuards.NotNull(text);
         TranslatorGuards.NotNull(toLanguage);
-        TranslatorGuards.LanguageFound(toLanguage, out Language? toLang, "Unknown target language.");
-        TranslatorGuards.LanguageFound(fromLanguage, out Language? fromLang, "Unknown source language.");
+        TranslatorGuards.LanguageFound(toLanguage, out var toLang, "Unknown target language.");
+        TranslatorGuards.LanguageFound(fromLanguage, out var fromLang, "Unknown source language.");
         TranslatorGuards.LanguageSupported(this, toLang, fromLang);
 
         return await TransliterateAsync(text, toLang, fromLang).ConfigureAwait(false);
@@ -181,7 +181,7 @@ public sealed class GoogleTranslator2 : ITranslator, IDisposable
         TranslatorGuards.NotNull(toLanguage);
         TranslatorGuards.LanguageSupported(this, toLanguage, fromLanguage);
 
-        GoogleTranslationResult result = await TranslateAsync(text, toLanguage, fromLanguage).ConfigureAwait(false);
+        var result = await TranslateAsync(text, toLanguage, fromLanguage).ConfigureAwait(false);
         if ( string.IsNullOrEmpty(result.Transliteration) )
         {
             throw new TranslatorException("Failed to get the transliteration.", Name);
@@ -202,7 +202,7 @@ public sealed class GoogleTranslator2 : ITranslator, IDisposable
     {
         TranslatorGuards.NotNull(text);
 
-        GoogleTranslationResult result = await TranslateAsync(text, "en").ConfigureAwait(false);
+        var result = await TranslateAsync(text, "en").ConfigureAwait(false);
         if ( result.SourceLanguage is null )
         {
             throw new TranslatorException("Failed to get the detected language.", Name);
@@ -227,7 +227,7 @@ public sealed class GoogleTranslator2 : ITranslator, IDisposable
         TranslatorGuards.ObjectNotDisposed(this, _disposed);
         TranslatorGuards.NotNull(text);
         TranslatorGuards.NotNull(language);
-        TranslatorGuards.LanguageFound(language, out Language? lang);
+        TranslatorGuards.LanguageFound(language, out var lang);
 
         return await TextToSpeechAsync(text, lang, slow).ConfigureAwait(false);
     }
@@ -240,18 +240,19 @@ public sealed class GoogleTranslator2 : ITranslator, IDisposable
         TranslatorGuards.NotNull(language);
         EnsureValidTTSLanguage(language);
 
-        IEnumerable<Task<ReadOnlyMemory<byte>>> tasks = text.SplitWithoutWordBreaking().Select(ProcessRequestAsync);
+        var tasks = text.SplitWithoutWordBreaking().Select(ProcessRequestAsync);
 
         // Send requests and parse responses in parallel
-        ReadOnlyMemory<byte>[] chunks = await Task.WhenAll(tasks).ConfigureAwait(false);
+        var chunks = await Task.WhenAll(tasks).ConfigureAwait(false);
 
         return chunks.AsReadOnlySequence().AsStream();
 
         async Task<ReadOnlyMemory<byte>> ProcessRequestAsync(ReadOnlyMemory<char> textChunk)
         {
-            string payload = $"[\"{JsonEncodedText.Encode(textChunk.Span)}\",\"{language.ISO6391}\",{(slow ? "true" : "null")},\"null\"]";
-            using HttpRequestMessage request = BuildRequest(_ttsRpcId, payload);
-            using JsonDocument document = await SendAndParseResponseAsync(request).ConfigureAwait(false);
+            string payload = $"[\"{textChunk.Span.SafeJsonTextEncode()}\",\"{language.ISO6391}\",{(slow ? "true" : "null")},\"null\"]";
+
+            using var request = BuildRequest(_ttsRpcId, payload);
+            using var document = await SendAndParseResponseAsync(request).ConfigureAwait(false);
 
             return document.RootElement[0].GetBytesFromBase64();
         }
@@ -266,7 +267,7 @@ public sealed class GoogleTranslator2 : ITranslator, IDisposable
     {
         TranslatorGuards.NotNull(language);
 
-        return Language.TryGetLanguage(language, out Language? lang) && IsLanguageSupported(lang);
+        return Language.TryGetLanguage(language, out var lang) && IsLanguageSupported(lang);
     }
 
     /// <inheritdoc cref="IsLanguageSupported(string)"/>
@@ -337,15 +338,15 @@ public sealed class GoogleTranslator2 : ITranslator, IDisposable
 
     private async Task<JsonDocument> SendAndParseResponseAsync(HttpRequestMessage request)
     {
-        using HttpResponseMessage response = await _httpClient.SendAsync(request).ConfigureAwait(false);
+        using var response = await _httpClient.SendAsync(request).ConfigureAwait(false);
 
-        using Stream stream = await response.Content.ReadAsStreamAsync().ConfigureAwait(false);
+        using var stream = await response.Content.ReadAsStreamAsync().ConfigureAwait(false);
         JsonDocument document;
 
         // skip magic chars
         if ( stream.CanSeek )
         {
-            _ = stream.Seek(6, SeekOrigin.Begin);
+            stream.Seek(6, SeekOrigin.Begin);
             document = await JsonDocument.ParseAsync(stream).ConfigureAwait(false);
         }
         else
@@ -354,9 +355,17 @@ public sealed class GoogleTranslator2 : ITranslator, IDisposable
             document = JsonDocument.Parse(bytes.AsMemory(6, bytes.Length - 6));
         }
 
+        string data;
+
+        try
+        {
         // get the actual data
-        string data = document.RootElement[0][2].GetString() ?? throw new TranslatorException("Unable to get the data from the response.", Name);
+            data = document.RootElement[0][2].GetString() ?? throw new TranslatorException("Unable to get the data from the response.", Name);
+        }
+        finally
+        {
         document.Dispose();
+        }
 
         return JsonDocument.Parse(data);
     }

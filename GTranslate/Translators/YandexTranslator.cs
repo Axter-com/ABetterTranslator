@@ -81,8 +81,8 @@ public sealed class YandexTranslator : ITranslator, IDisposable
         TranslatorGuards.ObjectNotDisposed(this, _disposed);
         TranslatorGuards.NotNull(text);
         TranslatorGuards.NotNull(toLanguage);
-        TranslatorGuards.LanguageFound(toLanguage, out Language? toLang, "Unknown target language.");
-        TranslatorGuards.LanguageFound(fromLanguage, out Language? fromLang, "Unknown source language.");
+        TranslatorGuards.LanguageFound(toLanguage, out var toLang, "Unknown target language.");
+        TranslatorGuards.LanguageFound(fromLanguage, out var fromLang, "Unknown source language.");
         TranslatorGuards.LanguageSupported(this, toLang, fromLang);
 
         return await TranslateAsync(text, toLang, fromLang).ConfigureAwait(false);
@@ -100,21 +100,21 @@ public sealed class YandexTranslator : ITranslator, IDisposable
                        "&srv=android" +
                        "&format=text";
 
-        Dictionary<string, string> data = new()
+        var data = new Dictionary<string, string>
         {
             { "text", text },
             { "lang", fromLanguage == null ? YandexHotPatch(toLanguage.ISO6391) : $"{YandexHotPatch(fromLanguage.ISO6391)}-{YandexHotPatch(toLanguage.ISO6391)}" }
         };
 
-        using FormUrlEncodedContent content = new(data);
-        using HttpResponseMessage response = await _httpClient.PostAsync(new Uri($"{_apiUrl}/translate{query}"), content).ConfigureAwait(false);
-        using Stream stream = await response.Content.ReadAsStreamAsync().ConfigureAwait(false);
+        using var content = new FormUrlEncodedContent(data);
+        using var response = await _httpClient.PostAsync(new Uri($"{_apiUrl}/translate{query}"), content).ConfigureAwait(false);
+        using var stream = await response.Content.ReadAsStreamAsync().ConfigureAwait(false);
 
-        using JsonDocument document = await JsonDocument.ParseAsync(stream).ConfigureAwait(false);
+        using var document = await JsonDocument.ParseAsync(stream).ConfigureAwait(false);
 
         ThrowIfStatusCodeIsPresent(document.RootElement);
 
-        JsonElement textProp = document.RootElement.GetProperty("text");
+        var textProp = document.RootElement.GetProperty("text");
         if ( textProp.ValueKind != JsonValueKind.Array )
         {
             throw new TranslatorException("Failed to get the translated text.", Name);
@@ -153,8 +153,8 @@ public sealed class YandexTranslator : ITranslator, IDisposable
         TranslatorGuards.ObjectNotDisposed(this, _disposed);
         TranslatorGuards.NotNull(text);
         TranslatorGuards.NotNull(toLanguage);
-        TranslatorGuards.LanguageFound(toLanguage, out Language? toLang, "Unknown target language.");
-        TranslatorGuards.LanguageFound(fromLanguage, out Language? fromLang, "Unknown source language.");
+        TranslatorGuards.LanguageFound(toLanguage, out var toLang, "Unknown target language.");
+        TranslatorGuards.LanguageFound(fromLanguage, out var fromLang, "Unknown source language.");
         TranslatorGuards.LanguageSupported(this, toLang, fromLang);
 
         return await TransliterateAsync(text, toLang, fromLang).ConfigureAwait(false);
@@ -171,14 +171,14 @@ public sealed class YandexTranslator : ITranslator, IDisposable
         // It seems like the source language is required for transliterations
         fromLanguage ??= await DetectLanguageAsync(text).ConfigureAwait(false);
 
-        Dictionary<string, string> data = new()
+        var data = new Dictionary<string, string>
         {
             { "text", text },
             { "lang", $"{YandexHotPatch(fromLanguage.ISO6391)}-{YandexHotPatch(toLanguage.ISO6391)}" }
         };
 
-        using FormUrlEncodedContent content = new(data);
-        using HttpResponseMessage response = await _httpClient.PostAsync(_transliterationApiUri, content).ConfigureAwait(false);
+        using var content = new FormUrlEncodedContent(data);
+        using var response = await _httpClient.PostAsync(_transliterationApiUri, content).ConfigureAwait(false);
         string result = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
 
         if ( response.StatusCode == HttpStatusCode.BadRequest )
@@ -186,9 +186,9 @@ public sealed class YandexTranslator : ITranslator, IDisposable
             throw new TranslatorException(result, Name);
         }
 
-        _ = response.EnsureSuccessStatusCode();
-        Language target = Language.GetLanguage(toLanguage.ISO6391);
-        Language source = Language.GetLanguage(fromLanguage.ISO6391);
+        response.EnsureSuccessStatusCode();
+        var target = Language.GetLanguage(toLanguage.ISO6391);
+        var source = Language.GetLanguage(fromLanguage.ISO6391);
 
         return new YandexTransliterationResult(JsonSerializer.Deserialize<string>(result)!, text, target, source);
     }
@@ -210,29 +210,29 @@ public sealed class YandexTranslator : ITranslator, IDisposable
                        "&srv=android" +
                        "&format=text";
 
-        Dictionary<string, string> data = new()
+        var data = new Dictionary<string, string>
         {
             { "text", text },
             { "hint", "en" }
         };
 
-        using FormUrlEncodedContent content = new(data);
-        using HttpRequestMessage request = new()
+        using var content = new FormUrlEncodedContent(data);
+        using var request = new HttpRequestMessage
         {
             Method = HttpMethod.Get,
             RequestUri = new Uri($"{_apiUrl}/detect{query}"),
             Content = content
         };
 
-        using HttpResponseMessage response = await _httpClient.SendAsync(request).ConfigureAwait(false);
-        Stream stream = await response.Content.ReadAsStreamAsync().ConfigureAwait(false);
+        using var response = await _httpClient.SendAsync(request).ConfigureAwait(false);
+        var stream = await response.Content.ReadAsStreamAsync().ConfigureAwait(false);
 
-        using JsonDocument document = await JsonDocument.ParseAsync(stream).ConfigureAwait(false);
+        using var document = await JsonDocument.ParseAsync(stream).ConfigureAwait(false);
 
         ThrowIfStatusCodeIsPresent(document.RootElement);
 
         string? language = document.RootElement.GetProperty("lang").GetString();
-        if ( language is null || !Language.TryGetLanguage(language, out Language? lang) )
+        if (language is null || !Language.TryGetLanguage(language, out var lang))
         {
             throw new TranslatorException("Failed to get the detected language.", Name);
         }
@@ -256,7 +256,7 @@ public sealed class YandexTranslator : ITranslator, IDisposable
         TranslatorGuards.ObjectNotDisposed(this, _disposed);
         TranslatorGuards.NotNull(text);
         TranslatorGuards.NotNull(language);
-        TranslatorGuards.LanguageFound(language, out Language? lang);
+        TranslatorGuards.LanguageFound(language, out var lang);
         EnsureValidTTSLanguage(lang);
 
         return await TextToSpeechAsync(text, lang, speed).ConfigureAwait(false);
@@ -271,10 +271,10 @@ public sealed class YandexTranslator : ITranslator, IDisposable
         EnsureValidTTSLanguage(language);
 
         string url = $"https://tts.voicetech.yandex.net/tts?text={Uri.EscapeDataString(text)}&lang={YandexTTSHotPatch(language.ISO6391)}&speed={speed}&format=mp3&quality=hi&platform=android&application=translate";
-        using HttpRequestMessage request = new(HttpMethod.Get, new Uri(url));
+        using var request = new HttpRequestMessage(HttpMethod.Get, new Uri(url));
 
-        HttpResponseMessage response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false);
-        _ = response.EnsureSuccessStatusCode();
+        var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false);
+        response.EnsureSuccessStatusCode();
 
         return await response.Content.ReadAsStreamAsync().ConfigureAwait(false);
     }
@@ -288,7 +288,7 @@ public sealed class YandexTranslator : ITranslator, IDisposable
     {
         TranslatorGuards.NotNull(language);
 
-        return Language.TryGetLanguage(language, out Language? lang) && IsLanguageSupported(lang);
+        return Language.TryGetLanguage(language, out var lang) && IsLanguageSupported(lang);
     }
 
     /// <inheritdoc cref="IsLanguageSupported(string)"/>

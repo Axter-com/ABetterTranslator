@@ -13,14 +13,14 @@ internal static class StringExtensions
     public static IEnumerable<ReadOnlyMemory<char>> SplitWithoutWordBreaking(this string text, int maxLength = 200)
     {
         string[] split = text.Split(_separators, StringSplitOptions.RemoveEmptyEntries);
-        ReadOnlyMemory<char> current = string.Join(" ", split).AsMemory();
+        var current = string.Join(" ", split).AsMemory();
 
-        while ( !current.IsEmpty )
+        while (!current.IsEmpty)
         {
             int index = -1;
             int length;
 
-            if ( current.Length <= maxLength )
+            if (current.Length <= maxLength)
             {
                 length = current.Length;
             }
@@ -30,9 +30,9 @@ internal static class StringExtensions
                 length = index == -1 ? maxLength : index;
             }
 
-            ReadOnlyMemory<char> line = current.Slice(0, length);
+            var line = current.Slice(0, length);
             // skip a single space if there's one
-            if ( index != -1 )
+            if (index != -1)
             {
                 length++;
             }

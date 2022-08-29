@@ -6,7 +6,9 @@ using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
+using System.Text.Encodings.Web;
 using System.Text.Json;
+using System.Text.Unicode;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -23,6 +25,7 @@ public sealed class MicrosoftTranslator : ITranslator, IDisposable
     private const string _defaultUserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36";
     private const string _apiEndpoint = "https://api.cognitive.microsofttranslator.com";
     private const string _apiVersion = "3.0";
+    private static readonly HtmlEncoder _ssmlEncoder = HtmlEncoder.Create(UnicodeRanges.All); // Like the default encoder but only encodes required characters
 
     /// <inheritdoc/>
     public string Name => nameof(MicrosoftTranslator);
@@ -168,8 +171,8 @@ public sealed class MicrosoftTranslator : ITranslator, IDisposable
         TranslatorGuards.ObjectNotDisposed(this, _disposed);
         TranslatorGuards.NotNull(text);
         TranslatorGuards.NotNull(toLanguage);
-        TranslatorGuards.LanguageFound(toLanguage, out Language? toLang, "Unknown target language.");
-        TranslatorGuards.LanguageFound(fromLanguage, out Language? fromLang, "Unknown source language.");
+        TranslatorGuards.LanguageFound(toLanguage, out var toLang, "Unknown target language.");
+        TranslatorGuards.LanguageFound(fromLanguage, out var fromLang, "Unknown source language.");
         TranslatorGuards.LanguageSupported(this, toLang, fromLang);
 
         return await TranslateAsync(text, toLang, fromLang).ConfigureAwait(false);
@@ -183,31 +186,31 @@ public sealed class MicrosoftTranslator : ITranslator, IDisposable
         TranslatorGuards.NotNull(toLanguage);
         TranslatorGuards.LanguageSupported(this, toLanguage, fromLanguage);
 
-        MicrosoftAuthTokenInfo authInfo = await GetOrUpdateMicrosoftAuthTokenAsync().ConfigureAwait(false);
+        var authInfo = await GetOrUpdateMicrosoftAuthTokenAsync().ConfigureAwait(false);
         string url = $"{_apiEndpoint}/translate?api-version={_apiVersion}&to={MicrosoftHotPatch(toLanguage.ISO6391)}";
         if ( fromLanguage is not null )
         {
             url += $"&from={MicrosoftHotPatch(fromLanguage.ISO6391)}";
         }
 
-        using HttpRequestMessage request = new()
+        using var request = new HttpRequestMessage
         {
             Method = HttpMethod.Post,
             RequestUri = new Uri(url)
         };
 
         request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", authInfo.Token);
-        request.Content = new StringContent($"[{{\"Text\":\"{JsonEncodedText.Encode(text)}\"}}]", Encoding.UTF8, "application/json");
+        request.Content = new StringContent($"[{{\"Text\":\"{text.AsSpan().SafeJsonTextEncode()}\"}}]", Encoding.UTF8, "application/json");
 
-        using HttpResponseMessage response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false);
-        _ = response.EnsureSuccessStatusCode();
+        using var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false);
+        response.EnsureSuccessStatusCode();
 
-        using Stream stream = await response.Content.ReadAsStreamAsync().ConfigureAwait(false);
-        using JsonDocument document = await JsonDocument.ParseAsync(stream).ConfigureAwait(false);
+        using var stream = await response.Content.ReadAsStreamAsync().ConfigureAwait(false);
+        using var document = await JsonDocument.ParseAsync(stream).ConfigureAwait(false);
 
-        JsonElement root = document.RootElement[0];
+        var root = document.RootElement[0];
 
-        JsonElement detectedLanguage = root.GetPropertyOrDefault("detectedLanguage");
+        var detectedLanguage = root.GetPropertyOrDefault("detectedLanguage");
         string sourceLanguage = detectedLanguage
             .GetPropertyOrDefault("language")
             .GetStringOrDefault(fromLanguage?.ISO6391) ?? throw new TranslatorException("Failed to get the source language.", Name);
@@ -237,7 +240,7 @@ public sealed class MicrosoftTranslator : ITranslator, IDisposable
         TranslatorGuards.NotNull(language);
         TranslatorGuards.NotNull(fromScript);
         TranslatorGuards.NotNull(toScript);
-        TranslatorGuards.LanguageFound(language, out Language? lang);
+        TranslatorGuards.LanguageFound(language, out var lang);
         TranslatorGuards.LanguageSupported(this, lang);
 
         return await TransliterateAsync(text, lang, fromScript, toScript).ConfigureAwait(false);
@@ -253,24 +256,24 @@ public sealed class MicrosoftTranslator : ITranslator, IDisposable
         TranslatorGuards.NotNull(toScript);
         EnsureValidScripts(language.ISO6391, fromScript, toScript);
 
-        MicrosoftAuthTokenInfo authInfo = await GetOrUpdateMicrosoftAuthTokenAsync().ConfigureAwait(false);
+        var authInfo = await GetOrUpdateMicrosoftAuthTokenAsync().ConfigureAwait(false);
 
-        using HttpRequestMessage request = new()
+        using var request = new HttpRequestMessage
         {
             Method = HttpMethod.Post,
             RequestUri = new Uri($"{_apiEndpoint}/transliterate?api-version={_apiVersion}&language={MicrosoftHotPatch(language.ISO6391)}&fromScript={fromScript}&toScript={toScript}")
         };
 
         request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", authInfo.Token);
-        request.Content = new StringContent($"[{{\"Text\":\"{JsonEncodedText.Encode(text)}\"}}]", Encoding.UTF8, "application/json");
+        request.Content = new StringContent($"[{{\"Text\":\"{text.AsSpan().SafeJsonTextEncode()}\"}}]", Encoding.UTF8, "application/json");
 
-        using HttpResponseMessage response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false);
-        _ = response.EnsureSuccessStatusCode();
+        using var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false);
+        response.EnsureSuccessStatusCode();
 
-        using Stream stream = await response.Content.ReadAsStreamAsync().ConfigureAwait(false);
-        using JsonDocument document = await JsonDocument.ParseAsync(stream).ConfigureAwait(false);
+        using var stream = await response.Content.ReadAsStreamAsync().ConfigureAwait(false);
+        using var document = await JsonDocument.ParseAsync(stream).ConfigureAwait(false);
 
-        JsonElement root = document.RootElement[0];
+        var root = document.RootElement[0];
         string transliteration = root.GetProperty("text").GetString() ?? throw new TranslatorException("Failed to get the transliteration.", Name);
         string script = root.GetProperty("script").GetString() ?? throw new TranslatorException("Failed to get the output script", Name);
 
@@ -290,22 +293,22 @@ public sealed class MicrosoftTranslator : ITranslator, IDisposable
         TranslatorGuards.ObjectNotDisposed(this, _disposed);
         TranslatorGuards.NotNull(text);
 
-        MicrosoftAuthTokenInfo authInfo = await GetOrUpdateMicrosoftAuthTokenAsync().ConfigureAwait(false);
+        var authInfo = await GetOrUpdateMicrosoftAuthTokenAsync().ConfigureAwait(false);
 
-        using HttpRequestMessage request = new()
+        using var request = new HttpRequestMessage
         {
             Method = HttpMethod.Post,
             RequestUri = new Uri($"{_apiEndpoint}/detect?api-version={_apiVersion}")
         };
 
         request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", authInfo.Token);
-        request.Content = new StringContent($"[{{\"Text\":\"{JsonEncodedText.Encode(text)}\"}}]", Encoding.UTF8, "application/json");
+        request.Content = new StringContent($"[{{\"Text\":\"{text.AsSpan().SafeJsonTextEncode()}\"}}]", Encoding.UTF8, "application/json");
 
-        using HttpResponseMessage response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false);
-        _ = response.EnsureSuccessStatusCode();
+        using var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false);
+        response.EnsureSuccessStatusCode();
 
-        using Stream stream = await response.Content.ReadAsStreamAsync().ConfigureAwait(false);
-        using JsonDocument document = await JsonDocument.ParseAsync(stream).ConfigureAwait(false);
+        using var stream = await response.Content.ReadAsStreamAsync().ConfigureAwait(false);
+        using var document = await JsonDocument.ParseAsync(stream).ConfigureAwait(false);
 
         string language = document.RootElement[0].GetProperty("language").GetString() ?? throw new TranslatorException("Failed to get the detected language.", Name);
 
@@ -328,7 +331,7 @@ public sealed class MicrosoftTranslator : ITranslator, IDisposable
         TranslatorGuards.ObjectNotDisposed(this, _disposed);
         TranslatorGuards.NotNull(text);
         TranslatorGuards.NotNull(language);
-        EnsureValidTTSLanguage(language, out MicrosoftVoice? voice);
+        EnsureValidTTSLanguage(language, out var voice);
 
         return await TextToSpeechAsync(text, voice, speakRate).ConfigureAwait(false);
     }
@@ -350,11 +353,11 @@ public sealed class MicrosoftTranslator : ITranslator, IDisposable
         TranslatorGuards.NotNull(text);
         TranslatorGuards.NotNull(voice);
 
-        MicrosoftAuthTokenInfo authInfo = await GetOrUpdateMicrosoftAuthTokenAsync().ConfigureAwait(false);
+        var authInfo = await GetOrUpdateMicrosoftAuthTokenAsync().ConfigureAwait(false);
 
-        string payload = $"<speak version='1.0' xml:lang='{voice.Locale}'><voice xml:lang='{voice.Locale}' xml:gender='{voice.Gender}' name='{voice.ShortName}'><prosody rate='{speakRate}'>{text}</prosody></voice></speak>";
+        string payload = $"<speak version='1.0' xml:lang='{voice.Locale}'><voice xml:lang='{voice.Locale}' xml:gender='{voice.Gender}' name='{voice.ShortName}'><prosody rate='{speakRate}'>{_ssmlEncoder.Encode(text)}</prosody></voice></speak>";
 
-        using HttpRequestMessage request = new()
+        using var request = new HttpRequestMessage
         {
             Method = HttpMethod.Post,
             RequestUri = new Uri($"https://{authInfo.Region}.tts.speech.microsoft.com/cognitiveservices/v1"),
@@ -364,8 +367,8 @@ public sealed class MicrosoftTranslator : ITranslator, IDisposable
         request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", authInfo.Token);
         request.Headers.Add("X-Microsoft-OutputFormat", "audio-16khz-32kbitrate-mono-mp3");
 
-        HttpResponseMessage response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false);
-        _ = response.EnsureSuccessStatusCode();
+        var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false);
+        response.EnsureSuccessStatusCode();
 
         return await response.Content.ReadAsStreamAsync().ConfigureAwait(false);
     }
@@ -395,20 +398,20 @@ public sealed class MicrosoftTranslator : ITranslator, IDisposable
                 return _voices;
             }
 
-            MicrosoftAuthTokenInfo authInfo = await GetOrUpdateMicrosoftAuthTokenAsync().ConfigureAwait(false);
+            var authInfo = await GetOrUpdateMicrosoftAuthTokenAsync().ConfigureAwait(false);
 
-            using HttpRequestMessage request = new(HttpMethod.Get, new Uri($"https://{authInfo.Region}.tts.speech.microsoft.com/cognitiveservices/voices/list"));
+            using var request = new HttpRequestMessage(HttpMethod.Get, new Uri($"https://{authInfo.Region}.tts.speech.microsoft.com/cognitiveservices/voices/list"));
             request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", authInfo.Token);
 
-            using HttpResponseMessage response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false);
-            _ = response.EnsureSuccessStatusCode();
+            using var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false);
+            response.EnsureSuccessStatusCode();
 
-            using Stream stream = await response.Content.ReadAsStreamAsync().ConfigureAwait(false);
+            using var stream = await response.Content.ReadAsStreamAsync().ConfigureAwait(false);
             _voices = await JsonSerializer.DeserializeAsync<MicrosoftVoice[]>(stream).ConfigureAwait(false) ?? throw new TranslatorException("Failed to deserialize voice list.", Name);
         }
         finally
         {
-            _ = _voicesSemaphore.Release();
+            _voicesSemaphore.Release();
         }
 
         return _voices;
@@ -446,23 +449,23 @@ public sealed class MicrosoftTranslator : ITranslator, IDisposable
                 return _cachedAuthTokenInfo.Value;
             }
 
-            BingCredentials bingCredentials = await GetOrUpdateBingCredentialsAsync().ConfigureAwait(false);
+            var bingCredentials = await GetOrUpdateBingCredentialsAsync().ConfigureAwait(false);
 
-            Dictionary<string, string> data = new()
+            var data = new Dictionary<string, string>
             {
                 { "token", bingCredentials.Token },
                 { "key", bingCredentials.Key.ToString() }
             };
 
-            using FormUrlEncodedContent content = new(data);
-            Uri uri = new($"{BingTranslator.HostUrl}/tfetspktok?isVertical=1&IG={bingCredentials.ImpressionGuid.ToString("N").ToUpperInvariant()}&IID={BingTranslator.Iid}");
-            using HttpResponseMessage response = await _httpClient.PostAsync(uri, content).ConfigureAwait(false);
-            _ = response.EnsureSuccessStatusCode();
-            using Stream stream = await response.Content.ReadAsStreamAsync().ConfigureAwait(false);
+            using var content = new FormUrlEncodedContent(data);
+            var uri = new Uri($"{BingTranslator.HostUrl}/tfetspktok?isVertical=1&IG={bingCredentials.ImpressionGuid.ToString("N").ToUpperInvariant()}&IID={BingTranslator.Iid}");
+            using var response = await _httpClient.PostAsync(uri, content).ConfigureAwait(false);
+            response.EnsureSuccessStatusCode();
+            using var stream = await response.Content.ReadAsStreamAsync().ConfigureAwait(false);
 
             // Bing Translator always return status code 200 regardless of the content
-            using JsonDocument document = await JsonDocument.ParseAsync(stream).ConfigureAwait(false);
-            JsonElement root = document.RootElement;
+            using var document = await JsonDocument.ParseAsync(stream).ConfigureAwait(false);
+            var root = document.RootElement;
 
             TranslatorGuards.ThrowIfStatusCodeIsPresent(root);
 
@@ -472,13 +475,13 @@ public sealed class MicrosoftTranslator : ITranslator, IDisposable
             string token = root.GetProperty("token").GetString() ?? throw new TranslatorException("Unable to get the Microsoft Azure Auth token.", Name);
             string region = root.GetProperty("region").GetString() ?? throw new TranslatorException("Unable to get the Microsoft Azure API region.", Name);
 
-            MicrosoftAuthTokenInfo authInfo = new(token, region);
+            var authInfo = new MicrosoftAuthTokenInfo(token, region);
 
             _cachedAuthTokenInfo = new CachedObject<MicrosoftAuthTokenInfo>(authInfo, TimeSpan.FromMilliseconds(expiryDurationInMs));
         }
         finally
         {
-            _ = _authTokenInfoSemaphore.Release();
+            _authTokenInfoSemaphore.Release();
         }
 
         return _cachedAuthTokenInfo.Value;
@@ -493,7 +496,7 @@ public sealed class MicrosoftTranslator : ITranslator, IDisposable
     {
         TranslatorGuards.NotNull(language);
 
-        return Language.TryGetLanguage(language, out Language? lang) && IsLanguageSupported(lang);
+        return Language.TryGetLanguage(language, out var lang) && IsLanguageSupported(lang);
     }
 
     /// <inheritdoc cref="IsLanguageSupported(string)"/>
@@ -550,7 +553,7 @@ public sealed class MicrosoftTranslator : ITranslator, IDisposable
 
     private static void EnsureValidTTSLanguage(string language, out MicrosoftVoice voice)
     {
-        if ( !DefaultVoices.TryGetValue(language, out MicrosoftVoice? temp) )
+        if (!DefaultVoices.TryGetValue(language, out var temp))
         {
             throw new ArgumentException($"Unable to get the voice from language {language}.", nameof(language));
         }
@@ -560,7 +563,7 @@ public sealed class MicrosoftTranslator : ITranslator, IDisposable
 
     private static void EnsureValidScripts(string language, string fromScript, string toScript)
     {
-        if ( !Scripts.TryGetValue(language, out IReadOnlyCollection<string>? scripts) )
+        if (!Scripts.TryGetValue(language, out var scripts))
         {
             throw new ArgumentException("This language does not support transliteration.", nameof(language));
         }
@@ -622,7 +625,7 @@ public sealed class MicrosoftTranslator : ITranslator, IDisposable
         }
         finally
         {
-            _ = _credentialsSemaphore.Release();
+            _credentialsSemaphore.Release();
         }
 
         return _cachedCredentials.Value;

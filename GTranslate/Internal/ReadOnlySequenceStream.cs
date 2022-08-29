@@ -70,8 +70,8 @@ internal class ReadOnlySequenceStream : Stream
     /// <inheritdoc/>
     public override int Read(byte[] buffer, int offset, int count)
     {
-        ReadOnlySequence<byte> remaining = _readOnlySequence.Slice(_position);
-        ReadOnlySequence<byte> toCopy = remaining.Slice(0, Math.Min(count, remaining.Length));
+        var remaining = _readOnlySequence.Slice(_position);
+        var toCopy = remaining.Slice(0, Math.Min(count, remaining.Length));
         _position = toCopy.End;
         toCopy.CopyTo(buffer.AsSpan(offset, count));
         return (int) toCopy.Length;
@@ -89,7 +89,7 @@ internal class ReadOnlySequenceStream : Stream
     /// <inheritdoc/>
     public override int ReadByte()
     {
-        ReadOnlySequence<byte> remaining = _readOnlySequence.Slice(_position);
+        var remaining = _readOnlySequence.Slice(_position);
         if ( remaining.Length > 0 )
         {
             byte result = remaining.First.Span[0];
@@ -159,7 +159,7 @@ internal class ReadOnlySequenceStream : Stream
     /// <inheritdoc/>
     public override async Task CopyToAsync(Stream destination, int bufferSize, CancellationToken cancellationToken)
     {
-        foreach ( ReadOnlyMemory<byte> segment in _readOnlySequence )
+        foreach (var segment in _readOnlySequence)
         {
             await destination.WriteAsync(segment, cancellationToken).ConfigureAwait(false);
         }
@@ -168,8 +168,8 @@ internal class ReadOnlySequenceStream : Stream
     /// <inheritdoc/>
     public override int Read(Span<byte> buffer)
     {
-        ReadOnlySequence<byte> remaining = _readOnlySequence.Slice(_position);
-        ReadOnlySequence<byte> toCopy = remaining.Slice(0, Math.Min(buffer.Length, remaining.Length));
+        var remaining = _readOnlySequence.Slice(_position);
+        var toCopy = remaining.Slice(0, Math.Min(buffer.Length, remaining.Length));
         _position = toCopy.End;
         toCopy.CopyTo(buffer);
         return (int) toCopy.Length;

@@ -83,8 +83,8 @@ public sealed class GoogleTranslator : ITranslator, IDisposable
         TranslatorGuards.ObjectNotDisposed(this, _disposed);
         TranslatorGuards.NotNull(text);
         TranslatorGuards.NotNull(toLanguage);
-        TranslatorGuards.LanguageFound(toLanguage, out Language? toLang, "Unknown target language.");
-        TranslatorGuards.LanguageFound(fromLanguage, out Language? fromLang, "Unknown source language.");
+        TranslatorGuards.LanguageFound(toLanguage, out var toLang, "Unknown target language.");
+        TranslatorGuards.LanguageFound(fromLanguage, out var fromLang, "Unknown source language.");
         TranslatorGuards.LanguageSupported(this, toLang, fromLang);
 
         return await TranslateAsync(text, toLang, fromLang).ConfigureAwait(false);
@@ -107,46 +107,29 @@ public sealed class GoogleTranslator : ITranslator, IDisposable
                        "&source=input" +
                        $"&tk={MakeToken(text.AsSpan())}";
 
-        using FormUrlEncodedContent content = new(new KeyValuePair<string, string>[] { new("q", text) });
-        using HttpRequestMessage request = new()
+        using var content = new FormUrlEncodedContent(new KeyValuePair<string, string>[] { new("q", text) });
+        using var request = new HttpRequestMessage
         {
             Method = HttpMethod.Post,
             RequestUri = new Uri($"{_apiEndpoint}{query}"),
             Content = content
         };
 
-        string translation = "";
-        string transliteration = "";
-        string source = "";
-        float? confidence = null;
-        bool doThrowException = false;
+        using var response = await _httpClient.SendAsync(request).ConfigureAwait(false);
+        response.EnsureSuccessStatusCode();
+        using var stream = await response.Content.ReadAsStreamAsync().ConfigureAwait(false);
+        using var document = await JsonDocument.ParseAsync(stream).ConfigureAwait(false);
 
-        try
-        {
-            using HttpResponseMessage response = await _httpClient.SendAsync(request).ConfigureAwait(false);
-            _ = response.EnsureSuccessStatusCode();
-            using Stream stream = await response.Content.ReadAsStreamAsync().ConfigureAwait(false);
-            using JsonDocument document = await JsonDocument.ParseAsync(stream).ConfigureAwait(false);
-            JsonElement sentences = document.RootElement.GetProperty("sentences");
-            if ( sentences.ValueKind == JsonValueKind.Array )
-            {
-                translation = string.Concat(sentences.EnumerateArray().Select(x => x.GetProperty("trans").GetString()));
-                transliteration = string.Concat(sentences.EnumerateArray().Select(x => x.GetPropertyOrDefault("translit").GetStringOrDefault()));
-                source = document.RootElement.GetProperty("src").GetString() ?? string.Empty;
-                confidence = document.RootElement.TryGetSingle("confidence", out float temp) ? temp : null;
-            }
-            else
-                doThrowException = true;
-        }
-        catch( HttpRequestException e )
-        {
-            throw new TranslatorException($"Translator ({Name}) threw exception;toLanguage={toLanguage.ToString()};ErrMsg={e.Message}", Name, e);
-        }
-
-        if ( doThrowException )
+        var sentences = document.RootElement.GetProperty("sentences");
+        if (sentences.ValueKind != JsonValueKind.Array)
         {
             throw new TranslatorException("Failed to get the translated text.", Name);
         }
+
+        string translation = string.Concat(sentences.EnumerateArray().Select(x => x.GetProperty("trans").GetString()));
+        string transliteration = string.Concat(sentences.EnumerateArray().Select(x => x.GetPropertyOrDefault("translit").GetStringOrDefault()));
+        string source = document.RootElement.GetProperty("src").GetString() ?? string.Empty;
+        float? confidence = document.RootElement.TryGetSingle("confidence", out float temp) ? temp : null;
 
         return new GoogleTranslationResult(translation, text, Language.GetLanguage(toLanguage.ISO6391), Language.GetLanguage(source), transliteration, confidence);
     }
@@ -169,8 +152,8 @@ public sealed class GoogleTranslator : ITranslator, IDisposable
         TranslatorGuards.ObjectNotDisposed(this, _disposed);
         TranslatorGuards.NotNull(text);
         TranslatorGuards.NotNull(toLanguage);
-        TranslatorGuards.LanguageFound(toLanguage, out Language? toLang, "Unknown target language.");
-        TranslatorGuards.LanguageFound(fromLanguage, out Language? fromLang, "Unknown source language.");
+        TranslatorGuards.LanguageFound(toLanguage, out var toLang, "Unknown target language.");
+        TranslatorGuards.LanguageFound(fromLanguage, out var fromLang, "Unknown source language.");
         TranslatorGuards.LanguageSupported(this, toLang, fromLang);
 
         return await TransliterateAsync(text, toLang, fromLang).ConfigureAwait(false);
@@ -184,7 +167,7 @@ public sealed class GoogleTranslator : ITranslator, IDisposable
         TranslatorGuards.NotNull(toLanguage);
         TranslatorGuards.LanguageSupported(this, toLanguage, fromLanguage);
 
-        GoogleTranslationResult result = await TranslateAsync(text, toLanguage, fromLanguage).ConfigureAwait(false);
+        var result = await TranslateAsync(text, toLanguage, fromLanguage).ConfigureAwait(false);
         if ( string.IsNullOrEmpty(result.Transliteration) )
         {
             throw new TranslatorException("Failed to get the transliteration.", Name);
@@ -205,7 +188,7 @@ public sealed class GoogleTranslator : ITranslator, IDisposable
     {
         TranslatorGuards.NotNull(text);
 
-        GoogleTranslationResult result = await TranslateAsync(text, "en").ConfigureAwait(false);
+        var result = await TranslateAsync(text, "en").ConfigureAwait(false);
         if ( result.SourceLanguage is null )
         {
             throw new TranslatorException("Failed to get the detected language.", Name);
@@ -230,7 +213,7 @@ public sealed class GoogleTranslator : ITranslator, IDisposable
         TranslatorGuards.ObjectNotDisposed(this, _disposed);
         TranslatorGuards.NotNull(text);
         TranslatorGuards.NotNull(language);
-        TranslatorGuards.LanguageFound(language, out Language? lang);
+        TranslatorGuards.LanguageFound(language, out var lang);
 
         return await TextToSpeechAsync(text, lang, speed).ConfigureAwait(false);
     }
@@ -243,15 +226,15 @@ public sealed class GoogleTranslator : ITranslator, IDisposable
         TranslatorGuards.NotNull(language);
         EnsureValidTTSLanguage(language);
 
-        ReadOnlyMemory<char>[] textParts = text.SplitWithoutWordBreaking().ToArray();
-        Task<ReadOnlyMemory<byte>>[] tasks = new Task<ReadOnlyMemory<byte>>[textParts.Length];
-        for ( int i = 0 ; i < textParts.Length ; i++ )
+        var textParts = text.SplitWithoutWordBreaking().ToArray();
+        var tasks = new Task<ReadOnlyMemory<byte>>[textParts.Length];
+        for (var i = 0; i < textParts.Length; i++)
         {
             tasks[i] = ProcessRequestAsync(textParts[i], i, textParts.Length);
         }
 
         // Send requests and parse responses in parallel
-        ReadOnlyMemory<byte>[] chunks = await Task.WhenAll(tasks).ConfigureAwait(false);
+        var chunks = await Task.WhenAll(tasks).ConfigureAwait(false);
 
         return chunks.AsReadOnlySequence().AsStream();
 
@@ -274,7 +257,7 @@ public sealed class GoogleTranslator : ITranslator, IDisposable
     {
         TranslatorGuards.NotNull(language);
 
-        return Language.TryGetLanguage(language, out Language? lang) && IsLanguageSupported(lang);
+        return Language.TryGetLanguage(language, out var lang) && IsLanguageSupported(lang);
     }
 
     /// <inheritdoc cref="IsLanguageSupported(string)"/>

@@ -87,9 +87,9 @@ public sealed class AggregateTranslator : ITranslator, IDisposable
         TranslatorGuards.LanguageSupported(this, toLanguage, fromLanguage);
 
         List<Exception> exceptions = null!;
-        foreach ( ITranslator translator in _translators )
+        foreach (var translator in _translators)
         {
-            if ( !translator.IsLanguageSupported(toLanguage) || (fromLanguage != null && !translator.IsLanguageSupported(fromLanguage) ))
+            if (!translator.IsLanguageSupported(toLanguage) || fromLanguage != null && !translator.IsLanguageSupported(fromLanguage))
             {
                 continue;
             }
@@ -125,7 +125,7 @@ public sealed class AggregateTranslator : ITranslator, IDisposable
         TranslatorGuards.LanguageSupported(this, toLanguage, fromLanguage);
 
         List<Exception> exceptions = null!;
-        foreach ( ITranslator translator in _translators )
+        foreach (var translator in _translators)
         {
             if ( !translator.IsLanguageSupported(toLanguage) || fromLanguage != null && !translator.IsLanguageSupported(fromLanguage) )
             {
@@ -164,8 +164,8 @@ public sealed class AggregateTranslator : ITranslator, IDisposable
         TranslatorGuards.ObjectNotDisposed(this, _disposed);
         TranslatorGuards.NotNull(text);
         TranslatorGuards.NotNull(toLanguage);
-        TranslatorGuards.LanguageFound(toLanguage, out Language? toLang, "Unknown target language.");
-        TranslatorGuards.LanguageFound(fromLanguage, out Language? fromLang, "Unknown source language.");
+        TranslatorGuards.LanguageFound(toLanguage, out var toLang, "Unknown target language.");
+        TranslatorGuards.LanguageFound(fromLanguage, out var fromLang, "Unknown source language.");
 
         return await TransliterateAsync(text, toLang, fromLang).ConfigureAwait(false);
     }
@@ -179,7 +179,7 @@ public sealed class AggregateTranslator : ITranslator, IDisposable
         TranslatorGuards.LanguageSupported(this, toLanguage, fromLanguage);
 
         List<Exception> exceptions = null!;
-        foreach ( ITranslator translator in _translators )
+        foreach (var translator in _translators)
         {
             if ( !translator.IsLanguageSupported(toLanguage) || fromLanguage != null && !translator.IsLanguageSupported(fromLanguage) )
             {
@@ -215,7 +215,7 @@ public sealed class AggregateTranslator : ITranslator, IDisposable
         TranslatorGuards.NotNull(text);
 
         List<Exception> exceptions = null!;
-        foreach ( ITranslator translator in _translators )
+        foreach (var translator in _translators)
         {
             try
             {
@@ -238,7 +238,7 @@ public sealed class AggregateTranslator : ITranslator, IDisposable
     /// <returns><see langword="true"/> if the language is supported by at least one translator, otherwise <see langword="false"/>.</returns>
     public bool IsLanguageSupported(string language)
     {
-        foreach ( ITranslator translator in _translators )
+        foreach (var translator in _translators)
         {
             if ( translator.IsLanguageSupported(language) )
             {
@@ -252,7 +252,7 @@ public sealed class AggregateTranslator : ITranslator, IDisposable
     /// <inheritdoc cref="IsLanguageSupported(string)"/>
     public bool IsLanguageSupported(ILanguage language)
     {
-        foreach ( ITranslator translator in _translators )
+        foreach (var translator in _translators)
         {
             if ( translator.IsLanguageSupported(language) )
             {
@@ -280,7 +280,7 @@ public sealed class AggregateTranslator : ITranslator, IDisposable
             return;
         }
 
-        foreach ( ITranslator translator in _translators )
+        foreach (var translator in _translators)
         {
             (translator as IDisposable)?.Dispose();
         }
