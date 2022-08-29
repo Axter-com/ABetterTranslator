@@ -410,11 +410,27 @@ namespace ABetterTranslator
                 string ISO6391 = language.Value.ISO6391;
                 string ISO6393 = language.Value.ISO6393;
                 string NativeName = language.Value.NativeName;
-                if ( LanguageCodes.LanguagesTagsWithIssues.Contains(code) )
+                if ( LanguageCodes.LanguagesTagsWithIssues.Contains(ISO6391) )
                     continue;
                 file.WriteLine($"* **{name}** - {code}:{ISO6391}  [{translator}]");
             }
             file.Close();
+            string TextFileName = "E:\\Repos\\ABetterTranslator\\ABetterTranslator\\Docs\\SupportedLanguages\\LanguagesNotReconginzedInResxFiles.md";
+            using StreamWriter file2 = new(TextFileName, append: false);
+            file2.WriteLine("# Languages With Issues in Resx File\r\n");
+            foreach ( KeyValuePair<string, GTranslate.Language> language in SortedLanguageNames )
+            {
+                string code = language.Key;
+                string name = language.Value.Name;
+                string translator = language.Value.SupportedServices.ToString();
+                string ISO6391 = language.Value.ISO6391;
+                string ISO6393 = language.Value.ISO6393;
+                string NativeName = language.Value.NativeName;
+                if ( !LanguageCodes.LanguageTagsNotRecongnizedByCompiler.Contains(ISO6391) )
+                    continue;
+                file2.WriteLine($"* **{name}** - {code}:{ISO6391}  [{translator}]");
+            }
+            file2.Close();
             System.Collections.Generic.SortedList<string, GTranslate.Language> ISO6391SortedLanguages = new();
             Dictionary<string,bool> LanguagesThatNeedToBeChecked = new();
             foreach ( var language in GTranslate_LangLookup )

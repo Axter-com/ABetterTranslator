@@ -291,6 +291,8 @@ public sealed class LanguageDictionary : ILanguageDictionary<string, Language>
         ["zu"] = new("Zulu", "Isi-Zulu", "zu", "zul"),
 
     // ToDo: Delete or move the below entries after testing
+    //["xx"] = new("xxxx", "xxxx", "xx", "xxx",                                 TranslationServices.Google),
+    //["syr"] = new("Syriac", "leššānā Suryāyā", "syr", "syr",                                 TranslationServices.Google),
     //["chr-CHER-US"] = new("Cherokee", "Cherokee", "chr-CHER-US", "chr-CHER-US",                                 TranslationServices.Google),
     //["chr"] = new("Cherokee", "Cherokee", "chr", "chr", TranslationServices.Bing | TranslationServices.Microsoft),
     //["kok"] = new("Konkani (India)", "Konkani (India)", "kok", "kok",           TranslationServices.Yandex),

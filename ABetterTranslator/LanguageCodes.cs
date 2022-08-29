@@ -522,5 +522,10 @@ namespace ABetterTranslator
             "foofoo",
             //"ay", "bho", "cv", "dgo", "emj", "fj", "hmn", "ht", "ikt", "ilo", "kazlat", "kmr", "lzh", "mhr", "mrj", "mww", "ny", "otq", "qu", "sjn", "sm", "tlh", "tw", "ty", "udm", "uzbcyr", "yua", "yue"
         };
+
+        // ToDo: Delete the following variable after troubleshooting issues.
+        public static readonly string[] LanguageTagsNotRecongnizedByCompiler = {
+           "ay", "bho", "cv", "dgo", "emj", "fj", "hmn", "ht", "ikt", "ilo", "kazlat", "kmr", "lzh", "mhr", "mrj", "mww", "ny", "otq", "qu", "sjn", "sm", "tlh", "tw", "ty", "udm", "uzbcyr", "yua", "yue"
+        };
     }
 }
