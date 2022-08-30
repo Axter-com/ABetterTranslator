@@ -280,4 +280,22 @@
   <data name="TranslateOrangeCircle__512_x_512_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\TranslateOrangeCircle_(512_x_512).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="OpenFile__16_x_16_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\OpenFile_(16_x_16).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpenFile__32_x_32_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\OpenFile_(32_x_32).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SaveAll__16_x_16_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\SaveAll_(16_x_16).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SaveAll__32_x_32_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\SaveAll_(32_x_32).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Save__16_x_16_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Save_(16_x_16).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Save__32_x_32_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Save_(32_x_32).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

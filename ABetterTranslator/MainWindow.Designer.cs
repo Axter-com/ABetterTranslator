@@ -122,6 +122,15 @@ namespace ABetterTranslator
             this.logBox = new System.Windows.Forms.RichTextBox();
             this.statusLabel = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripSplitButtonLoad = new System.Windows.Forms.ToolStripSplitButton();
+            this.toolStripMenuItemLoadFile = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemOpenResx = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemOpenAll = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemLoadAndReplaceLanguageSet = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSplitButtonSave = new System.Windows.Forms.ToolStripSplitButton();
+            this.toolStripSplitButtonSaveSave = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSplitButtonSaveAs = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSplitButtonSaveAll = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSplitButtonTranslate = new System.Windows.Forms.ToolStripSplitButton();
             this.toolStripMenuItemTranslateAllLanguages = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemWindowsSupportedLanguages = new System.Windows.Forms.ToolStripMenuItem();
@@ -172,6 +181,10 @@ namespace ABetterTranslator
             this.miniToolStrip = new System.Windows.Forms.ToolStrip();
             this.tabs = new System.Windows.Forms.TabControl();
             this.openFileDialogTextFile = new System.Windows.Forms.OpenFileDialog();
+            this.openFileDialogProjectFile = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialogForProjectFile = new System.Windows.Forms.SaveFileDialog();
+            this.saveFileDialogSelectedLanguages = new System.Windows.Forms.SaveFileDialog();
+            this.openFileDialogSelectedLanguages = new System.Windows.Forms.OpenFileDialog();
             this.groupBoxItemsPerTransaltionRequest.SuspendLayout();
             this.groupBoxAddOriginalSrcTextToComment.SuspendLayout();
             this.groupBoxDefaultLanguageSet.SuspendLayout();
@@ -870,12 +883,87 @@ namespace ABetterTranslator
             // 
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripSplitButtonLoad,
+            this.toolStripSplitButtonSave,
             this.toolStripSplitButtonTranslate,
             this.toolStripSplitButtonSelectAllLanugages,
             this.toolStripSplitButtonResetDisplayToSet,
             this.toolStripButtonStopTranslation});
             resources.ApplyResources(this.toolStrip1, "toolStrip1");
             this.toolStrip1.Name = "toolStrip1";
+            // 
+            // toolStripSplitButtonLoad
+            // 
+            this.toolStripSplitButtonLoad.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripSplitButtonLoad.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItemLoadFile,
+            this.toolStripMenuItemOpenResx,
+            this.toolStripMenuItemOpenAll,
+            this.toolStripMenuItemLoadAndReplaceLanguageSet});
+            this.toolStripSplitButtonLoad.Image = global::ABetterTranslator.Properties.Resources.OpenFile__32_x_32_;
+            resources.ApplyResources(this.toolStripSplitButtonLoad, "toolStripSplitButtonLoad");
+            this.toolStripSplitButtonLoad.Name = "toolStripSplitButtonLoad";
+            this.toolStripSplitButtonLoad.ButtonClick += new System.EventHandler(this.toolStripSplitButtonLoad_ButtonClick);
+            // 
+            // toolStripMenuItemLoadFile
+            // 
+            this.toolStripMenuItemLoadFile.Image = global::ABetterTranslator.Properties.Resources.browseFileButton;
+            this.toolStripMenuItemLoadFile.Name = "toolStripMenuItemLoadFile";
+            resources.ApplyResources(this.toolStripMenuItemLoadFile, "toolStripMenuItemLoadFile");
+            this.toolStripMenuItemLoadFile.Click += new System.EventHandler(this.toolStripMenuItemLoadFile_Click);
+            // 
+            // toolStripMenuItemOpenResx
+            // 
+            this.toolStripMenuItemOpenResx.Image = global::ABetterTranslator.Properties.Resources.browseFileButton;
+            this.toolStripMenuItemOpenResx.Name = "toolStripMenuItemOpenResx";
+            resources.ApplyResources(this.toolStripMenuItemOpenResx, "toolStripMenuItemOpenResx");
+            this.toolStripMenuItemOpenResx.Click += new System.EventHandler(this.toolStripMenuItemOpenResx_Click);
+            // 
+            // toolStripMenuItemOpenAll
+            // 
+            this.toolStripMenuItemOpenAll.Image = global::ABetterTranslator.Properties.Resources.FileExplorer_96__16_x_16_;
+            this.toolStripMenuItemOpenAll.Name = "toolStripMenuItemOpenAll";
+            resources.ApplyResources(this.toolStripMenuItemOpenAll, "toolStripMenuItemOpenAll");
+            this.toolStripMenuItemOpenAll.Click += new System.EventHandler(this.toolStripMenuItemOpenAll_Click);
+            // 
+            // toolStripMenuItemLoadAndReplaceLanguageSet
+            // 
+            this.toolStripMenuItemLoadAndReplaceLanguageSet.Image = global::ABetterTranslator.Properties.Resources.TranslateWorld3__64_x_64_;
+            this.toolStripMenuItemLoadAndReplaceLanguageSet.Name = "toolStripMenuItemLoadAndReplaceLanguageSet";
+            resources.ApplyResources(this.toolStripMenuItemLoadAndReplaceLanguageSet, "toolStripMenuItemLoadAndReplaceLanguageSet");
+            this.toolStripMenuItemLoadAndReplaceLanguageSet.Click += new System.EventHandler(this.toolStripMenuItemLoadAndReplaceLanguageSet_Click);
+            // 
+            // toolStripSplitButtonSave
+            // 
+            this.toolStripSplitButtonSave.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripSplitButtonSave.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripSplitButtonSaveSave,
+            this.toolStripSplitButtonSaveAs,
+            this.toolStripSplitButtonSaveAll});
+            this.toolStripSplitButtonSave.Image = global::ABetterTranslator.Properties.Resources.Save__32_x_32_;
+            resources.ApplyResources(this.toolStripSplitButtonSave, "toolStripSplitButtonSave");
+            this.toolStripSplitButtonSave.Name = "toolStripSplitButtonSave";
+            this.toolStripSplitButtonSave.ButtonClick += new System.EventHandler(this.toolStripSplitButtonSave_ButtonClick);
+            // 
+            // toolStripSplitButtonSaveSave
+            // 
+            this.toolStripSplitButtonSaveSave.Image = global::ABetterTranslator.Properties.Resources.Save__32_x_32_;
+            this.toolStripSplitButtonSaveSave.Name = "toolStripSplitButtonSaveSave";
+            resources.ApplyResources(this.toolStripSplitButtonSaveSave, "toolStripSplitButtonSaveSave");
+            this.toolStripSplitButtonSaveSave.Click += new System.EventHandler(this.toolStripSplitButtonSaveSave_Click);
+            // 
+            // toolStripSplitButtonSaveAs
+            // 
+            this.toolStripSplitButtonSaveAs.Name = "toolStripSplitButtonSaveAs";
+            resources.ApplyResources(this.toolStripSplitButtonSaveAs, "toolStripSplitButtonSaveAs");
+            this.toolStripSplitButtonSaveAs.Click += new System.EventHandler(this.toolStripSplitButtonSaveAs_Click);
+            // 
+            // toolStripSplitButtonSaveAll
+            // 
+            this.toolStripSplitButtonSaveAll.Image = global::ABetterTranslator.Properties.Resources.SaveAll__32_x_32_;
+            this.toolStripSplitButtonSaveAll.Name = "toolStripSplitButtonSaveAll";
+            resources.ApplyResources(this.toolStripSplitButtonSaveAll, "toolStripSplitButtonSaveAll");
+            this.toolStripSplitButtonSaveAll.Click += new System.EventHandler(this.toolStripSplitButtonSaveAll_Click);
             // 
             // toolStripSplitButtonTranslate
             // 
@@ -1264,6 +1352,30 @@ namespace ABetterTranslator
             this.openFileDialogTextFile.FileName = "*.*";
             resources.ApplyResources(this.openFileDialogTextFile, "openFileDialogTextFile");
             // 
+            // openFileDialogProjectFile
+            // 
+            this.openFileDialogProjectFile.DefaultExt = "aBT";
+            this.openFileDialogProjectFile.FileName = "*.aBT";
+            resources.ApplyResources(this.openFileDialogProjectFile, "openFileDialogProjectFile");
+            // 
+            // saveFileDialogForProjectFile
+            // 
+            this.saveFileDialogForProjectFile.DefaultExt = "aBT";
+            this.saveFileDialogForProjectFile.FileName = "*.aBT";
+            resources.ApplyResources(this.saveFileDialogForProjectFile, "saveFileDialogForProjectFile");
+            // 
+            // saveFileDialogSelectedLanguages
+            // 
+            this.saveFileDialogSelectedLanguages.DefaultExt = "Lang";
+            this.saveFileDialogSelectedLanguages.FileName = "*.Lang";
+            resources.ApplyResources(this.saveFileDialogSelectedLanguages, "saveFileDialogSelectedLanguages");
+            // 
+            // openFileDialogSelectedLanguages
+            // 
+            this.openFileDialogSelectedLanguages.DefaultExt = "Lang";
+            this.openFileDialogSelectedLanguages.FileName = "*.Lang";
+            resources.ApplyResources(this.openFileDialogSelectedLanguages, "openFileDialogSelectedLanguages");
+            // 
             // MainWindow
             // 
             resources.ApplyResources(this, "$this");
@@ -1449,6 +1561,19 @@ namespace ABetterTranslator
         private Button buttonBrowseForTextFile;
         private GroupBox groupBoxBkUpDir;
         private GroupBox groupBoxFilterText;
+        private ToolStripSplitButton toolStripSplitButtonSave;
+        private ToolStripMenuItem toolStripSplitButtonSaveSave;
+        private ToolStripMenuItem toolStripSplitButtonSaveAs;
+        private ToolStripSplitButton toolStripSplitButtonLoad;
+        private ToolStripMenuItem toolStripMenuItemLoadFile;
+        private ToolStripMenuItem toolStripMenuItemOpenResx;
+        private ToolStripMenuItem toolStripMenuItemOpenAll;
+        private ToolStripMenuItem toolStripSplitButtonSaveAll;
+        private ToolStripMenuItem toolStripMenuItemLoadAndReplaceLanguageSet;
+        private OpenFileDialog openFileDialogProjectFile;
+        private SaveFileDialog saveFileDialogForProjectFile;
+        private SaveFileDialog saveFileDialogSelectedLanguages;
+        private OpenFileDialog openFileDialogSelectedLanguages;
     }
 }
 

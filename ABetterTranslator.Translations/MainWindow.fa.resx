@@ -168,7 +168,7 @@
     <value>13</value>
   </data>
   <data name="browseLogFolderPath.ToolTip" xml:space="preserve">
-    <value>فولدر خروجی را جستجو کنید. پیش فرض همان منبع resx است</value>
+    <value>جستجو برای پوشه خروجی. پیش فرض همان منبع resx است</value>
   </data>
   <data name="&gt;&gt;browseLogFolderPath.Name" xml:space="preserve">
     <value>browseLogFolderPath</value>
@@ -396,7 +396,7 @@
     <value>رشته ها در هر ترجمه نیاز</value>
   </data>
   <data name="groupBoxItemsPerTransaltionRequest.ToolTip" xml:space="preserve">
-    <value>رشته ها در هر درخواست ترجمه</value>
+    <value>رشته در هر درخواست ترجمه</value>
   </data>
   <data name="&gt;&gt;groupBoxItemsPerTransaltionRequest.Name" xml:space="preserve">
     <value>groupBoxItemsPerTransaltionRequest</value>
@@ -693,7 +693,7 @@
     <value>15</value>
   </data>
   <data name="browseBkUpDirFolderButton.ToolTip" xml:space="preserve">
-    <value>فولدر خروجی را جستجو کنید. پیش فرض همان منبع resx است</value>
+    <value>جستجو برای پوشه خروجی. پیش فرض همان منبع resx است</value>
   </data>
   <data name="&gt;&gt;browseBkUpDirFolderButton.Name" xml:space="preserve">
     <value>browseBkUpDirFolderButton</value>
@@ -996,7 +996,7 @@
     <value>2</value>
   </data>
   <data name="browseFileButton.ToolTip" xml:space="preserve">
-    <value>برای فایل resx منبع جستجو کنید</value>
+    <value>فایل resx منبع را جستجو کنید</value>
   </data>
   <data name="&gt;&gt;browseFileButton.Name" xml:space="preserve">
     <value>browseFileButton</value>
@@ -1032,7 +1032,7 @@
     <value>4</value>
   </data>
   <data name="browseFolderButton.ToolTip" xml:space="preserve">
-    <value>فولدر خروجی را جستجو کنید. پیش فرض همان منبع resx است</value>
+    <value>جستجو برای پوشه خروجی. پیش فرض همان منبع resx است</value>
   </data>
   <data name="&gt;&gt;browseFolderButton.Name" xml:space="preserve">
     <value>browseFolderButton</value>
@@ -1221,7 +1221,7 @@
     <value>11</value>
   </data>
   <data name="groupBoxDeleteLangAppendedResxFiles.Text" xml:space="preserve">
-    <value>تمام Resx ها را با کد زبان ضمیمه حذف کنید</value>
+    <value>تمام Resx ها را با کد زبان اضافه شده حذف کنید</value>
   </data>
   <data name="&gt;&gt;groupBoxDeleteLangAppendedResxFiles.Name" xml:space="preserve">
     <value>groupBoxDeleteLangAppendedResxFiles</value>
@@ -2306,8 +2306,95 @@
   <data name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing">
     <value>548, 17</value>
   </data>
+  <data name="toolStripMenuItemLoadFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>376, 42</value>
+  </data>
+  <data name="toolStripMenuItemLoadFile.Text" xml:space="preserve">
+    <value>مجموعه زبان انتخاب شده را باز کنید</value>
+  </data>
+  <data name="toolStripMenuItemLoadFile.ToolTipText" xml:space="preserve">
+    <value>یک مجموعه ذخیره شده قبلی از زبان های انتخابی را باز کنید</value>
+  </data>
+  <data name="toolStripMenuItemOpenResx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>376, 42</value>
+  </data>
+  <data name="toolStripMenuItemOpenResx.Text" xml:space="preserve">
+    <value>فایل Resx را باز کنید</value>
+  </data>
+  <data name="toolStripMenuItemOpenResx.ToolTipText" xml:space="preserve">
+    <value>یک فایل Resx را برای ترجمه باز کنید</value>
+  </data>
+  <data name="toolStripMenuItemOpenAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>376, 42</value>
+  </data>
+  <data name="toolStripMenuItemOpenAll.Text" xml:space="preserve">
+    <value>بارگیری همه (پروژه)</value>
+  </data>
+  <data name="toolStripMenuItemOpenAll.ToolTipText" xml:space="preserve">
+    <value>فایل تنظیمات پروژه ذخیره شده قبلی را بارگیری می کند.</value>
+  </data>
+  <data name="toolStripMenuItemLoadAndReplaceLanguageSet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>376, 42</value>
+  </data>
+  <data name="toolStripMenuItemLoadAndReplaceLanguageSet.Text" xml:space="preserve">
+    <value>بارگذاری به عنوان یک مجموعه زبان سفارشی</value>
+  </data>
+  <data name="toolStripMenuItemLoadAndReplaceLanguageSet.ToolTipText" xml:space="preserve">
+    <value>زبان‌های انتخابی ذخیره‌شده قبلی را باز می‌کند و فقط زبان‌های انتخابی را نمایش می‌دهد</value>
+  </data>
+  <data name="toolStripSplitButtonLoad.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="toolStripSplitButtonLoad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 36</value>
+  </data>
+  <data name="toolStripSplitButtonLoad.Text" xml:space="preserve">
+    <value>بار</value>
+  </data>
+  <data name="toolStripSplitButtonLoad.ToolTipText" xml:space="preserve">
+    <value>یک فایل حاوی زبان های انتخاب شده قبلی را بارگیری کنید</value>
+  </data>
+  <data name="toolStripSplitButtonSaveSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>320, 42</value>
+  </data>
+  <data name="toolStripSplitButtonSaveSave.Text" xml:space="preserve">
+    <value>زبان های انتخاب شده را ذخیره کنید</value>
+  </data>
+  <data name="toolStripSplitButtonSaveSave.ToolTipText" xml:space="preserve">
+    <value>مجموعه زبان های انتخاب شده را ذخیره کنید</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>320, 42</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAs.Text" xml:space="preserve">
+    <value>ذخیره به عنوان</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAs.ToolTipText" xml:space="preserve">
+    <value>زبان های انتخاب شده را در یک فایل جدید ذخیره کنید</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>320, 42</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAll.Text" xml:space="preserve">
+    <value>ذخیره همه (پروژه)</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAll.ToolTipText" xml:space="preserve">
+    <value>تمام تنظیمات را در یک فایل پروژه ذخیره می کند.</value>
+  </data>
+  <data name="toolStripSplitButtonSave.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="toolStripSplitButtonSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 36</value>
+  </data>
+  <data name="toolStripSplitButtonSave.Text" xml:space="preserve">
+    <value>صرفه جویی</value>
+  </data>
+  <data name="toolStripSplitButtonSave.ToolTipText" xml:space="preserve">
+    <value>زبان های انتخاب شده را ذخیره کنید</value>
+  </data>
   <data name="toolStripMenuItemTranslateAllLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.Text" xml:space="preserve">
     <value>ترجمه همه زبان های پشتیبانی شده</value>
@@ -2316,7 +2403,7 @@
     <value>همه زبان ها را با یک سرویس ترجمه انتخاب و ترجمه کنید</value>
   </data>
   <data name="toolStripMenuItemWindowsSupportedLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItemWindowsSupportedLanguages.Text" xml:space="preserve">
     <value>بسته زبان ویندوز</value>
@@ -2325,7 +2412,7 @@
     <value>زبان‌ها را در بسته‌های زبان ویندوز انتخاب و ترجمه کنید</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguageInterfacePacks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguageInterfacePacks.Text" xml:space="preserve">
     <value>بسته های رابط زبان ویندوز</value>
@@ -2334,7 +2421,7 @@
     <value>زبان‌ها را در بسته‌های رابط زبان ویندوز انتخاب و ترجمه کنید</value>
   </data>
   <data name="toolStripMenuItemTranslateBusinessLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItemTranslateBusinessLanguages.Text" xml:space="preserve">
     <value>ترجمه زبان های برتر تجاری</value>
@@ -2343,10 +2430,10 @@
     <value>زبان‌های تجاری بین‌المللی را انتخاب و ترجمه کنید</value>
   </data>
   <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>396, 6</value>
+    <value>388, 6</value>
   </data>
   <data name="toolStripMenuItem_TranslateAfrica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItem_TranslateAfrica.Text" xml:space="preserve">
     <value>آفریقا</value>
@@ -2355,7 +2442,7 @@
     <value>بهترین زبان های رایج در آفریقا را انتخاب و ترجمه کنید</value>
   </data>
   <data name="toolStripMenuItem_TranslateAsia.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItem_TranslateAsia.Text" xml:space="preserve">
     <value>آسیا</value>
@@ -2364,7 +2451,7 @@
     <value>بهترین زبان های رایج در آسیا را انتخاب و ترجمه کنید</value>
   </data>
   <data name="toolStripMenuItem_TranslateEurope.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItem_TranslateEurope.Text" xml:space="preserve">
     <value>اروپا</value>
@@ -2373,7 +2460,7 @@
     <value>بهترین زبان های رایج در اروپا را انتخاب و ترجمه کنید</value>
   </data>
   <data name="toolStripMenuItem_TranslateMiddleEast.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItem_TranslateMiddleEast.Text" xml:space="preserve">
     <value>خاورمیانه</value>
@@ -2382,7 +2469,7 @@
     <value>بهترین زبان‌های رایج در خاورمیانه را انتخاب و ترجمه کنید</value>
   </data>
   <data name="toolStripMenuItem_TranslateNorthAmerica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItem_TranslateNorthAmerica.Text" xml:space="preserve">
     <value>آمریکای شمالی</value>
@@ -2391,7 +2478,7 @@
     <value>بهترین زبان‌های رایج در آمریکای شمالی را انتخاب و ترجمه کنید</value>
   </data>
   <data name="toolStripMenuItem_TranslateSouthAmerica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItem_TranslateSouthAmerica.Text" xml:space="preserve">
     <value>آمریکای جنوبی</value>
@@ -2400,10 +2487,10 @@
     <value>بهترین زبان‌های رایج در آمریکای جنوبی را انتخاب و ترجمه کنید</value>
   </data>
   <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>396, 6</value>
+    <value>388, 6</value>
   </data>
   <data name="toolStripMenuItemTranslateTop5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItemTranslateTop5.Text" xml:space="preserve">
     <value>ترجمه 5 زبان گفتاری برتر</value>
@@ -2412,7 +2499,7 @@
     <value>5 زبان گفتاری برتر را انتخاب و ترجمه کنید</value>
   </data>
   <data name="toolStripMenuItemTranslateTop10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItemTranslateTop10.Text" xml:space="preserve">
     <value>10 زبان گفتاری برتر را ترجمه کنید</value>
@@ -2421,7 +2508,7 @@
     <value>10 مورد برتر را انتخاب و ترجمه کنید</value>
   </data>
   <data name="toolStripMenuItemTranslateTop20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItemTranslateTop20.Text" xml:space="preserve">
     <value>20 زبان گفتاری برتر را ترجمه کنید</value>
@@ -2430,7 +2517,7 @@
     <value>20 مورد برتر را انتخاب و ترجمه کنید</value>
   </data>
   <data name="toolStripMenuItemTranslateTop30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItemTranslateTop30.Text" xml:space="preserve">
     <value>ترجمه 30 زبان گفتاری برتر</value>
@@ -2451,13 +2538,13 @@
     <value>شروع ترجمه در زبان های انتخاب شده. اگر زبانی انتخاب نشده باشد، همه زبان ها را ترجمه می کند.</value>
   </data>
   <data name="toolStripMenuItemSelectAll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>333, 42</value>
+    <value>325, 34</value>
   </data>
   <data name="toolStripMenuItemSelectAll.Text" xml:space="preserve">
     <value>همه زبان ها را انتخاب کنید</value>
   </data>
   <data name="toolStripMenuItemSelectClear.Size" type="System.Drawing.Size, System.Drawing">
-    <value>333, 42</value>
+    <value>325, 34</value>
   </data>
   <data name="toolStripMenuItemSelectClear.Text" xml:space="preserve">
     <value>پاک کردن همه انتخاب ها</value>
@@ -2469,7 +2556,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemSelectUndo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>333, 42</value>
+    <value>325, 34</value>
   </data>
   <data name="toolStripMenuItemSelectUndo.Text" xml:space="preserve">
     <value>لغو انتخاب آخرین گروه</value>
@@ -2514,7 +2601,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>440, 42</value>
+    <value>432, 34</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks.Text" xml:space="preserve">
     <value>بسته زبان ویندوز 10/11</value>
@@ -2544,7 +2631,7 @@
     <value>اضافه و انتخاب کنید</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface.Size" type="System.Drawing.Size, System.Drawing">
-    <value>440, 42</value>
+    <value>432, 34</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface.Text" xml:space="preserve">
     <value>رابط بسته زبان ویندوز</value>
@@ -2556,22 +2643,22 @@
     <value>فقط زبان هایی را نشان دهید که در واسط بسته زبانی ویندوز هستند</value>
   </data>
   <data name="toolStripSeparator7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>437, 6</value>
+    <value>429, 6</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>270, 34</value>
+    <value>158, 34</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_ShowOnly.Text" xml:space="preserve">
     <value>نمایش دهید</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>270, 34</value>
+    <value>158, 34</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_Add.Text" xml:space="preserve">
     <value>اضافه کردن</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>440, 42</value>
+    <value>432, 34</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.Text" xml:space="preserve">
     <value>زبان های دارای خدمات ترجمه</value>
@@ -2580,19 +2667,19 @@
     <value>نمایش همه زبان ها با یک سرویس ترجمه پشتیبانی شده</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>270, 34</value>
+    <value>158, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly.Text" xml:space="preserve">
     <value>نمایش دهید</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>270, 34</value>
+    <value>158, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_Add.Text" xml:space="preserve">
     <value>اضافه کردن</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames.Size" type="System.Drawing.Size, System.Drawing">
-    <value>440, 42</value>
+    <value>432, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames.Text" xml:space="preserve">
     <value>مجموعه زبان ISO 639-1</value>
@@ -2619,7 +2706,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.Size" type="System.Drawing.Size, System.Drawing">
-    <value>440, 42</value>
+    <value>432, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.Text" xml:space="preserve">
     <value>ISO 639-1 + بسته Win Lang</value>
@@ -2637,7 +2724,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemSubLanguagesAndRegions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>440, 42</value>
+    <value>432, 34</value>
   </data>
   <data name="toolStripMenuItemSubLanguagesAndRegions.Text" xml:space="preserve">
     <value>اضافه کردن به لیست زیر زبان ها و مناطق</value>
@@ -2920,6 +3007,42 @@
   </data>
   <data name="openFileDialogTextFile.Title" xml:space="preserve">
     <value>Choose text file to translate.</value>
+  </data>
+  <data name="openFileDialogProjectFile.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>965, 17</value>
+  </data>
+  <data name="openFileDialogProjectFile.Filter" xml:space="preserve">
+    <value>ABetterTranslator Project Files (*.aBT)|*.aBT|Text Files (*.txt)|*.txt|All files (*.*)|*.*</value>
+  </data>
+  <data name="openFileDialogProjectFile.Title" xml:space="preserve">
+    <value>Select a project file to open</value>
+  </data>
+  <data name="saveFileDialogForProjectFile.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>17, 65</value>
+  </data>
+  <data name="saveFileDialogForProjectFile.Filter" xml:space="preserve">
+    <value>ABetterTranslator Project Files (*.aBT)|*.aBT|Text Files (*.txt)|*.txt|All files (*.*)|*.*</value>
+  </data>
+  <data name="saveFileDialogForProjectFile.Title" xml:space="preserve">
+    <value>Select a new name for the ABetterLanguage Project File</value>
+  </data>
+  <data name="saveFileDialogSelectedLanguages.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>306, 65</value>
+  </data>
+  <data name="saveFileDialogSelectedLanguages.Filter" xml:space="preserve">
+    <value>ABetterTranslator Language Files (*.Lang)|*.Lang|Text Files (*.txt)|*.txt|All files (*.*)|*.*</value>
+  </data>
+  <data name="saveFileDialogSelectedLanguages.Title" xml:space="preserve">
+    <value>Enter the name of the new Language File.</value>
+  </data>
+  <data name="openFileDialogSelectedLanguages.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>641, 65</value>
+  </data>
+  <data name="openFileDialogSelectedLanguages.Filter" xml:space="preserve">
+    <value>ABetterTranslator Language Files (*.Lang)|*.Lang|Text Files (*.txt)|*.txt|All files (*.*)|*.*</value>
+  </data>
+  <data name="openFileDialogSelectedLanguages.Title" xml:space="preserve">
+    <value>Select a language list file</value>
   </data>
   <data name="$this.Localizable" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -10208,6 +10331,60 @@
   <data name="&gt;&gt;olv_Iso639_3.Type" xml:space="preserve">
     <value>BrightIdeasSoftware.OLVColumn, ABetterTranslator, Culture=neutral, PublicKeyToken=null</value>
   </data>
+  <data name="&gt;&gt;toolStripSplitButtonLoad.Name" xml:space="preserve">
+    <value>toolStripSplitButtonLoad</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonLoad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSplitButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemLoadFile.Name" xml:space="preserve">
+    <value>toolStripMenuItemLoadFile</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemLoadFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemOpenResx.Name" xml:space="preserve">
+    <value>toolStripMenuItemOpenResx</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemOpenResx.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemOpenAll.Name" xml:space="preserve">
+    <value>toolStripMenuItemOpenAll</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemOpenAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemLoadAndReplaceLanguageSet.Name" xml:space="preserve">
+    <value>toolStripMenuItemLoadAndReplaceLanguageSet</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemLoadAndReplaceLanguageSet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSave.Name" xml:space="preserve">
+    <value>toolStripSplitButtonSave</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSplitButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSaveSave.Name" xml:space="preserve">
+    <value>toolStripSplitButtonSaveSave</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSaveSave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSaveAs.Name" xml:space="preserve">
+    <value>toolStripSplitButtonSaveAs</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSaveAs.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSaveAll.Name" xml:space="preserve">
+    <value>toolStripSplitButtonSaveAll</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSaveAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;toolStripSplitButtonTranslate.Name" xml:space="preserve">
     <value>toolStripSplitButtonTranslate</value>
   </data>
@@ -10464,6 +10641,30 @@
     <value>openFileDialogTextFile</value>
   </data>
   <data name="&gt;&gt;openFileDialogTextFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;openFileDialogProjectFile.Name" xml:space="preserve">
+    <value>openFileDialogProjectFile</value>
+  </data>
+  <data name="&gt;&gt;openFileDialogProjectFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;saveFileDialogForProjectFile.Name" xml:space="preserve">
+    <value>saveFileDialogForProjectFile</value>
+  </data>
+  <data name="&gt;&gt;saveFileDialogForProjectFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;saveFileDialogSelectedLanguages.Name" xml:space="preserve">
+    <value>saveFileDialogSelectedLanguages</value>
+  </data>
+  <data name="&gt;&gt;saveFileDialogSelectedLanguages.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;openFileDialogSelectedLanguages.Name" xml:space="preserve">
+    <value>openFileDialogSelectedLanguages</value>
+  </data>
+  <data name="&gt;&gt;openFileDialogSelectedLanguages.Type" xml:space="preserve">
     <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

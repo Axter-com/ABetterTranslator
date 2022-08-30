@@ -59,44 +59,10 @@
   </ItemGroup>
   <ItemGroup>
     <!-- The following adds all Resx files in the Translation folder. -->
-    <EmbeddedResource Include="..\$(TargetName).Translations\*.resx">
-      <ManifestResourceName>$(TargetName).%(Filename)</ManifestResourceName>
-    </EmbeddedResource>
-    <None Remove="MultilingualResources\ABetterTranslator.doi-Deva-IN.xlf" />
-    <None Remove="MultilingualResources\ABetterTranslator.doi-Deva.xlf" />
-    <None Remove="MultilingualResources\ABetterTranslator.kk-KZ.xlf" />
-    <None Remove="MultilingualResources\ABetterTranslator.kk.xlf" />
-    <None Remove="MultilingualResources\ABetterTranslator.ku-Arab-IQ.xlf" />
-    <None Remove="MultilingualResources\ABetterTranslator.ku-Arab-IR.xlf" />
-    <None Remove="MultilingualResources\ABetterTranslator.ku-Arab.xlf" />
-    <None Remove="MultilingualResources\ABetterTranslator.quz-BO.xlf" />
-    <None Remove="MultilingualResources\ABetterTranslator.quz-EC.xlf" />
-    <None Remove="MultilingualResources\ABetterTranslator.quz-PE.xlf" />
-    <None Remove="MultilingualResources\ABetterTranslator.quz.xlf" />
-    <None Remove="MultilingualResources\ABetterTranslator.uz-Arab-AF.xlf" />
-    <None Remove="MultilingualResources\ABetterTranslator.uz-Arab.xlf" />
-    <None Remove="MultilingualResources\ABetterTranslator.uz-Cyrl-UZ.xlf" />
-    <None Remove="MultilingualResources\ABetterTranslator.uz-Cyrl.xlf" />
-    <None Remove="MultilingualResources\ABetterTranslator.uz-Latn-UZ.xlf" />
-    <None Remove="MultilingualResources\ABetterTranslator.uz-Latn.xlf" />
-    <XliffResource Include="MultilingualResources\ABetterTranslator.doi-Deva-IN.xlf" />
-    <XliffResource Include="MultilingualResources\ABetterTranslator.doi-Deva.xlf" />
-    <XliffResource Include="MultilingualResources\ABetterTranslator.kk-KZ.xlf" />
-    <XliffResource Include="MultilingualResources\ABetterTranslator.kk.xlf" />
-    <XliffResource Include="MultilingualResources\ABetterTranslator.ku-Arab-IQ.xlf" />
-    <XliffResource Include="MultilingualResources\ABetterTranslator.ku-Arab-IR.xlf" />
-    <XliffResource Include="MultilingualResources\ABetterTranslator.ku-Arab.xlf" />
-    <XliffResource Include="MultilingualResources\ABetterTranslator.quz-BO.xlf" />
-    <XliffResource Include="MultilingualResources\ABetterTranslator.quz-EC.xlf" />
-    <XliffResource Include="MultilingualResources\ABetterTranslator.quz-PE.xlf" />
-    <XliffResource Include="MultilingualResources\ABetterTranslator.quz.xlf" />
-    <XliffResource Include="MultilingualResources\ABetterTranslator.uz-Arab-AF.xlf" />
-    <XliffResource Include="MultilingualResources\ABetterTranslator.uz-Arab.xlf" />
-    <XliffResource Include="MultilingualResources\ABetterTranslator.uz-Cyrl-UZ.xlf" />
-    <XliffResource Include="MultilingualResources\ABetterTranslator.uz-Cyrl.xlf" />
-    <XliffResource Include="MultilingualResources\ABetterTranslator.uz-Latn-UZ.xlf" />
-    <XliffResource Include="MultilingualResources\ABetterTranslator.uz-Latn.xlf" />
-    <EmbeddedResource Update="ObjectListView\Properties\Resources.resx">
+	  <EmbeddedResource Include="..\$(TargetName).Translations\*.resx">
+		  <ManifestResourceName>$(TargetName).%(Filename)</ManifestResourceName>
+	  </EmbeddedResource>
+	  <EmbeddedResource Update="ObjectListView\Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>

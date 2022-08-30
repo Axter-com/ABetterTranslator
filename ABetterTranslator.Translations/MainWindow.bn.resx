@@ -2306,8 +2306,95 @@
   <data name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing">
     <value>548, 17</value>
   </data>
+  <data name="toolStripMenuItemLoadFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>376, 42</value>
+  </data>
+  <data name="toolStripMenuItemLoadFile.Text" xml:space="preserve">
+    <value>নির্বাচিত ভাষা সেট খুলুন</value>
+  </data>
+  <data name="toolStripMenuItemLoadFile.ToolTipText" xml:space="preserve">
+    <value>নির্বাচিত ভাষার একটি পূর্বে সংরক্ষিত সেট খুলুন</value>
+  </data>
+  <data name="toolStripMenuItemOpenResx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>376, 42</value>
+  </data>
+  <data name="toolStripMenuItemOpenResx.Text" xml:space="preserve">
+    <value>Resx ফাইল খুলুন</value>
+  </data>
+  <data name="toolStripMenuItemOpenResx.ToolTipText" xml:space="preserve">
+    <value>অনুবাদ করতে একটি Resx ফাইল খুলুন</value>
+  </data>
+  <data name="toolStripMenuItemOpenAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>376, 42</value>
+  </data>
+  <data name="toolStripMenuItemOpenAll.Text" xml:space="preserve">
+    <value>সমস্ত লোড করুন (প্রকল্প)</value>
+  </data>
+  <data name="toolStripMenuItemOpenAll.ToolTipText" xml:space="preserve">
+    <value>পূর্বে সংরক্ষিত প্রকল্প সেটিংস ফাইল লোড.</value>
+  </data>
+  <data name="toolStripMenuItemLoadAndReplaceLanguageSet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>376, 42</value>
+  </data>
+  <data name="toolStripMenuItemLoadAndReplaceLanguageSet.Text" xml:space="preserve">
+    <value>একটি কাস্টম ভাষা সেট হিসাবে লোড</value>
+  </data>
+  <data name="toolStripMenuItemLoadAndReplaceLanguageSet.ToolTipText" xml:space="preserve">
+    <value>পূর্বে সংরক্ষিত নির্বাচিত ভাষাগুলি খোলে এবং শুধুমাত্র নির্বাচিত ভাষাগুলি প্রদর্শন করে৷</value>
+  </data>
+  <data name="toolStripSplitButtonLoad.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="toolStripSplitButtonLoad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 36</value>
+  </data>
+  <data name="toolStripSplitButtonLoad.Text" xml:space="preserve">
+    <value>ভার</value>
+  </data>
+  <data name="toolStripSplitButtonLoad.ToolTipText" xml:space="preserve">
+    <value>পূর্বে নির্বাচিত ভাষা সমন্বিত একটি ফাইল লোড করুন</value>
+  </data>
+  <data name="toolStripSplitButtonSaveSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>320, 42</value>
+  </data>
+  <data name="toolStripSplitButtonSaveSave.Text" xml:space="preserve">
+    <value>নির্বাচিত ভাষা সংরক্ষণ করুন</value>
+  </data>
+  <data name="toolStripSplitButtonSaveSave.ToolTipText" xml:space="preserve">
+    <value>নির্বাচিত ভাষার সেট সংরক্ষণ করুন</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>320, 42</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAs.Text" xml:space="preserve">
+    <value>সংরক্ষণ করুন</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAs.ToolTipText" xml:space="preserve">
+    <value>একটি নতুন ফাইলে নির্বাচিত ভাষা সংরক্ষণ করুন</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>320, 42</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAll.Text" xml:space="preserve">
+    <value>সব সংরক্ষণ করুন (প্রকল্প)</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAll.ToolTipText" xml:space="preserve">
+    <value>একটি প্রকল্প ফাইলে সমস্ত সেটিংস সংরক্ষণ করে।</value>
+  </data>
+  <data name="toolStripSplitButtonSave.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="toolStripSplitButtonSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 36</value>
+  </data>
+  <data name="toolStripSplitButtonSave.Text" xml:space="preserve">
+    <value>সংরক্ষণ</value>
+  </data>
+  <data name="toolStripSplitButtonSave.ToolTipText" xml:space="preserve">
+    <value>নির্বাচিত ভাষা সংরক্ষণ করুন</value>
+  </data>
   <data name="toolStripMenuItemTranslateAllLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.Text" xml:space="preserve">
     <value>সমস্ত সমর্থিত ভাষা অনুবাদ করুন</value>
@@ -2316,7 +2403,7 @@
     <value>একটি অনুবাদ পরিষেবা দিয়ে সমস্ত ভাষা নির্বাচন করুন এবং অনুবাদ করুন৷</value>
   </data>
   <data name="toolStripMenuItemWindowsSupportedLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItemWindowsSupportedLanguages.Text" xml:space="preserve">
     <value>উইন্ডোজ ল্যাঙ্গুয়েজ প্যাক</value>
@@ -2325,7 +2412,7 @@
     <value>Windows ভাষা প্যাকগুলিতে ভাষাগুলি নির্বাচন করুন এবং অনুবাদ করুন৷</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguageInterfacePacks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguageInterfacePacks.Text" xml:space="preserve">
     <value>উইন্ডোজ ল্যাঙ্গুয়েজ ইন্টারফেস প্যাক</value>
@@ -2334,7 +2421,7 @@
     <value>উইন্ডোজ ল্যাঙ্গুয়েজ ইন্টারফেস প্যাকগুলিতে ভাষা নির্বাচন এবং অনুবাদ করুন</value>
   </data>
   <data name="toolStripMenuItemTranslateBusinessLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItemTranslateBusinessLanguages.Text" xml:space="preserve">
     <value>শীর্ষ ব্যবসায়িক ভাষা অনুবাদ করুন</value>
@@ -2343,10 +2430,10 @@
     <value>সর্বাধিক ব্যবহৃত আন্তর্জাতিক-ব্যবসা-ভাষা নির্বাচন করুন এবং অনুবাদ করুন</value>
   </data>
   <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>396, 6</value>
+    <value>388, 6</value>
   </data>
   <data name="toolStripMenuItem_TranslateAfrica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItem_TranslateAfrica.Text" xml:space="preserve">
     <value>আফ্রিকা</value>
@@ -2355,7 +2442,7 @@
     <value>আফ্রিকাতে সবচেয়ে বেশি কথ্য ভাষা নির্বাচন করুন এবং অনুবাদ করুন</value>
   </data>
   <data name="toolStripMenuItem_TranslateAsia.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItem_TranslateAsia.Text" xml:space="preserve">
     <value>এশিয়া</value>
@@ -2364,7 +2451,7 @@
     <value>এশিয়ার শীর্ষস্থানীয় সর্বাধিক কথ্য ভাষা নির্বাচন করুন এবং অনুবাদ করুন</value>
   </data>
   <data name="toolStripMenuItem_TranslateEurope.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItem_TranslateEurope.Text" xml:space="preserve">
     <value>ইউরোপ</value>
@@ -2373,7 +2460,7 @@
     <value>ইউরোপে সবচেয়ে বেশি কথ্য ভাষা নির্বাচন করুন এবং অনুবাদ করুন</value>
   </data>
   <data name="toolStripMenuItem_TranslateMiddleEast.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItem_TranslateMiddleEast.Text" xml:space="preserve">
     <value>মধ্যপ্রাচ্য</value>
@@ -2382,28 +2469,28 @@
     <value>মধ্যপ্রাচ্যে সবচেয়ে বেশি কথ্য ভাষা নির্বাচন করুন এবং অনুবাদ করুন</value>
   </data>
   <data name="toolStripMenuItem_TranslateNorthAmerica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItem_TranslateNorthAmerica.Text" xml:space="preserve">
     <value>উত্তর আমেরিকা</value>
   </data>
   <data name="toolStripMenuItem_TranslateNorthAmerica.ToolTipText" xml:space="preserve">
-    <value>উত্তর আমেরিকার শীর্ষস্থানীয় সর্বাধিক কথ্য ভাষা নির্বাচন করুন এবং অনুবাদ করুন</value>
+    <value>উত্তর আমেরিকাতে সবচেয়ে বেশি কথ্য ভাষা নির্বাচন করুন এবং অনুবাদ করুন</value>
   </data>
   <data name="toolStripMenuItem_TranslateSouthAmerica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItem_TranslateSouthAmerica.Text" xml:space="preserve">
     <value>দক্ষিণ আমেরিকা</value>
   </data>
   <data name="toolStripMenuItem_TranslateSouthAmerica.ToolTipText" xml:space="preserve">
-    <value>দক্ষিণ আমেরিকার শীর্ষ সর্বাধিক কথ্য ভাষা নির্বাচন করুন এবং অনুবাদ করুন</value>
+    <value>দক্ষিণ আমেরিকাতে সবচেয়ে বেশি কথ্য ভাষা নির্বাচন করুন এবং অনুবাদ করুন</value>
   </data>
   <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>396, 6</value>
+    <value>388, 6</value>
   </data>
   <data name="toolStripMenuItemTranslateTop5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItemTranslateTop5.Text" xml:space="preserve">
     <value>শীর্ষ 5 কথ্য ভাষা অনুবাদ করুন</value>
@@ -2412,7 +2499,7 @@
     <value>শীর্ষ 5 কথ্য ভাষা নির্বাচন করুন এবং অনুবাদ করুন</value>
   </data>
   <data name="toolStripMenuItemTranslateTop10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItemTranslateTop10.Text" xml:space="preserve">
     <value>শীর্ষ 10টি কথ্য ভাষা অনুবাদ করুন</value>
@@ -2421,7 +2508,7 @@
     <value>শীর্ষ 10 নির্বাচন করুন এবং অনুবাদ করুন</value>
   </data>
   <data name="toolStripMenuItemTranslateTop20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItemTranslateTop20.Text" xml:space="preserve">
     <value>শীর্ষ 20 কথ্য ভাষা অনুবাদ করুন</value>
@@ -2430,7 +2517,7 @@
     <value>শীর্ষ 20 নির্বাচন করুন এবং অনুবাদ করুন</value>
   </data>
   <data name="toolStripMenuItemTranslateTop30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItemTranslateTop30.Text" xml:space="preserve">
     <value>শীর্ষ 30টি কথ্য ভাষা অনুবাদ করুন</value>
@@ -2451,13 +2538,13 @@
     <value>নির্বাচিত ভাষায় অনুবাদ শুরু করুন। কোনো ভাষা নির্বাচন না করলে সব ভাষা অনুবাদ করে।</value>
   </data>
   <data name="toolStripMenuItemSelectAll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>333, 42</value>
+    <value>325, 34</value>
   </data>
   <data name="toolStripMenuItemSelectAll.Text" xml:space="preserve">
     <value>সমস্ত ভাষা নির্বাচন করুন</value>
   </data>
   <data name="toolStripMenuItemSelectClear.Size" type="System.Drawing.Size, System.Drawing">
-    <value>333, 42</value>
+    <value>325, 34</value>
   </data>
   <data name="toolStripMenuItemSelectClear.Text" xml:space="preserve">
     <value>সমস্ত নির্বাচন সাফ করুন</value>
@@ -2469,7 +2556,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemSelectUndo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>333, 42</value>
+    <value>325, 34</value>
   </data>
   <data name="toolStripMenuItemSelectUndo.Text" xml:space="preserve">
     <value>শেষ গ্রুপ নির্বাচন পূর্বাবস্থায় ফেরান</value>
@@ -2514,7 +2601,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>440, 42</value>
+    <value>432, 34</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks.Text" xml:space="preserve">
     <value>উইন্ডোজ 10/11 ভাষা প্যাক</value>
@@ -2544,7 +2631,7 @@
     <value>যোগ করুন এবং নির্বাচন করুন</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface.Size" type="System.Drawing.Size, System.Drawing">
-    <value>440, 42</value>
+    <value>432, 34</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface.Text" xml:space="preserve">
     <value>উইন্ডোজ ল্যাঙ্গুয়েজ প্যাক ইন্টারফেস</value>
@@ -2556,22 +2643,22 @@
     <value>উইন্ডোজ ল্যাঙ্গুয়েজ প্যাক ইন্টারফেসে থাকা ভাষাগুলিই দেখান</value>
   </data>
   <data name="toolStripSeparator7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>437, 6</value>
+    <value>429, 6</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>270, 34</value>
+    <value>158, 34</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_ShowOnly.Text" xml:space="preserve">
     <value>দেখান</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>270, 34</value>
+    <value>158, 34</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_Add.Text" xml:space="preserve">
     <value>যোগ করুন</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>440, 42</value>
+    <value>432, 34</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.Text" xml:space="preserve">
     <value>একটি অনুবাদ পরিষেবা সহ ভাষা</value>
@@ -2580,19 +2667,19 @@
     <value>একটি সমর্থিত অনুবাদ পরিষেবা সহ সমস্ত ভাষা প্রদর্শন করুন</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>270, 34</value>
+    <value>158, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly.Text" xml:space="preserve">
     <value>দেখান</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>270, 34</value>
+    <value>158, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_Add.Text" xml:space="preserve">
     <value>যোগ করুন</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames.Size" type="System.Drawing.Size, System.Drawing">
-    <value>440, 42</value>
+    <value>432, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames.Text" xml:space="preserve">
     <value>ISO 639-1 ভাষা সেট</value>
@@ -2619,10 +2706,10 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.Size" type="System.Drawing.Size, System.Drawing">
-    <value>440, 42</value>
+    <value>432, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.Text" xml:space="preserve">
-    <value>ISO 639-1 + Win Lang Pack</value>
+    <value>ISO 639-1 + Win Lang প্যাক</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>TextAboveImage</value>
@@ -2637,7 +2724,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemSubLanguagesAndRegions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>440, 42</value>
+    <value>432, 34</value>
   </data>
   <data name="toolStripMenuItemSubLanguagesAndRegions.Text" xml:space="preserve">
     <value>উপ-ভাষা এবং অঞ্চল তালিকায় যোগ করুন</value>
@@ -2920,6 +3007,42 @@
   </data>
   <data name="openFileDialogTextFile.Title" xml:space="preserve">
     <value>Choose text file to translate.</value>
+  </data>
+  <data name="openFileDialogProjectFile.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>965, 17</value>
+  </data>
+  <data name="openFileDialogProjectFile.Filter" xml:space="preserve">
+    <value>ABetterTranslator Project Files (*.aBT)|*.aBT|Text Files (*.txt)|*.txt|All files (*.*)|*.*</value>
+  </data>
+  <data name="openFileDialogProjectFile.Title" xml:space="preserve">
+    <value>Select a project file to open</value>
+  </data>
+  <data name="saveFileDialogForProjectFile.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>17, 65</value>
+  </data>
+  <data name="saveFileDialogForProjectFile.Filter" xml:space="preserve">
+    <value>ABetterTranslator Project Files (*.aBT)|*.aBT|Text Files (*.txt)|*.txt|All files (*.*)|*.*</value>
+  </data>
+  <data name="saveFileDialogForProjectFile.Title" xml:space="preserve">
+    <value>Select a new name for the ABetterLanguage Project File</value>
+  </data>
+  <data name="saveFileDialogSelectedLanguages.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>306, 65</value>
+  </data>
+  <data name="saveFileDialogSelectedLanguages.Filter" xml:space="preserve">
+    <value>ABetterTranslator Language Files (*.Lang)|*.Lang|Text Files (*.txt)|*.txt|All files (*.*)|*.*</value>
+  </data>
+  <data name="saveFileDialogSelectedLanguages.Title" xml:space="preserve">
+    <value>Enter the name of the new Language File.</value>
+  </data>
+  <data name="openFileDialogSelectedLanguages.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>641, 65</value>
+  </data>
+  <data name="openFileDialogSelectedLanguages.Filter" xml:space="preserve">
+    <value>ABetterTranslator Language Files (*.Lang)|*.Lang|Text Files (*.txt)|*.txt|All files (*.*)|*.*</value>
+  </data>
+  <data name="openFileDialogSelectedLanguages.Title" xml:space="preserve">
+    <value>Select a language list file</value>
   </data>
   <data name="$this.Localizable" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -10208,6 +10331,60 @@
   <data name="&gt;&gt;olv_Iso639_3.Type" xml:space="preserve">
     <value>BrightIdeasSoftware.OLVColumn, ABetterTranslator, Culture=neutral, PublicKeyToken=null</value>
   </data>
+  <data name="&gt;&gt;toolStripSplitButtonLoad.Name" xml:space="preserve">
+    <value>toolStripSplitButtonLoad</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonLoad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSplitButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemLoadFile.Name" xml:space="preserve">
+    <value>toolStripMenuItemLoadFile</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemLoadFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemOpenResx.Name" xml:space="preserve">
+    <value>toolStripMenuItemOpenResx</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemOpenResx.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemOpenAll.Name" xml:space="preserve">
+    <value>toolStripMenuItemOpenAll</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemOpenAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemLoadAndReplaceLanguageSet.Name" xml:space="preserve">
+    <value>toolStripMenuItemLoadAndReplaceLanguageSet</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemLoadAndReplaceLanguageSet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSave.Name" xml:space="preserve">
+    <value>toolStripSplitButtonSave</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSplitButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSaveSave.Name" xml:space="preserve">
+    <value>toolStripSplitButtonSaveSave</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSaveSave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSaveAs.Name" xml:space="preserve">
+    <value>toolStripSplitButtonSaveAs</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSaveAs.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSaveAll.Name" xml:space="preserve">
+    <value>toolStripSplitButtonSaveAll</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSaveAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;toolStripSplitButtonTranslate.Name" xml:space="preserve">
     <value>toolStripSplitButtonTranslate</value>
   </data>
@@ -10464,6 +10641,30 @@
     <value>openFileDialogTextFile</value>
   </data>
   <data name="&gt;&gt;openFileDialogTextFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;openFileDialogProjectFile.Name" xml:space="preserve">
+    <value>openFileDialogProjectFile</value>
+  </data>
+  <data name="&gt;&gt;openFileDialogProjectFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;saveFileDialogForProjectFile.Name" xml:space="preserve">
+    <value>saveFileDialogForProjectFile</value>
+  </data>
+  <data name="&gt;&gt;saveFileDialogForProjectFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;saveFileDialogSelectedLanguages.Name" xml:space="preserve">
+    <value>saveFileDialogSelectedLanguages</value>
+  </data>
+  <data name="&gt;&gt;saveFileDialogSelectedLanguages.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;openFileDialogSelectedLanguages.Name" xml:space="preserve">
+    <value>openFileDialogSelectedLanguages</value>
+  </data>
+  <data name="&gt;&gt;openFileDialogSelectedLanguages.Type" xml:space="preserve">
     <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

@@ -2306,8 +2306,95 @@
   <data name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing">
     <value>548, 17</value>
   </data>
+  <data name="toolStripMenuItemLoadFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>376, 42</value>
+  </data>
+  <data name="toolStripMenuItemLoadFile.Text" xml:space="preserve">
+    <value>चयनित भाषा सेट खोलो</value>
+  </data>
+  <data name="toolStripMenuItemLoadFile.ToolTipText" xml:space="preserve">
+    <value>चयनित भाशाएं दा इक पैह् ले थमां बचाइयै रक्खेआ गेदा सेट खोह् ल्लो</value>
+  </data>
+  <data name="toolStripMenuItemOpenResx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>376, 42</value>
+  </data>
+  <data name="toolStripMenuItemOpenResx.Text" xml:space="preserve">
+    <value>Resx फाइल खोलो</value>
+  </data>
+  <data name="toolStripMenuItemOpenResx.ToolTipText" xml:space="preserve">
+    <value>अनुवाद करने लेई इक Resx फाइल खोह् ल्लो</value>
+  </data>
+  <data name="toolStripMenuItemOpenAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>376, 42</value>
+  </data>
+  <data name="toolStripMenuItemOpenAll.Text" xml:space="preserve">
+    <value>सारे लोड करो (प्रोजेक्ट)</value>
+  </data>
+  <data name="toolStripMenuItemOpenAll.ToolTipText" xml:space="preserve">
+    <value>पैह् ले थमां बचाइयै रक्खी गेदी प्रोजेक्ट सेटिंग्स फाइल गी लोड करदा ऐ।</value>
+  </data>
+  <data name="toolStripMenuItemLoadAndReplaceLanguageSet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>376, 42</value>
+  </data>
+  <data name="toolStripMenuItemLoadAndReplaceLanguageSet.Text" xml:space="preserve">
+    <value>कस्टम लैंग्वेज सेट दे रूप च लोड करो</value>
+  </data>
+  <data name="toolStripMenuItemLoadAndReplaceLanguageSet.ToolTipText" xml:space="preserve">
+    <value>पैह् ले थमां बचाइयै रक्खी गेदी चुनिंदा भाशाएं गी खोह् लदा ऐ ते सिर्फ चुनिंदा भाशाएं गी गै प्रदर्शत करदा ऐ</value>
+  </data>
+  <data name="toolStripSplitButtonLoad.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="toolStripSplitButtonLoad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 36</value>
+  </data>
+  <data name="toolStripSplitButtonLoad.Text" xml:space="preserve">
+    <value>भार</value>
+  </data>
+  <data name="toolStripSplitButtonLoad.ToolTipText" xml:space="preserve">
+    <value>पैह् ले थमां चुनी गेदी भाशाएं आह् ली इक फाइल लोड करो</value>
+  </data>
+  <data name="toolStripSplitButtonSaveSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>320, 42</value>
+  </data>
+  <data name="toolStripSplitButtonSaveSave.Text" xml:space="preserve">
+    <value>चयनित भाशाएं गी बचाओ</value>
+  </data>
+  <data name="toolStripSplitButtonSaveSave.ToolTipText" xml:space="preserve">
+    <value>चयनित भाशाएं दा सेट सेव करो</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>320, 42</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAs.Text" xml:space="preserve">
+    <value>सेव ऐस</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAs.ToolTipText" xml:space="preserve">
+    <value>चुनिंदा भाशाएं गी इक नमीं फाइल च सेव करो</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>320, 42</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAll.Text" xml:space="preserve">
+    <value>सारे बचाओ (प्रोजेक्ट)</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAll.ToolTipText" xml:space="preserve">
+    <value>सारे सेटिंग्स गी इक प्रोजेक्ट फाइल च सेव करदा ऐ।</value>
+  </data>
+  <data name="toolStripSplitButtonSave.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="toolStripSplitButtonSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 36</value>
+  </data>
+  <data name="toolStripSplitButtonSave.Text" xml:space="preserve">
+    <value>बचाओ</value>
+  </data>
+  <data name="toolStripSplitButtonSave.ToolTipText" xml:space="preserve">
+    <value>चयनित भाशाएं गी बचाइयै रक्खो</value>
+  </data>
   <data name="toolStripMenuItemTranslateAllLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.Text" xml:space="preserve">
     <value>सारे समर्थत भाशाएं दा अनुवाद करो</value>
@@ -2316,7 +2403,7 @@
     <value>अनुवाद सेवा कन्नै सब्भै भाशाएं गी चुनो ते अनुवाद करो</value>
   </data>
   <data name="toolStripMenuItemWindowsSupportedLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItemWindowsSupportedLanguages.Text" xml:space="preserve">
     <value>विंडोज लैंग्वेज पैक</value>
@@ -2325,7 +2412,7 @@
     <value>Windows भाशाएं पैक च भाशाएं गी चुनो ते अनुवाद करो</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguageInterfacePacks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguageInterfacePacks.Text" xml:space="preserve">
     <value>विंडोज लैंग्वेज इंटरफेस पैक ऐ</value>
@@ -2334,7 +2421,7 @@
     <value>विंडोज लैंग्वेज इंटरफेस पैक च भाशाएं गी चुनो ते अनुवाद करो</value>
   </data>
   <data name="toolStripMenuItemTranslateBusinessLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItemTranslateBusinessLanguages.Text" xml:space="preserve">
     <value>शीर्ष बिजनेस लैंग्वेज दा अनुवाद करो</value>
@@ -2343,10 +2430,10 @@
     <value>ज़्यादातर इस्तेमाल कीती जाने आह् ली अंतर्राश्ट्री-व्यापार-भाषाएं गी चुनो ते अनुवाद करो</value>
   </data>
   <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>396, 6</value>
+    <value>388, 6</value>
   </data>
   <data name="toolStripMenuItem_TranslateAfrica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItem_TranslateAfrica.Text" xml:space="preserve">
     <value>अफ्रीका दा</value>
@@ -2355,7 +2442,7 @@
     <value>अफ्रीका च शीर्शक बोलने आह् ली भाशाएं दा चयन करो ते अनुवाद करो</value>
   </data>
   <data name="toolStripMenuItem_TranslateAsia.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItem_TranslateAsia.Text" xml:space="preserve">
     <value>एशिया</value>
@@ -2364,7 +2451,7 @@
     <value>एशिया च शीर्शक बोलने आह् ली भाशाएं दा चयन करो ते अनुवाद करो</value>
   </data>
   <data name="toolStripMenuItem_TranslateEurope.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItem_TranslateEurope.Text" xml:space="preserve">
     <value>यूरोप दा</value>
@@ -2373,7 +2460,7 @@
     <value>यूरोप च शीर्शक बोलने आह् ली भाशाएं दा चयन करो ते अनुवाद करो</value>
   </data>
   <data name="toolStripMenuItem_TranslateMiddleEast.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItem_TranslateMiddleEast.Text" xml:space="preserve">
     <value>मध्य पूर्व</value>
@@ -2382,7 +2469,7 @@
     <value>मध्य पूर्व च शीर्शक बोलने आह् ली भाशाएं दा चयन करो ते अनुवाद करो</value>
   </data>
   <data name="toolStripMenuItem_TranslateNorthAmerica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItem_TranslateNorthAmerica.Text" xml:space="preserve">
     <value>उत्तरी अमेरिका</value>
@@ -2391,7 +2478,7 @@
     <value>उत्तरी अमेरिका च शीर्शक बोलने आह् ली भाशाएं दा चयन ते अनुवाद करो</value>
   </data>
   <data name="toolStripMenuItem_TranslateSouthAmerica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItem_TranslateSouthAmerica.Text" xml:space="preserve">
     <value>दक्षिण अमेरिका</value>
@@ -2400,10 +2487,10 @@
     <value>दक्षिण अमेरिका च शीर्शक बोलने आह् ली भाशाएं दा चयन करो ते अनुवाद करो</value>
   </data>
   <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>396, 6</value>
+    <value>388, 6</value>
   </data>
   <data name="toolStripMenuItemTranslateTop5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItemTranslateTop5.Text" xml:space="preserve">
     <value>शीर्ष 5 बोलने आली भाषाएं दा अनुवाद करो</value>
@@ -2412,7 +2499,7 @@
     <value>शीर्शक 5 बोलने आह् ली भाशाएं दा चयन करो ते अनुवाद करो</value>
   </data>
   <data name="toolStripMenuItemTranslateTop10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItemTranslateTop10.Text" xml:space="preserve">
     <value>शीर्ष 10 बोलने आली भाशाएं दा अनुवाद करो</value>
@@ -2421,7 +2508,7 @@
     <value>शीर्ष 10 दा चयन करो ते अनुवाद करो</value>
   </data>
   <data name="toolStripMenuItemTranslateTop20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItemTranslateTop20.Text" xml:space="preserve">
     <value>शीर्ष 20 बोलने आली भाशाएं दा अनुवाद करो</value>
@@ -2430,7 +2517,7 @@
     <value>शीर्ष 20 दा चयन करो ते अनुवाद करो</value>
   </data>
   <data name="toolStripMenuItemTranslateTop30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItemTranslateTop30.Text" xml:space="preserve">
     <value>शीर्ष 30 बोलने आली भाशाएं दा अनुवाद करो</value>
@@ -2451,13 +2538,13 @@
     <value>चुनिंदा भाशाएं पर अनुवाद शुरू करो। जेकर कोई भाशा नेईं चुनी गेई ऐ तां सब्भै भाशाएं दा अनुवाद करदा ऐ।</value>
   </data>
   <data name="toolStripMenuItemSelectAll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>333, 42</value>
+    <value>325, 34</value>
   </data>
   <data name="toolStripMenuItemSelectAll.Text" xml:space="preserve">
     <value>सारी भाशाएं दा चयन करो</value>
   </data>
   <data name="toolStripMenuItemSelectClear.Size" type="System.Drawing.Size, System.Drawing">
-    <value>333, 42</value>
+    <value>325, 34</value>
   </data>
   <data name="toolStripMenuItemSelectClear.Text" xml:space="preserve">
     <value>सारे चयन साफ ​​करो</value>
@@ -2469,7 +2556,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemSelectUndo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>333, 42</value>
+    <value>325, 34</value>
   </data>
   <data name="toolStripMenuItemSelectUndo.Text" xml:space="preserve">
     <value>पिछले समूह चयन गी पूर्ववत करो</value>
@@ -2514,7 +2601,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>440, 42</value>
+    <value>432, 34</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks.Text" xml:space="preserve">
     <value>विंडोज 10/11 लैंग्वेज पैक</value>
@@ -2544,7 +2631,7 @@
     <value>जोड़ो ते चयन करो</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface.Size" type="System.Drawing.Size, System.Drawing">
-    <value>440, 42</value>
+    <value>432, 34</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface.Text" xml:space="preserve">
     <value>विंडोज लैंग्वेज पैक इंटरफेस ऐ</value>
@@ -2556,22 +2643,22 @@
     <value>सिर्फ उ’नें भाशाएं गी दस्सो जेह् ड़ियां Windows लैंग्वेज पैक इंटरफेस च न</value>
   </data>
   <data name="toolStripSeparator7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>437, 6</value>
+    <value>429, 6</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>270, 34</value>
+    <value>158, 34</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_ShowOnly.Text" xml:space="preserve">
     <value>शो</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>270, 34</value>
+    <value>158, 34</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_Add.Text" xml:space="preserve">
     <value>जोड़ करना</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>440, 42</value>
+    <value>432, 34</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.Text" xml:space="preserve">
     <value>अनुवाद सेवा कन्नै भाशाएं</value>
@@ -2580,19 +2667,19 @@
     <value>समर्थत अनुवाद सेवा कन्नै सब्भै भाशाएं गी प्रदर्शत करो</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>270, 34</value>
+    <value>158, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly.Text" xml:space="preserve">
     <value>शो</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>270, 34</value>
+    <value>158, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_Add.Text" xml:space="preserve">
     <value>जोड़ करना</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames.Size" type="System.Drawing.Size, System.Drawing">
-    <value>440, 42</value>
+    <value>432, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames.Text" xml:space="preserve">
     <value>आईएसओ 639-1 भाषा सेट ऐ</value>
@@ -2619,7 +2706,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.Size" type="System.Drawing.Size, System.Drawing">
-    <value>440, 42</value>
+    <value>432, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.Text" xml:space="preserve">
     <value>आईएसओ 639-1 + जीत लैंग पैक</value>
@@ -2637,7 +2724,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemSubLanguagesAndRegions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>440, 42</value>
+    <value>432, 34</value>
   </data>
   <data name="toolStripMenuItemSubLanguagesAndRegions.Text" xml:space="preserve">
     <value>सूची च जोड़ो उप-भाषाएं ते क्षेत्रें</value>
@@ -2920,6 +3007,42 @@
   </data>
   <data name="openFileDialogTextFile.Title" xml:space="preserve">
     <value>Choose text file to translate.</value>
+  </data>
+  <data name="openFileDialogProjectFile.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>965, 17</value>
+  </data>
+  <data name="openFileDialogProjectFile.Filter" xml:space="preserve">
+    <value>ABetterTranslator Project Files (*.aBT)|*.aBT|Text Files (*.txt)|*.txt|All files (*.*)|*.*</value>
+  </data>
+  <data name="openFileDialogProjectFile.Title" xml:space="preserve">
+    <value>Select a project file to open</value>
+  </data>
+  <data name="saveFileDialogForProjectFile.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>17, 65</value>
+  </data>
+  <data name="saveFileDialogForProjectFile.Filter" xml:space="preserve">
+    <value>ABetterTranslator Project Files (*.aBT)|*.aBT|Text Files (*.txt)|*.txt|All files (*.*)|*.*</value>
+  </data>
+  <data name="saveFileDialogForProjectFile.Title" xml:space="preserve">
+    <value>Select a new name for the ABetterLanguage Project File</value>
+  </data>
+  <data name="saveFileDialogSelectedLanguages.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>306, 65</value>
+  </data>
+  <data name="saveFileDialogSelectedLanguages.Filter" xml:space="preserve">
+    <value>ABetterTranslator Language Files (*.Lang)|*.Lang|Text Files (*.txt)|*.txt|All files (*.*)|*.*</value>
+  </data>
+  <data name="saveFileDialogSelectedLanguages.Title" xml:space="preserve">
+    <value>Enter the name of the new Language File.</value>
+  </data>
+  <data name="openFileDialogSelectedLanguages.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>641, 65</value>
+  </data>
+  <data name="openFileDialogSelectedLanguages.Filter" xml:space="preserve">
+    <value>ABetterTranslator Language Files (*.Lang)|*.Lang|Text Files (*.txt)|*.txt|All files (*.*)|*.*</value>
+  </data>
+  <data name="openFileDialogSelectedLanguages.Title" xml:space="preserve">
+    <value>Select a language list file</value>
   </data>
   <data name="$this.Localizable" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -10208,6 +10331,60 @@
   <data name="&gt;&gt;olv_Iso639_3.Type" xml:space="preserve">
     <value>BrightIdeasSoftware.OLVColumn, ABetterTranslator, Culture=neutral, PublicKeyToken=null</value>
   </data>
+  <data name="&gt;&gt;toolStripSplitButtonLoad.Name" xml:space="preserve">
+    <value>toolStripSplitButtonLoad</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonLoad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSplitButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemLoadFile.Name" xml:space="preserve">
+    <value>toolStripMenuItemLoadFile</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemLoadFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemOpenResx.Name" xml:space="preserve">
+    <value>toolStripMenuItemOpenResx</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemOpenResx.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemOpenAll.Name" xml:space="preserve">
+    <value>toolStripMenuItemOpenAll</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemOpenAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemLoadAndReplaceLanguageSet.Name" xml:space="preserve">
+    <value>toolStripMenuItemLoadAndReplaceLanguageSet</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemLoadAndReplaceLanguageSet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSave.Name" xml:space="preserve">
+    <value>toolStripSplitButtonSave</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSplitButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSaveSave.Name" xml:space="preserve">
+    <value>toolStripSplitButtonSaveSave</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSaveSave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSaveAs.Name" xml:space="preserve">
+    <value>toolStripSplitButtonSaveAs</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSaveAs.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSaveAll.Name" xml:space="preserve">
+    <value>toolStripSplitButtonSaveAll</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSaveAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;toolStripSplitButtonTranslate.Name" xml:space="preserve">
     <value>toolStripSplitButtonTranslate</value>
   </data>
@@ -10464,6 +10641,30 @@
     <value>openFileDialogTextFile</value>
   </data>
   <data name="&gt;&gt;openFileDialogTextFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;openFileDialogProjectFile.Name" xml:space="preserve">
+    <value>openFileDialogProjectFile</value>
+  </data>
+  <data name="&gt;&gt;openFileDialogProjectFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;saveFileDialogForProjectFile.Name" xml:space="preserve">
+    <value>saveFileDialogForProjectFile</value>
+  </data>
+  <data name="&gt;&gt;saveFileDialogForProjectFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;saveFileDialogSelectedLanguages.Name" xml:space="preserve">
+    <value>saveFileDialogSelectedLanguages</value>
+  </data>
+  <data name="&gt;&gt;saveFileDialogSelectedLanguages.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;openFileDialogSelectedLanguages.Name" xml:space="preserve">
+    <value>openFileDialogSelectedLanguages</value>
+  </data>
+  <data name="&gt;&gt;openFileDialogSelectedLanguages.Type" xml:space="preserve">
     <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

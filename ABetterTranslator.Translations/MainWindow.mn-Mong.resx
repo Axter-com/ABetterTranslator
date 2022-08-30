@@ -2306,8 +2306,95 @@
   <data name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing">
     <value>548, 17</value>
   </data>
+  <data name="toolStripMenuItemLoadFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>376, 42</value>
+  </data>
+  <data name="toolStripMenuItemLoadFile.Text" xml:space="preserve">
+    <value>ᠰᠣᠩᠭᠣᠨ ᠲᠣᠭᠲᠠᠭᠠᠬᠤ ᠦᠭᠡ ᠬᠡᠯᠡᠨ ᠦ ᠴᠤᠭᠯᠠᠷᠠᠯ ᠢ ᠨᠡᠭᠡᠭᠡᠨ᠎ᠡ ᠃</value>
+  </data>
+  <data name="toolStripMenuItemLoadFile.ToolTipText" xml:space="preserve">
+    <value>ᠤᠤᠯ ᠤᠨ ᠬᠠᠳᠠᠭᠠᠯᠠᠮᠵᠢ ᠶᠢᠨ ᠰᠣᠩᠭᠣᠨ ᠲᠣᠭᠲᠠᠭᠠᠬᠤ ᠦᠭᠡ ᠬᠡᠯᠡᠨ ᠦ ᠴᠤᠭᠯᠠᠷᠠᠯ ᠢ ᠨᠡᠭᠡᠭᠡᠨ᠎ᠡ ᠃</value>
+  </data>
+  <data name="toolStripMenuItemOpenResx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>376, 42</value>
+  </data>
+  <data name="toolStripMenuItemOpenResx.Text" xml:space="preserve">
+    <value>ᠯᠧᠺᠰ ᠤᠨ ᠪᠢᠴᠢᠭ᠌ ᠮᠠᠲ᠋ᠧᠷᠢᠶᠠᠯ ᠢ ᠨᠡᠭᠡᠭᠡᠨ᠎ᠡ ᠃</value>
+  </data>
+  <data name="toolStripMenuItemOpenResx.ToolTipText" xml:space="preserve">
+    <value>ᠤᠷᠴᠢᠭᠤᠯᠬᠤ ᠭᠡᠵᠦ ᠪᠠᠢᠢᠭ᠎ᠠ Resx ᠪᠢᠴᠢᠭ᠌ ᠮᠠᠲ᠋ᠸᠷᠢᠶᠠᠯ ᠢ ᠨᠡᠭᠡᠭᠡᠨ᠎ᠡ᠃</value>
+  </data>
+  <data name="toolStripMenuItemOpenAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>376, 42</value>
+  </data>
+  <data name="toolStripMenuItemOpenAll.Text" xml:space="preserve">
+    <value>ᠪᠦᠬᠦᠨ ᠢ ᠠᠴᠢᠶᠠᠯᠠᠬᠤ ( ᠲᠥᠷᠥᠯ ᠵᠦᠢᠯ )</value>
+  </data>
+  <data name="toolStripMenuItemOpenAll.ToolTipText" xml:space="preserve">
+    <value>ᠠᠴᠢᠶ᠎ᠠ ᠨᠡᠮᠡᠬᠦ ᠡᠴᠡ ᠡᠮᠦᠨ᠎ᠡ ᠬᠠᠳᠠᠭᠠᠯᠠᠵᠤ ᠪᠠᠶᠢᠭᠰᠠᠨ ᠲᠥᠷᠥᠯ ᠵᠦᠢᠯ ᠲᠣᠬᠢᠷᠠᠭᠤᠯᠤᠭᠰᠠᠨ ᠪᠢᠴᠢᠭ ᠮᠠᠲ᠋ᠧᠷᠢᠶᠠᠯ᠃</value>
+  </data>
+  <data name="toolStripMenuItemLoadAndReplaceLanguageSet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>376, 42</value>
+  </data>
+  <data name="toolStripMenuItemLoadAndReplaceLanguageSet.Text" xml:space="preserve">
+    <value>ᠥᠪᠡᠷ ᠦᠨ ᠲᠣᠮᠢᠶᠠᠯᠠᠯ ᠤᠨ ᠬᠡᠯᠡᠨ ᠦ ᠴᠤᠭᠯᠠᠷᠠᠯ ᠪᠣᠯᠣᠭᠰᠠᠨ ᠤ ᠬᠤᠪᠢ ᠳᠤ ᠃</value>
+  </data>
+  <data name="toolStripMenuItemLoadAndReplaceLanguageSet.ToolTipText" xml:space="preserve">
+    <value>ᠤᠤᠯ ᠤᠨ ᠬᠠᠳᠠᠭᠠᠯᠠᠵᠤ ᠪᠠᠶᠢᠭᠰᠠᠨ ᠰᠣᠩᠭᠣᠭᠰᠠᠨ ᠬᠡᠯᠡ ᠶᠢ ᠨᠡᠭᠡᠭᠡᠵᠦ ᠂ ᠵᠥᠪᠬᠡᠨ ᠰᠣᠩᠭᠣᠭᠰᠠᠨ ᠦᠭᠡ ᠬᠡᠯᠡ ᠶᠢ ᠢᠯᠡᠷᠡᠭᠦᠯᠵᠡᠶ ᠃</value>
+  </data>
+  <data name="toolStripSplitButtonLoad.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="toolStripSplitButtonLoad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 36</value>
+  </data>
+  <data name="toolStripSplitButtonLoad.Text" xml:space="preserve">
+    <value>ᠠᠴᠢᠶ᠎ᠠ ᠃</value>
+  </data>
+  <data name="toolStripSplitButtonLoad.ToolTipText" xml:space="preserve">
+    <value>ᠠᠴᠢᠶ᠎ᠠ ᠨᠡᠮᠡᠵᠦ ᠠᠴᠢᠶᠠᠯᠠᠬᠤ ᠳᠤ ᠤᠤᠯ ᠤᠨ ᠰᠣᠩᠭᠣᠭᠰᠠᠨ ᠦᠭᠡ ᠬᠡᠯᠡᠨ ᠦ ᠪᠢᠴᠢᠭ᠌ ᠮᠠᠲ᠋ᠧᠷᠢᠶᠠᠯ ᠪᠠᠭᠲᠠᠨ᠎ᠠ ᠃</value>
+  </data>
+  <data name="toolStripSplitButtonSaveSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>320, 42</value>
+  </data>
+  <data name="toolStripSplitButtonSaveSave.Text" xml:space="preserve">
+    <value>ᠰᠣᠩᠭᠣᠭᠰᠠᠨ ᠬᠡᠯᠡ ᠶᠢ ᠬᠠᠳᠠᠭᠠᠯᠠᠨ᠎ᠠ ᠃</value>
+  </data>
+  <data name="toolStripSplitButtonSaveSave.ToolTipText" xml:space="preserve">
+    <value>ᠰᠣᠩᠭᠣᠭᠰᠠᠨ ᠬᠡᠯᠡᠨ ᠦ ᠴᠤᠭᠯᠠᠷᠠᠯ ᠢ ᠬᠠᠳᠠᠭᠠᠯᠠᠨ᠎ᠠ ᠃</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>320, 42</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAs.Text" xml:space="preserve">
+    <value>ᠠᠰᠲᠠᠭᠠᠨ ᠬᠠᠳᠠᠭᠠᠯᠠ ᠃</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAs.ToolTipText" xml:space="preserve">
+    <value>ᠰᠣᠩᠭᠣᠭᠰᠠᠨ ᠦᠭᠡ ᠪᠡᠨ ᠰᠢᠨ᠎ᠡ ᠪᠢᠴᠢᠭ᠌ ᠮᠠᠲ᠋ᠧᠷᠢᠶᠠᠯ ᠳᠤ ᠬᠠᠳᠠᠭᠠᠯᠠᠨ᠎ᠠ ᠃</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>320, 42</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAll.Text" xml:space="preserve">
+    <value>ᠪᠦᠬᠦᠨ ᠢ ᠬᠠᠳᠠᠭᠠᠯᠠᠬᠤ ( ᠲᠥᠷᠥᠯ ᠵᠦᠢᠯ )</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAll.ToolTipText" xml:space="preserve">
+    <value>ᠪᠤᠶ ᠪᠦᠬᠦᠢ ᠪᠠᠶᠢᠷᠢᠯᠠᠭᠤᠯᠤᠯᠲᠠ ᠶᠢ ᠲᠥᠷᠥᠯ ᠵᠦᠢᠯ ᠦᠨ ᠪᠢᠴᠢᠭ ᠮᠠᠲ᠋ᠧᠷᠢᠶᠠᠯ ᠳᠤ ᠬᠠᠳᠠᠭᠠᠯᠠᠨ᠎ᠠ᠃</value>
+  </data>
+  <data name="toolStripSplitButtonSave.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="toolStripSplitButtonSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 36</value>
+  </data>
+  <data name="toolStripSplitButtonSave.Text" xml:space="preserve">
+    <value>ᠠᠪᠤᠷᠠᠨ᠎ᠠ ᠃</value>
+  </data>
+  <data name="toolStripSplitButtonSave.ToolTipText" xml:space="preserve">
+    <value>ᠰᠣᠩᠭᠣᠨ ᠲᠣᠭᠲᠠᠭᠠᠭᠰᠠᠨ ᠬᠡᠯᠡ ᠶᠢ ᠬᠠᠳᠠᠭᠠᠯᠠᠨ᠎ᠠ ᠃</value>
+  </data>
   <data name="toolStripMenuItemTranslateAllLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.Text" xml:space="preserve">
     <value>ᠪᠤᠢ ᠪᠥᠬᠥᠢ ᠳᠡᠮᠵᠢᠯᠭᠡ ᠲᠡᠢ ᠬᠡᠯᠡ ᠶᠢ ᠤᠷᠴᠢᠭᠤᠯᠵᠠᠢ ᠃</value>
@@ -2316,7 +2403,7 @@
     <value>ᠤᠷᠴᠢᠭᠤᠯᠭ᠎ᠠ ᠶᠢᠨ ᠦᠢᠯᠡᠴᠢᠯᠡᠭᠡ ᠪᠡᠷ ᠳᠠᠮᠵᠢᠭᠤᠯᠤᠨ ᠪᠤᠢ ᠪᠥᠬᠥᠢ ᠦᠭᠡ ᠬᠡᠯᠡ ᠶᠢ ᠰᠣᠩᠭᠣᠬᠤ ᠶᠢᠨ ᠬᠠᠮᠲᠤ ᠤᠷᠴᠢᠭᠤᠯᠤᠨ᠎ᠠ ᠃</value>
   </data>
   <data name="toolStripMenuItemWindowsSupportedLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItemWindowsSupportedLanguages.Text" xml:space="preserve">
     <value>ᠬᠠᠷᠠᠭᠠᠨ ᠴᠣᠩᠬᠣᠨ ᠤ ᠬᠡᠯᠡᠨ ᠦ ᠪᠣᠭᠴᠣ ᠃</value>
@@ -2325,7 +2412,7 @@
     <value>ᠸᠢᠨᠳᠢᠨ ᠬᠡᠯᠡᠨ ᠦ ᠪᠣᠭᠴᠣ ᠳᠣᠲᠣᠷ᠎ᠠ ᠦᠭᠡ ᠬᠡᠯᠡ ᠶᠢ ᠰᠤᠩᠭᠤᠬᠤ ᠪᠠ ᠤᠷᠴᠢᠭᠤᠯᠵᠠᠢ ᠃</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguageInterfacePacks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguageInterfacePacks.Text" xml:space="preserve">
     <value>ᠬᠠᠷᠠᠭᠠᠨ ᠴᠣᠩᠬᠣᠨ ᠤ ᠬᠡᠯᠡᠨ ᠦ ᠨᠢᠭᠤᠷ ᠤᠨ ᠲᠠᠯᠬ᠎ᠠ ᠃</value>
@@ -2334,7 +2421,7 @@
     <value>ᠸᠢᠨᠳᠢᠨᠰ ᠬᠡᠯᠡᠨ ᠦ ᠨᠢᠭᠤᠷ ᠤᠨ ᠲᠠᠯᠬ᠎ᠠ ᠳᠤ ᠦᠭᠡ ᠬᠡᠯᠡ ᠶᠢ ᠰᠤᠩᠭ᠋ᠤᠨ᠎ᠠ ᠃</value>
   </data>
   <data name="toolStripMenuItemTranslateBusinessLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItemTranslateBusinessLanguages.Text" xml:space="preserve">
     <value>ᠬᠤᠳᠠᠯᠳᠤᠭᠠᠨ ᠤ ᠬᠡᠯᠡ ᠶᠢ ᠤᠷᠴᠢᠭᠤᠯᠪᠠ ᠃</value>
@@ -2343,10 +2430,10 @@
     <value>ᠬᠠᠮᠤᠭ ᠤᠨ ᠦᠷᠭᠦᠯᠵᠢ ᠬᠡᠷᠡᠭᠯᠡᠳᠡᠭ ᠣᠯᠠᠨ ᠤᠯᠤᠰ ᠤᠨ ᠬᠤᠳᠠᠯᠳᠤᠭᠠᠨ ᠤ ᠶᠠᠪᠤᠳᠠᠯ ᠤᠨ ᠦᠭᠡ ᠬᠡᠯᠡ ᠶᠢ ᠰᠣᠩᠭᠣᠬᠤ ᠶᠢᠨ ᠬᠠᠮᠲᠤ ᠵᠥᠪᠬᠡᠨ ᠤᠷᠭᠤᠭᠤᠯᠤᠨ᠎ᠠ ᠃</value>
   </data>
   <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>396, 6</value>
+    <value>388, 6</value>
   </data>
   <data name="toolStripMenuItem_TranslateAfrica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItem_TranslateAfrica.Text" xml:space="preserve">
     <value>ᠠᠹᠷᠢᠺᠠ ᠲᠢᠪ ᠃</value>
@@ -2355,7 +2442,7 @@
     <value>ᠠᠹᠷᠢᠺᠠ ᠲᠢᠪ ᠦᠨ ᠬᠠᠮᠤᠭ ᠤᠨ ᠦᠷᠭᠦᠯᠵᠢ ᠬᠡᠷᠡᠭᠯᠡᠳᠡᠭ ᠬᠡᠯᠡ ᠶᠢ ᠰᠣᠩᠭᠣᠵᠤ ᠤᠷᠪᠠᠭᠤᠯᠤᠨ᠎ᠠ ᠃</value>
   </data>
   <data name="toolStripMenuItem_TranslateAsia.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItem_TranslateAsia.Text" xml:space="preserve">
     <value>ᠠᠽᠢᠶ᠎ᠠ ᠲᠢᠪ ᠃</value>
@@ -2364,7 +2451,7 @@
     <value>ᠠᠽᠢᠶ᠎ᠠ ᠲᠢᠪ ᠦᠨ ᠬᠠᠮᠤᠭ ᠤᠨ ᠦᠷᠭᠦᠯᠵᠢ ᠬᠡᠷᠡᠭ᠍ᠯᠡᠳᠡᠭ᠍ ᠬᠡᠯᠡ ᠶᠢ ᠰᠣᠩᠭᠣᠵᠤ ᠤᠷᠢᠶᠠᠯᠠᠳᠠᠭ ᠃</value>
   </data>
   <data name="toolStripMenuItem_TranslateEurope.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItem_TranslateEurope.Text" xml:space="preserve">
     <value>ᠧᠦᠢᠷᠦᠫᠡ ᠃</value>
@@ -2373,7 +2460,7 @@
     <value>ᠧᠦᠢᠷᠦᠫᠡ ᠲᠢᠪ ᠦᠨ ᠬᠠᠮᠤᠭ ᠤᠨ ᠦᠷᠭᠦᠯᠵᠢ ᠬᠡᠷᠡᠭ᠍ᠯᠡᠳᠡᠭ᠍ ᠬᠡᠯᠡ ᠶᠢ ᠰᠣᠩᠭᠣᠵᠤ ᠤᠷᠪᠠᠭᠤᠯᠤᠨ᠎ᠠ ᠃</value>
   </data>
   <data name="toolStripMenuItem_TranslateMiddleEast.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItem_TranslateMiddleEast.Text" xml:space="preserve">
     <value>ᠳᠤᠮᠳᠠᠳᠤ ᠳᠣᠷᠣᠨᠠᠲᠤ ᠃</value>
@@ -2382,7 +2469,7 @@
     <value>ᠳᠤᠮᠳᠠᠳᠤ ᠳᠣᠷᠣᠨᠠᠲᠤ ᠶᠢᠨ ᠬᠠᠮᠤᠭ ᠤᠨ ᠦᠷᠭᠦᠯᠵᠢ ᠬᠡᠷᠡᠭ᠍ᠯᠡᠳᠡᠭ᠍ ᠦᠭᠡ ᠬᠡᠯᠡ ᠶᠢ ᠰᠣᠩᠭᠣᠵᠤ ᠤᠷᠢᠶᠠᠯᠠᠳᠠᠭ ᠃</value>
   </data>
   <data name="toolStripMenuItem_TranslateNorthAmerica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItem_TranslateNorthAmerica.Text" xml:space="preserve">
     <value>ᠤᠮᠠᠷᠠᠲᠤ ᠠᠮᠧᠷᠢᠺᠠ ᠲᠢᠪ ᠃</value>
@@ -2391,7 +2478,7 @@
     <value>ᠤᠮᠠᠷᠠᠲᠤ ᠠᠮᠧᠷᠢᠺᠠ ᠶᠢᠨ ᠬᠠᠮᠤᠭ ᠤᠨ ᠦᠷᠭᠦᠯᠵᠢ ᠬᠡᠷᠡᠭ᠍ᠯᠡᠳᠡᠭ᠍ ᠬᠡᠯᠡ ᠶᠢ ᠰᠣᠩᠭᠣᠵᠤ ᠤᠷᠪᠠᠭᠤᠯᠤᠨ᠎ᠠ ᠃</value>
   </data>
   <data name="toolStripMenuItem_TranslateSouthAmerica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItem_TranslateSouthAmerica.Text" xml:space="preserve">
     <value>ᠡᠮᠦᠨᠡᠲᠦ ᠠᠮᠧᠷᠢᠺᠠ ᠲᠢᠪ ᠃</value>
@@ -2400,10 +2487,10 @@
     <value>ᠡᠮᠦᠨᠡᠲᠦ ᠠᠮᠧᠷᠢᠺᠠ ᠲᠢᠪ ᠦᠨ ᠬᠠᠮᠤᠭ ᠤᠨ ᠦᠷᠭᠦᠯᠵᠢ ᠬᠡᠷᠡᠭᠯᠡᠳᠡᠭ ᠦᠭᠡ ᠬᠡᠯᠡ ᠶᠢ ᠰᠣᠩᠭᠣᠵᠤ ᠤᠷᠢᠶᠠᠯᠠᠵᠠᠶ ᠃</value>
   </data>
   <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>396, 6</value>
+    <value>388, 6</value>
   </data>
   <data name="toolStripMenuItemTranslateTop5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItemTranslateTop5.Text" xml:space="preserve">
     <value>ᠤᠷᠪᠠᠭᠤᠯᠬᠤ ᠠᠴᠠ ᠡᠮᠦᠨ᠎ᠡ 5 ᠵᠦᠢᠯ ᠦᠨ ᠠᠮᠠᠨ ᠬᠡᠯᠡ ᠃</value>
@@ -2412,7 +2499,7 @@
     <value>ᠲᠦᠷᠦᠭᠦᠦ 5 ᠵᠦᠢᠯ ᠦᠨ ᠠᠮᠠᠨ ᠬᠡᠯᠡ ᠶᠢ ᠰᠣᠩᠭᠣᠵᠤ ᠨᠡᠶᠢᠯᠡᠭᠦᠯᠦᠨ ᠤᠷᠪᠠᠭᠤᠯᠬᠤ ᠬᠡᠷᠡᠭᠲᠡᠶ ᠃</value>
   </data>
   <data name="toolStripMenuItemTranslateTop10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItemTranslateTop10.Text" xml:space="preserve">
     <value>ᠤᠷᠪᠠᠭᠤᠯᠬᠤ ᠠᠴᠠ ᠡᠮᠦᠨ᠎ᠡ 10 ᠵᠦᠢᠯ ᠦᠨ ᠠᠮᠠᠨ ᠬᠡᠯᠡ ᠃</value>
@@ -2421,7 +2508,7 @@
     <value>ᠰᠣᠩᠭᠣᠬᠤ ᠶᠢᠨ ᠬᠠᠮᠲᠤ 10 ᠨᠡᠷᠡᠰ ᠢ ᠰᠣᠩᠭᠣᠨ᠎ᠠ ᠃</value>
   </data>
   <data name="toolStripMenuItemTranslateTop20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItemTranslateTop20.Text" xml:space="preserve">
     <value>ᠤᠷᠪᠠᠭᠤᠯᠬᠤ ᠠᠴᠠ ᠡᠮᠦᠨ᠎ᠡ 20 ᠵᠦᠢᠯ ᠦᠨ ᠠᠮᠠᠨ ᠬᠡᠯᠡ ᠃</value>
@@ -2430,7 +2517,7 @@
     <value>ᠰᠣᠩᠭᠣᠬᠤ ᠶᠢᠨ ᠬᠠᠮᠲᠤ 20 ᠨᠡᠷᠡᠰ ᠢ ᠰᠣᠩᠭᠣᠨ᠎ᠠ ᠃</value>
   </data>
   <data name="toolStripMenuItemTranslateTop30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 42</value>
+    <value>391, 34</value>
   </data>
   <data name="toolStripMenuItemTranslateTop30.Text" xml:space="preserve">
     <value>ᠤᠷᠪᠠᠭᠤᠯᠬᠤ ᠠᠴᠠ ᠡᠮᠦᠨ᠎ᠡ 30 ᠵᠦᠢᠯ ᠦᠨ ᠠᠮᠠᠨ ᠬᠡᠯᠡ ᠃</value>
@@ -2451,13 +2538,13 @@
     <value>ᠰᠣᠩᠭᠣᠭᠰᠠᠨ ᠦᠭᠡ ᠬᠡᠯᠡ ᠪᠡᠨ ᠡᠬᠢᠯᠡᠭᠦᠯᠵᠦ ᠡᠬᠢᠯᠡᠪᠡ ᠃  ᠬᠡᠷᠪᠡ ᠶᠠᠮᠠᠷ ᠴᠤ ᠬᠡᠯᠡ ᠰᠤᠩᠭ᠋ᠤᠭᠰᠠᠨ ᠦᠭᠡᠢ ᠪᠣᠯ ᠪᠤᠢ ᠪᠥᠬᠥᠢ ᠦᠭᠡ ᠬᠡᠯᠡ ᠶᠢ ᠤᠷᠴᠢᠭᠤᠯᠳᠠᠭ ᠃</value>
   </data>
   <data name="toolStripMenuItemSelectAll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>333, 42</value>
+    <value>325, 34</value>
   </data>
   <data name="toolStripMenuItemSelectAll.Text" xml:space="preserve">
     <value>ᠪᠤᠢ ᠪᠥᠬᠥᠢ ᠬᠡᠯᠡ ᠶᠢ ᠰᠣᠩᠭᠣᠨ᠎ᠠ ᠃</value>
   </data>
   <data name="toolStripMenuItemSelectClear.Size" type="System.Drawing.Size, System.Drawing">
-    <value>333, 42</value>
+    <value>325, 34</value>
   </data>
   <data name="toolStripMenuItemSelectClear.Text" xml:space="preserve">
     <value>ᠪᠤᠢ ᠪᠥᠬᠥᠢ ᠰᠣᠩᠭᠣᠯᠲᠠ ᠶᠢ ᠠᠷᠢᠯᠭᠠᠨ᠎ᠠ ᠃</value>
@@ -2469,7 +2556,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemSelectUndo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>333, 42</value>
+    <value>325, 34</value>
   </data>
   <data name="toolStripMenuItemSelectUndo.Text" xml:space="preserve">
     <value>ᠳᠡᠭᠡᠷ᠎ᠡ ᠤᠳᠠᠭᠠᠨ ᠤ ᠳᠤᠭᠤᠶᠢᠯᠠᠩ ᠤᠨ ᠰᠤᠩᠭᠤᠯᠲᠠ ᠶᠢ ᠬᠦᠴᠦᠨ ᠦᠭᠡᠢ ᠪᠣᠯᠭᠠᠪᠠ ᠃</value>
@@ -2514,7 +2601,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>440, 42</value>
+    <value>432, 34</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks.Text" xml:space="preserve">
     <value>ᠬᠠᠷᠠᠭᠠᠨ ᠴᠣᠩᠬᠣ 10/11 ᠦᠭᠡ ᠬᠡᠯᠡᠨ ᠦ ᠪᠣᠭᠴᠣ ᠃</value>
@@ -2544,7 +2631,7 @@
     <value>ᠨᠡᠮᠡᠬᠦ ᠶᠢᠨ ᠬᠠᠮᠲᠤ ᠰᠣᠩᠭᠣᠨ᠎ᠠ ᠃</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface.Size" type="System.Drawing.Size, System.Drawing">
-    <value>440, 42</value>
+    <value>432, 34</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface.Text" xml:space="preserve">
     <value>ᠬᠠᠷᠠᠭᠠᠨ ᠴᠣᠩᠬᠣᠨ ᠤ ᠬᠡᠯᠡᠨ ᠦ ᠪᠣᠭᠣᠳᠠᠯ ᠤᠨ ᠨᠢᠭᠤᠷ ᠃</value>
@@ -2556,22 +2643,22 @@
     <value>ᠵᠥᠪᠬᠡᠨ ᠸᠢᠨᠳ᠋ᠧᠨᠰ ᠬᠡᠯᠡᠨ ᠦ ᠪᠣᠭᠣᠳᠠᠯ ᠤᠨ ᠨᠢᠭᠤᠷ ᠤᠨ ᠳᠣᠲᠣᠷᠠᠬᠢ ᠬᠡᠯᠡ ᠶᠢ ᠢᠯᠡᠷᠡᠭᠦᠯᠵᠡᠢ ᠃</value>
   </data>
   <data name="toolStripSeparator7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>437, 6</value>
+    <value>429, 6</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>270, 34</value>
+    <value>158, 34</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_ShowOnly.Text" xml:space="preserve">
     <value>ᠢᠯᠡᠷᠡᠭᠦᠯᠦᠯᠲᠡ ᠃</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>270, 34</value>
+    <value>158, 34</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_Add.Text" xml:space="preserve">
     <value>ᠨᠡᠮᠡ ᠃</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>440, 42</value>
+    <value>432, 34</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages.Text" xml:space="preserve">
     <value>ᠤᠷᠴᠢᠭᠤᠯᠭ᠎ᠠ ᠶᠢᠨ ᠦᠢᠯᠡᠴᠢᠯᠡᠭᠡᠨ ᠦ ᠬᠡᠯᠡ ᠪᠠᠶᠢᠨ᠎ᠠ᠃</value>
@@ -2580,19 +2667,19 @@
     <value>ᠳᠡᠮᠵᠢᠯᠭᠡ ᠲᠡᠢ ᠤᠷᠴᠢᠭᠤᠯᠭ᠎ᠠ ᠶᠢᠨ ᠦᠢᠯᠡᠴᠢᠯᠡᠭᠡᠨ ᠦ ᠪᠤᠢ ᠪᠥᠬᠥᠢ ᠬᠡᠯᠡ ᠶᠢ ᠢᠯᠡᠷᠡᠭᠦᠯᠵᠡᠢ ᠃</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>270, 34</value>
+    <value>158, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly.Text" xml:space="preserve">
     <value>ᠢᠯᠡᠷᠡᠭᠦᠯᠦᠯᠲᠡ ᠃</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>270, 34</value>
+    <value>158, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames_Add.Text" xml:space="preserve">
     <value>ᠨᠡᠮᠡ ᠃</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames.Size" type="System.Drawing.Size, System.Drawing">
-    <value>440, 42</value>
+    <value>432, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames.Text" xml:space="preserve">
     <value>ISO 639-1 ᠬᠡᠯᠡᠨ ᠦ ᠴᠤᠭᠯᠠᠷᠠᠯ ᠃</value>
@@ -2619,7 +2706,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.Size" type="System.Drawing.Size, System.Drawing">
-    <value>440, 42</value>
+    <value>432, 34</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.Text" xml:space="preserve">
     <value>ISO 639-1+ ᠢᠯᠠᠯᠲᠠ ᠣᠯᠵᠠᠢ ᠃</value>
@@ -2637,7 +2724,7 @@
     <value>False</value>
   </data>
   <data name="toolStripMenuItemSubLanguagesAndRegions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>440, 42</value>
+    <value>432, 34</value>
   </data>
   <data name="toolStripMenuItemSubLanguagesAndRegions.Text" xml:space="preserve">
     <value>ᠦᠷ᠎ᠡ ᠬᠡᠯᠡ ᠪᠠ ᠣᠷᠣᠨ ᠪᠦᠰᠡ ᠶᠢᠨ ᠵᠢᠭ᠌ᠰᠠᠭᠠᠯᠲᠠ ᠶᠢᠨ ᠬᠦᠰᠦᠨᠦᠭ᠍ᠲᠦ ᠶᠢ ᠨᠡᠮᠡᠵᠦ ᠣᠯᠵᠠᠢ ᠃</value>
@@ -2920,6 +3007,42 @@
   </data>
   <data name="openFileDialogTextFile.Title" xml:space="preserve">
     <value>Choose text file to translate.</value>
+  </data>
+  <data name="openFileDialogProjectFile.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>965, 17</value>
+  </data>
+  <data name="openFileDialogProjectFile.Filter" xml:space="preserve">
+    <value>ABetterTranslator Project Files (*.aBT)|*.aBT|Text Files (*.txt)|*.txt|All files (*.*)|*.*</value>
+  </data>
+  <data name="openFileDialogProjectFile.Title" xml:space="preserve">
+    <value>Select a project file to open</value>
+  </data>
+  <data name="saveFileDialogForProjectFile.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>17, 65</value>
+  </data>
+  <data name="saveFileDialogForProjectFile.Filter" xml:space="preserve">
+    <value>ABetterTranslator Project Files (*.aBT)|*.aBT|Text Files (*.txt)|*.txt|All files (*.*)|*.*</value>
+  </data>
+  <data name="saveFileDialogForProjectFile.Title" xml:space="preserve">
+    <value>Select a new name for the ABetterLanguage Project File</value>
+  </data>
+  <data name="saveFileDialogSelectedLanguages.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>306, 65</value>
+  </data>
+  <data name="saveFileDialogSelectedLanguages.Filter" xml:space="preserve">
+    <value>ABetterTranslator Language Files (*.Lang)|*.Lang|Text Files (*.txt)|*.txt|All files (*.*)|*.*</value>
+  </data>
+  <data name="saveFileDialogSelectedLanguages.Title" xml:space="preserve">
+    <value>Enter the name of the new Language File.</value>
+  </data>
+  <data name="openFileDialogSelectedLanguages.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>641, 65</value>
+  </data>
+  <data name="openFileDialogSelectedLanguages.Filter" xml:space="preserve">
+    <value>ABetterTranslator Language Files (*.Lang)|*.Lang|Text Files (*.txt)|*.txt|All files (*.*)|*.*</value>
+  </data>
+  <data name="openFileDialogSelectedLanguages.Title" xml:space="preserve">
+    <value>Select a language list file</value>
   </data>
   <data name="$this.Localizable" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -10208,6 +10331,60 @@
   <data name="&gt;&gt;olv_Iso639_3.Type" xml:space="preserve">
     <value>BrightIdeasSoftware.OLVColumn, ABetterTranslator, Culture=neutral, PublicKeyToken=null</value>
   </data>
+  <data name="&gt;&gt;toolStripSplitButtonLoad.Name" xml:space="preserve">
+    <value>toolStripSplitButtonLoad</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonLoad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSplitButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemLoadFile.Name" xml:space="preserve">
+    <value>toolStripMenuItemLoadFile</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemLoadFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemOpenResx.Name" xml:space="preserve">
+    <value>toolStripMenuItemOpenResx</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemOpenResx.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemOpenAll.Name" xml:space="preserve">
+    <value>toolStripMenuItemOpenAll</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemOpenAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemLoadAndReplaceLanguageSet.Name" xml:space="preserve">
+    <value>toolStripMenuItemLoadAndReplaceLanguageSet</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemLoadAndReplaceLanguageSet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSave.Name" xml:space="preserve">
+    <value>toolStripSplitButtonSave</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSplitButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSaveSave.Name" xml:space="preserve">
+    <value>toolStripSplitButtonSaveSave</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSaveSave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSaveAs.Name" xml:space="preserve">
+    <value>toolStripSplitButtonSaveAs</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSaveAs.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSaveAll.Name" xml:space="preserve">
+    <value>toolStripSplitButtonSaveAll</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSaveAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;toolStripSplitButtonTranslate.Name" xml:space="preserve">
     <value>toolStripSplitButtonTranslate</value>
   </data>
@@ -10464,6 +10641,30 @@
     <value>openFileDialogTextFile</value>
   </data>
   <data name="&gt;&gt;openFileDialogTextFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;openFileDialogProjectFile.Name" xml:space="preserve">
+    <value>openFileDialogProjectFile</value>
+  </data>
+  <data name="&gt;&gt;openFileDialogProjectFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;saveFileDialogForProjectFile.Name" xml:space="preserve">
+    <value>saveFileDialogForProjectFile</value>
+  </data>
+  <data name="&gt;&gt;saveFileDialogForProjectFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;saveFileDialogSelectedLanguages.Name" xml:space="preserve">
+    <value>saveFileDialogSelectedLanguages</value>
+  </data>
+  <data name="&gt;&gt;saveFileDialogSelectedLanguages.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;openFileDialogSelectedLanguages.Name" xml:space="preserve">
+    <value>openFileDialogSelectedLanguages</value>
+  </data>
+  <data name="&gt;&gt;openFileDialogSelectedLanguages.Type" xml:space="preserve">
     <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

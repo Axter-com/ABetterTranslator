@@ -41,6 +41,7 @@ namespace ABetterTranslator
     using Windows.Globalization;
     using System.Runtime.Intrinsics.X86;
     using System.Reflection;
+    using System.Diagnostics.Metrics;
 
 	public partial class MainWindow : Form
 	{
@@ -108,6 +109,8 @@ namespace ABetterTranslator
         private bool _isFormReady = false;
         private StreamWriter _logFile  = null;
         private bool _SrcResxHasAppendedLanguageToBaseFileName = false;
+        private string _filenameForSavedSelectedLanguages = "";
+        private string _filenameForSavedProjectSettings = "";
         #endregion private/protected variables
         #region enums and sub classes
         public enum VerbosityLevels
@@ -1761,7 +1764,9 @@ namespace ABetterTranslator
         }
         private void AddLanguage(string code, string LangName, string? translatorSupported = null)
         {
-            Debug.Assert(!string.IsNullOrEmpty(code) && !string.IsNullOrEmpty(LangName));
+            Debug.Assert(!string.IsNullOrEmpty(LangName));
+            if ( string.IsNullOrEmpty(code) )
+                code = GetTag(LangName);
             try
             {
                 if ( string.IsNullOrEmpty(code) || string.IsNullOrEmpty(LangName) )
@@ -2568,5 +2573,98 @@ namespace ABetterTranslator
         }
         #endregion Help Links
 
+        #region Save and Load menu functions
+        private void SaveSelectedLanguageToFile(string FileName)
+        {
+            using StreamWriter file = new(FileName, append: false);
+            foreach ( var obj in languageList.CheckedObjects )
+            {
+                ObjListVwRowDetails objlistvwrowdetails = (ObjListVwRowDetails)obj;
+                if ( !languageList.IsDisabled(objlistvwrowdetails) )
+                    file.WriteLine(objlistvwrowdetails.LanguageName);
+            }
+            file.Close();
+        }
+        private void LoadSelectedLanguageFromFile(string FileName, bool loadAsACustomLanguageSet = false)
+        {
+            if ( loadAsACustomLanguageSet )
+                ClearLanguageSet();
+            List<string> Languages = new();
+            foreach ( string line in System.IO.File.ReadLines(FileName) )
+            {
+                Languages.Add(line);
+                if ( loadAsACustomLanguageSet ) 
+                    AddLanguage("", line);
+            }
+            // ToDo: Add checking here for language count, and display error message if count = 0
+            SelectAGroupOfLanguages(Languages.ToArray(), FileName);
+        }
+        private void SaveProjectSettings(string FileName)
+        {
+            if ( string.IsNullOrEmpty(FileName) )
+                return;
+        }
+        private void LoadProjectSettings(string FileName)
+        {
+            if ( string.IsNullOrEmpty(FileName) )
+                return;
+
+        }
+        private void toolStripSplitButtonSaveSave_Click(object sender, EventArgs e) => toolStripSplitButtonSave_ButtonClick(sender, e);
+        private void toolStripSplitButtonSaveAs_Click(object sender, EventArgs e)
+        {
+            if ( saveFileDialogSelectedLanguages.ShowDialog() != DialogResult.OK )
+                return;
+             _filenameForSavedSelectedLanguages = saveFileDialogSelectedLanguages.FileName;
+
+            if ( !string.IsNullOrEmpty(_filenameForSavedSelectedLanguages) )
+                SaveSelectedLanguageToFile(_filenameForSavedSelectedLanguages);
+        }
+        private void toolStripMenuItemLoadFile_Click(object sender, EventArgs e) => toolStripSplitButtonLoad_ButtonClick(sender, e);
+        private void toolStripMenuItemOpenResx_Click(object sender, EventArgs e) => BrowseFiles(sender, e);
+        private void toolStripSplitButtonLoad_ButtonClick(object sender, EventArgs e)
+        {
+            if ( openFileDialogSelectedLanguages.ShowDialog() != DialogResult.OK )
+                return;
+            _filenameForSavedSelectedLanguages = openFileDialogSelectedLanguages.FileName;
+
+            if ( !string.IsNullOrEmpty(_filenameForSavedSelectedLanguages) )
+                LoadSelectedLanguageFromFile(_filenameForSavedSelectedLanguages);
+        }
+        private void toolStripSplitButtonSave_ButtonClick(object sender, EventArgs e)
+        {
+            if ( string.IsNullOrEmpty(_filenameForSavedSelectedLanguages) && saveFileDialogSelectedLanguages.ShowDialog() == DialogResult.OK )
+                _filenameForSavedSelectedLanguages = saveFileDialogSelectedLanguages.FileName;
+
+            if ( !string.IsNullOrEmpty(_filenameForSavedSelectedLanguages) )
+                SaveSelectedLanguageToFile(_filenameForSavedSelectedLanguages);
+        }
+        private void toolStripSplitButtonSaveAll_Click(object sender, EventArgs e)
+        {
+            if ( string.IsNullOrEmpty(_filenameForSavedProjectSettings) && saveFileDialogForProjectFile.ShowDialog() == DialogResult.OK )
+                _filenameForSavedProjectSettings = saveFileDialogForProjectFile.FileName;
+
+            if ( !string.IsNullOrEmpty(_filenameForSavedProjectSettings) )
+                SaveProjectSettings(_filenameForSavedProjectSettings);
+        }
+        private void toolStripMenuItemOpenAll_Click(object sender, EventArgs e)
+        {
+            if ( openFileDialogProjectFile.ShowDialog() != DialogResult.OK )
+                return;
+            _filenameForSavedProjectSettings = openFileDialogProjectFile.FileName;
+
+            if ( !string.IsNullOrEmpty(_filenameForSavedProjectSettings) )
+                LoadProjectSettings(_filenameForSavedProjectSettings);
+        }
+        private void toolStripMenuItemLoadAndReplaceLanguageSet_Click(object sender, EventArgs e)
+        {
+            if ( openFileDialogSelectedLanguages.ShowDialog() != DialogResult.OK )
+                return;
+            _filenameForSavedSelectedLanguages = openFileDialogSelectedLanguages.FileName;
+
+            if ( !string.IsNullOrEmpty(_filenameForSavedSelectedLanguages) )
+                LoadSelectedLanguageFromFile(_filenameForSavedSelectedLanguages, true);
+        }
+        #endregion Save and Load menu functions
     }
 }

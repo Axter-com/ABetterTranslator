@@ -233,9 +233,69 @@ namespace ABetterTranslator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap OpenFile__16_x_16_ {
+            get {
+                object obj = ResourceManager.GetObject("OpenFile__16_x_16_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OpenFile__32_x_32_ {
+            get {
+                object obj = ResourceManager.GetObject("OpenFile__32_x_32_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap PlayButton__64_x_64_ {
             get {
                 object obj = ResourceManager.GetObject("PlayButton__64_x_64_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Save__16_x_16_ {
+            get {
+                object obj = ResourceManager.GetObject("Save__16_x_16_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Save__32_x_32_ {
+            get {
+                object obj = ResourceManager.GetObject("Save__32_x_32_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SaveAll__16_x_16_ {
+            get {
+                object obj = ResourceManager.GetObject("SaveAll__16_x_16_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SaveAll__32_x_32_ {
+            get {
+                object obj = ResourceManager.GetObject("SaveAll__32_x_32_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
