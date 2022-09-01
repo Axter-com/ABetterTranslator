@@ -135,7 +135,7 @@ Default: **5000**
     * Only one string is sent per Resx translation request. Use this option if any of the strings contains the {next-line} character.
 
   * [Multiple]
-    * Multiple strings are sent per Resx translation request. This is the preferred option if total translation is less then 10,000 characters.
+    * Multiple strings are sent per Resx translation request. This is the preferred option if total translation is less then 5,000 characters.
 
 * Default: **Auto**
 
