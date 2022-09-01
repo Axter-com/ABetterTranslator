@@ -1,7 +1,8 @@
 {
   "profiles": {
     "ABetterTranslator": {
-      "commandName": "Project"
+      "commandName": "Project",
+      "commandLineArgs": "-xt E:\\Repos\\ABetterTranslator\\ABetterTranslator.Translations\\ABetterTranslator_LanguageProjectSettings.aBT"
     }
   }
 }

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+<SourceResx>E:\Repos\ABetterTranslator\ABetterTranslator\MainWindow.resx</SourceResx>
+<SourceResxLang>English</SourceResxLang>
+<OutPutFolder>E:\Repos\ABetterTranslator\ABetterTranslator.Translations</OutPutFolder>
+<comboBoxAddOriginalSrcTextToComment>Do NOT change comments</comboBoxAddOriginalSrcTextToComment>
+<checkBoxDeleteLangResxFilesBeforeTranslation>True</checkBoxDeleteLangResxFilesBeforeTranslation>
+<checkBoxBackupFilesBeforeTranslation>True</checkBoxBackupFilesBeforeTranslation>
+<textBoxBkUpDir>C:\Users\david\AppData\Roaming\ABetterTranslator\ABetterTranslator\1.0.0\BackupResx</textBoxBkUpDir>
+<MaxThread>20</MaxThread>
+<MaxTranslateLen>10000</MaxTranslateLen>
+<comboBoxItemsPerTransaltionRequest>Auto</comboBoxItemsPerTransaltionRequest>
+<comboBoxScreenVerbosityLevel>Normal</comboBoxScreenVerbosityLevel>
+<comboBoxLogFileVerbosityLevel>Normal</comboBoxLogFileVerbosityLevel>
+<textBoxLogFolderPath>C:\Users\david\AppData\Local\Temp\ABetterTranslator\Log</textBoxLogFolderPath>
+<checkBoxDispalyWarningPrompts>False</checkBoxDispalyWarningPrompts>
+<Lanaguages>
+<Lanaguage>Afrikaans</Lanaguage>
+<Lanaguage>Albanian</Lanaguage>
+<Lanaguage>Amharic</Lanaguage>
+<Lanaguage>Arabic</Lanaguage>
+<Lanaguage>Armenian</Lanaguage>
+<Lanaguage>Assamese</Lanaguage>
+<Lanaguage>Azerbaijani</Lanaguage>
+<Lanaguage>Bambara</Lanaguage>
+<Lanaguage>Bashkir</Lanaguage>
+<Lanaguage>Basque</Lanaguage>
+<Lanaguage>Belarusian</Lanaguage>
+<Lanaguage>Bengali</Lanaguage>
+<Lanaguage>Bosnian</Lanaguage>
+<Lanaguage>Bulgarian</Lanaguage>
+<Lanaguage>Burmese</Lanaguage>
+<Lanaguage>Catalan</Lanaguage>
+<Lanaguage>Cebuano</Lanaguage>
+<Lanaguage>Chinese (Simplified)</Lanaguage>
+<Lanaguage>Chinese (Traditional)</Lanaguage>
+<Lanaguage>Corsican</Lanaguage>
+<Lanaguage>Croatian</Lanaguage>
+<Lanaguage>Czech</Lanaguage>
+<Lanaguage>Danish</Lanaguage>
+<Lanaguage>Dari</Lanaguage>
+<Lanaguage>Divehi</Lanaguage>
+<Lanaguage>Dutch</Lanaguage>
+<Lanaguage>Emoji</Lanaguage>
+<Lanaguage>English</Lanaguage>
+<Lanaguage>English (UK)</Lanaguage>
+<Lanaguage>Esperanto</Lanaguage>
+<Lanaguage>Estonian</Lanaguage>
+<Lanaguage>Ewe</Lanaguage>
+<Lanaguage>Faroese</Lanaguage>
+<Lanaguage>Filipino</Lanaguage>
+<Lanaguage>Finnish</Lanaguage>
+<Lanaguage>French</Lanaguage>
+<Lanaguage>French (Canada)</Lanaguage>
+<Lanaguage>Frisian</Lanaguage>
+<Lanaguage>Gaelic</Lanaguage>
+<Lanaguage>Galician</Lanaguage>
+<Lanaguage>Georgian</Lanaguage>
+<Lanaguage>German</Lanaguage>
+<Lanaguage>Greek</Lanaguage>
+<Lanaguage>Guarani</Lanaguage>
+<Lanaguage>Gujarati</Lanaguage>
+<Lanaguage>Hausa</Lanaguage>
+<Lanaguage>Hawaiian</Lanaguage>
+<Lanaguage>Hebrew</Lanaguage>
+<Lanaguage>Hindi</Lanaguage>
+<Lanaguage>Hungarian</Lanaguage>
+<Lanaguage>Icelandic</Lanaguage>
+<Lanaguage>Igbo</Lanaguage>
+<Lanaguage>Indonesian</Lanaguage>
+<Lanaguage>Inuktitut</Lanaguage>
+<Lanaguage>Inuktitut (Latin)</Lanaguage>
+<Lanaguage>Irish</Lanaguage>
+<Lanaguage>Italian</Lanaguage>
+<Lanaguage>Japanese</Lanaguage>
+<Lanaguage>Javanese</Lanaguage>
+<Lanaguage>Kannada</Lanaguage>
+<Lanaguage>Kazakh</Lanaguage>
+<Lanaguage>Khmer</Lanaguage>
+<Lanaguage>Kinyarwanda</Lanaguage>
+<Lanaguage>Klingon (pIqaD)</Lanaguage>
+<Lanaguage>Korean</Lanaguage>
+<Lanaguage>Kurdish</Lanaguage>
+<Lanaguage>Kyrgyz</Lanaguage>
+<Lanaguage>Lao</Lanaguage>
+<Lanaguage>Latin</Lanaguage>
+<Lanaguage>Latvian</Lanaguage>
+<Lanaguage>Lingala</Lanaguage>
+<Lanaguage>Lithuanian</Lanaguage>
+<Lanaguage>Luxembourgish</Lanaguage>
+<Lanaguage>Macedonian</Lanaguage>
+<Lanaguage>Maithili</Lanaguage>
+<Lanaguage>Malagasy</Lanaguage>
+<Lanaguage>Malay</Lanaguage>
+<Lanaguage>Malayalam</Lanaguage>
+<Lanaguage>Maltese</Lanaguage>
+<Lanaguage>Maori</Lanaguage>
+<Lanaguage>Marathi</Lanaguage>
+<Lanaguage>Mongolian</Lanaguage>
+<Lanaguage>Mongolian (Traditional)</Lanaguage>
+<Lanaguage>Nepali</Lanaguage>
+<Lanaguage>Norwegian</Lanaguage>
+<Lanaguage>Odia</Lanaguage>
+<Lanaguage>Oromo</Lanaguage>
+<Lanaguage>Papiamento</Lanaguage>
+<Lanaguage>Pashto</Lanaguage>
+<Lanaguage>Persian</Lanaguage>
+<Lanaguage>Polish</Lanaguage>
+<Lanaguage>Portuguese</Lanaguage>
+<Lanaguage>Portuguese (Brazil)</Lanaguage>
+<Lanaguage>Punjabi</Lanaguage>
+<Lanaguage>Romanian</Lanaguage>
+<Lanaguage>Russian</Lanaguage>
+<Lanaguage>Sanskrit</Lanaguage>
+<Lanaguage>Sepedi</Lanaguage>
+<Lanaguage>Serbian (Cyrillic)</Lanaguage>
+<Lanaguage>Serbian (Latin)</Lanaguage>
+<Lanaguage>Shona</Lanaguage>
+<Lanaguage>Sindhi</Lanaguage>
+<Lanaguage>Sinhala</Lanaguage>
+<Lanaguage>Slovak</Lanaguage>
+<Lanaguage>Slovenian</Lanaguage>
+<Lanaguage>Somali</Lanaguage>
+<Lanaguage>Sotho</Lanaguage>
+<Lanaguage>Spanish</Lanaguage>
+<Lanaguage>Spanish (Mexico)</Lanaguage>
+<Lanaguage>Sundanese</Lanaguage>
+<Lanaguage>Swahili</Lanaguage>
+<Lanaguage>Swedish</Lanaguage>
+<Lanaguage>Tagalog</Lanaguage>
+<Lanaguage>Tajik</Lanaguage>
+<Lanaguage>Tamil</Lanaguage>
+<Lanaguage>Tatar</Lanaguage>
+<Lanaguage>Telugu</Lanaguage>
+<Lanaguage>Thai</Lanaguage>
+<Lanaguage>Tibetan</Lanaguage>
+<Lanaguage>Tigrinya</Lanaguage>
+<Lanaguage>Tongan</Lanaguage>
+<Lanaguage>Tsonga</Lanaguage>
+<Lanaguage>Turkish</Lanaguage>
+<Lanaguage>Turkmen</Lanaguage>
+<Lanaguage>Uighur</Lanaguage>
+<Lanaguage>Ukrainian</Lanaguage>
+<Lanaguage>Upper Sorbian</Lanaguage>
+<Lanaguage>Urdu</Lanaguage>
+<Lanaguage>Uzbek</Lanaguage>
+<Lanaguage>Vietnamese</Lanaguage>
+<Lanaguage>Welsh</Lanaguage>
+<Lanaguage>Xhosa</Lanaguage>
+<Lanaguage>Yakut</Lanaguage>
+<Lanaguage>Yiddish</Lanaguage>
+<Lanaguage>Yoruba</Lanaguage>
+<Lanaguage>Zulu</Lanaguage>
+</Lanaguages>
+</root>

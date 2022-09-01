@@ -29,7 +29,6 @@ namespace TranslateMultiThread
         {
             get { return _languagesTagsWithErrors; }
         }
-        public const string _LONGPATHPREFIX = "\\\\?\\";
         public bool _cancelTranslation { get; set; } = false;
         public MultiThreadTranslator_Options _options { get; } = new MultiThreadTranslator_Options();
         public List<TranslationRequestPacket> _itemsToTranslate { get; set; } = new List<TranslationRequestPacket>();
@@ -40,11 +39,16 @@ namespace TranslateMultiThread
         private int _workerThreadCount = 0;
         private readonly bool _initializeSuccess = false;
         private readonly bool _isConsoleMode = false;
-        private Dictionary<String, int> _specialLanguageHandling = new();
         private List<string> _languagesTagsWithErrors = new();
         private Dictionary<string,LanguageProcessStatus> _languagesProcessedSuccessStatuses = new();
         #endregion private/protected variables
         #region enums and sub classes
+        public enum TranslationPacketTypes
+        {
+            SingleDocument,
+            MultiPacket,
+            OnePacketPerString
+        }
         public class TranslationRequestPacket
         {
             public string fromLang { get; set; } = "";
@@ -54,7 +58,7 @@ namespace TranslateMultiThread
             public List<string> sourceText { get; set; } = new List<string>();
             public List<string> translatedText { get; set; } = new List<string>();
             public int qtyItemsTranslated { get; set; } = 0;
-            public bool translateAsSingleDocument { get; set; } = false;
+            public TranslationPacketTypes translationPacketType { get; set; } = TranslationPacketTypes.SingleDocument;
         }
         public class ItemDetails
         {
@@ -69,10 +73,8 @@ namespace TranslateMultiThread
             //public string _targetLang { get; set; } = System.Threading.Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName;
             public bool _appendOrgName { get; set; } = false;
             public int _appendLangName { get; set; } = 0;
-            public bool _verbose { get; set; } = false;
             public bool _dottedOutput { get; set; } = false;
             public bool _progressBarOutput { get; set; } = true;
-            public bool _silent { get; set; } = false;
             public ItemsPerTransReq _itemsPerTransReq { get; set; } = ItemsPerTransReq.Auto;
             public bool _waitKeyPress { get; set; } = false;
             public bool _createUndoList { get; set; } = false;
@@ -122,10 +124,6 @@ namespace TranslateMultiThread
             options ??= new MultiThreadTranslator_Options();
             _options = options;
             _initializeSuccess = Initialize();
-            _specialLanguageHandling.Add("chr", 1); // Cherokee to use GoogleTranslator2
-            _specialLanguageHandling.Add("en-gb", 1); // English (UK) to use GoogleTranslator2
-            _specialLanguageHandling.Add("fo", 2); // Faroese to use MicrosoftTranslator
-            _specialLanguageHandling.Add("pt-br", 1); // Portuguese (Brazil) to use GoogleTranslator2
         }
         public bool Initialize()
         {
@@ -172,6 +170,7 @@ namespace TranslateMultiThread
                 return false;
             }
             _itemsToTranslate = DataToTranslate;
+            _languagesTagsWithErrors.Clear();
 
             Stopwatch sw = new();
             sw.Start();
@@ -190,7 +189,7 @@ namespace TranslateMultiThread
             }
 
             InitializeProgressBar(TotalItemsToTranslate);
-            if ( _options._verbose)
+            if ( MainWindow.VerbosityLevel.ScreenVerbosity == VerbosityLevels.Detail)
                 WriteLine($"Starting translation with settings: [MaxThreads:{_options._maxWorkerThreads}]", OutPutLevel.NormalLvl);
             else
                 LogLine($"Starting translation with settings: [MaxThreads:{_options._maxWorkerThreads}]", OutPutLevel.VerboseIfNotSilent);
@@ -221,10 +220,6 @@ namespace TranslateMultiThread
 
             Task.WaitAll(tasks.ToArray());
             sw.Stop();
-            //if ( TotalItemsToTranslate  == _itemsToTranslate.Count)
-            //    WriteLine($"Translated {_options._translateCount} languages out of {TotalItemsToTranslate}.", OutPutLevel.PostProgressBar);
-            //else
-            //    WriteLine($"Translated {_options._translateCount} lines out of {TotalItemsToTranslate}.", OutPutLevel.PostProgressBar);
             if ( _options._translationErrorCount > 0 )
                 WriteLine($"{_options._translationErrorCount} Translation errors occurred and {_options._translationSubErrorCount} sub translation errors.", OutPutLevel.ErrorLvl);
             if ( _options._errorCount > 0 )
@@ -280,48 +275,28 @@ namespace TranslateMultiThread
                 return;
             if ( !_languagesProcessedSuccessStatuses.ContainsKey(_itemsToTranslate[PacketIndex].toLang))
                 _languagesProcessedSuccessStatuses.Add(_itemsToTranslate[PacketIndex].toLang, LanguageProcessStatus.Unknown);
+            string msgStart = "Start language translation: ";
+            string msgNL = "";
+            string msgTextWrapper = "\"";
+            if ( _itemsToTranslate[PacketIndex].translationPacketType != TranslationPacketTypes.OnePacketPerString)
+            {
+                msgNL = "\r\n";
+                msgTextWrapper = _HEAD_AND_FOOT_WRAPPER;
+            }
+
             GTranslate.Translators.ITranslator translator = new AggregateTranslator();// GoogleTranslator();GoogleTranslator2();MicrosoftTranslator();YandexTranslator();BingTranslator();
             try
             {
                 GTranslate.Results.ITranslationResult result = await translator.TranslateAsync(_itemsToTranslate[PacketIndex].sourceText[ItemIndex], _itemsToTranslate[PacketIndex].toLang, _itemsToTranslate[PacketIndex].fromLang);
-                if ( _options._verbose )
+                if ( result.Translation.Equals(_itemsToTranslate[PacketIndex].sourceText[ItemIndex]) && (_itemsToTranslate[PacketIndex].sourceText[ItemIndex].Length != 1 || !char.IsPunctuation(_itemsToTranslate[PacketIndex].sourceText[ItemIndex][0])) )
+                    msgStart = "Translated text same as source: ";
+                if ( MainWindow.VerbosityLevel.ScreenVerbosity == VerbosityLevels.Detail || MainWindow.VerbosityLevel.LogFileVerbosity == VerbosityLevels.Detail )
                 {
-                    //string service = result.Service.Replace('\r', ',').Replace('\n', ',');
-                    string msg = $"Start language translation: {result.TargetLanguage} using service: {result.Service}\nTranslated text:{_HEAD_AND_FOOT_WRAPPER}{result.Translation}{_HEAD_AND_FOOT_WRAPPER}End language translation: {result.TargetLanguage}\n\n";
-                    LogLine(msg, OutPutLevel.ShowInWindow, Color.YellowGreen);
-                }
-                // ToDo: Consider deleting the following if-block
-                string SrcLang = "";
-                if ( result.SourceLanguage.Name != null && result.SourceLanguage.Name.Length > 0 )
-                {
-                    SrcLang = _options._appendLangName switch
-                    {
-                        2 => "_options._[" + result.SourceLanguage.ISO6391 + "]",
-                        20 => "_(" + result.SourceLanguage.ISO6391 + ")",
-                        21 => "_" + result.SourceLanguage.ISO6391,
-                        22 => result.SourceLanguage.ISO6391,
-                        3 => "_[" + result.SourceLanguage.ISO6393 + "]",
-                        31 => "_(" + result.SourceLanguage.ISO6393 + ")",
-                        32 => "_" + result.SourceLanguage.ISO6393,
-                        33 => result.SourceLanguage.ISO6393,
-                        //case 8:
-                        //    SrcLang = "_[" + SourceLanguage.NativeName + "]";
-                        //    break;
-                        //case 81:
-                        //    SrcLang = "_(" + SourceLanguage.NativeName + ")";
-                        //    break;
-                        //case 82:
-                        //    SrcLang = "_" + SourceLanguage.NativeName;
-                        //    break;
-                        //case 83:
-                        //    SrcLang = SourceLanguage.NativeName;
-                        //    break;
-                        9 => "_[" + result.SourceLanguage.Name + "]",
-                        91 => "_(" + result.SourceLanguage.Name + ")",
-                        92 => "_" + result.SourceLanguage.Name,
-                        93 => result.SourceLanguage.Name,
-                        _ => "_[" + result.SourceLanguage.Name + "]",
-                    };
+                    string msg = $"{msgStart}{_itemsToTranslate[PacketIndex].toLang} using service: {result.Service}: {msgNL}Translated-Text({result.Translation.Length}): {msgTextWrapper}{result.Translation}{msgTextWrapper}{msgNL}{result.TargetLanguage}{msgNL}\n";
+                    if ( MainWindow.VerbosityLevel.ScreenVerbosity == VerbosityLevels.Detail)
+                        LogLine(msg, OutPutLevel.ShowInWindow, Color.YellowGreen);
+                    if ( MainWindow.VerbosityLevel.LogFileVerbosity == VerbosityLevels.Detail && msgStart.Equals("Translated text same as source: ") )
+                        LogToFile(msg, VerbosityLevels.Warn, _itemsToTranslate[PacketIndex].translationPacketType == TranslationPacketTypes.OnePacketPerString);
                 }
                 _itemsToTranslate[PacketIndex].translatedText[ItemIndex] = result.Translation;
                 if ( _languagesProcessedSuccessStatuses[_itemsToTranslate[PacketIndex].toLang] == LanguageProcessStatus.Unknown )
@@ -333,7 +308,9 @@ namespace TranslateMultiThread
                 if ( !_languagesTagsWithErrors.Contains(_itemsToTranslate[PacketIndex].toLang) )
                 {   // Only log to screen the first time a language produces an error.
                     _languagesTagsWithErrors.Add(_itemsToTranslate[PacketIndex].toLang);
-                    LogLine($"GTranslate_..:toLang({_itemsToTranslate[PacketIndex].toLang}):fromLang({_itemsToTranslate[PacketIndex].fromLang}):Translator=({translator.GetType().Name}): {e.Message}", OutPutLevel.ShowInWindow,Color.DarkRed);
+                    string Msg = $"GTranslate_..:toLang({_itemsToTranslate[PacketIndex].toLang}):fromLang({_itemsToTranslate[PacketIndex].fromLang}):Translator=({translator.GetType().Name}): {e.Message}";
+                    LogLine(Msg, OutPutLevel.ShowInWindow,Color.DarkRed);
+                    LogToFile($"{Msg}: {msgNL}Source-Text({_itemsToTranslate[PacketIndex].sourceText[ItemIndex].Length}):{msgNL}{msgTextWrapper}{_itemsToTranslate[PacketIndex].sourceText[ItemIndex]}{msgTextWrapper}{msgNL}{msgNL}", VerbosityLevels.Errors, true);
                 }
                 LogLine($"GTranslate_..:toLang({_itemsToTranslate[PacketIndex].toLang}):fromLang({_itemsToTranslate[PacketIndex].fromLang}):Translator=({translator.GetType().Name}): {e.Message}", OutPutLevel.ErrorLvl);
                 throw new Exception($"GTranslate_..:toLang({_itemsToTranslate[PacketIndex].toLang}):fromLang({_itemsToTranslate[PacketIndex].fromLang}):Translator=({translator.GetType().Name}): {e.Message}");
@@ -373,7 +350,7 @@ namespace TranslateMultiThread
         /// <param name="Color">Foreground Color if sent to screen</param>
         protected virtual void LogLine(string message, OutPutLevel outputlevel = OutPutLevel.NormalLvl, Color? color = null) // ToDo: Separate ShowInWindow from OutPutLevel and take out Color parameter from this function
         {
-            if ( _options._silent )
+            if ( MainWindow.VerbosityLevel.ScreenVerbosity == VerbosityLevels.Silent )
                 return;
             Debug.WriteLine(message);
         }
@@ -385,7 +362,7 @@ namespace TranslateMultiThread
         /// <param name="Color">Foreground Color if sent to screen</param>
         protected virtual void WriteLine(string message, OutPutLevel outputlevel = OutPutLevel.NormalLvl) // ToDo: Add Color variable, and make this the expected write to window function
         {
-            if ( _options._silent )
+            if ( MainWindow.VerbosityLevel.ScreenVerbosity == VerbosityLevels.Silent )
                 return;
             Console.WriteLine(message);
         }

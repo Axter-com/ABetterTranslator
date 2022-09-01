@@ -129,8 +129,11 @@ namespace ABetterTranslator
             this.toolStripMenuItemLoadAndReplaceLanguageSet = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSplitButtonSave = new System.Windows.Forms.ToolStripSplitButton();
             this.toolStripSplitButtonSaveSave = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSplitButtonSaveAs = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSplitButtonSaveSave_Update = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSplitButtonSaveSave_SaveAs = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSplitButtonSaveAll = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSplitButtonSaveAll_Update = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSplitButtonSaveAll_SaveAs = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSplitButtonTranslate = new System.Windows.Forms.ToolStripSplitButton();
             this.toolStripMenuItemTranslateAllLanguages = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemWindowsSupportedLanguages = new System.Windows.Forms.ToolStripMenuItem();
@@ -305,6 +308,7 @@ namespace ABetterTranslator
             resources.GetString("comboBoxItemsPerTransaltionRequest.Items2")});
             resources.ApplyResources(this.comboBoxItemsPerTransaltionRequest, "comboBoxItemsPerTransaltionRequest");
             this.comboBoxItemsPerTransaltionRequest.Name = "comboBoxItemsPerTransaltionRequest";
+            this.toolTip.SetToolTip(this.comboBoxItemsPerTransaltionRequest, resources.GetString("comboBoxItemsPerTransaltionRequest.ToolTip"));
             // 
             // linkLabelMaxTranslateLen
             // 
@@ -588,6 +592,8 @@ namespace ABetterTranslator
             // 
             resources.ApplyResources(this.MaxTranslateLen, "MaxTranslateLen");
             this.MaxTranslateLen.Name = "MaxTranslateLen";
+            this.toolTip.SetToolTip(this.MaxTranslateLen, resources.GetString("MaxTranslateLen.ToolTip"));
+            this.MaxTranslateLen.Validating += new System.ComponentModel.CancelEventHandler(this.MaxTranslateLen_Validating);
             // 
             // labelMaxTranslateLen
             // 
@@ -938,7 +944,6 @@ namespace ABetterTranslator
             this.toolStripSplitButtonSave.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.toolStripSplitButtonSave.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripSplitButtonSaveSave,
-            this.toolStripSplitButtonSaveAs,
             this.toolStripSplitButtonSaveAll});
             this.toolStripSplitButtonSave.Image = global::ABetterTranslator.Properties.Resources.Save__32_x_32_;
             resources.ApplyResources(this.toolStripSplitButtonSave, "toolStripSplitButtonSave");
@@ -947,23 +952,47 @@ namespace ABetterTranslator
             // 
             // toolStripSplitButtonSaveSave
             // 
+            this.toolStripSplitButtonSaveSave.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripSplitButtonSaveSave_Update,
+            this.toolStripSplitButtonSaveSave_SaveAs});
             this.toolStripSplitButtonSaveSave.Image = global::ABetterTranslator.Properties.Resources.Save__32_x_32_;
             this.toolStripSplitButtonSaveSave.Name = "toolStripSplitButtonSaveSave";
             resources.ApplyResources(this.toolStripSplitButtonSaveSave, "toolStripSplitButtonSaveSave");
             this.toolStripSplitButtonSaveSave.Click += new System.EventHandler(this.toolStripSplitButtonSaveSave_Click);
             // 
-            // toolStripSplitButtonSaveAs
+            // toolStripSplitButtonSaveSave_Update
             // 
-            this.toolStripSplitButtonSaveAs.Name = "toolStripSplitButtonSaveAs";
-            resources.ApplyResources(this.toolStripSplitButtonSaveAs, "toolStripSplitButtonSaveAs");
-            this.toolStripSplitButtonSaveAs.Click += new System.EventHandler(this.toolStripSplitButtonSaveAs_Click);
+            this.toolStripSplitButtonSaveSave_Update.Name = "toolStripSplitButtonSaveSave_Update";
+            resources.ApplyResources(this.toolStripSplitButtonSaveSave_Update, "toolStripSplitButtonSaveSave_Update");
+            this.toolStripSplitButtonSaveSave_Update.Click += new System.EventHandler(this.toolStripSplitButtonSaveSave_Update_Click);
+            // 
+            // toolStripSplitButtonSaveSave_SaveAs
+            // 
+            this.toolStripSplitButtonSaveSave_SaveAs.Name = "toolStripSplitButtonSaveSave_SaveAs";
+            resources.ApplyResources(this.toolStripSplitButtonSaveSave_SaveAs, "toolStripSplitButtonSaveSave_SaveAs");
+            this.toolStripSplitButtonSaveSave_SaveAs.Click += new System.EventHandler(this.toolStripSplitButtonSaveSave_SaveAs_Click);
             // 
             // toolStripSplitButtonSaveAll
             // 
+            this.toolStripSplitButtonSaveAll.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripSplitButtonSaveAll_Update,
+            this.toolStripSplitButtonSaveAll_SaveAs});
             this.toolStripSplitButtonSaveAll.Image = global::ABetterTranslator.Properties.Resources.SaveAll__32_x_32_;
             this.toolStripSplitButtonSaveAll.Name = "toolStripSplitButtonSaveAll";
             resources.ApplyResources(this.toolStripSplitButtonSaveAll, "toolStripSplitButtonSaveAll");
             this.toolStripSplitButtonSaveAll.Click += new System.EventHandler(this.toolStripSplitButtonSaveAll_Click);
+            // 
+            // toolStripSplitButtonSaveAll_Update
+            // 
+            this.toolStripSplitButtonSaveAll_Update.Name = "toolStripSplitButtonSaveAll_Update";
+            resources.ApplyResources(this.toolStripSplitButtonSaveAll_Update, "toolStripSplitButtonSaveAll_Update");
+            this.toolStripSplitButtonSaveAll_Update.Click += new System.EventHandler(this.toolStripSplitButtonSaveAll_Update_Click);
+            // 
+            // toolStripSplitButtonSaveAll_SaveAs
+            // 
+            this.toolStripSplitButtonSaveAll_SaveAs.Name = "toolStripSplitButtonSaveAll_SaveAs";
+            resources.ApplyResources(this.toolStripSplitButtonSaveAll_SaveAs, "toolStripSplitButtonSaveAll_SaveAs");
+            this.toolStripSplitButtonSaveAll_SaveAs.Click += new System.EventHandler(this.toolStripSplitButtonSaveAll_SaveAs_Click);
             // 
             // toolStripSplitButtonTranslate
             // 
@@ -1563,7 +1592,6 @@ namespace ABetterTranslator
         private GroupBox groupBoxFilterText;
         private ToolStripSplitButton toolStripSplitButtonSave;
         private ToolStripMenuItem toolStripSplitButtonSaveSave;
-        private ToolStripMenuItem toolStripSplitButtonSaveAs;
         private ToolStripSplitButton toolStripSplitButtonLoad;
         private ToolStripMenuItem toolStripMenuItemLoadFile;
         private ToolStripMenuItem toolStripMenuItemOpenResx;
@@ -1574,6 +1602,10 @@ namespace ABetterTranslator
         private SaveFileDialog saveFileDialogForProjectFile;
         private SaveFileDialog saveFileDialogSelectedLanguages;
         private OpenFileDialog openFileDialogSelectedLanguages;
+        private ToolStripMenuItem toolStripSplitButtonSaveSave_Update;
+        private ToolStripMenuItem toolStripSplitButtonSaveSave_SaveAs;
+        private ToolStripMenuItem toolStripSplitButtonSaveAll_Update;
+        private ToolStripMenuItem toolStripSplitButtonSaveAll_SaveAs;
     }
 }
 

@@ -316,6 +316,57 @@
   <data name="&gt;&gt;buttonOpenLoggingFolderInFileExplorer.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="&gt;&gt;linkLabelItemsPerTransaltionRequest.Name" xml:space="preserve">
+    <value>linkLabelItemsPerTransaltionRequest</value>
+  </data>
+  <data name="&gt;&gt;linkLabelItemsPerTransaltionRequest.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelItemsPerTransaltionRequest.Parent" xml:space="preserve">
+    <value>groupBoxItemsPerTransaltionRequest</value>
+  </data>
+  <data name="&gt;&gt;linkLabelItemsPerTransaltionRequest.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;comboBoxItemsPerTransaltionRequest.Name" xml:space="preserve">
+    <value>comboBoxItemsPerTransaltionRequest</value>
+  </data>
+  <data name="&gt;&gt;comboBoxItemsPerTransaltionRequest.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxItemsPerTransaltionRequest.Parent" xml:space="preserve">
+    <value>groupBoxItemsPerTransaltionRequest</value>
+  </data>
+  <data name="&gt;&gt;comboBoxItemsPerTransaltionRequest.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBoxItemsPerTransaltionRequest.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 125</value>
+  </data>
+  <data name="groupBoxItemsPerTransaltionRequest.Size" type="System.Drawing.Size, System.Drawing">
+    <value>372, 88</value>
+  </data>
+  <data name="groupBoxItemsPerTransaltionRequest.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="groupBoxItemsPerTransaltionRequest.Text" xml:space="preserve">
+    <value>Strings Per Translation Req</value>
+  </data>
+  <data name="groupBoxItemsPerTransaltionRequest.ToolTip" xml:space="preserve">
+    <value>Strings per Translation Request</value>
+  </data>
+  <data name="&gt;&gt;groupBoxItemsPerTransaltionRequest.Name" xml:space="preserve">
+    <value>groupBoxItemsPerTransaltionRequest</value>
+  </data>
+  <data name="&gt;&gt;groupBoxItemsPerTransaltionRequest.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxItemsPerTransaltionRequest.Parent" xml:space="preserve">
+    <value>tabPageTranslationOptions</value>
+  </data>
+  <data name="&gt;&gt;groupBoxItemsPerTransaltionRequest.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
   <data name="linkLabelItemsPerTransaltionRequest.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -370,6 +421,9 @@
   <data name="comboBoxItemsPerTransaltionRequest.Text" xml:space="preserve">
     <value>Auto</value>
   </data>
+  <data name="comboBoxItemsPerTransaltionRequest.ToolTip" xml:space="preserve">
+    <value>Strings per translation request.</value>
+  </data>
   <data name="&gt;&gt;comboBoxItemsPerTransaltionRequest.Name" xml:space="preserve">
     <value>comboBoxItemsPerTransaltionRequest</value>
   </data>
@@ -381,33 +435,6 @@
   </data>
   <data name="&gt;&gt;comboBoxItemsPerTransaltionRequest.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="groupBoxItemsPerTransaltionRequest.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 125</value>
-  </data>
-  <data name="groupBoxItemsPerTransaltionRequest.Size" type="System.Drawing.Size, System.Drawing">
-    <value>372, 88</value>
-  </data>
-  <data name="groupBoxItemsPerTransaltionRequest.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="groupBoxItemsPerTransaltionRequest.Text" xml:space="preserve">
-    <value>Strings Per Translation Req</value>
-  </data>
-  <data name="groupBoxItemsPerTransaltionRequest.ToolTip" xml:space="preserve">
-    <value>Strings per Translation Request</value>
-  </data>
-  <data name="&gt;&gt;groupBoxItemsPerTransaltionRequest.Name" xml:space="preserve">
-    <value>groupBoxItemsPerTransaltionRequest</value>
-  </data>
-  <data name="&gt;&gt;groupBoxItemsPerTransaltionRequest.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxItemsPerTransaltionRequest.Parent" xml:space="preserve">
-    <value>tabPageTranslationOptions</value>
-  </data>
-  <data name="&gt;&gt;groupBoxItemsPerTransaltionRequest.ZOrder" xml:space="preserve">
-    <value>6</value>
   </data>
   <data name="linkLabelMaxTranslateLen.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -508,6 +535,57 @@
   <data name="&gt;&gt;checkBoxDeleteLangResxFilesBeforeTranslation.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="&gt;&gt;linkLabelAddOriginalSrcTextToComment.Name" xml:space="preserve">
+    <value>linkLabelAddOriginalSrcTextToComment</value>
+  </data>
+  <data name="&gt;&gt;linkLabelAddOriginalSrcTextToComment.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelAddOriginalSrcTextToComment.Parent" xml:space="preserve">
+    <value>groupBoxAddOriginalSrcTextToComment</value>
+  </data>
+  <data name="&gt;&gt;linkLabelAddOriginalSrcTextToComment.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;comboBoxAddOriginalSrcTextToComment.Name" xml:space="preserve">
+    <value>comboBoxAddOriginalSrcTextToComment</value>
+  </data>
+  <data name="&gt;&gt;comboBoxAddOriginalSrcTextToComment.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxAddOriginalSrcTextToComment.Parent" xml:space="preserve">
+    <value>groupBoxAddOriginalSrcTextToComment</value>
+  </data>
+  <data name="&gt;&gt;comboBoxAddOriginalSrcTextToComment.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBoxAddOriginalSrcTextToComment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>188, 133</value>
+  </data>
+  <data name="groupBoxAddOriginalSrcTextToComment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>583, 88</value>
+  </data>
+  <data name="groupBoxAddOriginalSrcTextToComment.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="groupBoxAddOriginalSrcTextToComment.Text" xml:space="preserve">
+    <value>Destination Resource Comments Option</value>
+  </data>
+  <data name="groupBoxAddOriginalSrcTextToComment.ToolTip" xml:space="preserve">
+    <value>Add original source text to comment</value>
+  </data>
+  <data name="&gt;&gt;groupBoxAddOriginalSrcTextToComment.Name" xml:space="preserve">
+    <value>groupBoxAddOriginalSrcTextToComment</value>
+  </data>
+  <data name="&gt;&gt;groupBoxAddOriginalSrcTextToComment.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxAddOriginalSrcTextToComment.Parent" xml:space="preserve">
+    <value>tabPageResxTranslationOptions</value>
+  </data>
+  <data name="&gt;&gt;groupBoxAddOriginalSrcTextToComment.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
   <data name="linkLabelAddOriginalSrcTextToComment.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -576,33 +654,6 @@
   </data>
   <data name="&gt;&gt;comboBoxAddOriginalSrcTextToComment.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="groupBoxAddOriginalSrcTextToComment.Location" type="System.Drawing.Point, System.Drawing">
-    <value>188, 133</value>
-  </data>
-  <data name="groupBoxAddOriginalSrcTextToComment.Size" type="System.Drawing.Size, System.Drawing">
-    <value>583, 88</value>
-  </data>
-  <data name="groupBoxAddOriginalSrcTextToComment.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="groupBoxAddOriginalSrcTextToComment.Text" xml:space="preserve">
-    <value>Destination Resource Comments Option</value>
-  </data>
-  <data name="groupBoxAddOriginalSrcTextToComment.ToolTip" xml:space="preserve">
-    <value>Add original source text to comment</value>
-  </data>
-  <data name="&gt;&gt;groupBoxAddOriginalSrcTextToComment.Name" xml:space="preserve">
-    <value>groupBoxAddOriginalSrcTextToComment</value>
-  </data>
-  <data name="&gt;&gt;groupBoxAddOriginalSrcTextToComment.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxAddOriginalSrcTextToComment.Parent" xml:space="preserve">
-    <value>tabPageResxTranslationOptions</value>
-  </data>
-  <data name="&gt;&gt;groupBoxAddOriginalSrcTextToComment.ZOrder" xml:space="preserve">
-    <value>6</value>
   </data>
   <data name="linkLabelDeleteLangResxFilesBeforeTranslation.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -739,6 +790,57 @@
   <data name="&gt;&gt;linkLabelBkUpDir.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="&gt;&gt;comboBoxDefaultLanguageSet.Name" xml:space="preserve">
+    <value>comboBoxDefaultLanguageSet</value>
+  </data>
+  <data name="&gt;&gt;comboBoxDefaultLanguageSet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxDefaultLanguageSet.Parent" xml:space="preserve">
+    <value>groupBoxDefaultLanguageSet</value>
+  </data>
+  <data name="&gt;&gt;comboBoxDefaultLanguageSet.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;linkLabelDefaultLanguageSet.Name" xml:space="preserve">
+    <value>linkLabelDefaultLanguageSet</value>
+  </data>
+  <data name="&gt;&gt;linkLabelDefaultLanguageSet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelDefaultLanguageSet.Parent" xml:space="preserve">
+    <value>groupBoxDefaultLanguageSet</value>
+  </data>
+  <data name="&gt;&gt;linkLabelDefaultLanguageSet.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBoxDefaultLanguageSet.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 25</value>
+  </data>
+  <data name="groupBoxDefaultLanguageSet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>405, 101</value>
+  </data>
+  <data name="groupBoxDefaultLanguageSet.TabIndex" type="System.Int32, mscorlib">
+    <value>168</value>
+  </data>
+  <data name="groupBoxDefaultLanguageSet.Text" xml:space="preserve">
+    <value>Default Language Set</value>
+  </data>
+  <data name="groupBoxDefaultLanguageSet.ToolTip" xml:space="preserve">
+    <value>Select the default language set that is dispaly when program starts.</value>
+  </data>
+  <data name="&gt;&gt;groupBoxDefaultLanguageSet.Name" xml:space="preserve">
+    <value>groupBoxDefaultLanguageSet</value>
+  </data>
+  <data name="&gt;&gt;groupBoxDefaultLanguageSet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxDefaultLanguageSet.Parent" xml:space="preserve">
+    <value>tabPageResxTranslationOptions</value>
+  </data>
+  <data name="&gt;&gt;groupBoxDefaultLanguageSet.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="comboBoxDefaultLanguageSet.Items" xml:space="preserve">
     <value>Windows 10/11 Language Pack</value>
   </data>
@@ -813,33 +915,6 @@
   </data>
   <data name="&gt;&gt;linkLabelDefaultLanguageSet.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="groupBoxDefaultLanguageSet.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 25</value>
-  </data>
-  <data name="groupBoxDefaultLanguageSet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>405, 101</value>
-  </data>
-  <data name="groupBoxDefaultLanguageSet.TabIndex" type="System.Int32, mscorlib">
-    <value>168</value>
-  </data>
-  <data name="groupBoxDefaultLanguageSet.Text" xml:space="preserve">
-    <value>Default Language Set</value>
-  </data>
-  <data name="groupBoxDefaultLanguageSet.ToolTip" xml:space="preserve">
-    <value>Select the default language set that is dispaly when program starts.</value>
-  </data>
-  <data name="&gt;&gt;groupBoxDefaultLanguageSet.Name" xml:space="preserve">
-    <value>groupBoxDefaultLanguageSet</value>
-  </data>
-  <data name="&gt;&gt;groupBoxDefaultLanguageSet.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxDefaultLanguageSet.Parent" xml:space="preserve">
-    <value>tabPageResxTranslationOptions</value>
-  </data>
-  <data name="&gt;&gt;groupBoxDefaultLanguageSet.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="buttonDeleteLangAppendedResxFiles.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1156,48 +1231,6 @@
   <data name="tabControlAdvanceOptionsSubTab.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="groupBoxBkUpDir.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="textBoxBkUpDir.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="textBoxBkUpDir.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 38</value>
-  </data>
-  <data name="textBoxBkUpDir.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 10</value>
-  </data>
-  <data name="textBoxBkUpDir.Size" type="System.Drawing.Size, System.Drawing">
-    <value>742, 31</value>
-  </data>
-  <data name="textBoxBkUpDir.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;textBoxBkUpDir.Name" xml:space="preserve">
-    <value>textBoxBkUpDir</value>
-  </data>
-  <data name="&gt;&gt;textBoxBkUpDir.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxBkUpDir.Parent" xml:space="preserve">
-    <value>groupBoxBkUpDir</value>
-  </data>
-  <data name="&gt;&gt;textBoxBkUpDir.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="groupBoxBkUpDir.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 309</value>
-  </data>
-  <data name="groupBoxBkUpDir.Size" type="System.Drawing.Size, System.Drawing">
-    <value>928, 85</value>
-  </data>
-  <data name="groupBoxBkUpDir.TabIndex" type="System.Int32, mscorlib">
-    <value>1004</value>
-  </data>
-  <data name="groupBoxBkUpDir.Text" xml:space="preserve">
-    <value>Backup Directory</value>
-  </data>
   <data name="&gt;&gt;groupBoxBkUpDir.Name" xml:space="preserve">
     <value>groupBoxBkUpDir</value>
   </data>
@@ -1210,18 +1243,6 @@
   <data name="&gt;&gt;groupBoxBkUpDir.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="groupBoxDeleteLangAppendedResxFiles.Location" type="System.Drawing.Point, System.Drawing">
-    <value>427, 25</value>
-  </data>
-  <data name="groupBoxDeleteLangAppendedResxFiles.Size" type="System.Drawing.Size, System.Drawing">
-    <value>521, 101</value>
-  </data>
-  <data name="groupBoxDeleteLangAppendedResxFiles.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="groupBoxDeleteLangAppendedResxFiles.Text" xml:space="preserve">
-    <value>Delete All Resx with Appended Language Code</value>
-  </data>
   <data name="&gt;&gt;groupBoxDeleteLangAppendedResxFiles.Name" xml:space="preserve">
     <value>groupBoxDeleteLangAppendedResxFiles</value>
   </data>
@@ -1233,24 +1254,6 @@
   </data>
   <data name="&gt;&gt;groupBoxDeleteLangAppendedResxFiles.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="checkBoxBackupFilesBeforeTranslation.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBoxBackupFilesBeforeTranslation.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="checkBoxBackupFilesBeforeTranslation.Location" type="System.Drawing.Point, System.Drawing">
-    <value>53, 267</value>
-  </data>
-  <data name="checkBoxBackupFilesBeforeTranslation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>279, 29</value>
-  </data>
-  <data name="checkBoxBackupFilesBeforeTranslation.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="checkBoxBackupFilesBeforeTranslation.Text" xml:space="preserve">
-    <value>Backup Files Before Translation</value>
   </data>
   <data name="&gt;&gt;checkBoxBackupFilesBeforeTranslation.Name" xml:space="preserve">
     <value>checkBoxBackupFilesBeforeTranslation</value>
@@ -1352,7 +1355,7 @@
     <value>54, 67</value>
   </data>
   <data name="MaxTranslateLen.MaxLength" type="System.Int32, mscorlib">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="MaxTranslateLen.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 31</value>
@@ -1361,7 +1364,10 @@
     <value>5</value>
   </data>
   <data name="MaxTranslateLen.Text" xml:space="preserve">
-    <value>10000</value>
+    <value>5000</value>
+  </data>
+  <data name="MaxTranslateLen.ToolTip" xml:space="preserve">
+    <value>A value between 250 and 5000</value>
   </data>
   <data name="&gt;&gt;MaxTranslateLen.Name" xml:space="preserve">
     <value>MaxTranslateLen</value>
@@ -1429,54 +1435,6 @@
   <data name="&gt;&gt;tabPageTranslationOptions.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="comboBoxScreenVerbosityLevel.Items" xml:space="preserve">
-    <value>Silent</value>
-  </data>
-  <data name="comboBoxScreenVerbosityLevel.Items1" xml:space="preserve">
-    <value>Errors</value>
-  </data>
-  <data name="comboBoxScreenVerbosityLevel.Items2" xml:space="preserve">
-    <value>Normal</value>
-  </data>
-  <data name="comboBoxScreenVerbosityLevel.Items3" xml:space="preserve">
-    <value>Detail</value>
-  </data>
-  <data name="comboBoxScreenVerbosityLevel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>103, 35</value>
-  </data>
-  <data name="comboBoxScreenVerbosityLevel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 33</value>
-  </data>
-  <data name="comboBoxScreenVerbosityLevel.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="comboBoxScreenVerbosityLevel.Text" xml:space="preserve">
-    <value>Normal</value>
-  </data>
-  <data name="&gt;&gt;comboBoxScreenVerbosityLevel.Name" xml:space="preserve">
-    <value>comboBoxScreenVerbosityLevel</value>
-  </data>
-  <data name="&gt;&gt;comboBoxScreenVerbosityLevel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBoxScreenVerbosityLevel.Parent" xml:space="preserve">
-    <value>groupBoxScreenVerbosityLevel</value>
-  </data>
-  <data name="&gt;&gt;comboBoxScreenVerbosityLevel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="groupBoxScreenVerbosityLevel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>80, 31</value>
-  </data>
-  <data name="groupBoxScreenVerbosityLevel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>377, 88</value>
-  </data>
-  <data name="groupBoxScreenVerbosityLevel.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="groupBoxScreenVerbosityLevel.Text" xml:space="preserve">
-    <value>Screen Verbosity Level</value>
-  </data>
   <data name="&gt;&gt;groupBoxScreenVerbosityLevel.Name" xml:space="preserve">
     <value>groupBoxScreenVerbosityLevel</value>
   </data>
@@ -1488,54 +1446,6 @@
   </data>
   <data name="&gt;&gt;groupBoxScreenVerbosityLevel.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="comboBoxLogFileVerbosityLevel.Items" xml:space="preserve">
-    <value>Silent</value>
-  </data>
-  <data name="comboBoxLogFileVerbosityLevel.Items1" xml:space="preserve">
-    <value>Errors</value>
-  </data>
-  <data name="comboBoxLogFileVerbosityLevel.Items2" xml:space="preserve">
-    <value>Normal</value>
-  </data>
-  <data name="comboBoxLogFileVerbosityLevel.Items3" xml:space="preserve">
-    <value>Detail</value>
-  </data>
-  <data name="comboBoxLogFileVerbosityLevel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>103, 35</value>
-  </data>
-  <data name="comboBoxLogFileVerbosityLevel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 33</value>
-  </data>
-  <data name="comboBoxLogFileVerbosityLevel.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="comboBoxLogFileVerbosityLevel.Text" xml:space="preserve">
-    <value>Normal</value>
-  </data>
-  <data name="&gt;&gt;comboBoxLogFileVerbosityLevel.Name" xml:space="preserve">
-    <value>comboBoxLogFileVerbosityLevel</value>
-  </data>
-  <data name="&gt;&gt;comboBoxLogFileVerbosityLevel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBoxLogFileVerbosityLevel.Parent" xml:space="preserve">
-    <value>groupBoxLogFileVerbosityLevel</value>
-  </data>
-  <data name="&gt;&gt;comboBoxLogFileVerbosityLevel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="groupBoxLogFileVerbosityLevel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>502, 31</value>
-  </data>
-  <data name="groupBoxLogFileVerbosityLevel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>377, 88</value>
-  </data>
-  <data name="groupBoxLogFileVerbosityLevel.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="groupBoxLogFileVerbosityLevel.Text" xml:space="preserve">
-    <value>Log File Verbosity Level</value>
   </data>
   <data name="&gt;&gt;groupBoxLogFileVerbosityLevel.Name" xml:space="preserve">
     <value>groupBoxLogFileVerbosityLevel</value>
@@ -1549,21 +1459,6 @@
   <data name="&gt;&gt;groupBoxLogFileVerbosityLevel.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="textBoxLogFolderPath.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="textBoxLogFolderPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>230, 133</value>
-  </data>
-  <data name="textBoxLogFolderPath.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 10</value>
-  </data>
-  <data name="textBoxLogFolderPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>569, 31</value>
-  </data>
-  <data name="textBoxLogFolderPath.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
   <data name="&gt;&gt;textBoxLogFolderPath.Name" xml:space="preserve">
     <value>textBoxLogFolderPath</value>
   </data>
@@ -1575,24 +1470,6 @@
   </data>
   <data name="&gt;&gt;textBoxLogFolderPath.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="labelLogFolderPath.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelLogFolderPath.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelLogFolderPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>39, 133</value>
-  </data>
-  <data name="labelLogFolderPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>159, 25</value>
-  </data>
-  <data name="labelLogFolderPath.TabIndex" type="System.Int32, mscorlib">
-    <value>152</value>
-  </data>
-  <data name="labelLogFolderPath.Text" xml:space="preserve">
-    <value>Logging Directory:</value>
   </data>
   <data name="&gt;&gt;labelLogFolderPath.Name" xml:space="preserve">
     <value>labelLogFolderPath</value>
@@ -1681,26 +1558,395 @@
   <data name="&gt;&gt;advanceOptionsTab.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="groupBoxTextBoxTextToTranslate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="groupBoxBkUpDir.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
-  <data name="textBoxTextToTranslate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
+  <data name="&gt;&gt;textBoxBkUpDir.Name" xml:space="preserve">
+    <value>textBoxBkUpDir</value>
   </data>
-  <data name="textBoxTextToTranslate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 35</value>
+  <data name="&gt;&gt;textBoxBkUpDir.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="textBoxTextToTranslate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 25</value>
+  <data name="&gt;&gt;textBoxBkUpDir.Parent" xml:space="preserve">
+    <value>groupBoxBkUpDir</value>
   </data>
-  <data name="textBoxTextToTranslate.Multiline" type="System.Boolean, mscorlib">
+  <data name="&gt;&gt;textBoxBkUpDir.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="groupBoxBkUpDir.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 309</value>
+  </data>
+  <data name="groupBoxBkUpDir.Size" type="System.Drawing.Size, System.Drawing">
+    <value>928, 85</value>
+  </data>
+  <data name="groupBoxBkUpDir.TabIndex" type="System.Int32, mscorlib">
+    <value>1004</value>
+  </data>
+  <data name="groupBoxBkUpDir.Text" xml:space="preserve">
+    <value>Backup Directory</value>
+  </data>
+  <data name="&gt;&gt;groupBoxBkUpDir.Name" xml:space="preserve">
+    <value>groupBoxBkUpDir</value>
+  </data>
+  <data name="&gt;&gt;groupBoxBkUpDir.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxBkUpDir.Parent" xml:space="preserve">
+    <value>tabPageResxTranslationOptions</value>
+  </data>
+  <data name="&gt;&gt;groupBoxBkUpDir.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="textBoxBkUpDir.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="textBoxBkUpDir.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 38</value>
+  </data>
+  <data name="textBoxBkUpDir.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 10</value>
+  </data>
+  <data name="textBoxBkUpDir.Size" type="System.Drawing.Size, System.Drawing">
+    <value>742, 31</value>
+  </data>
+  <data name="textBoxBkUpDir.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;textBoxBkUpDir.Name" xml:space="preserve">
+    <value>textBoxBkUpDir</value>
+  </data>
+  <data name="&gt;&gt;textBoxBkUpDir.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxBkUpDir.Parent" xml:space="preserve">
+    <value>groupBoxBkUpDir</value>
+  </data>
+  <data name="&gt;&gt;textBoxBkUpDir.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="groupBoxDeleteLangAppendedResxFiles.Location" type="System.Drawing.Point, System.Drawing">
+    <value>427, 25</value>
+  </data>
+  <data name="groupBoxDeleteLangAppendedResxFiles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>521, 101</value>
+  </data>
+  <data name="groupBoxDeleteLangAppendedResxFiles.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="groupBoxDeleteLangAppendedResxFiles.Text" xml:space="preserve">
+    <value>Delete All Resx with Appended Language Code</value>
+  </data>
+  <data name="&gt;&gt;groupBoxDeleteLangAppendedResxFiles.Name" xml:space="preserve">
+    <value>groupBoxDeleteLangAppendedResxFiles</value>
+  </data>
+  <data name="&gt;&gt;groupBoxDeleteLangAppendedResxFiles.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxDeleteLangAppendedResxFiles.Parent" xml:space="preserve">
+    <value>tabPageResxTranslationOptions</value>
+  </data>
+  <data name="&gt;&gt;groupBoxDeleteLangAppendedResxFiles.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="checkBoxBackupFilesBeforeTranslation.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="textBoxTextToTranslate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>903, 208</value>
+  <data name="checkBoxBackupFilesBeforeTranslation.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="textBoxTextToTranslate.TabIndex" type="System.Int32, mscorlib">
+  <data name="checkBoxBackupFilesBeforeTranslation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>53, 267</value>
+  </data>
+  <data name="checkBoxBackupFilesBeforeTranslation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>279, 29</value>
+  </data>
+  <data name="checkBoxBackupFilesBeforeTranslation.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="checkBoxBackupFilesBeforeTranslation.Text" xml:space="preserve">
+    <value>Backup Files Before Translation</value>
+  </data>
+  <data name="&gt;&gt;checkBoxBackupFilesBeforeTranslation.Name" xml:space="preserve">
+    <value>checkBoxBackupFilesBeforeTranslation</value>
+  </data>
+  <data name="&gt;&gt;checkBoxBackupFilesBeforeTranslation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBoxBackupFilesBeforeTranslation.Parent" xml:space="preserve">
+    <value>tabPageResxTranslationOptions</value>
+  </data>
+  <data name="&gt;&gt;checkBoxBackupFilesBeforeTranslation.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;comboBoxScreenVerbosityLevel.Name" xml:space="preserve">
+    <value>comboBoxScreenVerbosityLevel</value>
+  </data>
+  <data name="&gt;&gt;comboBoxScreenVerbosityLevel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxScreenVerbosityLevel.Parent" xml:space="preserve">
+    <value>groupBoxScreenVerbosityLevel</value>
+  </data>
+  <data name="&gt;&gt;comboBoxScreenVerbosityLevel.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="groupBoxScreenVerbosityLevel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 31</value>
+  </data>
+  <data name="groupBoxScreenVerbosityLevel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>377, 88</value>
+  </data>
+  <data name="groupBoxScreenVerbosityLevel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="groupBoxScreenVerbosityLevel.Text" xml:space="preserve">
+    <value>Screen Verbosity Level</value>
+  </data>
+  <data name="&gt;&gt;groupBoxScreenVerbosityLevel.Name" xml:space="preserve">
+    <value>groupBoxScreenVerbosityLevel</value>
+  </data>
+  <data name="&gt;&gt;groupBoxScreenVerbosityLevel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxScreenVerbosityLevel.Parent" xml:space="preserve">
+    <value>tabPageLoggingOptions</value>
+  </data>
+  <data name="&gt;&gt;groupBoxScreenVerbosityLevel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="comboBoxScreenVerbosityLevel.Items" xml:space="preserve">
+    <value>Silent</value>
+  </data>
+  <data name="comboBoxScreenVerbosityLevel.Items1" xml:space="preserve">
+    <value>Errors</value>
+  </data>
+  <data name="comboBoxScreenVerbosityLevel.Items2" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="comboBoxScreenVerbosityLevel.Items3" xml:space="preserve">
+    <value>Detail</value>
+  </data>
+  <data name="comboBoxScreenVerbosityLevel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 35</value>
+  </data>
+  <data name="comboBoxScreenVerbosityLevel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 33</value>
+  </data>
+  <data name="comboBoxScreenVerbosityLevel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="comboBoxScreenVerbosityLevel.Text" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="&gt;&gt;comboBoxScreenVerbosityLevel.Name" xml:space="preserve">
+    <value>comboBoxScreenVerbosityLevel</value>
+  </data>
+  <data name="&gt;&gt;comboBoxScreenVerbosityLevel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxScreenVerbosityLevel.Parent" xml:space="preserve">
+    <value>groupBoxScreenVerbosityLevel</value>
+  </data>
+  <data name="&gt;&gt;comboBoxScreenVerbosityLevel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;comboBoxLogFileVerbosityLevel.Name" xml:space="preserve">
+    <value>comboBoxLogFileVerbosityLevel</value>
+  </data>
+  <data name="&gt;&gt;comboBoxLogFileVerbosityLevel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxLogFileVerbosityLevel.Parent" xml:space="preserve">
+    <value>groupBoxLogFileVerbosityLevel</value>
+  </data>
+  <data name="&gt;&gt;comboBoxLogFileVerbosityLevel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="groupBoxLogFileVerbosityLevel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>502, 31</value>
+  </data>
+  <data name="groupBoxLogFileVerbosityLevel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>377, 88</value>
+  </data>
+  <data name="groupBoxLogFileVerbosityLevel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="groupBoxLogFileVerbosityLevel.Text" xml:space="preserve">
+    <value>Log File Verbosity Level</value>
+  </data>
+  <data name="&gt;&gt;groupBoxLogFileVerbosityLevel.Name" xml:space="preserve">
+    <value>groupBoxLogFileVerbosityLevel</value>
+  </data>
+  <data name="&gt;&gt;groupBoxLogFileVerbosityLevel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxLogFileVerbosityLevel.Parent" xml:space="preserve">
+    <value>tabPageLoggingOptions</value>
+  </data>
+  <data name="&gt;&gt;groupBoxLogFileVerbosityLevel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="comboBoxLogFileVerbosityLevel.Items" xml:space="preserve">
+    <value>Silent</value>
+  </data>
+  <data name="comboBoxLogFileVerbosityLevel.Items1" xml:space="preserve">
+    <value>Errors</value>
+  </data>
+  <data name="comboBoxLogFileVerbosityLevel.Items2" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="comboBoxLogFileVerbosityLevel.Items3" xml:space="preserve">
+    <value>Detail</value>
+  </data>
+  <data name="comboBoxLogFileVerbosityLevel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 35</value>
+  </data>
+  <data name="comboBoxLogFileVerbosityLevel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 33</value>
+  </data>
+  <data name="comboBoxLogFileVerbosityLevel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="comboBoxLogFileVerbosityLevel.Text" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="&gt;&gt;comboBoxLogFileVerbosityLevel.Name" xml:space="preserve">
+    <value>comboBoxLogFileVerbosityLevel</value>
+  </data>
+  <data name="&gt;&gt;comboBoxLogFileVerbosityLevel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxLogFileVerbosityLevel.Parent" xml:space="preserve">
+    <value>groupBoxLogFileVerbosityLevel</value>
+  </data>
+  <data name="&gt;&gt;comboBoxLogFileVerbosityLevel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="textBoxLogFolderPath.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="textBoxLogFolderPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>230, 133</value>
+  </data>
+  <data name="textBoxLogFolderPath.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 10</value>
+  </data>
+  <data name="textBoxLogFolderPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>569, 31</value>
+  </data>
+  <data name="textBoxLogFolderPath.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;textBoxLogFolderPath.Name" xml:space="preserve">
+    <value>textBoxLogFolderPath</value>
+  </data>
+  <data name="&gt;&gt;textBoxLogFolderPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxLogFolderPath.Parent" xml:space="preserve">
+    <value>tabPageLoggingOptions</value>
+  </data>
+  <data name="&gt;&gt;textBoxLogFolderPath.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="labelLogFolderPath.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelLogFolderPath.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelLogFolderPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>39, 133</value>
+  </data>
+  <data name="labelLogFolderPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 25</value>
+  </data>
+  <data name="labelLogFolderPath.TabIndex" type="System.Int32, mscorlib">
+    <value>152</value>
+  </data>
+  <data name="labelLogFolderPath.Text" xml:space="preserve">
+    <value>Logging Directory:</value>
+  </data>
+  <data name="&gt;&gt;labelLogFolderPath.Name" xml:space="preserve">
+    <value>labelLogFolderPath</value>
+  </data>
+  <data name="&gt;&gt;labelLogFolderPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelLogFolderPath.Parent" xml:space="preserve">
+    <value>tabPageLoggingOptions</value>
+  </data>
+  <data name="&gt;&gt;labelLogFolderPath.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;groupBoxTextBoxTextToTranslate.Name" xml:space="preserve">
+    <value>groupBoxTextBoxTextToTranslate</value>
+  </data>
+  <data name="&gt;&gt;groupBoxTextBoxTextToTranslate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxTextBoxTextToTranslate.Parent" xml:space="preserve">
+    <value>textTab</value>
+  </data>
+  <data name="&gt;&gt;groupBoxTextBoxTextToTranslate.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupBoxTextBoxTranslation.Name" xml:space="preserve">
+    <value>groupBoxTextBoxTranslation</value>
+  </data>
+  <data name="&gt;&gt;groupBoxTextBoxTranslation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxTextBoxTranslation.Parent" xml:space="preserve">
+    <value>textTab</value>
+  </data>
+  <data name="&gt;&gt;groupBoxTextBoxTranslation.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;textCmdPanel.Name" xml:space="preserve">
+    <value>textCmdPanel</value>
+  </data>
+  <data name="&gt;&gt;textCmdPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textCmdPanel.Parent" xml:space="preserve">
+    <value>textTab</value>
+  </data>
+  <data name="&gt;&gt;textCmdPanel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="textTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 34</value>
+  </data>
+  <data name="textTab.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="textTab.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>22, 25, 22, 25</value>
+  </data>
+  <data name="textTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>976, 843</value>
+  </data>
+  <data name="textTab.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="textTab.Text" xml:space="preserve">
+    <value>Translate Text</value>
+  </data>
+  <data name="&gt;&gt;textTab.Name" xml:space="preserve">
+    <value>textTab</value>
+  </data>
+  <data name="&gt;&gt;textTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textTab.Parent" xml:space="preserve">
+    <value>tabs</value>
+  </data>
+  <data name="&gt;&gt;textTab.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBoxTextBoxTextToTranslate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
   <data name="&gt;&gt;textBoxTextToTranslate.Name" xml:space="preserve">
     <value>textBoxTextToTranslate</value>
@@ -1738,26 +1984,38 @@
   <data name="&gt;&gt;groupBoxTextBoxTextToTranslate.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="textBoxTextToTranslate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="textBoxTextToTranslate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 35</value>
+  </data>
+  <data name="textBoxTextToTranslate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 25</value>
+  </data>
+  <data name="textBoxTextToTranslate.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textBoxTextToTranslate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>903, 208</value>
+  </data>
+  <data name="textBoxTextToTranslate.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBoxTextToTranslate.Name" xml:space="preserve">
+    <value>textBoxTextToTranslate</value>
+  </data>
+  <data name="&gt;&gt;textBoxTextToTranslate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxTextToTranslate.Parent" xml:space="preserve">
+    <value>groupBoxTextBoxTextToTranslate</value>
+  </data>
+  <data name="&gt;&gt;textBoxTextToTranslate.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="groupBoxTextBoxTranslation.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="textBoxTranslation.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="textBoxTranslation.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 33</value>
-  </data>
-  <data name="textBoxTranslation.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="textBoxTranslation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>903, 387</value>
-  </data>
-  <data name="textBoxTranslation.TabIndex" type="System.Int32, mscorlib">
-    <value>99</value>
-  </data>
-  <data name="textBoxTranslation.Text" xml:space="preserve">
-    <value />
   </data>
   <data name="&gt;&gt;textBoxTranslation.Name" xml:space="preserve">
     <value>textBoxTranslation</value>
@@ -1795,8 +2053,125 @@
   <data name="&gt;&gt;groupBoxTextBoxTranslation.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="textBoxTranslation.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="textBoxTranslation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 33</value>
+  </data>
+  <data name="textBoxTranslation.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="textBoxTranslation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>903, 387</value>
+  </data>
+  <data name="textBoxTranslation.TabIndex" type="System.Int32, mscorlib">
+    <value>99</value>
+  </data>
+  <data name="textBoxTranslation.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;textBoxTranslation.Name" xml:space="preserve">
+    <value>textBoxTranslation</value>
+  </data>
+  <data name="&gt;&gt;textBoxTranslation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxTranslation.Parent" xml:space="preserve">
+    <value>groupBoxTextBoxTranslation</value>
+  </data>
+  <data name="&gt;&gt;textBoxTranslation.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="textCmdPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;buttonTranslateTextInTextBox.Name" xml:space="preserve">
+    <value>buttonTranslateTextInTextBox</value>
+  </data>
+  <data name="&gt;&gt;buttonTranslateTextInTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonTranslateTextInTextBox.Parent" xml:space="preserve">
+    <value>textCmdPanel</value>
+  </data>
+  <data name="&gt;&gt;buttonTranslateTextInTextBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;toCodeLabel.Name" xml:space="preserve">
+    <value>toCodeLabel</value>
+  </data>
+  <data name="&gt;&gt;toCodeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toCodeLabel.Parent" xml:space="preserve">
+    <value>textCmdPanel</value>
+  </data>
+  <data name="&gt;&gt;toCodeLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;comboBoxToLang.Name" xml:space="preserve">
+    <value>comboBoxToLang</value>
+  </data>
+  <data name="&gt;&gt;comboBoxToLang.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxToLang.Parent" xml:space="preserve">
+    <value>textCmdPanel</value>
+  </data>
+  <data name="&gt;&gt;comboBoxToLang.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;comboBoxFromLang.Name" xml:space="preserve">
+    <value>comboBoxFromLang</value>
+  </data>
+  <data name="&gt;&gt;comboBoxFromLang.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxFromLang.Parent" xml:space="preserve">
+    <value>textCmdPanel</value>
+  </data>
+  <data name="&gt;&gt;comboBoxFromLang.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;fromCodeLabel.Name" xml:space="preserve">
+    <value>fromCodeLabel</value>
+  </data>
+  <data name="&gt;&gt;fromCodeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;fromCodeLabel.Parent" xml:space="preserve">
+    <value>textCmdPanel</value>
+  </data>
+  <data name="&gt;&gt;fromCodeLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="textCmdPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 29</value>
+  </data>
+  <data name="textCmdPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="textCmdPanel.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 11, 0, 11</value>
+  </data>
+  <data name="textCmdPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>924, 75</value>
+  </data>
+  <data name="textCmdPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;textCmdPanel.Name" xml:space="preserve">
+    <value>textCmdPanel</value>
+  </data>
+  <data name="&gt;&gt;textCmdPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textCmdPanel.Parent" xml:space="preserve">
+    <value>textTab</value>
+  </data>
+  <data name="&gt;&gt;textCmdPanel.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="buttonTranslateTextInTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -1942,68 +2317,272 @@
   <data name="&gt;&gt;fromCodeLabel.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="textCmdPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 29</value>
+  <metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>548, 17</value>
+  </metadata>
+  <data name="&gt;&gt;tabControlTranslateResxSubTab.Name" xml:space="preserve">
+    <value>tabControlTranslateResxSubTab</value>
   </data>
-  <data name="textCmdPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+  <data name="&gt;&gt;tabControlTranslateResxSubTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="textCmdPanel.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 11, 0, 11</value>
+  <data name="&gt;&gt;tabControlTranslateResxSubTab.Parent" xml:space="preserve">
+    <value>resxTab</value>
   </data>
-  <data name="textCmdPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>924, 75</value>
-  </data>
-  <data name="textCmdPanel.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;tabControlTranslateResxSubTab.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;textCmdPanel.Name" xml:space="preserve">
-    <value>textCmdPanel</value>
+  <data name="&gt;&gt;toolStrip1.Name" xml:space="preserve">
+    <value>toolStrip1</value>
   </data>
-  <data name="&gt;&gt;textCmdPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;toolStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textCmdPanel.Parent" xml:space="preserve">
-    <value>textTab</value>
+  <data name="&gt;&gt;toolStrip1.Parent" xml:space="preserve">
+    <value>resxTab</value>
   </data>
-  <data name="&gt;&gt;textCmdPanel.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;toolStrip1.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="textTab.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="&gt;&gt;outputBox.Name" xml:space="preserve">
+    <value>outputBox</value>
+  </data>
+  <data name="&gt;&gt;outputBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;outputBox.Parent" xml:space="preserve">
+    <value>resxTab</value>
+  </data>
+  <data name="&gt;&gt;outputBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;inputBox.Name" xml:space="preserve">
+    <value>inputBox</value>
+  </data>
+  <data name="&gt;&gt;inputBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;inputBox.Parent" xml:space="preserve">
+    <value>resxTab</value>
+  </data>
+  <data name="&gt;&gt;inputBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;outputLabel.Name" xml:space="preserve">
+    <value>outputLabel</value>
+  </data>
+  <data name="&gt;&gt;outputLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;outputLabel.Parent" xml:space="preserve">
+    <value>resxTab</value>
+  </data>
+  <data name="&gt;&gt;outputLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;comboBoxFromLanguage.Name" xml:space="preserve">
+    <value>comboBoxFromLanguage</value>
+  </data>
+  <data name="&gt;&gt;comboBoxFromLanguage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxFromLanguage.Parent" xml:space="preserve">
+    <value>resxTab</value>
+  </data>
+  <data name="&gt;&gt;comboBoxFromLanguage.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;inputLabel.Name" xml:space="preserve">
+    <value>inputLabel</value>
+  </data>
+  <data name="&gt;&gt;inputLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;inputLabel.Parent" xml:space="preserve">
+    <value>resxTab</value>
+  </data>
+  <data name="&gt;&gt;inputLabel.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="resxTab.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 34</value>
   </data>
-  <data name="textTab.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="resxTab.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
-  <data name="textTab.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="resxTab.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>22, 25, 22, 25</value>
   </data>
-  <data name="textTab.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="resxTab.Size" type="System.Drawing.Size, System.Drawing">
     <value>976, 843</value>
   </data>
-  <data name="textTab.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="resxTab.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="textTab.Text" xml:space="preserve">
-    <value>Translate Text</value>
+  <data name="resxTab.Text" xml:space="preserve">
+    <value>Translate Resx File</value>
   </data>
-  <data name="&gt;&gt;textTab.Name" xml:space="preserve">
-    <value>textTab</value>
+  <data name="&gt;&gt;resxTab.Name" xml:space="preserve">
+    <value>resxTab</value>
   </data>
-  <data name="&gt;&gt;textTab.Type" xml:space="preserve">
+  <data name="&gt;&gt;resxTab.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textTab.Parent" xml:space="preserve">
+  <data name="&gt;&gt;resxTab.Parent" xml:space="preserve">
     <value>tabs</value>
   </data>
-  <data name="&gt;&gt;textTab.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;resxTab.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="tabControlTranslateResxSubTab.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
+  <data name="&gt;&gt;tabPageLanguageList.Name" xml:space="preserve">
+    <value>tabPageLanguageList</value>
+  </data>
+  <data name="&gt;&gt;tabPageLanguageList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPageLanguageList.Parent" xml:space="preserve">
+    <value>tabControlTranslateResxSubTab</value>
+  </data>
+  <data name="&gt;&gt;tabPageLanguageList.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabPageTranslateResxLogging.Name" xml:space="preserve">
+    <value>tabPageTranslateResxLogging</value>
+  </data>
+  <data name="&gt;&gt;tabPageTranslateResxLogging.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPageTranslateResxLogging.Parent" xml:space="preserve">
+    <value>tabControlTranslateResxSubTab</value>
+  </data>
+  <data name="&gt;&gt;tabPageTranslateResxLogging.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabControlTranslateResxSubTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 216</value>
+  </data>
+  <data name="tabControlTranslateResxSubTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>927, 624</value>
+  </data>
+  <data name="tabControlTranslateResxSubTab.TabIndex" type="System.Int32, mscorlib">
+    <value>1000</value>
+  </data>
+  <data name="&gt;&gt;tabControlTranslateResxSubTab.Name" xml:space="preserve">
+    <value>tabControlTranslateResxSubTab</value>
+  </data>
+  <data name="&gt;&gt;tabControlTranslateResxSubTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControlTranslateResxSubTab.Parent" xml:space="preserve">
+    <value>resxTab</value>
+  </data>
+  <data name="&gt;&gt;tabControlTranslateResxSubTab.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;groupBoxFilterText.Name" xml:space="preserve">
+    <value>groupBoxFilterText</value>
+  </data>
+  <data name="&gt;&gt;groupBoxFilterText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxFilterText.Parent" xml:space="preserve">
+    <value>tabPageLanguageList</value>
+  </data>
+  <data name="&gt;&gt;groupBoxFilterText.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;languageList.Name" xml:space="preserve">
+    <value>languageList</value>
+  </data>
+  <data name="&gt;&gt;languageList.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.FastObjectListView, ABetterTranslator, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;languageList.Parent" xml:space="preserve">
+    <value>tabPageLanguageList</value>
+  </data>
+  <data name="&gt;&gt;languageList.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabPageLanguageList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 34</value>
+  </data>
+  <data name="tabPageLanguageList.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPageLanguageList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>919, 586</value>
+  </data>
+  <data name="tabPageLanguageList.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabPageLanguageList.Text" xml:space="preserve">
+    <value>Language List</value>
+  </data>
+  <data name="&gt;&gt;tabPageLanguageList.Name" xml:space="preserve">
+    <value>tabPageLanguageList</value>
+  </data>
+  <data name="&gt;&gt;tabPageLanguageList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPageLanguageList.Parent" xml:space="preserve">
+    <value>tabControlTranslateResxSubTab</value>
+  </data>
+  <data name="&gt;&gt;tabPageLanguageList.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="groupBoxFilterText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;textBoxFilterText.Name" xml:space="preserve">
+    <value>textBoxFilterText</value>
+  </data>
+  <data name="&gt;&gt;textBoxFilterText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxFilterText.Parent" xml:space="preserve">
+    <value>groupBoxFilterText</value>
+  </data>
+  <data name="&gt;&gt;textBoxFilterText.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;linkLabelFilterText.Name" xml:space="preserve">
+    <value>linkLabelFilterText</value>
+  </data>
+  <data name="&gt;&gt;linkLabelFilterText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelFilterText.Parent" xml:space="preserve">
+    <value>groupBoxFilterText</value>
+  </data>
+  <data name="&gt;&gt;linkLabelFilterText.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBoxFilterText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>206, 6</value>
+  </data>
+  <data name="groupBoxFilterText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>507, 82</value>
+  </data>
+  <data name="groupBoxFilterText.TabIndex" type="System.Int32, mscorlib">
+    <value>144</value>
+  </data>
+  <data name="groupBoxFilterText.Text" xml:space="preserve">
+    <value>Language Display Filter</value>
+  </data>
+  <data name="&gt;&gt;groupBoxFilterText.Name" xml:space="preserve">
+    <value>groupBoxFilterText</value>
+  </data>
+  <data name="&gt;&gt;groupBoxFilterText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxFilterText.Parent" xml:space="preserve">
+    <value>tabPageLanguageList</value>
+  </data>
+  <data name="&gt;&gt;groupBoxFilterText.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="textBoxFilterText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -2062,32 +2641,32 @@
   <data name="&gt;&gt;linkLabelFilterText.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="groupBoxFilterText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>206, 6</value>
-  </data>
-  <data name="groupBoxFilterText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>507, 82</value>
-  </data>
-  <data name="groupBoxFilterText.TabIndex" type="System.Int32, mscorlib">
-    <value>144</value>
-  </data>
-  <data name="groupBoxFilterText.Text" xml:space="preserve">
-    <value>Language Display Filter</value>
-  </data>
-  <data name="&gt;&gt;groupBoxFilterText.Name" xml:space="preserve">
-    <value>groupBoxFilterText</value>
-  </data>
-  <data name="&gt;&gt;groupBoxFilterText.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxFilterText.Parent" xml:space="preserve">
-    <value>tabPageLanguageList</value>
-  </data>
-  <data name="&gt;&gt;groupBoxFilterText.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="languageList.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="languageList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 105</value>
+  </data>
+  <data name="languageList.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="languageList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>910, 474</value>
+  </data>
+  <data name="languageList.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;languageList.Name" xml:space="preserve">
+    <value>languageList</value>
+  </data>
+  <data name="&gt;&gt;languageList.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.FastObjectListView, ABetterTranslator, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;languageList.Parent" xml:space="preserve">
+    <value>tabPageLanguageList</value>
+  </data>
+  <data name="&gt;&gt;languageList.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="olv_LanguageTag.Text" xml:space="preserve">
     <value>Code (Tag)</value>
@@ -2143,56 +2722,56 @@
   <data name="olv_Iso639_3.Width" type="System.Int32, mscorlib">
     <value>75</value>
   </data>
-  <data name="languageList.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 105</value>
+  <data name="&gt;&gt;logBox.Name" xml:space="preserve">
+    <value>logBox</value>
   </data>
-  <data name="languageList.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+  <data name="&gt;&gt;logBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="languageList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>910, 474</value>
+  <data name="&gt;&gt;logBox.Parent" xml:space="preserve">
+    <value>tabPageTranslateResxLogging</value>
   </data>
-  <data name="languageList.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="&gt;&gt;logBox.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;languageList.Name" xml:space="preserve">
-    <value>languageList</value>
+  <data name="&gt;&gt;statusLabel.Name" xml:space="preserve">
+    <value>statusLabel</value>
   </data>
-  <data name="&gt;&gt;languageList.Type" xml:space="preserve">
-    <value>BrightIdeasSoftware.FastObjectListView, ABetterTranslator, Culture=neutral, PublicKeyToken=null</value>
+  <data name="&gt;&gt;statusLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;languageList.Parent" xml:space="preserve">
-    <value>tabPageLanguageList</value>
+  <data name="&gt;&gt;statusLabel.Parent" xml:space="preserve">
+    <value>tabPageTranslateResxLogging</value>
   </data>
-  <data name="&gt;&gt;languageList.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;statusLabel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="tabPageLanguageList.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="tabPageTranslateResxLogging.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 34</value>
   </data>
-  <data name="tabPageLanguageList.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tabPageTranslateResxLogging.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="tabPageLanguageList.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="tabPageTranslateResxLogging.Size" type="System.Drawing.Size, System.Drawing">
     <value>919, 586</value>
   </data>
-  <data name="tabPageLanguageList.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="tabPageTranslateResxLogging.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="tabPageLanguageList.Text" xml:space="preserve">
-    <value>Language List</value>
+  <data name="tabPageTranslateResxLogging.Text" xml:space="preserve">
+    <value>Logging</value>
   </data>
-  <data name="&gt;&gt;tabPageLanguageList.Name" xml:space="preserve">
-    <value>tabPageLanguageList</value>
+  <data name="&gt;&gt;tabPageTranslateResxLogging.Name" xml:space="preserve">
+    <value>tabPageTranslateResxLogging</value>
   </data>
-  <data name="&gt;&gt;tabPageLanguageList.Type" xml:space="preserve">
+  <data name="&gt;&gt;tabPageTranslateResxLogging.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabPageLanguageList.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tabPageTranslateResxLogging.Parent" xml:space="preserve">
     <value>tabControlTranslateResxSubTab</value>
   </data>
-  <data name="&gt;&gt;tabPageLanguageList.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;tabPageTranslateResxLogging.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="logBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -2254,92 +2833,32 @@
   <data name="&gt;&gt;statusLabel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="tabPageTranslateResxLogging.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 34</value>
-  </data>
-  <data name="tabPageTranslateResxLogging.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPageTranslateResxLogging.Size" type="System.Drawing.Size, System.Drawing">
-    <value>919, 586</value>
-  </data>
-  <data name="tabPageTranslateResxLogging.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tabPageTranslateResxLogging.Text" xml:space="preserve">
-    <value>Logging</value>
-  </data>
-  <data name="&gt;&gt;tabPageTranslateResxLogging.Name" xml:space="preserve">
-    <value>tabPageTranslateResxLogging</value>
-  </data>
-  <data name="&gt;&gt;tabPageTranslateResxLogging.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageTranslateResxLogging.Parent" xml:space="preserve">
-    <value>tabControlTranslateResxSubTab</value>
-  </data>
-  <data name="&gt;&gt;tabPageTranslateResxLogging.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tabControlTranslateResxSubTab.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 216</value>
-  </data>
-  <data name="tabControlTranslateResxSubTab.Size" type="System.Drawing.Size, System.Drawing">
-    <value>927, 624</value>
-  </data>
-  <data name="tabControlTranslateResxSubTab.TabIndex" type="System.Int32, mscorlib">
-    <value>1000</value>
-  </data>
-  <data name="&gt;&gt;tabControlTranslateResxSubTab.Name" xml:space="preserve">
-    <value>tabControlTranslateResxSubTab</value>
-  </data>
-  <data name="&gt;&gt;tabControlTranslateResxSubTab.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabControlTranslateResxSubTab.Parent" xml:space="preserve">
-    <value>resxTab</value>
-  </data>
-  <data name="&gt;&gt;tabControlTranslateResxSubTab.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>548, 17</value>
   </metadata>
-  <data name="toolStripMenuItemLoadFile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>376, 42</value>
+  <data name="toolStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 25</value>
   </data>
-  <data name="toolStripMenuItemLoadFile.Text" xml:space="preserve">
-    <value>Open Selected Language Set</value>
+  <data name="toolStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>932, 41</value>
   </data>
-  <data name="toolStripMenuItemLoadFile.ToolTipText" xml:space="preserve">
-    <value>Open a previously save set of selected languages</value>
+  <data name="toolStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
   </data>
-  <data name="toolStripMenuItemOpenResx.Size" type="System.Drawing.Size, System.Drawing">
-    <value>376, 42</value>
+  <data name="toolStrip1.Text" xml:space="preserve">
+    <value>Main Menu</value>
   </data>
-  <data name="toolStripMenuItemOpenResx.Text" xml:space="preserve">
-    <value>Open Resx File</value>
+  <data name="&gt;&gt;toolStrip1.Name" xml:space="preserve">
+    <value>toolStrip1</value>
   </data>
-  <data name="toolStripMenuItemOpenResx.ToolTipText" xml:space="preserve">
-    <value>Open an Resx file to translate</value>
+  <data name="&gt;&gt;toolStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="toolStripMenuItemOpenAll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>376, 42</value>
+  <data name="&gt;&gt;toolStrip1.Parent" xml:space="preserve">
+    <value>resxTab</value>
   </data>
-  <data name="toolStripMenuItemOpenAll.Text" xml:space="preserve">
-    <value>Load All (Project)</value>
-  </data>
-  <data name="toolStripMenuItemOpenAll.ToolTipText" xml:space="preserve">
-    <value>Loads previously saved project settings file.</value>
-  </data>
-  <data name="toolStripMenuItemLoadAndReplaceLanguageSet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>376, 42</value>
-  </data>
-  <data name="toolStripMenuItemLoadAndReplaceLanguageSet.Text" xml:space="preserve">
-    <value>Load as a Custom Language Set</value>
-  </data>
-  <data name="toolStripMenuItemLoadAndReplaceLanguageSet.ToolTipText" xml:space="preserve">
-    <value>Opens previously saved selected languages and only display the selected languages</value>
+  <data name="&gt;&gt;toolStrip1.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="toolStripSplitButtonLoad.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
@@ -2353,32 +2872,41 @@
   <data name="toolStripSplitButtonLoad.ToolTipText" xml:space="preserve">
     <value>Load a file containing previously selected languages</value>
   </data>
-  <data name="toolStripSplitButtonSaveSave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>320, 42</value>
+  <data name="toolStripMenuItemLoadFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>368, 34</value>
   </data>
-  <data name="toolStripSplitButtonSaveSave.Text" xml:space="preserve">
-    <value>Save Selected Languages</value>
+  <data name="toolStripMenuItemLoadFile.Text" xml:space="preserve">
+    <value>Open Selected Language Set</value>
   </data>
-  <data name="toolStripSplitButtonSaveSave.ToolTipText" xml:space="preserve">
-    <value>Save the set of selected languages</value>
+  <data name="toolStripMenuItemLoadFile.ToolTipText" xml:space="preserve">
+    <value>Open a previously save set of selected languages</value>
   </data>
-  <data name="toolStripSplitButtonSaveAs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>320, 42</value>
+  <data name="toolStripMenuItemOpenResx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>368, 34</value>
   </data>
-  <data name="toolStripSplitButtonSaveAs.Text" xml:space="preserve">
-    <value>Save As</value>
+  <data name="toolStripMenuItemOpenResx.Text" xml:space="preserve">
+    <value>Open Resx File</value>
   </data>
-  <data name="toolStripSplitButtonSaveAs.ToolTipText" xml:space="preserve">
-    <value>Save select languages to a new file</value>
+  <data name="toolStripMenuItemOpenResx.ToolTipText" xml:space="preserve">
+    <value>Open an Resx file to translate</value>
   </data>
-  <data name="toolStripSplitButtonSaveAll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>320, 42</value>
+  <data name="toolStripMenuItemOpenAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>368, 34</value>
   </data>
-  <data name="toolStripSplitButtonSaveAll.Text" xml:space="preserve">
-    <value>Save All (Project)</value>
+  <data name="toolStripMenuItemOpenAll.Text" xml:space="preserve">
+    <value>Load All (Project)</value>
   </data>
-  <data name="toolStripSplitButtonSaveAll.ToolTipText" xml:space="preserve">
-    <value>Saves all settings to a project file.</value>
+  <data name="toolStripMenuItemOpenAll.ToolTipText" xml:space="preserve">
+    <value>Loads previously saved project settings file.</value>
+  </data>
+  <data name="toolStripMenuItemLoadAndReplaceLanguageSet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>368, 34</value>
+  </data>
+  <data name="toolStripMenuItemLoadAndReplaceLanguageSet.Text" xml:space="preserve">
+    <value>Load as a Custom Language Set</value>
+  </data>
+  <data name="toolStripMenuItemLoadAndReplaceLanguageSet.ToolTipText" xml:space="preserve">
+    <value>Opens previously saved selected languages and only display the selected languages</value>
   </data>
   <data name="toolStripSplitButtonSave.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
@@ -2391,6 +2919,72 @@
   </data>
   <data name="toolStripSplitButtonSave.ToolTipText" xml:space="preserve">
     <value>Save the selected languages</value>
+  </data>
+  <data name="toolStripSplitButtonSaveSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>312, 34</value>
+  </data>
+  <data name="toolStripSplitButtonSaveSave.Text" xml:space="preserve">
+    <value>Save Selected Languages</value>
+  </data>
+  <data name="toolStripSplitButtonSaveSave.ToolTipText" xml:space="preserve">
+    <value>Save the set of selected languages</value>
+  </data>
+  <data name="toolStripSplitButtonSaveSave_Update.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 34</value>
+  </data>
+  <data name="toolStripSplitButtonSaveSave_Update.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="toolStripSplitButtonSaveSave_Update.ToolTipText" xml:space="preserve">
+    <value>Save or update file with all selected languaes.</value>
+  </data>
+  <data name="toolStripSplitButtonSaveSave_SaveAs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 34</value>
+  </data>
+  <data name="toolStripSplitButtonSaveSave_SaveAs.Text" xml:space="preserve">
+    <value>Save As</value>
+  </data>
+  <data name="toolStripSplitButtonSaveSave_SaveAs.ToolTipText" xml:space="preserve">
+    <value>Save all selected languages to a different file name.</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>312, 34</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAll.Text" xml:space="preserve">
+    <value>Save All (Project)</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAll.ToolTipText" xml:space="preserve">
+    <value>Saves all settings to a project file.</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAll_Update.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 34</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAll_Update.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAll_Update.ToolTipText" xml:space="preserve">
+    <value>Save or update project file.</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAll_SaveAs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 34</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAll_SaveAs.Text" xml:space="preserve">
+    <value>Save As</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAll_SaveAs.ToolTipText" xml:space="preserve">
+    <value>Save project file using a different file name.</value>
+  </data>
+  <data name="toolStripSplitButtonTranslate.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="toolStripSplitButtonTranslate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 36</value>
+  </data>
+  <data name="toolStripSplitButtonTranslate.Text" xml:space="preserve">
+    <value>Start Translation</value>
+  </data>
+  <data name="toolStripSplitButtonTranslate.ToolTipText" xml:space="preserve">
+    <value>Start translation on selected languages.  Translates all languages if no language selected.</value>
   </data>
   <data name="toolStripMenuItemTranslateAllLanguages.Size" type="System.Drawing.Size, System.Drawing">
     <value>391, 34</value>
@@ -2524,17 +3118,17 @@
   <data name="toolStripMenuItemTranslateTop30.ToolTipText" xml:space="preserve">
     <value>Select and translate top 30</value>
   </data>
-  <data name="toolStripSplitButtonTranslate.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+  <data name="toolStripSplitButtonSelectAllLanugages.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
   </data>
-  <data name="toolStripSplitButtonTranslate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 36</value>
+  <data name="toolStripSplitButtonSelectAllLanugages.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 36</value>
   </data>
-  <data name="toolStripSplitButtonTranslate.Text" xml:space="preserve">
-    <value>Start Translation</value>
+  <data name="toolStripSplitButtonSelectAllLanugages.Text" xml:space="preserve">
+    <value>Select All</value>
   </data>
-  <data name="toolStripSplitButtonTranslate.ToolTipText" xml:space="preserve">
-    <value>Start translation on selected languages.  Translates all languages if no language selected.</value>
+  <data name="toolStripSplitButtonSelectAllLanugages.ToolTipText" xml:space="preserve">
+    <value>Select all languages</value>
   </data>
   <data name="toolStripMenuItemSelectAll.Size" type="System.Drawing.Size, System.Drawing">
     <value>325, 34</value>
@@ -2566,17 +3160,32 @@
   <data name="toolStripMenuItemSelectUndo.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="toolStripSplitButtonSelectAllLanugages.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+  <data name="toolStripSplitButtonResetDisplayToSet.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
   </data>
-  <data name="toolStripSplitButtonSelectAllLanugages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 36</value>
+  <data name="toolStripSplitButtonResetDisplayToSet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 36</value>
   </data>
-  <data name="toolStripSplitButtonSelectAllLanugages.Text" xml:space="preserve">
-    <value>Select All</value>
+  <data name="toolStripSplitButtonResetDisplayToSet.Text" xml:space="preserve">
+    <value>Reset Display Set</value>
   </data>
-  <data name="toolStripSplitButtonSelectAllLanugages.ToolTipText" xml:space="preserve">
-    <value>Select all languages</value>
+  <data name="toolStripSplitButtonResetDisplayToSet.ToolTipText" xml:space="preserve">
+    <value>Set language display set to default display set</value>
+  </data>
+  <data name="toolStripMenuItemWindowsLanguagePacks.ShowShortcutKeys" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="toolStripMenuItemWindowsLanguagePacks.Size" type="System.Drawing.Size, System.Drawing">
+    <value>432, 34</value>
+  </data>
+  <data name="toolStripMenuItemWindowsLanguagePacks.Text" xml:space="preserve">
+    <value>Windows 10/11 Language Pack</value>
+  </data>
+  <data name="toolStripMenuItemWindowsLanguagePacks.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="toolStripMenuItemWindowsLanguagePacks.ToolTipText" xml:space="preserve">
+    <value>Only show languages that are in Windows 10/11 language packs</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePacks_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
     <value>234, 34</value>
@@ -2596,20 +3205,17 @@
   <data name="toolStripMenuItemWindowsLanguagePacks_AddAndSelect.Text" xml:space="preserve">
     <value>Add and Select</value>
   </data>
-  <data name="toolStripMenuItemWindowsLanguagePacks.ShowShortcutKeys" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="toolStripMenuItemWindowsLanguagePacks.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="toolStripMenuItemWindowsLanguagePackInterface.Size" type="System.Drawing.Size, System.Drawing">
     <value>432, 34</value>
   </data>
-  <data name="toolStripMenuItemWindowsLanguagePacks.Text" xml:space="preserve">
-    <value>Windows 10/11 Language Pack</value>
+  <data name="toolStripMenuItemWindowsLanguagePackInterface.Text" xml:space="preserve">
+    <value>Windows Language Pack Interface</value>
   </data>
-  <data name="toolStripMenuItemWindowsLanguagePacks.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageAboveText</value>
+  <data name="toolStripMenuItemWindowsLanguagePackInterface.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>TextBeforeImage</value>
   </data>
-  <data name="toolStripMenuItemWindowsLanguagePacks.ToolTipText" xml:space="preserve">
-    <value>Only show languages that are in Windows 10/11 language packs</value>
+  <data name="toolStripMenuItemWindowsLanguagePackInterface.ToolTipText" xml:space="preserve">
+    <value>Only show languages that are in Windows Language Pack Interface</value>
   </data>
   <data name="toolStripMenuItemWindowsLanguagePackInterface_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
     <value>234, 34</value>
@@ -2629,20 +3235,17 @@
   <data name="toolStripMenuItemWindowsLanguagePackInterface_AddAndSelect.Text" xml:space="preserve">
     <value>Add and Select</value>
   </data>
-  <data name="toolStripMenuItemWindowsLanguagePackInterface.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
-  </data>
-  <data name="toolStripMenuItemWindowsLanguagePackInterface.Text" xml:space="preserve">
-    <value>Windows Language Pack Interface</value>
-  </data>
-  <data name="toolStripMenuItemWindowsLanguagePackInterface.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>TextBeforeImage</value>
-  </data>
-  <data name="toolStripMenuItemWindowsLanguagePackInterface.ToolTipText" xml:space="preserve">
-    <value>Only show languages that are in Windows Language Pack Interface</value>
-  </data>
   <data name="toolStripSeparator7.Size" type="System.Drawing.Size, System.Drawing">
     <value>429, 6</value>
+  </data>
+  <data name="toolStripMenuItemAllTranslatorSupportedLanguages.Size" type="System.Drawing.Size, System.Drawing">
+    <value>432, 34</value>
+  </data>
+  <data name="toolStripMenuItemAllTranslatorSupportedLanguages.Text" xml:space="preserve">
+    <value>Languages with a Translation Service</value>
+  </data>
+  <data name="toolStripMenuItemAllTranslatorSupportedLanguages.ToolTipText" xml:space="preserve">
+    <value>Display all languages with a supported Translation Service</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
     <value>158, 34</value>
@@ -2654,27 +3257,6 @@
     <value>158, 34</value>
   </data>
   <data name="toolStripMenuItemAllTranslatorSupportedLanguages_Add.Text" xml:space="preserve">
-    <value>Add</value>
-  </data>
-  <data name="toolStripMenuItemAllTranslatorSupportedLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
-  </data>
-  <data name="toolStripMenuItemAllTranslatorSupportedLanguages.Text" xml:space="preserve">
-    <value>Languages with a Translation Service</value>
-  </data>
-  <data name="toolStripMenuItemAllTranslatorSupportedLanguages.ToolTipText" xml:space="preserve">
-    <value>Display all languages with a supported Translation Service</value>
-  </data>
-  <data name="toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
-  </data>
-  <data name="toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly.Text" xml:space="preserve">
-    <value>Show</value>
-  </data>
-  <data name="toolStripMenuItemISO639_1UsingOfficialNames_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
-  </data>
-  <data name="toolStripMenuItemISO639_1UsingOfficialNames_Add.Text" xml:space="preserve">
     <value>Add</value>
   </data>
   <data name="toolStripMenuItemISO639_1UsingOfficialNames.Size" type="System.Drawing.Size, System.Drawing">
@@ -2689,16 +3271,16 @@
   <data name="toolStripMenuItemISO639_1UsingOfficialNames.ToolTipText" xml:space="preserve">
     <value>Show Only ISO 639-1 language set.</value>
   </data>
-  <data name="toolStripMenuItem2toolStripMenuItemISO639_1PlusWinLangPack_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
     <value>158, 34</value>
   </data>
-  <data name="toolStripMenuItem2toolStripMenuItemISO639_1PlusWinLangPack_ShowOnly.Text" xml:space="preserve">
+  <data name="toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly.Text" xml:space="preserve">
     <value>Show</value>
   </data>
-  <data name="toolStripMenuItemISO639_1PlusWinLangPack_Add.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="toolStripMenuItemISO639_1UsingOfficialNames_Add.Size" type="System.Drawing.Size, System.Drawing">
     <value>158, 34</value>
   </data>
-  <data name="toolStripMenuItemISO639_1PlusWinLangPack_Add.Text" xml:space="preserve">
+  <data name="toolStripMenuItemISO639_1UsingOfficialNames_Add.Text" xml:space="preserve">
     <value>Add</value>
   </data>
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.Enabled" type="System.Boolean, mscorlib">
@@ -2719,6 +3301,18 @@
   <data name="toolStripMenuItemISO639_1PlusWinLangPack.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
+  <data name="toolStripMenuItem2toolStripMenuItemISO639_1PlusWinLangPack_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 34</value>
+  </data>
+  <data name="toolStripMenuItem2toolStripMenuItemISO639_1PlusWinLangPack_ShowOnly.Text" xml:space="preserve">
+    <value>Show</value>
+  </data>
+  <data name="toolStripMenuItemISO639_1PlusWinLangPack_Add.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 34</value>
+  </data>
+  <data name="toolStripMenuItemISO639_1PlusWinLangPack_Add.Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
   <data name="toolStripMenuItemSubLanguagesAndRegions.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -2734,18 +3328,6 @@
   <data name="toolStripMenuItemSubLanguagesAndRegions.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="toolStripSplitButtonResetDisplayToSet.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="toolStripSplitButtonResetDisplayToSet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 36</value>
-  </data>
-  <data name="toolStripSplitButtonResetDisplayToSet.Text" xml:space="preserve">
-    <value>Reset Display Set</value>
-  </data>
-  <data name="toolStripSplitButtonResetDisplayToSet.ToolTipText" xml:space="preserve">
-    <value>Set language display set to default display set</value>
-  </data>
   <data name="toolStripButtonStopTranslation.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
   </data>
@@ -2757,30 +3339,6 @@
   </data>
   <data name="toolStripButtonStopTranslation.ToolTipText" xml:space="preserve">
     <value>Cancel Translation</value>
-  </data>
-  <data name="toolStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 25</value>
-  </data>
-  <data name="toolStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>932, 41</value>
-  </data>
-  <data name="toolStrip1.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="toolStrip1.Text" xml:space="preserve">
-    <value>Main Menu</value>
-  </data>
-  <data name="&gt;&gt;toolStrip1.Name" xml:space="preserve">
-    <value>toolStrip1</value>
-  </data>
-  <data name="&gt;&gt;toolStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStrip1.Parent" xml:space="preserve">
-    <value>resxTab</value>
-  </data>
-  <data name="&gt;&gt;toolStrip1.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="outputBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -2922,36 +3480,6 @@
   </data>
   <data name="&gt;&gt;inputLabel.ZOrder" xml:space="preserve">
     <value>9</value>
-  </data>
-  <data name="resxTab.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 34</value>
-  </data>
-  <data name="resxTab.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="resxTab.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>22, 25, 22, 25</value>
-  </data>
-  <data name="resxTab.Size" type="System.Drawing.Size, System.Drawing">
-    <value>976, 843</value>
-  </data>
-  <data name="resxTab.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="resxTab.Text" xml:space="preserve">
-    <value>Translate Resx File</value>
-  </data>
-  <data name="&gt;&gt;resxTab.Name" xml:space="preserve">
-    <value>resxTab</value>
-  </data>
-  <data name="&gt;&gt;resxTab.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;resxTab.Parent" xml:space="preserve">
-    <value>tabs</value>
-  </data>
-  <data name="&gt;&gt;resxTab.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <metadata name="miniToolStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>548, 17</value>
@@ -10372,16 +10900,34 @@
   <data name="&gt;&gt;toolStripSplitButtonSaveSave.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;toolStripSplitButtonSaveAs.Name" xml:space="preserve">
-    <value>toolStripSplitButtonSaveAs</value>
+  <data name="&gt;&gt;toolStripSplitButtonSaveSave_Update.Name" xml:space="preserve">
+    <value>toolStripSplitButtonSaveSave_Update</value>
   </data>
-  <data name="&gt;&gt;toolStripSplitButtonSaveAs.Type" xml:space="preserve">
+  <data name="&gt;&gt;toolStripSplitButtonSaveSave_Update.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSaveSave_SaveAs.Name" xml:space="preserve">
+    <value>toolStripSplitButtonSaveSave_SaveAs</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSaveSave_SaveAs.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;toolStripSplitButtonSaveAll.Name" xml:space="preserve">
     <value>toolStripSplitButtonSaveAll</value>
   </data>
   <data name="&gt;&gt;toolStripSplitButtonSaveAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSaveAll_Update.Name" xml:space="preserve">
+    <value>toolStripSplitButtonSaveAll_Update</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSaveAll_Update.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSaveAll_SaveAs.Name" xml:space="preserve">
+    <value>toolStripSplitButtonSaveAll_SaveAs</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSaveAll_SaveAs.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;toolStripSplitButtonTranslate.Name" xml:space="preserve">

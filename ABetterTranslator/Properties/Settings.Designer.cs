@@ -145,7 +145,7 @@ namespace ABetterTranslator.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("10000")]
+        [global::System.Configuration.DefaultSettingValueAttribute("5000")]
         public string MaxTranslateLen {
             get {
                 return ((string)(this["MaxTranslateLen"]));

@@ -52,7 +52,7 @@ namespace ABetterTranslator
             {
                 fromLang = fromLangTag,
                 toLang = toLangTag,
-                translateAsSingleDocument = true
+                translationPacketType = TranslationPacketTypes.SingleDocument
             };
             translationRequestPacket.sourceText.Add(textBoxTextToTranslate.Text);
             _translationRequestPackets.Add(translationRequestPacket);
@@ -67,26 +67,6 @@ namespace ABetterTranslator
                 1 => ItemsPerTransReq.OnePerItem,
                 _ => ItemsPerTransReq.Many,
             };
-            switch ( comboBoxScreenVerbosityLevel.SelectedIndex )
-            {
-                case (int) VerbosityLevels.Silent: // Silent
-                    options._silent = true;
-                    options._verbose = false;
-                    break;
-                case (int) VerbosityLevels.Errors: // Errors
-                    options._silent = true;
-                    options._verbose = false;
-                    break;
-                default:
-                case (int) VerbosityLevels.Normal: // Normal
-                    options._silent = false;
-                    options._verbose = false;
-                    break;
-                case (int) VerbosityLevels.Detail: // Detail
-                    options._silent = false;
-                    options._verbose = true;
-                    break;
-            }
             await Task.Run(() => RunBackgroundTask(options));
         }
 

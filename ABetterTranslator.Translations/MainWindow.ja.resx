@@ -95,10 +95,10 @@
     <value>163</value>
   </data>
   <data name="checkBoxDispalyWarningPrompts.Text" xml:space="preserve">
-    <value>表示に関する警告</value>
+    <value>分解警告</value>
   </data>
   <data name="checkBoxDispalyWarningPrompts.ToolTip" xml:space="preserve">
-    <value>ファイルを削除および/または変更する前に、警告プロンプトを表示します。</value>
+    <value>ファイルを削除および/または変更する前に、分離警告プロンプトが表示されます。</value>
   </data>
   <data name="&gt;&gt;checkBoxDispalyWarningPrompts.Name" xml:space="preserve">
     <value>checkBoxDispalyWarningPrompts</value>
@@ -128,10 +128,10 @@
     <value>164</value>
   </data>
   <data name="linkLabelcheckBoxDispalyWarningPrompts.Text" xml:space="preserve">
-    <value>?</value>
+    <value>？</value>
   </data>
   <data name="linkLabelcheckBoxDispalyWarningPrompts.ToolTip" xml:space="preserve">
-    <value>クリックすると、このオプションの詳細が記載されたヘルプ リンクが開きます。</value>
+    <value>クリックして、このオプションの詳細についてヘルプリンクを開きます。</value>
   </data>
   <data name="&gt;&gt;linkLabelcheckBoxDispalyWarningPrompts.Name" xml:space="preserve">
     <value>linkLabelcheckBoxDispalyWarningPrompts</value>
@@ -168,7 +168,7 @@
     <value>13</value>
   </data>
   <data name="browseLogFolderPath.ToolTip" xml:space="preserve">
-    <value>出力フォルダーを参照します。デフォルトはソース resx と同じです</value>
+    <value>出力フォルダーを参照します。デフォルトはソースResxと同じです</value>
   </data>
   <data name="&gt;&gt;browseLogFolderPath.Name" xml:space="preserve">
     <value>browseLogFolderPath</value>
@@ -198,10 +198,10 @@
     <value>159</value>
   </data>
   <data name="linkLabelLogFolderPath.Text" xml:space="preserve">
-    <value>?</value>
+    <value>？</value>
   </data>
   <data name="linkLabelLogFolderPath.ToolTip" xml:space="preserve">
-    <value>クリックすると、このオプションの詳細が記載されたヘルプ リンクが開きます。</value>
+    <value>クリックして、このオプションの詳細についてヘルプリンクを開きます。</value>
   </data>
   <data name="&gt;&gt;linkLabelLogFolderPath.Name" xml:space="preserve">
     <value>linkLabelLogFolderPath</value>
@@ -231,10 +231,10 @@
     <value>151</value>
   </data>
   <data name="linkLabelLogFileVerbosityLevel.Text" xml:space="preserve">
-    <value>?</value>
+    <value>？</value>
   </data>
   <data name="linkLabelLogFileVerbosityLevel.ToolTip" xml:space="preserve">
-    <value>クリックすると、このオプションの詳細が記載されたヘルプ リンクが開きます。</value>
+    <value>クリックして、このオプションの詳細についてヘルプリンクを開きます。</value>
   </data>
   <data name="&gt;&gt;linkLabelLogFileVerbosityLevel.Name" xml:space="preserve">
     <value>linkLabelLogFileVerbosityLevel</value>
@@ -264,10 +264,10 @@
     <value>151</value>
   </data>
   <data name="linkLabelScreenVerbosityLevel.Text" xml:space="preserve">
-    <value>?</value>
+    <value>？</value>
   </data>
   <data name="linkLabelScreenVerbosityLevel.ToolTip" xml:space="preserve">
-    <value>クリックすると、このオプションの詳細が記載されたヘルプ リンクが開きます。</value>
+    <value>クリックして、このオプションの詳細についてヘルプリンクを開きます。</value>
   </data>
   <data name="&gt;&gt;linkLabelScreenVerbosityLevel.Name" xml:space="preserve">
     <value>linkLabelScreenVerbosityLevel</value>
@@ -303,7 +303,7 @@
     <value>1003</value>
   </data>
   <data name="buttonOpenLoggingFolderInFileExplorer.ToolTip" xml:space="preserve">
-    <value>Windows エクスプローラーでフォルダーを開く</value>
+    <value>Windows Explorerのオープンフォルダー</value>
   </data>
   <data name="&gt;&gt;buttonOpenLoggingFolderInFileExplorer.Name" xml:space="preserve">
     <value>buttonOpenLoggingFolderInFileExplorer</value>
@@ -317,27 +317,6 @@
   <data name="&gt;&gt;buttonOpenLoggingFolderInFileExplorer.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="linkLabelItemsPerTransaltionRequest.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="linkLabelItemsPerTransaltionRequest.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="linkLabelItemsPerTransaltionRequest.Location" type="System.Drawing.Point, System.Drawing">
-    <value>263, 33</value>
-  </data>
-  <data name="linkLabelItemsPerTransaltionRequest.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 25</value>
-  </data>
-  <data name="linkLabelItemsPerTransaltionRequest.TabIndex" type="System.Int32, mscorlib">
-    <value>152</value>
-  </data>
-  <data name="linkLabelItemsPerTransaltionRequest.Text" xml:space="preserve">
-    <value>?</value>
-  </data>
-  <data name="linkLabelItemsPerTransaltionRequest.ToolTip" xml:space="preserve">
-    <value>クリックすると、このオプションの詳細が記載されたヘルプ リンクが開きます。</value>
-  </data>
   <data name="&gt;&gt;linkLabelItemsPerTransaltionRequest.Name" xml:space="preserve">
     <value>linkLabelItemsPerTransaltionRequest</value>
   </data>
@@ -349,27 +328,6 @@
   </data>
   <data name="&gt;&gt;linkLabelItemsPerTransaltionRequest.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="comboBoxItemsPerTransaltionRequest.Items" xml:space="preserve">
-    <value>自動</value>
-  </data>
-  <data name="comboBoxItemsPerTransaltionRequest.Items" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="comboBoxItemsPerTransaltionRequest.Items" xml:space="preserve">
-    <value>多数</value>
-  </data>
-  <data name="comboBoxItemsPerTransaltionRequest.Location" type="System.Drawing.Point, System.Drawing">
-    <value>89, 33</value>
-  </data>
-  <data name="comboBoxItemsPerTransaltionRequest.Size" type="System.Drawing.Size, System.Drawing">
-    <value>161, 33</value>
-  </data>
-  <data name="comboBoxItemsPerTransaltionRequest.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="comboBoxItemsPerTransaltionRequest.Text" xml:space="preserve">
-    <value>自動</value>
   </data>
   <data name="&gt;&gt;comboBoxItemsPerTransaltionRequest.Name" xml:space="preserve">
     <value>comboBoxItemsPerTransaltionRequest</value>
@@ -393,10 +351,10 @@
     <value>7</value>
   </data>
   <data name="groupBoxItemsPerTransaltionRequest.Text" xml:space="preserve">
-    <value>翻訳要求ごとの文字列</value>
+    <value>翻訳ごとの文字列req</value>
   </data>
   <data name="groupBoxItemsPerTransaltionRequest.ToolTip" xml:space="preserve">
-    <value>翻訳リクエストごとの文字列</value>
+    <value>翻訳要求ごとの文字列</value>
   </data>
   <data name="&gt;&gt;groupBoxItemsPerTransaltionRequest.Name" xml:space="preserve">
     <value>groupBoxItemsPerTransaltionRequest</value>
@@ -409,6 +367,51 @@
   </data>
   <data name="&gt;&gt;groupBoxItemsPerTransaltionRequest.ZOrder" xml:space="preserve">
     <value>6</value>
+  </data>
+  <data name="linkLabelItemsPerTransaltionRequest.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="linkLabelItemsPerTransaltionRequest.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelItemsPerTransaltionRequest.Location" type="System.Drawing.Point, System.Drawing">
+    <value>263, 33</value>
+  </data>
+  <data name="linkLabelItemsPerTransaltionRequest.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 25</value>
+  </data>
+  <data name="linkLabelItemsPerTransaltionRequest.TabIndex" type="System.Int32, mscorlib">
+    <value>152</value>
+  </data>
+  <data name="linkLabelItemsPerTransaltionRequest.Text" xml:space="preserve">
+    <value>？</value>
+  </data>
+  <data name="linkLabelItemsPerTransaltionRequest.ToolTip" xml:space="preserve">
+    <value>クリックして、このオプションの詳細についてヘルプリンクを開きます。</value>
+  </data>
+  <data name="comboBoxItemsPerTransaltionRequest.Items" xml:space="preserve">
+    <value>自動</value>
+  </data>
+  <data name="comboBoxItemsPerTransaltionRequest.Items" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="comboBoxItemsPerTransaltionRequest.Items" xml:space="preserve">
+    <value>多数</value>
+  </data>
+  <data name="comboBoxItemsPerTransaltionRequest.Location" type="System.Drawing.Point, System.Drawing">
+    <value>89, 33</value>
+  </data>
+  <data name="comboBoxItemsPerTransaltionRequest.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 33</value>
+  </data>
+  <data name="comboBoxItemsPerTransaltionRequest.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="comboBoxItemsPerTransaltionRequest.Text" xml:space="preserve">
+    <value>自動</value>
+  </data>
+  <data name="comboBoxItemsPerTransaltionRequest.ToolTip" xml:space="preserve">
+    <value>翻訳要求ごとの文字列。</value>
   </data>
   <data name="linkLabelMaxTranslateLen.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -426,10 +429,10 @@
     <value>95</value>
   </data>
   <data name="linkLabelMaxTranslateLen.Text" xml:space="preserve">
-    <value>?</value>
+    <value>？</value>
   </data>
   <data name="linkLabelMaxTranslateLen.ToolTip" xml:space="preserve">
-    <value>クリックすると、このオプションの詳細が記載されたヘルプ リンクが開きます。</value>
+    <value>クリックして、このオプションの詳細についてヘルプリンクを開きます。</value>
   </data>
   <data name="&gt;&gt;linkLabelMaxTranslateLen.Name" xml:space="preserve">
     <value>linkLabelMaxTranslateLen</value>
@@ -459,10 +462,10 @@
     <value>96</value>
   </data>
   <data name="linkLabelMaxThreads.Text" xml:space="preserve">
-    <value>?</value>
+    <value>？</value>
   </data>
   <data name="linkLabelMaxThreads.ToolTip" xml:space="preserve">
-    <value>クリックすると、このオプションの詳細が記載されたヘルプ リンクが開きます。</value>
+    <value>クリックして、このオプションの詳細についてヘルプリンクを開きます。</value>
   </data>
   <data name="&gt;&gt;linkLabelMaxThreads.Name" xml:space="preserve">
     <value>linkLabelMaxThreads</value>
@@ -492,10 +495,10 @@
     <value>161</value>
   </data>
   <data name="checkBoxDeleteLangResxFilesBeforeTranslation.Text" xml:space="preserve">
-    <value>翻訳前に Lang Resx を削除</value>
+    <value>翻訳前にlang resxを削除します</value>
   </data>
   <data name="checkBoxDeleteLangResxFilesBeforeTranslation.ToolTip" xml:space="preserve">
-    <value>翻訳を開始する前に、すべての言語が追加された Resx ファイルを削除します</value>
+    <value>翻訳を開始する前に、すべての言語Appled Resxファイルを削除します</value>
   </data>
   <data name="&gt;&gt;checkBoxDeleteLangResxFilesBeforeTranslation.Name" xml:space="preserve">
     <value>checkBoxDeleteLangResxFilesBeforeTranslation</value>
@@ -509,27 +512,6 @@
   <data name="&gt;&gt;checkBoxDeleteLangResxFilesBeforeTranslation.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="linkLabelAddOriginalSrcTextToComment.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="linkLabelAddOriginalSrcTextToComment.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="linkLabelAddOriginalSrcTextToComment.Location" type="System.Drawing.Point, System.Drawing">
-    <value>557, 36</value>
-  </data>
-  <data name="linkLabelAddOriginalSrcTextToComment.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 25</value>
-  </data>
-  <data name="linkLabelAddOriginalSrcTextToComment.TabIndex" type="System.Int32, mscorlib">
-    <value>152</value>
-  </data>
-  <data name="linkLabelAddOriginalSrcTextToComment.Text" xml:space="preserve">
-    <value>?</value>
-  </data>
-  <data name="linkLabelAddOriginalSrcTextToComment.ToolTip" xml:space="preserve">
-    <value>クリックすると、このオプションの詳細が記載されたヘルプ リンクが開きます。</value>
-  </data>
   <data name="&gt;&gt;linkLabelAddOriginalSrcTextToComment.Name" xml:space="preserve">
     <value>linkLabelAddOriginalSrcTextToComment</value>
   </data>
@@ -541,30 +523,6 @@
   </data>
   <data name="&gt;&gt;linkLabelAddOriginalSrcTextToComment.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="comboBoxAddOriginalSrcTextToComment.Items" xml:space="preserve">
-    <value>コメントを変更しないでください</value>
-  </data>
-  <data name="comboBoxAddOriginalSrcTextToComment.Items" xml:space="preserve">
-    <value>コメントが空の場合、コメントを元の言語のテキストに設定します</value>
-  </data>
-  <data name="comboBoxAddOriginalSrcTextToComment.Items" xml:space="preserve">
-    <value>コメントを常に元の言語のテキストに設定する</value>
-  </data>
-  <data name="comboBoxAddOriginalSrcTextToComment.Items" xml:space="preserve">
-    <value>常に元の言語のテキストをコメントに追加する</value>
-  </data>
-  <data name="comboBoxAddOriginalSrcTextToComment.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 33</value>
-  </data>
-  <data name="comboBoxAddOriginalSrcTextToComment.Size" type="System.Drawing.Size, System.Drawing">
-    <value>540, 33</value>
-  </data>
-  <data name="comboBoxAddOriginalSrcTextToComment.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="comboBoxAddOriginalSrcTextToComment.Text" xml:space="preserve">
-    <value>コメントを変更しないでください</value>
   </data>
   <data name="&gt;&gt;comboBoxAddOriginalSrcTextToComment.Name" xml:space="preserve">
     <value>comboBoxAddOriginalSrcTextToComment</value>
@@ -588,10 +546,10 @@
     <value>10</value>
   </data>
   <data name="groupBoxAddOriginalSrcTextToComment.Text" xml:space="preserve">
-    <value>送信先リソース コメント オプション</value>
+    <value>宛先リソースコメントオプション</value>
   </data>
   <data name="groupBoxAddOriginalSrcTextToComment.ToolTip" xml:space="preserve">
-    <value>コメントに元のソース テキストを追加する</value>
+    <value>コメントに元のソーステキストを追加します</value>
   </data>
   <data name="&gt;&gt;groupBoxAddOriginalSrcTextToComment.Name" xml:space="preserve">
     <value>groupBoxAddOriginalSrcTextToComment</value>
@@ -604,6 +562,51 @@
   </data>
   <data name="&gt;&gt;groupBoxAddOriginalSrcTextToComment.ZOrder" xml:space="preserve">
     <value>6</value>
+  </data>
+  <data name="linkLabelAddOriginalSrcTextToComment.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="linkLabelAddOriginalSrcTextToComment.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelAddOriginalSrcTextToComment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>557, 36</value>
+  </data>
+  <data name="linkLabelAddOriginalSrcTextToComment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 25</value>
+  </data>
+  <data name="linkLabelAddOriginalSrcTextToComment.TabIndex" type="System.Int32, mscorlib">
+    <value>152</value>
+  </data>
+  <data name="linkLabelAddOriginalSrcTextToComment.Text" xml:space="preserve">
+    <value>？</value>
+  </data>
+  <data name="linkLabelAddOriginalSrcTextToComment.ToolTip" xml:space="preserve">
+    <value>クリックして、このオプションの詳細についてヘルプリンクを開きます。</value>
+  </data>
+  <data name="comboBoxAddOriginalSrcTextToComment.Items" xml:space="preserve">
+    <value>コメントを変更しないでください</value>
+  </data>
+  <data name="comboBoxAddOriginalSrcTextToComment.Items" xml:space="preserve">
+    <value>コメントが空の場合は、元の言語テキストにコメントを設定します</value>
+  </data>
+  <data name="comboBoxAddOriginalSrcTextToComment.Items" xml:space="preserve">
+    <value>常に元の言語テキストにコメントを設定してください</value>
+  </data>
+  <data name="comboBoxAddOriginalSrcTextToComment.Items" xml:space="preserve">
+    <value>常にコメントに元の言語テキストを追加してください</value>
+  </data>
+  <data name="comboBoxAddOriginalSrcTextToComment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 33</value>
+  </data>
+  <data name="comboBoxAddOriginalSrcTextToComment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>540, 33</value>
+  </data>
+  <data name="comboBoxAddOriginalSrcTextToComment.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="comboBoxAddOriginalSrcTextToComment.Text" xml:space="preserve">
+    <value>コメントを変更しないでください</value>
   </data>
   <data name="linkLabelDeleteLangResxFilesBeforeTranslation.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -621,10 +624,10 @@
     <value>162</value>
   </data>
   <data name="linkLabelDeleteLangResxFilesBeforeTranslation.Text" xml:space="preserve">
-    <value>?</value>
+    <value>？</value>
   </data>
   <data name="linkLabelDeleteLangResxFilesBeforeTranslation.ToolTip" xml:space="preserve">
-    <value>クリックすると、このオプションの詳細が記載されたヘルプ リンクが開きます。</value>
+    <value>クリックして、このオプションの詳細についてヘルプリンクを開きます。</value>
   </data>
   <data name="&gt;&gt;linkLabelDeleteLangResxFilesBeforeTranslation.Name" xml:space="preserve">
     <value>linkLabelDeleteLangResxFilesBeforeTranslation</value>
@@ -654,10 +657,10 @@
     <value>93</value>
   </data>
   <data name="linkLabelBackupFilesBeforeTranslation.Text" xml:space="preserve">
-    <value>?</value>
+    <value>？</value>
   </data>
   <data name="linkLabelBackupFilesBeforeTranslation.ToolTip" xml:space="preserve">
-    <value>クリックすると、このオプションの詳細が記載されたヘルプ リンクが開きます。</value>
+    <value>クリックして、このオプションの詳細についてヘルプリンクを開きます。</value>
   </data>
   <data name="&gt;&gt;linkLabelBackupFilesBeforeTranslation.Name" xml:space="preserve">
     <value>linkLabelBackupFilesBeforeTranslation</value>
@@ -693,7 +696,7 @@
     <value>15</value>
   </data>
   <data name="browseBkUpDirFolderButton.ToolTip" xml:space="preserve">
-    <value>出力フォルダーを参照します。デフォルトはソース resx と同じです</value>
+    <value>出力フォルダーを参照します。デフォルトはソースResxと同じです</value>
   </data>
   <data name="&gt;&gt;browseBkUpDirFolderButton.Name" xml:space="preserve">
     <value>browseBkUpDirFolderButton</value>
@@ -723,10 +726,10 @@
     <value>160</value>
   </data>
   <data name="linkLabelBkUpDir.Text" xml:space="preserve">
-    <value>?</value>
+    <value>？</value>
   </data>
   <data name="linkLabelBkUpDir.ToolTip" xml:space="preserve">
-    <value>クリックすると、このオプションの詳細が記載されたヘルプ リンクが開きます。</value>
+    <value>クリックして、このオプションの詳細についてヘルプリンクを開きます。</value>
   </data>
   <data name="&gt;&gt;linkLabelBkUpDir.Name" xml:space="preserve">
     <value>linkLabelBkUpDir</value>
@@ -740,36 +743,6 @@
   <data name="&gt;&gt;linkLabelBkUpDir.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="comboBoxDefaultLanguageSet.Items" xml:space="preserve">
-    <value>Windows 10/11 言語パック</value>
-  </data>
-  <data name="comboBoxDefaultLanguageSet.Items" xml:space="preserve">
-    <value>Windows 10/11 言語インターフェイス パック</value>
-  </data>
-  <data name="comboBoxDefaultLanguageSet.Items" xml:space="preserve">
-    <value>翻訳者がサポートする言語</value>
-  </data>
-  <data name="comboBoxDefaultLanguageSet.Items" xml:space="preserve">
-    <value>ISO639-1</value>
-  </data>
-  <data name="comboBoxDefaultLanguageSet.Items" xml:space="preserve">
-    <value>ISO 639-1 Plus Win 言語パック</value>
-  </data>
-  <data name="comboBoxDefaultLanguageSet.Location" type="System.Drawing.Point, System.Drawing">
-    <value>47, 41</value>
-  </data>
-  <data name="comboBoxDefaultLanguageSet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>346, 33</value>
-  </data>
-  <data name="comboBoxDefaultLanguageSet.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="comboBoxDefaultLanguageSet.Text" xml:space="preserve">
-    <value>Windows 10/11 言語パック</value>
-  </data>
-  <data name="comboBoxDefaultLanguageSet.ToolTip" xml:space="preserve">
-    <value>プログラムの起動時、または[表示設定のリセット]を選択したときに表示されるデフォルトの言語設定を選択します。</value>
-  </data>
   <data name="&gt;&gt;comboBoxDefaultLanguageSet.Name" xml:space="preserve">
     <value>comboBoxDefaultLanguageSet</value>
   </data>
@@ -781,27 +754,6 @@
   </data>
   <data name="&gt;&gt;comboBoxDefaultLanguageSet.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="linkLabelDefaultLanguageSet.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="linkLabelDefaultLanguageSet.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="linkLabelDefaultLanguageSet.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 41</value>
-  </data>
-  <data name="linkLabelDefaultLanguageSet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 25</value>
-  </data>
-  <data name="linkLabelDefaultLanguageSet.TabIndex" type="System.Int32, mscorlib">
-    <value>152</value>
-  </data>
-  <data name="linkLabelDefaultLanguageSet.Text" xml:space="preserve">
-    <value>?</value>
-  </data>
-  <data name="linkLabelDefaultLanguageSet.ToolTip" xml:space="preserve">
-    <value>クリックすると、このオプションの詳細が記載されたヘルプ リンクが開きます。</value>
   </data>
   <data name="&gt;&gt;linkLabelDefaultLanguageSet.Name" xml:space="preserve">
     <value>linkLabelDefaultLanguageSet</value>
@@ -828,7 +780,7 @@
     <value>デフォルトの言語セット</value>
   </data>
   <data name="groupBoxDefaultLanguageSet.ToolTip" xml:space="preserve">
-    <value>プログラムの起動時に表示されるデフォルトの言語セットを選択します。</value>
+    <value>プログラムが開始されたときに分散しているデフォルト言語セットを選択します。</value>
   </data>
   <data name="&gt;&gt;groupBoxDefaultLanguageSet.Name" xml:space="preserve">
     <value>groupBoxDefaultLanguageSet</value>
@@ -841,6 +793,57 @@
   </data>
   <data name="&gt;&gt;groupBoxDefaultLanguageSet.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="comboBoxDefaultLanguageSet.Items" xml:space="preserve">
+    <value>Windows 10/11言語パック</value>
+  </data>
+  <data name="comboBoxDefaultLanguageSet.Items" xml:space="preserve">
+    <value>Windows 10/11言語インターフェイスパック</value>
+  </data>
+  <data name="comboBoxDefaultLanguageSet.Items" xml:space="preserve">
+    <value>翻訳者は言語をサポートしています</value>
+  </data>
+  <data name="comboBoxDefaultLanguageSet.Items" xml:space="preserve">
+    <value>ISO 639-1</value>
+  </data>
+  <data name="comboBoxDefaultLanguageSet.Items" xml:space="preserve">
+    <value>ISO 639-1プラスウィン言語パック</value>
+  </data>
+  <data name="comboBoxDefaultLanguageSet.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 41</value>
+  </data>
+  <data name="comboBoxDefaultLanguageSet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>346, 33</value>
+  </data>
+  <data name="comboBoxDefaultLanguageSet.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="comboBoxDefaultLanguageSet.Text" xml:space="preserve">
+    <value>Windows 10/11言語パック</value>
+  </data>
+  <data name="comboBoxDefaultLanguageSet.ToolTip" xml:space="preserve">
+    <value>プログラムが起動したとき、または[リセット表示セット]が選択されたときに、分離するデフォルト言語セットを選択します。</value>
+  </data>
+  <data name="linkLabelDefaultLanguageSet.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="linkLabelDefaultLanguageSet.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelDefaultLanguageSet.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 41</value>
+  </data>
+  <data name="linkLabelDefaultLanguageSet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 25</value>
+  </data>
+  <data name="linkLabelDefaultLanguageSet.TabIndex" type="System.Int32, mscorlib">
+    <value>152</value>
+  </data>
+  <data name="linkLabelDefaultLanguageSet.Text" xml:space="preserve">
+    <value>？</value>
+  </data>
+  <data name="linkLabelDefaultLanguageSet.ToolTip" xml:space="preserve">
+    <value>クリックして、このオプションの詳細についてヘルプリンクを開きます。</value>
   </data>
   <data name="buttonDeleteLangAppendedResxFiles.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -855,10 +858,10 @@
     <value>11</value>
   </data>
   <data name="buttonDeleteLangAppendedResxFiles.Text" xml:space="preserve">
-    <value>追加された Lang Resx を削除</value>
+    <value>Apped Lang Resxを削除します</value>
   </data>
   <data name="buttonDeleteLangAppendedResxFiles.ToolTip" xml:space="preserve">
-    <value>ファイル名に言語コードが追加されたすべての Resx ファイルを削除します。</value>
+    <value>ファイル名に追加された言語コードを持つすべてのresxファイルを削除します。</value>
   </data>
   <data name="&gt;&gt;buttonDeleteLangAppendedResxFiles.Name" xml:space="preserve">
     <value>buttonDeleteLangAppendedResxFiles</value>
@@ -888,10 +891,10 @@
     <value>163</value>
   </data>
   <data name="linkLabelDeleteLangAppendedResxFiles.Text" xml:space="preserve">
-    <value>?</value>
+    <value>？</value>
   </data>
   <data name="linkLabelDeleteLangAppendedResxFiles.ToolTip" xml:space="preserve">
-    <value>クリックすると、このオプションの詳細が記載されたヘルプ リンクが開きます。</value>
+    <value>クリックして、このオプションの詳細についてヘルプリンクを開きます。</value>
   </data>
   <data name="&gt;&gt;linkLabelDeleteLangAppendedResxFiles.Name" xml:space="preserve">
     <value>linkLabelDeleteLangAppendedResxFiles</value>
@@ -924,7 +927,7 @@
     <value>1002</value>
   </data>
   <data name="buttonInAdvOpt_OpenFolderInWindowsExplorer.ToolTip" xml:space="preserve">
-    <value>Windows エクスプローラーでフォルダーを開く</value>
+    <value>Windows Explorerのオープンフォルダー</value>
   </data>
   <data name="&gt;&gt;buttonInAdvOpt_OpenFolderInWindowsExplorer.Name" xml:space="preserve">
     <value>buttonInAdvOpt_OpenFolderInWindowsExplorer</value>
@@ -960,7 +963,7 @@
     <value>1003</value>
   </data>
   <data name="buttonOpenBackupFolderInFileExplorer.ToolTip" xml:space="preserve">
-    <value>Windows エクスプローラーでフォルダーを開く</value>
+    <value>Windows Explorerのオープンフォルダー</value>
   </data>
   <data name="&gt;&gt;buttonOpenBackupFolderInFileExplorer.Name" xml:space="preserve">
     <value>buttonOpenBackupFolderInFileExplorer</value>
@@ -996,7 +999,7 @@
     <value>2</value>
   </data>
   <data name="browseFileButton.ToolTip" xml:space="preserve">
-    <value>ソース resx ファイルを参照します</value>
+    <value>ソースResxファイルを参照します</value>
   </data>
   <data name="&gt;&gt;browseFileButton.Name" xml:space="preserve">
     <value>browseFileButton</value>
@@ -1032,7 +1035,7 @@
     <value>4</value>
   </data>
   <data name="browseFolderButton.ToolTip" xml:space="preserve">
-    <value>出力フォルダーを参照します。デフォルトはソース resx と同じです</value>
+    <value>出力フォルダーを参照します。デフォルトはソースResxと同じです</value>
   </data>
   <data name="&gt;&gt;browseFolderButton.Name" xml:space="preserve">
     <value>browseFolderButton</value>
@@ -1104,7 +1107,7 @@
     <value>1001</value>
   </data>
   <data name="buttonOpenFolderInWindowsExplorer.ToolTip" xml:space="preserve">
-    <value>Windows エクスプローラーでフォルダーを開く</value>
+    <value>Windows Explorerのオープンフォルダー</value>
   </data>
   <data name="&gt;&gt;buttonOpenFolderInWindowsExplorer.Name" xml:space="preserve">
     <value>buttonOpenFolderInWindowsExplorer</value>
@@ -1140,7 +1143,7 @@
     <value>100</value>
   </data>
   <data name="buttonBrowseForTextFile.ToolTip" xml:space="preserve">
-    <value>ソース テキスト ファイルを参照する</value>
+    <value>ソーステキストファイルを参照します</value>
   </data>
   <data name="&gt;&gt;buttonBrowseForTextFile.Name" xml:space="preserve">
     <value>buttonBrowseForTextFile</value>
@@ -1157,48 +1160,6 @@
   <data name="tabControlAdvanceOptionsSubTab.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="groupBoxBkUpDir.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="textBoxBkUpDir.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="textBoxBkUpDir.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 38</value>
-  </data>
-  <data name="textBoxBkUpDir.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 10</value>
-  </data>
-  <data name="textBoxBkUpDir.Size" type="System.Drawing.Size, System.Drawing">
-    <value>742, 31</value>
-  </data>
-  <data name="textBoxBkUpDir.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;textBoxBkUpDir.Name" xml:space="preserve">
-    <value>textBoxBkUpDir</value>
-  </data>
-  <data name="&gt;&gt;textBoxBkUpDir.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxBkUpDir.Parent" xml:space="preserve">
-    <value>groupBoxBkUpDir</value>
-  </data>
-  <data name="&gt;&gt;textBoxBkUpDir.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="groupBoxBkUpDir.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 309</value>
-  </data>
-  <data name="groupBoxBkUpDir.Size" type="System.Drawing.Size, System.Drawing">
-    <value>928, 85</value>
-  </data>
-  <data name="groupBoxBkUpDir.TabIndex" type="System.Int32, mscorlib">
-    <value>1004</value>
-  </data>
-  <data name="groupBoxBkUpDir.Text" xml:space="preserve">
-    <value>バックアップ ディレクトリ</value>
-  </data>
   <data name="&gt;&gt;groupBoxBkUpDir.Name" xml:space="preserve">
     <value>groupBoxBkUpDir</value>
   </data>
@@ -1211,18 +1172,6 @@
   <data name="&gt;&gt;groupBoxBkUpDir.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="groupBoxDeleteLangAppendedResxFiles.Location" type="System.Drawing.Point, System.Drawing">
-    <value>427, 25</value>
-  </data>
-  <data name="groupBoxDeleteLangAppendedResxFiles.Size" type="System.Drawing.Size, System.Drawing">
-    <value>521, 101</value>
-  </data>
-  <data name="groupBoxDeleteLangAppendedResxFiles.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="groupBoxDeleteLangAppendedResxFiles.Text" xml:space="preserve">
-    <value>言語コードが追加されたすべての Resx を削除する</value>
-  </data>
   <data name="&gt;&gt;groupBoxDeleteLangAppendedResxFiles.Name" xml:space="preserve">
     <value>groupBoxDeleteLangAppendedResxFiles</value>
   </data>
@@ -1234,24 +1183,6 @@
   </data>
   <data name="&gt;&gt;groupBoxDeleteLangAppendedResxFiles.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="checkBoxBackupFilesBeforeTranslation.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBoxBackupFilesBeforeTranslation.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="checkBoxBackupFilesBeforeTranslation.Location" type="System.Drawing.Point, System.Drawing">
-    <value>53, 267</value>
-  </data>
-  <data name="checkBoxBackupFilesBeforeTranslation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>279, 29</value>
-  </data>
-  <data name="checkBoxBackupFilesBeforeTranslation.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="checkBoxBackupFilesBeforeTranslation.Text" xml:space="preserve">
-    <value>翻訳前のファイルのバックアップ</value>
   </data>
   <data name="&gt;&gt;checkBoxBackupFilesBeforeTranslation.Name" xml:space="preserve">
     <value>checkBoxBackupFilesBeforeTranslation</value>
@@ -1278,7 +1209,7 @@
     <value>0</value>
   </data>
   <data name="tabPageResxTranslationOptions.Text" xml:space="preserve">
-    <value>Resx 翻訳</value>
+    <value>resx翻訳</value>
   </data>
   <data name="&gt;&gt;tabPageResxTranslationOptions.Name" xml:space="preserve">
     <value>tabPageResxTranslationOptions</value>
@@ -1308,7 +1239,7 @@
     <value>96</value>
   </data>
   <data name="labelMaxThread.Text" xml:space="preserve">
-    <value>最大スレッド数</value>
+    <value>マックススレッド</value>
   </data>
   <data name="&gt;&gt;labelMaxThread.Name" xml:space="preserve">
     <value>labelMaxThread</value>
@@ -1353,7 +1284,7 @@
     <value>54, 67</value>
   </data>
   <data name="MaxTranslateLen.MaxLength" type="System.Int32, mscorlib">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="MaxTranslateLen.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 31</value>
@@ -1362,7 +1293,10 @@
     <value>5</value>
   </data>
   <data name="MaxTranslateLen.Text" xml:space="preserve">
-    <value>10000</value>
+    <value>5000</value>
+  </data>
+  <data name="MaxTranslateLen.ToolTip" xml:space="preserve">
+    <value>250〜5000の値</value>
   </data>
   <data name="&gt;&gt;MaxTranslateLen.Name" xml:space="preserve">
     <value>MaxTranslateLen</value>
@@ -1392,7 +1326,7 @@
     <value>95</value>
   </data>
   <data name="labelMaxTranslateLen.Text" xml:space="preserve">
-    <value>最大翻訳レングス</value>
+    <value>マックス翻訳レン</value>
   </data>
   <data name="&gt;&gt;labelMaxTranslateLen.Name" xml:space="preserve">
     <value>labelMaxTranslateLen</value>
@@ -1416,7 +1350,7 @@
     <value>2</value>
   </data>
   <data name="tabPageTranslationOptions.Text" xml:space="preserve">
-    <value>翻訳者の設定</value>
+    <value>翻訳者設定</value>
   </data>
   <data name="&gt;&gt;tabPageTranslationOptions.Name" xml:space="preserve">
     <value>tabPageTranslationOptions</value>
@@ -1430,54 +1364,6 @@
   <data name="&gt;&gt;tabPageTranslationOptions.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="comboBoxScreenVerbosityLevel.Items" xml:space="preserve">
-    <value>静けさ</value>
-  </data>
-  <data name="comboBoxScreenVerbosityLevel.Items" xml:space="preserve">
-    <value>エラー</value>
-  </data>
-  <data name="comboBoxScreenVerbosityLevel.Items" xml:space="preserve">
-    <value>普通</value>
-  </data>
-  <data name="comboBoxScreenVerbosityLevel.Items" xml:space="preserve">
-    <value>詳細</value>
-  </data>
-  <data name="comboBoxScreenVerbosityLevel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>103, 35</value>
-  </data>
-  <data name="comboBoxScreenVerbosityLevel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 33</value>
-  </data>
-  <data name="comboBoxScreenVerbosityLevel.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="comboBoxScreenVerbosityLevel.Text" xml:space="preserve">
-    <value>普通</value>
-  </data>
-  <data name="&gt;&gt;comboBoxScreenVerbosityLevel.Name" xml:space="preserve">
-    <value>comboBoxScreenVerbosityLevel</value>
-  </data>
-  <data name="&gt;&gt;comboBoxScreenVerbosityLevel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBoxScreenVerbosityLevel.Parent" xml:space="preserve">
-    <value>groupBoxScreenVerbosityLevel</value>
-  </data>
-  <data name="&gt;&gt;comboBoxScreenVerbosityLevel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="groupBoxScreenVerbosityLevel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>80, 31</value>
-  </data>
-  <data name="groupBoxScreenVerbosityLevel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>377, 88</value>
-  </data>
-  <data name="groupBoxScreenVerbosityLevel.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="groupBoxScreenVerbosityLevel.Text" xml:space="preserve">
-    <value>画面の詳細レベル</value>
-  </data>
   <data name="&gt;&gt;groupBoxScreenVerbosityLevel.Name" xml:space="preserve">
     <value>groupBoxScreenVerbosityLevel</value>
   </data>
@@ -1489,54 +1375,6 @@
   </data>
   <data name="&gt;&gt;groupBoxScreenVerbosityLevel.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="comboBoxLogFileVerbosityLevel.Items" xml:space="preserve">
-    <value>静けさ</value>
-  </data>
-  <data name="comboBoxLogFileVerbosityLevel.Items" xml:space="preserve">
-    <value>エラー</value>
-  </data>
-  <data name="comboBoxLogFileVerbosityLevel.Items" xml:space="preserve">
-    <value>普通</value>
-  </data>
-  <data name="comboBoxLogFileVerbosityLevel.Items" xml:space="preserve">
-    <value>詳細</value>
-  </data>
-  <data name="comboBoxLogFileVerbosityLevel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>103, 35</value>
-  </data>
-  <data name="comboBoxLogFileVerbosityLevel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 33</value>
-  </data>
-  <data name="comboBoxLogFileVerbosityLevel.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="comboBoxLogFileVerbosityLevel.Text" xml:space="preserve">
-    <value>普通</value>
-  </data>
-  <data name="&gt;&gt;comboBoxLogFileVerbosityLevel.Name" xml:space="preserve">
-    <value>comboBoxLogFileVerbosityLevel</value>
-  </data>
-  <data name="&gt;&gt;comboBoxLogFileVerbosityLevel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBoxLogFileVerbosityLevel.Parent" xml:space="preserve">
-    <value>groupBoxLogFileVerbosityLevel</value>
-  </data>
-  <data name="&gt;&gt;comboBoxLogFileVerbosityLevel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="groupBoxLogFileVerbosityLevel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>502, 31</value>
-  </data>
-  <data name="groupBoxLogFileVerbosityLevel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>377, 88</value>
-  </data>
-  <data name="groupBoxLogFileVerbosityLevel.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="groupBoxLogFileVerbosityLevel.Text" xml:space="preserve">
-    <value>ログ ファイルの詳細レベル</value>
   </data>
   <data name="&gt;&gt;groupBoxLogFileVerbosityLevel.Name" xml:space="preserve">
     <value>groupBoxLogFileVerbosityLevel</value>
@@ -1550,21 +1388,6 @@
   <data name="&gt;&gt;groupBoxLogFileVerbosityLevel.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="textBoxLogFolderPath.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="textBoxLogFolderPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>230, 133</value>
-  </data>
-  <data name="textBoxLogFolderPath.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 10</value>
-  </data>
-  <data name="textBoxLogFolderPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>569, 31</value>
-  </data>
-  <data name="textBoxLogFolderPath.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
   <data name="&gt;&gt;textBoxLogFolderPath.Name" xml:space="preserve">
     <value>textBoxLogFolderPath</value>
   </data>
@@ -1576,24 +1399,6 @@
   </data>
   <data name="&gt;&gt;textBoxLogFolderPath.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="labelLogFolderPath.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelLogFolderPath.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelLogFolderPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>39, 133</value>
-  </data>
-  <data name="labelLogFolderPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>159, 25</value>
-  </data>
-  <data name="labelLogFolderPath.TabIndex" type="System.Int32, mscorlib">
-    <value>152</value>
-  </data>
-  <data name="labelLogFolderPath.Text" xml:space="preserve">
-    <value>ロギング ディレクトリ:</value>
   </data>
   <data name="&gt;&gt;labelLogFolderPath.Name" xml:space="preserve">
     <value>labelLogFolderPath</value>
@@ -1620,7 +1425,7 @@
     <value>1</value>
   </data>
   <data name="tabPageLoggingOptions.Text" xml:space="preserve">
-    <value>ロギング/冗長性</value>
+    <value>ロギング /冗長性</value>
   </data>
   <data name="&gt;&gt;tabPageLoggingOptions.Name" xml:space="preserve">
     <value>tabPageLoggingOptions</value>
@@ -1682,50 +1487,206 @@
   <data name="&gt;&gt;advanceOptionsTab.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="groupBoxTextBoxTextToTranslate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="groupBoxBkUpDir.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
-  <data name="textBoxTextToTranslate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
+  <data name="&gt;&gt;textBoxBkUpDir.Name" xml:space="preserve">
+    <value>textBoxBkUpDir</value>
   </data>
-  <data name="textBoxTextToTranslate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 35</value>
-  </data>
-  <data name="textBoxTextToTranslate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 25</value>
-  </data>
-  <data name="textBoxTextToTranslate.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="textBoxTextToTranslate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>903, 208</value>
-  </data>
-  <data name="textBoxTextToTranslate.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;textBoxTextToTranslate.Name" xml:space="preserve">
-    <value>textBoxTextToTranslate</value>
-  </data>
-  <data name="&gt;&gt;textBoxTextToTranslate.Type" xml:space="preserve">
+  <data name="&gt;&gt;textBoxBkUpDir.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBoxTextToTranslate.Parent" xml:space="preserve">
-    <value>groupBoxTextBoxTextToTranslate</value>
+  <data name="&gt;&gt;textBoxBkUpDir.Parent" xml:space="preserve">
+    <value>groupBoxBkUpDir</value>
   </data>
-  <data name="&gt;&gt;textBoxTextToTranslate.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;textBoxBkUpDir.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="groupBoxTextBoxTextToTranslate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 111</value>
+  <data name="groupBoxBkUpDir.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 309</value>
   </data>
-  <data name="groupBoxTextBoxTextToTranslate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>950, 262</value>
+  <data name="groupBoxBkUpDir.Size" type="System.Drawing.Size, System.Drawing">
+    <value>928, 85</value>
   </data>
-  <data name="groupBoxTextBoxTextToTranslate.TabIndex" type="System.Int32, mscorlib">
-    <value>101</value>
+  <data name="groupBoxBkUpDir.TabIndex" type="System.Int32, mscorlib">
+    <value>1004</value>
   </data>
-  <data name="groupBoxTextBoxTextToTranslate.Text" xml:space="preserve">
-    <value>ソーステキスト (翻訳するテキスト)</value>
+  <data name="groupBoxBkUpDir.Text" xml:space="preserve">
+    <value>バックアップディレクトリ</value>
+  </data>
+  <data name="textBoxBkUpDir.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="textBoxBkUpDir.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 38</value>
+  </data>
+  <data name="textBoxBkUpDir.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 10</value>
+  </data>
+  <data name="textBoxBkUpDir.Size" type="System.Drawing.Size, System.Drawing">
+    <value>742, 31</value>
+  </data>
+  <data name="textBoxBkUpDir.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="groupBoxDeleteLangAppendedResxFiles.Location" type="System.Drawing.Point, System.Drawing">
+    <value>427, 25</value>
+  </data>
+  <data name="groupBoxDeleteLangAppendedResxFiles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>521, 101</value>
+  </data>
+  <data name="groupBoxDeleteLangAppendedResxFiles.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="groupBoxDeleteLangAppendedResxFiles.Text" xml:space="preserve">
+    <value>追加された言語コードですべてのresxを削除します</value>
+  </data>
+  <data name="checkBoxBackupFilesBeforeTranslation.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBoxBackupFilesBeforeTranslation.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="checkBoxBackupFilesBeforeTranslation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>53, 267</value>
+  </data>
+  <data name="checkBoxBackupFilesBeforeTranslation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>279, 29</value>
+  </data>
+  <data name="checkBoxBackupFilesBeforeTranslation.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="checkBoxBackupFilesBeforeTranslation.Text" xml:space="preserve">
+    <value>翻訳前のバックアップファイル</value>
+  </data>
+  <data name="&gt;&gt;comboBoxScreenVerbosityLevel.Name" xml:space="preserve">
+    <value>comboBoxScreenVerbosityLevel</value>
+  </data>
+  <data name="&gt;&gt;comboBoxScreenVerbosityLevel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxScreenVerbosityLevel.Parent" xml:space="preserve">
+    <value>groupBoxScreenVerbosityLevel</value>
+  </data>
+  <data name="&gt;&gt;comboBoxScreenVerbosityLevel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="groupBoxScreenVerbosityLevel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 31</value>
+  </data>
+  <data name="groupBoxScreenVerbosityLevel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>377, 88</value>
+  </data>
+  <data name="groupBoxScreenVerbosityLevel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="groupBoxScreenVerbosityLevel.Text" xml:space="preserve">
+    <value>画面の冗長レベル</value>
+  </data>
+  <data name="comboBoxScreenVerbosityLevel.Items" xml:space="preserve">
+    <value>静けさ</value>
+  </data>
+  <data name="comboBoxScreenVerbosityLevel.Items" xml:space="preserve">
+    <value>エラー</value>
+  </data>
+  <data name="comboBoxScreenVerbosityLevel.Items" xml:space="preserve">
+    <value>普通</value>
+  </data>
+  <data name="comboBoxScreenVerbosityLevel.Items" xml:space="preserve">
+    <value>詳細</value>
+  </data>
+  <data name="comboBoxScreenVerbosityLevel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 35</value>
+  </data>
+  <data name="comboBoxScreenVerbosityLevel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 33</value>
+  </data>
+  <data name="comboBoxScreenVerbosityLevel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="comboBoxScreenVerbosityLevel.Text" xml:space="preserve">
+    <value>普通</value>
+  </data>
+  <data name="&gt;&gt;comboBoxLogFileVerbosityLevel.Name" xml:space="preserve">
+    <value>comboBoxLogFileVerbosityLevel</value>
+  </data>
+  <data name="&gt;&gt;comboBoxLogFileVerbosityLevel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxLogFileVerbosityLevel.Parent" xml:space="preserve">
+    <value>groupBoxLogFileVerbosityLevel</value>
+  </data>
+  <data name="&gt;&gt;comboBoxLogFileVerbosityLevel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="groupBoxLogFileVerbosityLevel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>502, 31</value>
+  </data>
+  <data name="groupBoxLogFileVerbosityLevel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>377, 88</value>
+  </data>
+  <data name="groupBoxLogFileVerbosityLevel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="groupBoxLogFileVerbosityLevel.Text" xml:space="preserve">
+    <value>ログファイルの冗長レベル</value>
+  </data>
+  <data name="comboBoxLogFileVerbosityLevel.Items" xml:space="preserve">
+    <value>静けさ</value>
+  </data>
+  <data name="comboBoxLogFileVerbosityLevel.Items" xml:space="preserve">
+    <value>エラー</value>
+  </data>
+  <data name="comboBoxLogFileVerbosityLevel.Items" xml:space="preserve">
+    <value>普通</value>
+  </data>
+  <data name="comboBoxLogFileVerbosityLevel.Items" xml:space="preserve">
+    <value>詳細</value>
+  </data>
+  <data name="comboBoxLogFileVerbosityLevel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 35</value>
+  </data>
+  <data name="comboBoxLogFileVerbosityLevel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 33</value>
+  </data>
+  <data name="comboBoxLogFileVerbosityLevel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="comboBoxLogFileVerbosityLevel.Text" xml:space="preserve">
+    <value>普通</value>
+  </data>
+  <data name="textBoxLogFolderPath.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="textBoxLogFolderPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>230, 133</value>
+  </data>
+  <data name="textBoxLogFolderPath.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 10</value>
+  </data>
+  <data name="textBoxLogFolderPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>569, 31</value>
+  </data>
+  <data name="textBoxLogFolderPath.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="labelLogFolderPath.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelLogFolderPath.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelLogFolderPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>39, 133</value>
+  </data>
+  <data name="labelLogFolderPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 25</value>
+  </data>
+  <data name="labelLogFolderPath.TabIndex" type="System.Int32, mscorlib">
+    <value>152</value>
+  </data>
+  <data name="labelLogFolderPath.Text" xml:space="preserve">
+    <value>ロギングディレクトリ：</value>
   </data>
   <data name="&gt;&gt;groupBoxTextBoxTextToTranslate.Name" xml:space="preserve">
     <value>groupBoxTextBoxTextToTranslate</value>
@@ -1739,51 +1700,6 @@
   <data name="&gt;&gt;groupBoxTextBoxTextToTranslate.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="groupBoxTextBoxTranslation.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="textBoxTranslation.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="textBoxTranslation.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 33</value>
-  </data>
-  <data name="textBoxTranslation.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="textBoxTranslation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>903, 387</value>
-  </data>
-  <data name="textBoxTranslation.TabIndex" type="System.Int32, mscorlib">
-    <value>99</value>
-  </data>
-  <data name="textBoxTranslation.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;textBoxTranslation.Name" xml:space="preserve">
-    <value>textBoxTranslation</value>
-  </data>
-  <data name="&gt;&gt;textBoxTranslation.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxTranslation.Parent" xml:space="preserve">
-    <value>groupBoxTextBoxTranslation</value>
-  </data>
-  <data name="&gt;&gt;textBoxTranslation.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="groupBoxTextBoxTranslation.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 379</value>
-  </data>
-  <data name="groupBoxTextBoxTranslation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>950, 436</value>
-  </data>
-  <data name="groupBoxTextBoxTranslation.TabIndex" type="System.Int32, mscorlib">
-    <value>100</value>
-  </data>
-  <data name="groupBoxTextBoxTranslation.Text" xml:space="preserve">
-    <value>翻訳</value>
-  </data>
   <data name="&gt;&gt;groupBoxTextBoxTranslation.Name" xml:space="preserve">
     <value>groupBoxTextBoxTranslation</value>
   </data>
@@ -1794,168 +1710,6 @@
     <value>textTab</value>
   </data>
   <data name="&gt;&gt;groupBoxTextBoxTranslation.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="textCmdPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="buttonTranslateTextInTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="buttonTranslateTextInTextBox.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="buttonTranslateTextInTextBox.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="buttonTranslateTextInTextBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="buttonTranslateTextInTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>875, 16</value>
-  </data>
-  <data name="buttonTranslateTextInTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="buttonTranslateTextInTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 42</value>
-  </data>
-  <data name="buttonTranslateTextInTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;buttonTranslateTextInTextBox.Name" xml:space="preserve">
-    <value>buttonTranslateTextInTextBox</value>
-  </data>
-  <data name="&gt;&gt;buttonTranslateTextInTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonTranslateTextInTextBox.Parent" xml:space="preserve">
-    <value>textCmdPanel</value>
-  </data>
-  <data name="&gt;&gt;buttonTranslateTextInTextBox.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="toCodeLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="toCodeLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="toCodeLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>436, 29</value>
-  </data>
-  <data name="toCodeLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 25</value>
-  </data>
-  <data name="toCodeLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>99</value>
-  </data>
-  <data name="toCodeLabel.Text" xml:space="preserve">
-    <value>翻訳先:</value>
-  </data>
-  <data name="&gt;&gt;toCodeLabel.Name" xml:space="preserve">
-    <value>toCodeLabel</value>
-  </data>
-  <data name="&gt;&gt;toCodeLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toCodeLabel.Parent" xml:space="preserve">
-    <value>textCmdPanel</value>
-  </data>
-  <data name="&gt;&gt;toCodeLabel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="comboBoxToLang.Location" type="System.Drawing.Point, System.Drawing">
-    <value>550, 21</value>
-  </data>
-  <data name="comboBoxToLang.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="comboBoxToLang.Size" type="System.Drawing.Size, System.Drawing">
-    <value>263, 33</value>
-  </data>
-  <data name="comboBoxToLang.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;comboBoxToLang.Name" xml:space="preserve">
-    <value>comboBoxToLang</value>
-  </data>
-  <data name="&gt;&gt;comboBoxToLang.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBoxToLang.Parent" xml:space="preserve">
-    <value>textCmdPanel</value>
-  </data>
-  <data name="&gt;&gt;comboBoxToLang.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="comboBoxFromLang.Location" type="System.Drawing.Point, System.Drawing">
-    <value>158, 21</value>
-  </data>
-  <data name="comboBoxFromLang.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="comboBoxFromLang.Size" type="System.Drawing.Size, System.Drawing">
-    <value>263, 33</value>
-  </data>
-  <data name="comboBoxFromLang.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;comboBoxFromLang.Name" xml:space="preserve">
-    <value>comboBoxFromLang</value>
-  </data>
-  <data name="&gt;&gt;comboBoxFromLang.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBoxFromLang.Parent" xml:space="preserve">
-    <value>textCmdPanel</value>
-  </data>
-  <data name="&gt;&gt;comboBoxFromLang.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="fromCodeLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="fromCodeLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="fromCodeLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 29</value>
-  </data>
-  <data name="fromCodeLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 25</value>
-  </data>
-  <data name="fromCodeLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>99</value>
-  </data>
-  <data name="fromCodeLabel.Text" xml:space="preserve">
-    <value>ソース言語：</value>
-  </data>
-  <data name="&gt;&gt;fromCodeLabel.Name" xml:space="preserve">
-    <value>fromCodeLabel</value>
-  </data>
-  <data name="&gt;&gt;fromCodeLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;fromCodeLabel.Parent" xml:space="preserve">
-    <value>textCmdPanel</value>
-  </data>
-  <data name="&gt;&gt;fromCodeLabel.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="textCmdPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 29</value>
-  </data>
-  <data name="textCmdPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="textCmdPanel.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 11, 0, 11</value>
-  </data>
-  <data name="textCmdPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>924, 75</value>
-  </data>
-  <data name="textCmdPanel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="&gt;&gt;textCmdPanel.Name" xml:space="preserve">
@@ -1986,7 +1740,7 @@
     <value>0</value>
   </data>
   <data name="textTab.Text" xml:space="preserve">
-    <value>テキストを翻訳</value>
+    <value>テキストを翻訳します</value>
   </data>
   <data name="&gt;&gt;textTab.Name" xml:space="preserve">
     <value>textTab</value>
@@ -2000,296 +1754,260 @@
   <data name="&gt;&gt;textTab.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="tabControlTranslateResxSubTab.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="groupBoxFilterText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="groupBoxTextBoxTextToTranslate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
-  <data name="textBoxFilterText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
+  <data name="&gt;&gt;textBoxTextToTranslate.Name" xml:space="preserve">
+    <value>textBoxTextToTranslate</value>
   </data>
-  <data name="textBoxFilterText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 30</value>
-  </data>
-  <data name="textBoxFilterText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>460, 31</value>
-  </data>
-  <data name="textBoxFilterText.TabIndex" type="System.Int32, mscorlib">
-    <value>141</value>
-  </data>
-  <data name="&gt;&gt;textBoxFilterText.Name" xml:space="preserve">
-    <value>textBoxFilterText</value>
-  </data>
-  <data name="&gt;&gt;textBoxFilterText.Type" xml:space="preserve">
+  <data name="&gt;&gt;textBoxTextToTranslate.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBoxFilterText.Parent" xml:space="preserve">
-    <value>groupBoxFilterText</value>
+  <data name="&gt;&gt;textBoxTextToTranslate.Parent" xml:space="preserve">
+    <value>groupBoxTextBoxTextToTranslate</value>
   </data>
-  <data name="&gt;&gt;textBoxFilterText.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;textBoxTextToTranslate.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="linkLabelFilterText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+  <data name="groupBoxTextBoxTextToTranslate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 111</value>
   </data>
-  <data name="linkLabelFilterText.AutoSize" type="System.Boolean, mscorlib">
+  <data name="groupBoxTextBoxTextToTranslate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>950, 262</value>
+  </data>
+  <data name="groupBoxTextBoxTextToTranslate.TabIndex" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="groupBoxTextBoxTextToTranslate.Text" xml:space="preserve">
+    <value>ソーステキスト（翻訳するテキスト）</value>
+  </data>
+  <data name="textBoxTextToTranslate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="textBoxTextToTranslate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 35</value>
+  </data>
+  <data name="textBoxTextToTranslate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 25</value>
+  </data>
+  <data name="textBoxTextToTranslate.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="linkLabelFilterText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="textBoxTextToTranslate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>903, 208</value>
   </data>
-  <data name="linkLabelFilterText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>477, 33</value>
-  </data>
-  <data name="linkLabelFilterText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 25</value>
-  </data>
-  <data name="linkLabelFilterText.TabIndex" type="System.Int32, mscorlib">
-    <value>143</value>
-  </data>
-  <data name="linkLabelFilterText.Text" xml:space="preserve">
-    <value>?</value>
-  </data>
-  <data name="&gt;&gt;linkLabelFilterText.Name" xml:space="preserve">
-    <value>linkLabelFilterText</value>
-  </data>
-  <data name="&gt;&gt;linkLabelFilterText.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;linkLabelFilterText.Parent" xml:space="preserve">
-    <value>groupBoxFilterText</value>
-  </data>
-  <data name="&gt;&gt;linkLabelFilterText.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="groupBoxFilterText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>206, 6</value>
-  </data>
-  <data name="groupBoxFilterText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>507, 82</value>
-  </data>
-  <data name="groupBoxFilterText.TabIndex" type="System.Int32, mscorlib">
-    <value>144</value>
-  </data>
-  <data name="groupBoxFilterText.Text" xml:space="preserve">
-    <value>言語表示フィルター</value>
-  </data>
-  <data name="&gt;&gt;groupBoxFilterText.Name" xml:space="preserve">
-    <value>groupBoxFilterText</value>
-  </data>
-  <data name="&gt;&gt;groupBoxFilterText.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxFilterText.Parent" xml:space="preserve">
-    <value>tabPageLanguageList</value>
-  </data>
-  <data name="&gt;&gt;groupBoxFilterText.ZOrder" xml:space="preserve">
+  <data name="textBoxTextToTranslate.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="languageList.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="groupBoxTextBoxTranslation.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="olv_LanguageTag.Text" xml:space="preserve">
-    <value>コード（タグ）</value>
+  <data name="&gt;&gt;textBoxTranslation.Name" xml:space="preserve">
+    <value>textBoxTranslation</value>
   </data>
-  <data name="olv_LanguageTag.ToolTipText" xml:space="preserve">
-    <value>翻訳者が使用する言語 ISO-639-1 コード/タグ</value>
-  </data>
-  <data name="olv_LanguageTag.Width" type="System.Int32, mscorlib">
-    <value>90</value>
-  </data>
-  <data name="olv_LanguageName.Text" xml:space="preserve">
-    <value>名前</value>
-  </data>
-  <data name="olv_LanguageName.ToolTipText" xml:space="preserve">
-    <value>言語の基本名</value>
-  </data>
-  <data name="olv_LanguageName.Width" type="System.Int32, mscorlib">
-    <value>180</value>
-  </data>
-  <data name="olv_LanguageAliases.Text" xml:space="preserve">
-    <value>エイリアス/国/文化</value>
-  </data>
-  <data name="olv_LanguageAliases.ToolTipText" xml:space="preserve">
-    <value>言語エイリアスまたは主な国/文化の使用法</value>
-  </data>
-  <data name="olv_LanguageAliases.Width" type="System.Int32, mscorlib">
-    <value>160</value>
-  </data>
-  <data name="olv_TranslationSupported.Text" xml:space="preserve">
-    <value>翻訳者</value>
-  </data>
-  <data name="olv_TranslationSupported.ToolTipText" xml:space="preserve">
-    <value>言語が翻訳者によってサポートされているかどうかを指定します。</value>
-  </data>
-  <data name="olv_TranslationSupported.Width" type="System.Int32, mscorlib">
-    <value>90</value>
-  </data>
-  <data name="olv_LanguageTranslatorTag.Text" xml:space="preserve">
-    <value>トランタグ</value>
-  </data>
-  <data name="olv_LanguageTranslatorTag.ToolTipText" xml:space="preserve">
-    <value>翻訳者が使用するタグ</value>
-  </data>
-  <data name="olv_LanguageTranslatorTag.Width" type="System.Int32, mscorlib">
-    <value>65</value>
-  </data>
-  <data name="olv_Iso639_3.Text" xml:space="preserve">
-    <value>ISO639-3</value>
-  </data>
-  <data name="olv_Iso639_3.ToolTipText" xml:space="preserve">
-    <value>言語 ISO-639-3 コード/タグ名。翻訳者が使用しない 3 文字のタグ。</value>
-  </data>
-  <data name="olv_Iso639_3.Width" type="System.Int32, mscorlib">
-    <value>75</value>
-  </data>
-  <data name="languageList.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 105</value>
-  </data>
-  <data name="languageList.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="languageList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>910, 474</value>
-  </data>
-  <data name="languageList.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;languageList.Name" xml:space="preserve">
-    <value>languageList</value>
-  </data>
-  <data name="&gt;&gt;languageList.Type" xml:space="preserve">
-    <value>BrightIdeasSoftware.FastObjectListView, ABetterTranslator, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;languageList.Parent" xml:space="preserve">
-    <value>tabPageLanguageList</value>
-  </data>
-  <data name="&gt;&gt;languageList.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tabPageLanguageList.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 34</value>
-  </data>
-  <data name="tabPageLanguageList.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPageLanguageList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>919, 586</value>
-  </data>
-  <data name="tabPageLanguageList.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="tabPageLanguageList.Text" xml:space="preserve">
-    <value>言語一覧</value>
-  </data>
-  <data name="&gt;&gt;tabPageLanguageList.Name" xml:space="preserve">
-    <value>tabPageLanguageList</value>
-  </data>
-  <data name="&gt;&gt;tabPageLanguageList.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageLanguageList.Parent" xml:space="preserve">
-    <value>tabControlTranslateResxSubTab</value>
-  </data>
-  <data name="&gt;&gt;tabPageLanguageList.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="logBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="logBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 7</value>
-  </data>
-  <data name="logBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="logBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>910, 504</value>
-  </data>
-  <data name="logBox.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="logBox.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;logBox.Name" xml:space="preserve">
-    <value>logBox</value>
-  </data>
-  <data name="&gt;&gt;logBox.Type" xml:space="preserve">
+  <data name="&gt;&gt;textBoxTranslation.Type" xml:space="preserve">
     <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;logBox.Parent" xml:space="preserve">
-    <value>tabPageTranslateResxLogging</value>
+  <data name="&gt;&gt;textBoxTranslation.Parent" xml:space="preserve">
+    <value>groupBoxTextBoxTranslation</value>
   </data>
-  <data name="&gt;&gt;logBox.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;textBoxTranslation.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="statusLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
+  <data name="groupBoxTextBoxTranslation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 379</value>
   </data>
-  <data name="statusLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="groupBoxTextBoxTranslation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>950, 436</value>
   </data>
-  <data name="statusLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>226, 531</value>
+  <data name="groupBoxTextBoxTranslation.TabIndex" type="System.Int32, mscorlib">
+    <value>100</value>
   </data>
-  <data name="statusLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>468, 39</value>
+  <data name="groupBoxTextBoxTranslation.Text" xml:space="preserve">
+    <value>翻訳</value>
   </data>
-  <data name="statusLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>999</value>
+  <data name="textBoxTranslation.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="statusLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
+  <data name="textBoxTranslation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 33</value>
   </data>
-  <data name="&gt;&gt;statusLabel.Name" xml:space="preserve">
-    <value>statusLabel</value>
+  <data name="textBoxTranslation.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
-  <data name="&gt;&gt;statusLabel.Type" xml:space="preserve">
+  <data name="textBoxTranslation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>903, 387</value>
+  </data>
+  <data name="textBoxTranslation.TabIndex" type="System.Int32, mscorlib">
+    <value>99</value>
+  </data>
+  <data name="textBoxTranslation.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textCmdPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;buttonTranslateTextInTextBox.Name" xml:space="preserve">
+    <value>buttonTranslateTextInTextBox</value>
+  </data>
+  <data name="&gt;&gt;buttonTranslateTextInTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonTranslateTextInTextBox.Parent" xml:space="preserve">
+    <value>textCmdPanel</value>
+  </data>
+  <data name="&gt;&gt;buttonTranslateTextInTextBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;toCodeLabel.Name" xml:space="preserve">
+    <value>toCodeLabel</value>
+  </data>
+  <data name="&gt;&gt;toCodeLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;statusLabel.Parent" xml:space="preserve">
-    <value>tabPageTranslateResxLogging</value>
+  <data name="&gt;&gt;toCodeLabel.Parent" xml:space="preserve">
+    <value>textCmdPanel</value>
   </data>
-  <data name="&gt;&gt;statusLabel.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;toCodeLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;comboBoxToLang.Name" xml:space="preserve">
+    <value>comboBoxToLang</value>
+  </data>
+  <data name="&gt;&gt;comboBoxToLang.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxToLang.Parent" xml:space="preserve">
+    <value>textCmdPanel</value>
+  </data>
+  <data name="&gt;&gt;comboBoxToLang.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;comboBoxFromLang.Name" xml:space="preserve">
+    <value>comboBoxFromLang</value>
+  </data>
+  <data name="&gt;&gt;comboBoxFromLang.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxFromLang.Parent" xml:space="preserve">
+    <value>textCmdPanel</value>
+  </data>
+  <data name="&gt;&gt;comboBoxFromLang.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;fromCodeLabel.Name" xml:space="preserve">
+    <value>fromCodeLabel</value>
+  </data>
+  <data name="&gt;&gt;fromCodeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;fromCodeLabel.Parent" xml:space="preserve">
+    <value>textCmdPanel</value>
+  </data>
+  <data name="&gt;&gt;fromCodeLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="textCmdPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 29</value>
+  </data>
+  <data name="textCmdPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="textCmdPanel.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 11, 0, 11</value>
+  </data>
+  <data name="textCmdPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>924, 75</value>
+  </data>
+  <data name="textCmdPanel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="tabPageTranslateResxLogging.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 34</value>
+  <data name="buttonTranslateTextInTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
-  <data name="tabPageTranslateResxLogging.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+  <data name="buttonTranslateTextInTextBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="tabPageTranslateResxLogging.Size" type="System.Drawing.Size, System.Drawing">
-    <value>919, 586</value>
+  <data name="buttonTranslateTextInTextBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="tabPageTranslateResxLogging.TabIndex" type="System.Int32, mscorlib">
+  <data name="buttonTranslateTextInTextBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonTranslateTextInTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>875, 16</value>
+  </data>
+  <data name="buttonTranslateTextInTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="buttonTranslateTextInTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 42</value>
+  </data>
+  <data name="buttonTranslateTextInTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="toCodeLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="toCodeLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="toCodeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>436, 29</value>
+  </data>
+  <data name="toCodeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 25</value>
+  </data>
+  <data name="toCodeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>99</value>
+  </data>
+  <data name="toCodeLabel.Text" xml:space="preserve">
+    <value>翻訳：</value>
+  </data>
+  <data name="comboBoxToLang.Location" type="System.Drawing.Point, System.Drawing">
+    <value>550, 21</value>
+  </data>
+  <data name="comboBoxToLang.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="comboBoxToLang.Size" type="System.Drawing.Size, System.Drawing">
+    <value>263, 33</value>
+  </data>
+  <data name="comboBoxToLang.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="comboBoxFromLang.Location" type="System.Drawing.Point, System.Drawing">
+    <value>158, 21</value>
+  </data>
+  <data name="comboBoxFromLang.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="comboBoxFromLang.Size" type="System.Drawing.Size, System.Drawing">
+    <value>263, 33</value>
+  </data>
+  <data name="comboBoxFromLang.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="tabPageTranslateResxLogging.Text" xml:space="preserve">
-    <value>ロギング</value>
+  <data name="fromCodeLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;tabPageTranslateResxLogging.Name" xml:space="preserve">
-    <value>tabPageTranslateResxLogging</value>
+  <data name="fromCodeLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;tabPageTranslateResxLogging.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="fromCodeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 29</value>
   </data>
-  <data name="&gt;&gt;tabPageTranslateResxLogging.Parent" xml:space="preserve">
-    <value>tabControlTranslateResxSubTab</value>
+  <data name="fromCodeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 25</value>
   </data>
-  <data name="&gt;&gt;tabPageTranslateResxLogging.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="fromCodeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>99</value>
   </data>
-  <data name="tabControlTranslateResxSubTab.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 216</value>
+  <data name="fromCodeLabel.Text" xml:space="preserve">
+    <value>ソース言語：</value>
   </data>
-  <data name="tabControlTranslateResxSubTab.Size" type="System.Drawing.Size, System.Drawing">
-    <value>927, 624</value>
-  </data>
-  <data name="tabControlTranslateResxSubTab.TabIndex" type="System.Int32, mscorlib">
-    <value>1000</value>
+  <data name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>548, 17</value>
   </data>
   <data name="&gt;&gt;tabControlTranslateResxSubTab.Name" xml:space="preserve">
     <value>tabControlTranslateResxSubTab</value>
@@ -2303,474 +2021,6 @@
   <data name="&gt;&gt;tabControlTranslateResxSubTab.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing">
-    <value>548, 17</value>
-  </data>
-  <data name="toolStripMenuItemLoadFile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>376, 42</value>
-  </data>
-  <data name="toolStripMenuItemLoadFile.Text" xml:space="preserve">
-    <value>選択した言語セットを開く</value>
-  </data>
-  <data name="toolStripMenuItemLoadFile.ToolTipText" xml:space="preserve">
-    <value>選択した言語の以前に保存したセットを開く</value>
-  </data>
-  <data name="toolStripMenuItemOpenResx.Size" type="System.Drawing.Size, System.Drawing">
-    <value>376, 42</value>
-  </data>
-  <data name="toolStripMenuItemOpenResx.Text" xml:space="preserve">
-    <value>Resxファイルを開く</value>
-  </data>
-  <data name="toolStripMenuItemOpenResx.ToolTipText" xml:space="preserve">
-    <value>Resx ファイルを開いて翻訳する</value>
-  </data>
-  <data name="toolStripMenuItemOpenAll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>376, 42</value>
-  </data>
-  <data name="toolStripMenuItemOpenAll.Text" xml:space="preserve">
-    <value>すべてロード (プロジェクト)</value>
-  </data>
-  <data name="toolStripMenuItemOpenAll.ToolTipText" xml:space="preserve">
-    <value>以前に保存したプロジェクト設定ファイルを読み込みます。</value>
-  </data>
-  <data name="toolStripMenuItemLoadAndReplaceLanguageSet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>376, 42</value>
-  </data>
-  <data name="toolStripMenuItemLoadAndReplaceLanguageSet.Text" xml:space="preserve">
-    <value>カスタム言語セットとしてロード</value>
-  </data>
-  <data name="toolStripMenuItemLoadAndReplaceLanguageSet.ToolTipText" xml:space="preserve">
-    <value>以前に保存した選択した言語を開き、選択した言語のみを表示します</value>
-  </data>
-  <data name="toolStripSplitButtonLoad.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="toolStripSplitButtonLoad.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 36</value>
-  </data>
-  <data name="toolStripSplitButtonLoad.Text" xml:space="preserve">
-    <value>ロード</value>
-  </data>
-  <data name="toolStripSplitButtonLoad.ToolTipText" xml:space="preserve">
-    <value>以前に選択した言語を含むファイルをロードする</value>
-  </data>
-  <data name="toolStripSplitButtonSaveSave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>320, 42</value>
-  </data>
-  <data name="toolStripSplitButtonSaveSave.Text" xml:space="preserve">
-    <value>選択した言語を保存</value>
-  </data>
-  <data name="toolStripSplitButtonSaveSave.ToolTipText" xml:space="preserve">
-    <value>選択した言語のセットを保存します</value>
-  </data>
-  <data name="toolStripSplitButtonSaveAs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>320, 42</value>
-  </data>
-  <data name="toolStripSplitButtonSaveAs.Text" xml:space="preserve">
-    <value>名前を付けて保存</value>
-  </data>
-  <data name="toolStripSplitButtonSaveAs.ToolTipText" xml:space="preserve">
-    <value>選択した言語を新しいファイルに保存</value>
-  </data>
-  <data name="toolStripSplitButtonSaveAll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>320, 42</value>
-  </data>
-  <data name="toolStripSplitButtonSaveAll.Text" xml:space="preserve">
-    <value>すべて保存 (プロジェクト)</value>
-  </data>
-  <data name="toolStripSplitButtonSaveAll.ToolTipText" xml:space="preserve">
-    <value>すべての設定をプロジェクト ファイルに保存します。</value>
-  </data>
-  <data name="toolStripSplitButtonSave.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="toolStripSplitButtonSave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 36</value>
-  </data>
-  <data name="toolStripSplitButtonSave.Text" xml:space="preserve">
-    <value>保存</value>
-  </data>
-  <data name="toolStripSplitButtonSave.ToolTipText" xml:space="preserve">
-    <value>選択した言語を保存します</value>
-  </data>
-  <data name="toolStripMenuItemTranslateAllLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
-  </data>
-  <data name="toolStripMenuItemTranslateAllLanguages.Text" xml:space="preserve">
-    <value>サポートされているすべての言語を翻訳</value>
-  </data>
-  <data name="toolStripMenuItemTranslateAllLanguages.ToolTipText" xml:space="preserve">
-    <value>翻訳サービスですべての言語を選択して翻訳する</value>
-  </data>
-  <data name="toolStripMenuItemWindowsSupportedLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
-  </data>
-  <data name="toolStripMenuItemWindowsSupportedLanguages.Text" xml:space="preserve">
-    <value>Windows 言語パック</value>
-  </data>
-  <data name="toolStripMenuItemWindowsSupportedLanguages.ToolTipText" xml:space="preserve">
-    <value>Windows 言語パックで言語を選択して翻訳する</value>
-  </data>
-  <data name="toolStripMenuItemWindowsLanguageInterfacePacks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
-  </data>
-  <data name="toolStripMenuItemWindowsLanguageInterfacePacks.Text" xml:space="preserve">
-    <value>Windows 言語インターフェイス パック</value>
-  </data>
-  <data name="toolStripMenuItemWindowsLanguageInterfacePacks.ToolTipText" xml:space="preserve">
-    <value>Windows 言語インターフェイス パックで言語を選択して翻訳する</value>
-  </data>
-  <data name="toolStripMenuItemTranslateBusinessLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
-  </data>
-  <data name="toolStripMenuItemTranslateBusinessLanguages.Text" xml:space="preserve">
-    <value>トップビジネス言語を翻訳</value>
-  </data>
-  <data name="toolStripMenuItemTranslateBusinessLanguages.ToolTipText" xml:space="preserve">
-    <value>最も使用されている国際ビジネス言語を選択して翻訳する</value>
-  </data>
-  <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 6</value>
-  </data>
-  <data name="toolStripMenuItem_TranslateAfrica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
-  </data>
-  <data name="toolStripMenuItem_TranslateAfrica.Text" xml:space="preserve">
-    <value>アフリカ</value>
-  </data>
-  <data name="toolStripMenuItem_TranslateAfrica.ToolTipText" xml:space="preserve">
-    <value>アフリカで最も話されている言語の選択と翻訳</value>
-  </data>
-  <data name="toolStripMenuItem_TranslateAsia.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
-  </data>
-  <data name="toolStripMenuItem_TranslateAsia.Text" xml:space="preserve">
-    <value>アジア</value>
-  </data>
-  <data name="toolStripMenuItem_TranslateAsia.ToolTipText" xml:space="preserve">
-    <value>アジアで最も話されている言語の選択と翻訳</value>
-  </data>
-  <data name="toolStripMenuItem_TranslateEurope.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
-  </data>
-  <data name="toolStripMenuItem_TranslateEurope.Text" xml:space="preserve">
-    <value>ヨーロッパ</value>
-  </data>
-  <data name="toolStripMenuItem_TranslateEurope.ToolTipText" xml:space="preserve">
-    <value>ヨーロッパで最も話されている言語の選択と翻訳</value>
-  </data>
-  <data name="toolStripMenuItem_TranslateMiddleEast.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
-  </data>
-  <data name="toolStripMenuItem_TranslateMiddleEast.Text" xml:space="preserve">
-    <value>中東</value>
-  </data>
-  <data name="toolStripMenuItem_TranslateMiddleEast.ToolTipText" xml:space="preserve">
-    <value>中東で最も話されている言語の選択と翻訳</value>
-  </data>
-  <data name="toolStripMenuItem_TranslateNorthAmerica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
-  </data>
-  <data name="toolStripMenuItem_TranslateNorthAmerica.Text" xml:space="preserve">
-    <value>北米</value>
-  </data>
-  <data name="toolStripMenuItem_TranslateNorthAmerica.ToolTipText" xml:space="preserve">
-    <value>北米で最も話されている言語の選択と翻訳</value>
-  </data>
-  <data name="toolStripMenuItem_TranslateSouthAmerica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
-  </data>
-  <data name="toolStripMenuItem_TranslateSouthAmerica.Text" xml:space="preserve">
-    <value>南アメリカ</value>
-  </data>
-  <data name="toolStripMenuItem_TranslateSouthAmerica.ToolTipText" xml:space="preserve">
-    <value>南アメリカで最も話されている言語の選択と翻訳</value>
-  </data>
-  <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>388, 6</value>
-  </data>
-  <data name="toolStripMenuItemTranslateTop5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
-  </data>
-  <data name="toolStripMenuItemTranslateTop5.Text" xml:space="preserve">
-    <value>話されているトップ 5 言語を翻訳する</value>
-  </data>
-  <data name="toolStripMenuItemTranslateTop5.ToolTipText" xml:space="preserve">
-    <value>上位 5 つの言語を選択して翻訳する</value>
-  </data>
-  <data name="toolStripMenuItemTranslateTop10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
-  </data>
-  <data name="toolStripMenuItemTranslateTop10.Text" xml:space="preserve">
-    <value>トップ 10 の話されている言語を翻訳する</value>
-  </data>
-  <data name="toolStripMenuItemTranslateTop10.ToolTipText" xml:space="preserve">
-    <value>トップ10を選択して翻訳</value>
-  </data>
-  <data name="toolStripMenuItemTranslateTop20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
-  </data>
-  <data name="toolStripMenuItemTranslateTop20.Text" xml:space="preserve">
-    <value>トップ 20 の話されている言語を翻訳</value>
-  </data>
-  <data name="toolStripMenuItemTranslateTop20.ToolTipText" xml:space="preserve">
-    <value>トップ20を選択して翻訳</value>
-  </data>
-  <data name="toolStripMenuItemTranslateTop30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 34</value>
-  </data>
-  <data name="toolStripMenuItemTranslateTop30.Text" xml:space="preserve">
-    <value>上位 30 の話し言葉を翻訳</value>
-  </data>
-  <data name="toolStripMenuItemTranslateTop30.ToolTipText" xml:space="preserve">
-    <value>トップ30を選択して翻訳</value>
-  </data>
-  <data name="toolStripSplitButtonTranslate.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="toolStripSplitButtonTranslate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 36</value>
-  </data>
-  <data name="toolStripSplitButtonTranslate.Text" xml:space="preserve">
-    <value>翻訳を開始</value>
-  </data>
-  <data name="toolStripSplitButtonTranslate.ToolTipText" xml:space="preserve">
-    <value>選択した言語で翻訳を開始します。言語が選択されていない場合は、すべての言語を翻訳します。</value>
-  </data>
-  <data name="toolStripMenuItemSelectAll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 34</value>
-  </data>
-  <data name="toolStripMenuItemSelectAll.Text" xml:space="preserve">
-    <value>すべての言語を選択</value>
-  </data>
-  <data name="toolStripMenuItemSelectClear.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 34</value>
-  </data>
-  <data name="toolStripMenuItemSelectClear.Text" xml:space="preserve">
-    <value>すべての選択をクリア</value>
-  </data>
-  <data name="toolStripMenuItemSelectClear.ToolTipText" xml:space="preserve">
-    <value>すべての言語の選択を解除</value>
-  </data>
-  <data name="toolStripMenuItemSelectUndo.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="toolStripMenuItemSelectUndo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>325, 34</value>
-  </data>
-  <data name="toolStripMenuItemSelectUndo.Text" xml:space="preserve">
-    <value>最後のグループの選択を元に戻す</value>
-  </data>
-  <data name="toolStripMenuItemSelectUndo.ToolTipText" xml:space="preserve">
-    <value>前のグループの選択を解除</value>
-  </data>
-  <data name="toolStripMenuItemSelectUndo.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="toolStripSplitButtonSelectAllLanugages.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="toolStripSplitButtonSelectAllLanugages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 36</value>
-  </data>
-  <data name="toolStripSplitButtonSelectAllLanugages.Text" xml:space="preserve">
-    <value>すべて選択</value>
-  </data>
-  <data name="toolStripSplitButtonSelectAllLanugages.ToolTipText" xml:space="preserve">
-    <value>すべての言語を選択</value>
-  </data>
-  <data name="toolStripMenuItemWindowsLanguagePacks_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>234, 34</value>
-  </data>
-  <data name="toolStripMenuItemWindowsLanguagePacks_ShowOnly.Text" xml:space="preserve">
-    <value>見せる</value>
-  </data>
-  <data name="toolStripMenuItemWindowsLanguagePacks_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>234, 34</value>
-  </data>
-  <data name="toolStripMenuItemWindowsLanguagePacks_Add.Text" xml:space="preserve">
-    <value>追加</value>
-  </data>
-  <data name="toolStripMenuItemWindowsLanguagePacks_AddAndSelect.Size" type="System.Drawing.Size, System.Drawing">
-    <value>234, 34</value>
-  </data>
-  <data name="toolStripMenuItemWindowsLanguagePacks_AddAndSelect.Text" xml:space="preserve">
-    <value>追加して選択</value>
-  </data>
-  <data name="toolStripMenuItemWindowsLanguagePacks.ShowShortcutKeys" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="toolStripMenuItemWindowsLanguagePacks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
-  </data>
-  <data name="toolStripMenuItemWindowsLanguagePacks.Text" xml:space="preserve">
-    <value>Windows 10/11 言語パック</value>
-  </data>
-  <data name="toolStripMenuItemWindowsLanguagePacks.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageAboveText</value>
-  </data>
-  <data name="toolStripMenuItemWindowsLanguagePacks.ToolTipText" xml:space="preserve">
-    <value>Windows 10/11 言語パックに含まれる言語のみを表示する</value>
-  </data>
-  <data name="toolStripMenuItemWindowsLanguagePackInterface_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>234, 34</value>
-  </data>
-  <data name="toolStripMenuItemWindowsLanguagePackInterface_ShowOnly.Text" xml:space="preserve">
-    <value>見せる</value>
-  </data>
-  <data name="toolStripMenuItemWindowsLanguagePackInterface_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>234, 34</value>
-  </data>
-  <data name="toolStripMenuItemWindowsLanguagePackInterface_Add.Text" xml:space="preserve">
-    <value>追加</value>
-  </data>
-  <data name="toolStripMenuItemWindowsLanguagePackInterface_AddAndSelect.Size" type="System.Drawing.Size, System.Drawing">
-    <value>234, 34</value>
-  </data>
-  <data name="toolStripMenuItemWindowsLanguagePackInterface_AddAndSelect.Text" xml:space="preserve">
-    <value>追加して選択</value>
-  </data>
-  <data name="toolStripMenuItemWindowsLanguagePackInterface.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
-  </data>
-  <data name="toolStripMenuItemWindowsLanguagePackInterface.Text" xml:space="preserve">
-    <value>Windows 言語パック インターフェイス</value>
-  </data>
-  <data name="toolStripMenuItemWindowsLanguagePackInterface.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>TextBeforeImage</value>
-  </data>
-  <data name="toolStripMenuItemWindowsLanguagePackInterface.ToolTipText" xml:space="preserve">
-    <value>Windows 言語パック インターフェイスにある言語のみを表示する</value>
-  </data>
-  <data name="toolStripSeparator7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>429, 6</value>
-  </data>
-  <data name="toolStripMenuItemAllTranslatorSupportedLanguages_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
-  </data>
-  <data name="toolStripMenuItemAllTranslatorSupportedLanguages_ShowOnly.Text" xml:space="preserve">
-    <value>見せる</value>
-  </data>
-  <data name="toolStripMenuItemAllTranslatorSupportedLanguages_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
-  </data>
-  <data name="toolStripMenuItemAllTranslatorSupportedLanguages_Add.Text" xml:space="preserve">
-    <value>追加</value>
-  </data>
-  <data name="toolStripMenuItemAllTranslatorSupportedLanguages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
-  </data>
-  <data name="toolStripMenuItemAllTranslatorSupportedLanguages.Text" xml:space="preserve">
-    <value>翻訳サービスのある言語</value>
-  </data>
-  <data name="toolStripMenuItemAllTranslatorSupportedLanguages.ToolTipText" xml:space="preserve">
-    <value>サポートされている翻訳サービスですべての言語を表示する</value>
-  </data>
-  <data name="toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
-  </data>
-  <data name="toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly.Text" xml:space="preserve">
-    <value>見せる</value>
-  </data>
-  <data name="toolStripMenuItemISO639_1UsingOfficialNames_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
-  </data>
-  <data name="toolStripMenuItemISO639_1UsingOfficialNames_Add.Text" xml:space="preserve">
-    <value>追加</value>
-  </data>
-  <data name="toolStripMenuItemISO639_1UsingOfficialNames.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
-  </data>
-  <data name="toolStripMenuItemISO639_1UsingOfficialNames.Text" xml:space="preserve">
-    <value>ISO 639-1 言語セット</value>
-  </data>
-  <data name="toolStripMenuItemISO639_1UsingOfficialNames.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>TextAboveImage</value>
-  </data>
-  <data name="toolStripMenuItemISO639_1UsingOfficialNames.ToolTipText" xml:space="preserve">
-    <value>ISO 639-1 言語セットのみを表示します。</value>
-  </data>
-  <data name="toolStripMenuItem2toolStripMenuItemISO639_1PlusWinLangPack_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
-  </data>
-  <data name="toolStripMenuItem2toolStripMenuItemISO639_1PlusWinLangPack_ShowOnly.Text" xml:space="preserve">
-    <value>見せる</value>
-  </data>
-  <data name="toolStripMenuItemISO639_1PlusWinLangPack_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 34</value>
-  </data>
-  <data name="toolStripMenuItemISO639_1PlusWinLangPack_Add.Text" xml:space="preserve">
-    <value>追加</value>
-  </data>
-  <data name="toolStripMenuItemISO639_1PlusWinLangPack.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="toolStripMenuItemISO639_1PlusWinLangPack.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
-  </data>
-  <data name="toolStripMenuItemISO639_1PlusWinLangPack.Text" xml:space="preserve">
-    <value>ISO 639-1 + ウィンラング パック</value>
-  </data>
-  <data name="toolStripMenuItemISO639_1PlusWinLangPack.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>TextAboveImage</value>
-  </data>
-  <data name="toolStripMenuItemISO639_1PlusWinLangPack.ToolTipText" xml:space="preserve">
-    <value>ISO 639-1 および Windows 言語パックの言語を表示</value>
-  </data>
-  <data name="toolStripMenuItemISO639_1PlusWinLangPack.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="toolStripMenuItemSubLanguagesAndRegions.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="toolStripMenuItemSubLanguagesAndRegions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>432, 34</value>
-  </data>
-  <data name="toolStripMenuItemSubLanguagesAndRegions.Text" xml:space="preserve">
-    <value>リストに追加する サブ言語と地域</value>
-  </data>
-  <data name="toolStripMenuItemSubLanguagesAndRegions.ToolTipText" xml:space="preserve">
-    <value>追加のサブ言語と地域を追加します</value>
-  </data>
-  <data name="toolStripMenuItemSubLanguagesAndRegions.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="toolStripSplitButtonResetDisplayToSet.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="toolStripSplitButtonResetDisplayToSet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 36</value>
-  </data>
-  <data name="toolStripSplitButtonResetDisplayToSet.Text" xml:space="preserve">
-    <value>表示セットをリセット</value>
-  </data>
-  <data name="toolStripSplitButtonResetDisplayToSet.ToolTipText" xml:space="preserve">
-    <value>言語表示セットをデフォルトの表示セットに設定する</value>
-  </data>
-  <data name="toolStripButtonStopTranslation.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="toolStripButtonStopTranslation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 36</value>
-  </data>
-  <data name="toolStripButtonStopTranslation.Text" xml:space="preserve">
-    <value>止まる</value>
-  </data>
-  <data name="toolStripButtonStopTranslation.ToolTipText" xml:space="preserve">
-    <value>翻訳をキャンセル</value>
-  </data>
-  <data name="toolStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 25</value>
-  </data>
-  <data name="toolStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>932, 41</value>
-  </data>
-  <data name="toolStrip1.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="toolStrip1.Text" xml:space="preserve">
-    <value>メインメニュー</value>
-  </data>
   <data name="&gt;&gt;toolStrip1.Name" xml:space="preserve">
     <value>toolStrip1</value>
   </data>
@@ -2782,21 +2032,6 @@
   </data>
   <data name="&gt;&gt;toolStrip1.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="outputBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="outputBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>180, 160</value>
-  </data>
-  <data name="outputBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 10</value>
-  </data>
-  <data name="outputBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>663, 31</value>
-  </data>
-  <data name="outputBox.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
   </data>
   <data name="&gt;&gt;outputBox.Name" xml:space="preserve">
     <value>outputBox</value>
@@ -2810,21 +2045,6 @@
   <data name="&gt;&gt;outputBox.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="inputBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="inputBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>180, 114</value>
-  </data>
-  <data name="inputBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 10</value>
-  </data>
-  <data name="inputBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>495, 31</value>
-  </data>
-  <data name="inputBox.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
   <data name="&gt;&gt;inputBox.Name" xml:space="preserve">
     <value>inputBox</value>
   </data>
@@ -2836,24 +2056,6 @@
   </data>
   <data name="&gt;&gt;inputBox.ZOrder" xml:space="preserve">
     <value>5</value>
-  </data>
-  <data name="outputLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="outputLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="outputLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 164</value>
-  </data>
-  <data name="outputLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 25</value>
-  </data>
-  <data name="outputLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="outputLabel.Text" xml:space="preserve">
-    <value>出力フォルダ：</value>
   </data>
   <data name="&gt;&gt;outputLabel.Name" xml:space="preserve">
     <value>outputLabel</value>
@@ -2867,21 +2069,6 @@
   <data name="&gt;&gt;outputLabel.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="comboBoxFromLanguage.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="comboBoxFromLanguage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>681, 114</value>
-  </data>
-  <data name="comboBoxFromLanguage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="comboBoxFromLanguage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>218, 33</value>
-  </data>
-  <data name="comboBoxFromLanguage.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
   <data name="&gt;&gt;comboBoxFromLanguage.Name" xml:space="preserve">
     <value>comboBoxFromLanguage</value>
   </data>
@@ -2893,24 +2080,6 @@
   </data>
   <data name="&gt;&gt;comboBoxFromLanguage.ZOrder" xml:space="preserve">
     <value>8</value>
-  </data>
-  <data name="inputLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="inputLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="inputLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 117</value>
-  </data>
-  <data name="inputLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 25</value>
-  </data>
-  <data name="inputLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="inputLabel.Text" xml:space="preserve">
-    <value>ソースレス:</value>
   </data>
   <data name="&gt;&gt;inputLabel.Name" xml:space="preserve">
     <value>inputLabel</value>
@@ -2940,7 +2109,7 @@
     <value>1</value>
   </data>
   <data name="resxTab.Text" xml:space="preserve">
-    <value>Resx ファイルの翻訳</value>
+    <value>resxファイルを翻訳します</value>
   </data>
   <data name="&gt;&gt;resxTab.Name" xml:space="preserve">
     <value>resxTab</value>
@@ -2953,6 +2122,870 @@
   </data>
   <data name="&gt;&gt;resxTab.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="tabControlTranslateResxSubTab.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;tabPageLanguageList.Name" xml:space="preserve">
+    <value>tabPageLanguageList</value>
+  </data>
+  <data name="&gt;&gt;tabPageLanguageList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPageLanguageList.Parent" xml:space="preserve">
+    <value>tabControlTranslateResxSubTab</value>
+  </data>
+  <data name="&gt;&gt;tabPageLanguageList.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabPageTranslateResxLogging.Name" xml:space="preserve">
+    <value>tabPageTranslateResxLogging</value>
+  </data>
+  <data name="&gt;&gt;tabPageTranslateResxLogging.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPageTranslateResxLogging.Parent" xml:space="preserve">
+    <value>tabControlTranslateResxSubTab</value>
+  </data>
+  <data name="&gt;&gt;tabPageTranslateResxLogging.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabControlTranslateResxSubTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 216</value>
+  </data>
+  <data name="tabControlTranslateResxSubTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>927, 624</value>
+  </data>
+  <data name="tabControlTranslateResxSubTab.TabIndex" type="System.Int32, mscorlib">
+    <value>1000</value>
+  </data>
+  <data name="&gt;&gt;groupBoxFilterText.Name" xml:space="preserve">
+    <value>groupBoxFilterText</value>
+  </data>
+  <data name="&gt;&gt;groupBoxFilterText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxFilterText.Parent" xml:space="preserve">
+    <value>tabPageLanguageList</value>
+  </data>
+  <data name="&gt;&gt;groupBoxFilterText.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;languageList.Name" xml:space="preserve">
+    <value>languageList</value>
+  </data>
+  <data name="&gt;&gt;languageList.Type" xml:space="preserve">
+    <value>BrightIdeasSoftware.FastObjectListView, ABetterTranslator, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;languageList.Parent" xml:space="preserve">
+    <value>tabPageLanguageList</value>
+  </data>
+  <data name="&gt;&gt;languageList.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabPageLanguageList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 34</value>
+  </data>
+  <data name="tabPageLanguageList.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPageLanguageList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>919, 586</value>
+  </data>
+  <data name="tabPageLanguageList.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabPageLanguageList.Text" xml:space="preserve">
+    <value>言語リスト</value>
+  </data>
+  <data name="groupBoxFilterText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;textBoxFilterText.Name" xml:space="preserve">
+    <value>textBoxFilterText</value>
+  </data>
+  <data name="&gt;&gt;textBoxFilterText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxFilterText.Parent" xml:space="preserve">
+    <value>groupBoxFilterText</value>
+  </data>
+  <data name="&gt;&gt;textBoxFilterText.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;linkLabelFilterText.Name" xml:space="preserve">
+    <value>linkLabelFilterText</value>
+  </data>
+  <data name="&gt;&gt;linkLabelFilterText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelFilterText.Parent" xml:space="preserve">
+    <value>groupBoxFilterText</value>
+  </data>
+  <data name="&gt;&gt;linkLabelFilterText.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBoxFilterText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>206, 6</value>
+  </data>
+  <data name="groupBoxFilterText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>507, 82</value>
+  </data>
+  <data name="groupBoxFilterText.TabIndex" type="System.Int32, mscorlib">
+    <value>144</value>
+  </data>
+  <data name="groupBoxFilterText.Text" xml:space="preserve">
+    <value>言語ディスプレイフィルター</value>
+  </data>
+  <data name="textBoxFilterText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="textBoxFilterText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 30</value>
+  </data>
+  <data name="textBoxFilterText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>460, 31</value>
+  </data>
+  <data name="textBoxFilterText.TabIndex" type="System.Int32, mscorlib">
+    <value>141</value>
+  </data>
+  <data name="linkLabelFilterText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="linkLabelFilterText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="linkLabelFilterText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelFilterText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>477, 33</value>
+  </data>
+  <data name="linkLabelFilterText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 25</value>
+  </data>
+  <data name="linkLabelFilterText.TabIndex" type="System.Int32, mscorlib">
+    <value>143</value>
+  </data>
+  <data name="linkLabelFilterText.Text" xml:space="preserve">
+    <value>？</value>
+  </data>
+  <data name="languageList.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="languageList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 105</value>
+  </data>
+  <data name="languageList.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="languageList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>910, 474</value>
+  </data>
+  <data name="languageList.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="olv_LanguageTag.Text" xml:space="preserve">
+    <value>コード（タグ）</value>
+  </data>
+  <data name="olv_LanguageTag.ToolTipText" xml:space="preserve">
+    <value>翻訳者が使用する言語ISO-639-1コード/タグ</value>
+  </data>
+  <data name="olv_LanguageTag.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="olv_LanguageName.Text" xml:space="preserve">
+    <value>名前</value>
+  </data>
+  <data name="olv_LanguageName.ToolTipText" xml:space="preserve">
+    <value>言語の一次名</value>
+  </data>
+  <data name="olv_LanguageName.Width" type="System.Int32, mscorlib">
+    <value>180</value>
+  </data>
+  <data name="olv_LanguageAliases.Text" xml:space="preserve">
+    <value>エイリアス/国/文化</value>
+  </data>
+  <data name="olv_LanguageAliases.ToolTipText" xml:space="preserve">
+    <value>言語エイリアスまたは主要な国/文化の使用</value>
+  </data>
+  <data name="olv_LanguageAliases.Width" type="System.Int32, mscorlib">
+    <value>160</value>
+  </data>
+  <data name="olv_TranslationSupported.Text" xml:space="preserve">
+    <value>翻訳者</value>
+  </data>
+  <data name="olv_TranslationSupported.ToolTipText" xml:space="preserve">
+    <value>言語が翻訳者によってサポートされているかどうかを指定します。</value>
+  </data>
+  <data name="olv_TranslationSupported.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="olv_LanguageTranslatorTag.Text" xml:space="preserve">
+    <value>トランタグ</value>
+  </data>
+  <data name="olv_LanguageTranslatorTag.ToolTipText" xml:space="preserve">
+    <value>翻訳者が使用するタグ</value>
+  </data>
+  <data name="olv_LanguageTranslatorTag.Width" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="olv_Iso639_3.Text" xml:space="preserve">
+    <value>ISO 639-3</value>
+  </data>
+  <data name="olv_Iso639_3.ToolTipText" xml:space="preserve">
+    <value>言語ISO-639-3コード/タグ名。翻訳者が使用しない3文字のタグ。</value>
+  </data>
+  <data name="olv_Iso639_3.Width" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="&gt;&gt;logBox.Name" xml:space="preserve">
+    <value>logBox</value>
+  </data>
+  <data name="&gt;&gt;logBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;logBox.Parent" xml:space="preserve">
+    <value>tabPageTranslateResxLogging</value>
+  </data>
+  <data name="&gt;&gt;logBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;statusLabel.Name" xml:space="preserve">
+    <value>statusLabel</value>
+  </data>
+  <data name="&gt;&gt;statusLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statusLabel.Parent" xml:space="preserve">
+    <value>tabPageTranslateResxLogging</value>
+  </data>
+  <data name="&gt;&gt;statusLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabPageTranslateResxLogging.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 34</value>
+  </data>
+  <data name="tabPageTranslateResxLogging.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPageTranslateResxLogging.Size" type="System.Drawing.Size, System.Drawing">
+    <value>919, 586</value>
+  </data>
+  <data name="tabPageTranslateResxLogging.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabPageTranslateResxLogging.Text" xml:space="preserve">
+    <value>ロギング</value>
+  </data>
+  <data name="logBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="logBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 7</value>
+  </data>
+  <data name="logBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="logBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>910, 504</value>
+  </data>
+  <data name="logBox.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="logBox.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="statusLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="statusLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="statusLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>226, 531</value>
+  </data>
+  <data name="statusLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>468, 39</value>
+  </data>
+  <data name="statusLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>999</value>
+  </data>
+  <data name="statusLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="toolStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 25</value>
+  </data>
+  <data name="toolStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>932, 41</value>
+  </data>
+  <data name="toolStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="toolStrip1.Text" xml:space="preserve">
+    <value>メインメニュー</value>
+  </data>
+  <data name="toolStripSplitButtonLoad.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="toolStripSplitButtonLoad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 36</value>
+  </data>
+  <data name="toolStripSplitButtonLoad.Text" xml:space="preserve">
+    <value>ロード</value>
+  </data>
+  <data name="toolStripSplitButtonLoad.ToolTipText" xml:space="preserve">
+    <value>以前に選択された言語を含むファイルをロードします</value>
+  </data>
+  <data name="toolStripMenuItemLoadFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>368, 34</value>
+  </data>
+  <data name="toolStripMenuItemLoadFile.Text" xml:space="preserve">
+    <value>選択した言語セットを開きます</value>
+  </data>
+  <data name="toolStripMenuItemLoadFile.ToolTipText" xml:space="preserve">
+    <value>選択した言語の以前に保存されたセットを開きます</value>
+  </data>
+  <data name="toolStripMenuItemOpenResx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>368, 34</value>
+  </data>
+  <data name="toolStripMenuItemOpenResx.Text" xml:space="preserve">
+    <value>resxファイルを開きます</value>
+  </data>
+  <data name="toolStripMenuItemOpenResx.ToolTipText" xml:space="preserve">
+    <value>resxファイルを開いて翻訳します</value>
+  </data>
+  <data name="toolStripMenuItemOpenAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>368, 34</value>
+  </data>
+  <data name="toolStripMenuItemOpenAll.Text" xml:space="preserve">
+    <value>すべてをロードする（プロジェクト）</value>
+  </data>
+  <data name="toolStripMenuItemOpenAll.ToolTipText" xml:space="preserve">
+    <value>以前に保存されたプロジェクト設定ファイルをロードしました。</value>
+  </data>
+  <data name="toolStripMenuItemLoadAndReplaceLanguageSet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>368, 34</value>
+  </data>
+  <data name="toolStripMenuItemLoadAndReplaceLanguageSet.Text" xml:space="preserve">
+    <value>カスタム言語セットとしてロードします</value>
+  </data>
+  <data name="toolStripMenuItemLoadAndReplaceLanguageSet.ToolTipText" xml:space="preserve">
+    <value>以前に保存された選択した言語を開き、選択した言語のみを表示する</value>
+  </data>
+  <data name="toolStripSplitButtonSave.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="toolStripSplitButtonSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 36</value>
+  </data>
+  <data name="toolStripSplitButtonSave.Text" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="toolStripSplitButtonSave.ToolTipText" xml:space="preserve">
+    <value>選択した言語を保存します</value>
+  </data>
+  <data name="toolStripSplitButtonSaveSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>312, 34</value>
+  </data>
+  <data name="toolStripSplitButtonSaveSave.Text" xml:space="preserve">
+    <value>選択した言語を保存します</value>
+  </data>
+  <data name="toolStripSplitButtonSaveSave.ToolTipText" xml:space="preserve">
+    <value>選択した言語のセットを保存します</value>
+  </data>
+  <data name="toolStripSplitButtonSaveSave_Update.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 34</value>
+  </data>
+  <data name="toolStripSplitButtonSaveSave_Update.Text" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="toolStripSplitButtonSaveSave_Update.ToolTipText" xml:space="preserve">
+    <value>選択したすべての言語でファイルを保存または更新します。</value>
+  </data>
+  <data name="toolStripSplitButtonSaveSave_SaveAs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 34</value>
+  </data>
+  <data name="toolStripSplitButtonSaveSave_SaveAs.Text" xml:space="preserve">
+    <value>ASを保存します</value>
+  </data>
+  <data name="toolStripSplitButtonSaveSave_SaveAs.ToolTipText" xml:space="preserve">
+    <value>選択したすべての言語を別のファイル名に保存します。</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>312, 34</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAll.Text" xml:space="preserve">
+    <value>すべてを保存する（プロジェクト）</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAll.ToolTipText" xml:space="preserve">
+    <value>すべての設定をプロジェクトファイルに保存します。</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAll_Update.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 34</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAll_Update.Text" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAll_Update.ToolTipText" xml:space="preserve">
+    <value>プロジェクトファイルを保存または更新します。</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAll_SaveAs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 34</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAll_SaveAs.Text" xml:space="preserve">
+    <value>ASを保存します</value>
+  </data>
+  <data name="toolStripSplitButtonSaveAll_SaveAs.ToolTipText" xml:space="preserve">
+    <value>別のファイル名を使用してプロジェクトファイルを保存します。</value>
+  </data>
+  <data name="toolStripSplitButtonTranslate.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="toolStripSplitButtonTranslate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 36</value>
+  </data>
+  <data name="toolStripSplitButtonTranslate.Text" xml:space="preserve">
+    <value>翻訳を開始します</value>
+  </data>
+  <data name="toolStripSplitButtonTranslate.ToolTipText" xml:space="preserve">
+    <value>選択した言語で翻訳を開始します。言語が選択されていない場合は、すべての言語を翻訳します。</value>
+  </data>
+  <data name="toolStripMenuItemTranslateAllLanguages.Size" type="System.Drawing.Size, System.Drawing">
+    <value>391, 34</value>
+  </data>
+  <data name="toolStripMenuItemTranslateAllLanguages.Text" xml:space="preserve">
+    <value>サポートされているすべての言語を翻訳します</value>
+  </data>
+  <data name="toolStripMenuItemTranslateAllLanguages.ToolTipText" xml:space="preserve">
+    <value>翻訳サービスですべての言語を選択して翻訳します</value>
+  </data>
+  <data name="toolStripMenuItemWindowsSupportedLanguages.Size" type="System.Drawing.Size, System.Drawing">
+    <value>391, 34</value>
+  </data>
+  <data name="toolStripMenuItemWindowsSupportedLanguages.Text" xml:space="preserve">
+    <value>Windows言語パック</value>
+  </data>
+  <data name="toolStripMenuItemWindowsSupportedLanguages.ToolTipText" xml:space="preserve">
+    <value>Windows言語パックで言語を選択して翻訳します</value>
+  </data>
+  <data name="toolStripMenuItemWindowsLanguageInterfacePacks.Size" type="System.Drawing.Size, System.Drawing">
+    <value>391, 34</value>
+  </data>
+  <data name="toolStripMenuItemWindowsLanguageInterfacePacks.Text" xml:space="preserve">
+    <value>Windows言語インターフェイスパック</value>
+  </data>
+  <data name="toolStripMenuItemWindowsLanguageInterfacePacks.ToolTipText" xml:space="preserve">
+    <value>Windows言語インターフェイスパックで言語を選択して翻訳します</value>
+  </data>
+  <data name="toolStripMenuItemTranslateBusinessLanguages.Size" type="System.Drawing.Size, System.Drawing">
+    <value>391, 34</value>
+  </data>
+  <data name="toolStripMenuItemTranslateBusinessLanguages.Text" xml:space="preserve">
+    <value>トップビジネス言語を翻訳します</value>
+  </data>
+  <data name="toolStripMenuItemTranslateBusinessLanguages.ToolTipText" xml:space="preserve">
+    <value>最も使用されているほとんどの国際的なビジネス言語を選択して翻訳します</value>
+  </data>
+  <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>388, 6</value>
+  </data>
+  <data name="toolStripMenuItem_TranslateAfrica.Size" type="System.Drawing.Size, System.Drawing">
+    <value>391, 34</value>
+  </data>
+  <data name="toolStripMenuItem_TranslateAfrica.Text" xml:space="preserve">
+    <value>アフリカ</value>
+  </data>
+  <data name="toolStripMenuItem_TranslateAfrica.ToolTipText" xml:space="preserve">
+    <value>アフリカで最も話されている上位の言語を選択して翻訳します</value>
+  </data>
+  <data name="toolStripMenuItem_TranslateAsia.Size" type="System.Drawing.Size, System.Drawing">
+    <value>391, 34</value>
+  </data>
+  <data name="toolStripMenuItem_TranslateAsia.Text" xml:space="preserve">
+    <value>アジア</value>
+  </data>
+  <data name="toolStripMenuItem_TranslateAsia.ToolTipText" xml:space="preserve">
+    <value>アジアの最も話されている上位の言語を選択して翻訳します</value>
+  </data>
+  <data name="toolStripMenuItem_TranslateEurope.Size" type="System.Drawing.Size, System.Drawing">
+    <value>391, 34</value>
+  </data>
+  <data name="toolStripMenuItem_TranslateEurope.Text" xml:space="preserve">
+    <value>ヨーロッパ</value>
+  </data>
+  <data name="toolStripMenuItem_TranslateEurope.ToolTipText" xml:space="preserve">
+    <value>ヨーロッパで最も話されている上位の言語を選択して翻訳します</value>
+  </data>
+  <data name="toolStripMenuItem_TranslateMiddleEast.Size" type="System.Drawing.Size, System.Drawing">
+    <value>391, 34</value>
+  </data>
+  <data name="toolStripMenuItem_TranslateMiddleEast.Text" xml:space="preserve">
+    <value>中東</value>
+  </data>
+  <data name="toolStripMenuItem_TranslateMiddleEast.ToolTipText" xml:space="preserve">
+    <value>中東で最も話されている上位の言語を選択して翻訳する</value>
+  </data>
+  <data name="toolStripMenuItem_TranslateNorthAmerica.Size" type="System.Drawing.Size, System.Drawing">
+    <value>391, 34</value>
+  </data>
+  <data name="toolStripMenuItem_TranslateNorthAmerica.Text" xml:space="preserve">
+    <value>北米</value>
+  </data>
+  <data name="toolStripMenuItem_TranslateNorthAmerica.ToolTipText" xml:space="preserve">
+    <value>北米で最も話されている上位の言語を選択して翻訳する</value>
+  </data>
+  <data name="toolStripMenuItem_TranslateSouthAmerica.Size" type="System.Drawing.Size, System.Drawing">
+    <value>391, 34</value>
+  </data>
+  <data name="toolStripMenuItem_TranslateSouthAmerica.Text" xml:space="preserve">
+    <value>南アメリカ</value>
+  </data>
+  <data name="toolStripMenuItem_TranslateSouthAmerica.ToolTipText" xml:space="preserve">
+    <value>南アメリカで最も話されている上位の言語を選択して翻訳する</value>
+  </data>
+  <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>388, 6</value>
+  </data>
+  <data name="toolStripMenuItemTranslateTop5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>391, 34</value>
+  </data>
+  <data name="toolStripMenuItemTranslateTop5.Text" xml:space="preserve">
+    <value>トップ5の音声言語を翻訳します</value>
+  </data>
+  <data name="toolStripMenuItemTranslateTop5.ToolTipText" xml:space="preserve">
+    <value>トップ5の音声言語を選択して翻訳します</value>
+  </data>
+  <data name="toolStripMenuItemTranslateTop10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>391, 34</value>
+  </data>
+  <data name="toolStripMenuItemTranslateTop10.Text" xml:space="preserve">
+    <value>トップ10の音声言語を翻訳します</value>
+  </data>
+  <data name="toolStripMenuItemTranslateTop10.ToolTipText" xml:space="preserve">
+    <value>トップ10を選択して翻訳します</value>
+  </data>
+  <data name="toolStripMenuItemTranslateTop20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>391, 34</value>
+  </data>
+  <data name="toolStripMenuItemTranslateTop20.Text" xml:space="preserve">
+    <value>トップ20の音声言語を翻訳します</value>
+  </data>
+  <data name="toolStripMenuItemTranslateTop20.ToolTipText" xml:space="preserve">
+    <value>トップ20を選択して翻訳します</value>
+  </data>
+  <data name="toolStripMenuItemTranslateTop30.Size" type="System.Drawing.Size, System.Drawing">
+    <value>391, 34</value>
+  </data>
+  <data name="toolStripMenuItemTranslateTop30.Text" xml:space="preserve">
+    <value>Translate top 30 spoken languages</value>
+  </data>
+  <data name="toolStripMenuItemTranslateTop30.ToolTipText" xml:space="preserve">
+    <value>トップ30を選択して翻訳します </value>
+  </data>
+  <data name="toolStripSplitButtonSelectAllLanugages.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="toolStripSplitButtonSelectAllLanugages.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 36</value>
+  </data>
+  <data name="toolStripSplitButtonSelectAllLanugages.Text" xml:space="preserve">
+    <value> すべて選択 </value>
+  </data>
+  <data name="toolStripSplitButtonSelectAllLanugages.ToolTipText" xml:space="preserve">
+    <value> すべての言語を選択します </value>
+  </data>
+  <data name="toolStripMenuItemSelectAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>325, 34</value>
+  </data>
+  <data name="toolStripMenuItemSelectAll.Text" xml:space="preserve">
+    <value> すべての言語を選択します </value>
+  </data>
+  <data name="toolStripMenuItemSelectClear.Size" type="System.Drawing.Size, System.Drawing">
+    <value>325, 34</value>
+  </data>
+  <data name="toolStripMenuItemSelectClear.Text" xml:space="preserve">
+    <value> すべての選択をクリアします </value>
+  </data>
+  <data name="toolStripMenuItemSelectClear.ToolTipText" xml:space="preserve">
+    <value> すべての言語を選択しません </value>
+  </data>
+  <data name="toolStripMenuItemSelectUndo.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="toolStripMenuItemSelectUndo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>325, 34</value>
+  </data>
+  <data name="toolStripMenuItemSelectUndo.Text" xml:space="preserve">
+    <value> 最後のグループ選択を元に戻します </value>
+  </data>
+  <data name="toolStripMenuItemSelectUndo.ToolTipText" xml:space="preserve">
+    <value> 以前のグループの選択を解除します </value>
+  </data>
+  <data name="toolStripMenuItemSelectUndo.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="toolStripSplitButtonResetDisplayToSet.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="toolStripSplitButtonResetDisplayToSet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 36</value>
+  </data>
+  <data name="toolStripSplitButtonResetDisplayToSet.Text" xml:space="preserve">
+    <value> 表示セットをリセットします </value>
+  </data>
+  <data name="toolStripSplitButtonResetDisplayToSet.ToolTipText" xml:space="preserve">
+    <value> デフォルトの表示セットに設定された言語表示セット </value>
+  </data>
+  <data name="toolStripMenuItemWindowsLanguagePacks.ShowShortcutKeys" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="toolStripMenuItemWindowsLanguagePacks.Size" type="System.Drawing.Size, System.Drawing">
+    <value>432, 34</value>
+  </data>
+  <data name="toolStripMenuItemWindowsLanguagePacks.Text" xml:space="preserve">
+    <value> Windows 10/11言語パック </value>
+  </data>
+  <data name="toolStripMenuItemWindowsLanguagePacks.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="toolStripMenuItemWindowsLanguagePacks.ToolTipText" xml:space="preserve">
+    <value> Windows10/11言語パックにある言語のみを表示します </value>
+  </data>
+  <data name="toolStripMenuItemWindowsLanguagePacks_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
+    <value>234, 34</value>
+  </data>
+  <data name="toolStripMenuItemWindowsLanguagePacks_ShowOnly.Text" xml:space="preserve">
+    <value> 見せる </value>
+  </data>
+  <data name="toolStripMenuItemWindowsLanguagePacks_Add.Size" type="System.Drawing.Size, System.Drawing">
+    <value>234, 34</value>
+  </data>
+  <data name="toolStripMenuItemWindowsLanguagePacks_Add.Text" xml:space="preserve">
+    <value> 追加 </value>
+  </data>
+  <data name="toolStripMenuItemWindowsLanguagePacks_AddAndSelect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>234, 34</value>
+  </data>
+  <data name="toolStripMenuItemWindowsLanguagePacks_AddAndSelect.Text" xml:space="preserve">
+    <value> 追加して選択します </value>
+  </data>
+  <data name="toolStripMenuItemWindowsLanguagePackInterface.Size" type="System.Drawing.Size, System.Drawing">
+    <value>432, 34</value>
+  </data>
+  <data name="toolStripMenuItemWindowsLanguagePackInterface.Text" xml:space="preserve">
+    <value> Windows言語パックインターフェイス </value>
+  </data>
+  <data name="toolStripMenuItemWindowsLanguagePackInterface.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>TextBeforeImage</value>
+  </data>
+  <data name="toolStripMenuItemWindowsLanguagePackInterface.ToolTipText" xml:space="preserve">
+    <value> Windows言語パックインターフェイスにある言語のみを表示します </value>
+  </data>
+  <data name="toolStripMenuItemWindowsLanguagePackInterface_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
+    <value>234, 34</value>
+  </data>
+  <data name="toolStripMenuItemWindowsLanguagePackInterface_ShowOnly.Text" xml:space="preserve">
+    <value> 見せる </value>
+  </data>
+  <data name="toolStripMenuItemWindowsLanguagePackInterface_Add.Size" type="System.Drawing.Size, System.Drawing">
+    <value>234, 34</value>
+  </data>
+  <data name="toolStripMenuItemWindowsLanguagePackInterface_Add.Text" xml:space="preserve">
+    <value> 追加 </value>
+  </data>
+  <data name="toolStripMenuItemWindowsLanguagePackInterface_AddAndSelect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>234, 34</value>
+  </data>
+  <data name="toolStripMenuItemWindowsLanguagePackInterface_AddAndSelect.Text" xml:space="preserve">
+    <value> 追加して選択します </value>
+  </data>
+  <data name="toolStripSeparator7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>429, 6</value>
+  </data>
+  <data name="toolStripMenuItemAllTranslatorSupportedLanguages.Size" type="System.Drawing.Size, System.Drawing">
+    <value>432, 34</value>
+  </data>
+  <data name="toolStripMenuItemAllTranslatorSupportedLanguages.Text" xml:space="preserve">
+    <value> 翻訳サービスのある言語 </value>
+  </data>
+  <data name="toolStripMenuItemAllTranslatorSupportedLanguages.ToolTipText" xml:space="preserve">
+    <value> サポートされている翻訳サービスですべての言語を表示します </value>
+  </data>
+  <data name="toolStripMenuItemAllTranslatorSupportedLanguages_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 34</value>
+  </data>
+  <data name="toolStripMenuItemAllTranslatorSupportedLanguages_ShowOnly.Text" xml:space="preserve">
+    <value> 見せる </value>
+  </data>
+  <data name="toolStripMenuItemAllTranslatorSupportedLanguages_Add.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 34</value>
+  </data>
+  <data name="toolStripMenuItemAllTranslatorSupportedLanguages_Add.Text" xml:space="preserve">
+    <value> 追加 </value>
+  </data>
+  <data name="toolStripMenuItemISO639_1UsingOfficialNames.Size" type="System.Drawing.Size, System.Drawing">
+    <value>432, 34</value>
+  </data>
+  <data name="toolStripMenuItemISO639_1UsingOfficialNames.Text" xml:space="preserve">
+    <value> ISO 639-1言語セット </value>
+  </data>
+  <data name="toolStripMenuItemISO639_1UsingOfficialNames.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>TextAboveImage</value>
+  </data>
+  <data name="toolStripMenuItemISO639_1UsingOfficialNames.ToolTipText" xml:space="preserve">
+    <value> ISO 639-1言語セットのみを表示します。 </value>
+  </data>
+  <data name="toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 34</value>
+  </data>
+  <data name="toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly.Text" xml:space="preserve">
+    <value> 見せる </value>
+  </data>
+  <data name="toolStripMenuItemISO639_1UsingOfficialNames_Add.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 34</value>
+  </data>
+  <data name="toolStripMenuItemISO639_1UsingOfficialNames_Add.Text" xml:space="preserve">
+    <value> 追加 </value>
+  </data>
+  <data name="toolStripMenuItemISO639_1PlusWinLangPack.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="toolStripMenuItemISO639_1PlusWinLangPack.Size" type="System.Drawing.Size, System.Drawing">
+    <value>432, 34</value>
+  </data>
+  <data name="toolStripMenuItemISO639_1PlusWinLangPack.Text" xml:space="preserve">
+    <value> ISO 639-1 + Win Lang Pack </value>
+  </data>
+  <data name="toolStripMenuItemISO639_1PlusWinLangPack.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>TextAboveImage</value>
+  </data>
+  <data name="toolStripMenuItemISO639_1PlusWinLangPack.ToolTipText" xml:space="preserve">
+    <value> ISO 639-1とWindows言語パックの言語を表示します </value>
+  </data>
+  <data name="toolStripMenuItemISO639_1PlusWinLangPack.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="toolStripMenuItem2toolStripMenuItemISO639_1PlusWinLangPack_ShowOnly.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 34</value>
+  </data>
+  <data name="toolStripMenuItem2toolStripMenuItemISO639_1PlusWinLangPack_ShowOnly.Text" xml:space="preserve">
+    <value> 見せる </value>
+  </data>
+  <data name="toolStripMenuItemISO639_1PlusWinLangPack_Add.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 34</value>
+  </data>
+  <data name="toolStripMenuItemISO639_1PlusWinLangPack_Add.Text" xml:space="preserve">
+    <value> 追加 </value>
+  </data>
+  <data name="toolStripMenuItemSubLanguagesAndRegions.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="toolStripMenuItemSubLanguagesAndRegions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>432, 34</value>
+  </data>
+  <data name="toolStripMenuItemSubLanguagesAndRegions.Text" xml:space="preserve">
+    <value> サブ言語と地域のリストに追加します </value>
+  </data>
+  <data name="toolStripMenuItemSubLanguagesAndRegions.ToolTipText" xml:space="preserve">
+    <value> 追加のサブ言語と地域を追加します </value>
+  </data>
+  <data name="toolStripMenuItemSubLanguagesAndRegions.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="toolStripButtonStopTranslation.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="toolStripButtonStopTranslation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 36</value>
+  </data>
+  <data name="toolStripButtonStopTranslation.Text" xml:space="preserve">
+    <value> 止まる </value>
+  </data>
+  <data name="toolStripButtonStopTranslation.ToolTipText" xml:space="preserve">
+    <value> 翻訳をキャンセルします </value>
+  </data>
+  <data name="outputBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="outputBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>180, 160</value>
+  </data>
+  <data name="outputBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 10</value>
+  </data>
+  <data name="outputBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>663, 31</value>
+  </data>
+  <data name="outputBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="inputBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="inputBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>180, 114</value>
+  </data>
+  <data name="inputBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 10</value>
+  </data>
+  <data name="inputBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>495, 31</value>
+  </data>
+  <data name="inputBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="outputLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="outputLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="outputLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 164</value>
+  </data>
+  <data name="outputLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 25</value>
+  </data>
+  <data name="outputLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="outputLabel.Text" xml:space="preserve">
+    <value> 出力フォルダ： </value>
+  </data>
+  <data name="comboBoxFromLanguage.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="comboBoxFromLanguage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>681, 114</value>
+  </data>
+  <data name="comboBoxFromLanguage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="comboBoxFromLanguage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>218, 33</value>
+  </data>
+  <data name="comboBoxFromLanguage.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="inputLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="inputLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="inputLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 117</value>
+  </data>
+  <data name="inputLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 25</value>
+  </data>
+  <data name="inputLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="inputLabel.Text" xml:space="preserve">
+    <value> ソースResx： </value>
   </data>
   <data name="miniToolStrip.TrayLocation" type="System.Drawing.Point, System.Drawing">
     <value>548, 17</value>
@@ -10275,7 +10308,7 @@
     <value>17, 19, 17, 19</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>A-Better-Translator</value>
+    <value> a-better-translator</value>
   </data>
   <data name="&gt;&gt;openResxFileDialog.Name" xml:space="preserve">
     <value>openResxFileDialog</value>
@@ -10373,16 +10406,34 @@
   <data name="&gt;&gt;toolStripSplitButtonSaveSave.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;toolStripSplitButtonSaveAs.Name" xml:space="preserve">
-    <value>toolStripSplitButtonSaveAs</value>
+  <data name="&gt;&gt;toolStripSplitButtonSaveSave_Update.Name" xml:space="preserve">
+    <value>toolStripSplitButtonSaveSave_Update</value>
   </data>
-  <data name="&gt;&gt;toolStripSplitButtonSaveAs.Type" xml:space="preserve">
+  <data name="&gt;&gt;toolStripSplitButtonSaveSave_Update.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSaveSave_SaveAs.Name" xml:space="preserve">
+    <value>toolStripSplitButtonSaveSave_SaveAs</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSaveSave_SaveAs.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;toolStripSplitButtonSaveAll.Name" xml:space="preserve">
     <value>toolStripSplitButtonSaveAll</value>
   </data>
   <data name="&gt;&gt;toolStripSplitButtonSaveAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSaveAll_Update.Name" xml:space="preserve">
+    <value>toolStripSplitButtonSaveAll_Update</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSaveAll_Update.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSaveAll_SaveAs.Name" xml:space="preserve">
+    <value>toolStripSplitButtonSaveAll_SaveAs</value>
+  </data>
+  <data name="&gt;&gt;toolStripSplitButtonSaveAll_SaveAs.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;toolStripSplitButtonTranslate.Name" xml:space="preserve">
