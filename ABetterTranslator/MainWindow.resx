@@ -1228,8 +1228,134 @@
   <data name="&gt;&gt;buttonBrowseForTextFile.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="MaxTranslateLen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 67</value>
+  </data>
+  <data name="MaxTranslateLen.MaxLength" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="MaxTranslateLen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 31</value>
+  </data>
+  <data name="MaxTranslateLen.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="MaxTranslateLen.Text" xml:space="preserve">
+    <value>5000</value>
+  </data>
+  <data name="MaxTranslateLen.ToolTip" xml:space="preserve">
+    <value>A value between 250 and 5000</value>
+  </data>
+  <data name="&gt;&gt;MaxTranslateLen.Name" xml:space="preserve">
+    <value>MaxTranslateLen</value>
+  </data>
+  <data name="&gt;&gt;MaxTranslateLen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MaxTranslateLen.Parent" xml:space="preserve">
+    <value>tabPageTranslationOptions</value>
+  </data>
+  <data name="&gt;&gt;MaxTranslateLen.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tabControlAdvanceOptionsSubTab.Name" xml:space="preserve">
+    <value>tabControlAdvanceOptionsSubTab</value>
+  </data>
+  <data name="&gt;&gt;tabControlAdvanceOptionsSubTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControlAdvanceOptionsSubTab.Parent" xml:space="preserve">
+    <value>advanceOptionsTab</value>
+  </data>
+  <data name="&gt;&gt;tabControlAdvanceOptionsSubTab.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="advanceOptionsTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 34</value>
+  </data>
+  <data name="advanceOptionsTab.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="advanceOptionsTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>976, 843</value>
+  </data>
+  <data name="advanceOptionsTab.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="advanceOptionsTab.Text" xml:space="preserve">
+    <value>Advance Options</value>
+  </data>
+  <data name="&gt;&gt;advanceOptionsTab.Name" xml:space="preserve">
+    <value>advanceOptionsTab</value>
+  </data>
+  <data name="&gt;&gt;advanceOptionsTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;advanceOptionsTab.Parent" xml:space="preserve">
+    <value>tabs</value>
+  </data>
+  <data name="&gt;&gt;advanceOptionsTab.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="tabControlAdvanceOptionsSubTab.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;tabPageResxTranslationOptions.Name" xml:space="preserve">
+    <value>tabPageResxTranslationOptions</value>
+  </data>
+  <data name="&gt;&gt;tabPageResxTranslationOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPageResxTranslationOptions.Parent" xml:space="preserve">
+    <value>tabControlAdvanceOptionsSubTab</value>
+  </data>
+  <data name="&gt;&gt;tabPageResxTranslationOptions.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabPageTranslationOptions.Name" xml:space="preserve">
+    <value>tabPageTranslationOptions</value>
+  </data>
+  <data name="&gt;&gt;tabPageTranslationOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPageTranslationOptions.Parent" xml:space="preserve">
+    <value>tabControlAdvanceOptionsSubTab</value>
+  </data>
+  <data name="&gt;&gt;tabPageTranslationOptions.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tabPageLoggingOptions.Name" xml:space="preserve">
+    <value>tabPageLoggingOptions</value>
+  </data>
+  <data name="&gt;&gt;tabPageLoggingOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPageLoggingOptions.Parent" xml:space="preserve">
+    <value>tabControlAdvanceOptionsSubTab</value>
+  </data>
+  <data name="&gt;&gt;tabPageLoggingOptions.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tabControlAdvanceOptionsSubTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 71</value>
+  </data>
+  <data name="tabControlAdvanceOptionsSubTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>967, 766</value>
+  </data>
+  <data name="tabControlAdvanceOptionsSubTab.TabIndex" type="System.Int32, mscorlib">
+    <value>169</value>
+  </data>
+  <data name="&gt;&gt;tabControlAdvanceOptionsSubTab.Name" xml:space="preserve">
+    <value>tabControlAdvanceOptionsSubTab</value>
+  </data>
+  <data name="&gt;&gt;tabControlAdvanceOptionsSubTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControlAdvanceOptionsSubTab.Parent" xml:space="preserve">
+    <value>advanceOptionsTab</value>
+  </data>
+  <data name="&gt;&gt;tabControlAdvanceOptionsSubTab.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;groupBoxBkUpDir.Name" xml:space="preserve">
     <value>groupBoxBkUpDir</value>
@@ -1293,270 +1419,6 @@
   </data>
   <data name="&gt;&gt;tabPageResxTranslationOptions.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="labelMaxThread.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelMaxThread.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelMaxThread.Location" type="System.Drawing.Point, System.Drawing">
-    <value>127, 24</value>
-  </data>
-  <data name="labelMaxThread.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 25</value>
-  </data>
-  <data name="labelMaxThread.TabIndex" type="System.Int32, mscorlib">
-    <value>96</value>
-  </data>
-  <data name="labelMaxThread.Text" xml:space="preserve">
-    <value>Max Threads</value>
-  </data>
-  <data name="&gt;&gt;labelMaxThread.Name" xml:space="preserve">
-    <value>labelMaxThread</value>
-  </data>
-  <data name="&gt;&gt;labelMaxThread.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelMaxThread.Parent" xml:space="preserve">
-    <value>tabPageTranslationOptions</value>
-  </data>
-  <data name="&gt;&gt;labelMaxThread.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="MaxThread.Location" type="System.Drawing.Point, System.Drawing">
-    <value>54, 24</value>
-  </data>
-  <data name="MaxThread.MaxLength" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="MaxThread.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 31</value>
-  </data>
-  <data name="MaxThread.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="MaxThread.Text" xml:space="preserve">
-    <value>-1</value>
-  </data>
-  <data name="&gt;&gt;MaxThread.Name" xml:space="preserve">
-    <value>MaxThread</value>
-  </data>
-  <data name="&gt;&gt;MaxThread.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MaxThread.Parent" xml:space="preserve">
-    <value>tabPageTranslationOptions</value>
-  </data>
-  <data name="&gt;&gt;MaxThread.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="MaxTranslateLen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>54, 67</value>
-  </data>
-  <data name="MaxTranslateLen.MaxLength" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="MaxTranslateLen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 31</value>
-  </data>
-  <data name="MaxTranslateLen.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="MaxTranslateLen.Text" xml:space="preserve">
-    <value>5000</value>
-  </data>
-  <data name="MaxTranslateLen.ToolTip" xml:space="preserve">
-    <value>A value between 250 and 5000</value>
-  </data>
-  <data name="&gt;&gt;MaxTranslateLen.Name" xml:space="preserve">
-    <value>MaxTranslateLen</value>
-  </data>
-  <data name="&gt;&gt;MaxTranslateLen.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MaxTranslateLen.Parent" xml:space="preserve">
-    <value>tabPageTranslationOptions</value>
-  </data>
-  <data name="&gt;&gt;MaxTranslateLen.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="labelMaxTranslateLen.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelMaxTranslateLen.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelMaxTranslateLen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>127, 67</value>
-  </data>
-  <data name="labelMaxTranslateLen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 25</value>
-  </data>
-  <data name="labelMaxTranslateLen.TabIndex" type="System.Int32, mscorlib">
-    <value>95</value>
-  </data>
-  <data name="labelMaxTranslateLen.Text" xml:space="preserve">
-    <value>Max Translation Len</value>
-  </data>
-  <data name="&gt;&gt;labelMaxTranslateLen.Name" xml:space="preserve">
-    <value>labelMaxTranslateLen</value>
-  </data>
-  <data name="&gt;&gt;labelMaxTranslateLen.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelMaxTranslateLen.Parent" xml:space="preserve">
-    <value>tabPageTranslationOptions</value>
-  </data>
-  <data name="&gt;&gt;labelMaxTranslateLen.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="tabPageTranslationOptions.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 34</value>
-  </data>
-  <data name="tabPageTranslationOptions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>959, 728</value>
-  </data>
-  <data name="tabPageTranslationOptions.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="tabPageTranslationOptions.Text" xml:space="preserve">
-    <value>Translator Settings</value>
-  </data>
-  <data name="&gt;&gt;tabPageTranslationOptions.Name" xml:space="preserve">
-    <value>tabPageTranslationOptions</value>
-  </data>
-  <data name="&gt;&gt;tabPageTranslationOptions.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageTranslationOptions.Parent" xml:space="preserve">
-    <value>tabControlAdvanceOptionsSubTab</value>
-  </data>
-  <data name="&gt;&gt;tabPageTranslationOptions.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;groupBoxScreenVerbosityLevel.Name" xml:space="preserve">
-    <value>groupBoxScreenVerbosityLevel</value>
-  </data>
-  <data name="&gt;&gt;groupBoxScreenVerbosityLevel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxScreenVerbosityLevel.Parent" xml:space="preserve">
-    <value>tabPageLoggingOptions</value>
-  </data>
-  <data name="&gt;&gt;groupBoxScreenVerbosityLevel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;groupBoxLogFileVerbosityLevel.Name" xml:space="preserve">
-    <value>groupBoxLogFileVerbosityLevel</value>
-  </data>
-  <data name="&gt;&gt;groupBoxLogFileVerbosityLevel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxLogFileVerbosityLevel.Parent" xml:space="preserve">
-    <value>tabPageLoggingOptions</value>
-  </data>
-  <data name="&gt;&gt;groupBoxLogFileVerbosityLevel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;textBoxLogFolderPath.Name" xml:space="preserve">
-    <value>textBoxLogFolderPath</value>
-  </data>
-  <data name="&gt;&gt;textBoxLogFolderPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxLogFolderPath.Parent" xml:space="preserve">
-    <value>tabPageLoggingOptions</value>
-  </data>
-  <data name="&gt;&gt;textBoxLogFolderPath.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;labelLogFolderPath.Name" xml:space="preserve">
-    <value>labelLogFolderPath</value>
-  </data>
-  <data name="&gt;&gt;labelLogFolderPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelLogFolderPath.Parent" xml:space="preserve">
-    <value>tabPageLoggingOptions</value>
-  </data>
-  <data name="&gt;&gt;labelLogFolderPath.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="tabPageLoggingOptions.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 34</value>
-  </data>
-  <data name="tabPageLoggingOptions.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPageLoggingOptions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>959, 728</value>
-  </data>
-  <data name="tabPageLoggingOptions.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tabPageLoggingOptions.Text" xml:space="preserve">
-    <value>Logging / Verbosity</value>
-  </data>
-  <data name="&gt;&gt;tabPageLoggingOptions.Name" xml:space="preserve">
-    <value>tabPageLoggingOptions</value>
-  </data>
-  <data name="&gt;&gt;tabPageLoggingOptions.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageLoggingOptions.Parent" xml:space="preserve">
-    <value>tabControlAdvanceOptionsSubTab</value>
-  </data>
-  <data name="&gt;&gt;tabPageLoggingOptions.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tabControlAdvanceOptionsSubTab.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 71</value>
-  </data>
-  <data name="tabControlAdvanceOptionsSubTab.Size" type="System.Drawing.Size, System.Drawing">
-    <value>967, 766</value>
-  </data>
-  <data name="tabControlAdvanceOptionsSubTab.TabIndex" type="System.Int32, mscorlib">
-    <value>169</value>
-  </data>
-  <data name="&gt;&gt;tabControlAdvanceOptionsSubTab.Name" xml:space="preserve">
-    <value>tabControlAdvanceOptionsSubTab</value>
-  </data>
-  <data name="&gt;&gt;tabControlAdvanceOptionsSubTab.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabControlAdvanceOptionsSubTab.Parent" xml:space="preserve">
-    <value>advanceOptionsTab</value>
-  </data>
-  <data name="&gt;&gt;tabControlAdvanceOptionsSubTab.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="advanceOptionsTab.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 34</value>
-  </data>
-  <data name="advanceOptionsTab.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="advanceOptionsTab.Size" type="System.Drawing.Size, System.Drawing">
-    <value>976, 843</value>
-  </data>
-  <data name="advanceOptionsTab.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="advanceOptionsTab.Text" xml:space="preserve">
-    <value>Advance Options</value>
-  </data>
-  <data name="&gt;&gt;advanceOptionsTab.Name" xml:space="preserve">
-    <value>advanceOptionsTab</value>
-  </data>
-  <data name="&gt;&gt;advanceOptionsTab.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;advanceOptionsTab.Parent" xml:space="preserve">
-    <value>tabs</value>
-  </data>
-  <data name="&gt;&gt;advanceOptionsTab.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="groupBoxBkUpDir.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -1677,6 +1539,228 @@
   </data>
   <data name="&gt;&gt;checkBoxBackupFilesBeforeTranslation.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="&gt;&gt;labelMaxThread.Name" xml:space="preserve">
+    <value>labelMaxThread</value>
+  </data>
+  <data name="&gt;&gt;labelMaxThread.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelMaxThread.Parent" xml:space="preserve">
+    <value>tabPageTranslationOptions</value>
+  </data>
+  <data name="&gt;&gt;labelMaxThread.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;MaxThread.Name" xml:space="preserve">
+    <value>MaxThread</value>
+  </data>
+  <data name="&gt;&gt;MaxThread.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MaxThread.Parent" xml:space="preserve">
+    <value>tabPageTranslationOptions</value>
+  </data>
+  <data name="&gt;&gt;MaxThread.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;labelMaxTranslateLen.Name" xml:space="preserve">
+    <value>labelMaxTranslateLen</value>
+  </data>
+  <data name="&gt;&gt;labelMaxTranslateLen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelMaxTranslateLen.Parent" xml:space="preserve">
+    <value>tabPageTranslationOptions</value>
+  </data>
+  <data name="&gt;&gt;labelMaxTranslateLen.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tabPageTranslationOptions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 34</value>
+  </data>
+  <data name="tabPageTranslationOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>959, 728</value>
+  </data>
+  <data name="tabPageTranslationOptions.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tabPageTranslationOptions.Text" xml:space="preserve">
+    <value>Translator Settings</value>
+  </data>
+  <data name="&gt;&gt;tabPageTranslationOptions.Name" xml:space="preserve">
+    <value>tabPageTranslationOptions</value>
+  </data>
+  <data name="&gt;&gt;tabPageTranslationOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPageTranslationOptions.Parent" xml:space="preserve">
+    <value>tabControlAdvanceOptionsSubTab</value>
+  </data>
+  <data name="&gt;&gt;tabPageTranslationOptions.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="labelMaxThread.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelMaxThread.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelMaxThread.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 24</value>
+  </data>
+  <data name="labelMaxThread.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 25</value>
+  </data>
+  <data name="labelMaxThread.TabIndex" type="System.Int32, mscorlib">
+    <value>96</value>
+  </data>
+  <data name="labelMaxThread.Text" xml:space="preserve">
+    <value>Max Threads</value>
+  </data>
+  <data name="&gt;&gt;labelMaxThread.Name" xml:space="preserve">
+    <value>labelMaxThread</value>
+  </data>
+  <data name="&gt;&gt;labelMaxThread.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelMaxThread.Parent" xml:space="preserve">
+    <value>tabPageTranslationOptions</value>
+  </data>
+  <data name="&gt;&gt;labelMaxThread.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="MaxThread.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 24</value>
+  </data>
+  <data name="MaxThread.MaxLength" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="MaxThread.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 31</value>
+  </data>
+  <data name="MaxThread.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="MaxThread.Text" xml:space="preserve">
+    <value>-1</value>
+  </data>
+  <data name="&gt;&gt;MaxThread.Name" xml:space="preserve">
+    <value>MaxThread</value>
+  </data>
+  <data name="&gt;&gt;MaxThread.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MaxThread.Parent" xml:space="preserve">
+    <value>tabPageTranslationOptions</value>
+  </data>
+  <data name="&gt;&gt;MaxThread.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="labelMaxTranslateLen.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelMaxTranslateLen.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelMaxTranslateLen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 67</value>
+  </data>
+  <data name="labelMaxTranslateLen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 25</value>
+  </data>
+  <data name="labelMaxTranslateLen.TabIndex" type="System.Int32, mscorlib">
+    <value>95</value>
+  </data>
+  <data name="labelMaxTranslateLen.Text" xml:space="preserve">
+    <value>Max Translation Len</value>
+  </data>
+  <data name="&gt;&gt;labelMaxTranslateLen.Name" xml:space="preserve">
+    <value>labelMaxTranslateLen</value>
+  </data>
+  <data name="&gt;&gt;labelMaxTranslateLen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelMaxTranslateLen.Parent" xml:space="preserve">
+    <value>tabPageTranslationOptions</value>
+  </data>
+  <data name="&gt;&gt;labelMaxTranslateLen.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;groupBoxScreenVerbosityLevel.Name" xml:space="preserve">
+    <value>groupBoxScreenVerbosityLevel</value>
+  </data>
+  <data name="&gt;&gt;groupBoxScreenVerbosityLevel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxScreenVerbosityLevel.Parent" xml:space="preserve">
+    <value>tabPageLoggingOptions</value>
+  </data>
+  <data name="&gt;&gt;groupBoxScreenVerbosityLevel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;groupBoxLogFileVerbosityLevel.Name" xml:space="preserve">
+    <value>groupBoxLogFileVerbosityLevel</value>
+  </data>
+  <data name="&gt;&gt;groupBoxLogFileVerbosityLevel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxLogFileVerbosityLevel.Parent" xml:space="preserve">
+    <value>tabPageLoggingOptions</value>
+  </data>
+  <data name="&gt;&gt;groupBoxLogFileVerbosityLevel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;textBoxLogFolderPath.Name" xml:space="preserve">
+    <value>textBoxLogFolderPath</value>
+  </data>
+  <data name="&gt;&gt;textBoxLogFolderPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxLogFolderPath.Parent" xml:space="preserve">
+    <value>tabPageLoggingOptions</value>
+  </data>
+  <data name="&gt;&gt;textBoxLogFolderPath.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;labelLogFolderPath.Name" xml:space="preserve">
+    <value>labelLogFolderPath</value>
+  </data>
+  <data name="&gt;&gt;labelLogFolderPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelLogFolderPath.Parent" xml:space="preserve">
+    <value>tabPageLoggingOptions</value>
+  </data>
+  <data name="&gt;&gt;labelLogFolderPath.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tabPageLoggingOptions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 34</value>
+  </data>
+  <data name="tabPageLoggingOptions.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPageLoggingOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>959, 728</value>
+  </data>
+  <data name="tabPageLoggingOptions.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabPageLoggingOptions.Text" xml:space="preserve">
+    <value>Logging / Verbosity</value>
+  </data>
+  <data name="&gt;&gt;tabPageLoggingOptions.Name" xml:space="preserve">
+    <value>tabPageLoggingOptions</value>
+  </data>
+  <data name="&gt;&gt;tabPageLoggingOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPageLoggingOptions.Parent" xml:space="preserve">
+    <value>tabControlAdvanceOptionsSubTab</value>
+  </data>
+  <data name="&gt;&gt;tabPageLoggingOptions.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;comboBoxScreenVerbosityLevel.Name" xml:space="preserve">
     <value>comboBoxScreenVerbosityLevel</value>

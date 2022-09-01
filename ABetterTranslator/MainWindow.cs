@@ -402,6 +402,7 @@ namespace ABetterTranslator
 
 			LockControls(false);
 			statusLabel.Visible = false;
+            Text = $"{Application.ProductName} {Application.ProductVersion}";
             PopulateComboBoxLanguage();
         }
         [ConditionalAttribute("DEBUG")]
