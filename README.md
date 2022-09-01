@@ -120,9 +120,9 @@ Default: **-1**
 #### Max Translation Len
 
 The translation length is used when the program translates many strings in a single translation request.
-The minimum value is 255, and the maximum value is 10,000.
+The minimum value is 255, and the maximum value is 5,000.
 
-Default: **10000**
+Default: **5000**
 
 #### Strings Per Translation Req
 
@@ -135,7 +135,7 @@ Default: **10000**
     * Only one string is sent per Resx translation request. Use this option if any of the strings contains the {next-line} character.
 
   * [Multiple]
-    * Multiple strings are sent per Resx translation request. This is the preferred option if total translation is less then 10,000 characters.
+    * Multiple strings are sent per Resx translation request. This is the preferred option if total translation is less then 5,000 characters.
 
 * Default: **Auto**
 
