@@ -125,7 +125,6 @@ namespace ABetterTranslator
             Windows10Plus_LanguageInterfacePacks,
             TranslatorSupportedLanguages,
             Iso639_1_Languages,
-            Iso639_1_Plus,
             AllLanguages,
         }
 
@@ -1701,10 +1700,6 @@ namespace ABetterTranslator
                         PopulateLanguageSet(LanguageCodes.LanguageCodesAndAliases, true);
                         toolStripMenuItemISO639_1UsingOfficialNames.Checked = true;
                         break;
-                    case LanguageSet.Iso639_1_Plus:
-                        PopulateLanguageSet(LanguageCodes.LanguageCodesAndAliases);
-                        toolStripMenuItemISO639_1PlusWinLangPack.Checked = true;
-                        break;
                     case LanguageSet.AllLanguages:
                         PopulateAllLanguages();
                         toolStripMenuItemAllLanguages.Checked = true;
@@ -2320,11 +2315,10 @@ namespace ABetterTranslator
         private void toolStripMenuItemWindowsLanguagePacks_Add_Click(object sender, EventArgs e)=> PopulateLanguageSet(LanguageSet.Windows10Plus_LanguagePacks);
         private void toolStripMenuItemWindowsLanguagePackInterface_ShowOnly_Click(object sender, EventArgs e) => toolStripMenuItemWindowsLanguagePackInterface_Click(sender, e);
         private void toolStripMenuItemWindowsLanguagePackInterface_Add_Click(object sender, EventArgs e)=>PopulateLanguageSet(LanguageSet.Windows10Plus_LanguageInterfacePacks);
-       private void toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly_Click(object sender, EventArgs e) => toolStripMenuItemISO639_1UsingOfficialNames_Click(sender, e);
-        private void toolStripMenuItemISO639_1UsingOfficialNames_Add_Click(object sender, EventArgs e)=> PopulateLanguageSet(LanguageSet.Iso639_1_Plus);
+        private void toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly_Click(object sender, EventArgs e) => toolStripMenuItemISO639_1UsingOfficialNames_Click(sender, e);
+        private void toolStripMenuItemISO639_1UsingOfficialNames_Add_Click(object sender, EventArgs e) => PopulateLanguageSet(LanguageSet.Iso639_1_Languages);
         private void toolStripMenuItemAllTranslatorSupportedLanguages_ShowOnly_Click(object sender, EventArgs e) => toolStripMenuItemAllTranslatorSupportedLanguages_Click(sender, e);
         private void toolStripMenuItemAllTranslatorSupportedLanguages_Add_Click(object sender, EventArgs e) => PopulateLanguageSet(LanguageSet.TranslatorSupportedLanguages);
-        private void toolStripMenuItem2toolStripMenuItemISO639_1PlusWinLangPack_ShowOnly_Click(object sender, EventArgs e) => toolStripMenuItemISO639_1PlusWinLangPack_Click(sender, e);
         private void toolStripMenuItemAllLanguages_Click(object sender, EventArgs e)
         {
             if ( checkBoxDispalyWarningPrompts.Checked )
@@ -2335,7 +2329,6 @@ namespace ABetterTranslator
             }
             PopulateLanguageSet(LanguageSet.AllLanguages);
         }
-        private void toolStripMenuItemISO639_1PlusWinLangPack_Add_Click(object sender, EventArgs e) => PopulateLanguageSet(LanguageSet.Iso639_1_Plus);
         private void toolStripMenuItemWindowsLanguagePacks_Click(object sender, EventArgs e)
         {
             ClearLanguageSet();
@@ -2356,11 +2349,7 @@ namespace ABetterTranslator
             ClearLanguageSet();
             PopulateLanguageSet((LanguageSet) comboBoxDefaultLanguageSet.SelectedIndex);
         }
-        private void toolStripMenuItemISO639_1PlusWinLangPack_Click(object sender, EventArgs e)
-        {
-            ClearLanguageSet();
-            PopulateLanguageSet(LanguageSet.Iso639_1_Plus);
-        }
+
         private void toolStripMenuItemWindowsLanguagePacks_AddAndSelect_Click(object sender, EventArgs e)
         {
             PopulateLanguageSet(LanguageSet.Windows10Plus_LanguagePacks);
