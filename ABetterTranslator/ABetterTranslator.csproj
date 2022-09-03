@@ -23,6 +23,7 @@
     <PackageTags>translator;translation;automation;translation automation;resx</PackageTags>
     <PackageReleaseNotes>https://github.com/David-Maisonave/ABetterTranslator</PackageReleaseNotes>
     <NeutralLanguage>en</NeutralLanguage>
+    <IncrementVersionOnBuild>1.yyyy.Mdd.Hmm</IncrementVersionOnBuild>
   </PropertyGroup>
   <ItemGroup>
     <Content Include="Images\Logo2.ico" />

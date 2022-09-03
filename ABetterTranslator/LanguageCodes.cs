@@ -7,14 +7,57 @@
  * ***************************************************************************
 */
 using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Data;
+using System.Diagnostics;
+using System.DirectoryServices.ActiveDirectory;
+using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Net.NetworkInformation;
+using System.Net;
+using System.Runtime.InteropServices;
+using System.Security.Claims;
+using System.Security.Cryptography;
+using System.Security.Policy;
 using System.Text;
+using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using ABI.System;
 using GTranslate.Translators;
+using Microsoft.VisualBasic.Devices;
+using Microsoft.VisualBasic.Logging;
+using static BrightIdeasSoftware.TreeListView;
+using static System.Windows.Forms.LinkLabel;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar;
+
+
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
+
+
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
+
+
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
+
+
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip;
+
+
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
+
+using Windows.Devices.Radios;
+
+
+using Windows.Foundation.Collections;
+
 namespace ABetterTranslator
 {
-    internal class LanguageCodes
+    static partial class LanguageCodes
     {
         // ToDo: Consider moving this logic to GTranslate\LanguageDictionary.cs
         // Missing languages Bhojpuri, Dogri, Ilocano, Krio, Luganda, Maithili, Meiteilon (Manipuri), Mizo, Sepedi, Sorani Kurdish
@@ -522,7 +565,6 @@ namespace ABetterTranslator
             "foofoo",
             //"ay", "bho", "cv", "dgo", "emj", "fj", "hmn", "ht", "ikt", "ilo", "kazlat", "kmr", "lzh", "mhr", "mrj", "mww", "ny", "otq", "qu", "sjn", "sm", "tlh", "tw", "ty", "udm", "uzbcyr", "yua", "yue"
         };
-
         // ToDo: Delete the following variable after troubleshooting issues.
         public static readonly string[] LanguageTagsNotRecongnizedByCompiler = {
            "ay", "bho", "cv", "dgo", "emj", "fj", "hmn", "ht", "ikt", "ilo", "kazlat", "kmr", "lzh", "mhr", "mrj", "mww", "ny", "otq", "qu", "sjn", "sm", "tlh", "tw", "ty", "udm", "uzbcyr", "yua", "yue"
