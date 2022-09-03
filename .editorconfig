@@ -202,6 +202,12 @@ dotnet_diagnostic.IDE0055.severity = none
 # IDE1006: Naming Styles
 dotnet_diagnostic.IDE1006.severity = none
 
+# IDE0052: Remove unread private members
+dotnet_diagnostic.IDE0052.severity = none
+
+# CS8767: Nullability of reference types in type of parameter doesn't match implicitly implemented member (possibly because of nullability attributes).
+dotnet_diagnostic.CS8767.severity = none
+
 [*.vb]
 #### Naming styles ####
 

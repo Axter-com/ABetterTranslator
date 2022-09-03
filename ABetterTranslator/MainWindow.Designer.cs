@@ -75,6 +75,7 @@ namespace ABetterTranslator
             this.progressBarWhileTranslatingResxFile = new System.Windows.Forms.ProgressBar();
             this.buttonOpenFolderInWindowsExplorer = new System.Windows.Forms.Button();
             this.buttonBrowseForTextFile = new System.Windows.Forms.Button();
+            this.MaxTranslateLen = new System.Windows.Forms.TextBox();
             this.advanceOptionsTab = new System.Windows.Forms.TabPage();
             this.tabControlAdvanceOptionsSubTab = new System.Windows.Forms.TabControl();
             this.tabPageResxTranslationOptions = new System.Windows.Forms.TabPage();
@@ -85,7 +86,6 @@ namespace ABetterTranslator
             this.tabPageTranslationOptions = new System.Windows.Forms.TabPage();
             this.labelMaxThread = new System.Windows.Forms.Label();
             this.MaxThread = new System.Windows.Forms.TextBox();
-            this.MaxTranslateLen = new System.Windows.Forms.TextBox();
             this.labelMaxTranslateLen = new System.Windows.Forms.Label();
             this.tabPageLoggingOptions = new System.Windows.Forms.TabPage();
             this.groupBoxScreenVerbosityLevel = new System.Windows.Forms.GroupBox();
@@ -171,10 +171,7 @@ namespace ABetterTranslator
             this.toolStripMenuItemISO639_1UsingOfficialNames = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemISO639_1UsingOfficialNames_Add = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItemISO639_1PlusWinLangPack = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2toolStripMenuItemISO639_1PlusWinLangPack_ShowOnly = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItemISO639_1PlusWinLangPack_Add = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItemSubLanguagesAndRegions = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemAllLanguages = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripButtonStopTranslation = new System.Windows.Forms.ToolStripButton();
             this.outputBox = new System.Windows.Forms.TextBox();
             this.inputBox = new System.Windows.Forms.TextBox();
@@ -501,6 +498,13 @@ namespace ABetterTranslator
             this.buttonBrowseForTextFile.UseVisualStyleBackColor = true;
             this.buttonBrowseForTextFile.Click += new System.EventHandler(this.buttonBrowseForTextFile_Click);
             // 
+            // MaxTranslateLen
+            // 
+            resources.ApplyResources(this.MaxTranslateLen, "MaxTranslateLen");
+            this.MaxTranslateLen.Name = "MaxTranslateLen";
+            this.toolTip.SetToolTip(this.MaxTranslateLen, resources.GetString("MaxTranslateLen.ToolTip"));
+            this.MaxTranslateLen.Validating += new System.ComponentModel.CancelEventHandler(this.MaxTranslateLen_Validating);
+            // 
             // advanceOptionsTab
             // 
             this.advanceOptionsTab.Controls.Add(this.tabControlAdvanceOptionsSubTab);
@@ -587,13 +591,6 @@ namespace ABetterTranslator
             // 
             resources.ApplyResources(this.MaxThread, "MaxThread");
             this.MaxThread.Name = "MaxThread";
-            // 
-            // MaxTranslateLen
-            // 
-            resources.ApplyResources(this.MaxTranslateLen, "MaxTranslateLen");
-            this.MaxTranslateLen.Name = "MaxTranslateLen";
-            this.toolTip.SetToolTip(this.MaxTranslateLen, resources.GetString("MaxTranslateLen.ToolTip"));
-            this.MaxTranslateLen.Validating += new System.ComponentModel.CancelEventHandler(this.MaxTranslateLen_Validating);
             // 
             // labelMaxTranslateLen
             // 
@@ -1166,8 +1163,7 @@ namespace ABetterTranslator
             this.toolStripSeparator7,
             this.toolStripMenuItemAllTranslatorSupportedLanguages,
             this.toolStripMenuItemISO639_1UsingOfficialNames,
-            this.toolStripMenuItemISO639_1PlusWinLangPack,
-            this.toolStripMenuItemSubLanguagesAndRegions});
+            this.toolStripMenuItemAllLanguages});
             this.toolStripSplitButtonResetDisplayToSet.Image = global::ABetterTranslator.Properties.Resources.ISO_InWorld__64_x_64_;
             resources.ApplyResources(this.toolStripSplitButtonResetDisplayToSet, "toolStripSplitButtonResetDisplayToSet");
             this.toolStripSplitButtonResetDisplayToSet.Name = "toolStripSplitButtonResetDisplayToSet";
@@ -1289,36 +1285,11 @@ namespace ABetterTranslator
             resources.ApplyResources(this.toolStripMenuItemISO639_1UsingOfficialNames_Add, "toolStripMenuItemISO639_1UsingOfficialNames_Add");
             this.toolStripMenuItemISO639_1UsingOfficialNames_Add.Click += new System.EventHandler(this.toolStripMenuItemISO639_1UsingOfficialNames_Add_Click);
             // 
-            // toolStripMenuItemISO639_1PlusWinLangPack
+            // toolStripMenuItemAllLanguages
             // 
-            this.toolStripMenuItemISO639_1PlusWinLangPack.Checked = true;
-            this.toolStripMenuItemISO639_1PlusWinLangPack.CheckOnClick = true;
-            this.toolStripMenuItemISO639_1PlusWinLangPack.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.toolStripMenuItemISO639_1PlusWinLangPack.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem2toolStripMenuItemISO639_1PlusWinLangPack_ShowOnly,
-            this.toolStripMenuItemISO639_1PlusWinLangPack_Add});
-            resources.ApplyResources(this.toolStripMenuItemISO639_1PlusWinLangPack, "toolStripMenuItemISO639_1PlusWinLangPack");
-            this.toolStripMenuItemISO639_1PlusWinLangPack.Image = global::ABetterTranslator.Properties.Resources.WindowsAnd_ISO_Languages__64_x_64_;
-            this.toolStripMenuItemISO639_1PlusWinLangPack.Name = "toolStripMenuItemISO639_1PlusWinLangPack";
-            this.toolStripMenuItemISO639_1PlusWinLangPack.Click += new System.EventHandler(this.toolStripMenuItemISO639_1PlusWinLangPack_Click);
-            // 
-            // toolStripMenuItem2toolStripMenuItemISO639_1PlusWinLangPack_ShowOnly
-            // 
-            this.toolStripMenuItem2toolStripMenuItemISO639_1PlusWinLangPack_ShowOnly.Name = "toolStripMenuItem2toolStripMenuItemISO639_1PlusWinLangPack_ShowOnly";
-            resources.ApplyResources(this.toolStripMenuItem2toolStripMenuItemISO639_1PlusWinLangPack_ShowOnly, "toolStripMenuItem2toolStripMenuItemISO639_1PlusWinLangPack_ShowOnly");
-            this.toolStripMenuItem2toolStripMenuItemISO639_1PlusWinLangPack_ShowOnly.Click += new System.EventHandler(this.toolStripMenuItem2toolStripMenuItemISO639_1PlusWinLangPack_ShowOnly_Click);
-            // 
-            // toolStripMenuItemISO639_1PlusWinLangPack_Add
-            // 
-            this.toolStripMenuItemISO639_1PlusWinLangPack_Add.Name = "toolStripMenuItemISO639_1PlusWinLangPack_Add";
-            resources.ApplyResources(this.toolStripMenuItemISO639_1PlusWinLangPack_Add, "toolStripMenuItemISO639_1PlusWinLangPack_Add");
-            this.toolStripMenuItemISO639_1PlusWinLangPack_Add.Click += new System.EventHandler(this.toolStripMenuItemISO639_1PlusWinLangPack_Add_Click);
-            // 
-            // toolStripMenuItemSubLanguagesAndRegions
-            // 
-            resources.ApplyResources(this.toolStripMenuItemSubLanguagesAndRegions, "toolStripMenuItemSubLanguagesAndRegions");
-            this.toolStripMenuItemSubLanguagesAndRegions.Image = global::ABetterTranslator.Properties.Resources.TranslateWorld3__64_x_64_;
-            this.toolStripMenuItemSubLanguagesAndRegions.Name = "toolStripMenuItemSubLanguagesAndRegions";
+            this.toolStripMenuItemAllLanguages.Name = "toolStripMenuItemAllLanguages";
+            resources.ApplyResources(this.toolStripMenuItemAllLanguages, "toolStripMenuItemAllLanguages");
+            this.toolStripMenuItemAllLanguages.Click += new System.EventHandler(this.toolStripMenuItemAllLanguages_Click);
             // 
             // toolStripButtonStopTranslation
             // 
@@ -1572,10 +1543,6 @@ namespace ABetterTranslator
         private ToolStripMenuItem toolStripMenuItemISO639_1UsingOfficialNames;
         private ToolStripMenuItem toolStripMenuItemISO639_1UsingOfficialNames_ShowOnly;
         private ToolStripMenuItem toolStripMenuItemISO639_1UsingOfficialNames_Add;
-        private ToolStripMenuItem toolStripMenuItemISO639_1PlusWinLangPack;
-        private ToolStripMenuItem toolStripMenuItem2toolStripMenuItemISO639_1PlusWinLangPack_ShowOnly;
-        private ToolStripMenuItem toolStripMenuItemISO639_1PlusWinLangPack_Add;
-        private ToolStripMenuItem toolStripMenuItemSubLanguagesAndRegions;
         private ToolStripButton toolStripButtonStopTranslation;
         private Button browseFolderButton;
         private TextBox outputBox;
@@ -1606,6 +1573,7 @@ namespace ABetterTranslator
         private ToolStripMenuItem toolStripSplitButtonSaveSave_SaveAs;
         private ToolStripMenuItem toolStripSplitButtonSaveAll_Update;
         private ToolStripMenuItem toolStripSplitButtonSaveAll_SaveAs;
+        private ToolStripMenuItem toolStripMenuItemAllLanguages;
     }
 }
 

@@ -92,12 +92,12 @@ namespace ABetterTranslator
 		private readonly List<PreviousGroupLanguageSelections> _previousLanguageSelections = new();
 		private readonly bool backendUpdate = false;
 		private readonly List<int> _LogBoxUpdatePoints = new();
-        private readonly object _lock = new object();
+        private readonly object _lock = new();
         private readonly IReadOnlyDictionary<string, GTranslate.Language> GTranslate_LangLookup;
         private readonly string ApplicationDefaultLanguage = null;
         // Other variables
-		private CancellationTokenSource cancellation = new CancellationTokenSource();
-		private string _lastValueOf_inputBox = "";
+		private CancellationTokenSource cancellation = new();
+		private string _lastValueOf_inputBox = null;
 		private OutputBoxRelatedToInputBox _outputBoxRelationToInputBox = OutputBoxRelatedToInputBox.NoRelations;
 		private ResxMultiThreadTranslator? _multiThreadTranslator = null;
 		private List<TranslationRequestPacket>? _translationRequestPackets = null;
@@ -108,8 +108,8 @@ namespace ABetterTranslator
         private string _lastTextToTranslate_value = "";
         private bool _doSendErrMsgOnTranslateTextError = false;
         private bool _isFormReady = false;
-        private StreamWriter _logFile  = null;
-        private bool _SrcResxHasAppendedLanguageToBaseFileName = false;
+        private StreamWriter? _logFile  = null;
+        private bool _SrcResxHasAppendedLanguageToBaseFileName;
         private string _filenameForSavedSelectedLanguages = "";
         private string _filenameForSavedProjectSettings = "";
         private bool _executeTranslationOnStartup = false;
@@ -126,6 +126,7 @@ namespace ABetterTranslator
             TranslatorSupportedLanguages,
             Iso639_1_Languages,
             Iso639_1_Plus,
+            AllLanguages,
         }
 
         public enum LoggingColorSet
@@ -753,7 +754,7 @@ namespace ABetterTranslator
             // Text highlighting requires at least a default renderer
             if ( olv.DefaultRenderer == null )
                 olv.DefaultRenderer = new HighlightTextRenderer(filter);
-            Stopwatch stopWatch = new Stopwatch();
+            Stopwatch stopWatch = new();
             stopWatch.Start();
             olv.AdditionalFilter = filter;
             stopWatch.Stop();
@@ -763,7 +764,7 @@ namespace ABetterTranslator
             Screen[] screens = Screen.AllScreens;
             foreach ( Screen screen in screens )
             {
-                Point formTopLeft = new Point( form.Left, form.Top );
+                Point formTopLeft = new( form.Left, form.Top );
 
                 if ( screen.WorkingArea.Contains(formTopLeft) )
                 {
@@ -866,7 +867,7 @@ namespace ABetterTranslator
 
                     if ( Settings.Default.languageList != null && Settings.Default.languageList.Count > 0 )
                     {
-                        ArrayList l = new ArrayList();
+                        ArrayList l = new();
                         for ( int count = 0 ; count < languageList.GetItemCount() ; count++ )
                         {
                             ObjListVwRowDetails objlistvwrowdetails = (ObjListVwRowDetails) languageList.GetModelObject(count);
@@ -1476,8 +1477,8 @@ namespace ABetterTranslator
 
                 if ( item.translationPacketType != TranslationPacketTypes.OnePacketPerString)
                 {
-                    List<string> sourceText = new List<string>(item.sourceText);
-                    List<string> translatedText = new List<string>(item.translatedText);
+                    List<string> sourceText = new(item.sourceText);
+                    List<string> translatedText = new(item.translatedText);
                     item.sourceText.Clear();
                     item.translatedText.Clear();
                     for(int i = 0; i < sourceText.Count; i++)
@@ -1660,7 +1661,7 @@ namespace ABetterTranslator
         #region Populate Language List View
         private void ClearDisplaySetChecks()
         {
-            toolStripMenuItemWindowsLanguagePacks.Checked = toolStripMenuItemWindowsLanguagePackInterface.Checked = toolStripMenuItemAllTranslatorSupportedLanguages.Checked = toolStripMenuItemISO639_1UsingOfficialNames.Checked = toolStripMenuItemISO639_1PlusWinLangPack.Checked = false;
+            toolStripMenuItemWindowsLanguagePacks.Checked = toolStripMenuItemWindowsLanguagePackInterface.Checked = toolStripMenuItemAllTranslatorSupportedLanguages.Checked = toolStripMenuItemISO639_1UsingOfficialNames.Checked = toolStripMenuItemAllLanguages.Checked = false;
         }
 		private void PopulateLanguageSet(string[,] languageSet, bool use2LettersOnly = false)
 		{
@@ -1704,6 +1705,10 @@ namespace ABetterTranslator
                         PopulateLanguageSet(LanguageCodes.LanguageCodesAndAliases);
                         toolStripMenuItemISO639_1PlusWinLangPack.Checked = true;
                         break;
+                    case LanguageSet.AllLanguages:
+                        PopulateAllLanguages();
+                        toolStripMenuItemAllLanguages.Checked = true;
+                        break;
                 }
                 SelectedLanguageSet = (int) index;
             }
@@ -1721,6 +1726,11 @@ namespace ABetterTranslator
                 string translator = language.Value.SupportedServices.ToString();
                 AddLanguage(code, name, translator);
             }
+        }
+        private void PopulateAllLanguages()
+        {
+            for ( int i = 0 ; i < LanguageCodes.NativeNames.GetLength(0) ; ++i )
+                AddLanguage("", LanguageCodes.NativeNames[i, 0], null, LanguageCodes.NativeNames[i, 1]);
         }
         private void ClearLanguageSet()
         {
@@ -1826,13 +1836,15 @@ namespace ABetterTranslator
                 }
             }
         }
-        private void AddLanguage(string code, string LangName, string? translatorSupported = null)
+        private void AddLanguage(string code, string LangName, string? translatorSupported = null, string NativeName = null)
         {
             Debug.Assert(!string.IsNullOrEmpty(LangName));
             if ( string.IsNullOrEmpty(code) )
                 code = GetTag(LangName);
             try
             {
+                if ( string.IsNullOrEmpty(code) && !string.IsNullOrEmpty(NativeName))
+                    code = "n/a";
                 if ( string.IsNullOrEmpty(code) || string.IsNullOrEmpty(LangName) )
                 {
                     // Add logging here
@@ -1869,13 +1881,13 @@ namespace ABetterTranslator
                 else
                     languageTranslatorTag = code;
 
-                ArrayList l = new ArrayList();
+                ArrayList l = new();
                 ObjListVwRowDetails objListVwRowDetails = new(code)
                 {
                     LanguageTag = code,
                     LanguageName = LangName,
                     LanguageTranslatorTag = languageTranslatorTag,
-                    LanguageAliases = GetAliases(LangName, code),
+                    LanguageAliases = ((NativeName == null) ? "" : $"{NativeName}; ") + GetAliases(LangName, code),
                     TranslatorSupported = translatorSupported,
                     Iso639_3 = GetIso639_3Tag(code),
                 };
@@ -1956,7 +1968,7 @@ namespace ABetterTranslator
         }
         private void SelectAGroupOfLanguages(string[] LanguageNames, string UndoName = "Last Group", int MaxLang = -1)
         {
-            ArrayList l = new ArrayList();
+            ArrayList l = new();
             int SelectedLangCount = 0;
             for ( int count = 0 ; count < languageList.GetItemCount() ; count++ )
             {
@@ -2192,7 +2204,7 @@ namespace ABetterTranslator
         private void SetAll_LanguagesCkBx(bool CheckedValue)
 		{
             PreviousGroupLanguageSelections previousGroupLanguageSelections = new();
-            ArrayList l = new ArrayList();
+            ArrayList l = new();
             for ( int count = 0 ; count < languageList.GetItemCount() ; count++ )
 			{
                 ObjListVwRowDetails objlistvwrowdetails = (ObjListVwRowDetails) languageList.GetModelObject(count);
@@ -2313,6 +2325,16 @@ namespace ABetterTranslator
         private void toolStripMenuItemAllTranslatorSupportedLanguages_ShowOnly_Click(object sender, EventArgs e) => toolStripMenuItemAllTranslatorSupportedLanguages_Click(sender, e);
         private void toolStripMenuItemAllTranslatorSupportedLanguages_Add_Click(object sender, EventArgs e) => PopulateLanguageSet(LanguageSet.TranslatorSupportedLanguages);
         private void toolStripMenuItem2toolStripMenuItemISO639_1PlusWinLangPack_ShowOnly_Click(object sender, EventArgs e) => toolStripMenuItemISO639_1PlusWinLangPack_Click(sender, e);
+        private void toolStripMenuItemAllLanguages_Click(object sender, EventArgs e)
+        {
+            if ( checkBoxDispalyWarningPrompts.Checked )
+            {
+                DialogResult answer =MessageBox.Show("Are you sure you want to load over 1700 languages.\nIt will take a few minutes to load the entire list.", "Long Load Time", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                if ( answer.Equals(DialogResult.Cancel) )
+                    return;
+            }
+            PopulateLanguageSet(LanguageSet.AllLanguages);
+        }
         private void toolStripMenuItemISO639_1PlusWinLangPack_Add_Click(object sender, EventArgs e) => PopulateLanguageSet(LanguageSet.Iso639_1_Plus);
         private void toolStripMenuItemWindowsLanguagePacks_Click(object sender, EventArgs e)
         {
@@ -2429,7 +2451,7 @@ namespace ABetterTranslator
                 CultureInfo? cultureinfo = CultureInfo.GetCultureInfo(code);
                 if ( cultureinfo == null )
                     return code;
-                RegionInfo ri = new RegionInfo(cultureinfo.LCID);
+                RegionInfo ri = new(cultureinfo.LCID);
                 return ri.DisplayName;
             }
             catch ( Exception e )
@@ -2851,5 +2873,6 @@ namespace ABetterTranslator
                 MaxTranslateLen.Text = "5000";
         }
         private void MaxTranslateLen_Validating(object sender, CancelEventArgs e) => MaxTranslateLen_Validating();
+
     }
 }
