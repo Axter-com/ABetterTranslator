@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\david\\.nuget\\packages\\": {},
+    "C:\\Users\\admin3\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "2.1.0",
+    "version": "2.1.1",
     "restore": {
-      "projectUniqueName": "E:\\Repos\\ABetterTranslator\\GTranslate\\GTranslate.csproj",
+      "projectUniqueName": "E:\\_\\David-Maisonave\\ABetterTranslator\\GTranslate\\GTranslate.csproj",
       "projectName": "GTranslate",
-      "projectPath": "E:\\Repos\\ABetterTranslator\\GTranslate\\GTranslate.csproj",
-      "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
-      "outputPath": "E:\\Repos\\ABetterTranslator\\GTranslate\\obj\\",
+      "projectPath": "E:\\_\\David-Maisonave\\ABetterTranslator\\GTranslate\\GTranslate.csproj",
+      "packagesPath": "C:\\Users\\admin3\\.nuget\\packages\\",
+      "outputPath": "E:\\_\\David-Maisonave\\ABetterTranslator\\GTranslate\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
@@ -29,7 +29,7 @@
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\david\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\admin3\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -73,7 +73,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-preview.6.22352.1\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.300-preview.23122.5\\RuntimeIdentifierGraph.json"
       }
     }
   }
